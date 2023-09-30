@@ -1,0 +1,11 @@
+// Import all of Bootstrap's CSS
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+
+
+$colorFondo: peru;
+
+body {
+    background-color: $colorFondo;
+}

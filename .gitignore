@@ -1,0 +1,4 @@
+# Ignora a carpeta de archivos cache de Parcel, node_modules y de distribución
+.parcel-cache/
+node_modules/
+dist/
