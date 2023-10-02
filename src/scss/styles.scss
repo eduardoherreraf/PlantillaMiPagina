@@ -1,11 +1,117 @@
+// $primary: red;
+
 // Import all of Bootstrap's CSS
-@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "bootstrap/scss/bootstrap";
 
+// Import google's Saira fonts
+@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100&display=swap');
 
+// Import all of Prism's theme
+@import "../../node_modules/prismjs/themes/prism-coy.css";
 
+// Import Prims's plugins
+@import "../../node_modules/prismjs/plugins/line-numbers/prism-line-numbers.min.css";
+@import "../../node_modules/prismjs/plugins/toolbar/prism-toolbar.min.css";
+@import "../../node_modules/prismjs/plugins/match-braces/prism-match-braces.min.css";
+@import "../../node_modules/prismjs/plugins/line-highlight/prism-line-highlight.min.css";
 
-$colorFondo: peru;
+html {
+    scroll-behavior: smooth;
+}
 
 body {
-    background-color: $colorFondo;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+}
+
+h1 {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 5.5rem;
+}
+
+h2 {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 4rem;
+}
+
+h3 {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 3.0rem;
+}
+
+h4 {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 2.5rem;
+}
+
+h5 {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 2.0rem;
+}
+
+.text_saira {
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+.text_big {
+    font-size: 2rem;
+}
+
+.icon_size {
+    font-size: 6rem;
+}
+
+
+// formulario
+form {
+    padding: 20px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+}
+
+input,
+textarea {
+    padding: 10px 20px;
+    background-color: lightgrey;
+    color: black;
+    // outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #4b514c;
+}
+
+.btn {
+    background-color: lightgrey;
+    color: black;
+}
+
+.btn:hover {
+    background-color: grey;
+}
+
+//  botón to top
+#myBtnScroll {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: red;
+    border-radius: 100%;
+    border: none;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    display: none;
+    transition: 0.9s;
+}
+
+#myBtnScroll:hover {
+    background: rgba(255, 0, 0, 0.6);
 }
