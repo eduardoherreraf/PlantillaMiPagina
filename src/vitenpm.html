@@ -439,7 +439,7 @@
       <aside class="col-lg-4 pt-5">
         <h1 class="text_saira fw-bold">PUBLICACIONES</h1>
         <ul class="list-unstyled">
-          <li><a href="#vite">INSTALACIÓN DE BOOTSTRAP V5.3 CON EL MANEJADOR DE PAQUETES NPM y VITE</a></li>
+          <li><a href="vitenpm.html" class="pe-none text-decoration-none" tabindex="-1" aria-disabled="true">INSTALACIÓN DE BOOTSTRAP V5.3 CON EL MANEJADOR DE PAQUETES NPM y VITE</a></li>
         </ul>
       </aside>
       <!-- -------------------------------- fin barra lateral -------------------------------- -->
@@ -661,6 +661,7 @@
 
     // Change of Theme
     const cambiarTema = () => {
+      console.log("cambiartema");
       document.querySelector('body').getAttribute('data-bs-theme') === 'light' ? temaOscuro() : temaClaro();
     };
     const temaOscuro = () => {
