@@ -116,7 +116,8 @@
     <!-- fin iconos -->
 
     <title>
-      Instalación de Bootstrap V5.3 con el Manejador de Paquetes NPM y VITE - Ing. Eduardo Herrera Forero.
+      Instalación de Bootstrap V5.3 con el Manejador de Paquetes NPM y VITE -
+      Ing. Eduardo Herrera Forero.
     </title>
 
     <script
@@ -129,14 +130,14 @@
       content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" /> -->
   </head>
   <body
-    data-bs-theme="dark"
     data-bs-spy="scroll"
     data-bs-target=".navbar-collapse"
     data-bs-offset="10"
     class="container-fluid code-toolbar"
     id="about">
     <!-- navbar -->
-    <nav class="row navbar navbar-expand-lg bg-body-tertiary border-1 border fixed-top nav-pills">
+    <nav
+      class="row navbar navbar-expand-lg bg-body-tertiary border-1 border fixed-top nav-pills">
       <div class="container-fluid">
         <a
           class="navbar-brand d-flex ms-2"
@@ -164,7 +165,8 @@
         <div
           class="collapse navbar-collapse"
           id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-content-between menu-options">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-content-between menu-options">
             <a
               class="nav-link mx-1 active"
               aria-current="page"
@@ -209,7 +211,8 @@
                 fill="currentColor"
                 class="bi bi-circle-half"
                 viewBox="0 0 16 16">
-                <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+                <path
+                  d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
               </svg>
             </button>
           </div>
@@ -224,16 +227,20 @@
         <article
           class="row border-1 border-bottom pb-3"
           id="about">
-          <h1 class="fw-bold fs-1 text_saira pt-3">INSTALACIÓN DE BOOTSTRAP V5.3, NPM y VITE</h1>
+          <h1 class="fw-bold fs-1 text_saira pt-3">
+            INSTALACIÓN DE BOOTSTRAP V5.3, NPM y VITE
+          </h1>
           <div>
             <p>
-              Esta documentación se realizó con base a la oficial entregada por Bootstrap en su página web
+              Esta documentación se realizó con base a la oficial entregada por
+              Bootstrap en su página web
               <a
                 href="https://getbootstrap.com/docs/5.3/getting-started/vite/"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Bootstrap and Vite</a
-              >, todos los comando que se usaran en este tutorial son ejecutados en la terminal BASH de GIT.
+              >, todos los comando que se usaran en este tutorial son ejecutados
+              en la terminal BASH de GIT.
             </p>
             <h5>Configuración inicial</h5>
             <pre
@@ -272,7 +279,10 @@
                     }
                   }
                 </code></pre>
-            <p>El archivo <b>src/index.html</b>, se llena con la siguiente plantilla:</p>
+            <p>
+              El archivo <b>src/index.html</b>, se llena con la siguiente
+              plantilla:
+            </p>
             <pre
               class="line-numbers"
               data-src-status="loaded"
@@ -293,7 +303,10 @@
                 &lt;/body&gt;
               &lt;/html&gt;
               </code></pre>
-            <p>Mientras que el archivo <b>package.json</b> debe quedar configurado así:</p>
+            <p>
+              Mientras que el archivo <b>package.json</b> debe quedar
+              configurado así:
+            </p>
             <pre
               class="line-numbers"
               data-src-status="loaded"
@@ -306,10 +319,15 @@
                   },
                 }
             </code></pre>
-            <p>Iniciar el proyecto con vite: <b>npm start</b>, en el navegador</p>
+            <p>
+              Iniciar el proyecto con vite: <b>npm start</b>, en el navegador
+            </p>
 
             <h4>Importación Bootstrap v5.3</h4>
-            <p>En el archivo <b>src/scss/styles.scss</b> se importa los estilos CSS:</p>
+            <p>
+              En el archivo <b>src/scss/styles.scss</b> se importa los estilos
+              CSS:
+            </p>
             <pre
               class="line-numbers"
               data-src-status="loaded"
@@ -317,7 +335,10 @@
                   // Import all of Bootstrap's CSS
                   @import "bootstrap/scss/bootstrap";
               </code></pre>
-            <p>El archivo src/js/main.js se carga e importa los CSS y JS de Bootstrap agregando.</p>
+            <p>
+              El archivo src/js/main.js se carga e importa los CSS y JS de
+              Bootstrap agregando.
+            </p>
             <pre
               class="line-numbers"
               data-src-status="loaded"
@@ -338,9 +359,9 @@
                   npm i vite-plugin-html
               </code></pre>
             <p>
-              El plugin <b>purgecss</b> elimina toda clase de CSS que no sea utilizada y el
-              <b>HTML</b> elimina todo espacio extra o cambio de línea del documento HTML y deja todo el
-              código en una sola línea.
+              El plugin <b>purgecss</b> elimina toda clase de CSS que no sea
+              utilizada y el <b>HTML</b> elimina todo espacio extra o cambio de
+              línea del documento HTML y deja todo el código en una sola línea.
             </p>
             <p>El archivo vite.cfg.js se debe configurar asi:</p>
             <pre
@@ -405,13 +426,16 @@
               </code></pre>
             <h4>Compilación del proyecto para Producción</h4>
             <p>
-              Cuando se haya terminado y se quiera obtener la versión para producción se ejecuta el comando:
-              <b>npm run build</b> y los archivos se quedan disponibles en la carpeta <b>dist</b>."
+              Cuando se haya terminado y se quiera obtener la versión para
+              producción se ejecuta el comando:
+              <b>npm run build</b> y los archivos se quedan disponibles en la
+              carpeta <b>dist</b>."
             </p>
             <h5>Corrección del archivo <b>index.html</b></h5>
             <p>
-              Corregir las direcciones de llamado a los archivos css y js insertando un punto "." antes del
-              slash, debe quedar asi en la cabecera &lt;head&gt; del archivo:
+              Corregir las direcciones de llamado a los archivos css y js
+              insertando un punto "." antes del slash, debe quedar asi en la
+              cabecera &lt;head&gt; del archivo:
             </p>
             <pre
               class="line-numbers"
@@ -421,13 +445,15 @@
                   &lt;link rel="stylesheet" href="./assets/index-1b619488.css"&gt;
               </code></pre>
             <p>
-              Si se tienen imágenes que están guardadas en la carpeta <b>assets/</b>, también se debe corregir
-              la dirección colocándole el punto antes del slash (/) a su dirección, p. ej.
+              Si se tienen imágenes que están guardadas en la carpeta
+              <b>assets/</b>, también se debe corregir la dirección colocándole
+              el punto antes del slash (/) a su dirección, p. ej.
               <b>./assets/sun-86eb3c88.svg</b>
             </p>
             <p>
-              Si la imagen se encuentra en la etiqueta <b>&lt;script&gt;</b>, esta no aparecerá en la carpeta
-              <b>assets/</b>, se debe copiar en esta carpeta y su dirección se debe cambiar p. ej de
+              Si la imagen se encuentra en la etiqueta <b>&lt;script&gt;</b>,
+              esta no aparecerá en la carpeta <b>assets/</b>, se debe copiar en
+              esta carpeta y su dirección se debe cambiar p. ej de
               <b>./images/moon.svg</b> a
               <b>./assets/moon.svg</b>
             </p>
@@ -445,14 +471,16 @@
             <a
               href="bootstrapparcelnpm.html"
               class="text-decoration-none"
-              >INSTALACIÓN DE BOOTSTRAP V5.3 CON EL MANEJADOR DE PAQUETES NPM y PARCEL</a
+              >INSTALACIÓN DE BOOTSTRAP V5.3 CON EL MANEJADOR DE PAQUETES NPM y
+              PARCEL</a
             >
           </li>
           <li class="list-group-item pe-none">
             <a
               href="bootstrapvitenpm.html"
               class="text-decoration-none opacity-50"
-              >INSTALACIÓN DE BOOTSTRAP V5.3 CON EL MANEJADOR DE PAQUETES NPM y VITE</a
+              >INSTALACIÓN DE BOOTSTRAP V5.3 CON EL MANEJADOR DE PAQUETES NPM y
+              VITE</a
             >
           </li>
         </ul>
@@ -496,7 +524,11 @@
                   <path
                     d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z" />
                 </svg>
-                <span class="ms-3"> <a href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a></span>
+                <span class="ms-3">
+                  <a href="mailto:ehfeduardo@gmail.com"
+                    >ehfeduardo@gmail.com</a
+                  ></span
+                >
               </div>
             </div>
             <div class="d-flex flex-row m-3 align-text-top">
@@ -510,7 +542,8 @@
                   viewBox="0 0 16 16">
                   <path
                     d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
-                  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                  <path
+                    d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                 </svg>
               </div>
               <span class="ms-3"> Bogotá D. C. - Colombia</span>
@@ -669,28 +702,33 @@
   <script>
     // pagina ha cargado totalmente
     window.onload = function () {
-      alert('tema guardado ' + tema);
-      if (tema === 'null' || tema === 'dark') temaOscuro();
-      if (tema === 'light') temaClaro();
+      let tema = localStorage.getItem("theme") || "dark";
+      if (tema === "dark") temaOscuro();
+      if (tema === "light") temaClaro();
     };
-
     // Change of Theme
     const cambiarTema = () => {
-      console.log('cambiartema');
-      document.querySelector('body').getAttribute('data-bs-theme') === 'light' ? temaOscuro() : temaClaro();
+      document.querySelector("body").getAttribute("data-bs-theme") === "light"
+        ? temaOscuro()
+        : temaClaro();
     };
     const temaOscuro = () => {
-      document.querySelector('body').setAttribute('data-bs-theme', 'dark');
+      document.querySelector("body").setAttribute("data-bs-theme", "dark");
       document
-        .querySelector('#dl-icon')
-        .setAttribute('class', 'btn text-center d-flex bg-body-tertiary text-light');
-      localStorage.setItem('theme', 'dark');
+        .querySelector("#dl-icon")
+        .setAttribute(
+          "class",
+          "btn text-center d-flex bg-body-tertiary text-light"
+        );
+      localStorage.setItem("theme", "dark");
     };
 
     const temaClaro = () => {
-      document.querySelector('body').setAttribute('data-bs-theme', 'light');
-      document.querySelector('#dl-icon').setAttribute('class', 'btn text-center d-flex bg-light text-dark');
-      localStorage.setItem('theme', 'light');
+      document.querySelector("body").setAttribute("data-bs-theme", "light");
+      document
+        .querySelector("#dl-icon")
+        .setAttribute("class", "btn text-center d-flex bg-light text-dark");
+      localStorage.setItem("theme", "light");
     };
   </script>
 </html>
