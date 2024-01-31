@@ -423,19 +423,26 @@
             class="line-numbers"
             data-src-status="loaded"
             tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
-              npm start ó npm run dev
+              npm start
+            </code></pre>
+            <p>ó</p>
+            <pre
+            class="line-numbers"
+            data-src-status="loaded"
+            tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
+              npm run dev
             </code></pre>
 
           <h2>Importación de BOOTSTRAP</h2>
           <p>
             Para la importación de Bootstrap en Parcel se requiere dos
             importaciones, una en el archivo
-            <span class="fst-italic">styles.scss</span> y otra en el
-            <span class="fst-italic">main.js</span>.
+            <span class="fw-bold text-warning">styles.scss</span> y otra en el
+            <span class="fw-bold text-warning">main.js</span>.
           </p>
           <p>
             La importación del CSS de Bootstrap. Añade en el archivo
-            <span class="fst-italic">src/scss/styles.scss</span> el siguiente
+            <span class="fw-bold text-warning">src/scss/styles.scss</span> el siguiente
             código para importar todo el Sass fuente de Bootstrap.
           </p>
           <pre
@@ -447,26 +454,31 @@
         </code></pre>
           <p>
             La importación del JS de Bootstrap. Añade en el archivo
-            <span class="fst-italic">src/js/main.js</span> el siguiente código
+            <span class="fw-bold text-warning">src/js/main.js</span> el siguiente código
             para importar todo el código fuente de Javascript de Bootstrap:
           </p>
+          <p>La importación de código CSS de usuario también se importa en este mismo archivo.</p>
           <pre
             class="line-numbers"
             data-src-status="loaded"
             tabindex="0"><code class="language-javascript" data-prismjs-copy="Copy">
             // Import all of Bootstrap's JS
             import * as bootstrap from 'bootstrap'
+
+            // Import our custom CSS
+            import '../scss/styles.scss';
           </code></pre>
+
           <p>
             Ahora ya se puede generar una página web utilizando Bootstrap y
-            Parcel
+            Parcel.
           </p>
           <h2>Compilación del proyecto para Producción</h2>
           <p>
             Cuando se haya terminado y se quiera obtener la versión para
             producción se ejecuta el siguiente comando y los archivos se
             quedan disponibles en la carpeta
-            <span class="fst-italic">dist</span>
+            <span class="fw-bold text-warning">dist</span>.
           </p>
           <pre
             class="line-numbers"

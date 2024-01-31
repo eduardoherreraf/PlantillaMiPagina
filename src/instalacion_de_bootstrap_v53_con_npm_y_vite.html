@@ -227,7 +227,7 @@
         <article
           class="row border-1 border-bottom pb-3"
           id="about">
-          <h1 class="fw-bold fs-1 text_saira pt-3">
+          <h1>
             INSTALACIÓN DE BOOTSTRAP V5.3, NPM y VITE
           </h1>
           <div>
@@ -242,7 +242,7 @@
               >, todos los comando que se usaran en este tutorial son ejecutados
               en la terminal BASH de GIT.
             </p>
-            <h5>Configuración inicial</h5>
+            <h3>Configuración inicial</h3>
             <pre
               class="line-numbers"
               data-src-status="loaded"
@@ -253,7 +253,7 @@
                   npm i --save bootstrap @popperjs/core
                   npm i --save-dev sass
               </code></pre>
-            <h5>Configuración del Espacio de Trabajo</h5>
+            <h3>Configuración del Espacio de Trabajo</h3>
             <pre
               class="line-numbers"
               data-src-status="loaded"
@@ -261,8 +261,8 @@
                   mkdir {src,src/js,src/scss}
                   touch src/index.html src/js/main.js src/scss/styles.scss vite.config.js
               </code></pre>
-            <h5>Configuración de Vite</h5>
-            <p>En el archivo <b>vite.config.js</b>, se llena con:</p>
+            <h3>Configuración de Vite</h3>
+            <p>En el archivo <span class="fw-bold text-warning">vite.config.js</span>, se llena con:</p>
             <pre
               class="line-numbers"
               data-src-status="loaded"
@@ -280,7 +280,7 @@
                   }
                 </code></pre>
             <p>
-              El archivo <b>src/index.html</b>, se llena con la siguiente
+              El archivo <span class="fw-bold text-warning">src/index.html</span>, se llena con la siguiente
               plantilla:
             </p>
             <pre
@@ -304,7 +304,7 @@
               &lt;/html&gt;
               </code></pre>
             <p>
-              Mientras que el archivo <b>package.json</b> debe quedar
+              Mientras que el archivo <span class="fw-bold text-warning">package.json</span> debe quedar
               configurado así:
             </p>
             <pre
@@ -320,12 +320,12 @@
                 }
             </code></pre>
             <p>
-              Iniciar el proyecto con vite: <b>npm start</b>, en el navegador
+              Iniciar el proyecto con vite: <span class="fw-bold text-warning">npm start</span>, en el navegador
             </p>
 
-            <h4>Importación Bootstrap v5.3</h4>
+            <h2>Importación Bootstrap v5.3</h2>
             <p>
-              En el archivo <b>src/scss/styles.scss</b> se importa los estilos
+              En el archivo <span class="fw-bold text-warning">src/scss/styles.scss</span> se importa los estilos
               CSS:
             </p>
             <pre
@@ -336,7 +336,7 @@
                   @import "bootstrap/scss/bootstrap";
               </code></pre>
             <p>
-              El archivo src/js/main.js se carga e importa los CSS y JS de
+              El archivo <span class="fw-bold text-warning">src/js/main.js</span> se carga e importa los CSS y JS de
               Bootstrap agregando.
             </p>
             <pre
@@ -350,7 +350,7 @@
                   import * as bootstrap from 'bootstrap'
               </code></pre>
 
-            <h5>Instalación plugin PurgeCSS plugin HTML</h5>
+            <h3>Instalación plugin PurgeCSS plugin HTML</h3>
             <pre
               class="line-numbers"
               data-src-status="loaded"
@@ -393,8 +393,8 @@
                   }
               </code></pre>
 
-            <h4>Configuraciones finales</h4>
-            <p>El archivo <b>package.json</b>, finalmente se debe tener asi:</p>
+            <h2>Configuraciones finales</h2>
+            <p>El archivo <span class="fw-bold text-warning">package.json</span>, finalmente se debe tener asi:</p>
             <pre
               class="line-numbers"
               data-src-status="loaded"
@@ -424,18 +424,18 @@
                     }
                   }
               </code></pre>
-            <h4>Compilación del proyecto para Producción</h4>
+            <h2>Compilación del proyecto para Producción</h2>
             <p>
               Cuando se haya terminado y se quiera obtener la versión para
               producción se ejecuta el comando:
-              <b>npm run build</b> y los archivos se quedan disponibles en la
+              <span class="fw-bold text-warning">npm run build</span> y los archivos se quedan disponibles en la
               carpeta <b>dist</b>."
             </p>
-            <h5>Corrección del archivo <b>index.html</b></h5>
+            <h3>Corrección del archivo <b>index.html</b></h3>
             <p>
               Corregir las direcciones de llamado a los archivos css y js
               insertando un punto "." antes del slash, debe quedar asi en la
-              cabecera &lt;head&gt; del archivo:
+              cabecera <span class="fw-bold text-warning">&lt;head&gt;</span> del archivo:
             </p>
             <pre
               class="line-numbers"
@@ -446,16 +446,15 @@
               </code></pre>
             <p>
               Si se tienen imágenes que están guardadas en la carpeta
-              <b>assets/</b>, también se debe corregir la dirección colocándole
+              <span class="fw-bold text-warning">assets/</span>, también se debe corregir la dirección colocándole
               el punto antes del slash (/) a su dirección, p. ej.
-              <b>./assets/sun-86eb3c88.svg</b>
+              <span class="fw-bold text-warning">./assets/sun-86eb3c88.svg</span>.
             </p>
             <p>
-              Si la imagen se encuentra en la etiqueta <b>&lt;script&gt;</b>,
-              esta no aparecerá en la carpeta <b>assets/</b>, se debe copiar en
+              Si la imagen se encuentra en la etiqueta <span class="fw-bold text-warning">&lt;script&gt;</span>,
+              esta no aparecerá en la carpeta <span class="fw-bold text-warning">assets/</span>, se debe copiar en
               esta carpeta y su dirección se debe cambiar p. ej de
-              <b>./images/moon.svg</b> a
-              <b>./assets/moon.svg</b>
+              <span class="fw-bold text-warning">./images/moon.svg</span> a <span class="fw-bold text-warning">./assets/moon.svg</span>
             </p>
           </div>
         </article>
@@ -465,7 +464,7 @@
 
       <!-- -------------------------------- barra lateral -------------------------------- -->
       <aside class="col-lg-4 pt-5">
-        <h1 class="text_saira fw-bold">PUBLICACIONES</h1>
+        <h1>PUBLICACIONES</h1>
         <ul class="list-group">
           <!--  curso html  -->
           <li class="list-group-item">
