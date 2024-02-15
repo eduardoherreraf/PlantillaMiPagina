@@ -4,7 +4,7 @@
 @import "bootstrap/scss/bootstrap";
 
 // Import google's Saira fonts
-@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100&display=swap");
 
 // Import all of Prism's theme
 @import "../../node_modules/prismjs/themes/prism-coy.css";
@@ -16,104 +16,116 @@
 @import "../../node_modules/prismjs/plugins/line-highlight/prism-line-highlight.min.css";
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    box-sizing: border-box;
-    font-size: 1.2rem;
+  box-sizing: border-box;
+  font-size: 1.2rem;
 }
 
 h1,
 h2,
 h3 {
-    font-weight: bold;
-    font-family: 'Saira Extra Condensed', sans-serif;
-    text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Saira Extra Condensed", sans-serif;
+  text-transform: uppercase;
+  text-wrap: balance;
 }
 
 h1 {
-    font-size: 5rem;
+  font-size: 5rem;
+  color: #0d6efd;
+}
+.gris {
+  color: #dee2e6;
 }
 
 h2 {
-    font-size: 3.5rem;
+  font-size: 3.5rem;
+  color: #6ea8fe;
 }
 
 h3 {
-    font-size: 3.0rem;
+  font-size: 3rem;
+  color: #6ea8fe;
 }
 
 h4 {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 h5 {
-    font-size: 2.0rem;
+  font-size: 2rem;
 }
 
 .text_saira {
-    font-family: 'Saira Extra Condensed', sans-serif;
+  font-family: "Saira Extra Condensed", sans-serif;
 }
 
 .text_big {
-    font-size: 6rem;
-    margin-top:-5px;
+  font-size: 6rem;
+  margin-top: -5px;
 }
 
 .text_big2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .icon_size {
-    font-size: 6rem;
+  font-size: 6rem;
 }
-
 
 // formulario
 form {
-    padding: 20px 55px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-    border-radius: 20px;
+  padding: 20px 55px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
 }
 
 input,
 textarea {
-    padding: 10px 20px;
-    background-color: lightgrey;
-    color: black;
-    // outline: none;
+  padding: 10px 20px;
+  background-color: lightgrey;
+  color: black;
+  // outline: none;
 }
 
 input::placeholder,
 textarea::placeholder {
-    color: #4b514c;
+  color: #4b514c;
 }
 
 .btn {
-    background-color: lightgrey;
-    color: black;
+  background-color: lightgrey;
+  color: black;
 }
 
 .btn:hover {
-    background-color: grey;
+  background-color: grey;
 }
 
 //  botón to top
 #myBtnScroll {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: red;
-    border-radius: 100%;
-    border: none;
-    width: 48px;
-    height: 48px;
-    cursor: pointer;
-    display: none;
-    transition: 0.9s;
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  background: #333;
+  border-radius: 5px;
+  border: none;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  display: none;
+  transition: 0.9s;
+  padding: 10px;
 }
 
 #myBtnScroll:hover {
-    background: rgba(255, 0, 0, 0.6);
+  background-color: #555;
+  cursor: pointer;
+}
+
+p {
+  text-wrap: pretty;
 }
