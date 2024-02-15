@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-bs-theme="dark">
   <head>
     <!-- Metaetiquetas -->
     <meta charset="utf-8" />
@@ -1684,9 +1684,9 @@
     <!-- Fin button to top -->
   </body>
   <script>
+    let tema = localStorage.getItem("theme") || "dark";
     // pagina ha cargado totalmente
     window.onload = function () {
-      let tema = localStorage.getItem("theme") || "dark";
       if (tema === "dark") temaOscuro();
       if (tema === "light") temaClaro();
     };
