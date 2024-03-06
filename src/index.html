@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Página Web del Ing. Eduardo Herrera Forero y algunas de sus publicaciones."
+      content="Página Web del Ing. Eduardo Herrera Forero y sus publicaciones."
     />
     <meta name="author" content="Ing. Eduardo Herrera Forero" />
     <meta name="application-name" content="EHF" />
@@ -19,7 +19,7 @@
     <meta property="og:title" content="Ing. Eduardo Herrera Forero" />
     <meta
       property="og:description"
-      content="Página Web del Ing. Eduardo Herrera Forero y algunas de sus publicaciones."
+      content="Página Web del Ing. Eduardo Herrera Forero y sus publicaciones."
     />
     <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
     <meta
@@ -34,7 +34,7 @@
     <meta property="twitter:title" content="Ing. Eduardo Herrera Forero" />
     <meta
       property="twitter:description"
-      content="Página Web del Ing. Eduardo Herrera Forero y algunas de sus publicaciones."
+      content="Página Web del Ing. Eduardo Herrera Forero y sus publicaciones."
     />
     <meta property="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
     <meta
@@ -124,6 +124,7 @@
               id="dl-icon"
               onclick="cambiarTema()"
               class="btn text-center d-flex bg-body-tertiary text-light"
+              title="Dark / Light Theme"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -652,6 +653,28 @@
           <article class="row pt-5 border-1 border-bottom pb-3" id="blog">
             <br />
             <h1>PUBLICACIONES</h1>
+            <!-- Comandos Básicos de GIT  -->
+            <div class="row mb-3">
+              <div class="col-md-4">
+                <img
+                  src="./images/maxresdefault.jpg"
+                  class="img-fluid"
+                  alt="logo Git"
+                />
+              </div>
+              <div class="col-md-8">
+                <a href="./comandos_basicos_de_git_para_windows.html">
+                  Comandos Básicos de GIT
+                </a>
+                <p>
+                  En este artículo se mostrarán los comandos más utilizados en
+                  la Interfaz de Línea de Comandos (CLI) y el sistema de manejo
+                  de versiones GIT / GITHUB.
+                </p>
+              </div>
+            </div>
+            <!-- fin Comandos Básicos de GIT  -->
+
             <!-- ultimo commit -->
             <div class="row mb-3">
               <div class="col-md-4">
@@ -668,12 +691,13 @@
                 <p>
                   En algunos casos por cualquier motivo se hace necesario borrar
                   el último commit, en este artículo se explicará tanto para
-                  cuando el cambio se debe hacer sólo locamente y también en el
+                  cuando el cambio se debe hacer sólo localmente y también en el
                   repo remoto.
                 </p>
               </div>
             </div>
             <!-- fin ultimo commit -->
+
             <!-- Manual HTML -->
             <div class="row mb-3">
               <div class="col-md-4">
@@ -1405,42 +1429,39 @@
       <aside class="col-lg-4 pt-5">
         <h1>PUBLICACIONES</h1>
         <ul class="list-group">
+          <!-- Comandos Básicos de GIT -->
+          <li class="list-group-item">
+            <a href="./comandos_basicos_de_git_para_windows.html">
+              Comandos Básicos de GIT
+            </a>
+          </li>
+          <!-- fin Comandos Básicos de GIT -->
+
           <!-- ultimo commit -->
           <li class="list-group-item">
-            <a
-              href="./como_eliminar_el_ultimo_commit_de_git.html"
-              class="text-decoration-none"
-            >
-              Cómo Eliminar el último Commit de Git
+            <a href="./como_eliminar_el_ultimo_commit_de_git.html">
+              Cómo Eliminar el Último Commit de Git
             </a>
           </li>
           <!-- fin ultimo commit -->
+
           <!-- curso html -->
           <li class="list-group-item">
-            <a
-              href="./manual_de_referencia_de_html_basico.html"
-              class="text-decoration-none"
-            >
+            <a href="./manual_de_referencia_de_html_basico.html">
               Manual de Referencia de HTML Básico
             </a>
           </li>
           <!-- fin curso html -->
           <!-- bootstrap + parcel -->
           <li class="list-group-item">
-            <a
-              href="./instalacion_de_bootstrap_v53_con_npm_y_parcel.html"
-              class="text-decoration-none"
-            >
+            <a href="./instalacion_de_bootstrap_v53_con_npm_y_parcel.html">
               Instalación de Bootstrap V5.3 con NPM y Parcel
             </a>
           </li>
           <!-- fin bootstrap + parcel -->
           <!-- bootstrap + vite -->
           <li class="list-group-item">
-            <a
-              href="./instalacion_de_bootstrap_v53_con_npm_y_vite.html"
-              class="text-decoration-none"
-            >
+            <a href="./instalacion_de_bootstrap_v53_con_npm_y_vite.html">
               Instalación de Bootstrap V5.3 con NPM y VITE
             </a>
           </li>

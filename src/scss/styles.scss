@@ -31,11 +31,18 @@ h3 {
   font-family: "Saira Extra Condensed", sans-serif;
   text-transform: uppercase;
   text-wrap: balance;
+  color: #0d6efd;
+}
+h4,
+h5,
+h6 {
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-weight: bold;
+  //color: #6ea8fe;
 }
 
 h1 {
   font-size: 5rem;
-  color: #0d6efd;
 }
 .gris {
   color: #dee2e6;
@@ -57,6 +64,14 @@ h4 {
 
 h5 {
   font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .text_saira {
@@ -129,4 +144,6 @@ textarea::placeholder {
 
 p {
   text-wrap: pretty;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
