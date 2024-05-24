@@ -247,55 +247,71 @@
               >, todos los comando que se usaran en este tutorial son ejecutados
               en la terminal BASH de GIT.
             </p>
-            <h2 id="configuracionInical">Configuración Inicial</h2>
-            <pre
-              class="line-numbers"
-              data-src-status="loaded"
-              tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
+
+            <div
+              id="configuracionInical"
+              class="mt-5 pt-5">
+              <h2 class="mt-1">Configuración Inicial</h2>
+              <pre
+                class="line-numbers"
+                data-src-status="loaded"
+                tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
                 mkdir my-project && cd my-project
                 npm init -y
             </code></pre>
-            <h3 id="configuracionEspacioTrabajo">
-              Configuración del Espacio de Trabajo
-            </h3>
-            <pre
-              class="line-numbers"
-              data-src-status="loaded"
-              tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
+              <h3 id="configuracionEspacioTrabajo">
+                Configuración del Espacio de Trabajo
+              </h3>
+              <pre
+                class="line-numbers"
+                data-src-status="loaded"
+                tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
               mkdir {src,src/js,src/scss}
               touch src/index.html src/js/main.js src/scss/styles.scss
             </code></pre>
-            <h2 id="instalacionParcel">Instalación de Parcel</h2>
-            <pre
-              class="line-numbers"
-              data-src-status="loaded"
-              tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
+            </div>
+
+            <div
+              id="instalacionParcel"
+              class="mt-5 pt-5">
+              <h2 class="mt-1">Instalación de Parcel</h2>
+              <pre
+                class="line-numbers"
+                data-src-status="loaded"
+                tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
             npm i --save-dev parcel
           </code></pre>
-            <p>
-              Se usa la bandera
-              <span class="fw-bold text-warning">--save-dev</span> para que
-              parcel sólo esté en desarrollo y no en producción
-            </p>
+              <p>
+                Se usa la bandera
+                <span class="fw-bold text-warning">--save-dev</span> para que
+                parcel sólo esté en desarrollo y no en producción
+              </p>
+            </div>
 
-            <h2 id="instalacionBootstrapv5">Instalación de Bootstrap</h2>
-            <pre
-              class="line-numbers"
-              data-src-status="loaded"
-              tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
+            <div
+              id="instalacionBootstrapv5"
+              class="mt-5 pt-5">
+              <h2 class="mt-1">Instalación de Bootstrap</h2>
+              <pre
+                class="line-numbers"
+                data-src-status="loaded"
+                tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
               npm i --save bootstrap @popperjs/core
           </code></pre>
-
-            <h2 id="configuracionParcel">Configuración de Parcel</h2>
-            <p>
-              El archivo
-              <span class="fw-bold text-warning">src/index.html</span> se debe
-              configurar así:
-            </p>
-            <pre
-              class="line-numbers"
-              data-src-status="loaded"
-              tabindex="0"><code class="language-html" data-prismjs-copy="Copy">
+            </div>
+            <div
+              id="configuracionParcel"
+              class="mt-5 pt-5">
+              <h2 class="mt-1">Configuración de Parcel</h2>
+              <p>
+                El archivo
+                <span class="fw-bold text-warning">src/index.html</span> se debe
+                configurar así:
+              </p>
+              <pre
+                class="line-numbers"
+                data-src-status="loaded"
+                tabindex="0"><code class="language-html" data-prismjs-copy="Copy">
             &lt;!doctype html&gt;
             &lt;html lang="en"&gt;
             &lt;head&gt;
@@ -312,23 +328,23 @@
             &lt;/body&gt;
           &lt;/html&gt;
           </code></pre>
-            <p>
-              Parcel detectará automáticamente que se está usando Sass e
-              instalará el plugin Sass Parcel para soportarlo, se puede instalar
-              manualmente ejecutando manualmente el comando
-              <span class="fw-bold text-warning"
-                >npm i --save-dev @parcel/transformer-sass</span
-              >.
-            </p>
-            <p>
-              en el archivo
-              <span class="fw-bold text-warning">package.json</span> añadir como
-              funcionaran los scripts de PARCEL:
-            </p>
-            <pre
-              class="line-numbers"
-              data-src-status="loaded"
-              tabindex="0"><code class="language-javascript" data-prismjs-copy="Copy">
+              <p>
+                Parcel detectará automáticamente que se está usando Sass e
+                instalará el plugin Sass Parcel para soportarlo, se puede
+                instalar manualmente ejecutando manualmente el comando
+                <span class="fw-bold text-warning"
+                  >npm i --save-dev @parcel/transformer-sass</span
+                >.
+              </p>
+              <p>
+                en el archivo
+                <span class="fw-bold text-warning">package.json</span> añadir
+                como funcionaran los scripts de PARCEL:
+              </p>
+              <pre
+                class="line-numbers"
+                data-src-status="loaded"
+                tabindex="0"><code class="language-javascript" data-prismjs-copy="Copy">
             "scripts": {
               "dev": "cd dist && rm -Rf * && cd .. && parcel --lazy --open http://localhost:1234/ --no-source-maps",
               "start": "parcel serve",
@@ -336,134 +352,140 @@
               "test": "echo \"Error: no test specified\" && exit 1"
             },
         </code></pre>
-            <p>
-              Script
-              <span class="fw-bold text-warning"
-                >"dev": "cd dist && rm -Rf * && cd .. && parcel --lazy --open
-                http://localhost:1234/ --no-source-maps"</span
-              >: inicia el servidor de desarrollo, para ver en tiempo real como
-              se va construyendo la página
-            </p>
-            <ul>
-              <li>
-                cd dist && rm -Rf * && cd ..: desocupa el contenido de la
-                carpeta dist/
-              </li>
-              <li>parcel: Ejecuta el modo de desarrollo.</li>
-              <li>
-                --lazy: Esta bandera le indica a PARCEL que sólo vaya
-                construyendo las hojas web a medida que se necesiten, es útil
-                para cuando el sitio tiene muchas hojas y no hace falta que
-                todas estén presentes.
-              </li>
-              <li>
-                --open http://localhost:1234/ : Abre una pestaña del navegador
-                en la dirección http://localhost:1234/.
-              </li>
-              <li>
-                --no-source-maps: Con esta bandera PARCEL no genera los archivos
-                map
-              </li>
-            </ul>
-            <p>
-              Script
-              <span class="fw-bold text-warning">"start": "parcel serve"</span>:
-              funciona parecido al script dev.
-            </p>
+              <p>
+                Script
+                <span class="fw-bold text-warning"
+                  >"dev": "cd dist && rm -Rf * && cd .. && parcel --lazy --open
+                  http://localhost:1234/ --no-source-maps"</span
+                >: inicia el servidor de desarrollo, para ver en tiempo real
+                como se va construyendo la página
+              </p>
+              <ul>
+                <li>
+                  cd dist && rm -Rf * && cd ..: desocupa el contenido de la
+                  carpeta dist/
+                </li>
+                <li>parcel: Ejecuta el modo de desarrollo.</li>
+                <li>
+                  --lazy: Esta bandera le indica a PARCEL que sólo vaya
+                  construyendo las hojas web a medida que se necesiten, es útil
+                  para cuando el sitio tiene muchas hojas y no hace falta que
+                  todas estén presentes.
+                </li>
+                <li>
+                  --open http://localhost:1234/ : Abre una pestaña del navegador
+                  en la dirección http://localhost:1234/.
+                </li>
+                <li>
+                  --no-source-maps: Con esta bandera PARCEL no genera los
+                  archivos map
+                </li>
+              </ul>
+              <p>
+                Script
+                <span class="fw-bold text-warning">"start": "parcel serve"</span
+                >: funciona parecido al script dev.
+              </p>
 
-            <p>
-              Script
-              <span class="fw-bold text-warning"
-                >"build": "cd dist && rm -Rf * && cd .. && parcel build
-                --public-url --no-source-maps"</span
-              >: genera los archivos de despliegue o de producción./
-            </p>
-            <ul>
-              <li>
-                parcel build: ejecuta la generación de los archivos para
-                producción.
-              </li>
-              <li>
-                --public-url ./: Añade el prefijo "./" en las rutas absolutas a
-                assets. Útil para despliegues en GitHub Pages.
-              </li>
-            </ul>
-            <p>
-              También en este mismo archivo
-              <span class="fw-bold text-warning">package.json</span> se debe
-              intercambiar:
-            </p>
-            <pre
-              class="line-numbers"
-              data-src-status="loaded"
-              tabindex="0"><code class="language-javascript" data-prismjs-copy="Copy">
+              <p>
+                Script
+                <span class="fw-bold text-warning"
+                  >"build": "cd dist && rm -Rf * && cd .. && parcel build
+                  --public-url --no-source-maps"</span
+                >: genera los archivos de despliegue o de producción./
+              </p>
+              <ul>
+                <li>
+                  parcel build: ejecuta la generación de los archivos para
+                  producción.
+                </li>
+                <li>
+                  --public-url ./: Añade el prefijo "./" en las rutas absolutas
+                  a assets. Útil para despliegues en GitHub Pages.
+                </li>
+              </ul>
+              <p>
+                También en este mismo archivo
+                <span class="fw-bold text-warning">package.json</span> se debe
+                intercambiar:
+              </p>
+              <pre
+                class="line-numbers"
+                data-src-status="loaded"
+                tabindex="0"><code class="language-javascript" data-prismjs-copy="Copy">
               "main": "index.js",
       </code></pre>
-            <p>por</p>
-            <pre
-              class="line-numbers"
-              data-src-status="loaded"
-              tabindex="0"><code class="language-javascript" data-prismjs-copy="Copy">
+              <p>por</p>
+              <pre
+                class="line-numbers"
+                data-src-status="loaded"
+                tabindex="0"><code class="language-javascript" data-prismjs-copy="Copy">
               "source": "src/index.html",
             </code></pre>
-            <p>Ahora la punto de entrada es el archivo index.html.</p>
-            <p>
-              Esta plantilla está configurada de forma tal que es innecesario
-              realizar correcciones en las rutas absolutas de la(s) páginas web.
-            </p>
-            <p>
-              Desde ahora se puede iniciar Parcel, en la carpeta
-              <span class="fw-bold text-warning">my-project</span>
-              en el terminal, ejecuta cualquiera de los dos scripts npm recién
-              añadidos:
-            </p>
-            <pre
-              class="line-numbers"
-              data-src-status="loaded"
-              tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
+              <p>Ahora la punto de entrada es el archivo index.html.</p>
+              <p>
+                Esta plantilla está configurada de forma tal que es innecesario
+                realizar correcciones en las rutas absolutas de la(s) páginas
+                web.
+              </p>
+              <p>
+                Desde ahora se puede iniciar Parcel, en la carpeta
+                <span class="fw-bold text-warning">my-project</span>
+                en el terminal, ejecuta cualquiera de los dos scripts npm recién
+                añadidos:
+              </p>
+              <pre
+                class="line-numbers"
+                data-src-status="loaded"
+                tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
               npm start
             </code></pre>
-            <p>ó</p>
-            <pre
-              class="line-numbers"
-              data-src-status="loaded"
-              tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
+              <p>ó</p>
+              <pre
+                class="line-numbers"
+                data-src-status="loaded"
+                tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
               npm run dev
             </code></pre>
+            </div>
 
-            <h2 id="importacionBootstrapv5">Importación de BOOTSTRAP</h2>
-            <p>
-              Para la importación de Bootstrap en Parcel se requiere dos
-              importaciones, una en el archivo
-              <span class="fw-bold text-warning">styles.scss</span> y otra en el
-              <span class="fw-bold text-warning">main.js</span>.
-            </p>
-            <p>
-              La importación del CSS de Bootstrap. Añade en el archivo
-              <span class="fw-bold text-warning">src/scss/styles.scss</span> el
-              siguiente código para importar todo el Sass fuente de Bootstrap.
-            </p>
-            <pre
-              class="line-numbers"
-              data-src-status="loaded"
-              tabindex="0"><code class="language-css" data-prismjs-copy="Copy">
+            <div
+              id="importacionBootstrapv5"
+              class="mt-5 pt-5">
+              <h2 class="mt-1">Importación de BOOTSTRAP</h2>
+              <p>
+                Para la importación de Bootstrap en Parcel se requiere dos
+                importaciones, una en el archivo
+                <span class="fw-bold text-warning">styles.scss</span> y otra en
+                el <span class="fw-bold text-warning">main.js</span>.
+              </p>
+              <p>
+                La importación del CSS de Bootstrap. Añade en el archivo
+                <span class="fw-bold text-warning">src/scss/styles.scss</span>
+                el siguiente código para importar todo el Sass fuente de
+                Bootstrap.
+              </p>
+              <pre
+                class="line-numbers"
+                data-src-status="loaded"
+                tabindex="0"><code class="language-css" data-prismjs-copy="Copy">
               // Import all of Bootstrap's CSS
               @import "bootstrap/scss/bootstrap";
         </code></pre>
-            <p>
-              La importación del JS de Bootstrap. Añade en el archivo
-              <span class="fw-bold text-warning">src/js/main.js</span> el
-              siguiente código para importar todo el código fuente de Javascript
-              de Bootstrap:
-            </p>
-            <p>
-              La importación de código CSS de usuario también se importa en este
-              mismo archivo.
-            </p>
-            <pre
-              class="line-numbers"
-              data-src-status="loaded"
-              tabindex="0"><code class="language-javascript" data-prismjs-copy="Copy">
+              <p>
+                La importación del JS de Bootstrap. Añade en el archivo
+                <span class="fw-bold text-warning">src/js/main.js</span> el
+                siguiente código para importar todo el código fuente de
+                Javascript de Bootstrap:
+              </p>
+              <p>
+                La importación de código CSS de usuario también se importa en
+                este mismo archivo.
+              </p>
+              <pre
+                class="line-numbers"
+                data-src-status="loaded"
+                tabindex="0"><code class="language-javascript" data-prismjs-copy="Copy">
             // Import all of Bootstrap's JS
             import * as bootstrap from 'bootstrap'
 
@@ -471,25 +493,36 @@
             import '../scss/styles.scss';
           </code></pre>
 
-            <p>
-              Ahora ya se puede generar una página web utilizando Bootstrap y
-              Parcel.
-            </p>
-            <h2 id="compilacionProyectoProduccion">
-              Compilación del proyecto para Producción
-            </h2>
-            <p>
-              Cuando se haya terminado y se quiera obtener la versión para
-              producción se ejecuta el siguiente comando y los archivos se
-              quedan disponibles en la carpeta
-              <span class="fw-bold text-warning">dist</span>.
-            </p>
-            <pre
-              class="line-numbers"
-              data-src-status="loaded"
-              tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
+              <p>
+                Ahora ya se puede generar una página web utilizando Bootstrap y
+                Parcel.
+              </p>
+            </div>
+            <div
+              id="compilacionProyectoProduccion"
+              class="mt-5 pt-5">
+              <h2 class="mt-1">Compilación del proyecto para Producción</h2>
+              <p>
+                Cuando se haya terminado y se quiera obtener la versión para
+                producción se ejecuta el siguiente comando y los archivos se
+                quedan disponibles en la carpeta
+                <span class="fw-bold text-warning">dist</span>.
+              </p>
+              <pre
+                class="line-numbers"
+                data-src-status="loaded"
+                tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
             npm run build
             </code></pre>
+              <p>
+                Es fundamental tener precaución con el código JavaScript dentro
+                de la etiqueta <code>&lt;script></code>, ya que debe tratarse
+                como un módulo. Si no se hace así, las variables que se
+                actualizan con la compilación del código HTML pueden no reflejar
+                esos cambios en las instancias correspondientes en el código
+                JavaScript.
+              </p>
+            </div>
           </div>
         </article>
         <!-- fin Parcel NPM -->

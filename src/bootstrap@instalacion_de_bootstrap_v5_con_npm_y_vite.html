@@ -215,8 +215,8 @@
       </div>
     </nav>
     <!-- navbar -->
-    <div class="row col">
-      <main class="pt-5 col-lg-8">
+    <div class="row col pb-3 mt-5">
+      <main class="col-lg-8 col">
         <!-- -------------------------------- principal -------------------------------- -->
         <!-- vite NPM -->
         <article
@@ -235,37 +235,86 @@
             >, todos los comando que se usaran en este tutorial son ejecutados
             en la terminal BASH de GIT.
           </p>
-          <h2 id="configuracionInicial">Configuración Inicial</h2>
-          <pre
-            class="line-numbers"
-            data-src-status="loaded"
-            tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
+          <p>
+            Se va a crear un proyecto Bootstrap con Vite desde cero, por lo que
+            es necesario cumplir con algunos requisitos previos y seguir ciertos
+            pasos antes de comenzar. Esta guía asume que se tiene instalado
+            Node.js y que se tiene cierta experiencia con el uso del terminal.
+          </p>
+
+          <div
+            id="configuracionInicial"
+            class="mt-5 pt-5">
+            <h2 class="mt-1">Configuración Inicial</h2>
+
+            <pre
+              class="line-numbers"
+              data-src-status="loaded"
+              tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
                   mkdir my-project && cd my-project
                   npm init -y
                   npm i --save-dev vite
                   npm i --save bootstrap @popperjs/core
                   npm i --save-dev sass
               </code></pre>
-          <h3 id="configuracionEspacioTrabajo">
-            Configuración del Espacio de Trabajo
-          </h3>
-          <pre
-            class="line-numbers"
-            data-src-status="loaded"
-            tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
+            <p>
+              <b>Crear una carpeta de proyecto e inicializar <code>npm</code></b
+              >: Se creará la carpeta "mi-proyecto" y se inicializará
+              <code>npm</code> con el argumento <code>-y</code>
+              para evitar que haga las preguntas interactivas.
+            </p>
+            <p>
+              <b>Instalación Vite</b>: Aquí sólo hay una dependencia de la
+              herramienta de compilación. Se Usará <code>--save-dev</code> para
+              indicar que esta dependencia es sólo para uso de desarrollo y no
+              para producción.
+            </p>
+            <p>
+              <b>Instalar Bootstrap</b>: Se puede instalar Bootstrap. Además, se
+              instalará Popper, ya que es necesario para el posicionamiento de
+              los desplegables, popovers y tooltips. Si no se tiene previsto
+              usar esos componentes, se puede omitir la instalación de este
+              último.
+            </p>
+            <p>
+              <b>Instalación dependencias adicionales</b>: Además de Vite y
+              Bootstrap, es necesario contar con otra dependencia (Sass) para
+              importar y empaquetar correctamente el CSS de Bootstrap.
+            </p>
+
+            <div
+              id="configuracionEspacioTrabajo"
+              class="mt-5 pt-5">
+              <h3 class="mt-1">Configuración del Espacio de Trabajo</h3>
+              <pre
+                class="line-numbers"
+                data-src-status="loaded"
+                tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
                   mkdir {src,src/js,src/scss}
                   touch src/index.html src/js/main.js src/scss/styles.scss vite.config.js
               </code></pre>
-          <h3 id="configuracionVite">Configuración de Vite</h3>
-          <p>
-            En el archivo
-            <span class="fw-bold text-warning">vite.config.js</span>, se llena
-            con:
-          </p>
-          <pre
-            class="line-numbers"
-            data-src-status="loaded"
-            tabindex="0"><code class="language-javascript" data-prismjs-copy="Copy">
+              <p>
+                La carpeta "my-project" ya ha sido creada y se ha inicializado
+                <code>npm</code>. Ahora, se procederá a crear la carpeta "src",
+                el archivo de hojas de estilo y el archivo JavaScript para
+                completar la estructura del proyecto. Para llevar a cabo esto,
+                ejecuta el siguiente código dentro de "my-project".
+              </p>
+            </div>
+
+            <div
+              id="configuracionVite"
+              class="mt-5 pt-5">
+              <h3 class="mt-1">Configuración de Vite</h3>
+              <p>
+                En el archivo
+                <span class="fw-bold text-warning">vite.config.js</span>, se
+                llena con:
+              </p>
+              <pre
+                class="line-numbers"
+                data-src-status="loaded"
+                tabindex="0"><code class="language-javascript" data-prismjs-copy="Copy">
                   const path = require('path')
 
                   export default {
@@ -278,15 +327,15 @@
                     }
                   }
                 </code></pre>
-          <p>
-            El archivo
-            <span class="fw-bold text-warning">src/index.html</span>, se llena
-            con la siguiente plantilla:
-          </p>
-          <pre
-            class="line-numbers"
-            data-src-status="loaded"
-            tabindex="0"><code class="language-html" data-prismjs-copy="Copy">
+              <p>
+                El archivo
+                <span class="fw-bold text-warning">src/index.html</span>, se
+                llena con la siguiente plantilla:
+              </p>
+              <pre
+                class="line-numbers"
+                data-src-status="loaded"
+                tabindex="0"><code class="language-html" data-prismjs-copy="Copy">
                 &lt;!doctype html&gt;
                 &lt;html lang="en"&gt;
                 &lt;head&gt;
@@ -303,15 +352,15 @@
                 &lt;/body&gt;
               &lt;/html&gt;
               </code></pre>
-          <p>
-            Mientras que el archivo
-            <span class="fw-bold text-warning">package.json</span> debe quedar
-            configurado así:
-          </p>
-          <pre
-            class="line-numbers"
-            data-src-status="loaded"
-            tabindex="0"><code class="language-javascript" data-prismjs-copy="Copy">
+              <p>
+                Mientras que el archivo
+                <span class="fw-bold text-warning">package.json</span> debe
+                quedar configurado así:
+              </p>
+              <pre
+                class="line-numbers"
+                data-src-status="loaded"
+                tabindex="0"><code class="language-javascript" data-prismjs-copy="Copy">
                 {
                   "scripts": {
                     "start": "vite",
@@ -320,60 +369,66 @@
                   },
                 }
             </code></pre>
-          <p>
-            Iniciar el proyecto con vite:
-            <span class="fw-bold text-warning">npm start</span>, en el navegador
-          </p>
-
-          <h2 id="importacionBootstrapv5">Importación Bootstrap v5</h2>
-          <p>
-            En el archivo
-            <span class="fw-bold text-warning">src/scss/styles.scss</span> se
-            importa los estilos CSS:
-          </p>
-          <pre
-            class="line-numbers"
-            data-src-status="loaded"
-            tabindex="0"><code class="language-css" data-prismjs-copy="Copy">
+              <p>
+                Iniciar el proyecto con vite:
+                <span class="fw-bold text-warning">npm start</span>, en el
+                navegador
+              </p>
+            </div>
+          </div>
+          <div
+            id="importacionBootstrapv5"
+            class="mt-5 pt-5">
+            <h2 class="mt-1">Importación Bootstrap v5</h2>
+            <p>
+              En el archivo
+              <span class="fw-bold text-warning">src/scss/styles.scss</span> se
+              importa los estilos CSS:
+            </p>
+            <pre
+              class="line-numbers"
+              data-src-status="loaded"
+              tabindex="0"><code class="language-css" data-prismjs-copy="Copy">
                   // Import all of Bootstrap's CSS
                   @import "bootstrap/scss/bootstrap";
               </code></pre>
-          <p>
-            El archivo
-            <span class="fw-bold text-warning">src/js/main.js</span> se carga e
-            importa los CSS y JS de Bootstrap agregando.
-          </p>
-          <pre
-            class="line-numbers"
-            data-src-status="loaded"
-            tabindex="0"><code class="language-js" data-prismjs-copy="Copy">
+            <p>
+              El archivo
+              <span class="fw-bold text-warning">src/js/main.js</span> se carga
+              e importa los CSS y JS de Bootstrap agregando.
+            </p>
+            <pre
+              class="line-numbers"
+              data-src-status="loaded"
+              tabindex="0"><code class="language-js" data-prismjs-copy="Copy">
                   // Import our custom CSS
                   import '../scss/styles.scss'
 
                   // Import all of Bootstrap's JS
                   import * as bootstrap from 'bootstrap'
               </code></pre>
-
-          <h2 id="instalacionpluginPurgeCSSHTML">
-            Instalación Plugin PurgeCSS y Plugin HTML
-          </h2>
-          <pre
-            class="line-numbers"
-            data-src-status="loaded"
-            tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
+          </div>
+          <div
+            id="instalacionpluginPurgeCSSHTML"
+            class="mt-5 pt-5">
+            <h2 class="mt-1">Instalación Plugin PurgeCSS y Plugin HTML</h2>
+            <pre
+              class="line-numbers"
+              data-src-status="loaded"
+              tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
                   npm i vite-plugin-purgecss
                   npm i vite-plugin-html
               </code></pre>
-          <p>
-            El plugin <b>purgecss</b> elimina toda clase de CSS que no sea
-            utilizada y el <b>HTML</b> elimina todo espacio extra o cambio de
-            línea del documento HTML y deja todo el código en una sola línea.
-          </p>
-          <p>El archivo vite.cfg.js se debe configurar asi:</p>
-          <pre
-            class="line-numbers"
-            data-src-status="loaded"
-            tabindex="0"><code class="language-javascript" data-prismjs-copy="Copy">
+            <p>
+              El plugin <b>purgecss</b> elimina toda clase de CSS que no sea
+              utilizada y el <b>HTML</b> elimina todo espacio extra o cambio de
+              línea del documento HTML y deja todo el código en una sola línea.
+            </p>
+            <p>El archivo vite.cfg.js se debe configurar asi:</p>
+            <pre
+              class="line-numbers"
+              data-src-status="loaded"
+              tabindex="0"><code class="language-javascript" data-prismjs-copy="Copy">
                   import htmlPurge from 'vite-plugin-purgecss'
                   import { createHtmlPlugin } from 'vite-plugin-html'
 
@@ -398,16 +453,19 @@
                     }
                   }
               </code></pre>
-
-          <h2 id="configuracionesFinales">Configuraciones Finales</h2>
-          <p>
-            El archivo <span class="fw-bold text-warning">package.json</span>,
-            finalmente se debe tener asi:
-          </p>
-          <pre
-            class="line-numbers"
-            data-src-status="loaded"
-            tabindex="0"><code class="language-javascript" data-prismjs-copy="Copy">
+          </div>
+          <div
+            id="configuracionesFinales"
+            class="mt-5 pt-5">
+            <h2 class="mt-1">Configuraciones Finales</h2>
+            <p>
+              El archivo <span class="fw-bold text-warning">package.json</span>,
+              finalmente se debe tener asi:
+            </p>
+            <pre
+              class="line-numbers"
+              data-src-status="loaded"
+              tabindex="0"><code class="language-javascript" data-prismjs-copy="Copy">
                   {
                     "name": "my-project",
                     "version": "1.0.0",
@@ -433,59 +491,68 @@
                     }
                   }
               </code></pre>
-          <h2 id="compilacionProyectoProduccion">
-            Compilación del proyecto para Producción
-          </h2>
-          <p>
-            Cuando se haya terminado y se quiera obtener la versión para
-            producción se ejecuta el comando:
-            <span class="fw-bold text-warning">npm run build</span> y los
-            archivos se quedan disponibles en la carpeta <b>dist</b>."
-          </p>
-          <h3 id="correccionArchivoIndex.html">
-            Corrección del Archivo <b>index.html</b>
-          </h3>
-          <p>
-            Corregir las direcciones de llamado a los archivos css y js
-            insertando un punto "." antes del slash, debe quedar asi en la
-            cabecera
-            <span class="fw-bold text-warning">&lt;head&gt;</span> del archivo:
-          </p>
-          <pre
-            class="line-numbers"
-            data-src-status="loaded"
-            tabindex="0"><code class="language-html" data-prismjs-copy="Copy">
+          </div>
+
+          <div
+            id="compilacionProyectoProduccion"
+            class="mt-5 pt-5">
+            <h2 class="mt-1">Compilación del proyecto para Producción</h2>
+            <p>
+              Cuando se haya terminado y se quiera obtener la versión para
+              producción se ejecuta el comando:
+              <span class="fw-bold text-warning">npm run build</span> y los
+              archivos se quedan disponibles en la carpeta <b>dist</b>."
+            </p>
+            <div
+              id="correccionArchivoIndex.html"
+              class="mt-5 pt-5">
+              <h3 class="mt-1">Corrección del Archivo <b>index.html</b></h3>
+              <p>
+                Corregir las direcciones de llamado a los archivos css y js
+                insertando un punto "." antes del slash, debe quedar asi en la
+                cabecera
+                <span class="fw-bold text-warning">&lt;head&gt;</span> del
+                archivo:
+              </p>
+              <pre
+                class="line-numbers"
+                data-src-status="loaded"
+                tabindex="0"><code class="language-html" data-prismjs-copy="Copy">
                   &lt;script type="module" crossorigin src="./assets/index-e9ba998b.js"&gt;&lt;/script&gt; y
                   &lt;link rel="stylesheet" href="./assets/index-1b619488.css"&gt;
               </code></pre>
-          <p>
-            Si se tienen imágenes que están guardadas en la carpeta
-            <span class="fw-bold text-warning">assets/</span>, también se debe
-            corregir la dirección colocándole el punto antes del slash (/) a su
-            dirección, p. ej.
-            <span class="fw-bold text-warning">./assets/sun-86eb3c88.svg</span>.
-          </p>
-          <p>
-            Si la imagen se encuentra en la etiqueta
-            <span class="fw-bold text-warning">&lt;script&gt;</span>, esta no
-            aparecerá en la carpeta
-            <span class="fw-bold text-warning">assets/</span>, se debe copiar en
-            esta carpeta y su dirección se debe cambiar p. ej de
-            <span class="fw-bold text-warning">./images/moon.svg</span> a
-            <span class="fw-bold text-warning">./assets/moon.svg</span>
-          </p>
+              <p>
+                Si se tienen imágenes que están guardadas en la carpeta
+                <span class="fw-bold text-warning">assets/</span>, también se
+                debe corregir la dirección colocándole el punto antes del slash
+                (/) a su dirección, p. ej.
+                <span class="fw-bold text-warning"
+                  >./assets/sun-86eb3c88.svg</span
+                >.
+              </p>
+              <p>
+                Si la imagen se encuentra en la etiqueta
+                <span class="fw-bold text-warning">&lt;script&gt;</span>, esta
+                no aparecerá en la carpeta
+                <span class="fw-bold text-warning">assets/</span>, se debe
+                copiar en esta carpeta y su dirección se debe cambiar p. ej de
+                <span class="fw-bold text-warning">./images/moon.svg</span> a
+                <span class="fw-bold text-warning">./assets/moon.svg</span>
+              </p>
+            </div>
+          </div>
         </article>
         <!-- fin vite NPM -->
       </main>
       <!-- -------------------------------- fin principal -------------------------------- -->
 
       <!-- -------------------------------- barra lateral -------------------------------- -->
-      <aside class="col-lg-4 pt-5">
+      <aside class="col-lg-4">
         <div>
           <h1>Índice</h1>
           <ul class="list-unstyled">
             <li>
-              <a href="#configuracionInical">Configuración Inicial</a>
+              <a href="#configuracionInicial">Configuración Inicial</a>
               <ul>
                 <li>
                   <a href="#configuracionEspacioTrabajo"

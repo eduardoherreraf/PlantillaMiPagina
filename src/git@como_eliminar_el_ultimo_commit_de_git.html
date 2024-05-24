@@ -217,15 +217,11 @@
     </nav>
     <!-- navbar -->
 
-    <div class="row col">
-      <!-- -------------------------------- principal -------------------------------- -->
-
-      <main class="pt-5 col-lg-8">
+    <div class="row col pb-3 mt-5">
+      <main class="col-lg-8 col">
+        <!-- -------------------------------- principal -------------------------------- -->
         <!-- Borrar Ultimo Commit -->
-
-        <article
-          class="row border-1 border-bottom pb-3"
-          id="about">
+        <article class="row border-1 border-bottom pb-3">
           <h1>Como Eliminar el Último Commit de GIT</h1>
 
           <div>
@@ -255,170 +251,187 @@
               último <span class="fw-bold text-warning">commit</span> realizado.
             </p>
 
-            <h2 id="commitNoGithub">El Commit aún no Está en Github</h2>
+            <div
+              id="commitNoGithub"
+              class="mt-5 pt-5">
+              <h2 class="mt-1">El Commit aún no Está en Github</h2>
+              <p>
+                Este es el caso más común y fácil, cuando el
 
-            <p>
-              Este es el caso más común y fácil, cuando el
+                <span class="fw-bold text-warning">commit</span>
 
-              <span class="fw-bold text-warning">commit</span>
+                áun no se ha empujado al repo remoto (Github, GitLab,
+                Bitbucket,...), se tiene tres casos posibles:
+              </p>
+              <div
+                id="volverPenultimoBorrandoCambios"
+                class="mt-5 pt-5">
+                <h3 class="mt-1">
+                  Volver al Penúltimo Commit Borrando los Últimos Cambios
+                </h3>
 
-              áun no se ha empujado al repo remoto (Github, GitLab,
-              Bitbucket,...), se tiene tres casos posibles:
-            </p>
+                <p>
+                  Si lo que se necesita es volver al estado que tenía el repo en
+                  el
 
-            <h3 id="volverPenultimoBorrandoCambios">
-              Volver al Penúltimo Commit Borrando los Últimos Cambios
-            </h3>
+                  <span class="fw-bold text-warning">penúltimo commit</span>
 
-            <p>
-              Si lo que se necesita es volver al estado que tenía el repo en el
+                  , es decir, borrar todos los cambios realizados, se debe
+                  correr en línea de comandos del terminal el siguiente comando:
+                </p>
 
-              <span class="fw-bold text-warning">penúltimo commit</span>
-
-              , es decir, borrar todos los cambios realizados, se debe correr en
-              línea de comandos del terminal el siguiente comando:
-            </p>
-
-            <pre
-              class="line-numbers"
-              data-src-status="loaded"
-              tabindex="0">
+                <pre
+                  class="line-numbers"
+                  data-src-status="loaded"
+                  tabindex="0">
             <code
               class="language-bash"
               data-prismjs-copy="Copy"
             >git reset HEAD^ --hard</code>
           </pre>
 
-            <p>
-              Este comando elimina el último
+                <p>
+                  Este comando elimina el último
 
-              <span class="fw-bold text-warning">commit</span>
+                  <span class="fw-bold text-warning">commit</span>
 
-              del historial, dejando la carpeta de trabajo tal cual estaba en el
+                  del historial, dejando la carpeta de trabajo tal cual estaba
+                  en el
 
-              <span class="fw-bold text-warning">penúltimo commit</span>
+                  <span class="fw-bold text-warning">penúltimo commit</span>
 
-              y ahora este se convierte en el último.
-            </p>
+                  y ahora este se convierte en el último.
+                </p>
+              </div>
+              <div
+                id="volverPenultimoSinPerderCambios"
+                class="mt-5 pt-5">
+                <h3 class="mt-1">
+                  Volver al Penúltimo Commit Sin Perder los Cambios Actuales
+                </h3>
 
-            <h3 id="volverPenultimoSinPerderCambios">
-              Volver al Penúltimo Commit Sin Perder los Cambios Actuales
-            </h3>
+                <p>
+                  En este caso no se desea perder los cambios, ya sea porque lo
+                  único que se debe hacer es corregir un archivo y no más, en
+                  este caso se usa el siguiente comando:
+                </p>
 
-            <p>
-              En este caso no se desea perder los cambios, ya sea porque lo
-              único que se debe hacer es corregir un archivo y no más, en este
-              caso se usa el siguiente comando:
-            </p>
+                <pre>
+                  <code
+                    class="language-bash"
+                    data-prismjs-copy="Copy"
+                  >git reset HEAD^ --soft</code>
+                </pre>
+              </div>
+              <div
+                id="soloIncluirAlgunosArchivos"
+                class="mt-5 pt-5">
+                <h3 class="mt-1">Sólo se Debe Incluir Algunos Archivos</h3>
 
-            <pre>
-            <code
-              class="language-bash"
-              data-prismjs-copy="Copy"
-            >git reset HEAD^ --soft</code>
-          </pre>
+                <p>
+                  En algunos casos lo único que hace falta es incluir algún
+                  archivo que se haya omitido por cualquier motivo, se puede
+                  incluir en el último
 
-            <h3 id="soloIncluirAlgunosArchivos">
-              Sólo se Debe Incluir Algunos Archivos
-            </h3>
+                  <span class="fw-bold text-warning">commit</span>
 
-            <p>
-              En algunos casos lo único que hace falta es incluir algún archivo
-              que se haya omitido por cualquier motivo, se puede incluir en el
-              último
+                  sin necesidad de borrarlo con el siguiente código:
+                </p>
 
-              <span class="fw-bold text-warning">commit</span>
+                <pre>
+                  <code
+                    class="language-bash"
+                    data-prismjs-copy="Copy"
+                  >
+                    git add .
+                    git commit --amend --no-edit
+                    git push origin --force
+                  </code>
+                </pre>
 
-              sin necesidad de borrarlo con el siguiente código:
-            </p>
+                <p>
+                  Primero se añaden los archivos para luego incluirlos en el
+                  último
 
-            <pre>
-            <code
-              class="language-bash"
-              data-prismjs-copy="Copy"
-            >
-              git add .
-              git commit --amend --no-edit
-            </code>
-          </pre>
+                  <span class="fw-bold text-warning">commit</span>
 
-            <p>
-              Primero se añaden los archivos para luego incluirlos en el último
+                  . En este caso no se edita el mensaje del
 
-              <span class="fw-bold text-warning">commit</span>
+                  <span class="fw-bold text-warning">commit</span>
 
-              . En este caso no se edita el mensaje del
+                  .
+                </p>
+              </div>
+            </div>
 
-              <span class="fw-bold text-warning">commit</span>
+            <div
+              id="commitGithub"
+              class="mt-5 pt-5">
+              <h2 class="mt-1">El Commit ya Está en Github</h2>
+              <p>
+                En este caso se debe tener en cuenta que el
+                <span class="fw-bold text-warning">commit</span>
+                ya fue empujado al servidor remoto, puede ser Github, Bitbucket,
+                Gitlab o similar.
+              </p>
 
-              .
-            </p>
+              <p>
+                Hay una condición inflexible, los dos repos, el local y el
+                remoto deben estar sincronizados, es decir, se debió haber usado
+                el comando
 
-            <h2 id="commitGithub">El Commit ya Está en Github</h2>
+                <code>git pull</code>
 
-            <p>
-              En este caso se debe tener en cuenta que el
-              <span class="fw-bold text-warning">commit</span>
-              ya fue empujado al servidor remoto, puede ser Github, Bitbucket,
-              Gitlab o similar.
-            </p>
+                para sincronizar el repo local con el remoto o haberlo
+                descargado con
 
-            <p>
-              Hay una condición inflexible, los dos repos, el local y el remoto
-              deben estar sincronizados, es decir, se debió haber usado el
-              comando
+                <code>git clone</code>
 
-              <code>git pull</code>
+                .
+              </p>
 
-              para sincronizar el repo local con el remoto o haberlo descargado
-              con
+              <p>
+                Primero, se debe destruir el último
 
-              <code>git clone</code>
+                <span class="fw-bold text-warning">commit</span>
 
-              .
-            </p>
+                , para ello se usa el comando:
+              </p>
 
-            <p>
-              Primero, se debe destruir el último
-
-              <span class="fw-bold text-warning">commit</span>
-
-              , para ello se usa el comando:
-            </p>
-
-            <pre>
+              <pre>
             <code
               class="language-bash"
               data-prismjs-copy="Copy"
             >git reset HEAD^ --hard</code>
           </pre>
 
-            <p>
-              Y luego se debe sincronizar forzosamente este cambio al repo
-              remoto, con el comando:
-            </p>
+              <p>
+                Y luego se debe sincronizar forzosamente este cambio al repo
+                remoto, con el comando:
+              </p>
 
-            <pre>
+              <pre>
             <code
               class="language-bash"
               data-prismjs-copy="Copy"
             >git push origin -f</code>
           </pre>
 
-            <p>
-              Donde
+              <p>
+                Donde
 
-              <span class="fw-bold text-warning">origin</span>
+                <span class="fw-bold text-warning">origin</span>
 
-              es el nombre del repo remoto.
-            </p>
+                es el nombre del repo remoto.
+              </p>
 
-            <p>
-              Se debe tener mucho cuidado al usar este último comando, porque en
-              el caso que el repo remoto vaya por delante al repo local toda
-              esta información será destruida y este repo quedará igual al
-              local.
-            </p>
+              <p>
+                Se debe tener mucho cuidado al usar este último comando, porque
+                en el caso que el repo remoto vaya por delante al repo local
+                toda esta información será destruida y este repo quedará igual
+                al local.
+              </p>
+            </div>
           </div>
         </article>
         <!-- fin Borrar Ultimo Commit -->
@@ -427,7 +440,7 @@
       <!-- -------------------------------- fin principal -------------------------------- -->
 
       <!-- -------------------------------- barra lateral -------------------------------- -->
-      <aside class="col-lg-4 pt-5">
+      <aside class="col-lg-4">
         <h1>Índice</h1>
         <ul class="list-unstyled">
           <li>
