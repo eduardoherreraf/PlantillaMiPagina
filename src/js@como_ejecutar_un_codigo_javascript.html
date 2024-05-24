@@ -241,8 +241,57 @@
                 modernos tienen una consola de desarrollador donde se puede
                 escribir y ejecutar código JavaScript.
               </p>
-              <h3>Ventajas</h3>
+
               <div>
+                <h3>Como se Utiliza</h3>
+                <p>
+                  A la pestaña de
+                  <span class="fw-bold text-warning">consola</span> se puede
+                  llegar con una combinación de teclas, que son diferentes
+                  dependiendo del navegador utilizado, a saber:
+                </p>
+                <ul>
+                  <li>
+                    <b>Mozilla Firefox</b>: Presionando
+                    <kbd>Ctrl + Shift + K</kbd> (Windows) o
+                    <kbd>Cmd + Option + K</kbd> (Mac).
+                  </li>
+                  <li>
+                    <b>Google Chrome</b>: con
+                    <kbd>Ctrl + Shift + J</kbd> (Windows) o
+                    <kbd>Cmd + Option + J</kbd> (Mac).
+                  </li>
+                  <li>
+                    <b>Microsoft Edge</b>: <kbd>F12</kbd> y luego selecciona la
+                    pestaña "Console".
+                  </li>
+                  <li>
+                    <b>Apple Safari</b>: Habilitar en el menú de desarrollador
+                    en las preferencias avanzadas, luego presionar
+                    <kbd>Cmd + Option + C</kbd>.
+                  </li>
+                </ul>
+                <p>
+                  En la imagen siguiente se presenta la consola del navegador
+                  Mozilla Firefox con un ejemplo sencillo. Se asignan dos
+                  valores a dos variables, luego se realiza la suma en una
+                  tercera variable, y se utiliza el comando más común para
+                  depuración, <code>console.log()</code>, para mostrar el
+                  resultado de la suma.
+                </p>
+                <a
+                  href="./images/js@consola.jpg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img
+                    src="./images/js@consola_tn.jpg"
+                    alt="Consola del navegador Mozilla Firefox"
+                    class="img-fluid mb-3"
+                /></a>
+              </div>
+
+              <div>
+                <h3>Ventajas</h3>
                 <ul>
                   <li>
                     <b>Acceso Rápido y Fácil</b>:
@@ -314,8 +363,8 @@
                   </li>
                 </ul>
               </div>
-              <h3>Desventajas</h3>
               <div>
+                <h3>Desventajas</h3>
                 <ul>
                   <li>
                     <b>Limitaciones en el Alcance del Código</b>:
@@ -396,36 +445,6 @@
                   </li>
                 </ul>
               </div>
-              <h3>Como se Utiliza</h3>
-              <div>
-                <p>
-                  A la pestaña de
-                  <span class="fw-bold text-warning">consola</span> se puede
-                  llegar con una combinación de teclas, que son diferentes
-                  dependiendo del navegador utilizado, a saber:
-                </p>
-                <ul>
-                  <li>
-                    <b>Mozilla Firefox</b>: Presionando
-                    <code>Ctrl + Shift + K</code> (Windows) o
-                    <code>Cmd + Option + K</code> (Mac).
-                  </li>
-                  <li>
-                    <b>Google Chrome</b>: con
-                    <code>Ctrl + Shift + J</code> (Windows) o
-                    <code>Cmd + Option + J</code> (Mac).
-                  </li>
-                  <li>
-                    <b>Microsoft Edge</b>: <code>F12</code> y luego selecciona
-                    la pestaña "Console".
-                  </li>
-                  <li>
-                    <b>Apple Safari</b>: Habilitar el menú de desarrollador en
-                    las preferencias avanzadas, luego presionar
-                    <code>Cmd + Option + C</code>.
-                  </li>
-                </ul>
-              </div>
             </div>
 
             <div
@@ -434,10 +453,45 @@
               <h2 class="mt-1">2. Archivos HTML</h2>
               <p>
                 Se puede escribir el código JavaScript dentro de un archivo
-                HTML.
+                HTML, para esta labor se usa las etiquetas
+                <code>&lt;script></code> y
+                <code class="text-nowrap">&lt;/script></code>.
               </p>
-              <h3>Ventajas</h3>
+
               <div>
+                <h3>Como se Utiliza</h3>
+                <p>
+                  A continuación se muestra un ejemplo de uso de código
+                  Javascript en un archivo HTML:
+                </p>
+                <pre
+                  class="line-numbers"
+                  data-src-status="loaded"
+                  tabindex="0">
+                    <code class="language-html" data-prismjs-copy="Copy">
+                      &lt;!DOCTYPE html>
+                      &lt;html lang="es">
+                      &lt;head>
+                          &lt;meta charset="UTF-8">
+                          &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+                          &lt;title>Ejecutar JavaScript&lt;/title>
+                      &lt;/head>
+                      &lt;body>
+                          &lt;h1>Hola Mundo&lt;/h1>
+                          &lt;script>
+                              console.log('Este es un código JavaScript ejecutado desde HTML');
+                          &lt;/script>
+                      &lt;/body>
+                      &lt;/html>
+                    </code>
+                </pre>
+                <p>
+                  En este ejemplo se imprime en la consola la frase "Este es un
+                  código JavaScript ejecutado desde HTML".
+                </p>
+              </div>
+              <div>
+                <h3>Ventajas</h3>
                 <ul>
                   <li>
                     <b>Fácil de empezar</b>:
@@ -499,8 +553,9 @@
                   </li>
                 </ul>
               </div>
-              <h3>Desventajas</h3>
+
               <div>
+                <h3>Desventajas</h3>
                 <ul>
                   <li>
                     <b>Limitaciones de entorno</b>:
@@ -579,38 +634,6 @@
                   </li>
                 </ul>
               </div>
-              <h3>Como se Utiliza</h3>
-              <div>
-                <p>
-                  A continuación se muestra un ejemplo de uso de código
-                  Javascript en un archivo HTML:
-                </p>
-                <pre
-                  class="line-numbers"
-                  data-src-status="loaded"
-                  tabindex="0">
-                    <code class="language-html" data-prismjs-copy="Copy">
-                      &lt;!DOCTYPE html>
-                      &lt;html lang="es">
-                      &lt;head>
-                          &lt;meta charset="UTF-8">
-                          &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
-                          &lt;title>Ejecutar JavaScript&lt;/title>
-                      &lt;/head>
-                      &lt;body>
-                          &lt;h1>Hola Mundo&lt;/h1>
-                          &lt;script>
-                              console.log('Este es un código JavaScript ejecutado desde HTML');
-                          &lt;/script>
-                      &lt;/body>
-                      &lt;/html>
-                    </code>
-                </pre>
-                <p>
-                  En este ejemplo se imprime en la consola la frase "Este es un
-                  código JavaScript ejecutado desde HTML".
-                </p>
-              </div>
             </div>
 
             <div
@@ -623,8 +646,44 @@
                 para JavaScript en el lado del servidor. Se puede ejecutar
                 JavaScript directamente desde la línea de comandos.
               </p>
-              <h3>Ventajas</h3>
+
               <div>
+                <h3>Como se Utiliza</h3>
+                <p>
+                  Para poder utilizar esta forma de ejecución del código, se
+                  hace necesario tener instalado nodejs:
+                </p>
+                <ul>
+                  <li>
+                    <b>Creación del archivo fuente js</b>: Crear el archivo con
+                    extensión <code>.js</code>, por ejemplo <code>app.js</code>:
+                    <pre
+                      class="line-numbers"
+                      data-src-status="loaded"
+                      tabindex="0">
+                      <code class="language-bash" data-prismjs-copy="Copy">
+                        console.log('Hola desde Node.js');
+                      </code>
+                    </pre>
+                  </li>
+                  <li>
+                    <b>Ejecutar el archivo fuente js</b>: Abrir la terminal o el
+                    símbolo del sistema, navegar hasta el directorio donde está
+                    guardado el archivo <code>app.js</code> y ejecutar:
+                    <pre
+                      class="line-numbers"
+                      data-src-status="loaded"
+                      tabindex="0">
+                      <code class="language-bash" data-prismjs-copy="Copy">
+                        node app.js
+                      </code>
+                    </pre>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3>Ventajas</h3>
                 <ul>
                   <li>
                     <b>Alta Performance y Escalabilidad</b>:
@@ -704,8 +763,9 @@
                   </li>
                 </ul>
               </div>
-              <h3>Desventajas</h3>
+
               <div>
+                <h3>Desventajas</h3>
                 <ul>
                   <li>
                     <b>Modelo de un Solo Hilo</b>:
@@ -774,51 +834,6 @@
                     opción en comparación con lenguajes como Go o Java.
                   </li>
                 </ul>
-              </div>
-              <h3>Como se Utiliza</h3>
-              <div>
-                <p>
-                  Para poder utilizar esta forma de ejecución del código, se
-                  hace necesario tener instalado nodejs:
-                </p>
-                <ol>
-                  <li>
-                    <b>Instalar Node.js</b>: Descargar el instalador de
-                    <a
-                      href="https://nodejs.org/en"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >nodejs</a
-                    >
-                    desde su página principal preferentemente la versión
-                    <abbr title="long-term support">LTS</abbr>.
-                  </li>
-                  <li>
-                    <b>Creación del archivo fuente js</b>: Crear el archivo con
-                    extensión <code>.js</code>, por ejemplo <code>app.js</code>:
-                    <pre
-                      class="line-numbers"
-                      data-src-status="loaded"
-                      tabindex="0">
-                      <code class="language-bash" data-prismjs-copy="Copy">
-                        console.log('Hola desde Node.js');
-                      </code>
-                    </pre>
-                  </li>
-                  <li>
-                    <b>Ejecutar el archivo fuente js</b>: Abrir la terminal o el
-                    símbolo del sistema, navegar hasta el directorio donde está
-                    guardado el archivo <code>app.js</code> y ejecutar:
-                    <pre
-                      class="line-numbers"
-                      data-src-status="loaded"
-                      tabindex="0">
-                      <code class="language-bash" data-prismjs-copy="Copy">
-                        node app.js
-                      </code>
-                    </pre>
-                  </li>
-                </ol>
               </div>
             </div>
 
@@ -903,7 +918,26 @@
                       >JSBin</a
                     ></b
                   >: También se utiliza para prototipos rápidos de HTML, CSS y
-                  JavaScript.
+                  JavaScript. En este ejemplo se tiene un código en la columna
+                  HTML. <br />
+                  En este caso, se presenta un fragmento de código en la sección
+                  HTML, que exhibe un párrafo
+                  <code>&lt;p>Javascript&lt;/p></code>. En la sección CSS, se
+                  ajusta el tamaño del texto, mientras que en la sección
+                  JavaScript se define el cambio de color del texto. La sección
+                  console opera de manera similar a la consola de Git, y la
+                  sección output muestra cómo se visualizaría la página en un
+                  navegador.
+                  <a
+                    href="./images/js@jsbin.jpg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="d-flex justify-content-center mt-3"
+                    ><img
+                      src="./images/js@jsbin_tn.jpg"
+                      class="img-fluid"
+                      alt="Plataforma en línea JSBIN"
+                  /></a>
                 </li>
               </ol>
             </div>
