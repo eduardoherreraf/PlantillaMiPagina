@@ -12,7 +12,7 @@
       content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Como Eliminar el Último Commit de GIT - Ing. Eduardo Herrera Forero." />
+      content="Este artículo describe cómo eliminar el último commit local o remoto." />
     <meta
       name="author"
       content="Ing. Eduardo Herrera Forero" />
@@ -39,7 +39,7 @@
       content="Como Eliminar el Último Commit de GIT - Ing. Eduardo Herrera Forero." />
     <meta
       property="og:description"
-      content="Como Eliminar el Último Commit de GIT - Ing. Eduardo Herrera Forero." />
+      content="Este artículo describe cómo eliminar el último commit local o remoto." />
     <meta
       property="og:image"
       content="https://i.imgur.com/JKbKYrO.png" />
@@ -66,7 +66,7 @@
       content="Como Eliminar el Último Commit de GIT - Ing. Eduardo Herrera Forero." />
     <meta
       name="twitter:description"
-      content="Como Eliminar el Último Commit de GIT - Ing. Eduardo Herrera Forero." />
+      content="Este artículo describe cómo eliminar el último commit local o remoto." />
     <meta
       name="twitter:image"
       content="https://i.imgur.com/JKbKYrO.png" />
@@ -221,9 +221,8 @@
       <main class="col-lg-8 col">
         <!-- -------------------------------- principal -------------------------------- -->
         <!-- Borrar Ultimo Commit -->
-        <article class="row border-1 border-bottom pb-3">
+        <article class="row pb-3">
           <h1>Como Eliminar el Último Commit de GIT</h1>
-
           <div>
             <p>
               El propósito principal al emplear un sistema de control de
@@ -231,22 +230,19 @@
               preciso e inalterado de todas las etapas por las que ha atravesado
               el código fuente de un proyecto. A medida que realiza
               modificaciones en el código y se efectúan
-
-              <span class="fw-bold text-warning">commits</span>
-
-              , su historial se expande progresivamente. En cualquier momento,
-              se tiene la capacidad de examinar el estado exacto que tenía un
-              archivo en cualquier punto del pasado y, además, identificar quién
-              llevó a cabo un cambio específico, lo cual resulta de gran
-              utilidad. No obstante, en ocasiones, se puede agregar
-              inadvertidamente a este historial cosas que no tenían porque
-              añadir. Por ejemplo, se podría hacer un
-              <span class="fw-bold text-warning">commit</span>
+              <span class="fw-bold text-warning">commits</span>, su historial se
+              expande progresivamente. En cualquier momento, se tiene la
+              capacidad de examinar el estado exacto que tenía un archivo en
+              cualquier punto del pasado y, además, identificar quién llevó a
+              cabo un cambio específico, lo cual resulta de gran utilidad. No
+              obstante, en ocasiones, se puede agregar inadvertidamente a este
+              historial cosas que no tenían porque añadir. Por ejemplo, se
+              podría hacer un <span class="fw-bold text-warning">commit</span>
               sin intención, incluir archivos innecesarios, o incorporar un
               molesto error que preferiríamos que nadie notara y que se nos haya
               escapado.
             </p>
-            <p>
+            <p class="mb-n5">
               Se tratará el caso en el que se refiere exclusivamente a borrar el
               último <span class="fw-bold text-warning">commit</span> realizado.
             </p>
@@ -255,7 +251,7 @@
               id="commitNoGithub"
               class="mt-5 pt-5">
               <h2 class="mt-1">El Commit aún no Está en Github</h2>
-              <p>
+              <p class="mb-n5">
                 Este es el caso más común y fácil, cuando el
 
                 <span class="fw-bold text-warning">commit</span>
@@ -263,9 +259,10 @@
                 áun no se ha empujado al repo remoto (Github, GitLab,
                 Bitbucket,...), se tiene tres casos posibles:
               </p>
+
               <div
                 id="volverPenultimoBorrandoCambios"
-                class="mt-5 pt-5">
+                class="mt-5 pt-5 mb-n5">
                 <h3 class="mt-1">
                   Volver al Penúltimo Commit Borrando los Últimos Cambios
                 </h3>
@@ -305,7 +302,7 @@
               </div>
               <div
                 id="volverPenultimoSinPerderCambios"
-                class="mt-5 pt-5">
+                class="mt-5 pt-5 mb-n5">
                 <h3 class="mt-1">
                   Volver al Penúltimo Commit Sin Perder los Cambios Actuales
                 </h3>
@@ -325,7 +322,7 @@
               </div>
               <div
                 id="soloIncluirAlgunosArchivos"
-                class="mt-5 pt-5">
+                class="mt-5 pt-5 mb-n5">
                 <h3 class="mt-1">Sólo se Debe Incluir Algunos Archivos</h3>
 
                 <p>
@@ -374,57 +371,37 @@
                 ya fue empujado al servidor remoto, puede ser Github, Bitbucket,
                 Gitlab o similar.
               </p>
-
               <p>
                 Hay una condición inflexible, los dos repos, el local y el
                 remoto deben estar sincronizados, es decir, se debió haber usado
-                el comando
-
-                <code>git pull</code>
-
-                para sincronizar el repo local con el remoto o haberlo
-                descargado con
-
-                <code>git clone</code>
-
-                .
+                el comando <code>git pull</code> para sincronizar el repo local
+                con el remoto o haberlo descargado con <code>git clone</code> .
               </p>
-
               <p>
                 Primero, se debe destruir el último
-
-                <span class="fw-bold text-warning">commit</span>
-
-                , para ello se usa el comando:
+                <span class="fw-bold text-warning">commit</span> , para ello se
+                usa el comando:
               </p>
-
               <pre>
-            <code
-              class="language-bash"
-              data-prismjs-copy="Copy"
-            >git reset HEAD^ --hard</code>
-          </pre>
-
+                <code
+                  class="language-bash"
+                  data-prismjs-copy="Copy"
+                >git reset HEAD^ --hard</code>
+              </pre>
               <p>
                 Y luego se debe sincronizar forzosamente este cambio al repo
                 remoto, con el comando:
               </p>
-
               <pre>
-            <code
-              class="language-bash"
-              data-prismjs-copy="Copy"
-            >git push origin -f</code>
-          </pre>
-
+                <code
+                  class="language-bash"
+                  data-prismjs-copy="Copy"
+                >git push origin -f</code>
+              </pre>
               <p>
-                Donde
-
-                <span class="fw-bold text-warning">origin</span>
-
-                es el nombre del repo remoto.
+                Donde <span class="fw-bold text-warning">origin</span> es el
+                nombre del repo remoto.
               </p>
-
               <p>
                 Se debe tener mucho cuidado al usar este último comando, porque
                 en el caso que el repo remoto vaya por delante al repo local
@@ -442,7 +419,7 @@
       <!-- -------------------------------- barra lateral -------------------------------- -->
       <aside class="col-lg-4">
         <h1>Índice</h1>
-        <ul class="list-unstyled">
+        <ul class="list-unstyled px-3">
           <li>
             <a href="#commitNoGithub">El Commit aún no Está en Github</a>
             <ul>

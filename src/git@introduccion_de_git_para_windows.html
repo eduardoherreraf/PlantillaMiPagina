@@ -12,7 +12,7 @@
       content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="El objetivo central de este texto es presentar las distintas herramientas que se utilizan para desarrollar y luego mantener el código JavaScript" />
+      content="En este artículo se explican las características principales, así como las ventajas y desventajas del sistema de control de versiones GIT." />
     <meta
       name="author"
       content="Ing. Eduardo Herrera Forero" />
@@ -27,7 +27,7 @@
       content="notranslate" />
     <link
       rel="canonical"
-      href="https://eduardoherreraf.github.io/js@configurar_el_entorno_de_trabajo_Javascript.html" />
+      href="https://eduardoherreraf.github.io/git@introduccion_de_git_para_windows.html" />
     <!-- Fin Metaetiquetas -->
 
     <!-- Open Graph data -->
@@ -36,10 +36,10 @@
       content="website" />
     <meta
       property="og:title"
-      content="Configurar el Entorno de trabajo para Javascript - Ing. Eduardo Herrera Forero." />
+      content="Introducción de GIT para Windows - Ing. Eduardo Herrera Forero." />
     <meta
       property="og:description"
-      content="El objetivo central de este texto es presentar las distintas herramientas que se utilizan para desarrollar y luego mantener el código JavaScript" />
+      content="En este artículo se explican las características principales, así como las ventajas y desventajas del sistema de control de versiones GIT." />
     <meta
       property="og:image"
       content="https://i.imgur.com/JKbKYrO.png" />
@@ -48,7 +48,7 @@
       content="Logo del ingeniero Eduardo Herrera Forero" />
     <meta
       property="og:url"
-      content="https://eduardoherreraf.github.io/js@configurar_el_entorno_de_trabajo_Javascript.html" />
+      content="https://eduardoherreraf.github.io/git@introduccion_de_git_para_windows.html" />
     <meta
       property="og:locale"
       content="es_CO" />
@@ -63,10 +63,10 @@
       content="@ehfeduardo" />
     <meta
       name="twitter:title"
-      content="Configurar el Entorno de trabajo para Javascript - Ing. Eduardo Herrera Forero." />
+      content="Introducción de GIT para Windows - Ing. Eduardo Herrera Forero." />
     <meta
       name="twitter:description"
-      content="El objetivo central de este texto es presentar las distintas herramientas que se utilizan para desarrollar y luego mantener el código JavaScript" />
+      content="En este artículo se explican las características principales, así como las ventajas y desventajas del sistema de control de versiones GIT." />
     <meta
       name="twitter:image"
       content="https://i.imgur.com/JKbKYrO.png" />
@@ -111,8 +111,7 @@
     <!-- fin iconos -->
 
     <title>
-      Configurar el Entorno de trabajo para Javascript - Ing. Eduardo Herrera
-      Forero.
+      Introducción de GIT para Windows - Ing. Eduardo Herrera Forero.
     </title>
 
     <script
@@ -216,380 +215,180 @@
       </div>
     </nav>
     <!-- navbar -->
+
     <div class="row col pb-3 mt-5">
       <main class="col-lg-8 col">
         <!-- -------------------------------- principal -------------------------------- -->
+        <!-- Introducción de GIT para Windows  -->
         <article
-          class="row border-1"
-          id="js">
-          <header>
-            <h1>Configurar el Entorno de trabajo para Javascript</h1>
-          </header>
-          <div>
-            <p class="mb-n5">
-              El objetivo central de este texto es presentar las distintas
-              herramientas que se utilizan para desarrollar y luego mantener el
-              código JavaScript.
+          class="row pb-3"
+          id="comandosBasicosdeGIT">
+          <div class="mb-n5">
+            <h1>Introducción de GIT para Windows</h1>
+            <p>
+              Git es un sistema de control de versiones distribuido, ampliamente
+              utilizado en el desarrollo de software. Fue creado por Linus
+              Torvalds en 2005, inicialmente para gestionar el desarrollo del
+              núcleo de Linux. Su principal función es llevar un registro de los
+              cambios realizados en el código fuente a lo largo del tiempo,
+              permitiendo a los desarrolladores colaborar de manera eficiente y
+              revertir a versiones anteriores si es necesario.
             </p>
+          </div>
 
-            <div
-              id="navegadores"
-              class="mt-5 pt-5 mb-n5">
-              <h2 class="mt-1">1. Navegadores (Browsers)</h2>
-              <p>
-                Primero se necesita de un
-                <span class="fw-bold text-warning">navegador moderno</span>, a
-                continuación se muestra un listado de los navegadores modernos
-                más utilizados en la actualidad:
-              </p>
-              <ul>
-                <li>Mozilla Firefox</li>
-                <li>Brave</li>
-                <li>Opera</li>
-                <li>Apple Safari</li>
-                <li>Google Chrome</li>
-                <li>Microsoft Edge</li>
-              </ul>
-              <p>
-                Para instalar estos navegadores, simplemente, después de
-                descargar el archivo instalador ejecutable, que generalmente
-                tiene una extensión
-                <span class="fw-bold text-warning">.exe</span> , se hace clic
-                sobre este y, solo es necesario hacer clic en "Siguiente,
-                siguiente..." y, por último, en "Instalar".
-              </p>
-            </div>
+          <!-- Características Principales de Git -->
+          <div
+            id="característicasPrincipalesdeGit"
+            class="mt-5 pt-5 mb-n5">
+            <h2 class="mt-1">Características Principales de Git</h2>
+            <ul>
+              <li>
+                <b>Distribuido</b>: A diferencia de los sistemas de control de
+                versiones centralizados, como SubVersioN (SVN), en Git cada
+                desarrollador tiene una copia completa del repositorio,
+                incluyendo el historial completo de cambios.
+              </li>
+              <li>
+                <b>Ramas y Fusiones</b>: Git facilita la creación de ramas para
+                desarrollar características o corregir errores de manera
+                aislada. Estas ramas se pueden fusionar fácilmente con la rama
+                principal una vez que el desarrollo o la corrección ha sido
+                completada.
+              </li>
+              <li>
+                <b>Rendimiento</b>: Git está diseñado para ser rápido. La
+                mayoría de las operaciones se realizan localmente, lo que
+                significa que son casi instantáneas.
+              </li>
+              <li>
+                <b>Integridad</b>: Git asegura la integridad del código y del
+                historial de cambios mediante el uso de sumas de verificación
+                (SHA-1). Esto garantiza que los datos no se corrompan sin ser
+                detectados.
+              </li>
+              <li>
+                <b>Rastreo de Cambios</b>: Git permite ver exactamente qué
+                cambios se realizaron, quién los hizo y cuándo. Esto es crucial
+                para la colaboración en proyectos grandes donde muchos
+                desarrolladores pueden estar trabajando en diferentes partes del
+                código al mismo tiempo.
+              </li>
+            </ul>
+          </div>
 
-            <div
-              id="editorCodigo"
-              class="mt-5 pt-5 mb-n5">
-              <h2 class="mt-1">2. Editor de Código</h2>
-              <p>
-                Un editor de código es una herramienta de software diseñada
-                específicamente para escribir y editar código fuente de
-                programas informáticos. Los editores de código proporcionan un
-                entorno optimizado para los desarrolladores, ofreciendo
-                características que facilitan la escritura, lectura y
-                organización del código. Se utilizan principalmente para el
-                desarrollo de software, desde aplicaciones web y móviles hasta
-                sistemas complejos.
-              </p>
+          <!-- ventajas -->
+          <div
+            id="ventajas"
+            class="mt-5 pt-5 mb-n5">
+            <h2 class="mt-1">Ventajas</h2>
+            <ul>
+              <li>
+                <b>Distribuido</b>: Cada usuario tiene una copia completa del
+                repositorio, incluyendo todo el historial de cambios. Esto
+                permite trabajar de manera offline y reduce la dependencia de un
+                servidor central.
+              </li>
+              <li>
+                <b>Rendimiento</b>: La mayoría de las operaciones son locales,
+                por lo que son extremadamente rápidas en comparación con los
+                sistemas centralizados. Las acciones como el commit, la creación
+                de ramas y el merge son muy eficientes.
+              </li>
+              <li>
+                <b>Integridad de Datos</b>: Git usa sumas de verificación SHA-1
+                para garantizar la integridad de los datos. Esto asegura que
+                cualquier cambio en el historial de los archivos es detectado,
+                evitando la corrupción de datos.
+              </li>
+              <li>
+                <b>Ramas y Fusiones (Branching and Merging)</b>: Git facilita la
+                creación y el manejo de ramas, lo cual es crucial para el
+                desarrollo de nuevas características y la corrección de errores
+                sin afectar la rama principal. El proceso de fusionar ramas es
+                robusto y eficiente.
+              </li>
+              <li>
+                <b>Colaboración</b>: Git facilita la colaboración entre
+                múltiples desarrolladores. Herramientas como pull requests y
+                revisión de código son soportadas directamente o a través de
+                plataformas como GitHub, GitLab y Bitbucket.
+              </li>
+              <li>
+                <b>Historial Detallado</b>: Permite un seguimiento detallado de
+                todos los cambios realizados, quién los hizo y cuándo. Esto es
+                útil para auditorías y para entender la evolución del proyecto.
+              </li>
+              <li>
+                <b>Herramientas y Ecosistema</b>: Existen muchas herramientas y
+                servicios que se integran bien con Git, como sistemas de
+                integración continua (CI/CD), plataformas de gestión de
+                proyectos, y editores de código.
+              </li>
+            </ul>
+          </div>
 
-              <h3>Características Principales de un Editor de Código</h3>
-              <ul>
-                <li>
-                  <b>Resaltado de Sintaxis</b>: Muestra el código en diferentes
-                  colores y estilos según la sintaxis del lenguaje, lo que
-                  facilita la lectura y comprensión.
-                </li>
-                <li>
-                  <b>Autocompletado</b>: Sugerencias automáticas mientras se
-                  escribe, que ahorran tiempo y reducen errores tipográficos.
-                </li>
-                <li>
-                  <b>IntelliSense</b>: Proporciona sugerencias inteligentes
-                  basadas en el contexto del código, incluyendo nombres de
-                  variables, funciones y parámetros.
-                </li>
-                <li>
-                  <b>Depuración</b>: Herramientas integradas para ejecutar y
-                  probar el código, permitiendo establecer puntos de
-                  interrupción, inspeccionar variables y seguir el flujo del
-                  programa.
-                </li>
-                <li>
-                  <b>Integración con Control de Versiones</b>: Soporte para
-                  sistemas de control de versiones como Git, que permite
-                  realizar commits, ver diferencias y gestionar ramas
-                  directamente desde el editor.
-                </li>
-                <li>
-                  <b>Terminal Integrado</b>: Un terminal insertado que permite
-                  ejecutar comandos sin salir del editor.
-                </li>
-                <li>
-                  <b>Extensiones y Plugins</b>: Posibilidad de añadir
-                  funcionalidades adicionales mediante extensiones o plugins
-                  desarrollados por la comunidad o terceros.
-                </li>
-                <li>
-                  <b>Multilenguaje</b>: Soporte para múltiples lenguajes de
-                  programación, facilitando el trabajo en proyectos que usan más
-                  de un lenguaje.
-                </li>
-              </ul>
-              <h3>Ejemplos de Editores de Código Populares</h3>
-              <ul>
-                <li>
-                  <b>Visual Studio Code (VS Code)</b>: Este es editor de código
-                  más popular, para windows es recomendable descargar el
-                  <span class="fw-bold text-warning">System Installer</span> por
-                  ser la mejor opción.
-                </li>
-                <li>
-                  <b>Sublime Text 4</b>: Sigue siendo un editor de código
-                  relevante y eficaz en el panorama actual del desarrollo de
-                  software, también dispone de una
-                  <span class="fw-bold text-warning">versión portable</span>.
-                </li>
-                <li>
-                  <b>WebStorm</b>: Este editor sigue siendo uno de los entornos
-                  de desarrollo integrados (IDE) más avanzados y populares para
-                  el desarrollo en JavaScript, TypeScript y tecnologías
-                  relacionadas. Desarrollado por JetBrains, WebStorm es
-                  altamente valorado por su conjunto de características
-                  avanzadas, rendimiento robusto y capacidad para mejorar la
-                  productividad del desarrollador. Ese IDE tiene un costo de US
-                  $69.00 el primer año, sin embargo tiene una
-                  <span class="fw-bold text-warning">licencia gratuita</span>
-                  para estudiantes.
-                </li>
-                <li>
-                  <b>Brackets</b>: Este editor fue desarrollado por Adobe, pero
-                  en el 2021 lo abandona y se convierte en un proyecto de código
-                  abierto bajo la licencia MIT.
-                </li>
-                <li><b>Notepad++</b></li>
-                <li><b>Github Atom</b></li>
-                <li><b>Vim</b></li>
-              </ul>
-
-              <h3>Visual Studio Code (VSC)</h3>
-              <p>
-                Este es el editor de código más utilizado por la comunidad, de
-                este se mostrará los temas y extensiones que más se usan en el
-                desarrollo web.
-              </p>
-              <h4>Temas</h4>
-              <p>
-                Se recomienda elegir un tema de tono oscuro para cuidar la salud
-                visual del programador.
-              </p>
-              <ul>
-                <li>
-                  <b>Material Icon Theme</b>: Esta extensión reemplaza los
-                  iconos predeterminados de VSC con iconos que son más
-                  distintivos y visualmente atractivos, lo que facilita la
-                  identificación rápida de los tipos de archivos y carpetas en
-                  tu proyecto.
-                </li>
-                <li>
-                  <b>Drácula Official</b>: Un tema oscuro con colores vibrantes
-                  y alto contraste que es fácil para los ojos durante largas
-                  sesiones de codificación. Material Theme: Inspirado en
-                  Material Design de Google, este tema ofrece una apariencia
-                  limpia y moderna con colores atractivos y una paleta bien
-                  equilibrada.
-                </li>
-                <li>
-                  <b>One Dark Pro</b>: Basado en el tema por defecto de Atom,
-                  este tema oscuro es popular por su estilo elegante y su
-                  legibilidad.
-                </li>
-                <li>
-                  <b>Monokai</b>: Un tema clásico que ha sido popular durante
-                  mucho tiempo, conocido por su combinación distintiva de
-                  colores brillantes y oscuros.
-                </li>
-                <li>
-                  <b>Night Owl</b>: Diseñado para minimizar la fatiga visual,
-                  este tema oscuro ofrece colores suaves y contrastes
-                  cuidadosamente ajustados.
-                </li>
-                <li>
-                  <b>Cobalt2 Theme Official</b>: Desarrollado por el diseñador
-                  Wes Bos, este tema tiene colores llamativos y un estilo
-                  moderno y limpio.
-                </li>
-                <li>
-                  <b>City Lights Theme</b>: Con un diseño minimalista y una
-                  paleta de colores suaves, este tema es popular entre aquellos
-                  que prefieren un aspecto discreto pero elegante.
-                </li>
-                <li>
-                  <b>Tokyo Night Theme</b>: Inspirado en la vida nocturna de
-                  Tokio, este tema oscuro presenta colores atrevidos y vibrantes
-                  que se destacan en la oscuridad. GitHub Theme: Basado en los
-                  colores utilizados en GitHub, este tema es simple y limpio,
-                  ideal para aquellos que desean una experiencia de codificación
-                  familiar.
-                </li>
-                <li>
-                  <b>Nord Theme</b>: Con una combinación de tonos fríos y
-                  cálidos, este tema ofrece un aspecto único y atractivo que es
-                  popular entre muchos usuarios de VSC.
-                </li>
-              </ul>
-
-              <h4>Extensiones</h4>
-              <p>Las más utilizadas son:</p>
-              <ul>
-                <li>
-                  <b>ESLint</b>: Ayuda a identificar y corregir errores de
-                  estilo y sintaxis en tu código JavaScript, siguiendo las
-                  reglas definidas en el archivo de configuración ESLint.
-                </li>
-                <li>
-                  <b>Prettier</b>: Formatea automáticamente el código JavaScript
-                  según las reglas predefinidas, lo que ayuda a mantener un
-                  estilo de código consistente en todo el proyecto.
-                </li>
-                <li>
-                  <b>npm</b>: Proporciona soporte para trabajar con el gestor de
-                  paquetes npm dentro de VSC, lo que facilita la instalación,
-                  actualización y eliminación de dependencias en el proyecto.
-                </li>
-                <li>
-                  <b>Path Intellisense</b>: Proporciona autocompletado de rutas
-                  de archivos y directorios en tu código JavaScript, lo que
-                  facilita la navegación dentro del proyecto.
-                </li>
-                <li>
-                  <b>Code Runner</b>: Permite ejecutar rápidamente porciones de
-                  código JavaScript seleccionadas o el archivo completo desde
-                  Visual Studio Code, sin necesidad de salir del editor.
-                </li>
-                <li>
-                  <b>JavaScript (ES6) code snippets</b>: Ofrece una colección de
-                  snippets (fragmentos de código) para JavaScript ES6, lo que
-                  acelera la escritura de código al proporcionar atajos para
-                  estructuras de código comunes.
-                </li>
-                <li>
-                  <b>Live Server</b>: Permite iniciar un servidor web local para
-                  proyectos de desarrollo en JavaScript y proporciona
-                  actualizaciones en tiempo real del navegador mientras se
-                  realizan cambios en el código.
-                </li>
-                <li>
-                  <b>Bracket Pair Colorizer</b>: Colorea los pares de corchetes
-                  y paréntesis en tu código JavaScript para facilitar la
-                  identificación de bloques de código anidados.
-                </li>
-                <li>
-                  <b>GitLens</b>: Ofrece una integración avanzada con Git dentro
-                  de Visual Studio Code, lo que permite ver información
-                  detallada sobre los cambios, autores y líneas de código
-                  modificadas en el repositorio Git.
-                </li>
-              </ul>
-            </div>
-
-            <div
-              id="nodejs"
-              class="mt-5 pt-5 mb-n5">
-              <h2 class="mt-1">3. Node.js</h2>
-              <p>
-                Node.js es un
-                <span class="fw-bold text-warning">entorno de ejecución</span>
-                para JavaScript en el lado del servidor. Se puede ejecutar
-                JavaScript directamente desde la línea de comandos.
-              </p>
-              <div>
-                <p>
-                  Se mostrarán los pasos de instalación y puesta a punto de
-                  Node.js
-                </p>
-                <ul>
-                  <li>
-                    <b>Instalar Node.js</b>: Descargar el instalador de
-                    <a
-                      href="https://nodejs.org/en"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >nodejs</a
-                    >
-                    desde su página principal preferentemente la versión
-                    <abbr title="long-term support">LTS</abbr>.
-                  </li>
-                  <li>
-                    Abrir una terminal, ir a la ubicación donde se creará la
-                    carpeta del proyecto, crear dicha carpeta y acceder a ella.
-                  </li>
-                  <li>
-                    <b>Iniciar proyecto</b>: Ejecutar <code>npm init -y</code>
-                  </li>
-                  <li>
-                    <b>Instalar Dependencias y Paquetes</b>: por ejemplo si se
-                    está usado un framework como Express para un servidor usar:
-                    <code>npm install express </code>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div
-              id="configuraciondeGit"
-              class="mt-5 pt-5">
-              <h2 class="mt-1">4. Configuración de Git (Opcional)</h2>
-              <p>
-                Si se planea trabajar con control de versiones, configurar Git
-                en el entorno:
-              </p>
-              <ul>
-                <li>
-                  Instala Git desde
-                  <a
-                    href="https://git-scm.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >git-scm.com</a
-                  >
-                </li>
-                <li>
-                  Configurar Git con la información del programador, en la
-                  terminal ejecutar el siguiente código: <br />
-                  <pre
-                    class="line-numbers"
-                    data-src-status="loaded"
-                    tabindex="0">
-                      <code class="language-sh" data-prismjs-copy="Copy">
-                        git config --global user.name "Nombre"
-                        git config --global user.email "email@example.com"
-                      </code>
-                  </pre>
-                  <p>
-                    Para crear un nuevo repositorio de Git, navega a la carpeta
-                    de del proyecto y ejecute el siguiente comando:
-                  </p>
-                  <pre
-                    class="line-numbers"
-                    data-src-status="loaded"
-                    tabindex="0">
-                      <code class="language-sh" data-prismjs-copy="Copy">
-                        git init
-                      </code>
-                  </pre>
-                  <p>
-                    Un <span class="fw-bold text-warning">repo</span> es la base
-                    de datos donde Git almacena todos los commits y la historia
-                    del proyecto.
-                  </p>
-                </li>
-              </ul>
-            </div>
+          <!-- desventajas -->
+          <div
+            id="desventajas"
+            class="mt-5 pt-5">
+            <h2 class="mt-1">Desventajas</h2>
+            <ul>
+              <li>
+                <b>Curva de Aprendizaje</b>: Git tiene una curva de aprendizaje
+                pronunciada para los nuevos usuarios. Sus conceptos y comandos
+                pueden ser complejos y confusos al principio.
+              </li>
+              <li>
+                <b>Complejidad en el Manejo de Conflictos</b>: Resolver
+                conflictos de merge puede ser complicado y requiere un buen
+                entendimiento del sistema. Esto puede ser un reto en equipos
+                grandes con múltiples ramas activas.
+              </li>
+              <li>
+                <b>Falta de Interfaz Gráfica Nativa</b>: Aunque existen muchas
+                interfaces gráficas para Git (como GitKraken, Sourcetree, y las
+                integraciones en editores como VSCode), Git en sí mismo es una
+                herramienta de línea de comandos, lo cual puede ser intimidante
+                para algunos usuarios.
+              </li>
+              <li>
+                <b>Tamaño del Repositorio</b>: En proyectos con grandes archivos
+                binarios o repositorios que han crecido mucho con el tiempo, Git
+                puede volverse lento y consumir mucho espacio en disco. Aunque
+                existen soluciones como Git LFS (Large File Storage), esto añade
+                complejidad.
+              </li>
+              <li>
+                <b>Compatibilidad y Conversión</b>: Migrar a Git desde otros
+                sistemas de control de versiones puede ser complicado y puede
+                requerir herramientas especializadas para mantener el historial
+                y la integridad de los datos.
+              </li>
+              <li>
+                <b>Operaciones Distribuidas</b>: La naturaleza distribuida de
+                Git puede llevar a situaciones donde las copias del repositorio
+                se desincronizan, requiriendo una gestión cuidadosa para evitar
+                problemas.
+              </li>
+            </ul>
           </div>
         </article>
+        <!-- fin Introducción de GIT para Windows -->
       </main>
       <!-- -------------------------------- fin principal -------------------------------- -->
 
       <!-- -------------------------------- barra lateral -------------------------------- -->
       <aside class="col-lg-4">
         <h1>Índice</h1>
-        <ol class="list-unstyled px-3">
+        <ul class="list-unstyled px-3">
           <li>
-            <a href="#navegadores">Navegadores</a>
+            <a href="#característicasPrincipalesdeGit"
+              >Características Principales de Git</a
+            >
           </li>
-          <li>
-            <a href="#editorCodigo">Editor de Código</a>
-          </li>
-          <li>
-            <a href="#nodejs">Node.js</a>
-          </li>
-          <li>
-            <a href="#configuraciondeGit">Configuración de Git </a>
-          </li>
-        </ol>
+          <li><a href="#ventajas">Ventajas</a></li>
+          <li><a href="#desventajas">Desventajas</a></li>
+        </ul>
       </aside>
       <!-- -------------------------------- fin barra lateral -------------------------------- -->
     </div>
