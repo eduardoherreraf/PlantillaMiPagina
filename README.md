@@ -9,7 +9,7 @@ Plantilla para Bootstrap 5 con pre-procesador SASS y con la herramienta compilac
 Descargar el repo:
 
 ```bash
-https://github.com/eduardoherreraf/Plantilla_BT5_Parcel
+git@github.com:eduardoherreraf/PlantillaMiPagina.git
 ```
 
 ### Instalación
@@ -173,6 +173,9 @@ Cuando se haya terminado y se quiera obtener la versión para producción se eje
 - [Bootstrap v5.3](https://getbootstrap.com/) - Librería web usado
 - [Parcel](https://parceljs.org/) - Copilador de código
 - [SASS](https://sass-lang.com/) - Preprocesador
+
+## Actualiación
+Este proyecto se encuantra totalmente actualizado en la dirección: https://eduardoherreraf.github.io/bootstrap@instalacion_de_bootstrap_v5_con_npm_y_parcel.html
 
 ## Autor
 
