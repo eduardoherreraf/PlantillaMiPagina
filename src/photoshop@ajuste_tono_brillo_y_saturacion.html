@@ -55,13 +55,14 @@
   <!-- navbar -->
   <nav class="row navbar navbar-expand-lg bg-body-tertiary border-1 border fixed-top nav-pills">
     <div class="container-fluid">
-      <a class="navbar-brand d-flex ms-2" href="index.html">
+      <a class="navbar-brand d-flex ms-2 " href="index.html">
         <div class="d-none d-sm-block">
           <img src="./images/logo.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30"
             class="d-inline-block align-text-top me-1" />
         </div>
         Ing. Eduardo Herrera Forero
       </a>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -75,6 +76,7 @@
           <a class="nav-link mx-1" href="index.html#blog">PUBLICACIONES</a>
           <a class="nav-link ms-1" href="index.html#contact">CONTACTO</a>
         </ul>
+
         <!--   <div class="me-3">
             <button
               id="dl-icon"
@@ -93,6 +95,7 @@
             </button>
           </div> -->
       </div>
+
     </div>
   </nav>
   <!-- navbar -->
@@ -101,7 +104,7 @@
     <main class="col-lg-8 col">
       <article class="row pb-3" id="principal">
         <div class="mb-n5">
-          <h1>Ajuste de tono, brillo y saturación</h1>
+          <h1>Ajuste de Tono, Brillo y Saturación</h1>
           <p>En Photoshop, el ajuste de tono, brillo y saturación es una herramienta clave para la edición de imágenes.
             Permite modificar las propiedades de color y luminosidad de una imagen, lo que es esencial para mejorar la
             apariencia visual o para lograr efectos artísticos específicos.</p>
@@ -166,13 +169,13 @@
               habilitada es porque es necesario tener la <span class="text-primary">capa</span> seleccionada en donde
               está la imagen.
             </p>
+            <div class="text-center imagen"><img src="./images/ps@brilloContraste.jpg" class="img-fluid"
+                alt="Brillo / Contraste">
+            </div>
             <p>Las imágenes pueden tener su brillo y contraste ajustados según el criterio del usuario, modificando la
               posición del <span class="text-warning">deslizador</span> o cambiando el <span
                 class="text-warning">porcentaje</span>.
             </p>
-            <div class="text-center imagen"><img src="./images/ps@brilloContraste.jpg" class="img-fluid"
-                alt="Brillo / Contraste">
-            </div>
             <p>La opción <span class="text-danger">Usar Heredado</span> es útil para replicar efectos específicos o
               mantener la coherencia en proyectos antiguos al aplicar ajustes o configuraciones de versiones anteriores
               del software. Esta opción permite conservar la misma apariencia y comportamiento de las herramientas y
@@ -219,6 +222,9 @@
             </div>
             <p>En esta ventana se tiene la opción <span class="text-success">Ajuste Preestablecido</span> con las
               siguientes posibilidades:</p>
+            <div class="text-center imagen"><img src="./images/ps@tonoSaturacionPreestablecidos.jpg" class="img-fluid"
+                alt="Tono / Saturación Preestablecidos">
+            </div>
             <ul>
               <li><span class="fw-bold">Por efecto</span>: este ajuste es generalmente neutral.</li>
               <li><span class="fw-bold">Cianotipo</span>: Se simula el efecto de un proceso fotográfico antiguo llamado
@@ -302,7 +308,7 @@
             <ul>
               <li>Una vez que se esté satisfecho con los ajustes, hacer clic en el menú desplegable Editar, el <span
                   class="text-danger">engranaje</span>, dentro del panel de Tono/Saturación.</li>
-              <li>Seleccionar Nuevo para guardar el ajuste como un preestablecido.</li>
+              <li>Seleccionar Guardar Valor para guardar el ajuste como un preestablecido.</li>
               <li>Se abrirá un cuadro de diálogo donde se puede nombrar el nuevo preestablecido. Introducir un nombre
                 descriptivo y hacer clic en OK.</li>
             </ul>
@@ -316,8 +322,9 @@
               "Cianes", "Azules" y "Magenta", proporcionando un control detallado sobre cómo se representa cada gama de
               color en la imagen final.</p>
 
-            <div class="text-center imagen"><img src="./images/ps@edicionGamaColores.jpg" class="img-fluid"
-                alt="Edición Gama de Colores"></div>
+            <div class="text-center imagen">
+              <img src="./images/ps@edicionGamaColores.jpg" class="img-fluid" alt="Edición Gama de Colores">
+            </div>
             <p>Esta opción es una herramienta poderosa para realizar ajustes precisos y personalizados en la imagen. Al
               seleccionar un rango de color específico, el usuario puede modificar únicamente esos colores sin afectar a
               los demás presentes en la imagen.</p>
@@ -328,7 +335,9 @@
               específica de la misma. Al activar esta casilla, se desactivan los ajustes específicos de gama de colores
               y se permite teñir la imagen con un solo color, determinado por los controles de Tono, Saturación y
               Luminosidad.</p>
-            <div class="text-center imagen"><img src="./images/ps@colorear.jpg" class="img-fluid" alt="Colorear"></div>
+            <div class="text-center imagen">
+              <img src="./images/ps@colorear.jpg" class="img-fluid" alt="Colorear">
+            </div>
 
             <p>Para restaurar los valores oprimir la tecla <kbd>alt</kbd> y esperar que en la ventana emergente de
               intensidad cambie el botón Cancelar en Restablecer.
@@ -393,23 +402,21 @@
                 <div class="text-center imagen">
                   <img src="./images/ps@capaAjuste2.jpg" class="img-fluid" alt="Capa de Ajuste">
                 </div>
+                Se puede <span class="text-success">cambiar</span> el nombre de la capa. En esta opción ya se puede
+                realizar el ajuste de valores de <span class="text-warning">Brillo/Contraste</span>.
               </li>
             </ul>
             <p>Una vez creada, la Capa de Ajuste aparecerá en el panel de capas, por encima de la capa o capas a las que
-              afectará. Para editar esta capa de ajuste se debe picar sobre el icono <img
-                src="https://helpx.adobe.com/content/dam/help/icons/brightness_contrast.png" class="img-fluid"
-                alt="Brillo / Contraste Photoshop">, en este caso Brillo / Contraste. </p>
+              afectará. Para editar esta capa de ajuste se debe picar sobre el <span class="text-danger">icono</span>
+              <img src="https://helpx.adobe.com/content/dam/help/icons/brightness_contrast.png" class="img-fluid"
+                alt="Brillo / Contraste Photoshop">, en este caso Brillo / Contraste.
+            </p>
             <div class="text-center imagen">
-              <img src="./images/ps@capaAjuste4.jpg" class="img-fluid" alt="Capa de Ajuste">
+              <img src="./images/ps@capaAjuste3.jpg" class="img-fluid" alt="Capa de Ajuste">
             </div>
-            <p>Al hacer clic en la Capa de Ajuste, se abrirán los controles específicos del ajuste en el panel
-              Propiedades. Desde allí, se pueden ajustar <span class="text-danger">los deslizadores o parámetros</span>
-              para modificar el efecto. </p>
-            <div class="text-center imagen">
-              <img src="./images/ps@capaAjuste3.jpg" class="img-fluid" alt="Capa de Ajuste Controles o Deslizadores">
-            </div>
+
             <p>Si no se está de acuerdo con los ajustes se borra únicamente esta capa con el icono de eliminación o
-              click derecho <span class="text-success fw-bold">Eliminar Capa</span>:</p>
+              click derecho Eliminar Capa:</p>
             <div class="text-center imagen">
               <img src="./images/ps@eliminarCapa.jpg" class="img-fluid" alt="Eliminar Capa de Ajuste">
             </div>
