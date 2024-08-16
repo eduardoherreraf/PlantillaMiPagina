@@ -105,11 +105,11 @@
     </div>
   </nav>
   <!-- navbar -->
+  <!-- -------------------------------- principal -------------------------------- -->
   <div class="row col">
     <main class="pt-5 col-lg-9">
-      <!-- -------------------------------- principal -------------------------------- -->
       <!-- vite NPM -->
-      <article class="row border-1 border-bottom pb-3" id="about">
+      <article class="row border-1 border-bottom pb-3">
         <h1>Instalación de Bootstrap V5, NPM y VITE</h1>
         <p>
           Esta documentación se realizó con base a la oficial entregada por
@@ -119,14 +119,14 @@
           ejecutados
           en la terminal BASH de GIT.
         </p>
-        <p class="mb-n5">
+        <p class="">
           Se va a crear un proyecto Bootstrap con Vite desde cero, por lo que
           es necesario cumplir con algunos requisitos previos y seguir ciertos
           pasos antes de comenzar. Esta guía asume que se tiene instalado
           Node.js y que se tiene cierta experiencia con el uso del terminal.
         </p>
 
-        <div id="configuracionInicial" class="mt-5 pt-5 mb-n5">
+        <div id="configuracionInicial" class="mt-5 pt-5 ">
           <h2 class="mt-1">Configuración Inicial</h2>
           <pre class="line-numbers" data-src-status="loaded" tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
                   mkdir my-project && cd my-project
@@ -154,13 +154,13 @@
             usar esos componentes, se puede omitir la instalación de este
             último.
           </p>
-          <p class="mb-n5">
+          <p class="">
             <b>Instalación dependencias adicionales</b>: Además de Vite y
             Bootstrap, es necesario contar con otra dependencia (Sass) para
             importar y empaquetar correctamente el CSS de Bootstrap.
           </p>
 
-          <div id="configuracionEspacioTrabajo" class="mt-5 pt-5 mb-n5">
+          <div id="configuracionEspacioTrabajo" class="mt-5 pt-5 ">
             <h3 class="mt-1">Configuración del Espacio de Trabajo</h3>
             <pre class="line-numbers" data-src-status="loaded" tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
                   mkdir {src,src/js,src/scss}
@@ -175,7 +175,7 @@
             </p>
           </div>
 
-          <div id="configuracionVite" class="mt-5 pt-5 mb-n5">
+          <div id="configuracionVite" class="mt-5 pt-5 ">
             <h3 class="mt-1">Configuración de Vite</h3>
             <p>
               En el archivo
@@ -238,7 +238,7 @@
             </p>
           </div>
         </div>
-        <div id="importacionBootstrapv5" class="mt-5 pt-5 mb-n5">
+        <div id="importacionBootstrapv5" class="mt-5 pt-5 ">
           <h2 class="mt-1">Importación Bootstrap v5</h2>
           <p>
             En el archivo
@@ -262,7 +262,7 @@
                   import * as bootstrap from 'bootstrap'
               </code></pre>
         </div>
-        <div id="instalacionpluginPurgeCSSHTML" class="mt-5 pt-5 mb-n5">
+        <div id="instalacionpluginPurgeCSSHTML" class="mt-5 pt-5 ">
           <h2 class="mt-1">Instalación Plugin PurgeCSS y Plugin HTML</h2>
           <pre class="line-numbers" data-src-status="loaded" tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
                   npm i vite-plugin-purgecss
@@ -300,7 +300,7 @@
                   }
               </code></pre>
         </div>
-        <div id="configuracionesFinales" class="mt-5 pt-5 mb-n5">
+        <div id="configuracionesFinales" class="mt-5 pt-5 ">
           <h2 class="mt-1">Configuraciones Finales</h2>
           <p>
             El archivo <span class="fw-bold text-warning">package.json</span>,
@@ -335,7 +335,7 @@
         </div>
         <div id="compilacionProyectoProduccion" class="mt-5 pt-5">
           <h2 class="mt-1">Compilación del proyecto para Producción</h2>
-          <p class="mb-n5">
+          <p class="">
             Cuando se haya terminado y se quiera obtener la versión para
             producción se ejecuta el comando:
             <span class="fw-bold text-warning">npm run build</span> y los
