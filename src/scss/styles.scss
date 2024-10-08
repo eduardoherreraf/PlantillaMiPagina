@@ -53,12 +53,22 @@ h1 {
 
 h2 {
   font-size: 3rem;
-  color: #6ea8fe;
 }
 
 h3 {
   font-size: 2.5rem;
-  color: #6ea8fe;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1rem;
 }
 
 .gris {
@@ -88,6 +98,10 @@ a:hover {
 
 .icon_size {
   font-size: 6rem;
+}
+
+.tituloCard {
+  height: 9rem;
 }
 
 // formulario
