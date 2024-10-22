@@ -166,12 +166,27 @@ p {
   margin-top: 0.5rem;
 }
 
-  .ancla {
-    color: inherit; /* Hereda el color del elemento padre */
-    text-decoration: none; /* Elimina el subrayado */
-  }
+.ancla {
+  color: inherit; /* Hereda el color del elemento padre */
+  text-decoration: none; /* Elimina el subrayado */
+}
 
-  .ancla:hover {
-    color: inherit; /* Controla el color cuando el enlace es hover */
-    text-decoration: none; /* Evita el subrayado en hover */
-  }
+.ancla:hover {
+  color: inherit; /* Controla el color cuando el enlace es hover */
+  text-decoration: none; /* Evita el subrayado en hover */
+}
+
+.miTabla {
+  width: 80%;
+  height: auto;
+}
+
+.miCol20 {
+  width: 20%;
+  height: auto;
+}
+
+.miCol40 {
+  width: 40%;
+  height: auto;
+}
