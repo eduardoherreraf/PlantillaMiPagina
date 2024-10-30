@@ -7,18 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Aprende que son, por qué, cuándo y en dónde utilizar comentarios Python"
+      content="Se aprenderá a establecer comunicación con una computadora: se familiarizará con la función input(), realizará conversiones de tipos de datos y se aprenderá a utilizar operadores de cadenas."
     />
     <meta
       name="tittle"
-      content="Comentarios en Python - Ing. Eduardo Herrera Forero."
+      content=" Interacción con el Usuario en Python - Ing. Eduardo Herrera Forero."
     />
     <meta name="author" content="Ing. Eduardo Herrera Forero" />
     <meta name="application-name" content="EHF" />
     <meta name="robots" content="index, follow" />
     <link
       rel="canonical"
-      href="https://eduardoherreraf.github.io/cursoPython3@06_comentarios_en_python.html"
+      href="https://eduardoherreraf.github.io/cursoPython3@07_interaccion_con_el_usuario.html"
     />
     <!-- Fin Metaetiquetas -->
 
@@ -26,11 +26,11 @@
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
-      content="Comentarios en Python - Ing. Eduardo Herrera Forero."
+      content=" Interacción con el Usuario en Python - Ing. Eduardo Herrera Forero."
     />
     <meta
       property="og:description"
-      content="Aprende que son, por qué, cuándo y en dónde utilizar comentarios Python"
+      content="Se aprenderá a establecer comunicación con una computadora: se familiarizará con la función input(), realizará conversiones de tipos de datos y se aprenderá a utilizar operadores de cadenas."
     />
     <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
     <meta
@@ -39,7 +39,7 @@
     />
     <meta
       property="og:url"
-      content="https://eduardoherreraf.github.io/cursoPython3@06_comentarios_en_python"
+      content="https://eduardoherreraf.github.io/cursoPython3@07_interaccion_con_el_usuario.html"
     />
     <meta property="og:locale" content="es_CO" />
     <!-- fin Open Graph data -->
@@ -49,15 +49,15 @@
     <meta name="twitter:site" content="@ehfeduardo" />
     <meta
       name="twitter:url"
-      content="Comentarios en Python - Ing. Eduardo Herrera Forero."
+      content=" Interacción con el Usuario en Python - Ing. Eduardo Herrera Forero."
     />
     <meta
       name="twitter:title"
-      content="https://eduardoherreraf.github.io/cursoPython3@06_comentarios_en_python"
+      content="https://eduardoherreraf.github.io/cursoPython3@07_interaccion_con_el_usuario.html"
     />
     <meta
       name="twitter:description"
-      content="Aprende que son, por qué, cuándo y en dónde utilizar comentarios Python"
+      content="Se aprenderá a establecer comunicación con una computadora: se familiarizará con la función input(), realizará conversiones de tipos de datos y se aprenderá a utilizar operadores de cadenas."
     />
     <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
     <meta
@@ -82,7 +82,9 @@
     <meta name="theme-color" content="#ffffff" />
     <!-- fin iconos -->
 
-    <title>Comentarios en Python - Ing. Eduardo Herrera Forero.</title>
+    <title>
+      Interacción con el Usuario en Python - Ing. Eduardo Herrera Forero.
+    </title>
 
     <script type="module" defer src="./js/main.js"></script>
 
@@ -177,369 +179,398 @@
     <!--  Principal  -->
     <div class="row col">
       <main class="pt-5 col-lg-9">
-        <!--  Comentarios en Python  -->
+        <!--  Interacción con el Usuario en Python  -->
         <article class="row border-1 border-bottom pb-3">
           <div>
-            <header>
-              <h1>Comentarios en Python</h1>
-            </header>
+            <header><h1>Interacción con el Usuario en Python</h1></header>
             <p>
-              Se explicará en este artículo porque es importante documentar el
-              código y porque se debe dejar comentarios. También se explicará
-              cómo hacerlo y cuándo los comentarios se consideran una buena
-              práctica.
+              La función <code>input()</code> en Python es una herramienta
+              fundamental para interactuar con el usuario. Permite que el
+              programa solicite y reciba información directamente del teclado.
             </p>
-            <!-- ¿Qué Son los Comentarios en Python? -->
-            <div id="quesonloscomentariosenPython" class="mt-5 pt-5">
-              <h2 class="mt-1">¿Qué Son los Comentarios en Python?</h2>
+            <p>
+              Cuando se llama a esta función, el programa se detiene y espera a
+              que el usuario ingrese algún dato. Una vez que el usuario presiona
+              <kbd>Enter</kbd>, el valor ingresado se devuelve como una cadena
+              de texto (string).
+            </p>
+            <div class="text-center imagen">
+              <picture>
+                <img
+                  src="https://images2.imgbox.com/b7/ae/2mEf3wli_o.png"
+                  class="img-fluid"
+                  width="50%"
+                  alt="Función input() en Python"
+                  title="Diagrama del funcionamiento de la función input() en Python"
+                />
+                <figcaption>Función input() en Python</figcaption>
+              </picture>
+            </div>
+            <!-- La función input() -->
+            <div id="laFuncionInput" class="mt-5 pt-5">
+              <h2 class="mt-1">La función input()</h2>
               <p>
-                Los comentarios en Python son líneas de código que el intérprete
-                ignora. Se utilizan para añadir notas explicativas al código,
-                haciendo que sea más fácil de entender tanto para el programador
-                que lo escribió como para otros que lo lean en el futuro. Estos
-                comentarios sirven como una especie de documentación interna,
-                ayudando a explicar el propósito de diferentes secciones de
-                código, algoritmos utilizados o decisiones de diseño.
+                La función <code>input()</code> en Python es una herramienta
+                fundamental para interactuar con el usuario. Permite que el
+                programa solicite y reciba información directamente del teclado.
               </p>
-            </div>
-            <!-- ¿Qué Son los Comentarios en Python? Fin -->
-
-            <!-- ¿Por qué Utilizar Comentarios? -->
-            <div id="porQueUtilizarComentariosPython" class="mt-5 pt-5">
-              <h2 class="mt-1">¿Por qué Utilizar Comentarios?</h2>
-              <ul>
-                <li>
-                  <span class="fw-bold">Claridad</span>: Hacen el código más
-                  legible, especialmente para proyectos grandes o complejos.
-                </li>
-                <li>
-                  <span class="fw-bold">Documentación</span>: Sirven como una
-                  especie de manual de usuario para el código.
-                </li>
-                <li>
-                  <span class="fw-bold">Recordatorio</span>: Ayudan al
-                  programador a recordar la lógica detrás de ciertas partes del
-                  código, especialmente después de un tiempo sin trabajar en él.
-                </li>
-                <li>
-                  <span class="fw-bold">Colaboración</span>: Facilitan el
-                  trabajo en equipo, ya que otros programadores pueden entender
-                  rápidamente el código y hacer modificaciones sin perderse.
-                </li>
-                <li>
-                  <span class="fw-bold">Depuración</span>: Ayudan a identificar
-                  errores en el código al explicar el flujo de ejecución
-                  esperado.
-                </li>
-              </ul>
-            </div>
-            <!-- ¿Por qué Utilizar Comentarios? Fin -->
-
-            <!-- ¿Cuándo Utilizar Comentarios en Python? -->
-            <div id="cuandoUtilizarComentariosPython" class="mt-5 pt-5">
-              <h2 class="mt-1">¿Cuándo Utilizar Comentarios en Python?</h2>
-              <ul>
-                <li>
-                  <span class="fw-bold">Explicar algoritmos complejos</span>:
-                  Cuando se utiliza un algoritmo no obvio, un comentario puede
-                  explicar su funcionamiento.
-                </li>
-                <li>
-                  <span class="fw-bold">Justificar decisiones de diseño</span>:
-                  Si hay varias opciones posibles, un comentario puede explicar
-                  por qué se eligió una en particular.
-                </li>
-                <li>
-                  <span class="fw-bold"
-                    >Señalar secciones de código problemáticas</span
-                  >: Si una parte del código es propensa a errores o difícil de
-                  entender, un comentario puede advertir al lector.
-                </li>
-                <li>
-                  <span class="fw-bold">Documentar funciones y clases</span>: Es
-                  una buena práctica añadir comentarios al principio de cada
-                  función o clase para describir su propósito y parámetros.
-                </li>
-              </ul>
-            </div>
-            <!-- ¿Cuándo Utilizar Comentarios en Python? Fin -->
-
-            <!-- ¿Dónde Colocar los Comentarios en Python? -->
-            <div id="dondeColocarlosComentariosPython" class="mt-5 pt-5">
-              <h2 class="mt-1">¿Dónde Colocar los Comentarios en Python?</h2>
-              <ul>
-                <li>
-                  <span class="fw-bold">Al inicio de un archivo</span>: Para
-                  describir el propósito general del archivo.
-                </li>
-                <li>
-                  <span class="fw-bold">Antes de una función o clase</span>:
-                  Para explicar su funcionalidad y parámetros.
-                </li>
-                <li>
-                  <span class="fw-bold">Dentro de una función</span>: Para
-                  explicar secciones de código complejas o no obvias.
-                </li>
-                <li>
-                  <span class="fw-bold">Al final de un bloque de código</span>:
-                  Para resumir el propósito del bloque.
-                </li>
-              </ul>
-            </div>
-            <!-- ¿Dónde Colocar los Comentarios en Python? Fin -->
-
-            <!-- Cómo Escribir Comentarios en Python -->
-            <div id="comoEscribirComentariosenPython" class="mt-5 pt-5">
-              <h2 class="mt-1">Cómo Escribir Comentarios en Python</h2>
               <p>
-                En Python, hay dos formas principales de escribir comentarios:
+                Cuando se llama a esta función, el programa se detiene y espera
+                a que el usuario ingrese algún dato. Una vez que el usuario
+                presiona <kbd>Enter</kbd>, el valor ingresado se devuelve como
+                una cadena de texto (string).
               </p>
-              <!-- Comentarios de una Sola Línea -->
-              <div id="comentariosdeunaSolaLineas">
-                <h3>Comentarios de una Sola Línea</h3>
-                <p>
-                  Se inician con el símbolo <kbd>#</kbd>. Todo el texto después
-                  del # hasta el final de la línea se ignora.
-                </p>
-                <pre
-                  class="line-numbers"
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-python" data-prismjs-copy="Copy">
-# Esto es un comentario de una línea
-x = 5  # Aquí asignamos el valor 5 a la variable x
-                  </code></pre>
-              </div>
-              <!-- Comentarios de una Sola Línea fin -->
 
-              <!-- Comentarios de Múltiples Líneas -->
-              <div id="comentariosdeMultiplesLineas">
-                <h3>Comentarios de Múltiples Líneas</h3>
-                <p>
-                  Los comentarios de varias líneas en Python se suelen hacer
-                  usando comillas triples (<kbd>""" ... """</kbd>). Este tipo de
-                  comentario es comúnmente utilizado para documentar funciones,
-                  clases o módulos y se le conoce como docstring o cadena de
-                  documentación. Aunque no son técnicamente comentarios (ya que
-                  Python los interpreta como una cadena de texto), permiten
-                  describir bloques de código más extensos.
-                </p>
-                <pre
-                  class="line-numbers"
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-python" data-prismjs-copy="Copy">
-"""
-Este es un comentario
-que abarca múltiples líneas.
-"""
-                  </code></pre>
-              </div>
-              <!-- Comentarios de Múltiples Líneas fin -->
-            </div>
-            <!-- Ejemplo Completo -->
-            <div id="ejemploCompleto" class="mt-5 pt-5">
-              <h2 class="mt-1">Ejemplo Completo</h2>
+              <p>Sintaxis:</p>
               <pre
                 class="line-numbers"
                 data-src-status="loaded"
                 tabindex="0"
-              ><code class="language-py" data-prismjs-copy="Copy">
-  def factorial(n):
-  """
-  Calcula el factorial de un número.
-  Args:
-    n: Un número entero no negativo.
-  Returns:
-    El factorial de n.
-  """
+              ><code class="language-python" data-prismjs-copy="Copy">
+              variable = input(prompt)
+              </code></pre>
+              <ul>
+                <li>
+                  <span class="fw-bold">prompt</span>: Es un mensaje opcional
+                  que se muestra al usuario para indicar qué tipo de información
+                  se espera.
+                </li>
+                <li>
+                  <span class="fw-bold">variable</span>: Es una variable donde
+                  se almacena la entrada del usuario.
+                </li>
+              </ul>
+              <p>Ejemplo:</p>
+              <pre
+                class="line-numbers"
+                data-src-status="loaded"
+                tabindex="0"
+              ><code class="language-python" data-prismjs-copy="Copy">
+                nombre = input("Por favor, ingresa tu nombre: ")
+                edad = input("¿Cuál es tu edad? ")
 
-  if n == 0:
-    return 1
-  else:
-    return n * factorial(n-1)
-
-# Ejemplo de uso:
-resultado = factorial(5)
-print(resultado)  # Imprime 120
-                </code></pre>
+                print("Hola,", nombre, "!")
+                print("Tienes", edad, "años.")
+                  </code></pre>
+              <ul>
+                <li>
+                  La línea
+                  <code>nombre = input("Por favor, ingresa tu nombre: ")</code>
+                  muestra el mensaje "Por favor, ingresa tu nombre:" en la
+                  consola.
+                </li>
+                <li>
+                  El programa espera a que el usuario escriba su nombre y
+                  presione Enter.
+                </li>
+                <li>
+                  El nombre ingresado se almacena en la variable
+                  <kbd>nombre</kbd>.
+                </li>
+                <li>Lo mismo ocurre con la edad en la siguiente línea.</li>
+                <li>
+                  Finalmente, se imprimen los mensajes de saludo utilizando las
+                  variables nombre y edad.
+                </li>
+              </ul>
             </div>
-            <!-- Ejemplo Completo Fin -->
+            <!-- La función input() Fin -->
 
-            <!-- Variables Autodocumentadas -->
-            <div id="variablesAutodocumentadasenPython" class="mt-5 pt-5">
-              <h2 class="mt-1">Variables Autodocumentadas</h2>
+            <!-- El Resultado de la Función input() -->
+            <div id="elResultadodelaFuncioninput" class="mt-5 pt-5">
+              <h2 class="mt-1">El Resultado de la Función input()</h2>
               <p>
-                En Python, aunque no existe un mecanismo directo para declarar
-                variables "autodocumentadas" como en otros lenguajes, se puede
-                emplear técnicas para mejorar la claridad y comprensibilidad de
-                las variables utilizadas.
+                La función <code>input()</code> siempre devuelve una cadena de
+                texto, incluso si el usuario ingresa un número.
               </p>
-              <!-- Nombres Descriptivos -->
-              <div id="nombresDescriptivoss">
-                <h3>Nombres Descriptivos</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Evitar nombres crípticos</span>:
-                    Utilizar nombres que reflejen claramente el propósito de la
-                    variable.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Use convenciones de nomenclatura</span
-                    >: Seguir a las convenciones de nomenclatura de Python (por
-                    ejemplo, snake_case para variables).
-                  </li>
-                </ul>
-                <pre
-                  class="line-numbers"
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-python" data-prismjs-copy="Copy">
-# Buen ejemplo:
-nombre_completo = "John Doe"
-edad = 30
+              <p>
+                Una cadena que contiene todos los caracteres que el usuario ha
+                introducido desde el teclado. No es un entero ni un flotante.
+              </p>
+              <p>
+                Esto significa que no se debe utilizar como un argumento para
+                operaciones matemáticas, por ejemplo, no se pueden utilizar
+                estos datos para elevarlos al cuadrado, para dividirlos entre
+                algo o por algo.
+              </p>
+              <pre
+                class="line-numbers"
+                data-src-status="loaded"
+                tabindex="0"
+              ><code class="language-python" data-prismjs-copy="Copy">
+                anything = input("Ingresa un número:")
+                something = anything ** 2.0
+                print(anything, "al cuadrado es", something)
+              </code></pre>
+              <p>
+                Cuando python intente ejecutar
+                <code>something = anything ** 2.0</code> se devolverá el
+                siguiente error "TypeError: unsupported operand type(s) for **
+                or pow(): 'str' and 'float'"
+              </p>
+            </div>
+            <!-- El Resultado de la Función input() Fin -->
 
-# Mal ejemplo:
-x = "John Doe"
-y = 30
-                </code></pre>
-              </div>
-              <!-- Nombres Descriptivos fin -->
-
-              <!-- Comentarios Explicativos -->
-              <div id="comentariosExplicativoss">
-                <h3>Comentarios Explicativos</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Usar comentarios de una línea</span>:
-                    Añadir comentarios concisos para explicar el propósito de la
-                    variable, especialmente si su nombre no es lo
-                    suficientemente claro.
-                  </li>
-                  <li>
-                    <span class="fw-bold"
-                      >Emplear comentarios de varias líneas</span
-                    >: Para explicaciones más detalladas, utilice comentarios de
-                    varias líneas.
-                  </li>
+            <!-- Conversión de Tipos (Conversiones de Tipos) -->
+            <div id="conversiondeTipos" class="mt-5 pt-5">
+              <h2 class="mt-1">Conversión de Tipos</h2>
+              <p>
+                Python ofrece dos simples funciones para especificar un tipo de
+                dato y resolver este problema, aquí están: <code>int()</code> y
+                <code>float()</code>.
+              </p>
+              <p>Sus nombres indican cual es su función:</p>
+              <ul>
+                <li>
+                  La función <code>int()</code> toma un argumento (por ejemplo,
+                  una cadena: <code>int(string)</code>) e intenta convertirlo a
+                  un valor entero; si llegase a fallar, el programa entero
+                  fallará también.
+                </li>
+                <li>
+                  La función <code>float()</code> toma un argumento (por
+                  ejemplo, una cadena: <code>float(string)</code>) e intenta
+                  convertirlo a flotante.
+                </li>
+              </ul>
+              <p>Por ejemplo:</p>
+              <ul>
+                <li>
+                  Para valores enteros:
                   <pre
                     class="line-numbers"
                     data-src-status="loaded"
                     tabindex="0"
                   ><code class="language-python" data-prismjs-copy="Copy">
-nombre_completo = "John Doe"  # Nombre completo de la persona
-edad = 30  # Edad de la persona en años
+                edad = int(input("¿Cuál es tu edad? "))
                   </code></pre>
-                </ul>
-              </div>
-              <!-- Comentarios Explicativos fin -->
-
-              <!-- Docstrings para Módulos, Funciones y Clases -->
-              <div id="docstringsparaMódulosFuncionesyClasess">
-                <h3>Docstrings para Módulos, Funciones y Clases</h3>
-                <p>
-                  Aunque principalmente se usa para funciones y clases, los
-                  docstrings también pueden ser útiles para documentar variables
-                  globales o constantes.
-                </p>
-                <pre
-                  class="line-numbers"
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-python" data-prismjs-copy="Copy">
-                  """
-                  Este módulo contiene constantes relacionadas con la configuración de la aplicación.
-                  """
-
-                  VERSION_MAYOR = 1
-                  VERSION_MENOR = 0
-                  </code></pre>
-              </div>
-              <!-- Docstrings para Módulos, Funciones y Clases fin -->
-
-              <!-- Tipo Sugerido (Type Hints) -->
-              <div id="tipoSugeridoTypeHintss">
-                <h3>Tipo Sugerido (Type Hints)</h3>
-                <p>
-                  Aunque no es estrictamente una autodocumentación, los type
-                  hints pueden ayudar a entender el tipo de datos esperado para
-                  una variable.
-                </p>
-                <pre
-                  class="line-numbers"
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-python" data-prismjs-copy="Copy">
-                nombre_completo: str = "John Doe"
-                edad: int = 30
-                </code></pre>
-              </div>
-              <!-- Tipo Sugerido (Type Hints) fin -->
-
-              <!-- Considerar el Uso de Bibliotecas de Documentación -->
-              <div id="considerarelUsodeBibliotecasdeDocumentacions">
-                <h3>Considerar el Uso de Bibliotecas de Documentación</h3>
-                <p>
-                  Python, tiene una amplia variedad de bibliotecas de
-                  documentación que permiten crear y gestionar documentación de
-                  manera eficiente. A continuación, se presenta algunas de las
-                  más populares y sus principales características:
-                </p>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Sphinx</span>: Esta herramientas puede
-                    generar documentación automáticamente a partir de docstrings
-                    y comentarios en su código.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Docutils</span>: Es la biblioteca
-                    estándar de Python para la creación de documentos
-                    estructurados. Permite generar HTML, LaTeX, y otros formatos
-                    a partir de un lenguaje de marcado sencillo.
-                  </li>
-                  <li>
-                    <span class="fw-bold">pdoc</span>: Genera automáticamente
-                    documentación a partir del código fuente de Python, creando
-                    una interfaz web interactiva para explorar las funciones,
-                    clases y módulos.
-                  </li>
-                  <li>
-                    <span class="fw-bold">pydoctor</span>: Similar a pdoc, pero
-                    con un enfoque en la generación de documentación en formato
-                    HTML.
-                  </li>
-                </ul>
-              </div>
-              <!-- Considerar el Uso de Bibliotecas de Documentación fin -->
-            </div>
-            <!-- Variables Autodocumentadas Fin -->
-
-            <!-- Recomendaciones -->
-            <div id="recomendaciones" class="mt-5 pt-5">
-              <h2 class="mt-1">Recomendaciones</h2>
-              <ul>
-                <li>
-                  <span class="fw-bold">Ser conciso y claro</span>: Los
-                  comentarios deben ser lo suficientemente detallados para
-                  explicar el código, pero sin ser excesivamente largos.
                 </li>
                 <li>
-                  <span class="fw-bold">Evitar comentarios obvios</span>: No es
-                  necesario comentar cada línea de código. Solo comentar las
-                  partes que no son autoexplicativas.
-                </li>
-                <li>
-                  <span class="fw-bold"
-                    >Mantener los comentarios actualizados</span
-                  >: Si se modifica el código, estar seguro de actualizar los
-                  comentarios correspondientes.
+                  Para valores flotantes:
+                  <pre
+                    class="line-numbers"
+                    data-src-status="loaded"
+                    tabindex="0"
+                  ><code class="language-python" data-prismjs-copy="Copy">
+                    leg_a = float(input("Ingresa la longitud del primer cateto: "))
+                    leg_b = float(input("Ingresa la longitud del segundo cateto: "))
+                    hypo = (leg_a**2 + leg_b**2) ** .5
+                    print("La longitud de la hipotenusa es:", hypo)
+                  </code></pre>
                 </li>
               </ul>
             </div>
-            <!-- Recomendaciones Fin -->
+            <!-- Conversión de Tipos Fin -->
+
+            <!-- Operadores Cadena -->
+            <div id="operadoresCadena" class="mt-5 pt-5">
+              <h2 class="mt-1">Operadores Cadena</h2>
+              <h3>Concatenación</h3>
+              <p>
+                En Python, el signo más (<code>+</code>) se utiliza comúnmente
+                para concatenar cadenas de texto. Cuando se emplea entre dos o
+                más valores de tipo str, el operador <code>+</code> une esas
+                cadenas en una sola. Este uso específico del
+                <code>+</code> permite construir mensajes personalizados o
+                juntar varios fragmentos de texto en un mismo resultado.
+              </p>
+              <pre
+                class="line-numbers"
+                data-src-status="loaded"
+                tabindex="0"
+              ><code class="language-python" data-prismjs-copy="Copy">
+                  saludo = "Hola, "
+                  nombre = "María"
+                  mensaje = saludo + nombre
+                  print(mensaje)  # Resultado: "Hola, María"
+                  </code></pre>
+              <h3>Replicación</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Replicación de cadenas</span>: En este
+                  caso, el operador <code>*</code> permite repetir la cadena un
+                  número específico de veces.
+                  <pre
+                    class="line-numbers"
+                    data-src-status="loaded"
+                    tabindex="0"
+                  ><code class="language-python" data-prismjs-copy="Copy">
+                  texto = "Hola " * 3  # texto será "Hola Hola Hola "
+                  </code></pre>
+                </li>
+                <li>
+                  <span class="fw-bold">Replicación de listas</span>: En este
+                  caso el operador <code>*</code> permite replicar el contenido
+                  de la cadena.
+                  <pre
+                    class="line-numbers"
+                    data-src-status="loaded"
+                    tabindex="0"
+                  ><code class="language-python" data-prismjs-copy="Copy">
+                  lista = [1, 2, 3] * 2  # lista será [1, 2, 3, 1, 2, 3]
+                </code></pre>
+                </li>
+              </ul>
+            </div>
+            <!-- Operadores Cadena Fin -->
+
+            <!-- Otros Tipos de Conversiones -->
+            <div id="otrosTiposdeConversiones" class="mt-5 pt-5">
+              <h2 class="mt-1">Otros Tipos de Conversiones</h2>
+
+              <h3>str()</h3>
+              <p>
+                La función <code>str()</code> en Python convierte un valor a su
+                representación en cadena de texto (string). Esta función se
+                utiliza comúnmente para transformar valores numéricos,
+                booleanos, listas, diccionarios, entre otros, en cadenas que
+                pueden ser visualizadas o impresas fácilmente.
+              </p>
+              <p>Sintaxis:</p>
+              <pre
+                class="line-numbers"
+                data-src-status="loaded"
+                tabindex="0"
+              ><code class="language-python" data-prismjs-copy="Copy">
+              str(objeto)
+            </code></pre>
+              <p>Parámetro:</p>
+              <ul>
+                <li>
+                  <span class="fw-bold">objeto</span>: Cualquier valor o
+                  expresión que se quiera convertir en cadena.
+                </li>
+              </ul>
+              <h3>Ejemplos de uso</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Convertir un número a cadena</span>:
+                  <pre
+                    class="line-numbers"
+                    data-src-status="loaded"
+                    tabindex="0"
+                  ><code class="language-python" data-prismjs-copy="Copy">
+                    numero = 42
+                    texto = str(numero)
+                    print(texto)  # Output: '42'
+                  </code></pre>
+                </li>
+                <li>
+                  <span class="fw-bold">Convertir un booleano a cadena</span>:
+                  <pre
+                    class="line-numbers"
+                    data-src-status="loaded"
+                    tabindex="0"
+                  ><code class="language-python" data-prismjs-copy="Copy">
+                    verdad = True
+                    texto = str(verdad)
+                    print(texto)  # Output: 'True'
+                  </code></pre>
+                </li>
+                <li>
+                  <span class="fw-bold">Convertir una lista a cadena</span>:
+                  <pre
+                    class="line-numbers"
+                    data-src-status="loaded"
+                    tabindex="0"
+                  ><code class="language-python" data-prismjs-copy="Copy">
+                    lista = [1, 2, 3]
+                    texto = str(lista)
+                    print(texto)  # Output: '[1, 2, 3]'
+                  </code></pre>
+                </li>
+                <li>
+                  <span class="fw-bold">Convertir un diccionario a cadena</span
+                  >:
+                  <pre
+                    class="line-numbers"
+                    data-src-status="loaded"
+                    tabindex="0"
+                  ><code class="language-python" data-prismjs-copy="Copy">
+                    diccionario = {'nombre': 'Juan', 'edad': 30}
+                    texto = str(diccionario)
+                    print(texto)  # Output: "{'nombre': 'Juan', 'edad': 30}"
+                  </code></pre>
+                </li>
+              </ul>
+              <h3>Uso Práctico</h3>
+              <p>
+                <code>str()</code> es especialmente útil al combinar diferentes
+                tipos de datos en una cadena. Por ejemplo:
+              </p>
+              <pre
+                class="line-numbers"
+                data-src-status="loaded"
+                tabindex="0"
+              ><code class="language-python" data-prismjs-copy="Copy">
+                  edad = 25
+                  nombre = "Ana"
+                  mensaje = "Hola, " + nombre + ". Tienes " + str(edad) + " años."
+                  print(mensaje)
+                  # Output: 'Hola, Ana. Tienes 25 años.'
+                  </code></pre>
+            </div>
+            <!-- Otros Tipos de Conversiones Fin -->
+
+            <!-- Función de Verificación de Tipo -->
+            <div id="funcióndeVerificacióndeTipo" class="mt-5 pt-5">
+              <h2 class="mt-1">Función de Verificación de Tipo</h2>
+              <p>
+                En Python, la función <code>type()</code> se utiliza para
+                obtener el tipo de dato de un objeto. Cuando se pasa una
+                variable o cualquier valor a <code>type()</code>, esta función
+                devuelve el tipo de dato de dicho objeto. Esto puede incluir
+                tipos de datos básicos como <code>int</code>,
+                <code>float</code> ,<code>str</code>, <code>list</code>, entre
+                otros, así como tipos de datos definidos por el usuario (por
+                ejemplo, clases).
+              </p>
+              <pre
+                class="line-numbers"
+                data-src-status="loaded"
+                tabindex="0"
+              ><code class="language-python" data-prismjs-copy="Copy">
+                  # Declaración de diferentes tipos de datos
+                  x = 10         # Entero
+                  y = 3.14       # Flotante
+                  z = "Hola"     # Cadena de texto
+                  w = [1, 2, 3]  # Lista
+
+                  # Usar type() para obtener el tipo de dato
+                  print(type(x))  # Salida: &lt;class 'int'>
+                  print(type(y))  # Salida: &lt;class 'float'>
+                  print(type(z))  # Salida: &lt;class 'str'>
+                  print(type(w))  # Salida: &lt;class 'list'>
+                  </code></pre>
+              <p>En este ejemplo:</p>
+              <ul>
+                <li>
+                  <code>type(x)</code> devuelve <code>&lt;class 'int'></code>,
+                  indicando que <code>x</code> es un entero.
+                </li>
+                <li>
+                  <code>type(y)</code> devuelve <code>&lt;class 'float'></code>,
+                  indicando que <code>y</code> es un número decimal.
+                </li>
+                <li>
+                  <code>type(z)</code> devuelve <code>&lt;class 'str'></code>,
+                  indicando que <code>z</code> es una cadena de texto.
+                </li>
+                <li>
+                  <code>type(w)</code> devuelve <code>&lt;class 'list'></code>,
+                  indicando que <code>w</code> es una lista.
+                </li>
+              </ul>
+              <p>
+                Esta función es particularmente útil para depuración,
+                comprobaciones de tipos, o cuando se trabaja con tipos dinámicos
+                en Python.
+              </p>
+            </div>
+            <!-- Función de Verificación de Tipo Fin -->
           </div>
         </article>
-        <!--  Comentarios en Python  -->
+        <!--  Interacción con el Usuario en Python  -->
       </main>
       <!-- -------------------------------- fin principal -------------------------------- -->
       <!-- -------------------------------- barra lateral -------------------------------- -->
@@ -547,40 +578,26 @@ edad = 30  # Edad de la persona en años
         <h1>Índice</h1>
         <ul class="list-unstyled">
           <li>
-            <a href="#quesonloscomentariosenPython"
-              >¿Qué Son los Comentarios en Python?</a
+            <a href="#laFuncionInput">La función input()</a>
+          </li>
+          <li>
+            <a href="#elResultadodelaFuncioninput"
+              >El Resultado de la Función input()</a
             >
           </li>
           <li>
-            <a href="#porQueUtilizarComentariosPython"
-              >¿Por qué Utilizar Comentarios?</a
+            <a href="#conversiondeTipos">Conversión de Tipos</a>
+          </li>
+          <li>
+            <a href="#operadoresCadena">Operadores Cadena</a>
+          </li>
+          <li>
+            <a href="#otrosTiposdeConversiones">Otros Tipos de Conversiones</a>
+          </li>
+          <li>
+            <a href="#funcióndeVerificacióndeTipo"
+              >Función de Verificación de Tipo</a
             >
-          </li>
-          <li>
-            <a href="#cuandoUtilizarComentariosPython"
-              >¿Cuándo Utilizar Comentarios en Python?</a
-            >
-          </li>
-          <li>
-            <a href="#dondeColocarlosComentariosPython"
-              >¿Dónde Colocar los Comentarios en Python?</a
-            >
-          </li>
-          <li>
-            <a href="#comoEscribirComentariosenPython"
-              >Cómo Escribir Comentarios en Python</a
-            >
-          </li>
-          <li>
-            <a href="#variablesAutodocumentadasenPython"
-              >Variables Autodocumentadas en Python
-            </a>
-          </li>
-          <li>
-            <a href="#recomendaciones">Ejemplo Completo</a>
-          </li>
-          <li>
-            <a href="#recomendaciones">Recomendaciones</a>
           </li>
         </ul>
       </aside>
