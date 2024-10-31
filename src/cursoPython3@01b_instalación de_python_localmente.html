@@ -7,18 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Se aprenderá a establecer comunicación con una computadora: se familiarizará con la función input(), realizará conversiones de tipos de datos y se aprenderá a utilizar operadores de cadenas."
+      content="Este artículo explica las diferentes formas de obtener, instalar y configurar Python en una computadora local."
     />
     <meta
       name="tittle"
-      content=" Interacción con el Usuario en Python - Ing. Eduardo Herrera Forero."
+      content=" Instalación de Python en el Computador - Ing. Eduardo Herrera Forero."
     />
     <meta name="author" content="Ing. Eduardo Herrera Forero" />
     <meta name="application-name" content="EHF" />
     <meta name="robots" content="index, follow" />
     <link
       rel="canonical"
-      href="https://eduardoherreraf.github.io/cursoPython3@07_interaccion_con_el_usuario.html"
+      href="https://eduardoherreraf.github.io/cursoPython3@01b_descarga_e_instalación_de_python.html"
     />
     <!-- Fin Metaetiquetas -->
 
@@ -26,11 +26,11 @@
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
-      content=" Interacción con el Usuario en Python - Ing. Eduardo Herrera Forero."
+      content=" Instalación de Python en el Computador - Ing. Eduardo Herrera Forero."
     />
     <meta
       property="og:description"
-      content="Se aprenderá a establecer comunicación con una computadora: se familiarizará con la función input(), realizará conversiones de tipos de datos y se aprenderá a utilizar operadores de cadenas."
+      content="Este artículo explica las diferentes formas de obtener, instalar y configurar Python en una computadora local."
     />
     <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
     <meta
@@ -39,7 +39,7 @@
     />
     <meta
       property="og:url"
-      content="https://eduardoherreraf.github.io/cursoPython3@07_interaccion_con_el_usuario.html"
+      content="https://eduardoherreraf.github.io/cursoPython3@01b_descarga_e_instalación_de_python.html"
     />
     <meta property="og:locale" content="es_CO" />
     <!-- fin Open Graph data -->
@@ -49,15 +49,15 @@
     <meta name="twitter:site" content="@ehfeduardo" />
     <meta
       name="twitter:url"
-      content=" Interacción con el Usuario en Python - Ing. Eduardo Herrera Forero."
+      content=" Instalación de Python en el Computador - Ing. Eduardo Herrera Forero."
     />
     <meta
       name="twitter:title"
-      content="https://eduardoherreraf.github.io/cursoPython3@07_interaccion_con_el_usuario.html"
+      content="https://eduardoherreraf.github.io/cursoPython3@01b_descarga_e_instalación_de_python.html"
     />
     <meta
       name="twitter:description"
-      content="Se aprenderá a establecer comunicación con una computadora: se familiarizará con la función input(), realizará conversiones de tipos de datos y se aprenderá a utilizar operadores de cadenas."
+      content="Este artículo explica las diferentes formas de obtener, instalar y configurar Python en una computadora local."
     />
     <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
     <meta
@@ -83,7 +83,7 @@
     <!-- fin iconos -->
 
     <title>
-      Interacción con el Usuario en Python - Ing. Eduardo Herrera Forero.
+      Instalación de Python en el Computador - Ing. Eduardo Herrera Forero.
     </title>
 
     <script type="module" defer src="./js/main.js"></script>
@@ -179,391 +179,213 @@
     <!--  Principal  -->
     <div class="row col">
       <main class="pt-5 col-lg-9">
-        <!--  Interacción con el Usuario en Python  -->
+        <!--  Instalación de Python Localmente-->
         <article class="row border-1 border-bottom pb-3">
           <div>
-            <header><h1>Interacción con el Usuario en Python</h1></header>
+            <header><h1>Instalación de Python Localmente</h1></header>
             <p>
-              La función <code>input()</code> es una de las herramientas más
-              utilizadas en Python para interactuar con el usuario. Permite
-              recibir datos desde la entrada estándar, lo que significa que
-              puedes solicitar información al usuario durante la ejecución de un
-              programa. Este artículo explora cómo utilizar
-              <code>input()</code>, sus características y algunos ejemplos
-              prácticos.
+              Esta guía te mostrará paso a paso cómo instalar Python localmente.
+              Python, un lenguaje de programación versátil y ampliamente
+              utilizado, es ideal tanto para principiantes como para
+              desarrolladores experimentados. Se aprenderá el proceso de las
+              técnicas para verificar que la instalación se haya completado
+              exitosamente.
             </p>
-            <!-- La función input() -->
-            <div id="laFuncionInput" class="mt-5 pt-5">
-              <h2 class="mt-1">La función input()</h2>
-              <p>
-                La función <code>input()</code> en Python es una herramienta
-                fundamental para interactuar con el usuario. Permite que el
-                programa solicite y reciba información directamente del teclado.
-              </p>
-              <p>
-                Cuando se llama a esta función, el programa se detiene y espera
-                a que el usuario ingrese algún dato. Una vez que el usuario
-                presiona <kbd>Enter</kbd>, el valor ingresado se devuelve como
-                una cadena de texto (string).
-              </p>
-              <div class="text-center imagen">
+            <div class="text-center imagen">
+              <picture>
                 <img
-                  src="https://images2.imgbox.com/b7/ae/2mEf3wli_o.png"
+                  src="https://images2.imgbox.com/0e/93/y3RowDzr_o.jpg"
                   class="img-fluid"
                   width="50%"
-                  alt="Función input() en Python"
+                  alt="Instalación de Python"
+                  title="Se muestra como se instala Python localmente"
                 />
+                <figcaption>Instalación de Python</figcaption>
+              </picture>
+            </div>
+            <!-- Descargar Python -->
+            <div id="descargarPython" class="mt-5 pt-5">
+              <h2 class="mt-1">Descargar Python</h2>
+              <ul>
+                <li>
+                  <span class="fw-bold">Visitar el sitio oficial de Python</span
+                  >: Abrir el navegador y dirigirse a
+                  <a
+                    href="https://www.python.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >python.org</a
+                  >.
+                </li>
+                <li>
+                  <span class="fw-bold"
+                    >Navegar a la sección de descargas (Downloads)</span
+                  >: En la página principal, se encontrará un botón que dice
+                  "Downloads". Hacer clic en él.
+                </li>
+                <li>
+                  <span class="fw-bold">Seleccionar el sistema operativo</span>:
+                  Python detectará automáticamente el sistema operativo y le
+                  ofrecerá la versión más reciente. Hacer clic en el enlace para
+                  descargar el instalador.
+                </li>
+              </ul>
+            </div>
+            <!-- Descargar Python Fin -->
+            <!-- Instalar Python -->
+            <div id="instalarPython" class="mt-5 pt-5">
+              <h2 class="mt-1">Instalar Python</h2>
+              <ul>
+                <li>
+                  <span class="fw-bold">Ejecutar el instalador</span>: Una vez
+                  que se haya descargado el archivo, hacer doble clic en él para
+                  iniciar la instalación.
+                </li>
+                <li>
+                  <span class="fw-bold"
+                    >Seleccionar las opciones de instalación</span
+                  >: Asegurarse de marcar la casilla que dice "Add Python to
+                  PATH". Esto facilitará el uso de Python desde la línea de
+                  comandos.
+                </li>
+                <li>
+                  <span class="fw-bold">Hacer clic en "Install Now"</span>: Esto
+                  comenzará la instalación. Esperar a que se complete.
+                </li>
+                <li>
+                  <span class="fw-bold">Verificar la instalación</span>: Abrir
+                  la línea de comandos (cmd) y escribir
+                  <kbd>python --version</kbd>. Se Debería ver la versión de
+                  Python que se instaló.
+                </li>
+              </ul>
+            </div>
+            <!-- Instalar Python Fin -->
+            <!-- Comenzando a Trabajar con Python  a Trabajar con Python -->
+            <div id="comenzandoaTrabajoconPython" class="mt-5 pt-5">
+              <h2 class="mt-1">Comenzando a Trabajar con Python</h2>
+              <p>
+                Existen muchas formas de utilizar Python, especialmente si vas a
+                ser un desarrollador de Python.
+              </p>
+              <p>
+                Para comenzar a trabajar con Python, se necesita las siguientes
+                herramientas:
+              </p>
+              <ul>
+                <li>
+                  Un editor que ayudará a escribir el código (debe tener algunas
+                  características especiales, no disponibles en herramientas
+                  simples); este editor dedicado entrega más que el equipo
+                  estándar del sistema operativo.
+                </li>
+                <li>
+                  Una consola en la que se pueda ejecutar el código recién
+                  escrito y detenerlo por la fuerza cuando se sale de control.
+                </li>
+                <li>
+                  Una herramienta llamada depurador, capaz de ejecutar el código
+                  paso a paso y permite inspeccionarlo en cada momento de su
+                  ejecución.
+                </li>
+              </ul>
+              <p>
+                La instalación estándar de Python 3, además de sus numerosos
+                componentes útiles, incluye una aplicación simple pero
+                extremadamente práctica denominada
+                <acronym
+                  title="Integrated Development and Learning Environment (Desarrollo Integrado y Entorno de Aprendizaje)"
+                  >IDLE</acronym
+                >.
+              </p>
+              <p>
+                IDLE tiene dos componentes principales: la ventana de intérprete
+                interactivo y la ventana de edición de archivos:
+              </p>
+              <h3>Usar el Intérprete Interactivo (Shell de IDLE)</h3>
+              <p>
+                Al abrir IDLE, se muestra una ventana llamada "Python Shell" o
+                intérprete interactivo. En esta ventana, el usuario puede
+                escribir y ejecutar comandos de Python de inmediato. Cada línea
+                que se ingresa se ejecuta al presionar Enter, mostrando el
+                resultado de inmediato.
+              </p>
+              <div class="text-center imagen">
+                <picture>
+                  <img
+                    src="https://images2.imgbox.com/fb/a5/8F6QSic3_o.jpg"
+                    class="img-fluid"
+                    width="50%"
+                    alt="Intérprete Interactivo (Shell de IDLE)"
+                    title="Intérprete Interactivo ejecuta código directamente después de teclear enter"
+                  />
+                  <figcaption>
+                    Intérprete Interactivo (Shell de IDLE)
+                  </figcaption>
+                </picture>
               </div>
-              <p>Sintaxis:</p>
-              <pre
-                class="line-numbers"
-                data-src-status="loaded"
-                tabindex="0"
-              ><code class="language-python" data-prismjs-copy="Copy">
-              variable = input(prompt)
-              </code></pre>
+              <p>
+                Esta ventana es ideal para probar pequeños fragmentos de código
+                rápidamente.
+              </p>
+              <h3>Crear y Ejecutar Archivos de Código (Scripts)</h3>
+              <p>
+                Para escribir programas más largos, se puede abrir una ventana
+                de editor dentro de IDLE:
+              </p>
               <ul>
                 <li>
-                  <span class="fw-bold">prompt</span>: Es un mensaje opcional
-                  que se muestra al usuario para indicar qué tipo de información
-                  se espera.
+                  Seleccionar
+                  <span class="text-success fw-bold">File > New File ></span> en
+                  el menú.
+                  <div class="text-center imagen">
+                    <picture>
+                      <img
+                        src="https://images2.imgbox.com/5d/b4/JzpWNkbq_o.jpg"
+                        class="img-fluid"
+                        width="50%"
+                        alt="Ventana de Ejecución"
+                        title="Ejecución Código Python"
+                      />
+                      <figcaption>Ventana de Ejecución</figcaption>
+                    </picture>
+                  </div>
                 </li>
                 <li>
-                  <span class="fw-bold">variable</span>: Es una variable donde
-                  se almacena la entrada del usuario.
+                  En la ventana del editor, se puede escribir un script completo
+                  de Python.
+                </li>
+                <li>
+                  Una vez que el código esté listo, se puede guardar el archivo
+                  con la extensión .py con
+                  <span class="text-success fw-bold">File > Save ></span>
+                  y luego ejecutarlo con
+                  <span class="text-success fw-bold">Run > Run Module ></span>
+                  en el menú, o presionar <kbd>F5</kbd>.
                 </li>
               </ul>
-              <p>Ejemplo:</p>
-              <pre
-                class="line-numbers"
-                data-src-status="loaded"
-                tabindex="0"
-              ><code class="language-python" data-prismjs-copy="Copy">
-                nombre = input("Por favor, ingresa tu nombre: ")
-                edad = input("¿Cuál es tu edad? ")
-
-                print("Hola,", nombre, "!")
-                print("Tienes", edad, "años.")
-                  </code></pre>
-              <ul>
-                <li>
-                  La línea
-                  <code>nombre = input("Por favor, ingresa tu nombre: ")</code>
-                  muestra el mensaje "Por favor, ingresa tu nombre:" en la
-                  consola.
-                </li>
-                <li>
-                  El programa espera a que el usuario escriba su nombre y
-                  presione Enter.
-                </li>
-                <li>
-                  El nombre ingresado se almacena en la variable
-                  <kbd>nombre</kbd>.
-                </li>
-                <li>Lo mismo ocurre con la edad en la siguiente línea.</li>
-                <li>
-                  Finalmente, se imprimen los mensajes de saludo utilizando las
-                  variables nombre y edad.
-                </li>
-              </ul>
+              <p>
+                Si todo sale bien y no hay errores en el código, la ventana del
+                intérprete interactivo mostrará los efectos causados por la
+                ejecución del programa.
+              </p>
+              <div class="text-center imagen">
+                <picture>
+                  <img
+                    src="https://images2.imgbox.com/a1/2c/gv3AgCO3_o.jpg"
+                    class="img-fluid"
+                    width="50%"
+                    alt="Código Python Ejecutado"
+                    title="Ventana en donde se ejecuta el código de Python"
+                  />
+                  <figcaption>Código Python Ejecutado</figcaption>
+                </picture>
+              </div>
             </div>
-            <!-- La función input() Fin -->
-
-            <!-- El Resultado de la Función input() -->
-            <div id="elResultadodelaFuncioninput" class="mt-5 pt-5">
-              <h2 class="mt-1">El Resultado de la Función input()</h2>
-              <p>
-                La función <code>input()</code> siempre devuelve una cadena de
-                texto, incluso si el usuario ingresa un número.
-              </p>
-              <p>
-                Una cadena que contiene todos los caracteres que el usuario ha
-                introducido desde el teclado. No es un entero ni un flotante.
-              </p>
-              <p>
-                Esto significa que no se debe utilizar como un argumento para
-                operaciones matemáticas, por ejemplo, no se pueden utilizar
-                estos datos para elevarlos al cuadrado, para dividirlos entre
-                algo o por algo.
-              </p>
-              <pre
-                class="line-numbers"
-                data-src-status="loaded"
-                tabindex="0"
-              ><code class="language-python" data-prismjs-copy="Copy">
-                anything = input("Ingresa un número:")
-                something = anything ** 2.0
-                print(anything, "al cuadrado es", something)
-              </code></pre>
-              <p>
-                Cuando python intente ejecutar
-                <code>something = anything ** 2.0</code> se devolverá el
-                siguiente error "TypeError: unsupported operand type(s) for **
-                or pow(): 'str' and 'float'"
-              </p>
-            </div>
-            <!-- El Resultado de la Función input() Fin -->
-
-            <!-- Conversión de Tipos (Conversiones de Tipos) -->
-            <div id="conversiondeTipos" class="mt-5 pt-5">
-              <h2 class="mt-1">Conversión de Tipos</h2>
-              <p>
-                Python ofrece dos simples funciones para especificar un tipo de
-                dato y resolver este problema, aquí están: <code>int()</code> y
-                <code>float()</code>.
-              </p>
-              <p>Sus nombres indican cual es su función:</p>
-              <ul>
-                <li>
-                  La función <code>int()</code> toma un argumento (por ejemplo,
-                  una cadena: <code>int(string)</code>) e intenta convertirlo a
-                  un valor entero; si llegase a fallar, el programa entero
-                  fallará también.
-                </li>
-                <li>
-                  La función <code>float()</code> toma un argumento (por
-                  ejemplo, una cadena: <code>float(string)</code>) e intenta
-                  convertirlo a flotante.
-                </li>
-              </ul>
-              <p>Por ejemplo:</p>
-              <ul>
-                <li>
-                  Para valores enteros:
-                  <pre
-                    class="line-numbers"
-                    data-src-status="loaded"
-                    tabindex="0"
-                  ><code class="language-python" data-prismjs-copy="Copy">
-                edad = int(input("¿Cuál es tu edad? "))
-                  </code></pre>
-                </li>
-                <li>
-                  Para valores flotantes:
-                  <pre
-                    class="line-numbers"
-                    data-src-status="loaded"
-                    tabindex="0"
-                  ><code class="language-python" data-prismjs-copy="Copy">
-                    leg_a = float(input("Ingresa la longitud del primer cateto: "))
-                    leg_b = float(input("Ingresa la longitud del segundo cateto: "))
-                    hypo = (leg_a**2 + leg_b**2) ** .5
-                    print("La longitud de la hipotenusa es:", hypo)
-                  </code></pre>
-                </li>
-              </ul>
-            </div>
-            <!-- Conversión de Tipos Fin -->
-
-            <!-- Operadores Cadena -->
-            <div id="operadoresCadena" class="mt-5 pt-5">
-              <h2 class="mt-1">Operadores Cadena</h2>
-              <h3>Concatenación</h3>
-              <p>
-                En Python, el signo más (<code>+</code>) se utiliza comúnmente
-                para concatenar cadenas de texto. Cuando se emplea entre dos o
-                más valores de tipo str, el operador <code>+</code> une esas
-                cadenas en una sola. Este uso específico del
-                <code>+</code> permite construir mensajes personalizados o
-                juntar varios fragmentos de texto en un mismo resultado.
-              </p>
-              <pre
-                class="line-numbers"
-                data-src-status="loaded"
-                tabindex="0"
-              ><code class="language-python" data-prismjs-copy="Copy">
-                  saludo = "Hola, "
-                  nombre = "María"
-                  mensaje = saludo + nombre
-                  print(mensaje)  # Resultado: "Hola, María"
-                  </code></pre>
-              <h3>Replicación</h3>
-              <ul>
-                <li>
-                  <span class="fw-bold">Replicación de cadenas</span>: En este
-                  caso, el operador <code>*</code> permite repetir la cadena un
-                  número específico de veces.
-                  <pre
-                    class="line-numbers"
-                    data-src-status="loaded"
-                    tabindex="0"
-                  ><code class="language-python" data-prismjs-copy="Copy">
-                  texto = "Hola " * 3  # texto será "Hola Hola Hola "
-                  </code></pre>
-                </li>
-                <li>
-                  <span class="fw-bold">Replicación de listas</span>: En este
-                  caso el operador <code>*</code> permite replicar el contenido
-                  de la cadena.
-                  <pre
-                    class="line-numbers"
-                    data-src-status="loaded"
-                    tabindex="0"
-                  ><code class="language-python" data-prismjs-copy="Copy">
-                  lista = [1, 2, 3] * 2  # lista será [1, 2, 3, 1, 2, 3]
-                </code></pre>
-                </li>
-              </ul>
-            </div>
-            <!-- Operadores Cadena Fin -->
-
-            <!-- Otros Tipos de Conversiones -->
-            <div id="otrosTiposdeConversiones" class="mt-5 pt-5">
-              <h2 class="mt-1">Otros Tipos de Conversiones</h2>
-
-              <h3>str()</h3>
-              <p>
-                La función <code>str()</code> en Python convierte un valor a su
-                representación en cadena de texto (string). Esta función se
-                utiliza comúnmente para transformar valores numéricos,
-                booleanos, listas, diccionarios, entre otros, en cadenas que
-                pueden ser visualizadas o impresas fácilmente.
-              </p>
-              <p>Sintaxis:</p>
-              <pre
-                class="line-numbers"
-                data-src-status="loaded"
-                tabindex="0"
-              ><code class="language-python" data-prismjs-copy="Copy">
-              str(objeto)
-            </code></pre>
-              <p>Parámetro:</p>
-              <ul>
-                <li>
-                  <span class="fw-bold">objeto</span>: Cualquier valor o
-                  expresión que se quiera convertir en cadena.
-                </li>
-              </ul>
-              <h3>Ejemplos de uso</h3>
-              <ul>
-                <li>
-                  <span class="fw-bold">Convertir un número a cadena</span>:
-                  <pre
-                    class="line-numbers"
-                    data-src-status="loaded"
-                    tabindex="0"
-                  ><code class="language-python" data-prismjs-copy="Copy">
-                    numero = 42
-                    texto = str(numero)
-                    print(texto)  # Output: '42'
-                  </code></pre>
-                </li>
-                <li>
-                  <span class="fw-bold">Convertir un booleano a cadena</span>:
-                  <pre
-                    class="line-numbers"
-                    data-src-status="loaded"
-                    tabindex="0"
-                  ><code class="language-python" data-prismjs-copy="Copy">
-                    verdad = True
-                    texto = str(verdad)
-                    print(texto)  # Output: 'True'
-                  </code></pre>
-                </li>
-                <li>
-                  <span class="fw-bold">Convertir una lista a cadena</span>:
-                  <pre
-                    class="line-numbers"
-                    data-src-status="loaded"
-                    tabindex="0"
-                  ><code class="language-python" data-prismjs-copy="Copy">
-                    lista = [1, 2, 3]
-                    texto = str(lista)
-                    print(texto)  # Output: '[1, 2, 3]'
-                  </code></pre>
-                </li>
-                <li>
-                  <span class="fw-bold">Convertir un diccionario a cadena</span
-                  >:
-                  <pre
-                    class="line-numbers"
-                    data-src-status="loaded"
-                    tabindex="0"
-                  ><code class="language-python" data-prismjs-copy="Copy">
-                    diccionario = {'nombre': 'Juan', 'edad': 30}
-                    texto = str(diccionario)
-                    print(texto)  # Output: "{'nombre': 'Juan', 'edad': 30}"
-                  </code></pre>
-                </li>
-              </ul>
-              <h3>Uso Práctico</h3>
-              <p>
-                <code>str()</code> es especialmente útil al combinar diferentes
-                tipos de datos en una cadena. Por ejemplo:
-              </p>
-              <pre
-                class="line-numbers"
-                data-src-status="loaded"
-                tabindex="0"
-              ><code class="language-python" data-prismjs-copy="Copy">
-                  edad = 25
-                  nombre = "Ana"
-                  mensaje = "Hola, " + nombre + ". Tienes " + str(edad) + " años."
-                  print(mensaje)
-                  # Output: 'Hola, Ana. Tienes 25 años.'
-                  </code></pre>
-            </div>
-            <!-- Otros Tipos de Conversiones Fin -->
-
-            <!-- Función de Verificación de Tipo -->
-            <div id="funcióndeVerificacióndeTipo" class="mt-5 pt-5">
-              <h2 class="mt-1">Función de Verificación de Tipo</h2>
-              <p>
-                En Python, la función <code>type()</code> se utiliza para
-                obtener el tipo de dato de un objeto. Cuando se pasa una
-                variable o cualquier valor a <code>type()</code>, esta función
-                devuelve el tipo de dato de dicho objeto. Esto puede incluir
-                tipos de datos básicos como <code>int</code>,
-                <code>float</code> ,<code>str</code>, <code>list</code>, entre
-                otros, así como tipos de datos definidos por el usuario (por
-                ejemplo, clases).
-              </p>
-              <pre
-                class="line-numbers"
-                data-src-status="loaded"
-                tabindex="0"
-              ><code class="language-python" data-prismjs-copy="Copy">
-                  # Declaración de diferentes tipos de datos
-                  x = 10         # Entero
-                  y = 3.14       # Flotante
-                  z = "Hola"     # Cadena de texto
-                  w = [1, 2, 3]  # Lista
-
-                  # Usar type() para obtener el tipo de dato
-                  print(type(x))  # Salida: &lt;class 'int'>
-                  print(type(y))  # Salida: &lt;class 'float'>
-                  print(type(z))  # Salida: &lt;class 'str'>
-                  print(type(w))  # Salida: &lt;class 'list'>
-                  </code></pre>
-              <p>En este ejemplo:</p>
-              <ul>
-                <li>
-                  <code>type(x)</code> devuelve <code>&lt;class 'int'></code>,
-                  indicando que <code>x</code> es un entero.
-                </li>
-                <li>
-                  <code>type(y)</code> devuelve <code>&lt;class 'float'></code>,
-                  indicando que <code>y</code> es un número decimal.
-                </li>
-                <li>
-                  <code>type(z)</code> devuelve <code>&lt;class 'str'></code>,
-                  indicando que <code>z</code> es una cadena de texto.
-                </li>
-                <li>
-                  <code>type(w)</code> devuelve <code>&lt;class 'list'></code>,
-                  indicando que <code>w</code> es una lista.
-                </li>
-              </ul>
-              <p>
-                Esta función es particularmente útil para depuración,
-                comprobaciones de tipos, o cuando se trabaja con tipos dinámicos
-                en Python.
-              </p>
-            </div>
-            <!-- Función de Verificación de Tipo Fin -->
+            <!-- Comenzando a Trabajar con Python Fin -->
           </div>
         </article>
-        <!--  Interacción con el Usuario en Python  -->
+        <!--  Instalación de Python Localmente-->
       </main>
       <!-- -------------------------------- fin principal -------------------------------- -->
       <!-- -------------------------------- barra lateral -------------------------------- -->
@@ -571,26 +393,15 @@
         <h1>Índice</h1>
         <ul class="list-unstyled">
           <li>
-            <a href="#laFuncionInput">La función input()</a>
+            <a href="#descargarPython">Descargar Python</a>
           </li>
           <li>
-            <a href="#elResultadodelaFuncioninput"
-              >El Resultado de la Función input()</a
-            >
+            <a href="#instalarPython">Instalar Python</a>
           </li>
           <li>
-            <a href="#conversiondeTipos">Conversión de Tipos</a>
-          </li>
-          <li>
-            <a href="#conversionesdeTiposUnaVezMas">Operadores Cadena</a>
-          </li>
-          <li>
-            <a href="#otrosTiposdeConversiones">Otros Tipos de Conversiones</a>
-          </li>
-          <li>
-            <a href="#funcióndeVerificacióndeTipo"
-              >Función de Verificación de Tipo</a
-            >
+            <a href="#comenzandoaTrabajoconPython"
+              >Comenzando a Trabajar con Python
+            </a>
           </li>
         </ul>
       </aside>
