@@ -138,6 +138,17 @@ textarea::placeholder {
   position: fixed;
   bottom: 20px;
   right: 25px;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  display: none;
+  transition: 0.9s;
+  padding: 10px;
+  background: #333;
+  color: rgb(204, 203, 203);
+  border-radius: 5px;
+}
+#myBtnScroll2 {
   background: #333;
   color: rgb(204, 203, 203);
   border-radius: 5px;
@@ -145,14 +156,12 @@ textarea::placeholder {
   width: 48px;
   height: 48px;
   cursor: pointer;
-  display: none;
   transition: 0.9s;
   padding: 10px;
 }
 
 #myBtnScroll:hover {
   background-color: #555;
-  cursor: pointer;
 }
 
 p {
@@ -190,8 +199,6 @@ p {
   width: 40%;
   height: auto;
 }
-
-
 
 code {
   color: #6ea8fe;
