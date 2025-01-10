@@ -7,18 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Aprende a declarar y usar variables en Python. Descubre los tipos de datos, buenas prácticas y ejemplos para mejorar tus habilidades de programación."
+      content="Aprende cómo utilizar la función print() en Python para mostrar mensajes en la consola. Ejemplos básicos de sintaxis y uso en programación."
     />
     <meta
       name="tittle"
-      content="Variables Python - Ing. Eduardo Herrera Forero."
+      content="Instrucción Print() - Ing. Eduardo Herrera Forero."
     />
     <meta name="author" content="Ing. Eduardo Herrera Forero" />
     <meta name="application-name" content="EHF" />
     <meta name="robots" content="index, follow" />
     <link
       rel="canonical"
-      href="https://eduardoherreraf.github.io/cursoPython3@05_variables.html"
+      href="https://eduardoherreraf.github.io/cursoPython3@0201_función_print.html"
     />
     <!-- Fin Metaetiquetas -->
 
@@ -26,11 +26,11 @@
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
-      content="Variables Python - Ing. Eduardo Herrera Forero."
+      content="Instrucción Print() - Ing. Eduardo Herrera Forero."
     />
     <meta
       property="og:description"
-      content="Aprende a declarar y usar variables en Python. Descubre los tipos de datos, buenas prácticas y ejemplos para mejorar tus habilidades de programación."
+      content="Aprende cómo utilizar la función print() en Python para mostrar mensajes en la consola. Ejemplos básicos de sintaxis y uso en programación."
     />
     <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
     <meta
@@ -39,7 +39,7 @@
     />
     <meta
       property="og:url"
-      content="https://eduardoherreraf.github.io/cursoPython3@05_variables.html"
+      content="https://eduardoherreraf.github.io/cursoPython3@0201_función_print.html"
     />
     <meta property="og:locale" content="es_CO" />
     <!-- fin Open Graph data -->
@@ -49,15 +49,15 @@
     <meta name="twitter:site" content="@ehfeduardo" />
     <meta
       name="twitter:url"
-      content="Variables Python - Ing. Eduardo Herrera Forero."
+      content="Instrucción Print() - Ing. Eduardo Herrera Forero."
     />
     <meta
       name="twitter:title"
-      content="https://eduardoherreraf.github.io/cursoPython3@05_variables.html"
+      content="https://eduardoherreraf.github.io/cursoPython3@0201_funcion_print_función_print.html"
     />
     <meta
       name="twitter:description"
-      content="Aprende a declarar y usar variables en Python. Descubre los tipos de datos, buenas prácticas y ejemplos para mejorar tus habilidades de programación."
+      content="Aprende cómo utilizar la función print() en Python para mostrar mensajes en la consola. Ejemplos básicos de sintaxis y uso en programación."
     />
     <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
     <meta
@@ -82,7 +82,7 @@
     <meta name="theme-color" content="#ffffff" />
     <!-- fin iconos -->
 
-    <title>Variables Python - Ing. Eduardo Herrera Forero.</title>
+    <title>Instrucción Print() - Ing. Eduardo Herrera Forero.</title>
 
     <script type="module" defer src="./js/main.js"></script>
 
@@ -100,6 +100,7 @@
     id="about"
   >
     <!-- navbar -->
+
     <nav
       class="row navbar navbar-expand-lg bg-body-tertiary border-1 border fixed-top nav-pills"
     >
@@ -177,318 +178,295 @@
     <!--  Principal  -->
     <div class="row col">
       <main class="pt-5 col-lg-9">
-        <!--  Variables  -->
+        <!--  Instrucción print()  -->
         <article class="row border-1 border-bottom pb-3">
           <div>
-            <header><h1>Variables en Python</h1></header>
+            <h1>Instrucción print() - Python</h1>
 
             <p>
-              Los operadores en Python son símbolos especiales que realizan
-              operaciones específicas en uno o más valores (operandos). Son
-              esenciales para realizar cálculos, comparaciones y manipulaciones
-              de datos en los programas.
+              El comando <code>print()</code> en Python se utiliza para mostrar
+              información en la consola o terminal. Es una de las funciones más
+              básicas y útiles para que los desarrolladores verifiquen el valor
+              de variables, mensajes o resultados de alguna operación.
             </p>
-
-            <!-- ¿Qué es una variable en Python? -->
-            <div id="QueEsUnaVariableEnPython" class="mt-5 pt-5">
-              <h2 class="mt-1">¿Qué es una variable en Python?</h2>
-              <p>
-                En Python, una variable puede ser entendida como un contenedor o
-                un nombre que se asigna a un valor específico. Este valor puede
-                ser de diferentes tipos, como un número, una palabra (texto) o
-                incluso una estructura de datos más compleja. Imaginar una caja
-                con un rótulo: la caja es la variable y el rótulo es el nombre
-                que le damos. Dentro de la caja, se guarda el valor que quieres
-                recordar.
-              </p>
-              <div class="text-center imagen">
+            <div class="text-center">
+              <picture>
                 <img
-                  src="https://images2.imgbox.com/82/c6/LpapXhm6_o.png"
+                  src="https://images2.imgbox.com/9d/f8/STjB3LN6_o.png"
                   class="img-fluid"
-                  alt="Explicación que es una Variable "
                   width="50%"
+                  alt="Instrucción print() - Python"
+                  title="Comprendiendo la función print() de Python"
                 />
-              </div>
+                <figcaption>
+                  Fundamentos de la POO: Excepciones en Python
+                </figcaption>
+              </picture>
             </div>
-            <!-- ¿Qué es una variable en Python? Fin -->
-
-            <!-- ¿Para qué Sirven las Variables? -->
-            <div id="ParaQueSirvenVariables" class="mt-5 pt-5">
-              <h2 class="mt-1">¿Para qué Sirven las Variables?</h2>
+            <!-- Función Básica -->
+            <div id="funcionBasica" class="mt-5 pt-5">
+              <h2 class="mt-1">Función Básica</h2>
+              <p>
+                La función <code>print()</code> toma uno o más argumentos y los
+                muestra en la salida estándar, que por lo general es la consola
+                donde se ejecuta el código. Estos argumentos pueden ser de
+                diferentes tipos de datos, como:
+              </p>
               <ul>
                 <li>
-                  <span class="fw-bold">Almacenar datos</span>: Las variables
-                  nos permiten guardar datos de manera temporal o permanente
-                  dentro de un programa.
+                  <span class="fw-bold">Cadenas de texto</span>: Se encierran
+                  entre comillas simples o dobles.
                 </li>
                 <li>
-                  <span class="fw-bold">Manipular datos</span>: Podemos realizar
-                  operaciones matemáticas, comparaciones o cualquier otra acción
-                  sobre los valores almacenados en las variables.
+                  <span class="fw-bold">Números</span>: Enteros, flotantes, etc.
                 </li>
                 <li>
-                  <span class="fw-bold">Hacer nuestro código más legible</span>:
-                  Al asignar nombres significativos a las variables, hacemos que
-                  nuestro código sea más fácil de entender y mantener
+                  <span class="fw-bold">Variables</span>: Contienen valores
+                  almacenados previamente.
+                </li>
+                <li>
+                  <span class="fw-bold">Expresiones</span>: Operaciones
+                  matemáticas o lógicas que se evalúan.
                 </li>
               </ul>
             </div>
-            <!-- Cómo declarar una Variable en Python -->
-            <div id="comoDeclararUnaVariableEnPython" class="mt-5 pt-5">
-              <h2 class="mt-1">Cómo declarar una Variable en Python</h2>
-              <p>
-                Para crear una variable en Python, simplemente asignamos un
-                valor a un nombre. No es necesario declarar el tipo de dato de
-                antemano, ya que Python lo infiere automáticamente.
-              </p>
+            <!-- Sintaxis básica -->
+            <div id="sintaxisBasica" class="mt-5 pt-5">
+              <h2 class="mt-1">Sintaxis básica</h2>
               <pre
                 class="line-numbers"
                 data-src-status="loaded"
                 tabindex="0"
               ><code class="language-python" data-prismjs-copy="Copy">
-# Ejemplo de declaración de variables
-nombre = "Juan"  # Variable de tipo cadena (texto)
-edad = 30        # Variable de tipo entero
-altura = 1.75    # Variable de tipo flotante (número con decimales)
+                print(objeto, ..., sep=' ', end='<code>\n</code>', file=sys.stdout, flush=False)
+              </code>
+            </pre>
+              <ul>
+                <li>
+                  <span class="fw-bold">objeto</span>: Es el elemento o los
+                  elementos que se quieren imprimir. Se pueden imprimir
+                  múltiples objetos separándolos por comas.
+                </li>
+                <li>
+                  <span class="fw-bold">sep (opcional)</span>: Especifica el
+                  separador entre los diferentes objetos cuando se imprimen más
+                  de uno. Por defecto, es un espacio&nbsp;'&nbsp; '.
+                </li>
+                <li>
+                  <span class="fw-bold">end (opcional)</span>: Especifica lo que
+                  se imprime al final del print(). Por defecto, es un salto de
+                  línea ('<code>\n</code>'), pero se puede cambiar.
+                </li>
+                <li>
+                  <span class="fw-bold">file (opcional)</span>: Especifica dónde
+                  se envía la salida. El valor por defecto es la consola
+                  (sys.stdout), pero se puede redirigir a un archivo, por
+                  ejemplo.
+                </li>
+                <li>
+                  <span class="fw-bold">flush (opcional)</span>: Indica si se
+                  debe limpiar el búfer de salida inmediatamente. El valor
+                  predeterminado es False.
+                </li>
+                <li>
+                  <span class="fw-bold">Caracteres de escape (opcional)</span>:
+                  La barra invertida (\) tiene un significado muy especial
+                  cuando se usa dentro de cadenas - se llama carácter de escape.
+                  <br />
+                  La la letra n colocada después de la barra invertida proviene
+                  de la palabra <span class="fst-italic">newline</span>. Tanto
+                  la barra invertida como n forman un símbolo especial llamado
+                  un carácter de <span class="fst-italic">nuevalínea</span>, que
+                  insta a la consola a iniciar una
+                  <span class="fst-italic">nuevalínea</span> de salida.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Ejemplos -->
+            <div id="ejemplos" class="mt-5 pt-5">
+              <h2 class="mt-1">Ejemplos</h2>
+              <ol>
+                <li>
+                  <span class="fw-bold">Imprimir texto simple</span>:
+                  <pre
+                    class="line-numbers"
+                    data-src-status="loaded"
+                    tabindex="0"
+                  ><code class="language-python" data-prismjs-copy="Copy">print("Hola, mundo!")</code></pre>
+                  <p>
+                    Salida:
+                    <span class="text-success fw-bold">Hola, mundo!</span>.
+                  </p>
+                </li>
+                <li>
+                  <span class="fw-bold"></span
+                  ><span class="fw-bold">Imprimir múltiples objetos</span>:
+                  <pre
+                    class="line-numbers"
+                    data-src-status="loaded"
+                    tabindex="0"
+                  ><code class="language-python" data-prismjs-copy="Copy">print("Nombre:", "Juan", "Edad:", 25)
                   </code></pre>
+                  <p>
+                    Salida:
+                    <span class="text-success fw-bold"
+                      >Nombre: Juan Edad: 25</span
+                    >.
+                  </p>
+                </li>
+                <li>
+                  <span class="fw-bold"></span
+                  ><span class="fw-bold">Usando separadores personalizados</span
+                  >:
+                  <pre
+                    class="line-numbers"
+                    data-src-status="loaded"
+                    tabindex="0"
+                  ><code class="language-python" data-prismjs-copy="Copy">print("A", "B", "C", sep="-")
+                  </code></pre>
+                  <p>
+                    Salida:
+                    <span class="text-success fw-bold">A-B-C</span>.
+                  </p>
+                </li>
+                <li>
+                  <span class="fw-bold"></span>Modificando el valor de end<span
+                    class="fw-bold"
+                  ></span
+                  >:
+                  <pre
+                    class="line-numbers"
+                    data-src-status="loaded"
+                    tabindex="0"
+                  ><code class="language-python" data-prismjs-copy="Copy">print("Primera línea", end=" ")
+print("Segunda línea")
+                    </code></pre>
+                  <p>
+                    Salida:
+                    <span class="text-success fw-bold"
+                      >Primera línea Segunda línea</span
+                    >.
+                  </p>
+                </li>
+                <li>
+                  <span class="fw-bold"></span
+                  ><span class="fw-bold">Formateo de cadenas</span>:
+                  <pre
+                    class="line-numbers"
+                    data-src-status="loaded"
+                    tabindex="0"
+                  ><code class="language-python" data-prismjs-copy="Copy">nombre = "Alice"
+edad = 30
+print(f"{nombre} tiene {edad} años")</code></pre>
+                  <p>
+                    Salida:
+                    <span class="text-success fw-bold">Alice tiene 30 años</span
+                    >.
+                  </p>
+                </li>
+                <li>
+                  <span class="fw-bold"></span
+                  ><span class="fw-bold"
+                    >Imprimir variables de diferentes tipos</span
+                  >:
+                  <pre
+                    class="line-numbers"
+                    data-src-status="loaded"
+                    tabindex="0"
+                  ><code class="language-python" data-prismjs-copy="Copy">x = 10
+y = 3.14
+z = True
+print(x, y, z)</code></pre>
+                  <p>
+                    Salida:
+                    <span class="text-success fw-bold">10 3.14 True</span>.
+                  </p>
+                </li>
+                <li>
+                  <span class="fw-bold"></span
+                  ><span class="fw-bold">Redirección a un archivo</span>:
+                  <pre
+                    class="line-numbers"
+                    data-src-status="loaded"
+                    tabindex="0"
+                  ><code class="language-python" data-prismjs-copy="Copy">with open("salida.txt", "w") as f:
+print("Esto se escribe en un archivo", file=f)</code></pre>
+                  <p>
+                    Salida:
+                    <span class="text-success fw-bold"
+                      >Escribe el texto "Esto se escribe en un archivo" en el
+                      archivo "salida.txt" en lugar de mostrarlo en la
+                      consola</span
+                    >.
+                  </p>
+                </li>
+                <li>
+                  <span class="fw-bold"></span
+                  ><span class="fw-bold"
+                    >Caracteres de escape y nueva línea en Python</span
+                  >:
+                  <pre
+                    class="line-numbers"
+                    data-src-status="loaded"
+                    tabindex="0"
+                  ><code class="language-python" data-prismjs-copy="Copy">print("La Witsi Witsi Araña \n subió a su telaraña.")
+print()
+print("Vino la lluvia \n y se la llevó.")</code></pre>
+                  <p>
+                    Salida: <br />
+                    <span class="text-success fw-bold"
+                      >La Witsi Witsi Araña <br />
+                      subió a su telaraña.<br />
+                      <br />
+                      Vino la lluvia<br />
+                      y se la llevó.
+                    </span>
+                  </p>
+                </li>
+              </ol>
             </div>
-            <!-- Reglas para Nombrar Variables -->
-            <div id="reglasParaNombrarVariables" class="mt-5 pt-5">
-              <h2 class="mt-1">Reglas para Nombrar Variables</h2>
+
+            <!-- Usos comunes de print(): -->
+            <div id="usosComunesPrint" class="mt-5 pt-5">
+              <h2 class="mt-1">Usos comunes de print()</h2>
               <ul>
                 <li>
-                  <span class="fw-bold">Iniciar con una letra</span>: El nombre
-                  de una variable debe comenzar con una letra (mayúscula o
-                  minúscula) o un guion bajo (_).
+                  <span class="fw-bold">Depuración</span>: Verificar el valor de
+                  las variables en diferentes puntos del código.
                 </li>
                 <li>
-                  <span class="fw-bold"
-                    >Usar solo letras, números y guiones bajos</span
-                  >: No se permiten espacios ni caracteres especiales.
+                  <span class="fw-bold">Mostrar resultados</span>: Presentar los
+                  resultados de cálculos o procesos.
                 </li>
                 <li>
-                  <span class="fw-bold"
-                    >Distinguir entre mayúsculas y minúsculas</span
-                  >: Python es case-sensitive, por lo que <code>nombre</code> y
-                  <code>Nombre</code> son variables diferentes.
+                  <span class="fw-bold">Interactuar con el usuario</span>:
+                  Solicitar información o proporcionar mensajes.
                 </li>
                 <li>
-                  <span class="fw-bold">Evitar palabras reservadas</span>: No se
-                  pueden usar como nombres de variables palabras que tienen un
-                  significado especial en Python (como if, else, for, etc.).
+                  <span class="fw-bold">Crear salidas formateadas</span>:
+                  Generar informes o tablas.
                 </li>
               </ul>
-              <p>
-                Python no impone restricciones en la longitud de los nombres de
-                las variables, pero eso no significa que un nombre de variable
-                largo sea mejor que uno corto.
-              </p>
             </div>
 
-            <!-- Convenciones de Nomenclatura -->
-            <div id="ConvencionesDeNomenclatura" class="mt-5 pt-5">
-              <h2 class="mt-1">Convenciones de Nomenclatura</h2>
-              <p>
-                Aunque Python no impone reglas estrictas para nombrar variables,
-                se recomienda seguir algunas convenciones para mejorar la
-                legibilidad del código:
-              </p>
+            <!-- Consideraciones -->
+            <div id="consideraciones" class="mt-5 pt-5">
+              <h2 class="mt-1">Consideraciones</h2>
               <ul>
                 <li>
-                  <span class="fw-bold">Nombres descriptivos</span>: Los nombres
-                  de las variables deben ser lo más descriptivos posible para
-                  indicar el propósito de la variable.
+                  Es posible imprimir objetos de diferentes tipos (números,
+                  strings, listas, etc.).
                 </li>
                 <li>
-                  <span class="fw-bold">Snake case</span>: Se recomienda
-                  utilizar el estilo "snake case", en el que las palabras se
-                  separan por guiones bajos (ejemplo: mi_variable).
+                  <code>print()</code> convierte todos los argumentos en cadenas
+                  de texto (usando <code>str()</code>) antes de mostrarlos.
                 </li>
               </ul>
-              <p>
-                El
-                <a
-                  href="https://www.python.org/dev/peps/pep-0008/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >PEP 8 -- Style Guide for Python Code</a
-                >
-                recomienda la siguiente convención de nomenclatura para
-                variables y funciones en Python:
-              </p>
-              <ul>
-                <li>
-                  Los nombres de las variables deben estar en minúsculas, con
-                  palabras separadas por guiones bajos para mejorar la
-                  legibilidad (por ejemplo, var, my_variable)
-                </li>
-                <li>
-                  Los nombres de las funciones siguen la misma convención que
-                  los nombres de las variables (por ejemplo, fun, my_function)
-                </li>
-                <li>
-                  También es posible usar letras mixtas (por ejemplo,
-                  myVariable), pero solo en contextos donde ese ya es el estilo
-                  predominante, para mantener la compatibilidad retroactiva con
-                  la convención adoptada.
-                </li>
-              </ul>
-            </div>
-
-            <!-- Tipos de Datos en Python -->
-            <div id="TiposDeDatosEnPython" class="mt-5 pt-5">
-              <h2 class="mt-1">Tipos de Datos en Python</h2>
-              <p>Python soporta varios tipos de datos, incluyendo:</p>
-              <ul>
-                <li>
-                  <span class="fw-bold">int</span>: Números enteros (ej: 42,
-                  -10)
-                </li>
-                <li>
-                  <span class="fw-bold">float</span>: Números de punto flotante
-                  (ej: 3.14, -0.5)
-                </li>
-                <li>
-                  <span class="fw-bold">str</span>: Cadenas de texto (ej:
-                  "Hola", 'mundo')
-                </li>
-                <li>
-                  <span class="fw-bold">bool</span>: Valores booleanos (True o
-                  False)
-                </li>
-                <li>
-                  <span class="fw-bold">list</span>: Listas ordenadas de
-                  elementos (ej: [1, 2, 3])
-                </li>
-                <li>
-                  <span class="fw-bold">tuple</span>: Tuplas ordenadas e
-                  inmutables (ej: (1, 2, 3))
-                </li>
-                <li>
-                  <span class="fw-bold">dict</span>: Diccionarios de clave-valor
-                  (ej: {'nombre': 'Juan', 'edad': 30})
-                </li>
-                <li><span class="fw-bold">Y muchos otros...</span></li>
-              </ul>
-              <p>Ejemplo completo:</p>
-              <pre
-                class="line-numbers"
-                data-src-status="loaded"
-                tabindex="0"
-              ><code class="language-python" data-prismjs-copy="Copy">
-# Calcular el área de un círculo
-
-radio = 5  # Radio del círculo (en cm)
-pi = 3.14159  # Valor aproximado de pi
-
-area = pi * radio**2
-
-print("El área del círculo es:", area, "cm²")
-                </code></pre>
-            </div>
-
-            <!-- Operadores Abreviados -->
-            <div id="OperadoresAbreviados" class="mt-5 pt-5">
-              <h2 class="mt-1">Operadores Abreviados</h2>
-              <p>
-                Es tiempo de explicar el siguiente conjunto de operadores que
-                harán la vida del programador/desarrollador más fácil. Muy
-                seguido, se desea utilizar la misma variable al lado derecho y
-                al lado izquierdo del operador = operator.
-              </p>
-              <p>
-                Por ejemplo, si se necesita calcular una serie de valores
-                sucesivos de la potencia de 2, se puede usar el siguiente
-                código:
-              </p>
-              <pre
-                class="line-numbers"
-                data-src-status="loaded"
-                tabindex="0"
-              ><code class="language-python" data-prismjs-copy="Copy">
-x = x * 2
-            </code></pre>
-              <p>
-                Python ofrece una manera más corta de escribir operaciones como
-                estas, lo cual se puede codificar de la siguiente manera:
-              </p>
-              <pre
-                class="line-numbers"
-                data-src-status="loaded"
-                tabindex="0"
-              ><code class="language-python" data-prismjs-copy="Copy">
-x *= 2
-          </code></pre>
-              <p>
-                A continuación se intenta presentar una descripción general para
-                este tipo de operaciones. Si op es un operador de dos argumentos
-                (esta es una condición muy importante) y el operador es
-                utilizado en el siguiente contexto...:
-              </p>
-              <pre
-                class="line-numbers"
-                data-src-status="loaded"
-                tabindex="0"
-              ><code class="language-python" data-prismjs-copy="Copy">
-                variable = variable op expresión
-          </code></pre>
-              <p>
-                ...entonces se puede simplificar y mostrar de la siguiente
-                manera:
-              </p>
-              <pre
-                class="line-numbers"
-                data-src-status="loaded"
-                tabindex="0"
-              ><code class="language-python" data-prismjs-copy="Copy">
-                variable op= expresión
-          </code></pre>
-            </div>
-            <p>Ejemplos de operaciones:</p>
-            <div class="mx-auto miTabla">
-              <table
-                class="table table-striped table-bordered table-sm "
-              >
-                <thead class="text-center">
-                  <tr >
-                    <th scope="col" class="miCol20">#</th>
-                    <th scope="col" class="miCol40">Expresión</th>
-                    <th scope="col" class="miCol40">Operador Abreviado</th>
-                  </tr>
-                </thead>
-                <tbody class="table-group-divider text-center">
-                  <tr>
-                    <td>1</td>
-                    <td><code>i = i + 2 * j</code></td>
-                    <td><code>i += 2 * 3</code></td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td><code>var = var / 2</code></td>
-                    <td><code>var /= 2</code></td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td><code>rem = rem % 10</code></td>
-                    <td><code>rem %= 10</code></td>
-                  </tr>
-                  <tr>
-                    <td>4</td>
-                    <td><code>j = j - (i + var + rem)</code></td>
-                    <td><code>j -= (i + var + rem)</code></td>
-                  </tr>
-                  <tr>
-                    <td>5</td>
-                    <td><code>x = x ** 2</code></td>
-                    <td><code>x **= 2
-                    </code></td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
           </div>
         </article>
-        <!--  Variables  -->
+        <!--  Instrucción print()  -->
       </main>
       <!-- -------------------------------- fin principal -------------------------------- -->
       <!-- -------------------------------- barra lateral -------------------------------- -->
@@ -496,35 +474,16 @@ x *= 2
         <h1>Índice</h1>
         <ul class="list-unstyled">
           <li>
-            <a href="#QueEsUnaVariableEnPython"
-              >¿Qué es una variable en Python?</a
-            >
+            <a href="#funcionBasica">Función Básica</a>
           </li>
           <li>
-            <a href="#ParaQueSirvenVariables"
-              >¿Para qué Sirven las Variables?</a
-            >
+            <a href="#sintaxisBasica">Sintaxis básica</a>
           </li>
           <li>
-            <a href="#comoDeclararUnaVariableEnPython"
-              >Cómo declarar una Variable en Python</a
-            >
+            <a href="#ejemplos">Ejemplos</a>
           </li>
           <li>
-            <a href="#reglasParaNombrarVariables"
-              >Reglas para Nombrar Variables</a
-            >
-          </li>
-          <li>
-            <a href="#ConvencionesDeNomenclatura"
-              >Convenciones de Nomenclatura</a
-            >
-          </li>
-          <li>
-            <a href="#OperadoresAbreviados">Tipos de Datos en Python</a>
-          </li>
-          <li>
-            <a href="#OperadoresAbreviados">Operadores Abreviados</a>
+            <a href="#consideraciones">Consideraciones</a>
           </li>
         </ul>
       </aside>

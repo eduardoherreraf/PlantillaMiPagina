@@ -7,18 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Aprende que son, por qué, cuándo y en dónde utilizar comentarios Python"
+      content="Aprende a declarar y usar variables en Python. Descubre los tipos de datos, buenas prácticas y ejemplos para mejorar tus habilidades de programación."
     />
     <meta
       name="tittle"
-      content="Comentarios en Python - Ing. Eduardo Herrera Forero."
+      content="Variables Python - Ing. Eduardo Herrera Forero."
     />
     <meta name="author" content="Ing. Eduardo Herrera Forero" />
     <meta name="application-name" content="EHF" />
     <meta name="robots" content="index, follow" />
     <link
       rel="canonical"
-      href="https://eduardoherreraf.github.io/cursoPython3@06_comentarios_en_python.html"
+      href="https://eduardoherreraf.github.io/cursoPython3@0204_variables.html"
     />
     <!-- Fin Metaetiquetas -->
 
@@ -26,11 +26,11 @@
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
-      content="Comentarios en Python - Ing. Eduardo Herrera Forero."
+      content="Variables Python - Ing. Eduardo Herrera Forero."
     />
     <meta
       property="og:description"
-      content="Aprende que son, por qué, cuándo y en dónde utilizar comentarios Python"
+      content="Aprende a declarar y usar variables en Python. Descubre los tipos de datos, buenas prácticas y ejemplos para mejorar tus habilidades de programación."
     />
     <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
     <meta
@@ -39,7 +39,7 @@
     />
     <meta
       property="og:url"
-      content="https://eduardoherreraf.github.io/cursoPython3@06_comentarios_en_python"
+      content="https://eduardoherreraf.github.io/cursoPython3@0204_variables.html"
     />
     <meta property="og:locale" content="es_CO" />
     <!-- fin Open Graph data -->
@@ -49,15 +49,15 @@
     <meta name="twitter:site" content="@ehfeduardo" />
     <meta
       name="twitter:url"
-      content="Comentarios en Python - Ing. Eduardo Herrera Forero."
+      content="Variables Python - Ing. Eduardo Herrera Forero."
     />
     <meta
       name="twitter:title"
-      content="https://eduardoherreraf.github.io/cursoPython3@06_comentarios_en_python"
+      content="https://eduardoherreraf.github.io/cursoPython3@0204_variables.html"
     />
     <meta
       name="twitter:description"
-      content="Aprende que son, por qué, cuándo y en dónde utilizar comentarios Python"
+      content="Aprende a declarar y usar variables en Python. Descubre los tipos de datos, buenas prácticas y ejemplos para mejorar tus habilidades de programación."
     />
     <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
     <meta
@@ -82,7 +82,7 @@
     <meta name="theme-color" content="#ffffff" />
     <!-- fin iconos -->
 
-    <title>Comentarios en Python - Ing. Eduardo Herrera Forero.</title>
+    <title>Variables Python - Ing. Eduardo Herrera Forero.</title>
 
     <script type="module" defer src="./js/main.js"></script>
 
@@ -177,382 +177,318 @@
     <!--  Principal  -->
     <div class="row col">
       <main class="pt-5 col-lg-9">
-        <!--  Comentarios en Python  -->
+        <!--  Variables  -->
         <article class="row border-1 border-bottom pb-3">
           <div>
-            <header>
-              <h1>Comentarios en Python</h1>
-            </header>
+            <header><h1>Variables en Python</h1></header>
+
             <p>
-              Se explicará en este artículo porque es importante documentar el
-              código y porque se debe dejar comentarios. También se explicará
-              cómo hacerlo y cuándo los comentarios se consideran una buena
-              práctica.
+              Los operadores en Python son símbolos especiales que realizan
+              operaciones específicas en uno o más valores (operandos). Son
+              esenciales para realizar cálculos, comparaciones y manipulaciones
+              de datos en los programas.
             </p>
 
-            <div class="text-center imagen">
-              <picture>
+            <!-- ¿Qué es una variable en Python? -->
+            <div id="QueEsUnaVariableEnPython" class="mt-5 pt-5">
+              <h2 class="mt-1">¿Qué es una variable en Python?</h2>
+              <p>
+                En Python, una variable puede ser entendida como un contenedor o
+                un nombre que se asigna a un valor específico. Este valor puede
+                ser de diferentes tipos, como un número, una palabra (texto) o
+                incluso una estructura de datos más compleja. Imaginar una caja
+                con un rótulo: la caja es la variable y el rótulo es el nombre
+                que le damos. Dentro de la caja, se guarda el valor que quieres
+                recordar.
+              </p>
+              <div class="text-center imagen">
                 <img
-                  src="https://images2.imgbox.com/bf/0a/5SAbyhKi_o.png"
+                  src="https://images2.imgbox.com/82/c6/LpapXhm6_o.png"
                   class="img-fluid"
-                  width="80%"
-                  alt="Comentarios en Python"
-                  title="El Papel de los Comentarios en Python"
+                  alt="Explicación que es una Variable "
+                  width="50%"
                 />
-                <figcaption>Comentarios en Python</figcaption>
-              </picture>
-            </div>
-            <!-- ¿Qué Son los Comentarios en Python? -->
-            <div id="quesonloscomentariosenPython" class="mt-5 pt-5">
-              <h2 class="mt-1">¿Qué Son los Comentarios en Python?</h2>
-              <p>
-                Los comentarios en Python son líneas de código que el intérprete
-                ignora. Se utilizan para añadir notas explicativas al código,
-                haciendo que sea más fácil de entender tanto para el programador
-                que lo escribió como para otros que lo lean en el futuro. Estos
-                comentarios sirven como una especie de documentación interna,
-                ayudando a explicar el propósito de diferentes secciones de
-                código, algoritmos utilizados o decisiones de diseño.
-              </p>
-            </div>
-            <!-- ¿Qué Son los Comentarios en Python? Fin -->
-
-            <!-- ¿Por qué Utilizar Comentarios? -->
-            <div id="porQueUtilizarComentariosPython" class="mt-5 pt-5">
-              <h2 class="mt-1">¿Por qué Utilizar Comentarios?</h2>
-              <ul>
-                <li>
-                  <span class="fw-bold">Claridad</span>: Hacen el código más
-                  legible, especialmente para proyectos grandes o complejos.
-                </li>
-                <li>
-                  <span class="fw-bold">Documentación</span>: Sirven como una
-                  especie de manual de usuario para el código.
-                </li>
-                <li>
-                  <span class="fw-bold">Recordatorio</span>: Ayudan al
-                  programador a recordar la lógica detrás de ciertas partes del
-                  código, especialmente después de un tiempo sin trabajar en él.
-                </li>
-                <li>
-                  <span class="fw-bold">Colaboración</span>: Facilitan el
-                  trabajo en equipo, ya que otros programadores pueden entender
-                  rápidamente el código y hacer modificaciones sin perderse.
-                </li>
-                <li>
-                  <span class="fw-bold">Depuración</span>: Ayudan a identificar
-                  errores en el código al explicar el flujo de ejecución
-                  esperado.
-                </li>
-              </ul>
-            </div>
-            <!-- ¿Por qué Utilizar Comentarios? Fin -->
-
-            <!-- ¿Cuándo Utilizar Comentarios en Python? -->
-            <div id="cuandoUtilizarComentariosPython" class="mt-5 pt-5">
-              <h2 class="mt-1">¿Cuándo Utilizar Comentarios en Python?</h2>
-              <ul>
-                <li>
-                  <span class="fw-bold">Explicar algoritmos complejos</span>:
-                  Cuando se utiliza un algoritmo no obvio, un comentario puede
-                  explicar su funcionamiento.
-                </li>
-                <li>
-                  <span class="fw-bold">Justificar decisiones de diseño</span>:
-                  Si hay varias opciones posibles, un comentario puede explicar
-                  por qué se eligió una en particular.
-                </li>
-                <li>
-                  <span class="fw-bold"
-                    >Señalar secciones de código problemáticas</span
-                  >: Si una parte del código es propensa a errores o difícil de
-                  entender, un comentario puede advertir al lector.
-                </li>
-                <li>
-                  <span class="fw-bold">Documentar funciones y clases</span>: Es
-                  una buena práctica añadir comentarios al principio de cada
-                  función o clase para describir su propósito y parámetros.
-                </li>
-              </ul>
-            </div>
-            <!-- ¿Cuándo Utilizar Comentarios en Python? Fin -->
-
-            <!-- ¿Dónde Colocar los Comentarios en Python? -->
-            <div id="dondeColocarlosComentariosPython" class="mt-5 pt-5">
-              <h2 class="mt-1">¿Dónde Colocar los Comentarios en Python?</h2>
-              <ul>
-                <li>
-                  <span class="fw-bold">Al inicio de un archivo</span>: Para
-                  describir el propósito general del archivo.
-                </li>
-                <li>
-                  <span class="fw-bold">Antes de una función o clase</span>:
-                  Para explicar su funcionalidad y parámetros.
-                </li>
-                <li>
-                  <span class="fw-bold">Dentro de una función</span>: Para
-                  explicar secciones de código complejas o no obvias.
-                </li>
-                <li>
-                  <span class="fw-bold">Al final de un bloque de código</span>:
-                  Para resumir el propósito del bloque.
-                </li>
-              </ul>
-            </div>
-            <!-- ¿Dónde Colocar los Comentarios en Python? Fin -->
-
-            <!-- Cómo Escribir Comentarios en Python -->
-            <div id="comoEscribirComentariosenPython" class="mt-5 pt-5">
-              <h2 class="mt-1">Cómo Escribir Comentarios en Python</h2>
-              <p>
-                En Python, hay dos formas principales de escribir comentarios:
-              </p>
-              <!-- Comentarios de una Sola Línea -->
-              <div id="comentariosdeunaSolaLineas">
-                <h3>Comentarios de una Sola Línea</h3>
-                <p>
-                  Se inician con el símbolo <kbd>#</kbd>. Todo el texto después
-                  del # hasta el final de la línea se ignora.
-                </p>
-                <pre
-                  class="line-numbers"
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-python" data-prismjs-copy="Copy">
-# Esto es un comentario de una línea
-x = 5  # Aquí asignamos el valor 5 a la variable x
-                  </code></pre>
               </div>
-              <!-- Comentarios de una Sola Línea fin -->
-
-              <!-- Comentarios de Múltiples Líneas -->
-              <div id="comentariosdeMultiplesLineas">
-                <h3>Comentarios de Múltiples Líneas</h3>
-                <p>
-                  Los comentarios de varias líneas en Python se suelen hacer
-                  usando comillas triples (<kbd>""" ... """</kbd>). Este tipo de
-                  comentario es comúnmente utilizado para documentar funciones,
-                  clases o módulos y se le conoce como docstring o cadena de
-                  documentación. Aunque no son técnicamente comentarios (ya que
-                  Python los interpreta como una cadena de texto), permiten
-                  describir bloques de código más extensos.
-                </p>
-                <pre
-                  class="line-numbers"
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-python" data-prismjs-copy="Copy">
-"""
-Este es un comentario
-que abarca múltiples líneas.
-"""
-                  </code></pre>
-              </div>
-              <!-- Comentarios de Múltiples Líneas fin -->
             </div>
-            <!-- Ejemplo Completo -->
-            <div id="ejemploCompleto" class="mt-5 pt-5">
-              <h2 class="mt-1">Ejemplo Completo</h2>
+            <!-- ¿Qué es una variable en Python? Fin -->
+
+            <!-- ¿Para qué Sirven las Variables? -->
+            <div id="ParaQueSirvenVariables" class="mt-5 pt-5">
+              <h2 class="mt-1">¿Para qué Sirven las Variables?</h2>
+              <ul>
+                <li>
+                  <span class="fw-bold">Almacenar datos</span>: Las variables
+                  nos permiten guardar datos de manera temporal o permanente
+                  dentro de un programa.
+                </li>
+                <li>
+                  <span class="fw-bold">Manipular datos</span>: Podemos realizar
+                  operaciones matemáticas, comparaciones o cualquier otra acción
+                  sobre los valores almacenados en las variables.
+                </li>
+                <li>
+                  <span class="fw-bold">Hacer nuestro código más legible</span>:
+                  Al asignar nombres significativos a las variables, hacemos que
+                  nuestro código sea más fácil de entender y mantener
+                </li>
+              </ul>
+            </div>
+            <!-- Cómo declarar una Variable en Python -->
+            <div id="comoDeclararUnaVariableEnPython" class="mt-5 pt-5">
+              <h2 class="mt-1">Cómo declarar una Variable en Python</h2>
+              <p>
+                Para crear una variable en Python, simplemente asignamos un
+                valor a un nombre. No es necesario declarar el tipo de dato de
+                antemano, ya que Python lo infiere automáticamente.
+              </p>
               <pre
                 class="line-numbers"
                 data-src-status="loaded"
                 tabindex="0"
-              ><code class="language-py" data-prismjs-copy="Copy">
-  def factorial(n):
-  """
-  Calcula el factorial de un número.
-  Args:
-    n: Un número entero no negativo.
-  Returns:
-    El factorial de n.
-  """
-
-  if n == 0:
-    return 1
-  else:
-    return n * factorial(n-1)
-
-# Ejemplo de uso:
-resultado = factorial(5)
-print(resultado)  # Imprime 120
-                </code></pre>
-            </div>
-            <!-- Ejemplo Completo Fin -->
-
-            <!-- Variables Autodocumentadas -->
-            <div id="variablesAutodocumentadasenPython" class="mt-5 pt-5">
-              <h2 class="mt-1">Variables Autodocumentadas</h2>
-              <p>
-                En Python, aunque no existe un mecanismo directo para declarar
-                variables "autodocumentadas" como en otros lenguajes, se puede
-                emplear técnicas para mejorar la claridad y comprensibilidad de
-                las variables utilizadas.
-              </p>
-              <!-- Nombres Descriptivos -->
-              <div id="nombresDescriptivoss">
-                <h3>Nombres Descriptivos</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Evitar nombres crípticos</span>:
-                    Utilizar nombres que reflejen claramente el propósito de la
-                    variable.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Use convenciones de nomenclatura</span
-                    >: Seguir a las convenciones de nomenclatura de Python (por
-                    ejemplo, snake_case para variables).
-                  </li>
-                </ul>
-                <pre
-                  class="line-numbers"
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-python" data-prismjs-copy="Copy">
-# Buen ejemplo:
-nombre_completo = "John Doe"
-edad = 30
-
-# Mal ejemplo:
-x = "John Doe"
-y = 30
-                </code></pre>
-              </div>
-              <!-- Nombres Descriptivos fin -->
-
-              <!-- Comentarios Explicativos -->
-              <div id="comentariosExplicativoss">
-                <h3>Comentarios Explicativos</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Usar comentarios de una línea</span>:
-                    Añadir comentarios concisos para explicar el propósito de la
-                    variable, especialmente si su nombre no es lo
-                    suficientemente claro.
-                  </li>
-                  <li>
-                    <span class="fw-bold"
-                      >Emplear comentarios de varias líneas</span
-                    >: Para explicaciones más detalladas, utilice comentarios de
-                    varias líneas.
-                  </li>
-                  <pre
-                    class="line-numbers"
-                    data-src-status="loaded"
-                    tabindex="0"
-                  ><code class="language-python" data-prismjs-copy="Copy">
-nombre_completo = "John Doe"  # Nombre completo de la persona
-edad = 30  # Edad de la persona en años
+              ><code class="language-python" data-prismjs-copy="Copy">
+# Ejemplo de declaración de variables
+nombre = "Juan"  # Variable de tipo cadena (texto)
+edad = 30        # Variable de tipo entero
+altura = 1.75    # Variable de tipo flotante (número con decimales)
                   </code></pre>
-                </ul>
-              </div>
-              <!-- Comentarios Explicativos fin -->
-
-              <!-- Docstrings para Módulos, Funciones y Clases -->
-              <div id="docstringsparaMódulosFuncionesyClasess">
-                <h3>Docstrings para Módulos, Funciones y Clases</h3>
-                <p>
-                  Aunque principalmente se usa para funciones y clases, los
-                  docstrings también pueden ser útiles para documentar variables
-                  globales o constantes.
-                </p>
-                <pre
-                  class="line-numbers"
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-python" data-prismjs-copy="Copy">
-                  """
-                  Este módulo contiene constantes relacionadas con la configuración de la aplicación.
-                  """
-
-                  VERSION_MAYOR = 1
-                  VERSION_MENOR = 0
-                  </code></pre>
-              </div>
-              <!-- Docstrings para Módulos, Funciones y Clases fin -->
-
-              <!-- Tipo Sugerido (Type Hints) -->
-              <div id="tipoSugeridoTypeHintss">
-                <h3>Tipo Sugerido (Type Hints)</h3>
-                <p>
-                  Aunque no es estrictamente una autodocumentación, los type
-                  hints pueden ayudar a entender el tipo de datos esperado para
-                  una variable.
-                </p>
-                <pre
-                  class="line-numbers"
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-python" data-prismjs-copy="Copy">
-                nombre_completo: str = "John Doe"
-                edad: int = 30
-                </code></pre>
-              </div>
-              <!-- Tipo Sugerido (Type Hints) fin -->
-
-              <!-- Considerar el Uso de Bibliotecas de Documentación -->
-              <div id="considerarelUsodeBibliotecasdeDocumentacions">
-                <h3>Considerar el Uso de Bibliotecas de Documentación</h3>
-                <p>
-                  Python, tiene una amplia variedad de bibliotecas de
-                  documentación que permiten crear y gestionar documentación de
-                  manera eficiente. A continuación, se presenta algunas de las
-                  más populares y sus principales características:
-                </p>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Sphinx</span>: Esta herramientas puede
-                    generar documentación automáticamente a partir de docstrings
-                    y comentarios en su código.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Docutils</span>: Es la biblioteca
-                    estándar de Python para la creación de documentos
-                    estructurados. Permite generar HTML, LaTeX, y otros formatos
-                    a partir de un lenguaje de marcado sencillo.
-                  </li>
-                  <li>
-                    <span class="fw-bold">pdoc</span>: Genera automáticamente
-                    documentación a partir del código fuente de Python, creando
-                    una interfaz web interactiva para explorar las funciones,
-                    clases y módulos.
-                  </li>
-                  <li>
-                    <span class="fw-bold">pydoctor</span>: Similar a pdoc, pero
-                    con un enfoque en la generación de documentación en formato
-                    HTML.
-                  </li>
-                </ul>
-              </div>
-              <!-- Considerar el Uso de Bibliotecas de Documentación fin -->
             </div>
-            <!-- Variables Autodocumentadas Fin -->
-
-            <!-- Recomendaciones -->
-            <div id="recomendaciones" class="mt-5 pt-5">
-              <h2 class="mt-1">Recomendaciones</h2>
+            <!-- Reglas para Nombrar Variables -->
+            <div id="reglasParaNombrarVariables" class="mt-5 pt-5">
+              <h2 class="mt-1">Reglas para Nombrar Variables</h2>
               <ul>
                 <li>
-                  <span class="fw-bold">Ser conciso y claro</span>: Los
-                  comentarios deben ser lo suficientemente detallados para
-                  explicar el código, pero sin ser excesivamente largos.
-                </li>
-                <li>
-                  <span class="fw-bold">Evitar comentarios obvios</span>: No es
-                  necesario comentar cada línea de código. Solo comentar las
-                  partes que no son autoexplicativas.
+                  <span class="fw-bold">Iniciar con una letra</span>: El nombre
+                  de una variable debe comenzar con una letra (mayúscula o
+                  minúscula) o un guion bajo (_).
                 </li>
                 <li>
                   <span class="fw-bold"
-                    >Mantener los comentarios actualizados</span
-                  >: Si se modifica el código, estar seguro de actualizar los
-                  comentarios correspondientes.
+                    >Usar solo letras, números y guiones bajos</span
+                  >: No se permiten espacios ni caracteres especiales.
+                </li>
+                <li>
+                  <span class="fw-bold"
+                    >Distinguir entre mayúsculas y minúsculas</span
+                  >: Python es case-sensitive, por lo que <code>nombre</code> y
+                  <code>Nombre</code> son variables diferentes.
+                </li>
+                <li>
+                  <span class="fw-bold">Evitar palabras reservadas</span>: No se
+                  pueden usar como nombres de variables palabras que tienen un
+                  significado especial en Python (como if, else, for, etc.).
+                </li>
+              </ul>
+              <p>
+                Python no impone restricciones en la longitud de los nombres de
+                las variables, pero eso no significa que un nombre de variable
+                largo sea mejor que uno corto.
+              </p>
+            </div>
+
+            <!-- Convenciones de Nomenclatura -->
+            <div id="ConvencionesDeNomenclatura" class="mt-5 pt-5">
+              <h2 class="mt-1">Convenciones de Nomenclatura</h2>
+              <p>
+                Aunque Python no impone reglas estrictas para nombrar variables,
+                se recomienda seguir algunas convenciones para mejorar la
+                legibilidad del código:
+              </p>
+              <ul>
+                <li>
+                  <span class="fw-bold">Nombres descriptivos</span>: Los nombres
+                  de las variables deben ser lo más descriptivos posible para
+                  indicar el propósito de la variable.
+                </li>
+                <li>
+                  <span class="fw-bold">Snake case</span>: Se recomienda
+                  utilizar el estilo "snake case", en el que las palabras se
+                  separan por guiones bajos (ejemplo: mi_variable).
+                </li>
+              </ul>
+              <p>
+                El
+                <a
+                  href="https://www.python.org/dev/peps/pep-0008/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >PEP 8 -- Style Guide for Python Code</a
+                >
+                recomienda la siguiente convención de nomenclatura para
+                variables y funciones en Python:
+              </p>
+              <ul>
+                <li>
+                  Los nombres de las variables deben estar en minúsculas, con
+                  palabras separadas por guiones bajos para mejorar la
+                  legibilidad (por ejemplo, var, my_variable)
+                </li>
+                <li>
+                  Los nombres de las funciones siguen la misma convención que
+                  los nombres de las variables (por ejemplo, fun, my_function)
+                </li>
+                <li>
+                  También es posible usar letras mixtas (por ejemplo,
+                  myVariable), pero solo en contextos donde ese ya es el estilo
+                  predominante, para mantener la compatibilidad retroactiva con
+                  la convención adoptada.
                 </li>
               </ul>
             </div>
-            <!-- Recomendaciones Fin -->
+
+            <!-- Tipos de Datos en Python -->
+            <div id="TiposDeDatosEnPython" class="mt-5 pt-5">
+              <h2 class="mt-1">Tipos de Datos en Python</h2>
+              <p>Python soporta varios tipos de datos, incluyendo:</p>
+              <ul>
+                <li>
+                  <span class="fw-bold">int</span>: Números enteros (ej: 42,
+                  -10)
+                </li>
+                <li>
+                  <span class="fw-bold">float</span>: Números de punto flotante
+                  (ej: 3.14, -0.5)
+                </li>
+                <li>
+                  <span class="fw-bold">str</span>: Cadenas de texto (ej:
+                  "Hola", 'mundo')
+                </li>
+                <li>
+                  <span class="fw-bold">bool</span>: Valores booleanos (True o
+                  False)
+                </li>
+                <li>
+                  <span class="fw-bold">list</span>: Listas ordenadas de
+                  elementos (ej: [1, 2, 3])
+                </li>
+                <li>
+                  <span class="fw-bold">tuple</span>: Tuplas ordenadas e
+                  inmutables (ej: (1, 2, 3))
+                </li>
+                <li>
+                  <span class="fw-bold">dict</span>: Diccionarios de clave-valor
+                  (ej: {'nombre': 'Juan', 'edad': 30})
+                </li>
+                <li><span class="fw-bold">Y muchos otros...</span></li>
+              </ul>
+              <p>Ejemplo completo:</p>
+              <pre
+                class="line-numbers"
+                data-src-status="loaded"
+                tabindex="0"
+              ><code class="language-python" data-prismjs-copy="Copy">
+# Calcular el área de un círculo
+
+radio = 5  # Radio del círculo (en cm)
+pi = 3.14159  # Valor aproximado de pi
+
+area = pi * radio**2
+
+print("El área del círculo es:", area, "cm²")
+                </code></pre>
+            </div>
+
+            <!-- Operadores Abreviados -->
+            <div id="OperadoresAbreviados" class="mt-5 pt-5">
+              <h2 class="mt-1">Operadores Abreviados</h2>
+              <p>
+                Es tiempo de explicar el siguiente conjunto de operadores que
+                harán la vida del programador/desarrollador más fácil. Muy
+                seguido, se desea utilizar la misma variable al lado derecho y
+                al lado izquierdo del operador = operator.
+              </p>
+              <p>
+                Por ejemplo, si se necesita calcular una serie de valores
+                sucesivos de la potencia de 2, se puede usar el siguiente
+                código:
+              </p>
+              <pre
+                class="line-numbers"
+                data-src-status="loaded"
+                tabindex="0"
+              ><code class="language-python" data-prismjs-copy="Copy">
+x = x * 2
+            </code></pre>
+              <p>
+                Python ofrece una manera más corta de escribir operaciones como
+                estas, lo cual se puede codificar de la siguiente manera:
+              </p>
+              <pre
+                class="line-numbers"
+                data-src-status="loaded"
+                tabindex="0"
+              ><code class="language-python" data-prismjs-copy="Copy">
+x *= 2
+          </code></pre>
+              <p>
+                A continuación se intenta presentar una descripción general para
+                este tipo de operaciones. Si op es un operador de dos argumentos
+                (esta es una condición muy importante) y el operador es
+                utilizado en el siguiente contexto...:
+              </p>
+              <pre
+                class="line-numbers"
+                data-src-status="loaded"
+                tabindex="0"
+              ><code class="language-python" data-prismjs-copy="Copy">
+                variable = variable op expresión
+          </code></pre>
+              <p>
+                ...entonces se puede simplificar y mostrar de la siguiente
+                manera:
+              </p>
+              <pre
+                class="line-numbers"
+                data-src-status="loaded"
+                tabindex="0"
+              ><code class="language-python" data-prismjs-copy="Copy">
+                variable op= expresión
+          </code></pre>
+            </div>
+            <p>Ejemplos de operaciones:</p>
+            <div class="mx-auto miTabla">
+              <table
+                class="table table-striped table-bordered table-sm "
+              >
+                <thead class="text-center">
+                  <tr >
+                    <th scope="col" class="miCol20">#</th>
+                    <th scope="col" class="miCol40">Expresión</th>
+                    <th scope="col" class="miCol40">Operador Abreviado</th>
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider text-center">
+                  <tr>
+                    <td>1</td>
+                    <td><code>i = i + 2 * j</code></td>
+                    <td><code>i += 2 * 3</code></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td><code>var = var / 2</code></td>
+                    <td><code>var /= 2</code></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td><code>rem = rem % 10</code></td>
+                    <td><code>rem %= 10</code></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td><code>j = j - (i + var + rem)</code></td>
+                    <td><code>j -= (i + var + rem)</code></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td><code>x = x ** 2</code></td>
+                    <td><code>x **= 2
+                    </code></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </article>
-        <!--  Comentarios en Python  -->
+        <!--  Variables  -->
       </main>
       <!-- -------------------------------- fin principal -------------------------------- -->
       <!-- -------------------------------- barra lateral -------------------------------- -->
@@ -560,40 +496,35 @@ edad = 30  # Edad de la persona en años
         <h1>Índice</h1>
         <ul class="list-unstyled">
           <li>
-            <a href="#quesonloscomentariosenPython"
-              >¿Qué Son los Comentarios en Python?</a
+            <a href="#QueEsUnaVariableEnPython"
+              >¿Qué es una variable en Python?</a
             >
           </li>
           <li>
-            <a href="#porQueUtilizarComentariosPython"
-              >¿Por qué Utilizar Comentarios?</a
+            <a href="#ParaQueSirvenVariables"
+              >¿Para qué Sirven las Variables?</a
             >
           </li>
           <li>
-            <a href="#cuandoUtilizarComentariosPython"
-              >¿Cuándo Utilizar Comentarios en Python?</a
+            <a href="#comoDeclararUnaVariableEnPython"
+              >Cómo declarar una Variable en Python</a
             >
           </li>
           <li>
-            <a href="#dondeColocarlosComentariosPython"
-              >¿Dónde Colocar los Comentarios en Python?</a
+            <a href="#reglasParaNombrarVariables"
+              >Reglas para Nombrar Variables</a
             >
           </li>
           <li>
-            <a href="#comoEscribirComentariosenPython"
-              >Cómo Escribir Comentarios en Python</a
+            <a href="#ConvencionesDeNomenclatura"
+              >Convenciones de Nomenclatura</a
             >
           </li>
           <li>
-            <a href="#variablesAutodocumentadasenPython"
-              >Variables Autodocumentadas en Python
-            </a>
+            <a href="#OperadoresAbreviados">Tipos de Datos en Python</a>
           </li>
           <li>
-            <a href="#recomendaciones">Ejemplo Completo</a>
-          </li>
-          <li>
-            <a href="#recomendaciones">Recomendaciones</a>
+            <a href="#OperadoresAbreviados">Operadores Abreviados</a>
           </li>
         </ul>
       </aside>
