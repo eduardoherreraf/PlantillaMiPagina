@@ -4,117 +4,87 @@
   <head>
     <!-- Metaetiquetas -->
     <meta charset="utf-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <meta
       name="description"
-      content="Índice del curso introductorio a Python 3."
+      content="Aprende a declarar y usar variables en Python. Descubre los tipos de datos, buenas prácticas y ejemplos para mejorar tus habilidades de programación."
     />
-
     <meta
       name="tittle"
-      content="Índice de Curso Python 3 - Ing. Eduardo Herrera Forero."
+      content="Variables Python - Ing. Eduardo Herrera Forero."
     />
-
     <meta name="author" content="Ing. Eduardo Herrera Forero" />
-
     <meta name="application-name" content="EHF" />
-
     <meta name="robots" content="index, follow" />
-
     <link
       rel="canonical"
-      href="https://eduardoherreraf.github.io/cursoPython3.html"
+      href="https://eduardoherreraf.github.io/cursoPython3-0204_variables.html"
     />
-
     <!-- Fin Metaetiquetas -->
+
     <!-- Open Graph data -->
-
     <meta property="og:type" content="website" />
-
     <meta
       property="og:title"
-      content="Índice de Curso Python 3 - Ing. Eduardo Herrera Forero."
+      content="Variables Python - Ing. Eduardo Herrera Forero."
     />
-
     <meta
       property="og:description"
-      content="Índice del curso introductorio a Python 3."
+      content="Aprende a declarar y usar variables en Python. Descubre los tipos de datos, buenas prácticas y ejemplos para mejorar tus habilidades de programación."
     />
-
     <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
-
     <meta
       property="og:image:alt"
       content="Logo del ingeniero Eduardo Herrera Forero"
     />
-
     <meta
       property="og:url"
-      content="https://eduardoherreraf.github.io/cursoPython3.html"
+      content="https://eduardoherreraf.github.io/cursoPython3-0204_variables.html"
     />
-
     <meta property="og:locale" content="es_CO" />
-
     <!-- fin Open Graph data -->
+
     <!-- Twitter cards -->
-
     <meta name="twitter:card" content="summary_large_image" />
-
     <meta name="twitter:site" content="@ehfeduardo" />
-
     <meta
       name="twitter:url"
-      content="Índice de Curso Python 3 - Ing. Eduardo Herrera Forero."
+      content="Variables Python - Ing. Eduardo Herrera Forero."
     />
-
     <meta
       name="twitter:title"
-      content="https://eduardoherreraf.github.io/cursoPython3.html"
+      content="https://eduardoherreraf.github.io/cursoPython3-0204_variables.html"
     />
-
     <meta
       name="twitter:description"
-      content="Índice del curso introductorio a Python 3."
+      content="Aprende a declarar y usar variables en Python. Descubre los tipos de datos, buenas prácticas y ejemplos para mejorar tus habilidades de programación."
     />
-
     <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
-
     <meta
       name="twitter:image:alt"
       content="Logo del ingeniero Eduardo Herrera Forero"
     />
-
     <!-- Fin Twitter cards -->
+
     <!-- iconos -->
-
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-
     <link
       rel="icon"
       type="image/png"
       sizes="192x192"
       href="android-chrome-192x192.png"
     />
-
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-
     <link rel="manifest" href="site.webmanifest" />
-
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
-
     <meta name="msapplication-TileColor" content="#da532c" />
-
     <meta name="theme-color" content="#ffffff" />
-
     <!-- fin iconos -->
 
-    <title>Índice de Curso Python 3 - Ing. Eduardo Herrera Forero.</title>
+    <title>Variables Python - Ing. Eduardo Herrera Forero.</title>
 
-    <script type="module" defer="defer" src="./js/main.js"></script>
+    <script type="module" defer src="./js/main.js"></script>
 
     <meta
       name="google-site-verification"
@@ -130,7 +100,6 @@
     id="about"
   >
     <!-- navbar -->
-
     <nav
       class="row navbar navbar-expand-lg bg-body-tertiary border-1 border fixed-top nav-pills"
     >
@@ -203,450 +172,373 @@
         </div>
       </div>
     </nav>
+    <!-- fin navbar -->
 
-    <!-- navbar -->
-    <!-- -------------------------------- principal -------------------------------- -->
-
+    <!--  Principal  -->
     <div class="row col">
-      <main class="pt-5 col">
-        <article class="row border-1 pb-3" id="about">
-          <h1>Curso Python 3</h1>
-          <div id="principal" class="px-5">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th scope="col" class="col-1">#</th>
+      <main class="pt-5 col-lg-9">
+        <!--  Variables  -->
+        <article class="row border-1 border-bottom pb-3">
+          <div>
+            <header><h1>Variables en Python</h1></header>
 
-                  <th scope="col" class="col-9">Nombre</th>
+            <p>
+              Los operadores en Python son símbolos especiales que realizan
+              operaciones específicas en uno o más valores (operandos). Son
+              esenciales para realizar cálculos, comparaciones y manipulaciones
+              de datos en los programas.
+            </p>
 
-                  <th scope="col" class="col-2">Fecha</th>
-                </tr>
-              </thead>
+            <!-- ¿Qué es una variable en Python? -->
+            <div id="QueEsUnaVariableEnPython" class="mt-5 pt-5">
+              <h2 class="mt-1">¿Qué es una variable en Python?</h2>
+              <p>
+                En Python, una variable puede ser entendida como un contenedor o
+                un nombre que se asigna a un valor específico. Este valor puede
+                ser de diferentes tipos, como un número, una palabra (texto) o
+                incluso una estructura de datos más compleja. Imaginar una caja
+                con un rótulo: la caja es la variable y el rótulo es el nombre
+                que le damos. Dentro de la caja, se guarda el valor que quieres
+                recordar.
+              </p>
+              <div class="text-center imagen">
+                <picture>
+                  <img
+                    src="./images/py/variables.jpg"
+                    class="img-fluid  rounded-4"
+                    width="60%"
+                    alt="Variables en Python"
+                    title="Mejores prácticas de nomenclatura de variables en Python"
+                  />
+                  <figcaption>Mejores prácticas de nomenclatura de variables en Python</figcaption>
+                </picture>
+              </div>
+            </div>
+            <!-- ¿Qué es una variable en Python? Fin -->
 
-              <tbody>
-                <tr class="text-center text-uppercase fs-4">
-                  <td colspan="3">Introducción a Python</td>
-                </tr>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>
-                    <a href="./cursoPython3-0101_introduccion.html">
-                      Introducción Curso Python 3 para Principiantes
-                    </a>
-                  </td>
-                  <td>17-Oct/2024</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>
-                    <a
-                      href="./cursoPython3-0102_instalacion_de_python_localmente.html"
-                    >
-                      Instalación de Python Localmente
-                    </a>
-                  </td>
-                  <td>20-Oct/2024</td>
-                </tr>
-                <tr class="text-center text-uppercase fs-4">
-                  <td colspan="3">
-                    Tipos de Datos, Variables, Operaciones Básicas de I/O,
-                    Operadores Básicos
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
+            <!-- ¿Para qué Sirven las Variables? -->
+            <div id="ParaQueSirvenVariables" class="mt-5 pt-5">
+              <h2 class="mt-1">¿Para qué Sirven las Variables?</h2>
+              <ul>
+                <li>
+                  <span class="fw-bold">Almacenar datos</span>: Las variables
+                  nos permiten guardar datos de manera temporal o permanente
+                  dentro de un programa.
+                </li>
+                <li>
+                  <span class="fw-bold">Manipular datos</span>: Podemos realizar
+                  operaciones matemáticas, comparaciones o cualquier otra acción
+                  sobre los valores almacenados en las variables.
+                </li>
+                <li>
+                  <span class="fw-bold">Hacer nuestro código más legible</span>:
+                  Al asignar nombres significativos a las variables, hacemos que
+                  nuestro código sea más fácil de entender y mantener
+                </li>
+              </ul>
+            </div>
+            <!-- Cómo declarar una Variable en Python -->
+            <div id="comoDeclararUnaVariableEnPython" class="mt-5 pt-5">
+              <h2 class="mt-1">Cómo declarar una Variable en Python</h2>
+              <p>
+                Para crear una variable en Python, simplemente asignamos un
+                valor a un nombre. No es necesario declarar el tipo de dato de
+                antemano, ya que Python lo infiere automáticamente.
+              </p>
+              <pre
+                class="line-numbers"
+                data-src-status="loaded"
+                tabindex="0"
+              ><code class="language-python" data-prismjs-copy="Copy">
+# Ejemplo de declaración de variables
+nombre = "Juan"  # Variable de tipo cadena (texto)
+edad = 30        # Variable de tipo entero
+altura = 1.75    # Variable de tipo flotante (número con decimales)
+                  </code></pre>
+            </div>
+            <!-- Reglas para Nombrar Variables -->
+            <div id="reglasParaNombrarVariables" class="mt-5 pt-5">
+              <h2 class="mt-1">Reglas para Nombrar Variables</h2>
+              <ul>
+                <li>
+                  <span class="fw-bold">Iniciar con una letra</span>: El nombre
+                  de una variable debe comenzar con una letra (mayúscula o
+                  minúscula) o un guion bajo (_).
+                </li>
+                <li>
+                  <span class="fw-bold"
+                    >Usar solo letras, números y guiones bajos</span
+                  >: No se permiten espacios ni caracteres especiales.
+                </li>
+                <li>
+                  <span class="fw-bold"
+                    >Distinguir entre mayúsculas y minúsculas</span
+                  >: Python es case-sensitive, por lo que <code>nombre</code> y
+                  <code>Nombre</code> son variables diferentes.
+                </li>
+                <li>
+                  <span class="fw-bold">Evitar palabras reservadas</span>: No se
+                  pueden usar como nombres de variables palabras que tienen un
+                  significado especial en Python (como if, else, for, etc.).
+                </li>
+              </ul>
+              <p>
+                Python no impone restricciones en la longitud de los nombres de
+                las variables, pero eso no significa que un nombre de variable
+                largo sea mejor que uno corto.
+              </p>
+            </div>
 
-                  <td>
-                    <a href="./cursoPython3-0201_funcion_print.html">
-                      Instrucción
+            <!-- Convenciones de Nomenclatura -->
+            <div id="ConvencionesDeNomenclatura" class="mt-5 pt-5">
+              <h2 class="mt-1">Convenciones de Nomenclatura</h2>
+              <p>
+                Aunque Python no impone reglas estrictas para nombrar variables,
+                se recomienda seguir algunas convenciones para mejorar la
+                legibilidad del código:
+              </p>
+              <ul>
+                <li>
+                  <span class="fw-bold">Nombres descriptivos</span>: Los nombres
+                  de las variables deben ser lo más descriptivos posible para
+                  indicar el propósito de la variable.
+                </li>
+                <li>
+                  <span class="fw-bold">Snake case</span>: Se recomienda
+                  utilizar el estilo "snake case", en el que las palabras se
+                  separan por guiones bajos (ejemplo: mi_variable).
+                </li>
+              </ul>
+              <p>
+                El
+                <a
+                  href="https://www.python.org/dev/peps/pep-0008/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >PEP 8 -- Style Guide for Python Code</a
+                >
+                recomienda la siguiente convención de nomenclatura para
+                variables y funciones en Python:
+              </p>
+              <ul>
+                <li>
+                  Los nombres de las variables deben estar en minúsculas, con
+                  palabras separadas por guiones bajos para mejorar la
+                  legibilidad (por ejemplo, var, my_variable)
+                </li>
+                <li>
+                  Los nombres de las funciones siguen la misma convención que
+                  los nombres de las variables (por ejemplo, fun, my_function)
+                </li>
+                <li>
+                  También es posible usar letras mixtas (por ejemplo,
+                  myVariable), pero solo en contextos donde ese ya es el estilo
+                  predominante, para mantener la compatibilidad retroactiva con
+                  la convención adoptada.
+                </li>
+              </ul>
+            </div>
 
-                      <code>Print()</code>
-                    </a>
-                  </td>
+            <!-- Tipos de Datos en Python -->
+            <div id="TiposDeDatosEnPython" class="mt-5 pt-5">
+              <h2 class="mt-1">Tipos de Datos en Python</h2>
+              <p>Python soporta varios tipos de datos, incluyendo:</p>
+              <ul>
+                <li>
+                  <span class="fw-bold">int</span>: Números enteros (ej: 42,
+                  -10)
+                </li>
+                <li>
+                  <span class="fw-bold">float</span>: Números de punto flotante
+                  (ej: 3.14, -0.5)
+                </li>
+                <li>
+                  <span class="fw-bold">str</span>: Cadenas de texto (ej:
+                  "Hola", 'mundo')
+                </li>
+                <li>
+                  <span class="fw-bold">bool</span>: Valores booleanos (True o
+                  False)
+                </li>
+                <li>
+                  <span class="fw-bold">list</span>: Listas ordenadas de
+                  elementos (ej: [1, 2, 3])
+                </li>
+                <li>
+                  <span class="fw-bold">tuple</span>: Tuplas ordenadas e
+                  inmutables (ej: (1, 2, 3))
+                </li>
+                <li>
+                  <span class="fw-bold">dict</span>: Diccionarios de clave-valor
+                  (ej: {'nombre': 'Juan', 'edad': 30})
+                </li>
+                <li><span class="fw-bold">Y muchos otros...</span></li>
+              </ul>
+              <p>Ejemplo completo:</p>
+              <pre
+                class="line-numbers"
+                data-src-status="loaded"
+                tabindex="0"
+              ><code class="language-python" data-prismjs-copy="Copy">
+# Calcular el área de un círculo
 
-                  <td>17-Oct/2024</td>
-                </tr>
-                <tr>
-                  <th scope="row">4</th>
-                  <td>
-                    <a href="./cursoPython3-0202_literales.html">Literales</a>
-                  </td>
-                  <td>18-Oct/2024</td>
-                </tr>
-                <tr>
-                  <th scope="row">5</th>
-                  <td>
-                    <a href="./cursoPython3-0203_operadores.html">Operadores</a>
-                  </td>
-                  <td>18-Oct/2024</td>
-                </tr>
-                <tr>
-                  <th scope="row">6</th>
-                  <td>
-                    <a href="./cursoPython3-0204_variables.html">Variables</a>
-                  </td>
-                  <td>21-Oct/2024</td>
-                </tr>
-                <tr>
-                  <th scope="row">7</th>
-                  <td>
-                    <a href="./cursoPython3-0205_comentarios.html">Comentarios</a>
-                  </td>
-                  <td>29-Oct/2024</td>
-                </tr>
-                <tr>
-                  <th scope="row">8</th>
-                  <td>
-                    <a href="./cursoPython3-0206_interaccion_con_el_usuario.html">
-                      Interacción con el Usuario
-                    </a>
-                  </td>
+radio = 5  # Radio del círculo (en cm)
+pi = 3.14159  # Valor aproximado de pi
 
-                  <td>29-Oct/2024</td>
-                </tr>
-                <tr class="text-center text-uppercase fs-4">
-                  <td colspan="3">
-                    Valores Booleanos, Ejecución Condicional, Bucles, Listas y
-                    su Procesamiento, Operaciones Lógicas y de Bit a Bit
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">9</th>
-                  <td>
-                    <a
-                      href="./cursoPython3-0301_operadores_de_comparacion_y_logicos_en_python.html"
-                    >
-                      Operadores de Comparación y de Lógica
-                    </a>
-                  </td>
-                  <td>31-Oct/2024</td>
-                </tr>
-                <tr>
-                  <th scope="row">10</th>
-                  <td>
-                    <a
-                      href="./cursoPython3-0302_sentencia_if_de_control_de_flujo.html"
-                    >
-                      Sentencia if de Control de Flujo
-                    </a>
-                  </td>
-                  <td>01-Nov/2024</td>
-                </tr>
-                <tr>
-                  <th scope="row">11</th>
-                  <td>
-                    <a
-                      href="./cursoPython3-0303_bucles_en_python_una_guia_completa.html"
-                    >
-                      Bucles: Una Guía Completa
-                    </a>
-                  </td>
-                  <td>02-Nov/2024</td>
-                </tr>
-                <tr>
-                  <th scope="row">12</th>
-                  <td>
-                    <a
-                      href="./cursoPython3-0304_operadores_logicos_y_operaciones_bit_a_bit_en_python.html"
-                    >
-                      Operadores Lógicos y Operaciones Bit a Bit
-                    </a>
-                  </td>
-                  <td>06-Nov/2024</td>
-                </tr>
-                <tr>
-                  <th scope="row">13</th>
-                  <td>
-                    <a href="./cursoPython3-0305_listas.html">Listas</a>
-                  </td>
-                  <td>07-Nov/2024</td>
-                </tr>
-                <tr>
-                  <th scope="row">14</th>
-                  <td>
-                    <a
-                      href="./cursoPython3-0306_ordenamiento_de_listas_metodo_burbuja.html"
-                      >Ordenando Listas Simples: El Ordenamiento de Burbuja</a
-                    >
-                  </td>
-                  <td>15-Nov/2024</td>
-                </tr>
-                <tr>
-                  <th scope="row">15</th>
-                  <td>
-                    <a href="./cursoPython3-0307_operaciones_con_listas.html"
-                      >Operaciones con listas</a
-                    >
-                  </td>
-                  <td>15-Nov/2024</td>
-                </tr>
-                <tr class="text-center text-uppercase fs-4">
-                  <td colspan="3">Las Funciones</td>
-                </tr>
-                <tr>
-                  <th scope="row">16</th>
-                  <td>
-                    <a href="./cursoPython3-0401_introduccion_funciones.html"
-                      >Introducción a las Funciones</a
-                    >
-                  </td>
-                  <td>20-Nov/2024</td>
-                </tr>
-                <tr>
-                  <th scope="row">17</th>
-                  <td>
-                    <a
-                      href="./cursoPython3-0402_como_las_funciones_se_comunican_con_su_entorno.html"
-                      >Cómo las Funciones se Comunican con su Entorno</a
-                    >
-                  </td>
-                  <td>22-Nov/2024</td>
-                </tr>
-                <tr>
-                  <th scope="row">18</th>
-                  <td>
-                    <a
-                      href="./cursoPython3-0403_retorno_de_valores_en_funciones.html"
-                      >Retorno de Valores en Funciones</a
-                    >
-                  </td>
-                  <td>21-Nov/2024</td>
-                </tr>
-                <tr>
-                  <th scope="row">19</th>
-                  <td>
-                    <a
-                      href="./cursoPython3-0404_el_alcance_de_las_variables.html"
-                      >El Alcance de las Variables</a
-                    >
-                  </td>
-                  <td>21-Nov/2024</td>
-                </tr>
-                <tr>
-                  <th scope="row">20</th>
-                  <td>
-                    <a href="./cursoPython3-0405_tuplas_y_diccionarios.html"
-                      >Tuplas y Diccionarios</a
-                    >
-                  </td>
-                  <td>22-Nov/2024</td>
-                </tr>
-                <tr class="text-center text-uppercase fs-4">
-                  <td colspan="3">Introducción a los módulos</td>
-                </tr>
-                <tr>
-                  <th scope="row">21</th>
-                  <td>
-                    <a
-                      href="./cursoPython3-0501_introduccion_a_los_modulos.html"
-                    >
-                      Introducción a los Módulos</a
-                    >
-                  </td>
-                  <td>25-Nov/2024</td>
-                </tr>
-                <tr>
-                  <th scope="row">22</th>
-                  <td>
-                    <a href="./cursoPython3-0502_importacion_de_modulos.html">
-                      Importación de Módulos</a
-                    >
-                  </td>
-                  <td>25-Nov/2024</td>
-                </tr>
-                <tr>
-                  <th scope="row">23</th>
-                  <td>
-                    <a
-                      href="./cursoPython3-0503_modulos_especializados_de_python-matematico_aleatorio_y_de_sistema.html"
-                    >
-                      Módulos Especializados de Python: Matemático, Aleatorio y
-                      de Sistema</a
-                    >
-                  </td>
-                  <td>26-Nov/2024</td>
-                </tr>
-                <tr>
-                  <th scope="row">24</th>
-                  <td>
-                    <a href="./cursoPython3-0504_modulos_y_paquetes.html">
-                      Módulos y Paquetes de Python</a
-                    >
-                  </td>
-                  <td>28-Nov/2024</td>
-                </tr>
-                <tr>
-                  <th scope="row">25</th>
-                  <td>
-                    <a
-                      href="./cursoPython3-0505_instalador_de_paquetes_PIP.html"
-                    >
-                      Instalador de Paquetes de Python (PIP)</a
-                    >
-                  </td>
-                  <td>30-Nov/2024</td>
-                </tr>
-                <tr class="text-center text-uppercase fs-4">
-                  <td colspan="3">
-                    Cadenas, Métodos de Cadenas y listas, Excepciones
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">26</th>
-                  <td>
-                    <a
-                      href="./cursoPython3-0601_la_naturaleza_de_las_cadenas.html"
-                    >
-                      La naturaleza de las cadenas en Python</a
-                    >
-                  </td>
-                  <td>1-Dic/2024</td>
-                </tr>
-                <tr>
-                  <th scope="row">27</th>
-                  <td>
-                    <a
-                      href="./cursoPython3-0602_errores-el_pan_diario_del_programador.html"
-                    >
-                      Errores: el pan diario del programador</a
-                    >
-                  </td>
-                  <td>3-Dic/2024</td>
-                </tr>
-                <tr class="text-center text-uppercase fs-4">
-                  <td colspan="3">Programación Orientada a Objetos (OOP)</td>
-                </tr>
-                <tr>
-                  <th scope="row">28</th>
-                  <td>
-                    <a
-                      href="./cursoPython3-0701_los_fundamentos_de_la_POO.html"
-                    >
-                      Los Fundamentos de la Programación Orientada a Objetos
-                      (OOP) en Python</a
-                    >
-                  </td>
-                  <td>6-Dic/2024</td>
-                </tr>
-                <tr>
-                  <th scope="row">29</th>
-                  <td>
-                    <a
-                      href="./cursoPython3-0702_comparando_paradigmas_programacion_procedimental_y_orientada_a_objetos.html"
-                    >
-                      Comparando Paradigmas: Programación Procedimental y
-                      Orientada a Objetos en Python</a
-                    >
-                  </td>
-                  <td>6-Dic/2024</td>
-                </tr>
-                <tr>
-                  <th scope="row">30</th>
-                  <td>
-                    <a href="./cursoPython3-0703_POO_propiedades.html">
-                      POO: Propiedades</a
-                    >
-                  </td>
-                  <td>10-Dic/2024</td>
-                </tr>
-                <tr>
-                  <th scope="row">31</th>
-                  <td>
-                    <a href="./cursoPython3-0704_POO_metodos.html">
-                      POO: Métodos</a
-                    >
-                  </td>
-                  <td>11-Dic/2024</td>
-                </tr>
-                <tr>
-                  <th scope="row">32</th>
-                  <td>
-                    <a href="./cursoPython3-0705_POO_herencia.html">
-                      POO: Herencia</a
-                    >
-                  </td>
-                  <td>11-Dic/2024</td>
-                </tr>
-                <tr>
-                  <th scope="row">33</th>
-                  <td>
-                    <a href="./cursoPython3-0706_POO_excepciones.html">
-                      POO: Excepciones</a
-                    >
-                  </td>
-                  <td>14-Dic/2024</td>
-                </tr>
-                <tr class="text-center text-uppercase fs-4">
-                  <td colspan="3">Misceláneos</td>
-                </tr>
-                <tr>
-                  <th scope="row">34</th>
-                  <td>
-                    <a
-                      href="./cursoPython3-0801_iteradores,_generadores_y_cierres.html"
-                    >
-                      Iteradores, Generadores y Cierres</a
-                    >
-                  </td>
-                  <td>16-Dic/2024</td>
-                </tr>
-                <tr>
-                  <th scope="row">35</th>
-                  <td>
-                    <a href="./cursoPython3-0802_manejo_de_archivos.html">
-                      Manejo de Archivos</a
-                    >
-                  </td>
-                  <td>17-Dic/2024</td>
-                </tr>
-                <tr>
-                  <th scope="row">36</th>
-                  <td>
-                    <a
-                      href="./cursoPython3-0803_el_modulo_os_interactuando_con_el_sistema_operativo.html"
-                    >
-                      El módulo <code>OS</code> - Interactuando con el sistema
-                      operativo</a
-                    >
-                  </td>
-                  <td>18-Dic/2024</td>
-                </tr>
-                <tr>
-                  <th scope="row">37</th>
-                  <td>
-                    <a
-                      href="./cursoPython3-0804_modulo_datetime_funciones_para_manejo_de_la_hora_y_la_fecha.html"
-                    >
-                      El Módulo <code>datetime</code> - Funciones para Manejo de
-                      la Hora y la Fecha</a
-                    >
-                  </td>
-                  <td>19-Dic/2024</td>
-                </tr>
-                <tr>
-                  <th scope="row">38</th>
-                  <td>
-                    <a
-                      href="./cursoPython3-0805_modulo_calendar_trabajando_con_funciones_relacionadas_con_el_calendario.html"
-                    >
-                      El módulo <code>calendar</code> - trabajando con funciones
-                      relacionadas con el calendario</a
-                    >
-                  </td>
-                  <td>19-Dic/2024</td>
-                </tr>
-              </tbody>
-            </table>
+area = pi * radio**2
+
+print("El área del círculo es:", area, "cm²")
+                </code></pre>
+            </div>
+
+            <!-- Operadores Abreviados -->
+            <div id="OperadoresAbreviados" class="mt-5 pt-5">
+              <h2 class="mt-1">Operadores Abreviados</h2>
+              <p>
+                Es tiempo de explicar el siguiente conjunto de operadores que
+                harán la vida del programador/desarrollador más fácil. Muy
+                seguido, se desea utilizar la misma variable al lado derecho y
+                al lado izquierdo del operador = operator.
+              </p>
+              <p>
+                Por ejemplo, si se necesita calcular una serie de valores
+                sucesivos de la potencia de 2, se puede usar el siguiente
+                código:
+              </p>
+              <pre
+                class="line-numbers"
+                data-src-status="loaded"
+                tabindex="0"
+              ><code class="language-python" data-prismjs-copy="Copy">
+x = x * 2
+            </code></pre>
+              <p>
+                Python ofrece una manera más corta de escribir operaciones como
+                estas, lo cual se puede codificar de la siguiente manera:
+              </p>
+              <pre
+                class="line-numbers"
+                data-src-status="loaded"
+                tabindex="0"
+              ><code class="language-python" data-prismjs-copy="Copy">
+x *= 2
+          </code></pre>
+              <p>
+                A continuación se intenta presentar una descripción general para
+                este tipo de operaciones. Si op es un operador de dos argumentos
+                (esta es una condición muy importante) y el operador es
+                utilizado en el siguiente contexto...:
+              </p>
+              <pre
+                class="line-numbers"
+                data-src-status="loaded"
+                tabindex="0"
+              ><code class="language-python" data-prismjs-copy="Copy">
+                variable = variable op expresión
+          </code></pre>
+              <p>
+                ...entonces se puede simplificar y mostrar de la siguiente
+                manera:
+              </p>
+              <pre
+                class="line-numbers"
+                data-src-status="loaded"
+                tabindex="0"
+              ><code class="language-python" data-prismjs-copy="Copy">
+                variable op= expresión
+          </code></pre>
+            </div>
+            <p>Ejemplos de operaciones:</p>
+            <div class="mx-auto miTabla">
+              <table
+                class="table table-striped table-bordered table-sm "
+              >
+                <thead class="text-center">
+                  <tr >
+                    <th scope="col" class="miCol20">#</th>
+                    <th scope="col" class="miCol40">Expresión</th>
+                    <th scope="col" class="miCol40">Operador Abreviado</th>
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider text-center">
+                  <tr>
+                    <td>1</td>
+                    <td><code>i = i + 2 * j</code></td>
+                    <td><code>i += 2 * 3</code></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td><code>var = var / 2</code></td>
+                    <td><code>var /= 2</code></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td><code>rem = rem % 10</code></td>
+                    <td><code>rem %= 10</code></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td><code>j = j - (i + var + rem)</code></td>
+                    <td><code>j -= (i + var + rem)</code></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td><code>x = x ** 2</code></td>
+                    <td><code>x **= 2
+                    </code></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </article>
+        <!--  Variables  -->
       </main>
-
       <!-- -------------------------------- fin principal -------------------------------- -->
+      <!-- -------------------------------- barra lateral -------------------------------- -->
+      <aside class="col-lg-3 d-none d-lg-block pt-5">
+        <h1>Índice</h1>
+        <ul class="list-unstyled">
+          <li>
+            <a href="#QueEsUnaVariableEnPython"
+              >¿Qué es una variable en Python?</a
+            >
+          </li>
+          <li>
+            <a href="#ParaQueSirvenVariables"
+              >¿Para qué Sirven las Variables?</a
+            >
+          </li>
+          <li>
+            <a href="#comoDeclararUnaVariableEnPython"
+              >Cómo declarar una Variable en Python</a
+            >
+          </li>
+          <li>
+            <a href="#reglasParaNombrarVariables"
+              >Reglas para Nombrar Variables</a
+            >
+          </li>
+          <li>
+            <a href="#ConvencionesDeNomenclatura"
+              >Convenciones de Nomenclatura</a
+            >
+          </li>
+          <li>
+            <a href="#OperadoresAbreviados">Tipos de Datos en Python</a>
+          </li>
+          <li>
+            <a href="#OperadoresAbreviados">Operadores Abreviados</a>
+          </li>
+        </ul>
+      </aside>
+      <!-- -------------------------------- fin barra lateral -------------------------------- -->
     </div>
+    <!--  Principal Fin  -->
 
     <!-- -------------------------------- pie de pagina -------------------------------- -->
 
-    <footer class="row container-fluid border-1 border-top row col mt-auto">
+    <footer class="row container-fluid border-1 border-top row col">
       <div class="row">
         <!-- contacto -->
 
