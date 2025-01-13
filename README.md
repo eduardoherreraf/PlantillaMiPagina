@@ -175,7 +175,7 @@ Cuando se haya terminado y se quiera obtener la versión para producción se eje
 - [SASS](https://sass-lang.com/) - Preprocesador
 
 ## Actualización
-Este proyecto se encuantra totalmente actualizado en la dirección: https://eduardoherreraf.github.io/bootstrap@instalacion_de_bootstrap_v5_con_npm_y_parcel.html
+Este proyecto se encuantra totalmente actualizado en la dirección: https://eduardoherreraf.github.io/bootstrap-instalacion_de_bootstrap_v5_con_npm_y_parcel.html
 
 ## Autor
 

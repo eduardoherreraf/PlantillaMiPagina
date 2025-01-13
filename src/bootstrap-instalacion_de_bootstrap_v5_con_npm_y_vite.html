@@ -8,33 +8,33 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
-    content="La guía oficial sobre cómo incluir y empaquetar el CSS y JavaScript de Bootstrap en un proyecto utilizando Parcel." />
+    content="En este artículo se explica cómo integrar y agrupar el CSS y Javascript de Bootstrap en un proyecto utilizando Vite." />
   <meta name="author" content="Ing. Eduardo Herrera Forero" />
   <meta name="application-name" content="EHF" />
   <meta name="robots" content="index, follow" />
   <meta name="google" content="notranslate" />
   <link rel="canonical"
-    href="https://eduardoherreraf.github.io/bootstrap-instalacion_de_bootstrap_v5_con_npm_y_parcel.html" />
+    href="https://eduardoherreraf.github.io/bootstrap---nstalacion_de_bootstrap_v5_con_npm_y_vite.html" />
   <!-- Fin Metaetiquetas -->
 
   <!-- Open Graph data -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Instalación de Bootstrap V5, NPM y PARCEL - Ing. Eduardo Herrera Forero." />
+  <meta property="og:title" content="Instalación de Bootstrap V5, NPM y VITE - Ing. Eduardo Herrera Forero." />
   <meta property="og:description"
-    content="La guía oficial sobre cómo incluir y empaquetar el CSS y JavaScript de Bootstrap en un proyecto utilizando Parcel." />
+    content="En este artículo se explica cómo integrar y agrupar el CSS y Javascript de Bootstrap en un proyecto utilizando Vite." />
   <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
   <meta property="og:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
   <meta property="og:url"
-    content="https://eduardoherreraf.github.io/bootstrap-instalacion_de_bootstrap_v5_con_npm_y_parcel.html" />
+    content="https://eduardoherreraf.github.io/bootstrap---nstalacion_de_bootstrap_v5_con_npm_y_vite.html" />
   <meta property="og:locale" content="es_CO" />
   <!-- fin Open Graph data -->
 
   <!-- Twitter cards -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@ehfeduardo" />
-  <meta name="twitter:title" content="Instalación de Bootstrap V5, NPM y PARCEL - Ing. Eduardo Herrera Forero." />
+  <meta name="twitter:title" content="Instalación de Bootstrap V5, NPM y VITE - Ing. Eduardo Herrera Forero." />
   <meta name="twitter:description"
-    content="La guía oficial sobre cómo incluir y empaquetar el CSS y JavaScript de Bootstrap en un proyecto utilizando Parcel." />
+    content="En este artículo se explica cómo integrar y agrupar el CSS y Javascript de Bootstrap en un proyecto utilizando Vite." />
   <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
   <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
   <!-- Fin Twitter cards -->
@@ -51,7 +51,7 @@
   <!-- fin iconos -->
 
   <title>
-    Instalación de Bootstrap V5, NPM y PARCEL - Ing. Eduardo Herrera Forero.
+    Instalación de Bootstrap V5, NPM y VITE - Ing. Eduardo Herrera Forero.
   </title>
 
   <script type="module" defer src="./js/main.js"></script>
@@ -108,253 +108,272 @@
   <!-- -------------------------------- principal -------------------------------- -->
   <div class="row col">
     <main class="pt-5 col-lg-9">
-      <!-- Parcel NPM -->
+      <!-- vite NPM -->
       <article class="row border-1 border-bottom pb-3">
-        <h1>Instalación de Bootstrap V5, NPM y PARCEL</h1>
-        <div>
+        <h1>Instalación de Bootstrap V5, NPM y VITE</h1>
+        <p>
+          Esta documentación se realizó con base a la oficial entregada por
+          Bootstrap en su página web
+          <a href="https://getbootstrap.com/docs/5.3/getting-started/vite/" target="_blank"
+            rel="noopener noreferrer">Bootstrap and Vite</a>, todos los comando que se usaran en este tutorial son
+          ejecutados
+          en la terminal BASH de GIT.
+        </p>
+        <p class="">
+          Se va a crear un proyecto Bootstrap con Vite desde cero, por lo que
+          es necesario cumplir con algunos requisitos previos y seguir ciertos
+          pasos antes de comenzar. Esta guía asume que se tiene instalado
+          Node.js y que se tiene cierta experiencia con el uso del terminal.
+        </p>
+
+        <div id="configuracionInicial" class="mt-5 pt-5 ">
+          <h2 class="mt-1">Configuración Inicial</h2>
+          <pre class="line-numbers" data-src-status="loaded" tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
+                  mkdir my-project && cd my-project
+                  npm init -y
+                  npm i --save-dev vite
+                  npm i --save bootstrap @popperjs/core
+                  npm i --save-dev sass
+              </code></pre>
           <p>
-            La guía oficial sobre cómo incluir y empaquetar el CSS y
-            JavaScript de Bootstrap en un proyecto utilizando Parcel.
+            <b>Crear una carpeta de proyecto e inicializar <code>npm</code></b>: Se creará la carpeta "mi-proyecto" y se
+            inicializará
+            <code>npm</code> con el argumento <code>-y</code>
+            para evitar que haga las preguntas interactivas.
           </p>
           <p>
-            A diferencia de empaquetador Vite, PARCEL permite empacar archivos
-            HTML, CSS Y JS sin pertenecer a una librería o framework de
-            javascript (ReactJS, AngularJS,...) como lo es Bootstrap una
-            librería de CSS, además también permite realizar sitios web MPA
-            (Multi Page Application).
+            <b>Instalación Vite</b>: Aquí sólo hay una dependencia de la
+            herramienta de compilación. Se Usará <code>--save-dev</code> para
+            indicar que esta dependencia es sólo para uso de desarrollo y no
+            para producción.
+          </p>
+          <p>
+            <b>Instalar Bootstrap</b>: Se puede instalar Bootstrap. Además, se
+            instalará Popper, ya que es necesario para el posicionamiento de
+            los desplegables, popovers y tooltips. Si no se tiene previsto
+            usar esos componentes, se puede omitir la instalación de este
+            último.
           </p>
           <p class="">
-            Esta documentación se realizó con base a la oficial entregada por
-            Bootstrap en su página web
-            <a href="https://getbootstrap.com/docs/5.3/getting-started/parcel/" target="_blank"
-              rel="noopener noreferrer">Bootstrap and Parcel</a>, todos los comando que se usaran en este tutorial son
-            ejecutados
-            en la terminal BASH de GIT.
+            <b>Instalación dependencias adicionales</b>: Además de Vite y
+            Bootstrap, es necesario contar con otra dependencia (Sass) para
+            importar y empaquetar correctamente el CSS de Bootstrap.
           </p>
 
-          <div id="configuracionInical" class="mt-5 pt-5 ">
-            <h2 class="mt-1">Configuración Inicial</h2>
+          <div id="configuracionEspacioTrabajo" class="mt-5 pt-5 ">
+            <h3 class="mt-1">Configuración del Espacio de Trabajo</h3>
             <pre class="line-numbers" data-src-status="loaded" tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
-                mkdir my-project && cd my-project
-                npm init -y
-            </code></pre>
-            <h3 id="configuracionEspacioTrabajo">
-              Configuración del Espacio de Trabajo
-            </h3>
-            <pre class="line-numbers" data-src-status="loaded" tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
-              mkdir {src,src/js,src/scss}
-              touch src/index.html src/js/main.js src/scss/styles.scss
-            </code></pre>
-          </div>
-
-          <div id="instalacionParcel" class="mt-5 pt-5 ">
-            <h2 class="mt-1">Instalación de Parcel</h2>
-            <pre class="line-numbers" data-src-status="loaded" tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
-            npm i --save-dev parcel
-          </code></pre>
+                  mkdir {src,src/js,src/scss}
+                  touch src/index.html src/js/main.js src/scss/styles.scss vite.config.js
+              </code></pre>
             <p>
-              Se usa la bandera
-              <span class="fw-bold text-warning">--save-dev</span> para que
-              parcel sólo esté en desarrollo y no en producción
+              La carpeta "my-project" ya ha sido creada y se ha inicializado
+              <code>npm</code>. Ahora, se procederá a crear la carpeta "src",
+              el archivo de hojas de estilo y el archivo JavaScript para
+              completar la estructura del proyecto. Para llevar a cabo esto,
+              ejecuta el siguiente código dentro de "my-project".
             </p>
           </div>
 
-          <div id="instalacionBootstrapv5" class="mt-5 pt-5 ">
-            <h2 class="mt-1">Instalación de Bootstrap</h2>
-            <pre class="line-numbers" data-src-status="loaded" tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
-              npm i --save bootstrap @popperjs/core
-          </code></pre>
-          </div>
+          <div id="configuracionVite" class="mt-5 pt-5 ">
+            <h3 class="mt-1">Configuración de Vite</h3>
+            <p>
+              En el archivo
+              <span class="fw-bold text-warning">vite.config.js</span>, se
+              llena con:
+            </p>
+            <pre class="line-numbers" data-src-status="loaded" tabindex="0"><code class="language-javascript" data-prismjs-copy="Copy">
+                  const path = require('path')
 
-          <div id="configuracionParcel" class="mt-5 pt-5 ">
-            <h2 class="mt-1">Configuración de Parcel</h2>
+                  export default {
+                    root: path.resolve(__dirname, 'src'),
+                    build: {
+                      outDir: '../dist'
+                    },
+                    server: {
+                      port: 8080
+                    }
+                  }
+                </code></pre>
             <p>
               El archivo
-              <span class="fw-bold text-warning">src/index.html</span> se debe
-              configurar así:
+              <span class="fw-bold text-warning">src/index.html</span>, se
+              llena con la siguiente plantilla:
             </p>
             <pre class="line-numbers" data-src-status="loaded" tabindex="0"><code class="language-html" data-prismjs-copy="Copy">
-            &lt;!doctype html&gt;
-            &lt;html lang="en"&gt;
-            &lt;head&gt;
-              &lt;meta charset="utf-8"&gt;
-              &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-              &lt;title&gt;Bootstrap w/ Parcel&lt;/title&gt;
-              &lt;script type="module" src="./js/main.js"&gt;&lt;/script&gt;
-            &lt;/head&gt;
-            &lt;body&gt;
-              &lt;div class="container py-4 px-3 mx-auto"&gt;
-              &lt;h1&gt;Hello, Bootstrap and Parcel!&lt;/h1&gt;
-              &lt;button class="btn btn-primary"&gt;Primary button&lt;/button&gt;
-            &lt;/div&gt;
-            &lt;/body&gt;
-          &lt;/html&gt;
-          </code></pre>
+                &lt;!doctype html&gt;
+                &lt;html lang="en"&gt;
+                &lt;head&gt;
+                  &lt;meta charset="utf-8"&gt;
+                  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                  &lt;title&gt;Bootstrap w/ Vite&lt;/title&gt;
+                  &lt;script type="module" src="./js/main.js"&gt;&lt;/script&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                  &lt;div class="container py-4 px-3 mx-auto"&gt;
+                  &lt;h1&gt;Hello, Bootstrap and Vite!&lt;/h1&gt;
+                  &lt;button class="btn btn-primary"&gt;Primary button&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;/body&gt;
+              &lt;/html&gt;
+              </code></pre>
             <p>
-              Parcel detectará automáticamente que se está usando Sass e
-              instalará el plugin Sass Parcel para soportarlo, se puede
-              instalar manualmente ejecutando manualmente el comando
-              <span class="fw-bold text-warning">npm i --save-dev @parcel/transformer-sass</span>.
-            </p>
-            <p>
-              en el archivo
-              <span class="fw-bold text-warning">package.json</span> añadir
-              como funcionaran los scripts de PARCEL:
+              Mientras que el archivo
+              <span class="fw-bold text-warning">package.json</span> debe
+              quedar configurado así:
             </p>
             <pre class="line-numbers" data-src-status="loaded" tabindex="0"><code class="language-javascript" data-prismjs-copy="Copy">
-            "scripts": {
-              "dev": "cd dist && rm -Rf * && cd .. && parcel --lazy --open http://localhost:1234/ --no-source-maps",
-              "start": "parcel serve",
-              "build": "cd dist && rm -Rf * && cd .. && parcel build --public-url ./ --no-source-maps",
-              "test": "echo \"Error: no test specified\" && exit 1"
-            },
-        </code></pre>
-            <p>
-              Script
-              <span class="fw-bold text-warning">"dev": "cd dist && rm -Rf * && cd .. && parcel --lazy --open
-                http://localhost:1234/ --no-source-maps"</span>: inicia el servidor de desarrollo, para ver en tiempo
-              real
-              como se va construyendo la página
-            </p>
-            <ul>
-              <li>
-                cd dist && rm -Rf * && cd ..: desocupa el contenido de la
-                carpeta dist/
-              </li>
-              <li>parcel: Ejecuta el modo de desarrollo.</li>
-              <li>
-                --lazy: Esta bandera le indica a PARCEL que sólo vaya
-                construyendo las hojas web a medida que se necesiten, es útil
-                para cuando el sitio tiene muchas hojas y no hace falta que
-                todas estén presentes.
-              </li>
-              <li>
-                --open http://localhost:1234/ : Abre una pestaña del navegador
-                en la dirección http://localhost:1234/.
-              </li>
-              <li>
-                --no-source-maps: Con esta bandera PARCEL no genera los
-                archivos map
-              </li>
-            </ul>
-            <p>
-              Script
-              <span class="fw-bold text-warning">"start": "parcel serve"</span>: funciona parecido al script dev.
-            </p>
-
-            <p>
-              Script
-              <span class="fw-bold text-warning">"build": "cd dist && rm -Rf * && cd .. && parcel build
-                --public-url --no-source-maps"</span>: genera los archivos de despliegue o de producción./
-            </p>
-            <ul>
-              <li>
-                parcel build: ejecuta la generación de los archivos para
-                producción.
-              </li>
-              <li>
-                --public-url ./: Añade el prefijo "./" en las rutas absolutas
-                a assets. Útil para despliegues en GitHub Pages.
-              </li>
-            </ul>
-            <p>
-              También en este mismo archivo
-              <span class="fw-bold text-warning">package.json</span> se debe
-              intercambiar:
-            </p>
-            <pre class="line-numbers" data-src-status="loaded" tabindex="0"><code class="language-javascript" data-prismjs-copy="Copy">
-              "main": "index.js",
-      </code></pre>
-            <p>por</p>
-            <pre class="line-numbers" data-src-status="loaded" tabindex="0"><code class="language-javascript" data-prismjs-copy="Copy">
-              "source": "src/index.html",
+                {
+                  "scripts": {
+                    "start": "vite",
+                    "build": "vite build",
+                    "test": "echo \"Error: no test specified\" && exit 1"
+                  },
+                }
             </code></pre>
-            <p>Ahora el punto de entrada es el archivo index.html.</p>
             <p>
-              Esta plantilla está configurada de forma tal que es innecesario
-              realizar correcciones en las rutas absolutas de la(s) páginas
-              web.
-            </p>
-            <p>
-              Desde ahora se puede iniciar Parcel, en la carpeta
-              <span class="fw-bold text-warning">my-project</span>
-              en el terminal, ejecuta cualquiera de los dos scripts npm recién
-              añadidos:
-            </p>
-            <pre class="line-numbers" data-src-status="loaded" tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
-              npm start
-            </code></pre>
-            <p>ó</p>
-            <pre class="line-numbers" data-src-status="loaded" tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
-              npm run dev
-            </code></pre>
-          </div>
-
-          <div id="importacionBootstrapv5" class="mt-5 pt-5 ">
-            <h2 class="mt-1">Importación de BOOTSTRAP</h2>
-            <p>
-              Para la importación de Bootstrap en Parcel se requiere dos
-              importaciones, una en el archivo
-              <span class="fw-bold text-warning">styles.scss</span> y otra en
-              el <span class="fw-bold text-warning">main.js</span>.
-            </p>
-            <p>
-              La importación del CSS de Bootstrap. Añade en el archivo
-              <span class="fw-bold text-warning">src/scss/styles.scss</span>
-              el siguiente código para importar todo el Sass fuente de
-              Bootstrap.
-            </p>
-            <pre class="line-numbers" data-src-status="loaded" tabindex="0"><code class="language-css" data-prismjs-copy="Copy">
-              // Import all of Bootstrap's CSS
-              @import "bootstrap/scss/bootstrap";
-        </code></pre>
-            <p>
-              La importación del JS de Bootstrap. Añade en el archivo
-              <span class="fw-bold text-warning">src/js/main.js</span> el
-              siguiente código para importar todo el código fuente de
-              Javascript de Bootstrap:
-            </p>
-            <p>
-              La importación de código CSS de usuario también se importa en
-              este mismo archivo.
-            </p>
-            <pre class="line-numbers" data-src-status="loaded" tabindex="0"><code class="language-javascript" data-prismjs-copy="Copy">
-            // Import all of Bootstrap's JS
-            import * as bootstrap from 'bootstrap'
-
-            // Import our custom CSS
-            import '../scss/styles.scss';
-          </code></pre>
-
-            <p>
-              Ahora ya se puede generar una página web utilizando Bootstrap y
-              Parcel.
+              Iniciar el proyecto con vite:
+              <span class="fw-bold text-warning">npm start</span>, en el
+              navegador
             </p>
           </div>
+        </div>
+        <div id="importacionBootstrapv5" class="mt-5 pt-5 ">
+          <h2 class="mt-1">Importación Bootstrap v5</h2>
+          <p>
+            En el archivo
+            <span class="fw-bold text-warning">src/scss/styles.scss</span> se
+            importa los estilos CSS:
+          </p>
+          <pre class="line-numbers" data-src-status="loaded" tabindex="0"><code class="language-css" data-prismjs-copy="Copy">
+                  // Import all of Bootstrap's CSS
+                  @import "bootstrap/scss/bootstrap";
+              </code></pre>
+          <p>
+            El archivo
+            <span class="fw-bold text-warning">src/js/main.js</span> se carga
+            e importa los CSS y JS de Bootstrap agregando.
+          </p>
+          <pre class="line-numbers" data-src-status="loaded" tabindex="0"><code class="language-js" data-prismjs-copy="Copy">
+                  // Import our custom CSS
+                  import '../scss/styles.scss'
 
-          <div id="compilacionProyectoProduccion" class="mt-5 pt-5">
-            <h2 class="mt-1">Compilación del proyecto para Producción</h2>
+                  // Import all of Bootstrap's JS
+                  import * as bootstrap from 'bootstrap'
+              </code></pre>
+        </div>
+        <div id="instalacionpluginPurgeCSSHTML" class="mt-5 pt-5 ">
+          <h2 class="mt-1">Instalación Plugin PurgeCSS y Plugin HTML</h2>
+          <pre class="line-numbers" data-src-status="loaded" tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
+                  npm i vite-plugin-purgecss
+                  npm i vite-plugin-html
+              </code></pre>
+          <p>
+            El plugin <b>purgecss</b> elimina toda clase de CSS que no sea
+            utilizada y el <b>HTML</b> elimina todo espacio extra o cambio de
+            línea del documento HTML y deja todo el código en una sola línea.
+          </p>
+          <p>El archivo vite.cfg.js se debe configurar asi:</p>
+          <pre class="line-numbers" data-src-status="loaded" tabindex="0"><code class="language-javascript" data-prismjs-copy="Copy">
+                  import htmlPurge from 'vite-plugin-purgecss'
+                  import { createHtmlPlugin } from 'vite-plugin-html'
+
+                  const path = require('path')
+
+                  export default {
+                    root: path.resolve(__dirname, 'src'),
+                    plugins:[
+                      htmlPurge(),
+                      createHtmlPlugin({
+                        minify:true,
+                        removeComments:true,
+                        colapseWhitespaces:true
+                      })
+                    ],
+                    build: {
+                      outDir: '../dist',
+                      emptyOutDir:true
+                    },
+                    server: {
+                      port: 8080
+                    }
+                  }
+              </code></pre>
+        </div>
+        <div id="configuracionesFinales" class="mt-5 pt-5 ">
+          <h2 class="mt-1">Configuraciones Finales</h2>
+          <p>
+            El archivo <span class="fw-bold text-warning">package.json</span>,
+            finalmente se debe tener asi:
+          </p>
+          <pre class="line-numbers" data-src-status="loaded" tabindex="0"><code class="language-javascript" data-prismjs-copy="Copy">
+                  {
+                    "name": "my-project",
+                    "version": "1.0.0",
+                    "description": "",
+                    "main": "index.js",
+                    "scripts": {
+                      "start": "vite",
+                      "build": "vite build",
+                      "test": "echo \"Error: no test specified\" && exit 1"
+                    },
+                    "keywords": [],
+                    "author": "",
+                    "license": "ISC",
+                    "devDependencies": {
+                      "sass": "^1.64.1",
+                      "vite": "^4.4.7",
+                      "vite-plugin-html": "^3.2.0"
+                    },
+                    "dependencies": {
+                      "@popperjs/core": "^2.11.8",
+                      "bootstrap": "^5.3.0",
+                      "vite-plugin-purgecss": "^0.2.12"
+                    }
+                  }
+              </code></pre>
+        </div>
+        <div id="compilacionProyectoProduccion" class="mt-5 pt-5">
+          <h2 class="mt-1">Compilación del proyecto para Producción</h2>
+          <p class="">
+            Cuando se haya terminado y se quiera obtener la versión para
+            producción se ejecuta el comando:
+            <span class="fw-bold text-warning">npm run build</span> y los
+            archivos se quedan disponibles en la carpeta <b>dist</b>."
+          </p>
+          <div id="correccionArchivoIndex.html" class="mt-5 pt-5">
+            <h3 class="mt-1">Corrección del Archivo <b>index.html</b></h3>
             <p>
-              Cuando se haya terminado y se quiera obtener la versión para
-              producción se ejecuta el siguiente comando y los archivos se
-              quedan disponibles en la carpeta
-              <span class="fw-bold text-warning">dist</span>.
+              Corregir las direcciones de llamado a los archivos css y js
+              insertando un punto "." antes del slash, debe quedar asi en la
+              cabecera
+              <span class="fw-bold text-warning">&lt;head&gt;</span> del
+              archivo:
             </p>
-            <pre class="line-numbers" data-src-status="loaded" tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
-            npm run build
-            </code></pre>
+            <pre class="line-numbers" data-src-status="loaded" tabindex="0"><code class="language-html" data-prismjs-copy="Copy">
+                  &lt;script type="module" crossorigin src="./assets/index-e9ba998b.js"&gt;&lt;/script&gt; y
+                  &lt;link rel="stylesheet" href="./assets/index-1b619488.css"&gt;
+              </code></pre>
             <p>
-              Es fundamental tener precaución con el código JavaScript dentro
-              de la etiqueta <code>&lt;script></code>, ya que debe tratarse
-              como un módulo. Si no se hace así, las variables que se
-              actualizan con la compilación del código HTML pueden no reflejar
-              esos cambios en las instancias correspondientes en el código
-              JavaScript.
+              Si se tienen imágenes que están guardadas en la carpeta
+              <span class="fw-bold text-warning">assets/</span>, también se
+              debe corregir la dirección colocándole el punto antes del slash
+              (/) a su dirección, p. ej.
+              <span class="fw-bold text-warning">./assets/sun-86eb3c88.svg</span>.
+            </p>
+            <p>
+              Si la imagen se encuentra en la etiqueta
+              <span class="fw-bold text-warning">&lt;script&gt;</span>, esta
+              no aparecerá en la carpeta
+              <span class="fw-bold text-warning">assets/</span>, se debe
+              copiar en esta carpeta y su dirección se debe cambiar p. ej de
+              <span class="fw-bold text-warning">./images/moon.svg</span> a
+              <span class="fw-bold text-warning">./assets/moon.svg</span>
             </p>
           </div>
         </div>
       </article>
-      <!-- fin Parcel NPM -->
+      <!-- fin vite NPM -->
     </main>
     <!-- -------------------------------- fin principal -------------------------------- -->
 
@@ -364,19 +383,16 @@
         <h1>Índice</h1>
         <ul class="list-group">
           <li class="list-group-item">
-            <a href="#configuracionInical">Configuración Inicial</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#instalacionParcel">Instalación de Parcel</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#instalacionBootstrapv5">Instalación de Bootstrap</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#configuracionParcel">Configuración de Parcel</a>
+            <a href="#configuracionInicial">Configuración Inicial</a>
           </li>
           <li class="list-group-item">
             <a href="#importacionBootstrapv5">Importación Bootstrap v5</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#instalacionpluginPurgeCSSHTML">Instalación plugin PurgeCSS y plugin HTML</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#configuracionesFinales">Configuraciones Finales</a>
           </li>
           <li class="list-group-item">
             <a href="#compilacionProyectoProduccion">Compilación del proyecto para Producción</a>
