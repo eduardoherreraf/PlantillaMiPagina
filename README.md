@@ -9,7 +9,7 @@ Plantilla para Bootstrap 5 con pre-procesador SASS y con la herramienta compilac
 Descargar el repo:
 
 ```bash
-git@github.com:eduardoherreraf/PlantillaMiPagina.git
+git-github.com:eduardoherreraf/PlantillaMiPagina.git
 ```
 
 ### Instalación

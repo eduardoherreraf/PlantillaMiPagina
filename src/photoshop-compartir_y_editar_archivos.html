@@ -8,31 +8,31 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
-    content="Este artículo explica los comandos más importantes para la configuración inicial de GIT." />
+    content="Se explica cómo se comparten y se editan los archivos de forma colaborativa en Adobe Photoshop." />
   <meta name="author" content="Ing. Eduardo Herrera Forero" />
   <meta name="application-name" content="EHF" />
   <meta name="robots" content="index, follow" />
   <meta name="google" content="notranslate" />
-  <link rel="canonical" href="https://eduardoherreraf.github.io/git@configuración_inicial_GIT.html" />
+  <link rel="canonical" href="https://eduardoherreraf.github.io/photoshop-compartir_y_editar_archivos.html" />
   <!-- Fin Metaetiquetas -->
 
   <!-- Open Graph data -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Configuración Inicial de GIT - Ing. Eduardo Herrera Forero." />
+  <meta property="og:title" content="Compartir y Editar Archivos en  Photoshop - Ing. Eduardo Herrera Forero." />
   <meta property="og:description"
-    content="Este artículo explica los comandos más importantes para la configuración inicial de GIT." />
+    content="Se explica cómo se comparten y se editan los archivos de forma colaborativa en Adobe Photoshop." />
   <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
   <meta property="og:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
-  <meta property="og:url" content="https://eduardoherreraf.github.io/git@configuración_inicial_GIT.html" />
+  <meta property="og:url" content="https://eduardoherreraf.github.io/photoshop-compartir_y_editar_archivos.html" />
   <meta property="og:locale" content="es_CO" />
   <!-- fin Open Graph data -->
 
   <!-- Twitter cards -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@ehfeduardo" />
-  <meta name="twitter:title" content="Configuración Inicial de GIT - Ing. Eduardo Herrera Forero." />
+  <meta name="twitter:title" content="Compartir y Editar Archivos en  Photoshop - Ing. Eduardo Herrera Forero." />
   <meta name="twitter:description"
-    content="Este artículo explica los comandos más importantes para la configuración inicial de GIT." />
+    content="Se explica cómo se comparten y se editan los archivos de forma colaborativa en Adobe Photoshop." />
   <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
   <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
   <!-- Fin Twitter cards -->
@@ -48,7 +48,9 @@
   <meta name="theme-color" content="#ffffff" />
   <!-- fin iconos -->
 
-  <title>Configuración Inicial de GIT - Ing. Eduardo Herrera Forero.</title>
+  <title>
+    Compartir y Editar Archivos en Photoshop - Ing. Eduardo Herrera Forero.
+  </title>
 
   <script type="module" defer src="./js/main.js"></script>
 
@@ -80,7 +82,7 @@
           <a class="nav-link mx-1" href="index.html#blog">PUBLICACIONES</a>
           <a class="nav-link ms-1" href="index.html#contact">CONTACTO</a>
         </ul>
-        <!-- <div class="me-3">
+        <!--     <div class="me-3">
             <button
               id="dl-icon"
               onclick="cambiarTema()"
@@ -102,226 +104,157 @@
   </nav>
   <!-- navbar -->
 
+  <!-- -------------------------------- principal -------------------------------- -->
   <div class="row col">
     <main class="pt-5 col-lg-9">
-
-      <!-- -------------------------------- principal -------------------------------- -->
-      <!-- Configuración Inicial de GIT  -->
+      <!-- Principal  -->
       <article class="row border-1 border-bottom pb-3">
-        <div class="">
-          <h1>Configuración Inicial de GIT</h1>
+        <div class>
+          <h1>Compartir y Editar Archivos en Photoshop</h1>
           <p>
-            Los comandos de configuración inicial de Git se utilizan para
-            establecer parámetros globales que definirán cómo Git interactúa
-            con el usuario y cómo registran los cambios. Estos comandos se
-            configuran típicamente cuando se instala GIT por primera vez y se
-            prepara para empezar a trabajar con repositorios. A continuación,
-            se explica cuándo y cómo se usan los comandos de configuración
-            inicial más importantes:
+            En Photoshop, compartir y editar archivos de manera colaborativa
+            es posible mediante diversas funciones y herramientas.
           </p>
-        </div>
-
-        <div>
-          <!-- Configurar el Nombre y el Correo del Usuario -->
-          <div id="configuracionNombreyCorreoUsuario" class="mt-5 pt-5 ">
-            <h2 class="mt-1">
-              Configuración el Nombre y el Correo del Usuario
-            </h2>
-            <p>
-              Estos parámetros son cruciales porque GIT los usa para etiquetar
-              los commits, permitiendo identificar quién hizo los cambios en
-              un proyecto.
-            </p>
-            <pre class="line-numbers" data-src-status="loaded" tabindex="0">
-                  <code class="language-bash" data-prismjs-copy="Copy">
-                    git config --global user.name "Nombre del usuario"
-                    git config --global user.email "Semail@ejemplo.com"
-                  </code>
-                </pre>
-            <p>Estos comandos se usan cuando:</p>
-            <p>
-              Es aconsejable ejecutar estos comandos justo después de instalar
-              Git en el equipo de trabajo.
-            </p>
-            <p>
-              Otra razón para utilizar estos comandos es cuando se comparte la
-              máquina con otros usuarios o se cambia de identidad (por
-              ejemplo, de laboral a personal), en cuyo caso sería conveniente
-              actualizar estos valores.
-            </p>
-          </div>
-
-          <!-- Configuración del Editor por Defecto -->
-          <div id="configuraciondelEditorporDefecto" class="mt-5 pt-5 ">
-            <h2 class="mt-1">Configuración del Editor por Defecto</h2>
-            <p>
-              En algunos casos Git puede pedir que se edite mensajes de commit
-              o archivos de configuración. Es útil configurar el editor de
-              texto preferido para estas tareas.
-            </p>
-            <pre class="line-numbers" data-src-status="loaded" tabindex="0">
-                  <code class="language-bash" data-prismjs-copy="Copy">
-                    git config --global core.editor "nombre-del-editor"
-
-                    // para VSCode
-                    git config --global core.editor "code --wait"
-
-                    // VIM (valor por defecto)
-                    git config --global core.editor "vim"
-
-                    // Atom
-                    git config --global core.editor "atom --wait"
-
-                    // nano
-                    git config --global core.editor "nano"
-
-                    // Sublime Text
-                    git config --global core.editor "subl -n -w"
-                  </code>
-                </pre>
-            <p>
-              Se debe estar seguro de que el editor que se elije esté
-              correctamente instalado y accesible desde la línea de comandos.
-              Si el comando para abrir tu editor incluye espacios, colocar el
-              nombre del editor entre comillas dobles, como se muestra en los
-              ejemplos.
-            </p>
-          </div>
-
-          <!-- Configuración de la terminal de colores: -->
-          <div id="configuracióndelosColoresdeTextolaTerminal" class="mt-5 pt-5 ">
-            <h2 class="mt-1">
-              Configuración de los Colores de Texto la Terminal
-            </h2>
-            <p>
-              Configurar Git para que use colores en la terminal, lo que hace
-              más fácil leer los mensajes y distinguir diferentes tipos de
-              información.
-            </p>
-            <p>
-              Se usa principalmente para mejorar la legibilidad de los
-              mensajes en la terminal.
-            </p>
-            <pre class="line-numbers" data-src-status="loaded" tabindex="0">
-                  <code class="language-bash" data-prismjs-copy="Copy">
-                    git config --global color.ui auto
-                  </code>
-                </pre>
-          </div>
-
-          <!-- Configuración del método de fusión -->
-          <div id="configuraciondelMetododeFusion" class="mt-5 pt-5 ">
-            <h2 class="mt-1">Configuración del Método de Fusión</h2>
-            <p>
-              Se puedes especificar cómo Git debe manejar las fusiones de
-              archivos.
-            </p>
-            <pre class="line-numbers" data-src-status="loaded" tabindex="0">
-                  <code class="language-bash" data-prismjs-copy="Copy">
-                    git config --global merge.tool "nombre-del-herramienta-de-fusión"
-                  </code>
-                </pre>
-            <p>Los nombre-del-herramienta-de-fusión pueden ser:</p>
-            <ul>
-              <li><b>vimdiff</b>: Utiliza Vim en modo de diferencia.</li>
-              <li>
-                <b>meld</b>: Una herramienta gráfica popular para comparar y
-                fusionar archivos.
-              </li>
-              <li>
-                <b>kdiff3</b>: Otra herramienta gráfica para la comparación y
-                fusión de archivos.
-              </li>
-              <li>
-                <b>tortoisemerge</b>: Parte de TortoiseGit, una interfaz de
-                usuario para Git en Windows.
-              </li>
-              <li>
-                <b>p4merge</b>: Herramienta de Perforce para la comparación y
-                fusión de archivos.
-              </li>
-              <li>
-                <b>bc</b>: Beyond Compare, una herramienta comercial de
-                comparación de archivos.
-              </li>
-              <li>
-                <b>opendiff</b>: Utiliza FileMerge de Apple (disponible en
-                macOS).
-              </li>
-              <li>
-                <b>diffmerge</b>: Otra herramienta gráfica para la comparación
-                y fusión de archivos.
-              </li>
-              <li>
-                <b>araxis</b>: Araxis Merge, una herramienta comercial de
-                comparación y fusión de archivos.
-              </li>
-              <li><b>emerge</b>: Herramienta de fusión de Emacs</li>
-            </ul>
-            <p>
-              Además, se puede configurar opciones adicionales específicas
-              para cada herramienta, si es necesario. Consultar la
-              documentación de GIT o de la herramienta de fusión específica
-              para obtener más detalles sobre configuraciones adicionales.
-            </p>
-          </div>
-
-          <!-- Configuración de alias -->
-          <div id="configuraciondeAlias" class="mt-5 pt-5 ">
-            <h2 class="mt-1">Configuración de Alias</h2>
-            <p>
-              Los alias se utilizan para abreviar comandos largos o
-              complicados, facilitando y agilizando su uso.
-            </p>
-            <pre class="line-numbers" data-src-status="loaded" tabindex="0">
-                  <code class="language-bash" data-prismjs-copy="Copy">
-                    git config --global alias.st status
-                    git config --global alias.co checkout
-                  </code>
-                </pre>
-            <p>
-              En este ejemplo, ambos comandos producen el mismo resultado.
-            </p>
-            <pre class="line-numbers" data-src-status="loaded" tabindex="0">
-                  <code class="language-bash" data-prismjs-copy="Copy">
-                    git st
-                    git status
-                  </code>
-                </pre>
-          </div>
-
-          <!-- Ver la configuración -->
-          <div id="verlaconfiguracion" class="mt-5 pt-5">
-            <h2 class="mt-1">Ver la configuración</h2>
-            <p>
-              Comando utilizado para mostrar todas las configuraciones que GIT
-              tiene actualmente. Esto incluye ajustes como nombre de usuario,
-              correo electrónico, alias y más. Es un comando útil para revisar
-              la configuración de GIT de un vistazo.
-            </p>
-            <pre class="line-numbers" data-src-status="loaded" tabindex="0">
-                  <code class="language-bash" data-prismjs-copy="Copy">
-                    git config --list
-                  </code>
-                </pre>
-          </div>
-
           <p>
-            Estos comandos de configuración inicial se usan generalmente una
-            sola vez cuando se configura GIT por primera vez en un nuevo
-            entorno, pero también pueden ser ajustados en cualquier momento si
-            cambian las preferencias o necesidades. Recordar que el uso del
-            flag
-            <code>--global</code> hace que estas configuraciones se apliquen a
-            nivel global para todos los repositorios guardados en la máquina.
-            Si se necesita configurar algo específico para un solo
-            repositorio, puedes omitir el flag <code>--global</code> y GIT
-            aplicará la configuración solo en el repositorio actual.
+            A continuación se describen los métodos para compartir y colaborar
+            en archivos de Photoshop:
           </p>
+          <!-- Compartir para Revisión -->
+          <div id="compartirParaRevision" class="mt-5 pt-5 ">
+            <h2 class="mt-1">Compartir para Revisión</h2>
+            <p>
+              Una condición necesaria para compartir un archivo es que este
+              debe estar guardado en Adobe Creative Cloud. Mantenerlo
+              únicamente en el equipo local no permite compartirlo..
+            </p>
+            <ol>
+              <li>
+                Guardar en la Nube:
+                <ul>
+                  <li>
+                    <span class="fw-bold">Creative Cloud</span>: Al guardar
+                    archivos en la nube de Adobe Creative Cloud, se puede
+                    acceder a ellos desde cualquier dispositivo con una cuenta
+                    de Adobe.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Pasos</span>:
+                    <ul>
+                      <li>
+                        <span class="fw-bold">Menú</span>:
+                        <span class="text-success fw-bold">Archivo > Guardar como > Guardar en la nube</span>.
+                      </li>
+                      <li>
+                        Seleccionar la ubicación en la nube donde deseas
+                        guardar el archivo.
+                      </li>
+                    </ul>
+                  </li>
+                  <p>
+                    Cuando un archivo se guarda en la nube, aparece un icono
+                    de nube junto al nombre en el título de la pestaña,
+                    indicando que está almacenado en la nube.
+                  </p>
+                </ul>
+              </li>
+              <li>
+                Compartir Enlaces:
+                <ul>
+                  <li>
+                    Se pueden compartir enlaces directos a los archivos
+                    guardados en la nube.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Pasos:</span>:
+                    <ul>
+                      <li>
+                        Para compartir un archivo se debe picar primero en el
+                        botón
+                        <span class="text-success fw-bold">Compartir</span>
+                        .
+                      </li>
+                      <li>
+                        Seleccionar
+                        <span class="text-success fw-bold">Invitar a editar</span>
+                        o
+                        <span class="text-success fw-bold">Crear vínculo</span>.
+                      </li>
+                      <li>
+                        Picar en
+                        <span class="text-success fw-bold">copiar</span> y la
+                        dirección del archivo se guardará en el portapapeles
+                        para que se pueda usar más tarde.
+                      </li>
+                      <div class="imagen">
+                        <img src="./images/ps@compartir_revision.jpg" class="img-fluid" alt="Compartir para Revisión" />
+                      </div>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+
+          <!-- Invitar a Editar -->
+          <div id="invitaraEditar" class="mt-5 pt-5">
+            <h2 class="mt-1">Invitar a Editar</h2>
+            <p>
+              Para invitar a otros a editar archivos en Photoshop, es
+              necesario utilizar los Documentos en la Nube de Adobe Creative
+              Cloud. Aquí tienes una guía paso a paso para hacerlo:
+            </p>
+            <ol>
+              <li>Guardar el Documento en la Nube.</li>
+              <li>Compartir el Documento.</li>
+              <li>
+                <span class="fw-bold">Invitar a Editar</span>:
+                <ul>
+                  <li>
+                    En el panel de Documentos en la Nube, selecciona el
+                    archivo que deseas compartir.
+                  </li>
+                  <li>
+                    Haz clic en el ícono de
+                    <span class="text-success fw-bold">Compartir</span>
+                    .
+                  </li>
+                  <li>
+                    Se abrirá una ventana emergente donde podrás agregar las
+                    direcciones de correo electrónico de las personas a las
+                    que deseas invitar.
+                  </li>
+                  <li>
+                    Se elige si quieres que las personas invitadas puedan
+                    editar o solo ver el archivo.
+                  </li>
+                  <li>
+                    Picar en
+                    <span class="text-success fw-bold">Invitar</span> para
+                    enviar las invitaciones.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span class="fw-bold">Aceptar la Invitación</span>:
+                <ul>
+                  <li>
+                    Las personas invitadas recibirán un correo electrónico con
+                    un enlace para acceder al archivo.
+                  </li>
+                  <li>
+                    Al hacer clic en el enlace, podrán abrir el archivo en
+                    Photoshop y empezar a editarlo (si se les ha dado permiso
+                    de edición)
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </div>
         </div>
       </article>
-      <!-- fin Comandos Básicos CLI -->
+      <!-- fin Principal  -->
     </main>
+
     <!-- -------------------------------- fin principal -------------------------------- -->
 
     <!-- -------------------------------- barra lateral -------------------------------- -->
@@ -330,22 +263,10 @@
         <h1>Índice</h1>
         <ul class="list-group">
           <li class="list-group-item">
-            <a href="#configuracionNombreyCorreoUsuario">Configuración el Nombre y el Correo del Usuario</a>
+            <a href="#compartirParaRevision">Compartir para Revisión</a>
           </li>
           <li class="list-group-item">
-            <a href="#configuraciondelEditorporDefecto">Configuración del Editor por Defecto</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#configuracióndelosColoresdeTextolaTerminal">Configuración de los Colores de Texto la Terminal</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#configuraciondelMetododeFusion">Configuración del Método de Fusión</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#configuraciondeAlias">Configuración de Alias</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#verlaconfiguracion">Ver la configuración</a>
+            <a href="#invitaraEditar">Invitar a Editar</a>
           </li>
         </ul>
     </aside>
@@ -511,6 +432,7 @@
   </button>
   <!-- Fin button to top -->
 </body>
+
 <script>
   // pagina ha cargado totalmente
   window.onload = function () {

@@ -8,31 +8,31 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
-    content="En este artículo se explican las características principales, así como las ventajas y desventajas del sistema de control de versiones GIT." />
+    content="Este artículo explica los comandos más importantes para la configuración inicial de GIT." />
   <meta name="author" content="Ing. Eduardo Herrera Forero" />
   <meta name="application-name" content="EHF" />
   <meta name="robots" content="index, follow" />
   <meta name="google" content="notranslate" />
-  <link rel="canonical" href="https://eduardoherreraf.github.io/git@introduccion_de_git_para_windows.html" />
+  <link rel="canonical" href="https://eduardoherreraf.github.io/git-configuración_inicial_GIT.html" />
   <!-- Fin Metaetiquetas -->
 
   <!-- Open Graph data -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Introducción de GIT para Windows - Ing. Eduardo Herrera Forero." />
+  <meta property="og:title" content="Configuración Inicial de GIT - Ing. Eduardo Herrera Forero." />
   <meta property="og:description"
-    content="En este artículo se explican las características principales, así como las ventajas y desventajas del sistema de control de versiones GIT." />
+    content="Este artículo explica los comandos más importantes para la configuración inicial de GIT." />
   <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
   <meta property="og:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
-  <meta property="og:url" content="https://eduardoherreraf.github.io/git@introduccion_de_git_para_windows.html" />
+  <meta property="og:url" content="https://eduardoherreraf.github.io/git-configuración_inicial_GIT.html" />
   <meta property="og:locale" content="es_CO" />
   <!-- fin Open Graph data -->
 
   <!-- Twitter cards -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@ehfeduardo" />
-  <meta name="twitter:title" content="Introducción de GIT para Windows - Ing. Eduardo Herrera Forero." />
+  <meta name="twitter:title" content="Configuración Inicial de GIT - Ing. Eduardo Herrera Forero." />
   <meta name="twitter:description"
-    content="En este artículo se explican las características principales, así como las ventajas y desventajas del sistema de control de versiones GIT." />
+    content="Este artículo explica los comandos más importantes para la configuración inicial de GIT." />
   <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
   <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
   <!-- Fin Twitter cards -->
@@ -48,9 +48,7 @@
   <meta name="theme-color" content="#ffffff" />
   <!-- fin iconos -->
 
-  <title>
-    Introducción de GIT para Windows - Ing. Eduardo Herrera Forero.
-  </title>
+  <title>Configuración Inicial de GIT - Ing. Eduardo Herrera Forero.</title>
 
   <script type="module" defer src="./js/main.js"></script>
 
@@ -104,157 +102,225 @@
   </nav>
   <!-- navbar -->
 
-  <!-- -------------------------------- principal -------------------------------- -->
   <div class="row col">
     <main class="pt-5 col-lg-9">
 
-      <!-- Introducción de GIT para Windows  -->
+      <!-- -------------------------------- principal -------------------------------- -->
+      <!-- Configuración Inicial de GIT  -->
       <article class="row border-1 border-bottom pb-3">
         <div class="">
-          <h1>Introducción de GIT para Windows</h1>
+          <h1>Configuración Inicial de GIT</h1>
           <p>
-            Git es un sistema de control de versiones distribuido, ampliamente
-            utilizado en el desarrollo de software. Fue creado por Linus
-            Torvalds en 2005, inicialmente para gestionar el desarrollo del
-            núcleo de Linux. Su principal función es llevar un registro de los
-            cambios realizados en el código fuente a lo largo del tiempo,
-            permitiendo a los desarrolladores colaborar de manera eficiente y
-            revertir a versiones anteriores si es necesario.
+            Los comandos de configuración inicial de Git se utilizan para
+            establecer parámetros globales que definirán cómo Git interactúa
+            con el usuario y cómo registran los cambios. Estos comandos se
+            configuran típicamente cuando se instala GIT por primera vez y se
+            prepara para empezar a trabajar con repositorios. A continuación,
+            se explica cuándo y cómo se usan los comandos de configuración
+            inicial más importantes:
           </p>
         </div>
 
-        <!-- Características Principales de Git -->
-        <div id="característicasPrincipalesdeGit" class="mt-5 pt-5 ">
-          <h2 class="mt-1">Características Principales de Git</h2>
-          <ul>
-            <li>
-              <b>Distribuido</b>: A diferencia de los sistemas de control de
-              versiones centralizados, como SubVersioN (SVN), en Git cada
-              desarrollador tiene una copia completa del repositorio,
-              incluyendo el historial completo de cambios.
-            </li>
-            <li>
-              <b>Ramas y Fusiones</b>: Git facilita la creación de ramas para
-              desarrollar características o corregir errores de manera
-              aislada. Estas ramas se pueden fusionar fácilmente con la rama
-              principal una vez que el desarrollo o la corrección ha sido
-              completada.
-            </li>
-            <li>
-              <b>Rendimiento</b>: Git está diseñado para ser rápido. La
-              mayoría de las operaciones se realizan localmente, lo que
-              significa que son casi instantáneas.
-            </li>
-            <li>
-              <b>Integridad</b>: Git asegura la integridad del código y del
-              historial de cambios mediante el uso de sumas de verificación
-              (SHA-1). Esto garantiza que los datos no se corrompan sin ser
-              detectados.
-            </li>
-            <li>
-              <b>Rastreo de Cambios</b>: Git permite ver exactamente qué
-              cambios se realizaron, quién los hizo y cuándo. Esto es crucial
-              para la colaboración en proyectos grandes donde muchos
-              desarrolladores pueden estar trabajando en diferentes partes del
-              código al mismo tiempo.
-            </li>
-          </ul>
-        </div>
+        <div>
+          <!-- Configurar el Nombre y el Correo del Usuario -->
+          <div id="configuracionNombreyCorreoUsuario" class="mt-5 pt-5 ">
+            <h2 class="mt-1">
+              Configuración el Nombre y el Correo del Usuario
+            </h2>
+            <p>
+              Estos parámetros son cruciales porque GIT los usa para etiquetar
+              los commits, permitiendo identificar quién hizo los cambios en
+              un proyecto.
+            </p>
+            <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-bash" data-prismjs-copy="Copy">
+                    git config --global user.name "Nombre del usuario"
+                    git config --global user.email "Semail@ejemplo.com"
+                  </code>
+                </pre>
+            <p>Estos comandos se usan cuando:</p>
+            <p>
+              Es aconsejable ejecutar estos comandos justo después de instalar
+              Git en el equipo de trabajo.
+            </p>
+            <p>
+              Otra razón para utilizar estos comandos es cuando se comparte la
+              máquina con otros usuarios o se cambia de identidad (por
+              ejemplo, de laboral a personal), en cuyo caso sería conveniente
+              actualizar estos valores.
+            </p>
+          </div>
 
-        <!-- ventajas -->
-        <div id="ventajas" class="mt-5 pt-5 ">
-          <h2 class="mt-1">Ventajas</h2>
-          <ul>
-            <li>
-              <b>Distribuido</b>: Cada usuario tiene una copia completa del
-              repositorio, incluyendo todo el historial de cambios. Esto
-              permite trabajar de manera offline y reduce la dependencia de un
-              servidor central.
-            </li>
-            <li>
-              <b>Rendimiento</b>: La mayoría de las operaciones son locales,
-              por lo que son extremadamente rápidas en comparación con los
-              sistemas centralizados. Las acciones como el commit, la creación
-              de ramas y el merge son muy eficientes.
-            </li>
-            <li>
-              <b>Integridad de Datos</b>: Git usa sumas de verificación SHA-1
-              para garantizar la integridad de los datos. Esto asegura que
-              cualquier cambio en el historial de los archivos es detectado,
-              evitando la corrupción de datos.
-            </li>
-            <li>
-              <b>Ramas y Fusiones (Branching and Merging)</b>: Git facilita la
-              creación y el manejo de ramas, lo cual es crucial para el
-              desarrollo de nuevas características y la corrección de errores
-              sin afectar la rama principal. El proceso de fusionar ramas es
-              robusto y eficiente.
-            </li>
-            <li>
-              <b>Colaboración</b>: Git facilita la colaboración entre
-              múltiples desarrolladores. Herramientas como pull requests y
-              revisión de código son soportadas directamente o a través de
-              plataformas como GitHub, GitLab y Bitbucket.
-            </li>
-            <li>
-              <b>Historial Detallado</b>: Permite un seguimiento detallado de
-              todos los cambios realizados, quién los hizo y cuándo. Esto es
-              útil para auditorías y para entender la evolución del proyecto.
-            </li>
-            <li>
-              <b>Herramientas y Ecosistema</b>: Existen muchas herramientas y
-              servicios que se integran bien con Git, como sistemas de
-              integración continua (CI/CD), plataformas de gestión de
-              proyectos, y editores de código.
-            </li>
-          </ul>
-        </div>
+          <!-- Configuración del Editor por Defecto -->
+          <div id="configuraciondelEditorporDefecto" class="mt-5 pt-5 ">
+            <h2 class="mt-1">Configuración del Editor por Defecto</h2>
+            <p>
+              En algunos casos Git puede pedir que se edite mensajes de commit
+              o archivos de configuración. Es útil configurar el editor de
+              texto preferido para estas tareas.
+            </p>
+            <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-bash" data-prismjs-copy="Copy">
+                    git config --global core.editor "nombre-del-editor"
 
-        <!-- desventajas -->
-        <div id="desventajas" class="mt-5 pt-5">
-          <h2 class="mt-1">Desventajas</h2>
-          <ul>
-            <li>
-              <b>Curva de Aprendizaje</b>: Git tiene una curva de aprendizaje
-              pronunciada para los nuevos usuarios. Sus conceptos y comandos
-              pueden ser complejos y confusos al principio.
-            </li>
-            <li>
-              <b>Complejidad en el Manejo de Conflictos</b>: Resolver
-              conflictos de merge puede ser complicado y requiere un buen
-              entendimiento del sistema. Esto puede ser un reto en equipos
-              grandes con múltiples ramas activas.
-            </li>
-            <li>
-              <b>Falta de Interfaz Gráfica Nativa</b>: Aunque existen muchas
-              interfaces gráficas para Git (como GitKraken, Sourcetree, y las
-              integraciones en editores como VSCode), Git en sí mismo es una
-              herramienta de línea de comandos, lo cual puede ser intimidante
-              para algunos usuarios.
-            </li>
-            <li>
-              <b>Tamaño del Repositorio</b>: En proyectos con grandes archivos
-              binarios o repositorios que han crecido mucho con el tiempo, Git
-              puede volverse lento y consumir mucho espacio en disco. Aunque
-              existen soluciones como Git LFS (Large File Storage), esto añade
-              complejidad.
-            </li>
-            <li>
-              <b>Compatibilidad y Conversión</b>: Migrar a Git desde otros
-              sistemas de control de versiones puede ser complicado y puede
-              requerir herramientas especializadas para mantener el historial
-              y la integridad de los datos.
-            </li>
-            <li>
-              <b>Operaciones Distribuidas</b>: La naturaleza distribuida de
-              Git puede llevar a situaciones donde las copias del repositorio
-              se desincronizan, requiriendo una gestión cuidadosa para evitar
-              problemas.
-            </li>
-          </ul>
+                    // para VSCode
+                    git config --global core.editor "code --wait"
+
+                    // VIM (valor por defecto)
+                    git config --global core.editor "vim"
+
+                    // Atom
+                    git config --global core.editor "atom --wait"
+
+                    // nano
+                    git config --global core.editor "nano"
+
+                    // Sublime Text
+                    git config --global core.editor "subl -n -w"
+                  </code>
+                </pre>
+            <p>
+              Se debe estar seguro de que el editor que se elije esté
+              correctamente instalado y accesible desde la línea de comandos.
+              Si el comando para abrir tu editor incluye espacios, colocar el
+              nombre del editor entre comillas dobles, como se muestra en los
+              ejemplos.
+            </p>
+          </div>
+
+          <!-- Configuración de la terminal de colores: -->
+          <div id="configuracióndelosColoresdeTextolaTerminal" class="mt-5 pt-5 ">
+            <h2 class="mt-1">
+              Configuración de los Colores de Texto la Terminal
+            </h2>
+            <p>
+              Configurar Git para que use colores en la terminal, lo que hace
+              más fácil leer los mensajes y distinguir diferentes tipos de
+              información.
+            </p>
+            <p>
+              Se usa principalmente para mejorar la legibilidad de los
+              mensajes en la terminal.
+            </p>
+            <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-bash" data-prismjs-copy="Copy">
+                    git config --global color.ui auto
+                  </code>
+                </pre>
+          </div>
+
+          <!-- Configuración del método de fusión -->
+          <div id="configuraciondelMetododeFusion" class="mt-5 pt-5 ">
+            <h2 class="mt-1">Configuración del Método de Fusión</h2>
+            <p>
+              Se puedes especificar cómo Git debe manejar las fusiones de
+              archivos.
+            </p>
+            <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-bash" data-prismjs-copy="Copy">
+                    git config --global merge.tool "nombre-del-herramienta-de-fusión"
+                  </code>
+                </pre>
+            <p>Los nombre-del-herramienta-de-fusión pueden ser:</p>
+            <ul>
+              <li><b>vimdiff</b>: Utiliza Vim en modo de diferencia.</li>
+              <li>
+                <b>meld</b>: Una herramienta gráfica popular para comparar y
+                fusionar archivos.
+              </li>
+              <li>
+                <b>kdiff3</b>: Otra herramienta gráfica para la comparación y
+                fusión de archivos.
+              </li>
+              <li>
+                <b>tortoisemerge</b>: Parte de TortoiseGit, una interfaz de
+                usuario para Git en Windows.
+              </li>
+              <li>
+                <b>p4merge</b>: Herramienta de Perforce para la comparación y
+                fusión de archivos.
+              </li>
+              <li>
+                <b>bc</b>: Beyond Compare, una herramienta comercial de
+                comparación de archivos.
+              </li>
+              <li>
+                <b>opendiff</b>: Utiliza FileMerge de Apple (disponible en
+                macOS).
+              </li>
+              <li>
+                <b>diffmerge</b>: Otra herramienta gráfica para la comparación
+                y fusión de archivos.
+              </li>
+              <li>
+                <b>araxis</b>: Araxis Merge, una herramienta comercial de
+                comparación y fusión de archivos.
+              </li>
+              <li><b>emerge</b>: Herramienta de fusión de Emacs</li>
+            </ul>
+            <p>
+              Además, se puede configurar opciones adicionales específicas
+              para cada herramienta, si es necesario. Consultar la
+              documentación de GIT o de la herramienta de fusión específica
+              para obtener más detalles sobre configuraciones adicionales.
+            </p>
+          </div>
+
+          <!-- Configuración de alias -->
+          <div id="configuraciondeAlias" class="mt-5 pt-5 ">
+            <h2 class="mt-1">Configuración de Alias</h2>
+            <p>
+              Los alias se utilizan para abreviar comandos largos o
+              complicados, facilitando y agilizando su uso.
+            </p>
+            <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-bash" data-prismjs-copy="Copy">
+                    git config --global alias.st status
+                    git config --global alias.co checkout
+                  </code>
+                </pre>
+            <p>
+              En este ejemplo, ambos comandos producen el mismo resultado.
+            </p>
+            <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-bash" data-prismjs-copy="Copy">
+                    git st
+                    git status
+                  </code>
+                </pre>
+          </div>
+
+          <!-- Ver la configuración -->
+          <div id="verlaconfiguracion" class="mt-5 pt-5">
+            <h2 class="mt-1">Ver la configuración</h2>
+            <p>
+              Comando utilizado para mostrar todas las configuraciones que GIT
+              tiene actualmente. Esto incluye ajustes como nombre de usuario,
+              correo electrónico, alias y más. Es un comando útil para revisar
+              la configuración de GIT de un vistazo.
+            </p>
+            <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-bash" data-prismjs-copy="Copy">
+                    git config --list
+                  </code>
+                </pre>
+          </div>
+
+          <p>
+            Estos comandos de configuración inicial se usan generalmente una
+            sola vez cuando se configura GIT por primera vez en un nuevo
+            entorno, pero también pueden ser ajustados en cualquier momento si
+            cambian las preferencias o necesidades. Recordar que el uso del
+            flag
+            <code>--global</code> hace que estas configuraciones se apliquen a
+            nivel global para todos los repositorios guardados en la máquina.
+            Si se necesita configurar algo específico para un solo
+            repositorio, puedes omitir el flag <code>--global</code> y GIT
+            aplicará la configuración solo en el repositorio actual.
+          </p>
         </div>
       </article>
-      <!-- fin Introducción de GIT para Windows -->
+      <!-- fin Comandos Básicos CLI -->
     </main>
     <!-- -------------------------------- fin principal -------------------------------- -->
 
@@ -264,13 +330,22 @@
         <h1>Índice</h1>
         <ul class="list-group">
           <li class="list-group-item">
-            <a href="#característicasPrincipalesdeGit">Características Principales de Git</a>
+            <a href="#configuracionNombreyCorreoUsuario">Configuración el Nombre y el Correo del Usuario</a>
           </li>
           <li class="list-group-item">
-            <a href="#ventajas">Ventajas</a>
+            <a href="#configuraciondelEditorporDefecto">Configuración del Editor por Defecto</a>
           </li>
           <li class="list-group-item">
-            <a href="#desventajas">Desventajas</a>
+            <a href="#configuracióndelosColoresdeTextolaTerminal">Configuración de los Colores de Texto la Terminal</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#configuraciondelMetododeFusion">Configuración del Método de Fusión</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#configuraciondeAlias">Configuración de Alias</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#verlaconfiguracion">Ver la configuración</a>
           </li>
         </ul>
     </aside>

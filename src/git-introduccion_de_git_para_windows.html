@@ -8,31 +8,31 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
-    content="Se explica cómo se comparten y se editan los archivos de forma colaborativa en Adobe Photoshop." />
+    content="En este artículo se explican las características principales, así como las ventajas y desventajas del sistema de control de versiones GIT." />
   <meta name="author" content="Ing. Eduardo Herrera Forero" />
   <meta name="application-name" content="EHF" />
   <meta name="robots" content="index, follow" />
   <meta name="google" content="notranslate" />
-  <link rel="canonical" href="https://eduardoherreraf.github.io/photoshop@compartir_y_editar_archivos.html" />
+  <link rel="canonical" href="https://eduardoherreraf.github.io/git-introduccion_de_git_para_windows.html" />
   <!-- Fin Metaetiquetas -->
 
   <!-- Open Graph data -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Compartir y Editar Archivos en  Photoshop - Ing. Eduardo Herrera Forero." />
+  <meta property="og:title" content="Introducción de GIT para Windows - Ing. Eduardo Herrera Forero." />
   <meta property="og:description"
-    content="Se explica cómo se comparten y se editan los archivos de forma colaborativa en Adobe Photoshop." />
+    content="En este artículo se explican las características principales, así como las ventajas y desventajas del sistema de control de versiones GIT." />
   <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
   <meta property="og:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
-  <meta property="og:url" content="https://eduardoherreraf.github.io/photoshop@compartir_y_editar_archivos.html" />
+  <meta property="og:url" content="https://eduardoherreraf.github.io/git-introduccion_de_git_para_windows.html" />
   <meta property="og:locale" content="es_CO" />
   <!-- fin Open Graph data -->
 
   <!-- Twitter cards -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@ehfeduardo" />
-  <meta name="twitter:title" content="Compartir y Editar Archivos en  Photoshop - Ing. Eduardo Herrera Forero." />
+  <meta name="twitter:title" content="Introducción de GIT para Windows - Ing. Eduardo Herrera Forero." />
   <meta name="twitter:description"
-    content="Se explica cómo se comparten y se editan los archivos de forma colaborativa en Adobe Photoshop." />
+    content="En este artículo se explican las características principales, así como las ventajas y desventajas del sistema de control de versiones GIT." />
   <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
   <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
   <!-- Fin Twitter cards -->
@@ -49,7 +49,7 @@
   <!-- fin iconos -->
 
   <title>
-    Compartir y Editar Archivos en Photoshop - Ing. Eduardo Herrera Forero.
+    Introducción de GIT para Windows - Ing. Eduardo Herrera Forero.
   </title>
 
   <script type="module" defer src="./js/main.js"></script>
@@ -82,7 +82,7 @@
           <a class="nav-link mx-1" href="index.html#blog">PUBLICACIONES</a>
           <a class="nav-link ms-1" href="index.html#contact">CONTACTO</a>
         </ul>
-        <!--     <div class="me-3">
+        <!-- <div class="me-3">
             <button
               id="dl-icon"
               onclick="cambiarTema()"
@@ -107,154 +107,155 @@
   <!-- -------------------------------- principal -------------------------------- -->
   <div class="row col">
     <main class="pt-5 col-lg-9">
-      <!-- Principal  -->
-      <article class="row border-1 border-bottom pb-3">
-        <div class>
-          <h1>Compartir y Editar Archivos en Photoshop</h1>
-          <p>
-            En Photoshop, compartir y editar archivos de manera colaborativa
-            es posible mediante diversas funciones y herramientas.
-          </p>
-          <p>
-            A continuación se describen los métodos para compartir y colaborar
-            en archivos de Photoshop:
-          </p>
-          <!-- Compartir para Revisión -->
-          <div id="compartirParaRevision" class="mt-5 pt-5 ">
-            <h2 class="mt-1">Compartir para Revisión</h2>
-            <p>
-              Una condición necesaria para compartir un archivo es que este
-              debe estar guardado en Adobe Creative Cloud. Mantenerlo
-              únicamente en el equipo local no permite compartirlo..
-            </p>
-            <ol>
-              <li>
-                Guardar en la Nube:
-                <ul>
-                  <li>
-                    <span class="fw-bold">Creative Cloud</span>: Al guardar
-                    archivos en la nube de Adobe Creative Cloud, se puede
-                    acceder a ellos desde cualquier dispositivo con una cuenta
-                    de Adobe.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Pasos</span>:
-                    <ul>
-                      <li>
-                        <span class="fw-bold">Menú</span>:
-                        <span class="text-success fw-bold">Archivo > Guardar como > Guardar en la nube</span>.
-                      </li>
-                      <li>
-                        Seleccionar la ubicación en la nube donde deseas
-                        guardar el archivo.
-                      </li>
-                    </ul>
-                  </li>
-                  <p>
-                    Cuando un archivo se guarda en la nube, aparece un icono
-                    de nube junto al nombre en el título de la pestaña,
-                    indicando que está almacenado en la nube.
-                  </p>
-                </ul>
-              </li>
-              <li>
-                Compartir Enlaces:
-                <ul>
-                  <li>
-                    Se pueden compartir enlaces directos a los archivos
-                    guardados en la nube.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Pasos:</span>:
-                    <ul>
-                      <li>
-                        Para compartir un archivo se debe picar primero en el
-                        botón
-                        <span class="text-success fw-bold">Compartir</span>
-                        .
-                      </li>
-                      <li>
-                        Seleccionar
-                        <span class="text-success fw-bold">Invitar a editar</span>
-                        o
-                        <span class="text-success fw-bold">Crear vínculo</span>.
-                      </li>
-                      <li>
-                        Picar en
-                        <span class="text-success fw-bold">copiar</span> y la
-                        dirección del archivo se guardará en el portapapeles
-                        para que se pueda usar más tarde.
-                      </li>
-                      <div class="imagen">
-                        <img src="./images/ps@compartir_revision.jpg" class="img-fluid" alt="Compartir para Revisión" />
-                      </div>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-            </ol>
-          </div>
 
-          <!-- Invitar a Editar -->
-          <div id="invitaraEditar" class="mt-5 pt-5">
-            <h2 class="mt-1">Invitar a Editar</h2>
-            <p>
-              Para invitar a otros a editar archivos en Photoshop, es
-              necesario utilizar los Documentos en la Nube de Adobe Creative
-              Cloud. Aquí tienes una guía paso a paso para hacerlo:
-            </p>
-            <ol>
-              <li>Guardar el Documento en la Nube.</li>
-              <li>Compartir el Documento.</li>
-              <li>
-                <span class="fw-bold">Invitar a Editar</span>:
-                <ul>
-                  <li>
-                    En el panel de Documentos en la Nube, selecciona el
-                    archivo que deseas compartir.
-                  </li>
-                  <li>
-                    Haz clic en el ícono de
-                    <span class="text-success fw-bold">Compartir</span>
-                    .
-                  </li>
-                  <li>
-                    Se abrirá una ventana emergente donde podrás agregar las
-                    direcciones de correo electrónico de las personas a las
-                    que deseas invitar.
-                  </li>
-                  <li>
-                    Se elige si quieres que las personas invitadas puedan
-                    editar o solo ver el archivo.
-                  </li>
-                  <li>
-                    Picar en
-                    <span class="text-success fw-bold">Invitar</span> para
-                    enviar las invitaciones.
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <span class="fw-bold">Aceptar la Invitación</span>:
-                <ul>
-                  <li>
-                    Las personas invitadas recibirán un correo electrónico con
-                    un enlace para acceder al archivo.
-                  </li>
-                  <li>
-                    Al hacer clic en el enlace, podrán abrir el archivo en
-                    Photoshop y empezar a editarlo (si se les ha dado permiso
-                    de edición)
-                  </li>
-                </ul>
-              </li>
-            </ol>
-          </div>
+      <!-- Introducción de GIT para Windows  -->
+      <article class="row border-1 border-bottom pb-3">
+        <div class="">
+          <h1>Introducción de GIT para Windows</h1>
+          <p>
+            Git es un sistema de control de versiones distribuido, ampliamente
+            utilizado en el desarrollo de software. Fue creado por Linus
+            Torvalds en 2005, inicialmente para gestionar el desarrollo del
+            núcleo de Linux. Su principal función es llevar un registro de los
+            cambios realizados en el código fuente a lo largo del tiempo,
+            permitiendo a los desarrolladores colaborar de manera eficiente y
+            revertir a versiones anteriores si es necesario.
+          </p>
+        </div>
+
+        <!-- Características Principales de Git -->
+        <div id="característicasPrincipalesdeGit" class="mt-5 pt-5 ">
+          <h2 class="mt-1">Características Principales de Git</h2>
+          <ul>
+            <li>
+              <b>Distribuido</b>: A diferencia de los sistemas de control de
+              versiones centralizados, como SubVersioN (SVN), en Git cada
+              desarrollador tiene una copia completa del repositorio,
+              incluyendo el historial completo de cambios.
+            </li>
+            <li>
+              <b>Ramas y Fusiones</b>: Git facilita la creación de ramas para
+              desarrollar características o corregir errores de manera
+              aislada. Estas ramas se pueden fusionar fácilmente con la rama
+              principal una vez que el desarrollo o la corrección ha sido
+              completada.
+            </li>
+            <li>
+              <b>Rendimiento</b>: Git está diseñado para ser rápido. La
+              mayoría de las operaciones se realizan localmente, lo que
+              significa que son casi instantáneas.
+            </li>
+            <li>
+              <b>Integridad</b>: Git asegura la integridad del código y del
+              historial de cambios mediante el uso de sumas de verificación
+              (SHA-1). Esto garantiza que los datos no se corrompan sin ser
+              detectados.
+            </li>
+            <li>
+              <b>Rastreo de Cambios</b>: Git permite ver exactamente qué
+              cambios se realizaron, quién los hizo y cuándo. Esto es crucial
+              para la colaboración en proyectos grandes donde muchos
+              desarrolladores pueden estar trabajando en diferentes partes del
+              código al mismo tiempo.
+            </li>
+          </ul>
+        </div>
+
+        <!-- ventajas -->
+        <div id="ventajas" class="mt-5 pt-5 ">
+          <h2 class="mt-1">Ventajas</h2>
+          <ul>
+            <li>
+              <b>Distribuido</b>: Cada usuario tiene una copia completa del
+              repositorio, incluyendo todo el historial de cambios. Esto
+              permite trabajar de manera offline y reduce la dependencia de un
+              servidor central.
+            </li>
+            <li>
+              <b>Rendimiento</b>: La mayoría de las operaciones son locales,
+              por lo que son extremadamente rápidas en comparación con los
+              sistemas centralizados. Las acciones como el commit, la creación
+              de ramas y el merge son muy eficientes.
+            </li>
+            <li>
+              <b>Integridad de Datos</b>: Git usa sumas de verificación SHA-1
+              para garantizar la integridad de los datos. Esto asegura que
+              cualquier cambio en el historial de los archivos es detectado,
+              evitando la corrupción de datos.
+            </li>
+            <li>
+              <b>Ramas y Fusiones (Branching and Merging)</b>: Git facilita la
+              creación y el manejo de ramas, lo cual es crucial para el
+              desarrollo de nuevas características y la corrección de errores
+              sin afectar la rama principal. El proceso de fusionar ramas es
+              robusto y eficiente.
+            </li>
+            <li>
+              <b>Colaboración</b>: Git facilita la colaboración entre
+              múltiples desarrolladores. Herramientas como pull requests y
+              revisión de código son soportadas directamente o a través de
+              plataformas como GitHub, GitLab y Bitbucket.
+            </li>
+            <li>
+              <b>Historial Detallado</b>: Permite un seguimiento detallado de
+              todos los cambios realizados, quién los hizo y cuándo. Esto es
+              útil para auditorías y para entender la evolución del proyecto.
+            </li>
+            <li>
+              <b>Herramientas y Ecosistema</b>: Existen muchas herramientas y
+              servicios que se integran bien con Git, como sistemas de
+              integración continua (CI/CD), plataformas de gestión de
+              proyectos, y editores de código.
+            </li>
+          </ul>
+        </div>
+
+        <!-- desventajas -->
+        <div id="desventajas" class="mt-5 pt-5">
+          <h2 class="mt-1">Desventajas</h2>
+          <ul>
+            <li>
+              <b>Curva de Aprendizaje</b>: Git tiene una curva de aprendizaje
+              pronunciada para los nuevos usuarios. Sus conceptos y comandos
+              pueden ser complejos y confusos al principio.
+            </li>
+            <li>
+              <b>Complejidad en el Manejo de Conflictos</b>: Resolver
+              conflictos de merge puede ser complicado y requiere un buen
+              entendimiento del sistema. Esto puede ser un reto en equipos
+              grandes con múltiples ramas activas.
+            </li>
+            <li>
+              <b>Falta de Interfaz Gráfica Nativa</b>: Aunque existen muchas
+              interfaces gráficas para Git (como GitKraken, Sourcetree, y las
+              integraciones en editores como VSCode), Git en sí mismo es una
+              herramienta de línea de comandos, lo cual puede ser intimidante
+              para algunos usuarios.
+            </li>
+            <li>
+              <b>Tamaño del Repositorio</b>: En proyectos con grandes archivos
+              binarios o repositorios que han crecido mucho con el tiempo, Git
+              puede volverse lento y consumir mucho espacio en disco. Aunque
+              existen soluciones como Git LFS (Large File Storage), esto añade
+              complejidad.
+            </li>
+            <li>
+              <b>Compatibilidad y Conversión</b>: Migrar a Git desde otros
+              sistemas de control de versiones puede ser complicado y puede
+              requerir herramientas especializadas para mantener el historial
+              y la integridad de los datos.
+            </li>
+            <li>
+              <b>Operaciones Distribuidas</b>: La naturaleza distribuida de
+              Git puede llevar a situaciones donde las copias del repositorio
+              se desincronizan, requiriendo una gestión cuidadosa para evitar
+              problemas.
+            </li>
+          </ul>
         </div>
       </article>
-      <!-- fin Principal  -->
+      <!-- fin Introducción de GIT para Windows -->
     </main>
-
     <!-- -------------------------------- fin principal -------------------------------- -->
 
     <!-- -------------------------------- barra lateral -------------------------------- -->
@@ -263,10 +264,13 @@
         <h1>Índice</h1>
         <ul class="list-group">
           <li class="list-group-item">
-            <a href="#compartirParaRevision">Compartir para Revisión</a>
+            <a href="#característicasPrincipalesdeGit">Características Principales de Git</a>
           </li>
           <li class="list-group-item">
-            <a href="#invitaraEditar">Invitar a Editar</a>
+            <a href="#ventajas">Ventajas</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#desventajas">Desventajas</a>
           </li>
         </ul>
     </aside>
@@ -432,7 +436,6 @@
   </button>
   <!-- Fin button to top -->
 </body>
-
 <script>
   // pagina ha cargado totalmente
   window.onload = function () {
