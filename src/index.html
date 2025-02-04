@@ -2617,7 +2617,6 @@
     </footer>
 
     <!-- button to top -->
-
     <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -2634,42 +2633,6 @@
         ></path>
       </svg>
     </button>
-
     <!-- Fin button to top -->
   </body>
-
-  <script>
-    let tema = localStorage.getItem("theme") || "dark";
-    // pagina ha cargado totalmente
-    window.onload = function () {
-      if (tema === "dark") temaOscuro();
-      if (tema === "light") temaClaro();
-    };
-    // Change of Theme
-    const cambiarTema = () => {
-      const temaActual = localStorage.getItem("theme") || "dark";
-      if (temaActual === "dark") {
-        temaClaro();
-      } else {
-        temaOscuro();
-      }
-    };
-    const temaOscuro = () => {
-      document.querySelector("body").setAttribute("data-bs-theme", "dark");
-      document
-        .querySelector("#dl-icon")
-        .setAttribute(
-          "class",
-          "btn text-center d-flex bg-body-tertiary text-light"
-        );
-      localStorage.setItem("theme", "dark");
-    };
-    const temaClaro = () => {
-      document.querySelector("body").setAttribute("data-bs-theme", "light");
-      document
-        .querySelector("#dl-icon")
-        .setAttribute("class", "btn text-center d-flex bg-light text-dark");
-      localStorage.setItem("theme", "light");
-    };
-  </script>
 </html>
