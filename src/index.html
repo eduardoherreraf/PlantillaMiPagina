@@ -103,14 +103,15 @@
     class="container-fluid code-toolbar"
     id="about"
   >
-    <!-- navbar -->
-
+    <!-- Barra de navegación principal -->
     <nav
-      class="row navbar navbar-expand-lg bg-body-tertiary border-1 border fixed-top nav-pills"
+      class="row navbar navbar-expand-lg border-1 border fixed-top nav-underline"
     >
       <div class="container-fluid">
+        <!-- Enlace a la página principal con el logo y nombre -->
         <a class="navbar-brand d-flex ms-2" href="index.html">
           <div class="d-none d-sm-block">
+            <!-- Imagen del logo, solo visible en pantallas más grandes -->
             <img
               src="./images/logo.png"
               alt="Logo de Ing. Eduardo Herrera Forero"
@@ -120,9 +121,11 @@
             />
           </div>
 
+          <!-- Nombre del propietario del sitio -->
           Ing. Eduardo Herrera Forero
         </a>
 
+        <!-- Botón para activar el menú de navegación en dispositivos pequeños -->
         <button
           class="navbar-toggler"
           type="button"
@@ -135,10 +138,12 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
+        <!-- Menú de navegación, se colapsa en dispositivos pequeños -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul
             class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-content-between menu-options"
           >
+            <!-- Enlace a la sección sobre mí, marcado como activo -->
             <a
               class="nav-link mx-1 active"
               aria-current="page"
@@ -146,40 +151,46 @@
               >SOBRE MI</a
             >
 
+            <!-- Enlace a la sección de experiencia -->
             <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
 
+            <!-- Enlace a la sección de portafolio -->
             <a class="nav-link mx-1" href="index.html#portfolio">PORTAFOLIO</a>
 
+            <!-- Enlace a la sección de formación -->
             <a class="nav-link mx-1" href="index.html#studies">FORMACIÓN</a>
 
+            <!-- Enlace a la sección de publicaciones -->
             <a class="nav-link mx-1" href="index.html#blog">PUBLICACIONES</a>
 
+            <!-- Enlace a la sección de contacto -->
             <a class="nav-link ms-1" href="index.html#contact">CONTACTO</a>
           </ul>
 
-          <!-- <div class="me-3">
-            <button
-              id="dl-icon"
-              onclick="cambiarTema()"
-              class="btn text-center d-flex bg-body-tertiary text-light"
-              title="Dark / Light Theme">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-circle-half"
-                viewBox="0 0 16 16">
-                <path
-                  d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
-              </svg>
-            </button>
-          </div> -->
+          <!-- Sección comentada: botón para cambiar el tema de la página (oscuro/ligero) -->
+          <!--
+      <div class="me-3">
+        <button
+          id="dl-icon"
+          onclick="cambiarTema()"
+          class="btn text-center d-flex bg-body-tertiary text-light"
+          title="Dark / Light Theme">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-circle-half"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+          </svg>
+        </button>
+      </div>
+      -->
         </div>
       </div>
     </nav>
-
-    <!-- navbar -->
 
     <div class="row col">
       <main class="pt-5 col-lg-8">
