@@ -1,5 +1,4 @@
 <!-- @format -->
-
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
 
@@ -16,7 +15,6 @@
   <link rel="canonical"
     href="https://eduardoherreraf.github.io/bootstrap-instalacion_de_bootstrap_v5_con_npm_y_vite.html" />
   <!-- Fin Metaetiquetas -->
-
   <!-- Open Graph data -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Instalación de Bootstrap V5, NPM y VITE - Ing. Eduardo Herrera Forero." />
@@ -28,7 +26,6 @@
     content="https://eduardoherreraf.github.io/bootstrap-instalacion_de_bootstrap_v5_con_npm_y_vite.html" />
   <meta property="og:locale" content="es_CO" />
   <!-- fin Open Graph data -->
-
   <!-- Twitter cards -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@ehfeduardo" />
@@ -38,7 +35,6 @@
   <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
   <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
   <!-- Fin Twitter cards -->
-
   <!-- iconos -->
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
@@ -49,14 +45,11 @@
   <meta name="msapplication-TileColor" content="#da532c" />
   <meta name="theme-color" content="#ffffff" />
   <!-- fin iconos -->
-
   <title>
     Instalación de Bootstrap V5, NPM y VITE - Ing. Eduardo Herrera Forero.
   </title>
-
   <!-- importación main.js -->
   <script type="module" defer src="./js/main.js"></script>
-
   <!-- Configuración Google -->
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
@@ -126,7 +119,6 @@
           pasos antes de comenzar. Esta guía asume que se tiene instalado
           Node.js y que se tiene cierta experiencia con el uso del terminal.
         </p>
-
         <div id="configuracionInicial" class="mt-5 pt-5 ">
           <h2 class="mt-1">Configuración Inicial</h2>
           <pre class="line-numbers" data-src-status="loaded" tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
@@ -160,7 +152,6 @@
             Bootstrap, es necesario contar con otra dependencia (Sass) para
             importar y empaquetar correctamente el CSS de Bootstrap.
           </p>
-
           <div id="configuracionEspacioTrabajo" class="mt-5 pt-5 ">
             <h3 class="mt-1">Configuración del Espacio de Trabajo</h3>
             <pre class="line-numbers" data-src-status="loaded" tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
@@ -175,7 +166,6 @@
               ejecuta el siguiente código dentro de "my-project".
             </p>
           </div>
-
           <div id="configuracionVite" class="mt-5 pt-5 ">
             <h3 class="mt-1">Configuración de Vite</h3>
             <p>
@@ -185,7 +175,6 @@
             </p>
             <pre class="line-numbers" data-src-status="loaded" tabindex="0"><code class="language-javascript" data-prismjs-copy="Copy">
                   const path = require('path')
-
                   export default {
                     root: path.resolve(__dirname, 'src'),
                     build: {
@@ -258,7 +247,6 @@
           <pre class="line-numbers" data-src-status="loaded" tabindex="0"><code class="language-js" data-prismjs-copy="Copy">
                   // Import our custom CSS
                   import '../scss/styles.scss'
-
                   // Import all of Bootstrap's JS
                   import * as bootstrap from 'bootstrap'
               </code></pre>
@@ -278,9 +266,7 @@
           <pre class="line-numbers" data-src-status="loaded" tabindex="0"><code class="language-javascript" data-prismjs-copy="Copy">
                   import htmlPurge from 'vite-plugin-purgecss'
                   import { createHtmlPlugin } from 'vite-plugin-html'
-
                   const path = require('path')
-
                   export default {
                     root: path.resolve(__dirname, 'src'),
                     plugins:[
@@ -377,7 +363,6 @@
       <!-- fin vite NPM -->
     </main>
     <!-- -------------------------------- fin principal -------------------------------- -->
-
     <!-- -------------------------------- barra lateral -------------------------------- -->
     <aside class="col-lg-3 d-none d-lg-block pt-5">
       <div>

@@ -1,7 +1,6 @@
 <!-- @format -->
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
-
 <head>
   <!-- Metaetiquetas -->
   <meta charset="utf-8" />
@@ -14,7 +13,6 @@
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://eduardoherreraf.github.io/cursoPython3-0704_POO_metodos.html" />
   <!-- Fin Metaetiquetas -->
-
   <!-- Open Graph data -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="POO: Métodos en Python  - Ing. Eduardo Herrera Forero." />
@@ -25,7 +23,6 @@
   <meta property="og:url" content="https://eduardoherreraf.github.io/cursoPython3-0704_POO_metodos.html" />
   <meta property="og:locale" content="es_CO" />
   <!-- fin Open Graph data -->
-
   <!-- Twitter cards -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@ehfeduardo" />
@@ -36,7 +33,6 @@
   <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
   <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
   <!-- Fin Twitter cards -->
-
   <!-- iconos -->
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
@@ -47,14 +43,10 @@
   <meta name="msapplication-TileColor" content="#da532c" />
   <meta name="theme-color" content="#ffffff" />
   <!-- fin iconos -->
-
   <title>POO: Métodos en Python - Ing. Eduardo Herrera Forero.</title>
-
   <script type="module" defer src="./js/main.js"></script>
-
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
-
 <body>
   <!-- navbar -->
   <nav class="row navbar navbar-expand-lg border-1 border fixed-top nav-underline">
@@ -99,7 +91,6 @@
     </div>
   </nav>
   <!-- fin navbar -->
-
   <!--  Principal  -->
   <div class="row col">
     <main class="pt-5 col-lg-9">
@@ -116,7 +107,6 @@
             comunican, se transforman y gestionan su estado interno, revelando
             la complejidad y elegancia de la programación orientada a objetos.
           </p>
-
           <div class="text-center imagen">
             <picture>
               <img src="https://i.ibb.co/bLSTRV0/poometodos.jpg" class="img-fluid rounded-4" width="50%"
@@ -135,7 +125,6 @@
             </div>
             <!-- Go to top Fin-->
           </div>
-
           <!-- Métodos al Detalle -->
           <div id="metodosAlDetalle" class="mt-5 pt-5">
             <h2 class="mt-1">Métodos al Detalle</h2>
@@ -147,7 +136,6 @@
               (<code>.</code>) y suelen operar en los datos del objeto,
               accediendo o modificando sus atributos.
             </p>
-
             <!-- El Parámetro self -->
             <div>
               <h3>El Parámetro self</h3>
@@ -161,7 +149,6 @@
                 recomendable usar <code>self</code> para mantener la
                 legibilidad y consistencia del código.
               </p>
-
               <!-- Principales Usos de self -->
               <div>
                 <h4>Principales Usos de self</h4>
@@ -176,7 +163,6 @@
                         def __init__(self, nombre, edad):
                             self.nombre = nombre  # Atributo de la instancia
                             self.edad = edad      # Atributo de la instancia
-
                         def mostrar_nombre(self):
                             print(f"Mi nombre es {self.nombre}")  # Usando self para acceder a nombre
                   </code>
@@ -191,7 +177,6 @@
                     class Calculadora:
                         def suma(self, a, b):
                             return a + b
-
                         def cuadrado_de_suma(self, a, b):
                             return self.suma(a, b) ** 2  # Llama al método suma
                   </code>
@@ -226,7 +211,6 @@
                 </pre>
                   </li>
                 </ul>
-
                 <p><strong>Resumen</strong>:</p>
                 <ul>
                   <li>
@@ -246,7 +230,6 @@
               <!-- Principales Usos de self fin -->
             </div>
             <!-- El Parámetro self fin -->
-
             <!-- El Constructor -->
             <div>
               <h3>El Constructor</h3>
@@ -257,7 +240,6 @@
                 al instanciar un objeto de la clase y está definido con el
                 nombre especial <code>__init__</code>.
               </p>
-
               <!-- Características del Constructor -->
               <div>
                 <h4>Características del Constructor</h4>
@@ -283,7 +265,6 @@
                 </ul>
               </div>
               <!-- Características del Constructor fin -->
-
               <!-- Sintaxis de un Constructor -->
               <div>
                 <h4>Sintaxis de un Constructor</h4>
@@ -309,7 +290,6 @@
                 </ul>
               </div>
               <!-- Sintaxis de un Constructor fin -->
-
               <!-- Ejemplo Práctico -->
               <div>
                 <h4>Ejemplo Práctico</h4>
@@ -319,13 +299,10 @@
                       def __init__(self, nombre, edad):
                           self.nombre = nombre  # Atributo inicializado con el parámetro 'nombre'
                           self.edad = edad      # Atributo inicializado con el parámetro 'edad'
-
                       def saludar(self):
                           print(f"Hola, mi nombre es {self.nombre} y tengo {self.edad} años.")
-
                       # Crear una instancia de la clase Persona
                       persona1 = Persona("Juan", 30)
-
                       # Acceder a los atributos y llamar a métodos
                       print(persona1.nombre)  # Salida: Juan
                       print(persona1.edad)    # Salida: 30
@@ -334,7 +311,6 @@
                   </pre>
               </div>
               <!-- Ejemplo Práctico fin -->
-
               <!-- Constructor sin Parámetros -->
               <div>
                 <h4>Constructor sin Parámetros</h4>
@@ -348,14 +324,12 @@
                       class Ejemplo:
                       def __init__(self):
                           self.valor = 0  # Atributo con valor por defecto
-
                       objeto = Ejemplo()
                       print(objeto.valor)  # Salida: 0
                     </code>
                   </pre>
               </div>
               <!-- Constructor sin Parámetros fin -->
-
               <!-- Notas Importantes -->
               <div>
                 <h4>Notas Importantes</h4>
@@ -364,7 +338,6 @@
                     <span class="fw-bold">Constructores con valores predeterminados</span>: Los parámetros pueden tener
                     valores por defecto, lo que
                     permite crear objetos con parámetros opcionales.
-
                     <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           class Persona:
@@ -404,7 +377,6 @@
               <!-- Notas Importantes fin -->
             </div>
             <!-- El Constructor fin -->
-
             <!-- Método sin Parámetros -->
             <div>
               <h3>Método sin Parámetros</h3>
@@ -423,10 +395,8 @@
                     class Classy:
                     def method(self):
                         print("método")
-
                     # Crear una instancia de la clase
                     obj = Classy()
-
                     # Llamar al método sin argumentos
                     obj.method()     # Salida: método
                   </code>
@@ -476,7 +446,6 @@
               </p>
             </div>
             <!-- Método sin Parámetros fin -->
-
             <!-- Métodos con Varios Parámetros -->
             <div>
               <h3>Métodos con Varios Parámetros</h3>
@@ -493,15 +462,12 @@
                     class Ejemplo:
                     def saludo(self, nombre):
                         print(f"Hola, {nombre}.")
-
                     # Crear una instancia de la clase
                     obj = Ejemplo()
-
                     # Llamar al método pasando un argumento adicional
                     obj.saludo("Juan")     # Salida: Hola, Juan.
                   </code>
                 </pre>
-
               <p>Reglas Clave:</p>
               <ul>
                 <li>
@@ -535,7 +501,6 @@
                         <code class="language-python" data-prismjs-copy="Copy">
                           def metodo(self, param1="valor_por_defecto"):
                               print(param1)
-  
                           obj.metodo()               # Salida: valor_por_defecto
                           obj.metodo("Otro valor")   # Salida: Otro valor
                         </code>
@@ -557,11 +522,9 @@
             <!-- Go to top Fin-->
           </div>
           <!-- Métodos al Detalle Fin -->
-
           <!-- La Vida al Interior de las Clases y Objetos -->
           <div id="laVidaAlInteriorDeLasClasesYObjetos" class="mt-5 pt-5">
             <h2 class="mt-1">La Vida al Interior de las Clases y Objetos</h2>
-
             <!-- __dict__ -->
             <div>
               <h3>__dict__</h3>
@@ -593,7 +556,6 @@
                 </ul>
               </div>
               <!-- ¿Qué Es __dict__? fin -->
-
               <!-- ¿Para qué se Usa? -->
               <div>
                 <h4>¿Para qué se Usa?</h4>
@@ -622,7 +584,6 @@
                 </ul>
               </div>
               <!-- ¿Para qué se Usa? fin -->
-
               <!-- Limitaciones -->
               <div>
                 <h4>Limitaciones</h4>
@@ -639,7 +600,6 @@
                               def __init__(self, nombre, edad):
                                   self.nombre = nombre
                                   self.edad = edad
-
                           p = Persona("Ana", 25)
                           print(p.__dict__)  # AttributeError: 'Persona' object has no attribute '__dict__'
                         </code>
@@ -654,7 +614,6 @@
                 </ul>
               </div>
               <!-- Limitaciones fin -->
-
               <!-- Contexto del Uso de __dict__ en Clases -->
               <div>
                 <h4>Contexto del Uso de __dict__ en Clases</h4>
@@ -667,7 +626,6 @@
                     <code class="language-python" data-prismjs-copy="Copy">
                       class Animal:
                           especie = "Mamífero"
-
                       print(Animal.__dict__)
                       # Muestra un diccionario con los atributos y métodos de la clase, incluidos los métodos especiales como `__init__`.
                     </code>
@@ -682,7 +640,6 @@
               <!-- Contexto del Uso de __dict__ en Clases fin -->
             </div>
             <!-- __dict__ fin -->
-
             <!-- __name__ -->
             <div>
               <h3>__name__</h3>
@@ -715,7 +672,6 @@
                 </ul>
               </div>
               <!-- Comportamiento de __name__ fin -->
-
               <!-- Uso típico de __name__ -->
               <div>
                 <h4>Uso típico de __name__</h4>
@@ -735,7 +691,6 @@
                   </pre>
               </div>
               <!-- Uso típico de __name__ fin -->
-
               <!-- ¿Por qué se usa? -->
               <div>
                 <h4>¿Por qué se usa?</h4>
@@ -757,7 +712,6 @@
                 </ul>
               </div>
               <!-- ¿Por qué se usa? fin -->
-
               <!-- Ejemplo Práctico __name__ -->
               <div>
                 <h4>Ejemplo Práctico __name__</h4>
@@ -769,7 +723,6 @@
                     <code class="language-python" data-prismjs-copy="Copy">
                       def saludar():
                           print("Hola desde utilidades!")
-
                           if __name__ == "__main__":
                           print("Ejecutando utilidades.py directamente")
                           saludar()
@@ -813,7 +766,6 @@
               <!-- Ejemplo Práctico __name__ fin -->
             </div>
             <!-- __name__ fin -->
-
             <!-- type() -->
             <div>
               <h3>type()</h3>
@@ -824,7 +776,6 @@
                 depende del contexto en el que se emplee. A continuación, se
                 explica su uso en dos escenarios principales:
               </p>
-
               <!-- Obtener el Tipo de un Objeto -->
               <div>
                 <h4>Obtener el Tipo de un Objeto</h4>
@@ -846,7 +797,6 @@
                       x = 10
                       y = "Hola"
                       z = [1, 2, 3]
-
                       print(type(x))  # Salida: &lt;class 'int'>
                       print(type(y))  # Salida: &lt; 'str'>
                       print(type(z))  # Salida: &lt;class 'list'>
@@ -854,7 +804,6 @@
                   </pre>
               </div>
               <!-- Obtener el Tipo de un Objeto fin -->
-
               <!-- Crear Nuevas Clases Dinámicamente -->
               <div>
                 <h4>Crear Nuevas Clases Dinámicamente</h4>
@@ -881,7 +830,6 @@
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Crear una clase llamada MiClase con un método saludar
                       MiClase = type('MiClase', (object,), {'saludar': lambda self: "Hola, soy una clase dinámica"})
-
                       # Crear una instancia de la clase
                       obj = MiClase()
                       print(obj.saludar())  # Salida: Hola, soy una clase dinámica
@@ -889,7 +837,6 @@
                   </pre>
               </div>
               <!-- Crear Nuevas Clases Dinámicamente fin -->
-
               <!-- Usos Comunes de type() en Programación Diaria -->
               <div>
                 <h4>Usos Comunes de type() en Programación Diaria</h4>
@@ -908,7 +855,6 @@
                 </ul>
               </div>
               <!-- Usos Comunes de type() en Programación Diaria fin -->
-
               <!-- Nota Importante -->
               <div>
                 <h4>Nota Importante</h4>
@@ -928,7 +874,6 @@
               <!-- Nota Importante fin -->
             </div>
             <!-- type() fin -->
-
             <!-- __module__ -->
             <div>
               <h3>__module__</h3>
@@ -940,7 +885,6 @@
                 cuando se trabaja con introspección, depuración o para
                 entender la organización del código en un proyecto grande.
               </p>
-
               <!-- ¿Qué Es __module__? -->
               <div>
                 <h4>¿Qué Es __module__?</h4>
@@ -958,7 +902,6 @@
                     <code class="language-python" data-prismjs-copy="Copy">
                       class MiClase:
                           pass
-
                       print(MiClase.__module__)  # Salida: __main__
                     </code>
                   </pre>
@@ -970,7 +913,6 @@
                 </p>
               </div>
               <!-- ¿Qué Es __module__? fin -->
-
               <!-- ¿Para qué se Usa __module__? -->
               <div>
                 <h4>¿Para qué se Usa __module__?</h4>
@@ -985,10 +927,8 @@
                           # archivo_modulo.py
                           class ClaseExterna:
                               pass
-
                           # script_principal.py
                           from archivo_modulo import ClaseExterna
-
                           print(ClaseExterna.__module__)  # Salida: archivo_modulo
                         </code>
                       </pre>
@@ -1012,10 +952,8 @@
                         <code class="language-python" data-prismjs-copy="Copy">
                           def pertenece_a_modulo(objeto, modulo):
                           return objeto.__class__.__module__ == modulo
-
                           class Prueba:
                               pass
-
                           print(pertenece_a_modulo(Prueba(), "__main__"))  # Salida: True
                         </code>
                       </pre>
@@ -1023,7 +961,6 @@
                 </ul>
               </div>
               <!-- ¿Para qué se Usa __module__? fin -->
-
               <!-- Consideraciones Importantes -->
               <div>
                 <h4>Consideraciones Importantes</h4>
@@ -1042,7 +979,6 @@
               <!-- Consideraciones Importantes fin -->
             </div>
             <!-- __module__ fin -->
-
             <!-- __main__ -->
             <div>
               <h3>__main__</h3>
@@ -1050,7 +986,6 @@
                 En Python, __main__ es un concepto importante relacionado con
                 la estructura y ejecución de programas.
               </p>
-
               <!-- ¿Qué es __main__? -->
               <div>
                 <h4>¿Qué es __main__?</h4>
@@ -1075,7 +1010,6 @@
                 </ul>
               </div>
               <!-- ¿Qué es __main__? fin -->
-
               <!-- ¿Para qué se usa __main__? -->
               <div>
                 <h4>¿Para qué se usa __main__?</h4>
@@ -1100,23 +1034,19 @@
                 </ul>
               </div>
               <!-- ¿Para qué se usa __main__? fin -->
-
               <!-- Ejemplo Práctico de Uso de __main__ -->
               <div>
                 <h4>Ejemplo Práctico de Uso de __main__</h4>
                 <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Archivo modulo.py
-
                       def funcion_util():
                           print("Esta función puede ser utilizada desde otros módulos.")
-
                       if __name__ == "__main__":
                           print("Ejecutando como un script principal.")
                           funcion_util()
                     </code>
                   </pre>
-
                 <!-- Comportamiento -->
                 <div>
                   <h5>Comportamiento</h5>
@@ -1126,7 +1056,6 @@
                       <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     python modulo.py
-
                     """
                     Salida: Ejecutando como un script principal.
                     Esta función puede ser utilizada desde otros módulos.
@@ -1139,9 +1068,7 @@
                       <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             import modulo
-
                             modulo.funcion_util()
-                            
                             # Salida: Esta función puede ser utilizada desde otros módulos.
                           </code>
                         </pre>
@@ -1154,7 +1081,6 @@
                 <!-- Comportamiento fin -->
               </div>
               <!-- Ejemplo Práctico de Uso de __main__ fin -->
-
               <!-- Ventajas del uso de __main__ -->
               <div>
                 <h4>Ventajas del uso de __main__</h4>
@@ -1179,7 +1105,6 @@
               <!-- Ventajas del uso de __main__ fin -->
             </div>
             <!-- __main__ fin -->
-
             <!-- ___bases__ -->
             <div>
               <h3>___bases__</h3>
@@ -1209,7 +1134,6 @@
                 </ul>
               </div>
               <!-- ¿Qué es __bases__? fin -->
-
               <!-- ¿Para qué Se usa __bases__? -->
               <div>
                 <h4>¿Para qué Se usa __bases__?</h4>
@@ -1232,7 +1156,6 @@
                 </ul>
               </div>
               <!-- ¿Para qué Se usa __bases__? fin -->
-
               <!-- Ejemplo de Uso -->
               <div>
                 <h4>Ejemplo de Uso</h4>
@@ -1241,17 +1164,13 @@
                       # Definición de algunas clases
                       class A:
                           pass
-
                       class B:
                           pass
-
                       class C(A, B):  # C hereda de A y B
                           pass
-
                       # Inspección de las bases
                       print(C.__bases__)
                       # Salida: (&lt;class '__main__.A'>, &lt;class '__main__.B'>)
-
                       print(A.__bases__)
                       # Salida: (&lt;class 'object'>,)
                       # A hereda implícitamente de "object", la raíz de todas las clases
@@ -1259,7 +1178,6 @@
                   </pre>
               </div>
               <!-- Ejemplo de Uso fin -->
-
               <!-- Detalles Importantes -->
               <div>
                 <h4>Detalles Importantes</h4>
@@ -1279,7 +1197,6 @@
                 </ul>
               </div>
               <!-- Detalles Importantes fin -->
-
               <!-- Casos Prácticos -->
               <div>
                 <h3>Casos Prácticos</h3>
@@ -1291,10 +1208,8 @@
                           # Crear un código que verifique si una clase tiene una clase base específica
                           class Animal:
                               pass
-
                           class Perro(Animal):
                               pass
-
                           print(Animal in Perro.__bases__)  # Salida: True
                         </code>
                       </pre>
@@ -1323,7 +1238,6 @@
             <!-- Go to top Fin-->
           </div>
           <!-- La Vida al Interior de las Clases y Objetos Fin -->
-
           <!-- Reflexión e introspección -->
           <div id="reflexionEIntrospeccion" class="mt-5 pt-5">
             <h2 class="mt-1">Reflexión e introspección</h2>
@@ -1376,12 +1290,9 @@
                   <code class="language-python" data-prismjs-copy="Copy">
                     class Persona:
                         nombre = "Juan"
-
                     persona = Persona()
-
                     # Reflexión para obtener el valor de un atributo
                     print(getattr(persona, 'nombre'))  # Salida: Juan
-
                     # Reflexión para modificar un atributo
                     setattr(persona, 'nombre', 'María')
                     print(persona.nombre)  # Salida: María
@@ -1389,7 +1300,6 @@
                 </pre>
             </div>
             <!-- Reflexión fin -->
-
             <!-- Introspección -->
             <div>
               <h3>Introspección</h3>
@@ -1451,21 +1361,17 @@
               <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     import inspect
-
                     def ejemplo_funcion(param):
                         return param * 2
-
                     # Introspección básica
                     print(type(ejemplo_funcion))  # Salida: &lt;class 'function'>
                     print(callable(ejemplo_funcion))  # Salida: True
-
                     # Introspección avanzada con inspect
                     print(inspect.signature(ejemplo_funcion))  # Salida: (param)
                   </code>
                 </pre>
             </div>
             <!-- Introspección fin -->
-
             <!-- Diferencias entre Reflexión e Introspección -->
             <div>
               <h3>Diferencias entre Reflexión e Introspección</h3>
@@ -1500,7 +1406,6 @@
               </table>
             </div>
             <!-- Diferencias entre Reflexión e Introspección fin -->
-
             <!-- Casos de Uso -->
             <div>
               <h3>Casos de Uso</h3>
@@ -1518,7 +1423,6 @@
               </ul>
             </div>
             <!-- Casos de Uso fin -->
-
             <!-- Go to top -->
             <div class="text-center mt-5">
               <a href="#" id="myBtnScroll2" title="Go to top">
@@ -1558,16 +1462,13 @@
     <!-- -------------------------------- fin barra lateral -------------------------------- -->
   </div>
   <!--  Principal Fin  -->
-
   <!-- -------------------------------- pie de pagina -------------------------------- -->
   <footer class="row container-fluid border-1 border-top row col">
     <div class="row">
       <!-- contacto -->
-
       <div class="col-lg-4 d-flex flex-column align-items-center">
         <div>
           <div class="text-center fs-2">Contacto</div>
-
           <div class="d-flex flex-row m-3 align-text-top">
             <!-- <div>
                 <svg
@@ -1584,7 +1485,6 @@
                 <span class="ms-3">(57) 300-614-6402</span>
               </div> -->
           </div>
-
           <div class="d-flex flex-row m-3 align-text-top">
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -1596,13 +1496,11 @@
                   d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z">
                 </path>
               </svg>
-
               <span class="ms-3">
                 <a href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
               </span>
             </div>
           </div>
-
           <div class="d-flex flex-row m-3 align-text-top">
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
@@ -1613,51 +1511,39 @@
                 <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
               </svg>
             </div>
-
             <span class="ms-3">Bogotá D. C. - Colombia</span>
           </div>
         </div>
       </div>
-
       <!-- mapa del sitio -->
-
       <div class="col-lg-4 d-flex flex-column align-items-center">
         <div>
           <div class="text-center fs-2">Mapa del Sitio</div>
-
           <ul class="list-unstyled">
             <li>
               <a href="#about" aria-current="page">Sobre Mí</a>
             </li>
-
             <li>
               <a href="#resume">Experiencia</a>
             </li>
-
             <li>
               <a href="#portfolio">Portafolio</a>
             </li>
-
             <li>
               <a href="#studies">Formación</a>
             </li>
-
             <li>
               <a href="#blog">Publicaciones</a>
             </li>
-
             <li>
               <a href="#contact">Contacto</a>
             </li>
           </ul>
         </div>
       </div>
-
       <!-- redes sociales -->
-
       <div class="col-lg-4 d-flex align-items-center flex-column">
         <div class="text-center fs-2">Redes Sociales</div>
-
         <div class="d-flex m-3 justify-content-between flex-column">
           <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer" class="mb-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-linkedin"
@@ -1667,7 +1553,6 @@
               </path>
             </svg>
           </a>
-
           <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer" class="mb-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github"
               viewBox="0 0 16 16">
@@ -1676,7 +1561,6 @@
               </path>
             </svg>
           </a>
-
           <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer"
             class="mb-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-facebook"
@@ -1686,7 +1570,6 @@
               </path>
             </svg>
           </a>
-
           <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer" class="mb-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-twitter"
               viewBox="0 0 16 16">
@@ -1695,7 +1578,6 @@
               </path>
             </svg>
           </a>
-
           <!-- <a
               href="http://wa.me/573006145402?text=Buen día..."
               target="_blank"
@@ -1715,7 +1597,6 @@
         </div>
       </div>
     </div>
-
     <div class="d-flex m-3 align-text-top justify-content-center">
       <div>
         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-c-circle"
@@ -1725,13 +1606,10 @@
           </path>
         </svg>
       </div>
-
       <span class="ms-3">All Rights Reserved 2023</span>
     </div>
   </footer>
-
   <!-- button to top -->
-
   <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
@@ -1740,8 +1618,6 @@
       </path>
     </svg>
   </button>
-
   <!-- Fin button to top -->
 </body>
-
 </html>

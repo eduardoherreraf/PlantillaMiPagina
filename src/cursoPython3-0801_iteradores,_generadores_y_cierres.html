@@ -1,7 +1,6 @@
 <!-- @format -->
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
-
 <head>
   <!-- Metaetiquetas -->
   <meta charset="utf-8" />
@@ -15,7 +14,6 @@
   <link rel="canonical"
     href="https://eduardoherreraf.github.io/cursoPython3-0801_iteradores,_generadores_y_cierres.html" />
   <!-- Fin Metaetiquetas -->
-
   <!-- Open Graph data -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Iteradores, Generadores y Cierres en Python  - Ing. Eduardo Herrera Forero." />
@@ -27,7 +25,6 @@
     content="https://eduardoherreraf.github.io/cursoPython3-0801_iteradores,_generadores_y_cierres.html" />
   <meta property="og:locale" content="es_CO" />
   <!-- fin Open Graph data -->
-
   <!-- Twitter cards -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@ehfeduardo" />
@@ -39,7 +36,6 @@
   <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
   <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
   <!-- Fin Twitter cards -->
-
   <!-- iconos -->
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
@@ -50,16 +46,12 @@
   <meta name="msapplication-TileColor" content="#da532c" />
   <meta name="theme-color" content="#ffffff" />
   <!-- fin iconos -->
-
   <title>
     Iteradores, Generadores y Cierres en Python - Ing. Eduardo Herrera Forero.
   </title>
-
   <script type="module" defer src="./js/main.js"></script>
-
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
-
 <body>
   <!-- navbar -->
   <nav class="row navbar navbar-expand-lg border-1 border fixed-top nav-underline">
@@ -105,7 +97,6 @@
     </div>
   </nav>
   <!-- fin navbar -->
-
   <!--  Principal  -->
   <div class="row col">
     <main class="pt-5 col-lg-9">
@@ -115,7 +106,6 @@
           <header>
             <h1>Iteradores, Generadores y Cierres en Python</h1>
           </header>
-
           <p>
             En este documento se explorarán los conceptos de iteradores,
             generadores y cierres en Python, tres características
@@ -126,7 +116,6 @@
             utilizados para mejorar la calidad y la eficiencia del código en
             Python.
           </p>
-
           <div class="text-center imagen">
             <picture>
               <img src="https://i.ibb.co/h2ddmyG/iteradoresgeneradorescierres.jpg" class="img-fluid rounded-4"
@@ -166,7 +155,6 @@
               "lista" de cosas (que puede ser números, palabras, etc.) y las
               entrega una por una cuando se le pide.
             </p>
-
             <p><strong>Características principales</strong>:</p>
             <ul>
               <li>
@@ -182,11 +170,9 @@
                 <code>StopIteration</code>.
               </li>
             </ul>
-
             <!-- __iter__() -->
             <div>
               <h3>__iter__()</h3>
-
               <!-- ¿Qué Es __iter__()? -->
               <div>
                 <h4>¿Qué Es __iter__()?</h4>
@@ -207,7 +193,6 @@
                 </ul>
               </div>
               <!-- ¿Qué Es __iter__()? fin -->
-
               <!-- ¿Qué Hace __iter__()? -->
               <div>
                 <h4>¿Qué Hace __iter__()?</h4>
@@ -227,7 +212,6 @@
                 </ul>
               </div>
               <!-- ¿Qué Hace __iter__()? fin -->
-
               <!-- Relación Entre __iter__() y __next__() -->
               <div>
                 <h4>Relación Entre <code>__iter__()</code> y __next__()</h4>
@@ -247,11 +231,9 @@
               <!-- Relación Entre __iter__() y __next__() fin -->
             </div>
             <!-- __iter__() fin -->
-
             <!-- __next__() -->
             <div>
               <h3>__next__()</h3>
-
               <!-- ¿Qué Es __next__() en Python? -->
               <div>
                 <h4>¿Qué Es __next__() en Python?</h4>
@@ -269,7 +251,6 @@
                 </p>
               </div>
               <!-- ¿Qué Es __next__() en Python? fin -->
-
               <!-- ¿Qué Hace __next__()? -->
               <div>
                 <h4>¿Qué Hace __next__()?</h4>
@@ -295,7 +276,6 @@
               <!-- ¿Qué Hace __next__()? fin -->
             </div>
             <!-- __next__() fin -->
-
             <!-- Ejemplo de Uso Iteradores -->
             <div>
               <h3>Ejemplo de Uso Iteradores</h3>
@@ -303,7 +283,6 @@
                   <code class="language-python" data-prismjs-copy="Copy">
                     mi_lista = [1, 2, 3]
                     mi_iterador = iter(mi_lista)  # Convierte la lista en un iterador
-
                     print(next(mi_iterador))  # Salida:: 1
                     print(next(mi_iterador))  # Salida:: 2
                     print(next(mi_iterador))  # Salida:: 3
@@ -352,7 +331,6 @@
             <!-- Go to top Fin-->
           </div>
           <!-- Iteradores Fin -->
-
           <!-- Generadores -->
           <div id="generadores" class="mt-5 pt-5">
             <h2 class="mt-1">Generadores</h2>
@@ -372,7 +350,6 @@
               uno por uno cuando se necesite, en lugar de generar todos de una
               vez.
             </p>
-
             <!-- yield -->
             <div>
               <h3>yield</h3>
@@ -385,7 +362,6 @@
                 <code>yield</code> se comporten de manera diferente a las
                 funciones tradicionales que usan <code>return</code>.
               </p>
-
               <!-- ¿Cómo Funciona yield? -->
               <div>
                 <h4>¿Cómo Funciona yield?</h4>
@@ -408,7 +384,6 @@
                 </ul>
               </div>
               <!-- ¿Cómo Funciona yield? fin -->
-
               <!-- ¿Qué Hace yield? -->
               <div>
                 <h4>¿Qué Hace yield?</h4>
@@ -430,7 +405,6 @@
                 </ul>
               </div>
               <!-- ¿Qué Hace yield? fin -->
-
               <!-- Diferencias Clave entre yield y return -->
               <div>
                 <h4>Diferencias Clave entre yield y return</h4>
@@ -462,7 +436,6 @@
                 </table>
               </div>
               <!-- Diferencias Clave entre yield y return fin -->
-
               <!-- Ejemplo de Código Generador Usando yield -->
               <div>
                 <h4>Ejemplo de Código Generador Usando yield</h4>
@@ -476,11 +449,9 @@
                       def generador_numeros():
                           for numero in range(1, 6):
                               yield numero
-
                       # Uso del generador
                       for valor in generador_numeros():
                           print(valor)
-
                       # Salida:: 1
                       # Salida:: 2
                       # Salida:: 3
@@ -510,7 +481,6 @@
               <!-- Ejemplo de Código Generador Usando yield fin -->
             </div>
             <!-- yield fin -->
-
             <!-- Listas de Compresión -->
             <div>
               <h3>Listas de Compresión</h3>
@@ -523,7 +493,6 @@
                 necesiten. Esto ahorra memoria y es especialmente útil para
                 manejar grandes conjuntos de datos.
               </p>
-
               <!-- Sintaxis Básica de Listas por Comprensión -->
               <div>
                 <h4>Sintaxis Básica de Listas por Comprensión</h4>
@@ -555,7 +524,6 @@
                 </ul>
               </div>
               <!-- Sintaxis Básica de Listas por Comprensión fin -->
-
               <!-- Ejemplo de Código Generador Usando Listas por Comprensión -->
               <div>
                 <h4>
@@ -572,7 +540,6 @@
                   </pre>
               </div>
               <!-- Ejemplo de Código Generador Usando Listas por Comprensión fin -->
-
               <!-- Usando Operador in en Generadores -->
               <div>
                 <h4>Usando Operador in en Generadores</h4>
@@ -584,7 +551,6 @@
                   comprensiones o expresiones generadoras para filtrar
                   elementos que cumplen con ciertas condiciones.
                 </p>
-
                 <p>
                   A continuación se presenta un ejemplo de cómo usar
                   <code>in</code> en el contexto de una expresión generadora:
@@ -597,14 +563,11 @@
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Lista de palabras
                       palabras = ["manzana", "banana", "naranja", "uva"]
-
                       # Generador para palabras que contienen la letra 'a'
                       generador = (palabra for palabra in palabras if 'a' in palabra)
-
                       # Iterar sobre el generador
                       for palabra in generador:
                           print(palabra)
-
                       # Salida:: manzana
                       # Salida:: banana
                       # Salida:: naranja
@@ -635,7 +598,6 @@
                 </ul>
               </div>
               <!-- Usando Operador in en Generadores fin -->
-
               <!-- Diferencias clave con Listas por Comprensión -->
               <div>
                 <h4>Diferencias clave con Listas por Comprensión</h4>
@@ -669,7 +631,6 @@
               <!-- Diferencias clave con Listas por Comprensión fin -->
             </div>
             <!-- Listas de Compresión fin -->
-
             <!-- Ventajas de los Generadores -->
             <div>
               <h3>Ventajas de los Generadores</h3>
@@ -722,7 +683,6 @@
               </ul>
             </div>
             <!-- Ventajas de los Generadores fin -->
-
             <!-- Go to top -->
             <div class="text-center mt-5">
               <a href="#" id="myBtnScroll2" title="Go to top">
@@ -736,7 +696,6 @@
             <!-- Go to top Fin-->
           </div>
           <!-- Generadores Fin -->
-
           <!-- Cierres -->
           <div id="cierres" class="mt-5 pt-5">
             <h2 class="mt-1">Cierres</h2>
@@ -748,7 +707,6 @@
               la funcionalidad, y se utiliza principalmente para crear
               funciones que recuerdan el entorno en el que fueron creadas.
             </p>
-
             <!-- ¿Cómo Funcionan los Cierres? -->
             <div>
               <h3>¿Cómo Funcionan los Cierres?</h3>
@@ -771,10 +729,8 @@
                         def <code>funcion_interna</code>(y):
                         return x + y
                     return <code>funcion_interna</code>
-
                     # Crear una nueva función con x = 10
                     mi_funcion = <code>funcion_externa</code>(10)
-
                     # Llamar a la función interna con y = 5
                     resultado = mi_funcion(5)  # Devuelve 15
                     print(resultado)
@@ -800,7 +756,6 @@
               </ul>
             </div>
             <!-- ¿Cómo Funcionan los Cierres? fin -->
-
             <!-- Uso Típico de Cierres -->
             <div>
               <h3>Uso Típico de Cierres</h3>
@@ -817,17 +772,13 @@
                   <code class="language-python" data-prismjs-copy="Copy">
                     def contador():
                     contador = 0
-
                     def incrementar():
                         nonlocal contador  # Se refiere a la variable externa
                         contador += 1
                         return contador
-
                     return incrementar
-
                     # Crear un contador
                     mi_contador = contador()
-
                     # Llamar varias veces al contador
                     print(mi_contador())  # Devuelve 1
                     print(mi_contador())  # Devuelve 2
@@ -842,7 +793,6 @@
               </p>
             </div>
             <!-- Uso Típico de Cierres fin -->
-
             <!-- Ventajas de los Cierres -->
             <div>
               <h3>Ventajas de los Cierres</h3>
@@ -861,7 +811,6 @@
               </ul>
             </div>
             <!-- Ventajas de los Cierres fin -->
-
             <!-- Go to top -->
             <div class="text-center mt-5">
               <a href="#" id="myBtnScroll2" title="Go to top">
@@ -875,7 +824,6 @@
             <!-- Go to top Fin-->
           </div>
           <!-- Cierres Fin -->
-
           <!-- La Función lambda -->
           <div id="laFuncionLambda" class="mt-5 pt-5">
             <h2 class="mt-1">La Función lambda</h2>
@@ -887,7 +835,6 @@
               rápidas y simples, especialmente cuando no es necesario
               reutilizarlas.
             </p>
-
             <!-- Qué Es una Función lambda -->
             <div>
               <h3>Qué Es una Función lambda</h3>
@@ -912,7 +859,6 @@
                 </pre>
             </div>
             <!-- Qué Es una Función lambda fin -->
-
             <!-- Cómo se Usa una Función lambda -->
             <div>
               <h3>Cómo se Usa una Función lambda</h3>
@@ -966,7 +912,6 @@
               </ul>
             </div>
             <!-- Cómo se Usa una Función lambda fin -->
-
             <!-- Para qué Sirve una Función lambda -->
             <div>
               <h3>Para qué Sirve una Función lambda</h3>
@@ -988,7 +933,6 @@
               </ul>
             </div>
             <!-- Para qué Sirve una Función lambda fin -->
-
             <!-- Ejemplo Práctico de Funciones lambda -->
             <div>
               <h3>Ejemplo Práctico de Funciones lambda</h3>
@@ -1002,7 +946,6 @@
                 </pre>
             </div>
             <!-- Ejemplo Práctico de Funciones lambda fin -->
-
             <!-- Ventajas de Funciones lambdas -->
             <div>
               <h3>Ventajas de Funciones lambdas</h3>
@@ -1083,7 +1026,6 @@
               </ul>
             </div>
             <!-- Ventajas de Funciones lambdas fin -->
-
             <!-- Limitaciones de Funciones lambdas -->
             <div>
               <h3>Limitaciones de Funciones lambdas</h3>
@@ -1266,7 +1208,6 @@
             </p>
           </div>
           <!-- Funciones lambda con map() y filter() Fin -->
-
           <!-- Funciones lambda con filter() -->
           <div class="mt-5 pt-5">
             <h3 class="mt-1">Funciones lambda con filter()</h3>
@@ -1310,7 +1251,6 @@
             </p>
           </div>
           <!-- Funciones lambda con filter() Fin -->
-
           <!-- La Función lambda Fin -->
         </div>
       </article>
@@ -1338,16 +1278,13 @@
     <!-- -------------------------------- fin barra lateral -------------------------------- -->
   </div>
   <!--  Principal Fin  -->
-
   <!-- -------------------------------- pie de pagina -------------------------------- -->
   <footer class="row container-fluid border-1 border-top row col">
     <div class="row">
       <!-- contacto -->
-
       <div class="col-lg-4 d-flex flex-column align-items-center">
         <div>
           <div class="text-center fs-2">Contacto</div>
-
           <div class="d-flex flex-row m-3 align-text-top">
             <!-- <div>
                 <svg
@@ -1364,7 +1301,6 @@
                 <span class="ms-3">(57) 300-614-6402</span>
               </div> -->
           </div>
-
           <div class="d-flex flex-row m-3 align-text-top">
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -1376,13 +1312,11 @@
                   d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z">
                 </path>
               </svg>
-
               <span class="ms-3">
                 <a href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
               </span>
             </div>
           </div>
-
           <div class="d-flex flex-row m-3 align-text-top">
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
@@ -1393,51 +1327,39 @@
                 <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
               </svg>
             </div>
-
             <span class="ms-3">Bogotá D. C. - Colombia</span>
           </div>
         </div>
       </div>
-
       <!-- mapa del sitio -->
-
       <div class="col-lg-4 d-flex flex-column align-items-center">
         <div>
           <div class="text-center fs-2">Mapa del Sitio</div>
-
           <ul class="list-unstyled">
             <li>
               <a href="#about" aria-current="page">Sobre Mí</a>
             </li>
-
             <li>
               <a href="#resume">Experiencia</a>
             </li>
-
             <li>
               <a href="#portfolio">Portafolio</a>
             </li>
-
             <li>
               <a href="#studies">Formación</a>
             </li>
-
             <li>
               <a href="#blog">Publicaciones</a>
             </li>
-
             <li>
               <a href="#contact">Contacto</a>
             </li>
           </ul>
         </div>
       </div>
-
       <!-- redes sociales -->
-
       <div class="col-lg-4 d-flex align-items-center flex-column">
         <div class="text-center fs-2">Redes Sociales</div>
-
         <div class="d-flex m-3 justify-content-between flex-column">
           <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer" class="mb-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-linkedin"
@@ -1447,7 +1369,6 @@
               </path>
             </svg>
           </a>
-
           <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer" class="mb-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github"
               viewBox="0 0 16 16">
@@ -1456,7 +1377,6 @@
               </path>
             </svg>
           </a>
-
           <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer"
             class="mb-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-facebook"
@@ -1466,7 +1386,6 @@
               </path>
             </svg>
           </a>
-
           <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer" class="mb-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-twitter"
               viewBox="0 0 16 16">
@@ -1475,7 +1394,6 @@
               </path>
             </svg>
           </a>
-
           <!-- <a
               href="http://wa.me/573006145402?text=Buen día..."
               target="_blank"
@@ -1495,7 +1413,6 @@
         </div>
       </div>
     </div>
-
     <div class="d-flex m-3 align-text-top justify-content-center">
       <div>
         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-c-circle"
@@ -1505,13 +1422,10 @@
           </path>
         </svg>
       </div>
-
       <span class="ms-3">All Rights Reserved 2023</span>
     </div>
   </footer>
-
   <!-- button to top -->
-
   <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
@@ -1520,8 +1434,6 @@
       </path>
     </svg>
   </button>
-
   <!-- Fin button to top -->
 </body>
-
 </html>

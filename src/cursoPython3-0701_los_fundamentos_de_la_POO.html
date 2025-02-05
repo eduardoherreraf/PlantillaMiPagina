@@ -1,7 +1,6 @@
 <!-- @format -->
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
-
 <head>
   <!-- Metaetiquetas -->
   <meta charset="utf-8" />
@@ -14,7 +13,6 @@
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://eduardoherreraf.github.io/cursoPython3-0701_los_fundamentos_de_la_POO.html" />
   <!-- Fin Metaetiquetas -->
-
   <!-- Open Graph data -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Los fundamentos de la POO en Python  - Ing. Eduardo Herrera Forero." />
@@ -26,7 +24,6 @@
     content="https://eduardoherreraf.github.io/cursoPython3-0701_los_fundamentos_de_la_POO.html" />
   <meta property="og:locale" content="es_CO" />
   <!-- fin Open Graph data -->
-
   <!-- Twitter cards -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@ehfeduardo" />
@@ -38,7 +35,6 @@
   <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
   <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
   <!-- Fin Twitter cards -->
-
   <!-- iconos -->
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
@@ -49,16 +45,12 @@
   <meta name="msapplication-TileColor" content="#da532c" />
   <meta name="theme-color" content="#ffffff" />
   <!-- fin iconos -->
-
   <title>
     Los fundamentos de la POO en Python - Ing. Eduardo Herrera Forero.
   </title>
-
   <script type="module" defer src="./js/main.js"></script>
-
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
-
 <body>
   <!-- navbar -->
   <nav class="row navbar navbar-expand-lg border-1 border fixed-top nav-underline">
@@ -104,7 +96,6 @@
     </div>
   </nav>
   <!-- fin navbar -->
-
   <!--  Principal  -->
   <div class="row col">
     <main class="pt-5 col-lg-9">
@@ -117,7 +108,6 @@
               Python
             </h1>
           </header>
-
           <p>
             En el mundo de la programación, los errores son inevitables y
             forman parte del proceso de aprendizaje y desarrollo. Este
@@ -127,7 +117,6 @@
             ejemplos prácticos, se busca proporcionar una comprensión más
             profunda de cómo manejar errores y mejorar la calidad del código.
           </p>
-
           <div class="text-center imagen">
             <picture>
               <img src="https://i.ibb.co/DQcK4cT/poo.jpg" class="img-fluid  rounded-4" width="50%"
@@ -153,7 +142,6 @@
           <!-- Clases y Objetos -->
           <div id="clasesYObjetos" class="mt-5 pt-5">
             <h2 class="mt-1">Clases y Objetos</h2>
-
             <!-- Clases -->
             <div>
               <h3>Clases</h3>
@@ -169,7 +157,6 @@
                 </p>
               </div>
               <!-- Qué Es una Clase fin -->
-
               <!-- Componentes de una Clase -->
               <div>
                 <h4>Componentes de una Clase</h4>
@@ -208,7 +195,6 @@
                 </ul>
               </div>
               <!-- Componentes de una Clase fin -->
-
               <!-- Ejemplo Completo de una Clase en Python -->
               <div>
                 <h4>Ejemplo Completo de una Clase en Python</h4>
@@ -217,42 +203,33 @@
                       class Persona:
                       # Atributo de clase (compartido por todas las instancias)
                       especie = "Humano"
-
                       # Constructor (inicializador)
                       def __init__(self, nombre, edad):
                           # Atributos de instancia
                           self.nombre = nombre
                           self.edad = edad
-
                       # Método de instancia
                       def saludar(self):
                           return f"Hola, mi nombre es {self.nombre} y tengo {self.edad} años."
-
                       # Método de clase
                       @classmethod
                       def cambiar_especie(cls, nueva_especie):
                           cls.especie = nueva_especie
-
                       # Método estático
                       @staticmethod
                       def es_mayor_de_edad(edad):
                           return edad >= 18
-
                       # Creación de objetos
                       persona1 = Persona("Juan", 25)
                       persona2 = Persona("Ana", 17)
-
                       # Uso de atributos y métodos
                       print(persona1.saludar())  # Hola, mi nombre es Juan y tengo 25 años.
                       print(persona2.saludar())  # Hola, mi nombre es Ana y tengo 17 años.
-
                       # Atributo de clase
                       print(persona1.especie)  # Humano
-
                       # Uso de métodos estáticos
                       print(Persona.es_mayor_de_edad(20))  # True
                       print(Persona.es_mayor_de_edad(15))  # False
-
                       # Cambio de atributo de clase
                       Persona.cambiar_especie("Cyborg")
                       print(persona1.especie)  # Cyborg
@@ -263,7 +240,6 @@
               <!-- Ejemplo Completo de una Clase en Python fin -->
             </div>
             <!-- Clases fin -->
-
             <!-- Objetos -->
             <div>
               <h3>Objetos</h3>
@@ -292,7 +268,6 @@
                 </ul>
               </div>
               <!-- Qué Es un Objeto fin -->
-
               <!-- Cómo se Crea un Objeto -->
               <div>
                 <h4>Cómo se Crea un Objeto</h4>
@@ -307,17 +282,14 @@
                           def __init__(self, nombre, edad):
                               self.nombre = nombre  # Atributo de instancia
                               self.edad = edad
-
                       # Creación de objetos
                       persona1 = Persona("Juan", 25)
                       persona2 = Persona("Ana", 30)
-
                       # persona1 y persona2 son objetos distintos creados a partir de la clase Persona.
                     </code>
                   </pre>
               </div>
               <!-- Cómo se Crea un Objeto fin -->
-
               <!-- Componentes Principales de un Objeto -->
               <div>
                 <h4>Componentes Principales de un Objeto</h4>
@@ -343,14 +315,11 @@
                         def __init__(self, nombre, edad):
                             self.nombre = nombre
                             self.edad = edad
-
                         def saludar(self):
                             return f"Hola, soy {self.nombre} y tengo {self.edad} años."
-
                     # Creación de objetos
                     persona1 = Persona("Juan", 25)
                     persona2 = Persona("Ana", 30)
-
                     # Usar métodos en objetos
                     print(persona1.saludar())  # Hola, soy Juan y tengo 25 años.
                     print(persona2.saludar())  # Hola, soy Ana y tengo 30 años.
@@ -360,7 +329,6 @@
                 </ul>
               </div>
               <!-- Componentes Principales de un Objeto fin -->
-
               <!-- Propiedades Clave de los Objetos -->
               <div>
                 <h4>Propiedades Clave de los Objetos</h4>
@@ -394,7 +362,6 @@
                 </ul>
               </div>
               <!-- Propiedades Clave de los Objetos fin -->
-
               <!-- Ejemplo Completo de un Objeto -->
               <div>
                 <h4>Ejemplo Completo de un Objeto</h4>
@@ -406,26 +373,21 @@
                           self.modelo = modelo
                           self.velocidad_maxima = velocidad_maxima
                           self.velocidad_actual = 0  # Estado inicial
-                  
                       def acelerar(self, incremento):
                           self.velocidad_actual += incremento
                           if self.velocidad_actual > self.velocidad_maxima:
                               self.velocidad_actual = self.velocidad_maxima
                           return self.velocidad_actual
-                  
                       def frenar(self, decremento):
                           self.velocidad_actual -= decremento
                           if self.velocidad_actual < 0:
                               self.velocidad_actual = 0
                           return self.velocidad_actual
-
                       # Crear un objeto de la clase Vehiculo
                       auto = Vehiculo("Toyota", "Corolla", 180)
-
                       # Acceder a los atributos del objeto
                       print(auto.marca)  # Toyota
                       print(auto.modelo)  # Corolla
-
                       # Usar métodos del objeto
                       print(auto.acelerar(50))  # 50
                       print(auto.acelerar(150))  # 180 (límite)
@@ -434,7 +396,6 @@
                   </pre>
               </div>
               <!-- Ejemplo Completo de un Objeto fin -->
-
               <!-- Operaciones con Objetos -->
               <div>
                 <h4>Operaciones con Objetos</h4>
@@ -447,16 +408,13 @@
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Comparación por identidad
                           print(persona1 is persona2)  # False, son objetos distintos
-
                           # Comparación por valor (requiere implementar métodos como __eq__)
                           class Punto:
                               def __init__(self, x, y):
                                   self.x = x
                                   self.y = y
-
                               def __eq__(self, otro):
                                   return self.x == otro.x and self.y == otro.y
-
                           p1 = Punto(1, 2)
                           p2 = Punto(1, 2)
                           print(p1 == p2)  # True (comparación por valor)
@@ -474,10 +432,8 @@
                           def __init__(self, nombre, precio):
                               self.nombre = nombre
                               self.precio = precio
-
                           def __str__(self):
                               return f"Producto: {self.nombre}, Precio: ${self.precio:.2f}"
-
                           producto = Producto("Laptop", 1500.75)
                           print(producto)  # Producto: Laptop, Precio: $1500.75
                         </code>
@@ -490,7 +446,6 @@
                     <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           import copy
-
                           objeto_original = Punto(3, 4)
                           copia_superficial = copy.copy(objeto_original)
                           copia_profunda = copy.deepcopy(objeto_original)
@@ -515,7 +470,6 @@
             <!-- Go to top Fin-->
           </div>
           <!-- Clases y Objetos Fin -->
-
           <!-- Herencia -->
           <div id="herencia" class="mt-5 pt-5">
             <h2 class="mt-1">Herencia</h2>
@@ -527,7 +481,6 @@
               hijas). Este enfoque permite reutilizar código, simplificar la
               estructura y facilitar la expansión de funcionalidades.
             </p>
-
             <!-- Conceptos Clave -->
             <div>
               <h3>Conceptos Clave de Herencia</h3>
@@ -549,7 +502,6 @@
               </ul>
             </div>
             <!-- Conceptos Clave fin -->
-
             <!-- Ejemplo Básico de Herencia en Python -->
             <div>
               <h3>Ejemplo Básico de Herencia en Python</h3>
@@ -559,32 +511,26 @@
                     class Animal:
                         def __init__(self, nombre):
                             self.nombre = nombre
-                    
                         def hacer_sonido(self):
                             return "Sonido genérico"
-                    
                     # Clase Hija
                     class Perro(Animal):
                         def __init__(self, nombre, raza):
                             # Llamar al constructor de la clase padre
                             super().__init__(nombre)
                             self.raza = raza
-
                         def hacer_sonido(self):
                             # Sobrescribir el método de la clase padre
                             return "Guau"
-
                     # Clase Hija
                     class Gato(Animal):
                         def hacer_sonido(self):
                             return "Miau"
-
                     # Uso de las clases
                     mi_perro = Perro("Rex", "Pastor Alemán")
                     print(mi_perro.nombre)         # Rex
                     print(mi_perro.raza)           # Pastor Alemán
                     print(mi_perro.hacer_sonido()) # Guau
-
                     mi_gato = Gato("Michi")
                     print(mi_gato.nombre)          # Michi
                     print(mi_gato.hacer_sonido())  # Miau
@@ -592,7 +538,6 @@
                 </pre>
             </div>
             <!-- Ejemplo Básico de Herencia en Python fin -->
-
             <!-- Características Principales -->
             <div>
               <h3>Características Principales</h3>
@@ -615,14 +560,11 @@
                         class ClaseA:
                         def metodo_a(self):
                             return "A"
-
                         class ClaseB:
                             def metodo_b(self):
                                 return "B"
-
                         class ClaseC(ClaseA, ClaseB):
                             pass
-
                         obj = ClaseC()
                         print(obj.metodo_a())  # A
                         print(obj.metodo_b())  # B
@@ -645,7 +587,6 @@
               </ul>
             </div>
             <!-- Características Principales fin -->
-
             <!-- Ventajas de la Herencia -->
             <div>
               <h3>Ventajas de la Herencia</h3>
@@ -666,7 +607,6 @@
               </ul>
             </div>
             <!-- Ventajas de la Herencia fin -->
-
             <!-- Buenas Prácticas -->
             <div>
               <h3>Buenas Prácticas</h3>
@@ -699,7 +639,6 @@
             <!-- Go to top Fin-->
           </div>
           <!-- Herencia Fin -->
-
           <!-- Jerarquía de Clases -->
           <div id="jerarquiaDeClases" class="mt-5 pt-5">
             <h2 class="mt-1">Jerarquía de Clases</h2>
@@ -710,7 +649,6 @@
               derivadas o "hijas" pueden heredar atributos y métodos de clases
               "padres" o "base".
             </p>
-
             <!-- Conceptos Básicos de la Jerarquía de Clases en Python -->
             <div>
               <h3>Conceptos Básicos de la Jerarquía de Clases en Python</h3>
@@ -732,7 +670,6 @@
               </ul>
             </div>
             <!-- Conceptos Básicos de la Jerarquía de Clases en Python fin -->
-
             <!-- Ejemplo Básico de Jerarquía de Clases -->
             <div>
               <h3>Ejemplo Básico de Jerarquía de Clases</h3>
@@ -742,36 +679,28 @@
                     class Animal:
                         def __init__(self, nombre):
                             self.nombre = nombre
-
                         def hablar(self):
                             return "Sonido genérico"
-
                     # Clase hija: Perro
                     class Perro(Animal):
                         def hablar(self):
                             return "¡Guau!"
-
                     # Clase hija: Gato
                     class Gato(Animal):
                         def hablar(self):
                             return "¡Miau!"
-
                     # Uso de las clases
                     def main():
                         perro = Perro("Rex")
                         gato = Gato("Michi")
-
                         print(f"{perro.nombre}: {perro.hablar()}")  # Rex: ¡Guau!
                         print(f"{gato.nombre}: {gato.hablar()}")   # Michi: ¡Miau!
-
                     # Ejecutar
                     main()
-
                   </code>
                 </pre>
             </div>
             <!-- Ejemplo Básico de Jerarquía de Clases fin -->
-
             <!-- Características Clave -->
             <div>
               <h3>Características Clave</h3>
@@ -789,41 +718,31 @@
                         class Mamifero:
                             def __init__(self):
                                 self.tipo = "Mamífero"
-
                             def amamantar(self):
                                 return "Este animal puede amamantar a sus crías."
-
                         # Clase base que representa características de animales que pueden volar
                         class Volador:
                             def __init__(self):
                                 self.tipo_movimiento = "Volador"
-
                             def volar(self):
                                 return "Este animal puede volar."
-
                         # Clase derivada que combina características de Mamífero y Volador
                         class Murcielago(Mamifero, Volador):
                             def __init__(self):
                                 # Inicializamos ambas clases base
                                 Mamifero.__init__(self)
                                 Volador.__init__(self)
-
                             def descripcion(self):
                                 # Mensaje que describe al murciélago combinando propiedades de las clases base
                                 return f"Soy un {self.tipo} y también soy un animal {self.tipo_movimiento}."
-
                         # Creación de un objeto de la clase Murciélago
                         murcielago = Murcielago()
-
                         # Imprime la descripción del murciélago
                         print(murcielago.descripcion())  # Soy un Mamífero y también soy un animal Volador.
-
                         # Imprime la capacidad de amamantar del murciélago
                         print(murcielago.amamantar())  # Este animal puede amamantar a sus crías.
-
                         # Imprime la capacidad de volar del murciélago
                         print(murcielago.volar())  # Este animal puede volar.
-
                       </code>
                     </pre>
                 </li>
@@ -839,7 +758,6 @@
                             def speak(self):
                                 # Método que retorna un sonido genérico
                                 return "Sonido genérico"
-
                         # Clase derivada que representa un perro, hereda de Animal
                         class Dog(Animal):
                             def speak(self):
@@ -847,11 +765,9 @@
                                 sonido_base = super().speak()  # Llama al método 'speak' de Animal
                                 sonido_perro = "¡Guau!"
                                 return f"{sonido_base} y también {sonido_perro}"
-
                         # Ejemplo de uso
                         animal = Animal()
                         print(animal.speak())  # Salida: "Sonido genérico"
-
                         perro = Dog()
                         print(perro.speak())  # Salida: "Sonido genérico y también ¡Guau!"
                       </code>
@@ -867,7 +783,6 @@
               </ul>
             </div>
             <!-- Características Clave fin -->
-
             <!-- Jerarquía por Defecto en Python -->
             <div>
               <h3>Jerarquía por Defecto en Python</h3>
@@ -880,7 +795,6 @@
                     <code class="language-python" data-prismjs-copy="Copy">
                       class MiClase:
                       pass
-
                       print(MiClase.mro())  # Salida: [<class '__main__.MiClase'>, <class 'object'>]
                     </code>
                   </pre>
@@ -899,7 +813,6 @@
             <!-- Go to top Fin-->
           </div>
           <!-- Jerarquía de Clases Fin -->
-
           <!-- Encapsulamiento -->
           <div id="encapsulamiento" class="mt-5 pt-5">
             <h2 class="mt-1">Encapsulamiento</h2>
@@ -944,7 +857,6 @@
               </ul>
             </div>
             <!-- Conceptos Clave de Ensapsulamiento fin -->
-
             <!-- Ejemplo de Encapsulamiento en Python -->
             <div>
               <h3>Ejemplo de Encapsulamiento en Python</h3>
@@ -954,49 +866,38 @@
                     def __init__(self, nombre, edad):
                         self.nombre = nombre  # Atributo público
                         self.__edad = edad  # Atributo privado, se indica con doble guion bajo
-
                     # Método público
                     def obtener_nombre(self):
                         return self.nombre
-
                     # Método público para acceder al atributo privado
                     def obtener_edad(self):
                         return self.__edad
-
                     # Método privado
                     def __metodo_privado(self):
                         print("Este es un método privado.")
-
                     # Método público para cambiar el valor de la edad
                     def establecer_edad(self, edad):
                         if edad > 0:
                             self.__edad = edad
                         else:
                             print("Edad no válida.")
-
                 # Crear una instancia de la clase
                 persona = Persona("Juan", 30)
-
                 # Acceder a los atributos públicos
                 print(persona.obtener_nombre())  # Juan
-
                 # Intentar acceder a un atributo privado (esto genera un error)
                 # print(persona.__edad)  # Esto causará un AttributeError
-
                 # Acceder a un atributo privado a través del método público
                 print(persona.obtener_edad())  # 30
-
                 # Cambiar el valor de la edad utilizando el método público
                 persona.establecer_edad(35)
                 print(persona.obtener_edad())  # 35
-
                 # Intentar acceder al método privado (esto causará un error)
                 # persona.__metodo_privado()  # Esto causará un AttributeError
                   </code>
                 </pre>
             </div>
             <!-- Ejemplo de Encapsulamiento en Python fin -->
-
             <!-- Explicación del Código Herencia -->
             <div>
               <h3>Explicación del Código Herencia</h3>
@@ -1051,7 +952,6 @@
             <!-- Go to top Fin-->
           </div>
           <!-- Encapsulamiento Fin -->
-
           <!-- Polimorfismo -->
           <div id="polimorfismo" class="mt-5 pt-5">
             <h2 class="mt-1">Polimorfismo</h2>
@@ -1063,7 +963,6 @@
               Esto se logra a través de la herencia y la sobrescritura de
               métodos en clases hijas.
             </p>
-
             <!-- Ejemplo Básico de Polimorfismo: -->
             <div>
               <h3>Ejemplo Básico de Polimorfismo</h3>
@@ -1076,23 +975,18 @@
                     class Animal:
                     def hacer_sonido(self):
                         print("El animal hace un sonido")
-
                     class Perro(Animal):
                         def hacer_sonido(self):
                             print("El perro ladra")
-
                     class Gato(Animal):
                         def hacer_sonido(self):
                             print("El gato maúlla")
-
                     # Función que recibe cualquier tipo de Animal y llama a su método hacer_sonido
                     def emitir_sonido(animal):
                         animal.hacer_sonido()
-
                     # Creando instancias de las clases Perro y Gato
                     perro = Perro()
                     gato = Gato()
-
                     # El polimorfismo permite que la función funcione con objetos de diferentes tipos
                     emitir_sonido(perro)  # Output: El perro ladra
                     emitir_sonido(gato)   # Output: El gato maúlla
@@ -1107,7 +1001,6 @@
               </p>
             </div>
             <!-- Ejemplo Básico de Polimorfismo: fin -->
-
             <!-- Explicación del Código Polimorfismo -->
             <div>
               <h3>Explicación del Código Polimorfismo</h3>
@@ -1132,7 +1025,6 @@
               </ul>
             </div>
             <!-- Explicación del Código Polimorfismo fin -->
-
             <!-- Polimorfismo con Parámetros -->
             <div>
               <h3>Polimorfismo con Parámetros</h3>
@@ -1143,7 +1035,6 @@
               </p>
             </div>
             <!-- Polimorfismo con Parámetros fin -->
-
             <!-- Go to top -->
             <div class="text-center mt-5">
               <a href="#" id="myBtnScroll2" title="Go to top">
@@ -1186,16 +1077,13 @@
     <!-- -------------------------------- fin barra lateral -------------------------------- -->
   </div>
   <!--  Principal Fin  -->
-
   <!-- -------------------------------- pie de pagina -------------------------------- -->
   <footer class="row container-fluid border-1 border-top row col">
     <div class="row">
       <!-- contacto -->
-
       <div class="col-lg-4 d-flex flex-column align-items-center">
         <div>
           <div class="text-center fs-2">Contacto</div>
-
           <div class="d-flex flex-row m-3 align-text-top">
             <!-- <div>
                 <svg
@@ -1212,7 +1100,6 @@
                 <span class="ms-3">(57) 300-614-6402</span>
               </div> -->
           </div>
-
           <div class="d-flex flex-row m-3 align-text-top">
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -1224,13 +1111,11 @@
                   d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z">
                 </path>
               </svg>
-
               <span class="ms-3">
                 <a href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
               </span>
             </div>
           </div>
-
           <div class="d-flex flex-row m-3 align-text-top">
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
@@ -1241,51 +1126,39 @@
                 <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
               </svg>
             </div>
-
             <span class="ms-3">Bogotá D. C. - Colombia</span>
           </div>
         </div>
       </div>
-
       <!-- mapa del sitio -->
-
       <div class="col-lg-4 d-flex flex-column align-items-center">
         <div>
           <div class="text-center fs-2">Mapa del Sitio</div>
-
           <ul class="list-unstyled">
             <li>
               <a href="#about" aria-current="page">Sobre Mí</a>
             </li>
-
             <li>
               <a href="#resume">Experiencia</a>
             </li>
-
             <li>
               <a href="#portfolio">Portafolio</a>
             </li>
-
             <li>
               <a href="#studies">Formación</a>
             </li>
-
             <li>
               <a href="#blog">Publicaciones</a>
             </li>
-
             <li>
               <a href="#contact">Contacto</a>
             </li>
           </ul>
         </div>
       </div>
-
       <!-- redes sociales -->
-
       <div class="col-lg-4 d-flex align-items-center flex-column">
         <div class="text-center fs-2">Redes Sociales</div>
-
         <div class="d-flex m-3 justify-content-between flex-column">
           <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer" class="mb-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-linkedin"
@@ -1295,7 +1168,6 @@
               </path>
             </svg>
           </a>
-
           <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer" class="mb-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github"
               viewBox="0 0 16 16">
@@ -1304,7 +1176,6 @@
               </path>
             </svg>
           </a>
-
           <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer"
             class="mb-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-facebook"
@@ -1314,7 +1185,6 @@
               </path>
             </svg>
           </a>
-
           <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer" class="mb-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-twitter"
               viewBox="0 0 16 16">
@@ -1323,7 +1193,6 @@
               </path>
             </svg>
           </a>
-
           <!-- <a
               href="http://wa.me/573006145402?text=Buen día..."
               target="_blank"
@@ -1343,7 +1212,6 @@
         </div>
       </div>
     </div>
-
     <div class="d-flex m-3 align-text-top justify-content-center">
       <div>
         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-c-circle"
@@ -1353,13 +1221,10 @@
           </path>
         </svg>
       </div>
-
       <span class="ms-3">All Rights Reserved 2023</span>
     </div>
   </footer>
-
   <!-- button to top -->
-
   <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
@@ -1368,8 +1233,6 @@
       </path>
     </svg>
   </button>
-
   <!-- Fin button to top -->
 </body>
-
 </html>

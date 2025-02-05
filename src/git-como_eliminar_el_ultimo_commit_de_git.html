@@ -1,8 +1,6 @@
 <!-- @format -->
-
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
-
 <head>
   <!-- Metaetiquetas -->
   <meta charset="utf-8" />
@@ -14,7 +12,6 @@
   <meta name="google" content="notranslate" />
   <link rel="canonical" href="https://eduardoherreraf.github.io/git-como_eliminar_el_ultimo_commit_de_git.html" />
   <!-- Fin Metaetiquetas -->
-
   <!-- Open Graph data -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Como Eliminar el Último Commit de GIT - Ing. Eduardo Herrera Forero." />
@@ -24,7 +21,6 @@
   <meta property="og:url" content="https://eduardoherreraf.github.io/git-como_eliminar_el_ultimo_commit_de_git.html" />
   <meta property="og:locale" content="es_CO" />
   <!-- fin Open Graph data -->
-
   <!-- Twitter cards -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@ehfeduardo" />
@@ -33,7 +29,6 @@
   <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
   <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
   <!-- Fin Twitter cards -->
-
   <!-- iconos -->
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
@@ -44,18 +39,14 @@
   <meta name="msapplication-TileColor" content="#da532c" />
   <meta name="theme-color" content="#ffffff" />
   <!-- fin iconos -->
-
   <title>
     Como Eliminar el Último Commit de GIT - Ing. Eduardo Herrera Forero.
   </title>
-
   <!-- importación main.js -->
   <script type="module" defer src="./js/main.js"></script>
-
   <!-- Configuración Google -->
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
-
 <body 
    data-bs-theme="dark">
   <!-- navbar -->
@@ -102,7 +93,6 @@
     </div>
   </nav>
   <!-- navbar -->
-
   <!-- -------------------------------- principal -------------------------------- -->
   <div class="row col">
     <main class="pt-5 col-lg-9">
@@ -132,50 +122,37 @@
             Se tratará el caso en el que se refiere exclusivamente a borrar el
             último <span class="fw-bold text-warning">commit</span> realizado.
           </p>
-
           <div id="commitNoGithub" class="mt-5 pt-5">
             <h2 class="mt-1">El Commit aún no Está en Github</h2>
             <p class="">
               Este es el caso más común y fácil, cuando el
-
               <span class="fw-bold text-warning">commit</span>
-
               áun no se ha empujado al repo remoto (Github, GitLab,
               Bitbucket,...), se tiene tres casos posibles:
             </p>
-
             <div id="volverPenultimoBorrandoCambios" class="mt-5 pt-5 ">
               <h3 class="mt-1">
                 Volver al Penúltimo Commit Borrando los Últimos Cambios
               </h3>
-
               <p>
                 Si lo que se necesita es volver al estado que tenía el repo en
                 el
-
                 <span class="fw-bold text-warning">penúltimo commit</span>
-
                 , es decir, borrar todos los cambios realizados, se debe
                 correr en línea de comandos del terminal el siguiente comando:
               </p>
-
               <pre class="line-numbers" data-src-status="loaded" tabindex="0">
             <code
               class="language-bash"
               data-prismjs-copy="Copy"
             >git reset HEAD^ --hard</code>
           </pre>
-
               <p>
                 Este comando elimina el último
-
                 <span class="fw-bold text-warning">commit</span>
-
                 del historial, dejando la carpeta de trabajo tal cual estaba
                 en el
-
                 <span class="fw-bold text-warning">penúltimo commit</span>
-
                 y ahora este se convierte en el último.
               </p>
             </div>
@@ -183,13 +160,11 @@
               <h3 class="mt-1">
                 Volver al Penúltimo Commit Sin Perder los Cambios Actuales
               </h3>
-
               <p>
                 En este caso no se desea perder los cambios, ya sea porque lo
                 único que se debe hacer es corregir un archivo y no más, en
                 este caso se usa el siguiente comando:
               </p>
-
               <pre>
                   <code
                     class="language-bash"
@@ -199,17 +174,13 @@
             </div>
             <div id="soloIncluirAlgunosArchivos" class="mt-5 pt-5 ">
               <h3 class="mt-1">Sólo se Debe Incluir Algunos Archivos</h3>
-
               <p>
                 En algunos casos lo único que hace falta es incluir algún
                 archivo que se haya omitido por cualquier motivo, se puede
                 incluir en el último
-
                 <span class="fw-bold text-warning">commit</span>
-
                 sin necesidad de borrarlo con el siguiente código:
               </p>
-
               <pre>
                   <code
                     class="language-bash"
@@ -220,22 +191,16 @@
                     git push origin --force
                   </code>
                 </pre>
-
               <p>
                 Primero se añaden los archivos para luego incluirlos en el
                 último
-
                 <span class="fw-bold text-warning">commit</span>
-
                 . En este caso no se edita el mensaje del
-
                 <span class="fw-bold text-warning">commit</span>
-
                 .
               </p>
             </div>
           </div>
-
           <div id="commitGithub" class="mt-5 pt-5">
             <h2 class="mt-1">El Commit ya Está en Github</h2>
             <p>
@@ -302,7 +267,6 @@
     </aside>
     <!-- -------------------------------- fin barra lateral -------------------------------- -->
   </div>
-
   <!-- -------------------------------- pie de pagina -------------------------------- -->
   <footer class="row container-fluid border-1 border-top row col">
     <div class="row">
@@ -463,7 +427,6 @@
   </button>
   <!-- Fin button to top -->
 </body>
-
 <script>
   // pagina ha cargado totalmente
   window.onload = function () {
@@ -471,7 +434,6 @@
     if (tema === "dark") temaOscuro();
     if (tema === "light") temaClaro();
   };
-
   // Change of Theme
   const cambiarTema = () => {
     console.log("cambiartema");
@@ -489,7 +451,6 @@
       );
     localStorage.setItem("theme", "dark");
   };
-
   const temaClaro = () => {
     document.querySelector("body").setAttribute("data-bs-theme", "light");
     document
@@ -498,5 +459,4 @@
     localStorage.setItem("theme", "light");
   };
 </script>
-
 </html>

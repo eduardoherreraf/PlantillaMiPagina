@@ -1,7 +1,6 @@
 <!-- @format -->
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
-
 <head>
   <!-- Metaetiquetas -->
   <meta charset="utf-8" />
@@ -14,7 +13,6 @@
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://eduardoherreraf.github.io/cursoPython3-0802_manejo_de_archivos.html" />
   <!-- Fin Metaetiquetas -->
-
   <!-- Open Graph data -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Manejo de Archivos en Python  - Ing. Eduardo Herrera Forero." />
@@ -25,7 +23,6 @@
   <meta property="og:url" content="https://eduardoherreraf.github.io/cursoPython3-0802_manejo_de_archivos.html" />
   <meta property="og:locale" content="es_CO" />
   <!-- fin Open Graph data -->
-
   <!-- Twitter cards -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@ehfeduardo" />
@@ -36,7 +33,6 @@
   <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
   <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
   <!-- Fin Twitter cards -->
-
   <!-- iconos -->
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
@@ -47,14 +43,10 @@
   <meta name="msapplication-TileColor" content="#da532c" />
   <meta name="theme-color" content="#ffffff" />
   <!-- fin iconos -->
-
   <title>Manejo de Archivos en Python - Ing. Eduardo Herrera Forero.</title>
-
   <script type="module" defer src="./js/main.js"></script>
-
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
-
 <body>
   <!-- navbar -->
   <nav class="row navbar navbar-expand-lg border-1 border fixed-top nav-underline">
@@ -100,7 +92,6 @@
     </div>
   </nav>
   <!-- fin navbar -->
-
   <!--  Principal  -->
   <div class="row col">
     <main class="pt-5 col-lg-9">
@@ -110,7 +101,6 @@
           <header>
             <h1>Manejo de Archivos en Python</h1>
           </header>
-
           <p>
             El manejo de archivos en Python es una habilidad fundamental para
             cualquier programador, ya que permite la lectura y escritura de
@@ -120,7 +110,6 @@
             lectura, escritura y cierre de archivos, así como el manejo de
             excepciones y la manipulación de archivos en diferentes formatos.
           </p>
-
           <div class="text-center imagen">
             <picture>
               <img src="https://i.ibb.co/Z86kBk1/manejoarchivos.jpg" class="img-fluid rounded-4" width="65%"
@@ -139,7 +128,6 @@
             </div>
             <!-- Go to top Fin-->
           </div>
-
           <!-- Apertura de Archivos -->
           <div id="aperturaDeArchivos" class="mt-5 pt-5">
             <h2 class="mt-1">Abrir archivos (open())</h2>
@@ -150,7 +138,6 @@
               la escritura de datos. A continuación, se describe en detalle
               cómo se utiliza <code>open()</code> en Python.
             </p>
-
             <!-- Sintaxis Básica  Open() -->
             <div>
               <h3>Sintaxis Básica Open()</h3>
@@ -249,7 +236,6 @@
               </ul>
             </div>
             <!-- Sintaxis Básica  Open() fin -->
-
             <!-- Ejemplos de uso de open() -->
             <div>
               <h3>Ejemplos de uso de open()</h3>
@@ -260,11 +246,9 @@
                 <code class="language-python" data-prismjs-copy="Copy">
                   # Abrir un archivo en modo lectura
                   archivo = open('mi_archivo.txt', 'r')
-
                   # Leer el contenido del archivo
                   contenido = archivo.read()
                   print(contenido)
-
                   # Cerrar el archivo
                   archivo.close()
                 </code>
@@ -276,10 +260,8 @@
                 <code class="language-python" data-prismjs-copy="Copy">
                   # Abrir un archivo en modo escritura (sobrescribe si existe)
                   archivo = open('mi_archivo.txt', 'w')
-
                   # Escribir en el archivo
                   archivo.write('Hola, este es un nuevo contenido.')
-
                   # Cerrar el archivo
                   archivo.close()
                 </code>
@@ -292,10 +274,8 @@
                 <code class="language-python" data-prismjs-copy="Copy">
                   # Abrir un archivo en modo añadir (agrega al final)
                   archivo = open('mi_archivo.txt', 'a')
-
                   # Añadir contenido al final del archivo
                   archivo.write('\nEsta línea se agrega al final.')
-
                   # Cerrar el archivo
                   archivo.close()
                 </code>
@@ -307,10 +287,8 @@
                 <code class="language-python" data-prismjs-copy="Copy">
                   # Abrir un archivo en modo añadir (agrega al final)
                   archivo = open('mi_archivo.txt', 'a')
-
                   # Añadir contenido al final del archivo
                   archivo.write('\nEsta línea se agrega al final.')
-
                   # Cerrar el archivo
                   archivo.close()
                 </code>
@@ -323,10 +301,8 @@
                 <code class="language-python" data-prismjs-copy="Copy">
                   # Abrir un archivo binario en modo lectura
                   archivo = open('imagen.png', 'rb')
-
                   # Leer el contenido binario del archivo
                   contenido_binario = archivo.read()
-
                   # Cerrar el archivo
                   archivo.close()
                 </code>
@@ -348,7 +324,6 @@
             <!-- Go to top Fin-->
           </div>
           <!-- Apertura de Archivos Fin -->
-
           <!-- Lectura de Archivos -->
           <div id="lecturaDeArchivos" class="mt-5 pt-5">
             <h2 class="mt-1">Lectura de Archivos</h2>
@@ -425,7 +400,6 @@
                   </pre>
               </li>
             </ul>
-
             <!-- Go to top -->
             <div class="text-center mt-5">
               <a href="#" id="myBtnScroll2" title="Go to top">
@@ -439,7 +413,6 @@
             <!-- Go to top Fin-->
           </div>
           <!-- Lectura de Archivos Fin -->
-
           <!-- Escritura en Archivos -->
           <div id="escrituraEnArchivos" class="mt-5 pt-5">
             <h2 class="mt-1">Escritura en Archivos</h2>
@@ -523,7 +496,6 @@
                       with open('archivo.txt', 'r+') as archivo:
                           contenido = archivo.read()  # Leer el contenido actual
                           archivo.write('Esta línea se añade al principio del archivo.\n')  # Escribir al principio
-
                     </code>
                   </pre>
               </li>
@@ -593,21 +565,17 @@
                   with open('archivo.txt', 'w') as archivo:
                       archivo.write('Línea 1\n')
                       archivo.write('Línea 2\n')
-
                   # Anexar al archivo
                   with open('archivo.txt', 'a') as archivo:
                       archivo.write('Línea 3\n')
-
                   # Leer y escribir en el archivo
                   with open('archivo.txt', 'r+') as archivo:
                       contenido = archivo.read()
                       print('Contenido antes de escribir:')
                       print(contenido)
-
                       # Mover el puntero al principio del archivo
                       archivo.seek(0)
                       archivo.write('Nueva Línea 1\n')
-
                       # Mover el puntero al final del archivo
                       archivo.seek(0, 2)
                       archivo.write('Nueva Línea 2\n')
@@ -626,7 +594,6 @@
             <!-- Go to top Fin-->
           </div>
           <!-- Escritura en Archivos Fin -->
-
           <!-- Cerrar archivos -->
           <div id="cerrarArchivos" class="mt-5 pt-5">
             <h2 class="mt-1">Cerrar archivos (close())</h2>
@@ -654,7 +621,6 @@
             <!-- Go to top Fin-->
           </div>
           <!-- Cerrar archivos Fin -->
-
           <!-- Manejo de Excepciones -->
           <div id="manejoDeExcepciones" class="mt-5 pt-5">
             <h2 class="mt-1">Manejo de Excepciones</h2>
@@ -694,7 +660,6 @@
               </ul>
             </div>
             <!-- Principales Excepciones Relacionadas con Archivos fin -->
-
             <!-- Estructura Básica con Manejo de Excepciones -->
             <div>
               <h3>Estructura Básica con Manejo de Excepciones</h3>
@@ -726,7 +691,6 @@
                 </pre>
             </div>
             <!-- Estructura Básica con Manejo de Excepciones fin -->
-
             <!-- Ejemplos Prácticos -->
             <div>
               <h3>Ejemplos Prácticos</h3>
@@ -784,7 +748,6 @@
               </ul>
             </div>
             <!-- Ejemplos Prácticos fin -->
-
             <!-- Buenas Prácticas -->
             <div>
               <h3>Buenas Prácticas</h3>
@@ -806,7 +769,6 @@
               </ul>
             </div>
             <!-- Buenas Prácticas fin -->
-
             <!-- Errores Personalizados -->
             <div>
               <h3>Errores Personalizados</h3>
@@ -830,7 +792,6 @@
                 </pre>
             </div>
             <!-- Errores Personalizados fin -->
-
             <!-- Go to top -->
             <div class="text-center mt-5">
               <a href="#" id="myBtnScroll2" title="Go to top">
@@ -844,7 +805,6 @@
             <!-- Go to top Fin-->
           </div>
           <!-- Manejo de Excepciones Fin -->
-
           <!-- Uso de la Declaración with -->
           <div id="usoDeLaDeclaracionWith" class="mt-5 pt-5">
             <h2 class="mt-1">Uso de la Declaración with</h2>
@@ -883,7 +843,6 @@
               </ul>
             </div>
             <!-- Sintaxis Básica de with fin -->
-
             <!-- Ventajas del Uso de with -->
             <div>
               <h3>Ventajas del Uso de with</h3>
@@ -899,7 +858,6 @@
               </ul>
             </div>
             <!-- Ventajas del Uso de with fin -->
-
             <!-- Ejemplos Prácticos de with -->
             <div>
               <h3>Ejemplos Prácticos de with</h3>
@@ -949,7 +907,6 @@
               </ul>
             </div>
             <!-- Ejemplos Prácticos de with fin -->
-
             <!-- Go to top -->
             <div class="text-center mt-5">
               <a href="#" id="myBtnScroll2" title="Go to top">
@@ -995,16 +952,13 @@
     <!-- -------------------------------- fin barra lateral -------------------------------- -->
   </div>
   <!--  Principal Fin  -->
-
   <!-- -------------------------------- pie de pagina -------------------------------- -->
   <footer class="row container-fluid border-1 border-top row col">
     <div class="row">
       <!-- contacto -->
-
       <div class="col-lg-4 d-flex flex-column align-items-center">
         <div>
           <div class="text-center fs-2">Contacto</div>
-
           <div class="d-flex flex-row m-3 align-text-top">
             <!-- <div>
                 <svg
@@ -1021,7 +975,6 @@
                 <span class="ms-3">(57) 300-614-6402</span>
               </div> -->
           </div>
-
           <div class="d-flex flex-row m-3 align-text-top">
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -1033,13 +986,11 @@
                   d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z">
                 </path>
               </svg>
-
               <span class="ms-3">
                 <a href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
               </span>
             </div>
           </div>
-
           <div class="d-flex flex-row m-3 align-text-top">
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
@@ -1050,51 +1001,39 @@
                 <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
               </svg>
             </div>
-
             <span class="ms-3">Bogotá D. C. - Colombia</span>
           </div>
         </div>
       </div>
-
       <!-- mapa del sitio -->
-
       <div class="col-lg-4 d-flex flex-column align-items-center">
         <div>
           <div class="text-center fs-2">Mapa del Sitio</div>
-
           <ul class="list-unstyled">
             <li>
               <a href="#about" aria-current="page">Sobre Mí</a>
             </li>
-
             <li>
               <a href="#resume">Experiencia</a>
             </li>
-
             <li>
               <a href="#portfolio">Portafolio</a>
             </li>
-
             <li>
               <a href="#studies">Formación</a>
             </li>
-
             <li>
               <a href="#blog">Publicaciones</a>
             </li>
-
             <li>
               <a href="#contact">Contacto</a>
             </li>
           </ul>
         </div>
       </div>
-
       <!-- redes sociales -->
-
       <div class="col-lg-4 d-flex align-items-center flex-column">
         <div class="text-center fs-2">Redes Sociales</div>
-
         <div class="d-flex m-3 justify-content-between flex-column">
           <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer" class="mb-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-linkedin"
@@ -1104,7 +1043,6 @@
               </path>
             </svg>
           </a>
-
           <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer" class="mb-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github"
               viewBox="0 0 16 16">
@@ -1113,7 +1051,6 @@
               </path>
             </svg>
           </a>
-
           <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer"
             class="mb-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-facebook"
@@ -1123,7 +1060,6 @@
               </path>
             </svg>
           </a>
-
           <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer" class="mb-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-twitter"
               viewBox="0 0 16 16">
@@ -1132,7 +1068,6 @@
               </path>
             </svg>
           </a>
-
           <!-- <a
               href="http://wa.me/573006145402?text=Buen día..."
               target="_blank"
@@ -1152,7 +1087,6 @@
         </div>
       </div>
     </div>
-
     <div class="d-flex m-3 align-text-top justify-content-center">
       <div>
         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-c-circle"
@@ -1162,13 +1096,10 @@
           </path>
         </svg>
       </div>
-
       <span class="ms-3">All Rights Reserved 2023</span>
     </div>
   </footer>
-
   <!-- button to top -->
-
   <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
@@ -1177,8 +1108,6 @@
       </path>
     </svg>
   </button>
-
   <!-- Fin button to top -->
 </body>
-
 </html>

@@ -1,7 +1,6 @@
 <!-- @format -->
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
-
 <head>
   <!-- Metaetiquetas -->
   <meta charset="utf-8" />
@@ -16,7 +15,6 @@
   <link rel="canonical"
     href="https://eduardoherreraf.github.io/cursoPython3-0805_modulo_calendar_trabajando_con_funciones_relacionadas_con_el_calendario.html" />
   <!-- Fin Metaetiquetas -->
-
   <!-- Open Graph data -->
   <meta property="og:type" content="website" />
   <meta property="og:title"
@@ -29,7 +27,6 @@
     content="https://eduardoherreraf.github.io/cursoPython3-0805_modulo_calendar_trabajando_con_funciones_relacionadas_con_el_calendario.html" />
   <meta property="og:locale" content="es_CO" />
   <!-- fin Open Graph data -->
-
   <!-- Twitter cards -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@ehfeduardo" />
@@ -42,7 +39,6 @@
   <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
   <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
   <!-- Fin Twitter cards -->
-
   <!-- iconos -->
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
@@ -53,17 +49,13 @@
   <meta name="msapplication-TileColor" content="#da532c" />
   <meta name="theme-color" content="#ffffff" />
   <!-- fin iconos -->
-
   <title>
     El módulo <code>calendar</code>, trabajando con funciones relacionadas con
     el calendario en Python - Ing. Eduardo Herrera Forero.
   </title>
-
   <script type="module" defer src="./js/main.js"></script>
-
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
-
 <body>
   <!-- navbar -->
   <nav class="row navbar navbar-expand-lg border-1 border fixed-top nav-underline">
@@ -109,7 +101,6 @@
     </div>
   </nav>
   <!-- fin navbar -->
-
   <!--  Principal  -->
   <div class="row col">
     <main class="pt-5 col-lg-9">
@@ -122,7 +113,6 @@
               calendario en Python
             </h1>
           </header>
-
           <p>
             El módulo <code>calendar</code> en Python es una herramienta
             poderosa que permite trabajar con calendarios de manera sencilla y
@@ -133,7 +123,6 @@
             módulo <code>calendar</code>, así como ejemplos prácticos de su
             uso.
           </p>
-
           <div class="text-center imagen">
             <picture>
               <img src="https://i.ibb.co/pyRL4b6/modulocalendar.jpg" class="img-fluid rounded-4" width="50%"
@@ -172,7 +161,6 @@
             <!-- Go to top Fin-->
           </div>
           <!-- Introducción Fin -->
-
           <!-- Funciones para Obtener el Calendario -->
           <div id="funcionesPraObtenerElCalendario" class="mt-5 pt-5">
             <h2 class="mt-1">Funciones para Obtener el Calendario</h2>
@@ -190,10 +178,8 @@
                 <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import calendar
-
                       # Mostrar el calendario de diciembre de 2024
                       print(calendar.month(2024, 12))
-
                       # Salida: December 2024
                       # Salida: Mo Tu We Th Fr Sa Su
                       # Salida:                    1
@@ -212,7 +198,6 @@
                 <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import calendar
-
                       # Mostrar el calendario completo de 2024
                       print(calendar.calendar(2024))
                     </code>
@@ -226,11 +211,9 @@
                 <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import calendar
-
                       # Cambiar el primer día de la semana a domingo
                       calendar.setfirstweekday(calendar.SUNDAY)
                       print(calendar.month(2024, 12))
-
                       # Salida: December 2024
                       # Salida: Su Mo Tu We Th Fr Sa
                       # Salida:  1  2  3  4  5  6  7
@@ -238,11 +221,9 @@
                       # Salida: 15 16 17 18 19 20 21
                       # Salida: 22 23 24 25 26 27 28
                       # Salida: 29 30 31
-
                       # Cambiar el primer día de la semana a domingo
                       calendar.setfirstweekday(calendar.MONDAY)
                       print(calendar.month(2024, 12))
-
                       # Salida: December 2024
                       # Salida: Mo Tu We Th Fr Sa Su
                       # Salida:                    1
@@ -261,16 +242,12 @@
                 <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import calendar
-
                       # Abreviaturas de 3 letras para los días de la semana
                       print(calendar.weekheader(3))
-
                       # Abreviaturas de 2 letras para los días de la semana
                       print(calendar.weekheader(2))
-
                       # Abreviaturas de 1 letra para los días de la semana
                       print(calendar.weekheader(1))
-
                       # Salida: Mon Tue Wed Thu Fri Sat Sun
                       # Salida: Mo Tu We Th Fr Sa Su
                       # Salida: M T W T F S S
@@ -291,7 +268,6 @@
             <!-- Go to top Fin-->
           </div>
           <!-- Funciones para Obtener el Calendario Fin -->
-
           <!-- Funciones de Días de la Semana -->
           <div id="funcionesDeDIasDelaSemana" class="mt-5 pt-5">
             <h2 class="mt-1">Funciones de Días de la Semana</h2>
@@ -303,7 +279,6 @@
                 <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import calendar
-
                       # Obtener el nombre del mes para el mes 12
                       print(calendar.month_name[12])  # Salida: December
                     </code>
@@ -316,7 +291,6 @@
                 <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import calendar
-
                       # Verificar qué día de la semana es el 20 de diciembre de 2024
                       print(calendar.weekday(2024, 12, 20))  # Salida: 4 (jueves)
                     </code>
@@ -329,7 +303,6 @@
                 <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import calendar
-
                       print(calendar.day_name[2])  # Miércoles
                     </code>
                   </pre>
@@ -341,14 +314,12 @@
                     <code class="language-python" data-prismjs-copy="Copy">
                       <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                         import calendar
-
                         print(calendar.day_abbr[2])  # Mié
                       </pre>
                 </code>
                 </pre>
               </li>
             </ul>
-
             <!-- Go to top -->
             <div class="text-center mt-5">
               <a href="#" id="myBtnScroll2" title="Go to top">
@@ -362,7 +333,6 @@
             <!-- Go to top Fin-->
           </div>
           <!-- Funciones de Días de la Semana Fin -->
-
           <!-- Funciones Para Año Bisiesto -->
           <div id="funcionesParaAñoBisiesto" class="mt-5 pt-5">
             <h2 class="mt-1">Funciones Para Año Bisiesto</h2>
@@ -374,7 +344,6 @@
                 <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import calendar
-
                       print(calendar.isleap(2024))  # True
                       print(calendar.isleap(2023))  # False
                     </code>
@@ -387,7 +356,6 @@
                 <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import calendar
-
                       print(calendar.leapdays(2000, 2024))  # Número de años bisiestos entre 2000 y 2024, 6 años
                     </code>
                   </pre>
@@ -406,7 +374,6 @@
             <!-- Go to top Fin-->
           </div>
           <!-- Funciones Para Año Bisiesto Fin -->
-
           <!-- Funciones para Primer Día de la Semana -->
           <div id="funcionesParaPrimerDiaDeLaSemana" class="mt-5 pt-5">
             <h2 class="mt-1">Funciones para Primer Día de la Semana</h2>
@@ -422,7 +389,6 @@
                 <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import calendar
-
                       print(calendar.firstweekday())  # 0 si el lunes es el primer día
                     </code>
                   </pre>
@@ -434,7 +400,6 @@
                 valor (por ejemplo, 6 para domingo).
               </li>
             </ul>
-
             <!-- Go to top -->
             <div class="text-center mt-5">
               <a href="#" id="myBtnScroll2" title="Go to top">
@@ -448,7 +413,6 @@
             <!-- Go to top Fin-->
           </div>
           <!-- Funciones para Primer Día de la Semana Fin -->
-
           <!-- Funciones de Calendario En Formato De Tabla -->
           <div id="funcionesDeCalendarioEnFormatoDeTabla" class="mt-5 pt-5">
             <h2 class="mt-1">Funciones de Calendario En Formato De Tabla</h2>
@@ -461,12 +425,10 @@
                 <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     import calendar
-
                     # Mostrar el calendario de diciembre de 2024 como lista de semanas
                     month_calendar = calendar.monthcalendar(2024, 12)
                     for week in month_calendar:
                         print(week)
-
                     # Salida: [0, 0, 0, 0, 0, 0, 1]
                     # Salida: [2, 3, 4, 5, 6, 7, 8]
                     # Salida: [9, 10, 11, 12, 13, 14, 15]
@@ -483,7 +445,6 @@
                 <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import calendar
-
                       calendar.prmonth(2024, 12)
                     </code>
                   </pre>
@@ -495,7 +456,6 @@
                 <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import calendar
-
                       calendar.prcal(2024)
                     </code>
                   </pre>
@@ -546,16 +506,13 @@
     <!-- -------------------------------- fin barra lateral -------------------------------- -->
   </div>
   <!--  Principal Fin  -->
-
   <!-- -------------------------------- pie de pagina -------------------------------- -->
   <footer class="row container-fluid border-1 border-top row col">
     <div class="row">
       <!-- contacto -->
-
       <div class="col-lg-4 d-flex flex-column align-items-center">
         <div>
           <div class="text-center fs-2">Contacto</div>
-
           <div class="d-flex flex-row m-3 align-text-top">
             <!-- <div>
                 <svg
@@ -572,7 +529,6 @@
                 <span class="ms-3">(57) 300-614-6402</span>
               </div> -->
           </div>
-
           <div class="d-flex flex-row m-3 align-text-top">
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -584,13 +540,11 @@
                   d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z">
                 </path>
               </svg>
-
               <span class="ms-3">
                 <a href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
               </span>
             </div>
           </div>
-
           <div class="d-flex flex-row m-3 align-text-top">
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
@@ -601,51 +555,39 @@
                 <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
               </svg>
             </div>
-
             <span class="ms-3">Bogotá D. C. - Colombia</span>
           </div>
         </div>
       </div>
-
       <!-- mapa del sitio -->
-
       <div class="col-lg-4 d-flex flex-column align-items-center">
         <div>
           <div class="text-center fs-2">Mapa del Sitio</div>
-
           <ul class="list-unstyled">
             <li>
               <a href="#about" aria-current="page">Sobre Mí</a>
             </li>
-
             <li>
               <a href="#resume">Experiencia</a>
             </li>
-
             <li>
               <a href="#portfolio">Portafolio</a>
             </li>
-
             <li>
               <a href="#studies">Formación</a>
             </li>
-
             <li>
               <a href="#blog">Publicaciones</a>
             </li>
-
             <li>
               <a href="#contact">Contacto</a>
             </li>
           </ul>
         </div>
       </div>
-
       <!-- redes sociales -->
-
       <div class="col-lg-4 d-flex align-items-center flex-column">
         <div class="text-center fs-2">Redes Sociales</div>
-
         <div class="d-flex m-3 justify-content-between flex-column">
           <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer" class="mb-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-linkedin"
@@ -655,7 +597,6 @@
               </path>
             </svg>
           </a>
-
           <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer" class="mb-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github"
               viewBox="0 0 16 16">
@@ -664,7 +605,6 @@
               </path>
             </svg>
           </a>
-
           <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer"
             class="mb-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-facebook"
@@ -674,7 +614,6 @@
               </path>
             </svg>
           </a>
-
           <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer" class="mb-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-twitter"
               viewBox="0 0 16 16">
@@ -683,7 +622,6 @@
               </path>
             </svg>
           </a>
-
           <!-- <a
               href="http://wa.me/573006145402?text=Buen día..."
               target="_blank"
@@ -703,7 +641,6 @@
         </div>
       </div>
     </div>
-
     <div class="d-flex m-3 align-text-top justify-content-center">
       <div>
         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-c-circle"
@@ -713,13 +650,10 @@
           </path>
         </svg>
       </div>
-
       <span class="ms-3">All Rights Reserved 2023</span>
     </div>
   </footer>
-
   <!-- button to top -->
-
   <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
@@ -728,8 +662,6 @@
       </path>
     </svg>
   </button>
-
   <!-- Fin button to top -->
 </body>
-
 </html>

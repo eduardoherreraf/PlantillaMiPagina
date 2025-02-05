@@ -1,7 +1,6 @@
 <!-- @format -->
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
-
 <head>
   <!-- Metaetiquetas -->
   <meta charset="utf-8" />
@@ -14,7 +13,6 @@
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://eduardoherreraf.github.io/cursoPython3-0305_listas.html" />
   <!-- Fin Metaetiquetas -->
-
   <!-- Open Graph data -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Listas en Python  - Ing. Eduardo Herrera Forero." />
@@ -25,7 +23,6 @@
   <meta property="og:url" content="https://eduardoherreraf.github.io/cursoPython3-0305_listas.html" />
   <meta property="og:locale" content="es_CO" />
   <!-- fin Open Graph data -->
-
   <!-- Twitter cards -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@ehfeduardo" />
@@ -36,7 +33,6 @@
   <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
   <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
   <!-- Fin Twitter cards -->
-
   <!-- iconos -->
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
@@ -47,14 +43,10 @@
   <meta name="msapplication-TileColor" content="#da532c" />
   <meta name="theme-color" content="#ffffff" />
   <!-- fin iconos -->
-
   <title>Listas en Python - Ing. Eduardo Herrera Forero.</title>
-
   <script type="module" defer src="./js/main.js"></script>
-
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
-
 <body>
   <!-- navbar -->
   <nav class="row navbar navbar-expand-lg border-1 border fixed-top nav-underline">
@@ -100,7 +92,6 @@
     </div>
   </nav>
   <!-- fin navbar -->
-
   <!--  Principal  -->
   <div class="row col">
     <main class="pt-5 col-lg-9">
@@ -110,7 +101,6 @@
           <header>
             <h1>Listas en Python</h1>
           </header>
-
           <p>
             Las listas en Python son una de las estructuras de datos más
             versátiles y utilizadas en la programación. Permiten almacenar
@@ -165,7 +155,6 @@
             <!-- Go to top Fin-->
           </div>
           <!-- ¿Qué es una lista en Python? Fin -->
-
           <!-- Características principales de las listas en Python -->
           <div id="CaracterIsticasPrincipalesDeLasListasEnPython" class="mt-5 pt-5">
             <h2 class="mt-1">
@@ -247,7 +236,6 @@
             <!-- Go to top Fin-->
           </div>
           <!-- Características principales de las listas en Python Fin -->
-
           <!-- Operaciones comunes con listas -->
           <div id="operacionesComunesConListas" class="mt-5 pt-5">
             <h2 class="mt-1">Operaciones comunes con listas</h2>
@@ -282,7 +270,6 @@
               </pre>
             </div>
             <!-- len() fin -->
-
             <!-- del -->
             <div>
               <h3>del</h3>
@@ -320,7 +307,6 @@
                 </pre>
             </div>
             <!-- del fin -->
-
             <!-- append() -->
             <div>
               <h3>append()</h3>
@@ -356,7 +342,6 @@
                 </pre>
             </div>
             <!-- append() fin -->
-
             <!-- insert() -->
             <div>
               <h3>insert()</h3>
@@ -371,10 +356,8 @@
                   <code class="language-python" data-prismjs-copy="Copy">
                     # Crear una lista
                     fruits = ['apple', 'banana', 'cherry']
-
                     # Agregar un elemento en la posición 1 (entre 'apple' y 'banana')
                     fruits.insert(1, 'orange')
-
                     # La lista resultante es:
                     # ['apple', 'orange', 'banana', 'cherry']
                   </code>
@@ -386,7 +369,6 @@
               </p>
             </div>
             <!-- insert() fin -->
-
             <!-- Extend() -->
             <div>
               <h3>Extend()</h3>
@@ -402,19 +384,15 @@
                   <code class="language-python" data-prismjs-copy="Copy">
                     # Lista original
                     frutas = ['manzana', 'pera', 'naranja']
-
                     # Nueva lista para agregar
                     mas_frutas = ['uva', 'fresa']
-
                     # Usando extend() para agregar los elementos
                     frutas.extend(mas_frutas)
-
                     print(frutas)  # Resultado: ['manzana', 'pera', 'naranja', 'uva', 'fresa']
                   </code>
               </pre>
             </div>
             <!-- Extend() fin -->
-
             <!-- remove() -->
             <div>
               <h3>remove()</h3>
@@ -440,18 +418,14 @@
                   <code class="language-python" data-prismjs-copy="Copy">
                     # Lista de frutas
                     frutas = ['manzana', 'pera', 'naranja', 'manzana', 'uva']
-
                     # Eliminar la primera 'manzana'
                     frutas.remove('manzana')
-
                     print(frutas)  # Resultado: ['pera', 'naranja', 'manzana', 'uva']
-
                     # Manejo de errores al intentar eliminar un elemento que no existe
                     try:
                         frutas.remove('plátano')
                     except ValueError:
                         print("No se encontró el elemento en la lista")
-
                     # Si hay elementos duplicados, solo elimina la primera ocurrencia
                     numeros = [1, 2, 3, 2, 4]
                     numeros.remove(2)
@@ -460,7 +434,6 @@
                 </pre>
             </div>
             <!-- remove() fin -->
-
             <!-- pop() -->
             <div>
               <h3>pop()</h3>
@@ -488,22 +461,18 @@
                   <code class="language-python" data-prismjs-copy="Copy">
                     # Lista inicial de lenguajes de programación
                     lenguajes = ['Python', 'Java', 'JavaScript', 'PHP', 'Ruby']
-
                     # 1. Eliminar y obtener el último elemento (sin índice)
                     ultimo_lenguaje = lenguajes.pop()
                     print(f"Lenguaje eliminado: {ultimo_lenguaje}")          # Resultado: Lenguaje eliminado: Ruby
                     print(f"Lista actualizada: {lenguajes}")                 # Resultado: ['Python', 'Java', 'JavaScript', 'PHP']
-
                     # 2. Eliminar y obtener elemento por índice específico
                     lenguaje_posicion_1 = lenguajes.pop(1)
                     print(f"Lenguaje eliminado: {lenguaje_posicion_1}")     # Resultado: Lenguaje eliminado: Java
                     print(f"Lista actualizada: {lenguajes}")                 # Resultado: ['Python', 'JavaScript', 'PHP']
-
                     # 3. Eliminar y obtener elemento con índice negativo
                     lenguaje_penultimo = lenguajes.pop(-2)
                     print(f"Lenguaje eliminado: {lenguaje_penultimo}")      # Resultado: Lenguaje eliminado: JavaScript
                     print(f"Lista actualizada: {lenguajes}")                 # Resultado: ['Python', 'PHP']
-
                     # 4. Uso práctico: Eliminar y usar el elemento eliminado
                     carrito_compras = ['laptop', 'mouse', 'teclado', 'monitor']
                     item_procesado = carrito_compras.pop(0)
@@ -512,7 +481,6 @@
                 </pre>
             </div>
             <!-- pop() fin -->
-
             <!-- sort() -->
             <div>
               <h3>sort()</h3>
@@ -546,16 +514,13 @@
                     numeros = [5, 2, 8, 1, 9, 3]
                     numeros.sort()
                     print(numeros)  # Resultado: [1, 2, 3, 5, 8, 9]
-
                     # Ordenar en orden descendente
                     numeros.sort(reverse=True)
                     print(numeros)  # Resultado: [9, 8, 5, 3, 2, 1]
-
                     # Ordenar cadenas
                     palabras = ['zebra', 'animal', 'casa', 'barco']
                     palabras.sort()
                     print(palabras)  # Resultado: ['animal', 'barco', 'casa', 'zebra']
-
                     # Ordenar por longitud de palabra usando key
                     palabras = ['gato', 'elefante', 'oso', 'mariposa']
                     palabras.sort(key=len)
@@ -573,7 +538,6 @@
               </ul>
             </div>
             <!-- sort() fin -->
-
             <!-- reverse() -->
             <div>
               <h3>reverse()</h3>
@@ -596,16 +560,12 @@
                   <code class="language-python" data-prismjs-copy="Copy">
                     # Lista original
                     numeros = [1, 2, 3, 4, 5]
-
                     # Aplicando el método reverse()
                     numeros.reverse()
-
                     print(numeros)  # Resultado: [5, 4, 3, 2, 1]
-
                     # También funciona con diferentes tipos de datos
                     frutas = ['manzana', 'pera', 'plátano', 'naranja']
                     frutas.reverse()
-
                     print(frutas)  # Resultado: ['naranja', 'plátano', 'pera', 'manzana']
                     </code>
                 </pre>
@@ -615,14 +575,12 @@
                     # Usando el operador de rebanado [::-1] (crea una nueva lista)
                     numeros = [1, 2, 3, 4, 5]
                     numeros_invertidos = numeros[::-1]  # Nueva lista: [5, 4, 3, 2, 1]
-
                     # La lista original permanece sin cambios
                     print(numeros)  # Resultado: [1, 2, 3, 4, 5]
                     </code>
                 </pre>
             </div>
             <!-- reverse() fin -->
-
             <!-- split() -->
             <div>
               <h3>split()</h3>
@@ -737,7 +695,6 @@
             <!-- Go to top Fin-->
           </div>
           <!-- Operaciones comunes con listas Fin -->
-
           <!-- Listas por Comprensión -->
           <div id="listasPorComprension" class="mt-5 pt-5">
             <h2 class="mt-1">Listas por Comprensión</h2>
@@ -848,7 +805,6 @@
             <!-- Go to top Fin-->
           </div>
           <!-- Listas por Comprensión Fin -->
-
           <!-- Anidación de Listas -->
           <div id="anidacionDeListas" class="mt-5 pt-5">
             <h2 class="mt-1">Anidación de Listas</h2>
@@ -879,7 +835,6 @@
               </p>
             </div>
             <!-- Creación de Listas Anidadas fin -->
-
             <!-- Acceso a Elementos en Listas Anidadas -->
             <div>
               <h3>Acceso a Elementos en Listas Anidadas</h3>
@@ -898,7 +853,6 @@
                 </pre>
             </div>
             <!-- Acceso a Elementos en Listas Anidadas fin -->
-
             <!-- Modificación de Elementos en Listas Anidadas -->
             <div>
               <h3>Modificación de Elementos en Listas Anidadas</h3>
@@ -914,7 +868,6 @@
                 </pre>
             </div>
             <!-- Modificación de Elementos en Listas Anidadas fin -->
-
             <!-- Iteración en Listas Anidadas -->
             <div>
               <h3>Iteración en Listas Anidadas</h3>
@@ -933,7 +886,6 @@
                 </pre>
             </div>
             <!-- Iteración en Listas Anidadas fin -->
-
             <!-- Ejemplo: Representación de una Matriz -->
             <div>
               <h3>Ejemplo: Representación de una Matriz</h3>
@@ -948,7 +900,6 @@
                     [0, 1, 0],
                     [0, 0, 1]
                     ]
-
                     # Accediendo al elemento en la posición (2, 2)
                     print(matriz[1][1])  # Imprime: 1
                   </code>
@@ -998,17 +949,13 @@
     <!-- -------------------------------- fin barra lateral -------------------------------- -->
   </div>
   <!--  Principal Fin  -->
-
   <!-- -------------------------------- pie de pagina -------------------------------- -->
-
   <footer class="row container-fluid border-1 border-top row col">
     <div class="row">
       <!-- contacto -->
-
       <div class="col-lg-4 d-flex flex-column align-items-center">
         <div>
           <div class="text-center fs-2">Contacto</div>
-
           <div class="d-flex flex-row m-3 align-text-top">
             <!-- <div>
                 <svg
@@ -1025,7 +972,6 @@
                 <span class="ms-3">(57) 300-614-6402</span>
               </div> -->
           </div>
-
           <div class="d-flex flex-row m-3 align-text-top">
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -1037,13 +983,11 @@
                   d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z">
                 </path>
               </svg>
-
               <span class="ms-3">
                 <a href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
               </span>
             </div>
           </div>
-
           <div class="d-flex flex-row m-3 align-text-top">
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
@@ -1054,51 +998,39 @@
                 <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
               </svg>
             </div>
-
             <span class="ms-3">Bogotá D. C. - Colombia</span>
           </div>
         </div>
       </div>
-
       <!-- mapa del sitio -->
-
       <div class="col-lg-4 d-flex flex-column align-items-center">
         <div>
           <div class="text-center fs-2">Mapa del Sitio</div>
-
           <ul class="list-unstyled">
             <li>
               <a href="#about" aria-current="page">Sobre Mí</a>
             </li>
-
             <li>
               <a href="#resume">Experiencia</a>
             </li>
-
             <li>
               <a href="#portfolio">Portafolio</a>
             </li>
-
             <li>
               <a href="#studies">Formación</a>
             </li>
-
             <li>
               <a href="#blog">Publicaciones</a>
             </li>
-
             <li>
               <a href="#contact">Contacto</a>
             </li>
           </ul>
         </div>
       </div>
-
       <!-- redes sociales -->
-
       <div class="col-lg-4 d-flex align-items-center flex-column">
         <div class="text-center fs-2">Redes Sociales</div>
-
         <div class="d-flex m-3 justify-content-between flex-column">
           <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer" class="mb-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-linkedin"
@@ -1108,7 +1040,6 @@
               </path>
             </svg>
           </a>
-
           <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer" class="mb-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github"
               viewBox="0 0 16 16">
@@ -1117,7 +1048,6 @@
               </path>
             </svg>
           </a>
-
           <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer"
             class="mb-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-facebook"
@@ -1127,7 +1057,6 @@
               </path>
             </svg>
           </a>
-
           <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer" class="mb-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-twitter"
               viewBox="0 0 16 16">
@@ -1136,7 +1065,6 @@
               </path>
             </svg>
           </a>
-
           <!-- <a
               href="http://wa.me/573006145402?text=Buen día..."
               target="_blank"
@@ -1156,7 +1084,6 @@
         </div>
       </div>
     </div>
-
     <div class="d-flex m-3 align-text-top justify-content-center">
       <div>
         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-c-circle"
@@ -1166,13 +1093,10 @@
           </path>
         </svg>
       </div>
-
       <span class="ms-3">All Rights Reserved 2023</span>
     </div>
   </footer>
-
   <!-- button to top -->
-
   <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
@@ -1181,8 +1105,6 @@
       </path>
     </svg>
   </button>
-
   <!-- Fin button to top -->
 </body>
-
 </html>

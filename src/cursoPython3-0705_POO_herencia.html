@@ -1,7 +1,6 @@
 <!-- @format -->
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
-
 <head>
   <!-- Metaetiquetas -->
   <meta charset="utf-8" />
@@ -14,7 +13,6 @@
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://eduardoherreraf.github.io/cursoPython3-0705_POO_herencia.html" />
   <!-- Fin Metaetiquetas -->
-
   <!-- Open Graph data -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="POO: Herencia en Python  - Ing. Eduardo Herrera Forero." />
@@ -25,7 +23,6 @@
   <meta property="og:url" content="https://eduardoherreraf.github.io/cursoPython3-0705_POO_herencia.html" />
   <meta property="og:locale" content="es_CO" />
   <!-- fin Open Graph data -->
-
   <!-- Twitter cards -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@ehfeduardo" />
@@ -36,7 +33,6 @@
   <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
   <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
   <!-- Fin Twitter cards -->
-
   <!-- iconos -->
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
@@ -47,14 +43,10 @@
   <meta name="msapplication-TileColor" content="#da532c" />
   <meta name="theme-color" content="#ffffff" />
   <!-- fin iconos -->
-
   <title>POO: Herencia en Python - Ing. Eduardo Herrera Forero.</title>
-
   <script type="module" defer src="./js/main.js"></script>
-
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
-
 <body>
   <!-- navbar -->
   <nav class="row navbar navbar-expand-lg border-1 border fixed-top nav-underline">
@@ -100,7 +92,6 @@
     </div>
   </nav>
   <!-- fin navbar -->
-
   <!--  Principal  -->
   <div class="row col">
     <main class="pt-5 col-lg-9">
@@ -110,7 +101,6 @@
           <header>
             <h1>POO: Herencia en Python</h1>
           </header>
-
           <p>
             La Programación Orientada a Objetos (POO) es un paradigma
             fundamental en el desarrollo de software que permite organizar el
@@ -145,7 +135,6 @@
             </div>
             <!-- Go to top Fin-->
           </div>
-
           <!-- ¿Qué es la Herencia? -->
           <div id="queEsLaHerencia" class="mt-5 pt-5">
             <h2 class="mt-1">¿Qué es la Herencia?</h2>
@@ -159,7 +148,6 @@
               reutilización de código y la organización de jerarquías de
               clases.
             </p>
-
             <p>
               Aquí se tiene un ejemplo básico de cómo funciona la herencia en
               Python:
@@ -170,27 +158,21 @@
                     class Animal:
                         def __init__(self, nombre):
                             self.nombre = nombre
-
                         def hacer_sonido(self):
                             pass
-
                     # Definición de la clase derivada
                     class Perro(Animal):
                         def hacer_sonido(self):
                             return "Guau"
-
                     class Gato(Animal):
                         def hacer_sonido(self):
                             return "Miau"
-
                     # Creación de instancias de las clases derivadas
                     perro = Perro("Fido")
                     gato = Gato("Whiskers")
-
                     # Uso de métodos heredados y sobrescritos
                     print(perro.nombre)  # Salida: Fido
                     print(perro.hacer_sonido())  # Salida: Guau
-
                     print(gato.nombre)  # Salida: Whiskers
                     print(gato.hacer_sonido())  # Salida: Miau
                   </code>
@@ -222,7 +204,6 @@
             </p>
           </div>
           <!-- ¿Qué es la Herencia? -->
-
           <!-- Herencia Múltiple -->
           <div id="herenciaMultiple" class="mt-5 pt-5">
             <h2 class="mt-1">Herencia Múltiple</h2>
@@ -241,23 +222,18 @@
                   class Animal:
                       def __init__(self, nombre):
                           self.nombre = nombre
-
                       def hacer_sonido(self):
                           pass
-
                   # Definición de la segunda clase base
                   class Volador:
                       def volar(self):
                           return "Estoy volando"
-
                   # Definición de la clase derivada que hereda de ambas clases base
                   class Pajaro(Animal, Volador):
                       def hacer_sonido(self):
                           return "Pío"
-
                   # Creación de una instancia de la clase derivada
                   pajaro = Pajaro("Piolín")
-
                   # Uso de métodos heredados de ambas clases base
                   print(pajaro.nombre)  # Salida: Piolín
                   print(pajaro.hacer_sonido())  # Salida: Pío
@@ -280,7 +256,6 @@
                 <code>Volador</code>.
               </li>
             </ul>
-
             <!-- Consideraciones Sobre la Herencia Múltiple -->
             <div>
               <h3>Consideraciones Sobre la Herencia Múltiple</h3>
@@ -316,7 +291,6 @@
               </ul>
             </div>
             <!-- Consideraciones Sobre la Herencia Múltiple fin -->
-
             <!-- Orden de Resolución de Métodos (MRO) -->
             <div>
               <h3>Orden de Resolución de Métodos (MRO)</h3>
@@ -329,7 +303,6 @@
                 cuando se realiza una llamada a un método o se accede a un
                 atributo.
               </p>
-
               <!-- ¿Por qué es Importante la MRO? -->
               <div>
                 <h4>¿Por qué es Importante la MRO?</h4>
@@ -343,7 +316,6 @@
                 </p>
               </div>
               <!-- ¿Por qué es Importante la MRO? fin -->
-
               <!-- MRO en Python -->
               <div>
                 <h4>MRO en Python</h4>
@@ -360,34 +332,27 @@
                       class A:
                           def method(self):
                               print("Method in A")
-
                       # Clase B hereda de A y sobrescribe el método "method"
                       class B(A):
                           def method(self):
                               print("Method in B")
-
                       # Clase C también hereda de A y sobrescribe el método "method"
                       class C(A):
                           def method(self):
                               print("Method in C")
-
                       # Clase D hereda de B y C, utilizando herencia múltiple
                       class D(B, C):
                           pass  # No sobrescribe "method", por lo que usa el MRO para resolver qué método ejecutar
-
                       # Creación de un objeto de la clase D
                       d = D()
-
                       # Llamada al método "method" del objeto d
                       d.method()
                       # Salida: "Method in B"
                       # Luego imprime: None (porque el método method() no retorna ningún valor, por lo que print() imprime el valor predeterminado de retorno, que es None)
-
                       # Imprime el MRO (Orden de Resolución de Métodos) de la clase D
                       print(D.__mro__)
                       # Salida: (&lt;class '__main__.D'>, &lt;class '__main__.B'>, &lt;class '__main__.C'>, &lt;class '__main__.A'>, &lt;class 'object'>)
                       # Esto muestra el orden en el que Python buscará métodos cuando se llamen desde una instancia de D.
-
                       # Otra forma de obtener el MRO usando el método mro()
                       print(D.mro())
                       # Salida: Igual que el anterior, porque ambos muestran el orden de resolución de métodos.
@@ -435,7 +400,6 @@
               <!-- MRO en Python fin -->
             </div>
             <!-- Orden de Resolución de Métodos (MRO) fin -->
-
             <!-- Go to top -->
             <div class="text-center mt-5">
               <a href="#" id="myBtnScroll2" title="Go to top">
@@ -449,11 +413,9 @@
             <!-- Go to top Fin-->
           </div>
           <!-- Herencia Múltiple Fin -->
-
           <!-- Métodos especiales y super() -->
           <div id="metodosEspecialesySuper" class="mt-5 pt-5">
             <h2 class="mt-1">Métodos especiales y super()</h2>
-
             <!-- issubclass() -->
             <div>
               <h3>issubclass()</h3>
@@ -466,7 +428,6 @@
               <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     issubclass(subclass, class)
-
                     # Salida: True si la subclase es derivada de la clase.
                   </code>
                 </pre>
@@ -475,10 +436,8 @@
                   <code class="language-python" data-prismjs-copy="Copy">
                     class A
                         pass
-
                     class B(A):
                         pass
-
                     print(issubclass(B, A))  # True
                     print(issubclass(A, B))  # False
                   </code>
@@ -489,13 +448,10 @@
                     # Definición de clases
                     class A:
                         pass
-
                     class B(A):
                         pass
-
                     class C(B):
                         pass
-
                     # Verificaciones con issubclass()
                     print(issubclass(B, A))  # True: B es subclase de A
                     print(issubclass(A, B))  # False: A no es subclase de B
@@ -506,7 +462,6 @@
                 </pre>
             </div>
             <!-- issubclass() fin -->
-
             <!-- isinstance() -->
             <div>
               <h3>isinstance()</h3>
@@ -527,17 +482,14 @@
                   <code class="language-python" data-prismjs-copy="Copy">
                     class MiClase:
                       pass
-
                     # Crear una instancia de la clase
                     obj = MiClase()
-
                     # Verificar si el objeto es una instancia de MiClase
                     print(f"¿Es 'obj' una instancia de MiClase? {isinstance(obj, MiClase)}")  # True
                   </code>
                 </pre>
             </div>
             <!-- isinstance() fin -->
-
             <!-- El Operador is -->
             <div>
               <h3>El Operador is</h3>
@@ -553,12 +505,10 @@
                     a = [1, 2, 3]
                     b = a
                     c = [1, 2, 3]
-
                     print(a is b)  # True, porque a y b apuntan al mismo objeto en memoria
                     print(a is c)  # False, porque a y c son dos objetos diferentes con el mismo contenido
                   </code>
                 </pre>
-
               <!-- Diferencia Clave -->
               <div>
                 <h4>Diferencia Clave</h4>
@@ -574,7 +524,6 @@
               <!-- Diferencia Clave fin -->
             </div>
             <!-- El Operador is fin -->
-
             <!-- super() -->
             <div>
               <h3>super()</h3>
@@ -586,7 +535,6 @@
                 atributos de una clase padre sin tener que referirse
                 explícitamente a ella.
               </p>
-
               <!-- ¿Cómo Funciona super()? -->
               <div>
                 <h4>¿Cómo Funciona super()?</h4>
@@ -603,22 +551,17 @@
                       class Animal:
                           def __init__(self, nombre):
                               self.nombre = nombre
-
                           def hablar(self):
                               print(f'{self.nombre} hace un sonido')
-
                       class Perro(Animal):
                           def __init__(self, nombre, raza):
                               super().__init__(nombre)  # Llama al __init__ de la clase base (Animal)
                               self.raza = raza
-
                           def hablar(self):
                               super().hablar()  # Llama al método hablar de la clase base (Animal)
                               print(f'{self.nombre} ladra')
-
                       mi_perro = Perro("Rex", "Pastor Alemán")
                       mi_perro.hablar()
-
                       # salida: Rex hace un sonido
                       # salida: Rex ladra
                     </code>
@@ -642,7 +585,6 @@
                 </ul>
               </div>
               <!-- ¿Cómo Funciona super()? fin -->
-
               <!-- ¿Cuándo Usar super()? -->
               <div>
                 <h4>¿Cuándo Usar super()?</h4>
@@ -663,7 +605,6 @@
               <!-- ¿Cuándo Usar super()? fin -->
             </div>
             <!-- super() fin -->
-
             <!-- Go to top -->
             <div class="text-center mt-5">
               <a href="#" id="myBtnScroll2" title="Go to top">
@@ -677,7 +618,6 @@
             <!-- Go to top Fin-->
           </div>
           <!-- Métodos especiales y super() Fin -->
-
           <!-- Cómo Construir una Jerarquía de Clases -->
           <div id="comoConstruirUnaJerarquiaDeClases" class="mt-5 pt-5">
             <h2 class="mt-1">Cómo Construir una Jerarquía de Clases</h2>
@@ -686,7 +626,6 @@
               varias clases y establecer relaciones de herencia entre ellas.
               Aquí tienes un ejemplo básico para ilustrar cómo hacerlo:
             </p>
-
             <ul>
               <li>
                 <strong>Definir la clase base</strong>: Esta es la clase
@@ -710,38 +649,30 @@
                           self.nombre = nombre
                           self.edad = edad
                           self.salario = salario
-
                       def mostrar_informacion(self):
                           return f"Nombre: {self.nombre}, Edad: {self.edad}, Salario: {self.salario}"
-
                   # Clase derivada 1
                   class Gerente(Empleado):
                       def __init__(self, nombre, edad, salario, departamento):
                           super().__init__(nombre, edad, salario)
                           self.departamento = departamento
-
                       def mostrar_informacion(self):
                           return f"{super().mostrar_informacion()}, Departamento: {self.departamento}"
-
                   # Clase derivada 2
                   class Desarrollador(Empleado):
                       def __init__(self, nombre, edad, salario, lenguaje_programacion):
                           super().__init__(nombre, edad, salario)
                           self.lenguaje_programacion = lenguaje_programacion
-
                       def mostrar_informacion(self):
                           return f"{super().mostrar_informacion()}, Lenguaje de Programación: {self.lenguaje_programacion}"
-
                   # Crear instancias de las clases
                   empleado = Empleado("Juan Pérez", 30, 50000)
                   gerente = Gerente("María López", 40, 80000, "Ventas")
                   desarrollador = Desarrollador("Carlos Gómez", 25, 60000, "Python")
-
                   # Mostrar información de las instancias
                   print(empleado.mostrar_informacion())
                   print(gerente.mostrar_informacion())
                   print(desarrollador.mostrar_informacion())
-
                   # salida: Nombre: Juan Pérez, Edad: 30, Salario: 50000
                   # salida: Nombre: María López, Edad: 40, Salario: 80000, Departamento: Ventas
                   # salida: Nombre: Carlos Gómez, Edad: 25, Salario: 60000, Lenguaje de Programación: Python
@@ -829,7 +760,6 @@
             <!-- Go to top Fin-->
           </div>
           <!-- Cómo Construir una Jerarquía de Clases Fin -->
-
           <!-- Ventajas de la Herencia -->
           <div id="ventajasDeLaHerencia" class="mt-5 pt-5">
             <h2 class="mt-1">Ventajas de la Herencia</h2>
@@ -903,23 +833,18 @@
                   class Animal:
                       def __init__(self, nombre):
                           self.nombre = nombre
-
                       def sonido(self):
                           return "El animal hace un sonido"
-
                   class Perro(Animal):
                       def sonido(self):
                           return "El perro ladra"
-
                   class Gato(Animal):
                       def sonido(self):
                           return "El gato maúlla"
-
                   # Uso de las clases
                   animales = [Perro("Firulais"), Gato("Michi")]
                   for animal in animales:
                       print(f"{animal.nombre}: {animal.sonido()}")
-
                   # Salida: Firulais: El perro ladra
                   # Salida: Michi: El gato maúlla
                 </code>
@@ -937,7 +862,6 @@
             <!-- Go to top Fin-->
           </div>
           <!-- Ventajas de la Herencia Fin -->
-
           <!-- Buenas Prácticas -->
           <div id="buenasPracticas" class="mt-5 pt-5">
             <h2 class="mt-1">Buenas Prácticas</h2>
@@ -978,10 +902,8 @@
                       def __init__(self, nombre, edad):
                           self.nombre = nombre
                           self.edad = edad
-
                       def saludar(self):
                           return f"Hola, mi nombre es {self.nombre} y tengo {self.edad} años."
-
                       # Uso de la clase base
                       persona1 = Persona("Ana", 30)
                       print(persona1.saludar())
@@ -1007,17 +929,14 @@
                               def volar(self):
                                   # Este método imprime un mensaje indicando que el objeto puede volar.
                                   print("\u00a1Estoy volando!")
-
                           # Creamos una clase base llamada "Animal" para representar características generales de los animales.
                           class Animal:
                               def __init__(self, nombre):
                                   # Cada animal tendrá un nombre.
                                   self.nombre = nombre
-
                               def describir(self):
                                   # Este método imprime una descripción básica del animal.
                                   print(f"Soy un animal llamado {self.nombre}.")
-
                           # Definimos una clase "Ave" que hereda de "Animal" y del mixin "VoladorMixin".
                           # Esto permite que "Ave" combine características generales de los animales
                           # con la capacidad de volar proporcionada por el mixin.
@@ -1025,11 +944,9 @@
                               def hacer_sonido(self):
                                   # Este método imprime un sonido típico de un ave.
                                   print("P\u00edo")
-
                           # Ejemplo de uso
                           # Creamos un objeto de la clase "Ave".
                           mi_ave = Ave("Canario")
-
                           # Llamamos a los métodos de la clase "Ave".
                           mi_ave.describir()   # Imprime: Soy un animal llamado Canario.
                           mi_ave.hacer_sonido()  # Imprime: Pío
@@ -1072,17 +989,14 @@
                     <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             from typing import override  # Disponible desde Python 3.12
-
                             class Mamifero:
                                 def hacer_sonido(self):
                                     print("Sonido genérico de mamífero")
-
                             class Gato(Mamifero):
                                 @override
                                 def hacer_sonido(self):
                                     # Sobrescribiendo el método 'hacer_sonido' de la clase base
                                     print("Miau")
-
                             # Ejemplo de uso
                             if __name__ == "__main__":
                                 gato = Gato()
@@ -1098,7 +1012,6 @@
                 que a su vez depende de la primera) pueden causar problemas
                 difíciles de depurar. Refactorice para evitar estos casos.
               </li>
-
               <li>
                 <span class="fw-bold">Documentar la jerarquía de clases</span>:
                 <ul>
@@ -1170,16 +1083,13 @@
     <!-- -------------------------------- fin barra lateral -------------------------------- -->
   </div>
   <!--  Principal Fin  -->
-
   <!-- -------------------------------- pie de pagina -------------------------------- -->
   <footer class="row container-fluid border-1 border-top row col">
     <div class="row">
       <!-- contacto -->
-
       <div class="col-lg-4 d-flex flex-column align-items-center">
         <div>
           <div class="text-center fs-2">Contacto</div>
-
           <div class="d-flex flex-row m-3 align-text-top">
             <!-- <div>
                 <svg
@@ -1196,7 +1106,6 @@
                 <span class="ms-3">(57) 300-614-6402</span>
               </div> -->
           </div>
-
           <div class="d-flex flex-row m-3 align-text-top">
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -1208,13 +1117,11 @@
                   d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z">
                 </path>
               </svg>
-
               <span class="ms-3">
                 <a href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
               </span>
             </div>
           </div>
-
           <div class="d-flex flex-row m-3 align-text-top">
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
@@ -1225,51 +1132,39 @@
                 <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
               </svg>
             </div>
-
             <span class="ms-3">Bogotá D. C. - Colombia</span>
           </div>
         </div>
       </div>
-
       <!-- mapa del sitio -->
-
       <div class="col-lg-4 d-flex flex-column align-items-center">
         <div>
           <div class="text-center fs-2">Mapa del Sitio</div>
-
           <ul class="list-unstyled">
             <li>
               <a href="#about" aria-current="page">Sobre Mí</a>
             </li>
-
             <li>
               <a href="#resume">Experiencia</a>
             </li>
-
             <li>
               <a href="#portfolio">Portafolio</a>
             </li>
-
             <li>
               <a href="#studies">Formación</a>
             </li>
-
             <li>
               <a href="#blog">Publicaciones</a>
             </li>
-
             <li>
               <a href="#contact">Contacto</a>
             </li>
           </ul>
         </div>
       </div>
-
       <!-- redes sociales -->
-
       <div class="col-lg-4 d-flex align-items-center flex-column">
         <div class="text-center fs-2">Redes Sociales</div>
-
         <div class="d-flex m-3 justify-content-between flex-column">
           <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer" class="mb-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-linkedin"
@@ -1279,7 +1174,6 @@
               </path>
             </svg>
           </a>
-
           <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer" class="mb-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github"
               viewBox="0 0 16 16">
@@ -1288,7 +1182,6 @@
               </path>
             </svg>
           </a>
-
           <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer"
             class="mb-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-facebook"
@@ -1298,7 +1191,6 @@
               </path>
             </svg>
           </a>
-
           <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer" class="mb-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-twitter"
               viewBox="0 0 16 16">
@@ -1307,7 +1199,6 @@
               </path>
             </svg>
           </a>
-
           <!-- <a
               href="http://wa.me/573006145402?text=Buen día..."
               target="_blank"
@@ -1327,7 +1218,6 @@
         </div>
       </div>
     </div>
-
     <div class="d-flex m-3 align-text-top justify-content-center">
       <div>
         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-c-circle"
@@ -1337,13 +1227,10 @@
           </path>
         </svg>
       </div>
-
       <span class="ms-3">All Rights Reserved 2023</span>
     </div>
   </footer>
-
   <!-- button to top -->
-
   <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
@@ -1352,8 +1239,6 @@
       </path>
     </svg>
   </button>
-
   <!-- Fin button to top -->
 </body>
-
 </html>
