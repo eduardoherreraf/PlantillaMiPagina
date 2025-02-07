@@ -85,59 +85,59 @@
   <!-- -------------------------------- principal -------------------------------- -->
   <div class="row col">
     <main class="pt-5 col-lg-9">
-      <!-- -------------------------------- principal -------------------------------- -->
-      <!-- Configuración Inicial de GIT  -->
-      <article class="row border-1 border-bottom pb-3">
-        <div class="">
-          <h1>Configuración Inicial de GIT</h1>
-          <p>
-            Los comandos de configuración inicial de Git se utilizan para
-            establecer parámetros globales que definirán cómo Git interactúa
-            con el usuario y cómo registran los cambios. Estos comandos se
-            configuran típicamente cuando se instala GIT por primera vez y se
-            prepara para empezar a trabajar con repositorios. A continuación,
-            se explica cuándo y cómo se usan los comandos de configuración
-            inicial más importantes:
-          </p>
-        </div>
-        <div>
-          <!-- Configurar el Nombre y el Correo del Usuario -->
-          <div id="configuracionNombreyCorreoUsuario" class="mt-5 pt-5 ">
-            <h2 class="mt-1">
-              Configuración el Nombre y el Correo del Usuario
-            </h2>
+      <section class="pb-3">
+        <!-- Configuración Inicial de GIT  -->
+        <article class="row border-1 border-bottom pb-3">
+          <div class="">
+            <h1>Configuración Inicial de GIT</h1>
             <p>
-              Estos parámetros son cruciales porque GIT los usa para etiquetar
-              los commits, permitiendo identificar quién hizo los cambios en
-              un proyecto.
+              Los comandos de configuración inicial de Git se utilizan para
+              establecer parámetros globales que definirán cómo Git interactúa
+              con el usuario y cómo registran los cambios. Estos comandos se
+              configuran típicamente cuando se instala GIT por primera vez y se
+              prepara para empezar a trabajar con repositorios. A continuación,
+              se explica cuándo y cómo se usan los comandos de configuración
+              inicial más importantes:
             </p>
-            <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+          </div>
+          <div>
+            <!-- Configurar el Nombre y el Correo del Usuario -->
+            <div id="configuracionNombreyCorreoUsuario" class="mt-5 pt-5 ">
+              <h2 class="mt-1">
+                Configuración el Nombre y el Correo del Usuario
+              </h2>
+              <p>
+                Estos parámetros son cruciales porque GIT los usa para etiquetar
+                los commits, permitiendo identificar quién hizo los cambios en
+                un proyecto.
+              </p>
+              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git config --global user.name "Nombre del usuario"
                     git config --global user.email "Semail@ejemplo.com"
                   </code>
                 </pre>
-            <p>Estos comandos se usan cuando:</p>
-            <p>
-              Es aconsejable ejecutar estos comandos justo después de instalar
-              Git en el equipo de trabajo.
-            </p>
-            <p>
-              Otra razón para utilizar estos comandos es cuando se comparte la
-              máquina con otros usuarios o se cambia de identidad (por
-              ejemplo, de laboral a personal), en cuyo caso sería conveniente
-              actualizar estos valores.
-            </p>
-          </div>
-          <!-- Configuración del Editor por Defecto -->
-          <div id="configuraciondelEditorporDefecto" class="mt-5 pt-5 ">
-            <h2 class="mt-1">Configuración del Editor por Defecto</h2>
-            <p>
-              En algunos casos Git puede pedir que se edite mensajes de commit
-              o archivos de configuración. Es útil configurar el editor de
-              texto preferido para estas tareas.
-            </p>
-            <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+              <p>Estos comandos se usan cuando:</p>
+              <p>
+                Es aconsejable ejecutar estos comandos justo después de instalar
+                Git en el equipo de trabajo.
+              </p>
+              <p>
+                Otra razón para utilizar estos comandos es cuando se comparte la
+                máquina con otros usuarios o se cambia de identidad (por
+                ejemplo, de laboral a personal), en cuyo caso sería conveniente
+                actualizar estos valores.
+              </p>
+            </div>
+            <!-- Configuración del Editor por Defecto -->
+            <div id="configuraciondelEditorporDefecto" class="mt-5 pt-5 ">
+              <h2 class="mt-1">Configuración del Editor por Defecto</h2>
+              <p>
+                En algunos casos Git puede pedir que se edite mensajes de commit
+                o archivos de configuración. Es útil configurar el editor de
+                texto preferido para estas tareas.
+              </p>
+              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git config --global core.editor "nombre-del-editor"
                     // para VSCode
@@ -152,143 +152,171 @@
                     git config --global core.editor "subl -n -w"
                   </code>
                 </pre>
-            <p>
-              Se debe estar seguro de que el editor que se elije esté
-              correctamente instalado y accesible desde la línea de comandos.
-              Si el comando para abrir tu editor incluye espacios, colocar el
-              nombre del editor entre comillas dobles, como se muestra en los
-              ejemplos.
-            </p>
-          </div>
-          <!-- Configuración de la terminal de colores: -->
-          <div id="configuracióndelosColoresdeTextolaTerminal" class="mt-5 pt-5 ">
-            <h2 class="mt-1">
-              Configuración de los Colores de Texto la Terminal
-            </h2>
-            <p>
-              Configurar Git para que use colores en la terminal, lo que hace
-              más fácil leer los mensajes y distinguir diferentes tipos de
-              información.
-            </p>
-            <p>
-              Se usa principalmente para mejorar la legibilidad de los
-              mensajes en la terminal.
-            </p>
-            <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+              <p>
+                Se debe estar seguro de que el editor que se elije esté
+                correctamente instalado y accesible desde la línea de comandos.
+                Si el comando para abrir tu editor incluye espacios, colocar el
+                nombre del editor entre comillas dobles, como se muestra en los
+                ejemplos.
+              </p>
+            </div>
+            <!-- Configuración de la terminal de colores: -->
+            <div id="configuracióndelosColoresdeTextolaTerminal" class="mt-5 pt-5 ">
+              <h2 class="mt-1">
+                Configuración de los Colores de Texto la Terminal
+              </h2>
+              <p>
+                Configurar Git para que use colores en la terminal, lo que hace
+                más fácil leer los mensajes y distinguir diferentes tipos de
+                información.
+              </p>
+              <p>
+                Se usa principalmente para mejorar la legibilidad de los
+                mensajes en la terminal.
+              </p>
+              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git config --global color.ui auto
                   </code>
                 </pre>
-          </div>
-          <!-- Configuración del método de fusión -->
-          <div id="configuraciondelMetododeFusion" class="mt-5 pt-5 ">
-            <h2 class="mt-1">Configuración del Método de Fusión</h2>
-            <p>
-              Se puedes especificar cómo Git debe manejar las fusiones de
-              archivos.
-            </p>
-            <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+            </div>
+            <!-- Configuración del método de fusión -->
+            <div id="configuraciondelMetododeFusion" class="mt-5 pt-5 ">
+              <h2 class="mt-1">Configuración del Método de Fusión</h2>
+              <p>
+                Se puedes especificar cómo Git debe manejar las fusiones de
+                archivos.
+              </p>
+              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git config --global merge.tool "nombre-del-herramienta-de-fusión"
                   </code>
                 </pre>
-            <p>Los nombre-del-herramienta-de-fusión pueden ser:</p>
-            <ul>
-              <li><b>vimdiff</b>: Utiliza Vim en modo de diferencia.</li>
-              <li>
-                <b>meld</b>: Una herramienta gráfica popular para comparar y
-                fusionar archivos.
-              </li>
-              <li>
-                <b>kdiff3</b>: Otra herramienta gráfica para la comparación y
-                fusión de archivos.
-              </li>
-              <li>
-                <b>tortoisemerge</b>: Parte de TortoiseGit, una interfaz de
-                usuario para Git en Windows.
-              </li>
-              <li>
-                <b>p4merge</b>: Herramienta de Perforce para la comparación y
-                fusión de archivos.
-              </li>
-              <li>
-                <b>bc</b>: Beyond Compare, una herramienta comercial de
-                comparación de archivos.
-              </li>
-              <li>
-                <b>opendiff</b>: Utiliza FileMerge de Apple (disponible en
-                macOS).
-              </li>
-              <li>
-                <b>diffmerge</b>: Otra herramienta gráfica para la comparación
-                y fusión de archivos.
-              </li>
-              <li>
-                <b>araxis</b>: Araxis Merge, una herramienta comercial de
-                comparación y fusión de archivos.
-              </li>
-              <li><b>emerge</b>: Herramienta de fusión de Emacs</li>
-            </ul>
-            <p>
-              Además, se puede configurar opciones adicionales específicas
-              para cada herramienta, si es necesario. Consultar la
-              documentación de GIT o de la herramienta de fusión específica
-              para obtener más detalles sobre configuraciones adicionales.
-            </p>
-          </div>
-          <!-- Configuración de alias -->
-          <div id="configuraciondeAlias" class="mt-5 pt-5 ">
-            <h2 class="mt-1">Configuración de Alias</h2>
-            <p>
-              Los alias se utilizan para abreviar comandos largos o
-              complicados, facilitando y agilizando su uso.
-            </p>
-            <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+              <p>Los nombre-del-herramienta-de-fusión pueden ser:</p>
+              <ul>
+                <li><b>vimdiff</b>: Utiliza Vim en modo de diferencia.</li>
+                <li>
+                  <b>meld</b>: Una herramienta gráfica popular para comparar y
+                  fusionar archivos.
+                </li>
+                <li>
+                  <b>kdiff3</b>: Otra herramienta gráfica para la comparación y
+                  fusión de archivos.
+                </li>
+                <li>
+                  <b>tortoisemerge</b>: Parte de TortoiseGit, una interfaz de
+                  usuario para Git en Windows.
+                </li>
+                <li>
+                  <b>p4merge</b>: Herramienta de Perforce para la comparación y
+                  fusión de archivos.
+                </li>
+                <li>
+                  <b>bc</b>: Beyond Compare, una herramienta comercial de
+                  comparación de archivos.
+                </li>
+                <li>
+                  <b>opendiff</b>: Utiliza FileMerge de Apple (disponible en
+                  macOS).
+                </li>
+                <li>
+                  <b>diffmerge</b>: Otra herramienta gráfica para la comparación
+                  y fusión de archivos.
+                </li>
+                <li>
+                  <b>araxis</b>: Araxis Merge, una herramienta comercial de
+                  comparación y fusión de archivos.
+                </li>
+                <li><b>emerge</b>: Herramienta de fusión de Emacs</li>
+              </ul>
+              <p>
+                Además, se puede configurar opciones adicionales específicas
+                para cada herramienta, si es necesario. Consultar la
+                documentación de GIT o de la herramienta de fusión específica
+                para obtener más detalles sobre configuraciones adicionales.
+              </p>
+            </div>
+            <!-- Configuración de alias -->
+            <div id="configuraciondeAlias" class="mt-5 pt-5 ">
+              <h2 class="mt-1">Configuración de Alias</h2>
+              <p>
+                Los alias se utilizan para abreviar comandos largos o
+                complicados, facilitando y agilizando su uso.
+              </p>
+              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git config --global alias.st status
                     git config --global alias.co checkout
                   </code>
                 </pre>
-            <p>
-              En este ejemplo, ambos comandos producen el mismo resultado.
-            </p>
-            <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+              <p>
+                En este ejemplo, ambos comandos producen el mismo resultado.
+              </p>
+              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git st
                     git status
                   </code>
                 </pre>
-          </div>
-          <!-- Ver la configuración -->
-          <div id="verlaconfiguracion" class="mt-5 pt-5">
-            <h2 class="mt-1">Ver la configuración</h2>
-            <p>
-              Comando utilizado para mostrar todas las configuraciones que GIT
-              tiene actualmente. Esto incluye ajustes como nombre de usuario,
-              correo electrónico, alias y más. Es un comando útil para revisar
-              la configuración de GIT de un vistazo.
-            </p>
-            <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+            </div>
+            <!-- Ver la configuración -->
+            <div id="verlaconfiguracion" class="mt-5 pt-5">
+              <h2 class="mt-1">Ver la configuración</h2>
+              <p>
+                Comando utilizado para mostrar todas las configuraciones que GIT
+                tiene actualmente. Esto incluye ajustes como nombre de usuario,
+                correo electrónico, alias y más. Es un comando útil para revisar
+                la configuración de GIT de un vistazo.
+              </p>
+              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git config --list
                   </code>
                 </pre>
+            </div>
+            <p>
+              Estos comandos de configuración inicial se usan generalmente una
+              sola vez cuando se configura GIT por primera vez en un nuevo
+              entorno, pero también pueden ser ajustados en cualquier momento si
+              cambian las preferencias o necesidades. Recordar que el uso del
+              flag
+              <code>--global</code> hace que estas configuraciones se apliquen a
+              nivel global para todos los repositorios guardados en la máquina.
+              Si se necesita configurar algo específico para un solo
+              repositorio, puedes omitir el flag <code>--global</code> y GIT
+              aplicará la configuración solo en el repositorio actual.
+            </p>
           </div>
-          <p>
-            Estos comandos de configuración inicial se usan generalmente una
-            sola vez cuando se configura GIT por primera vez en un nuevo
-            entorno, pero también pueden ser ajustados en cualquier momento si
-            cambian las preferencias o necesidades. Recordar que el uso del
-            flag
-            <code>--global</code> hace que estas configuraciones se apliquen a
-            nivel global para todos los repositorios guardados en la máquina.
-            Si se necesita configurar algo específico para un solo
-            repositorio, puedes omitir el flag <code>--global</code> y GIT
-            aplicará la configuración solo en el repositorio actual.
-          </p>
-        </div>
-      </article>
-      <!-- fin Comandos Básicos CLI -->
+        </article>
+        <!-- fin Comandos Básicos CLI -->
+        <!-- -------------------------------- comentarios -------------------------------- -->
+        <article class="row pt-5" id="comment">
+          <br />
+          <h1>COMENTARIOS</h1>
+          <p>Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del formulario
+            disponible para este propósito.</p>
+          <div class="d-flex justify-content-center">
+            <form action="https://formsubmit.co/herreraforeroeduardo@gmail.com" method="POST" id="myForm">
+              <div class="input-group d-flex justify-content-center flex-column">
+                <label for="name" class="pe-2">Nombre:</label>
+                <input type="text" name="name" id="name" placeholder="Eduardo Herrera Forero" class="rounded"
+                  required="required" />
+                <label for="email" class="pe-2">Email:</label>
+                <input type="email" name="email" id="email" placeholder="herreraforeroeduardo@gmail.com" class="rounded"
+                  required="required" />
+                <label for="message" class="pe-2">Mensaje:</label>
+                <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
+                  class="rounded rounded-3"></textarea>
+                <input class="btn btn-outline-light my-3 border rounded-pill border-2" type="submit"
+                  value="Enviar..." />
+              </div>
+              <p>La política de privacidad, y los términos y condiciones están disponibles en el formulario de contacto.
+              </p>
+            </form>
+          </div>
+        </article>
+        <!-- -------------------------------- fin comentarios -------------------------------- -->
+      </section>
     </main>
     <!-- -------------------------------- fin principal -------------------------------- -->
     <!-- -------------------------------- barra lateral -------------------------------- -->

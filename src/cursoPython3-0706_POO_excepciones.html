@@ -84,85 +84,78 @@
   <!-- -------------------------------- principal -------------------------------- -->
   <div class="row col">
     <main class="pt-5 col-lg-9">
-      <!--  POO: Excepciones en Python  -->
-      <article class="row border-1 border-bottom pb-3">
-        <div>
-          <header>
-            <h1>POO: Excepciones en Python</h1>
-          </header>
-          <p>
-            Las excepciones en Python son un mecanismo para manejar errores y
-            otros eventos inesperados que pueden ocurrir durante la ejecución
-            de un programa. En la programación orientada a objetos (POO), las
-            excepciones permiten que los objetos manejen errores de manera más
-            estructurada y controlada
-          </p>
-          <div class="text-center imagen">
-            <picture>
-              <img src="https://i.ibb.co/1f9pbDg/poexcepciones.jpg" class="img-fluid rounded-4" width="80%"
-                alt="POO: Excepciones en Python  " title="¿Cómo manejar una excepción en Python?" />
-              <figcaption>POO: Excepciones en Python</figcaption>
-            </picture>
-            <!-- Go to top -->
-            <div class="text-center mt-5">
-              <a href="#" id="myBtnScroll2" title="Go to top">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                  class="bi bi-arrow-bar-up" viewBox="0 0 16 16" style="margin-left: -2px">
-                  <path fill-rule="evenodd"
-                    d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5" />
-                </svg>
-              </a>
+      <section class="pb-3">
+        <!--  POO: Excepciones en Python  -->
+        <article class="row border-1 border-bottom pb-3">
+          <div>
+            <header>
+              <h1>POO: Excepciones en Python</h1>
+            </header>
+            <p>
+              Las excepciones en Python son un mecanismo para manejar errores y
+              otros eventos inesperados que pueden ocurrir durante la ejecución
+              de un programa. En la programación orientada a objetos (POO), las
+              excepciones permiten que los objetos manejen errores de manera más
+              estructurada y controlada
+            </p>
+            <div class="text-center imagen">
+              <picture>
+                <img src="https://i.ibb.co/1f9pbDg/poexcepciones.jpg" class="img-fluid rounded-4" width="80%"
+                  alt="POO: Excepciones en Python  " title="¿Cómo manejar una excepción en Python?" />
+                <figcaption>POO: Excepciones en Python</figcaption>
+              </picture>
+
             </div>
-            <!-- Go to top Fin-->
-          </div>
-          <!-- Teoría Básica de Excepciones Clásicas -->
-          <div id="teoriaBasicaDeExcepcionesClasicas" class="mt-5 pt-5">
-            <h2 class="mt-1">Teoría Básica de Excepciones Clásicas</h2>
-            <p>
-              Una excepción es un evento que interrumpe el flujo normal de un
-              programa. Esto puede ocurrir debido a errores como:
-            </p>
-            <ul>
-              <li>Intentar dividir entre cero.</li>
-              <li>Acceder a un índice fuera de rango en una lista.</li>
-              <li>Operar sobre un archivo que no existe.</li>
-            </ul>
-            <p>
-              En Python, las excepciones son objetos derivados de la clase
-              base <code>BaseException</code>, lo que refuerza su integración
-              con la POO.
-            </p>
-            <p>
-              Las excepciones pueden ser manejadas utilizando bloques
-              <code>try</code>, <code>except</code>, <code>else</code> y
-              <code>finally</code>. A continuación, se explica cada uno de
-              estos bloques con un ejemplo:
-            </p>
-            <ul>
-              <li>
-                <span class="fw-bold"><code>try</code></span>: Este bloque contiene el código que puede generar una
-                excepción.
-              </li>
-              <li>
-                <span class="fw-bold"><code>except</code></span>: Este bloque maneja la excepción que se genera en el
-                bloque
-                <code>try</code>. Puedes tener múltiples bloques
-                <code>except</code> para manejar diferentes tipos de
-                excepciones.
-              </li>
-              <li>
-                <span class="fw-bold"><code>else</code></span>: Este bloque se ejecuta si no se genera ninguna excepción
-                en
-                el bloque <code>try</code>.
-              </li>
-              <li>
-                <span class="fw-bold"><code>finally</code></span>: Este bloque se ejecuta siempre, independientemente de
-                si se
-                generó una excepción o no.
-              </li>
-            </ul>
-            <p>Ejemplo que ilustra el uso de estos bloques:</p>
-            <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+            <!-- Teoría Básica de Excepciones Clásicas -->
+            <div id="teoriaBasicaDeExcepcionesClasicas" class="mt-5 pt-5">
+              <h2 class="mt-1">Teoría Básica de Excepciones Clásicas</h2>
+              <p>
+                Una excepción es un evento que interrumpe el flujo normal de un
+                programa. Esto puede ocurrir debido a errores como:
+              </p>
+              <ul>
+                <li>Intentar dividir entre cero.</li>
+                <li>Acceder a un índice fuera de rango en una lista.</li>
+                <li>Operar sobre un archivo que no existe.</li>
+              </ul>
+              <p>
+                En Python, las excepciones son objetos derivados de la clase
+                base <code>BaseException</code>, lo que refuerza su integración
+                con la POO.
+              </p>
+              <p>
+                Las excepciones pueden ser manejadas utilizando bloques
+                <code>try</code>, <code>except</code>, <code>else</code> y
+                <code>finally</code>. A continuación, se explica cada uno de
+                estos bloques con un ejemplo:
+              </p>
+              <ul>
+                <li>
+                  <span class="fw-bold"><code>try</code></span>: Este bloque contiene el código que puede generar una
+                  excepción.
+                </li>
+                <li>
+                  <span class="fw-bold"><code>except</code></span>: Este bloque maneja la excepción que se genera en el
+                  bloque
+                  <code>try</code>. Puedes tener múltiples bloques
+                  <code>except</code> para manejar diferentes tipos de
+                  excepciones.
+                </li>
+                <li>
+                  <span class="fw-bold"><code>else</code></span>: Este bloque se ejecuta si no se genera ninguna
+                  excepción
+                  en
+                  el bloque <code>try</code>.
+                </li>
+                <li>
+                  <span class="fw-bold"><code>finally</code></span>: Este bloque se ejecuta siempre, independientemente
+                  de
+                  si se
+                  generó una excepción o no.
+                </li>
+              </ul>
+              <p>Ejemplo que ilustra el uso de estos bloques:</p>
+              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   def dividir_numeros(a, b):
                       try:
@@ -189,38 +182,28 @@
                   print(dividir_numeros(10, 'a'))  # Debería imprimir "Error: unsupported operand type(s) for /: 'int' and 'str'" y luego "Ejecución del bloque finally."
                 </code>
             </pre>
-            <!-- Go to top -->
-            <div class="text-center mt-5">
-              <a href="#" id="myBtnScroll2" title="Go to top">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                  class="bi bi-arrow-bar-up" viewBox="0 0 16 16" style="margin-left: -2px">
-                  <path fill-rule="evenodd"
-                    d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5" />
-                </svg>
-              </a>
+
             </div>
-            <!-- Go to top Fin-->
-          </div>
-          <!-- Teoría Básica de Excepciones Clásicas Fin -->
-          <!-- Las Excepciones Son Clases -->
-          <div id="lasExcepcionesSonClases" class="mt-5 pt-5">
-            <h2 class="mt-1">Las Excepciones Son Clases</h2>
-            <!-- Jerarquía de Excepciones -->
-            <div>
-              <h3>Jerarquía de Excepciones</h3>
-              <p>
-                Las excepciones en Python son implementadas como clases, y
-                todas las excepciones derivan de la clase base
-                <code>BaseException</code>. La mayoría de las excepciones que
-                se encuentran en el uso diario derivan de la clase
-                <code>Exception</code>, que a su vez es una subclase de
-                <code>BaseException</code>.
-              </p>
-              <p>
-                Aquí hay una vista general de la jerarquía de excepciones en
-                Python:
-              </p>
-              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+            <!-- Teoría Básica de Excepciones Clásicas Fin -->
+            <!-- Las Excepciones Son Clases -->
+            <div id="lasExcepcionesSonClases" class="mt-5 pt-5">
+              <h2 class="mt-1">Las Excepciones Son Clases</h2>
+              <!-- Jerarquía de Excepciones -->
+              <div>
+                <h3>Jerarquía de Excepciones</h3>
+                <p>
+                  Las excepciones en Python son implementadas como clases, y
+                  todas las excepciones derivan de la clase base
+                  <code>BaseException</code>. La mayoría de las excepciones que
+                  se encuentran en el uso diario derivan de la clase
+                  <code>Exception</code>, que a su vez es una subclase de
+                  <code>BaseException</code>.
+                </p>
+                <p>
+                  Aquí hay una vista general de la jerarquía de excepciones en
+                  Python:
+                </p>
+                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                   <code class="language-plaintext" data-prismjs-copy="Copy">
                     BaseException
                     ├── Exception
@@ -288,20 +271,20 @@
                     ├── SystemExit
                   </code>
               </pre>
-            </div>
-            <!-- Jerarquía de Excepciones fin -->
-            <!-- Acceso a Atributos en Excepciones -->
-            <div>
-              <h3>Acceso a Atributos en Excepciones</h3>
-              <p>
-                En Python, la palabra clave <code>as</code> se utiliza en el
-                contexto de manejo de excepciones para asignar una excepción
-                capturada a una variable. Esto permite acceder a la
-                información de la excepción, como su mensaje de error y otros
-                atributos, dentro del bloque <code>except</code>.
-              </p>
-              <p>Sintaxis Básica:</p>
-              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Jerarquía de Excepciones fin -->
+              <!-- Acceso a Atributos en Excepciones -->
+              <div>
+                <h3>Acceso a Atributos en Excepciones</h3>
+                <p>
+                  En Python, la palabra clave <code>as</code> se utiliza en el
+                  contexto de manejo de excepciones para asignar una excepción
+                  capturada a una variable. Esto permite acceder a la
+                  información de la excepción, como su mensaje de error y otros
+                  atributos, dentro del bloque <code>except</code>.
+                </p>
+                <p>Sintaxis Básica:</p>
+                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     try:
                         # Código que puede generar una excepción
@@ -309,8 +292,8 @@
                         # Manejo de la excepción utilizando la variable
                   </code>
               </pre>
-              <p>Ejemplo básico:</p>
-              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <p>Ejemplo básico:</p>
+                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     try:
                         resultado = 10 / 0  # Esto genera un ZeroDivisionError
@@ -319,43 +302,43 @@
                     # Salida: Ha ocurrido un error: division by zero
                   </code>
                 </pre>
-              <p>Desglose del código:</p>
-              <ul>
-                <li>
-                  <span class="fw-bold"><code>try</code></span>: Se intenta ejecutar el código que podría generar un
-                  error.
-                </li>
-                <li>
-                  <span class="fw-bold"><code>except ZeroDivisionError as e</code></span>:
-                  <ul>
-                    <li>
-                      Captura la excepción del tipo
-                      <code>ZeroDivisionError</code>.
-                    </li>
-                    <li>
-                      Asigna la instancia de la excepción capturada a la
-                      variable <code>e</code>.
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <span class="fw-bold"><code>e</code></span>: Es una instancia de <code>ZeroDivisionError</code> y
-                  contiene información adicional sobre el error, como el
-                  mensaje de error.
-                </li>
-              </ul>
-            </div>
-            <!-- Acceso a Atributos en Excepciones fin -->
-            <!-- Acceso a Otros Atributos de la Excepción -->
-            <div>
-              <h3>Acceso a Otros Atributos de la Excepción</h3>
-              <p>
-                Algunas excepciones tienen atributos adicionales que puedes
-                acceder. Por ejemplo, la excepción <code>OSError</code> tiene
-                un atributo <code>errno</code> que contiene el número de error
-                del sistema operativo:
-              </p>
-              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <p>Desglose del código:</p>
+                <ul>
+                  <li>
+                    <span class="fw-bold"><code>try</code></span>: Se intenta ejecutar el código que podría generar un
+                    error.
+                  </li>
+                  <li>
+                    <span class="fw-bold"><code>except ZeroDivisionError as e</code></span>:
+                    <ul>
+                      <li>
+                        Captura la excepción del tipo
+                        <code>ZeroDivisionError</code>.
+                      </li>
+                      <li>
+                        Asigna la instancia de la excepción capturada a la
+                        variable <code>e</code>.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fw-bold"><code>e</code></span>: Es una instancia de <code>ZeroDivisionError</code> y
+                    contiene información adicional sobre el error, como el
+                    mensaje de error.
+                  </li>
+                </ul>
+              </div>
+              <!-- Acceso a Atributos en Excepciones fin -->
+              <!-- Acceso a Otros Atributos de la Excepción -->
+              <div>
+                <h3>Acceso a Otros Atributos de la Excepción</h3>
+                <p>
+                  Algunas excepciones tienen atributos adicionales que puedes
+                  acceder. Por ejemplo, la excepción <code>OSError</code> tiene
+                  un atributo <code>errno</code> que contiene el número de error
+                  del sistema operativo:
+                </p>
+                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     try:
                         with open('archivo_inexistente.txt', 'r') as file:
@@ -365,38 +348,28 @@
                         print(f"Número de error: {e.errno}")
                   </code>
                 </pre>
+              </div>
+              <!-- Acceso a Otros Atributos de la Excepción fin -->
+
             </div>
-            <!-- Acceso a Otros Atributos de la Excepción fin -->
-            <!-- Go to top -->
-            <div class="text-center mt-5">
-              <a href="#" id="myBtnScroll2" title="Go to top">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                  class="bi bi-arrow-bar-up" viewBox="0 0 16 16" style="margin-left: -2px">
-                  <path fill-rule="evenodd"
-                    d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5" />
-                </svg>
-              </a>
-            </div>
-            <!-- Go to top Fin-->
-          </div>
-          <!-- Las Excepciones Son Clases Fin -->
-          <!-- Cómo Crear una Excepción Propia -->
-          <div id="comoCrearUnaExcepcionPropia" class="mt-5 pt-5">
-            <h2 class="mt-1">Cómo Crear una Excepción Propia</h2>
-            <p>
-              Para crear una excepción propia en Python, se debe definir una
-              nueva clase que herede de la clase base <code>Exception</code>.
-              Esta clase personalizada puede incluir métodos y atributos
-              adicionales según sea necesario. A continuación, se presenta un
-              ejemplo de cómo redactar una excepción propia en tercera
-              persona.
-            </p>
-            <p>
-              Primero, se define la clase de la excepción personalizada. En
-              este ejemplo, se creará una excepción llamada
-              <code>MiExcepcionPersonalizada</code>:
-            </p>
-            <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+            <!-- Las Excepciones Son Clases Fin -->
+            <!-- Cómo Crear una Excepción Propia -->
+            <div id="comoCrearUnaExcepcionPropia" class="mt-5 pt-5">
+              <h2 class="mt-1">Cómo Crear una Excepción Propia</h2>
+              <p>
+                Para crear una excepción propia en Python, se debe definir una
+                nueva clase que herede de la clase base <code>Exception</code>.
+                Esta clase personalizada puede incluir métodos y atributos
+                adicionales según sea necesario. A continuación, se presenta un
+                ejemplo de cómo redactar una excepción propia en tercera
+                persona.
+              </p>
+              <p>
+                Primero, se define la clase de la excepción personalizada. En
+                este ejemplo, se creará una excepción llamada
+                <code>MiExcepcionPersonalizada</code>:
+              </p>
+              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   # Definición de la excepción personalizada
                   class MiExcepcionPersonalizada(Exception):
@@ -426,68 +399,86 @@
                       print(f"Se ha capturado una excepción: {e}")
                 </code>
               </pre>
-            <p>En este ejemplo:</p>
-            <ul>
-              <li>
-                <span class="fw-bold">Definición de la Excepción Personalizada</span>:
-                <ul>
-                  <li>
-                    Se define una clase
-                    <code>MiExcepcionPersonalizada</code> que hereda de
-                    Exception.
-                  </li>
-                  <li>
-                    El método <code>__init__</code> se utiliza para
-                    inicializar la excepción con un mensaje descriptivo.
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <span class="fw-bold">Función que Puede Fallar</span>:
-                <ul>
-                  <li>
-                    Se define una función
-                    <code>funcion_que_puede_fallar</code> que toma una
-                    condición booleana como argumento.
-                  </li>
-                  <li>
-                    Si la condición es verdadera, la función lanza la
-                    excepción personalizada con un mensaje específico.
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <span class="fw-bold">Uso de la Excepción Personalizada</span>:
-                <ul>
-                  <li>
-                    Se utiliza un bloque <code>try</code>-except para llamar a
-                    la función <code>funcion_que_puede_fallar</code> con una
-                    condición verdadera.
-                  </li>
-                  <li>
-                    Si la excepción personalizada es lanzada, se captura y se
-                    imprime un mensaje indicando que se ha capturado la
-                    excepción.
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <!-- Go to top -->
-            <div class="text-center mt-5">
-              <a href="#" id="myBtnScroll2" title="Go to top">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                  class="bi bi-arrow-bar-up" viewBox="0 0 16 16" style="margin-left: -2px">
-                  <path fill-rule="evenodd"
-                    d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5" />
-                </svg>
-              </a>
+              <p>En este ejemplo:</p>
+              <ul>
+                <li>
+                  <span class="fw-bold">Definición de la Excepción Personalizada</span>:
+                  <ul>
+                    <li>
+                      Se define una clase
+                      <code>MiExcepcionPersonalizada</code> que hereda de
+                      Exception.
+                    </li>
+                    <li>
+                      El método <code>__init__</code> se utiliza para
+                      inicializar la excepción con un mensaje descriptivo.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="fw-bold">Función que Puede Fallar</span>:
+                  <ul>
+                    <li>
+                      Se define una función
+                      <code>funcion_que_puede_fallar</code> que toma una
+                      condición booleana como argumento.
+                    </li>
+                    <li>
+                      Si la condición es verdadera, la función lanza la
+                      excepción personalizada con un mensaje específico.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="fw-bold">Uso de la Excepción Personalizada</span>:
+                  <ul>
+                    <li>
+                      Se utiliza un bloque <code>try</code>-except para llamar a
+                      la función <code>funcion_que_puede_fallar</code> con una
+                      condición verdadera.
+                    </li>
+                    <li>
+                      Si la excepción personalizada es lanzada, se captura y se
+                      imprime un mensaje indicando que se ha capturado la
+                      excepción.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
             </div>
-            <!-- Go to top Fin-->
+            <!-- Cómo Crear una Excepción Propia Fin -->
           </div>
-          <!-- Cómo Crear una Excepción Propia Fin -->
-        </div>
-      </article>
-      <!--  POO: Excepciones en Python  -->
+        </article>
+        <!--  POO: Excepciones en Python  -->
+        <!-- -------------------------------- comentarios -------------------------------- -->
+        <article class="row pt-5" id="comment">
+          <br />
+          <h1>COMENTARIOS</h1>
+          <p>Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del formulario
+            disponible para este propósito.</p>
+          <div class="d-flex justify-content-center">
+            <form action="https://formsubmit.co/herreraforeroeduardo@gmail.com" method="POST" id="myForm">
+              <div class="input-group d-flex justify-content-center flex-column">
+                <label for="name" class="pe-2">Nombre:</label>
+                <input type="text" name="name" id="name" placeholder="Eduardo Herrera Forero" class="rounded"
+                  required="required" />
+                <label for="email" class="pe-2">Email:</label>
+                <input type="email" name="email" id="email" placeholder="herreraforeroeduardo@gmail.com" class="rounded"
+                  required="required" />
+                <label for="message" class="pe-2">Mensaje:</label>
+                <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
+                  class="rounded rounded-3"></textarea>
+                <input class="btn btn-outline-light my-3 border rounded-pill border-2" type="submit"
+                  value="Enviar..." />
+              </div>
+              <p>La política de privacidad, y los términos y condiciones están disponibles en el formulario de contacto.
+              </p>
+            </form>
+          </div>
+        </article>
+        <!-- -------------------------------- fin comentarios -------------------------------- -->
+      </section>
     </main>
     <!-- -------------------------------- fin principal -------------------------------- -->
     <!-- -------------------------------- barra lateral -------------------------------- -->

@@ -84,64 +84,55 @@
   <!-- -------------------------------- principal -------------------------------- -->
   <div class="row col">
     <main class="pt-5 col-lg-9">
-      <!--  POO: Herencia en Python  -->
-      <article class="row border-1 border-bottom pb-3">
-        <div>
-          <header>
-            <h1>POO: Herencia en Python</h1>
-          </header>
-          <p>
-            La Programación Orientada a Objetos (POO) es un paradigma
-            fundamental en el desarrollo de software que permite organizar el
-            código de manera más eficiente y modular. Uno de los conceptos
-            clave de la POO es la herencia, que permite a las clases heredar
-            atributos y métodos de otras clases. En este documento,
-            exploraremos los fundamentos de la herencia en Python, sus
-            beneficios, y cómo implementarla en nuestros programas.
-          </p>
-          <p>
-            La Programación Orientada a Objetos (POO) es un paradigma de
-            programación que organiza el código en torno a objetos, los cuales
-            combinan datos (atributos) y funciones (métodos). Uno de los
-            pilares fundamentales de la POO es la herencia, que permite crear
-            nuevas clases basadas en clases existentes.
-          </p>
-          <div class="text-center imagen">
-            <picture>
-              <img src="https://i.ibb.co/BLLRnCg/pooherencia.jpg" class="img-fluid rounded-4" width="50%"
-                alt="POO: Herencia en Python  " title="Entendiendo la Herencia en Python" />
-              <figcaption>POO: Herencia en Python</figcaption>
-            </picture>
-            <!-- Go to top -->
-            <div class="text-center mt-5">
-              <a href="#" id="myBtnScroll2" title="Go to top">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                  class="bi bi-arrow-bar-up" viewBox="0 0 16 16" style="margin-left: -2px">
-                  <path fill-rule="evenodd"
-                    d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5" />
-                </svg>
-              </a>
+      <section class="pb-3">
+        <!--  POO: Herencia en Python  -->
+        <article class="row border-1 border-bottom pb-3">
+          <div>
+            <header>
+              <h1>POO: Herencia en Python</h1>
+            </header>
+            <p>
+              La Programación Orientada a Objetos (POO) es un paradigma
+              fundamental en el desarrollo de software que permite organizar el
+              código de manera más eficiente y modular. Uno de los conceptos
+              clave de la POO es la herencia, que permite a las clases heredar
+              atributos y métodos de otras clases. En este documento,
+              exploraremos los fundamentos de la herencia en Python, sus
+              beneficios, y cómo implementarla en nuestros programas.
+            </p>
+            <p>
+              La Programación Orientada a Objetos (POO) es un paradigma de
+              programación que organiza el código en torno a objetos, los cuales
+              combinan datos (atributos) y funciones (métodos). Uno de los
+              pilares fundamentales de la POO es la herencia, que permite crear
+              nuevas clases basadas en clases existentes.
+            </p>
+            <div class="text-center imagen">
+              <picture>
+                <img src="https://i.ibb.co/BLLRnCg/pooherencia.jpg" class="img-fluid rounded-4" width="50%"
+                  alt="POO: Herencia en Python  " title="Entendiendo la Herencia en Python" />
+                <figcaption>POO: Herencia en Python</figcaption>
+              </picture>
+
             </div>
-            <!-- Go to top Fin-->
-          </div>
-          <!-- ¿Qué es la Herencia? -->
-          <div id="queEsLaHerencia" class="mt-5 pt-5">
-            <h2 class="mt-1">¿Qué es la Herencia?</h2>
-            <p>
-              En Python, la herencia es un mecanismo de la programación
-              orientada a objetos (POO) que permite crear nuevas clases
-              basadas en clases existentes. La clase existente se denomina
-              clase base o superclase, y la nueva clase se denomina clase
-              derivada o subclase. La herencia permite que la clase derivada
-              herede atributos y métodos de la clase base, lo que facilita la
-              reutilización de código y la organización de jerarquías de
-              clases.
-            </p>
-            <p>
-              Aquí se tiene un ejemplo básico de cómo funciona la herencia en
-              Python:
-            </p>
-            <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+            <!-- ¿Qué es la Herencia? -->
+            <div id="queEsLaHerencia" class="mt-5 pt-5">
+              <h2 class="mt-1">¿Qué es la Herencia?</h2>
+              <p>
+                En Python, la herencia es un mecanismo de la programación
+                orientada a objetos (POO) que permite crear nuevas clases
+                basadas en clases existentes. La clase existente se denomina
+                clase base o superclase, y la nueva clase se denomina clase
+                derivada o subclase. La herencia permite que la clase derivada
+                herede atributos y métodos de la clase base, lo que facilita la
+                reutilización de código y la organización de jerarquías de
+                clases.
+              </p>
+              <p>
+                Aquí se tiene un ejemplo básico de cómo funciona la herencia en
+                Python:
+              </p>
+              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     # Definición de la clase base
                     class Animal:
@@ -166,46 +157,46 @@
                     print(gato.hacer_sonido())  # Salida: Miau
                   </code>
                 </pre>
-            <p>En este ejemplo:</p>
-            <ul>
-              <li>
-                <code>Animal</code> es la clase base que tiene un método
-                <code>hacer_sonido</code> que no hace nada
-                (<code>pass</code>).
-              </li>
-              <li>
-                <code>Perro</code> y <code>Gato</code> son clases derivadas
-                que heredan de <code>Animal</code>.
-              </li>
-              <li>
-                Ambas clases derivadas sobrescriben el método
-                <code>hacer_sonido</code>
-                para proporcionar una implementación específica.
-              </li>
-            </ul>
-            <p>
-              La herencia permite que <code>Perro</code> y
-              <code>Gato</code> hereden el método <code>__init__</code> de
-              <code>Animal</code>, lo que significa que pueden inicializar el
-              atributo nombre de la misma manera que la clase base. Además,
-              pueden sobrescribir métodos de la clase base para proporcionar
-              comportamientos específicos.
-            </p>
-          </div>
-          <!-- ¿Qué es la Herencia? -->
-          <!-- Herencia Múltiple -->
-          <div id="herenciaMultiple" class="mt-5 pt-5">
-            <h2 class="mt-1">Herencia Múltiple</h2>
-            <p>
-              La herencia múltiple en Python permite que una clase herede de
-              más de una clase base. Esto significa que una clase derivada
-              puede heredar atributos y métodos de múltiples clases base. La
-              herencia múltiple puede ser útil para combinar comportamientos
-              de diferentes clases, pero también puede introducir complejidad,
-              especialmente en términos de resolución de métodos y atributos
-              cuando hay conflictos.
-            </p>
-            <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+              <p>En este ejemplo:</p>
+              <ul>
+                <li>
+                  <code>Animal</code> es la clase base que tiene un método
+                  <code>hacer_sonido</code> que no hace nada
+                  (<code>pass</code>).
+                </li>
+                <li>
+                  <code>Perro</code> y <code>Gato</code> son clases derivadas
+                  que heredan de <code>Animal</code>.
+                </li>
+                <li>
+                  Ambas clases derivadas sobrescriben el método
+                  <code>hacer_sonido</code>
+                  para proporcionar una implementación específica.
+                </li>
+              </ul>
+              <p>
+                La herencia permite que <code>Perro</code> y
+                <code>Gato</code> hereden el método <code>__init__</code> de
+                <code>Animal</code>, lo que significa que pueden inicializar el
+                atributo nombre de la misma manera que la clase base. Además,
+                pueden sobrescribir métodos de la clase base para proporcionar
+                comportamientos específicos.
+              </p>
+            </div>
+            <!-- ¿Qué es la Herencia? -->
+            <!-- Herencia Múltiple -->
+            <div id="herenciaMultiple" class="mt-5 pt-5">
+              <h2 class="mt-1">Herencia Múltiple</h2>
+              <p>
+                La herencia múltiple en Python permite que una clase herede de
+                más de una clase base. Esto significa que una clase derivada
+                puede heredar atributos y métodos de múltiples clases base. La
+                herencia múltiple puede ser útil para combinar comportamientos
+                de diferentes clases, pero también puede introducir complejidad,
+                especialmente en términos de resolución de métodos y atributos
+                cuando hay conflictos.
+              </p>
+              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   # Definición de la primera clase base
                   class Animal:
@@ -229,93 +220,93 @@
                   print(pajaro.volar())  # Salida: Estoy volando
                 </code>
               </pre>
-            <p>En este ejemplo:</p>
-            <ul>
-              <li>
-                <code>Animal</code> es una clase base que tiene un método
-                <code>hacer_sonido</code> y un atributo <code>nombre</code>.
-              </li>
-              <li>
-                <code>Volador</code> es otra clase base que tiene un método
-                <code>volar</code>.
-              </li>
-              <li>
-                <code>Pajaro</code> es una clase derivada que hereda de ambas
-                clases <code>base</code>, <code>Animal</code> y
-                <code>Volador</code>.
-              </li>
-            </ul>
-            <!-- Consideraciones Sobre la Herencia Múltiple -->
-            <div>
-              <h3>Consideraciones Sobre la Herencia Múltiple</h3>
+              <p>En este ejemplo:</p>
               <ul>
                 <li>
-                  La herencia única ofrece una estructuración más clara y
-                  predecible del código, facilitando su comprensión y
-                  mantenimiento.
+                  <code>Animal</code> es una clase base que tiene un método
+                  <code>hacer_sonido</code> y un atributo <code>nombre</code>.
                 </li>
                 <li>
-                  La herencia múltiple introduce complejidad significativa,
-                  aumentando el riesgo de errores en la implementación y
-                  comprensión de las interacciones entre superclases.
+                  <code>Volador</code> es otra clase base que tiene un método
+                  <code>volar</code>.
                 </li>
                 <li>
-                  En sistemas con herencia múltiple, la resolución de métodos
-                  y la sobrescritura pueden volverse notablemente complicadas.
-                  El uso de <code>super()</code> se torna ambiguo,
-                  especialmente en jerarquías de herencia más profundas.
-                </li>
-                <li>
-                  La herencia múltiple puede comprometer el principio de
-                  responsabilidad única, ya que genera clases que combinan
-                  funcionalidades de diferentes fuentes sin una cohesión
-                  inherente.
-                </li>
-                <li>
-                  Recomendamos considerar la herencia múltiple como un último
-                  recurso. En la mayoría de los casos, los patrones de
-                  composición y delegación ofrecen soluciones más flexibles,
-                  legibles y mantenibles.
+                  <code>Pajaro</code> es una clase derivada que hereda de ambas
+                  clases <code>base</code>, <code>Animal</code> y
+                  <code>Volador</code>.
                 </li>
               </ul>
-            </div>
-            <!-- Consideraciones Sobre la Herencia Múltiple fin -->
-            <!-- Orden de Resolución de Métodos (MRO) -->
-            <div>
-              <h3>Orden de Resolución de Métodos (MRO)</h3>
-              <p>
-                La Orden de Resolución de Métodos (<abbr title="Mean Relative Order">MRO</abbr>) es un concepto
-                fundamental en la programación orientada a
-                objetos, especialmente en lenguajes que soportan herencia
-                múltiple, como Python. La MRO determina el orden en el que se
-                buscan los métodos y atributos en una jerarquía de clases
-                cuando se realiza una llamada a un método o se accede a un
-                atributo.
-              </p>
-              <!-- ¿Por qué es Importante la MRO? -->
+              <!-- Consideraciones Sobre la Herencia Múltiple -->
               <div>
-                <h4>¿Por qué es Importante la MRO?</h4>
-                <p>
-                  En lenguajes que soportan herencia múltiple, una clase puede
-                  heredar de múltiples clases base. Esto puede llevar a
-                  ambigüedades sobre qué método o atributo debe ser utilizado
-                  si múltiples clases base definen el mismo método o atributo.
-                  La MRO resuelve estas ambigüedades proporcionando un orden
-                  específico en el que se buscan los métodos y atributos.
-                </p>
+                <h3>Consideraciones Sobre la Herencia Múltiple</h3>
+                <ul>
+                  <li>
+                    La herencia única ofrece una estructuración más clara y
+                    predecible del código, facilitando su comprensión y
+                    mantenimiento.
+                  </li>
+                  <li>
+                    La herencia múltiple introduce complejidad significativa,
+                    aumentando el riesgo de errores en la implementación y
+                    comprensión de las interacciones entre superclases.
+                  </li>
+                  <li>
+                    En sistemas con herencia múltiple, la resolución de métodos
+                    y la sobrescritura pueden volverse notablemente complicadas.
+                    El uso de <code>super()</code> se torna ambiguo,
+                    especialmente en jerarquías de herencia más profundas.
+                  </li>
+                  <li>
+                    La herencia múltiple puede comprometer el principio de
+                    responsabilidad única, ya que genera clases que combinan
+                    funcionalidades de diferentes fuentes sin una cohesión
+                    inherente.
+                  </li>
+                  <li>
+                    Recomendamos considerar la herencia múltiple como un último
+                    recurso. En la mayoría de los casos, los patrones de
+                    composición y delegación ofrecen soluciones más flexibles,
+                    legibles y mantenibles.
+                  </li>
+                </ul>
               </div>
-              <!-- ¿Por qué es Importante la MRO? fin -->
-              <!-- MRO en Python -->
+              <!-- Consideraciones Sobre la Herencia Múltiple fin -->
+              <!-- Orden de Resolución de Métodos (MRO) -->
               <div>
-                <h4>MRO en Python</h4>
+                <h3>Orden de Resolución de Métodos (MRO)</h3>
                 <p>
-                  Python utiliza un algoritmo llamado C3 Linearization para
-                  determinar la MRO. Este algoritmo garantiza que las clases
-                  sean recorridas en un orden que respeta la jerarquía de
-                  herencia y evita conflictos.
+                  La Orden de Resolución de Métodos (<abbr title="Mean Relative Order">MRO</abbr>) es un concepto
+                  fundamental en la programación orientada a
+                  objetos, especialmente en lenguajes que soportan herencia
+                  múltiple, como Python. La MRO determina el orden en el que se
+                  buscan los métodos y atributos en una jerarquía de clases
+                  cuando se realiza una llamada a un método o se accede a un
+                  atributo.
                 </p>
-                <p>Ejemplo:</p>
-                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <!-- ¿Por qué es Importante la MRO? -->
+                <div>
+                  <h4>¿Por qué es Importante la MRO?</h4>
+                  <p>
+                    En lenguajes que soportan herencia múltiple, una clase puede
+                    heredar de múltiples clases base. Esto puede llevar a
+                    ambigüedades sobre qué método o atributo debe ser utilizado
+                    si múltiples clases base definen el mismo método o atributo.
+                    La MRO resuelve estas ambigüedades proporcionando un orden
+                    específico en el que se buscan los métodos y atributos.
+                  </p>
+                </div>
+                <!-- ¿Por qué es Importante la MRO? fin -->
+                <!-- MRO en Python -->
+                <div>
+                  <h4>MRO en Python</h4>
+                  <p>
+                    Python utiliza un algoritmo llamado C3 Linearization para
+                    determinar la MRO. Este algoritmo garantiza que las clases
+                    sean recorridas en un orden que respeta la jerarquía de
+                    herencia y evita conflictos.
+                  </p>
+                  <p>Ejemplo:</p>
+                  <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Clase base A, define un método general llamado "method"
                       class A:
@@ -347,81 +338,71 @@
                       # Salida: Igual que el anterior, porque ambos muestran el orden de resolución de métodos.
                     </code>
                   </pre>
-                <p>
-                  Cuando se llama a <code>d.method()</code>, Python buscará el
-                  método <code>method</code> en el siguiente orden:
-                </p>
-                <ul>
-                  <li>
-                    Clase <code>D</code>: Hereda de ambas clases
-                    <code>B</code> y <code>C</code>. No sobrescribe el método
-                    method.
-                  </li>
-                  <li>
-                    Clase <code>B</code>: Hereda de <code>A</code> y
-                    sobrescribe el método method, que imprime
-                    <code>"Method in B"</code>.
-                  </li>
-                  <li>
-                    Clase <code>C</code>: También hereda de <code>A</code> y
-                    sobrescribe el método <code>method</code>, que imprime
-                    <code>"Method in C"</code>.
-                  </li>
-                  <li>
-                    Clase <code>A</code>: Define el método
-                    <code>method</code>, que imprime
-                    <code>"Method in A"</code>.
-                  </li>
-                  <li>
-                    Finalmente, si no lo encuentra en ninguna de las clases
-                    anteriores, buscará en <code>object</code>.
-                  </li>
-                </ul>
-                <p>
-                  Como la clase <code>D</code> no proporciona su propia
-                  implementación del método, Python continúa su búsqueda.
-                  Encuentra la implementación en la clase <code>B</code>. En
-                  consecuencia, cuando se invoca <code>method()</code>, se
-                  ejecutará la versión de la clase <code>B</code>, imprimiendo
-                  <code>"Method in B"</code> y ahí termina la búsqueda.
-                </p>
+                  <p>
+                    Cuando se llama a <code>d.method()</code>, Python buscará el
+                    método <code>method</code> en el siguiente orden:
+                  </p>
+                  <ul>
+                    <li>
+                      Clase <code>D</code>: Hereda de ambas clases
+                      <code>B</code> y <code>C</code>. No sobrescribe el método
+                      method.
+                    </li>
+                    <li>
+                      Clase <code>B</code>: Hereda de <code>A</code> y
+                      sobrescribe el método method, que imprime
+                      <code>"Method in B"</code>.
+                    </li>
+                    <li>
+                      Clase <code>C</code>: También hereda de <code>A</code> y
+                      sobrescribe el método <code>method</code>, que imprime
+                      <code>"Method in C"</code>.
+                    </li>
+                    <li>
+                      Clase <code>A</code>: Define el método
+                      <code>method</code>, que imprime
+                      <code>"Method in A"</code>.
+                    </li>
+                    <li>
+                      Finalmente, si no lo encuentra en ninguna de las clases
+                      anteriores, buscará en <code>object</code>.
+                    </li>
+                  </ul>
+                  <p>
+                    Como la clase <code>D</code> no proporciona su propia
+                    implementación del método, Python continúa su búsqueda.
+                    Encuentra la implementación en la clase <code>B</code>. En
+                    consecuencia, cuando se invoca <code>method()</code>, se
+                    ejecutará la versión de la clase <code>B</code>, imprimiendo
+                    <code>"Method in B"</code> y ahí termina la búsqueda.
+                  </p>
+                </div>
+                <!-- MRO en Python fin -->
               </div>
-              <!-- MRO en Python fin -->
+              <!-- Orden de Resolución de Métodos (MRO) fin -->
+
             </div>
-            <!-- Orden de Resolución de Métodos (MRO) fin -->
-            <!-- Go to top -->
-            <div class="text-center mt-5">
-              <a href="#" id="myBtnScroll2" title="Go to top">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                  class="bi bi-arrow-bar-up" viewBox="0 0 16 16" style="margin-left: -2px">
-                  <path fill-rule="evenodd"
-                    d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5" />
-                </svg>
-              </a>
-            </div>
-            <!-- Go to top Fin-->
-          </div>
-          <!-- Herencia Múltiple Fin -->
-          <!-- Métodos especiales y super() -->
-          <div id="metodosEspecialesySuper" class="mt-5 pt-5">
-            <h2 class="mt-1">Métodos especiales y super()</h2>
-            <!-- issubclass() -->
-            <div>
-              <h3>issubclass()</h3>
-              <p>
-                La función <code>issubclass()</code> en Python es una función
-                integrada que se utiliza para determinar si una clase es una
-                subclase de otra. Esto es útil al trabajar con jerarquías de
-                clases y herencia.
-              </p>
-              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+            <!-- Herencia Múltiple Fin -->
+            <!-- Métodos especiales y super() -->
+            <div id="metodosEspecialesySuper" class="mt-5 pt-5">
+              <h2 class="mt-1">Métodos especiales y super()</h2>
+              <!-- issubclass() -->
+              <div>
+                <h3>issubclass()</h3>
+                <p>
+                  La función <code>issubclass()</code> en Python es una función
+                  integrada que se utiliza para determinar si una clase es una
+                  subclase de otra. Esto es útil al trabajar con jerarquías de
+                  clases y herencia.
+                </p>
+                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     issubclass(subclass, class)
                     # Salida: True si la subclase es derivada de la clase.
                   </code>
                 </pre>
-              <p>Ejemplo: Verificar una subclase directa:</p>
-              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <p>Ejemplo: Verificar una subclase directa:</p>
+                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     class A
                         pass
@@ -431,8 +412,8 @@
                     print(issubclass(A, B))  # False
                   </code>
                 </pre>
-              <p>Uso con múltiples clases en una tupla:</p>
-              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <p>Uso con múltiples clases en una tupla:</p>
+                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     # Definición de clases
                     class A:
@@ -449,25 +430,25 @@
                     print(issubclass(C, (A, B))) # True: C es subclase de A y también de B
                   </code>
                 </pre>
-            </div>
-            <!-- issubclass() fin -->
-            <!-- isinstance() -->
-            <div>
-              <h3>isinstance()</h3>
-              <p>
-                La función <code>isinstance()</code> en Python se utiliza para
-                verificar si un objeto pertenece a una clase o a una subclase
-                específica. Es particularmente útil para validar tipos de
-                datos en un programa y mejorar la legibilidad y la seguridad
-                del código.
-              </p>
-              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- issubclass() fin -->
+              <!-- isinstance() -->
+              <div>
+                <h3>isinstance()</h3>
+                <p>
+                  La función <code>isinstance()</code> en Python se utiliza para
+                  verificar si un objeto pertenece a una clase o a una subclase
+                  específica. Es particularmente útil para validar tipos de
+                  datos en un programa y mejorar la legibilidad y la seguridad
+                  del código.
+                </p>
+                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     isinstance(objectName, ClassName_or_tuple)
                   </code>
                 </pre>
-              <p>Ejemplo: Verificar múltiples clases con una tupla:</p>
-              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <p>Ejemplo: Verificar múltiples clases con una tupla:</p>
+                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     class MiClase:
                       pass
@@ -477,19 +458,19 @@
                     print(f"¿Es 'obj' una instancia de MiClase? {isinstance(obj, MiClase)}")  # True
                   </code>
                 </pre>
-            </div>
-            <!-- isinstance() fin -->
-            <!-- El Operador is -->
-            <div>
-              <h3>El Operador is</h3>
-              <p>
-                En programación, el operador <code>is</code> es un operador en
-                Python que se utiliza para comprobar si dos variables o
-                objetos son el mismo objeto en memoria, es decir, si tienen la
-                misma ubicación de memoria.
-              </p>
-              <p>Ejemplo:</p>
-              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- isinstance() fin -->
+              <!-- El Operador is -->
+              <div>
+                <h3>El Operador is</h3>
+                <p>
+                  En programación, el operador <code>is</code> es un operador en
+                  Python que se utiliza para comprobar si dos variables o
+                  objetos son el mismo objeto en memoria, es decir, si tienen la
+                  misma ubicación de memoria.
+                </p>
+                <p>Ejemplo:</p>
+                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     a = [1, 2, 3]
                     b = a
@@ -498,44 +479,44 @@
                     print(a is c)  # False, porque a y c son dos objetos diferentes con el mismo contenido
                   </code>
                 </pre>
-              <!-- Diferencia Clave -->
-              <div>
-                <h4>Diferencia Clave</h4>
-                <ul>
-                  <li><code>==</code> compara el valor de los objetos.</li>
-                  <li>
-                    <code>is</code> compara si las referencias de los objetos
-                    son las mismas (es decir, si ambos apuntan al mismo lugar
-                    en memoria).
-                  </li>
-                </ul>
+                <!-- Diferencia Clave -->
+                <div>
+                  <h4>Diferencia Clave</h4>
+                  <ul>
+                    <li><code>==</code> compara el valor de los objetos.</li>
+                    <li>
+                      <code>is</code> compara si las referencias de los objetos
+                      son las mismas (es decir, si ambos apuntan al mismo lugar
+                      en memoria).
+                    </li>
+                  </ul>
+                </div>
+                <!-- Diferencia Clave fin -->
               </div>
-              <!-- Diferencia Clave fin -->
-            </div>
-            <!-- El Operador is fin -->
-            <!-- super() -->
-            <div>
-              <h3>super()</h3>
-              <p>
-                En Python, la función super() es utilizada para llamar a
-                métodos de una clase base (superclase) desde una clase
-                derivada (subclase). Es especialmente útil en el contexto de
-                la herencia, cuando se quiere acceder a los métodos o
-                atributos de una clase padre sin tener que referirse
-                explícitamente a ella.
-              </p>
-              <!-- ¿Cómo Funciona super()? -->
+              <!-- El Operador is fin -->
+              <!-- super() -->
               <div>
-                <h4>¿Cómo Funciona super()?</h4>
+                <h3>super()</h3>
                 <p>
-                  <code>super()</code> se usa principalmente en el método
-                  <code>__init__()</code> para inicializar una clase base,
-                  pero también se puede usar para invocar cualquier otro
-                  método de la clase base. Su uso facilita la reutilización
-                  del código en una jerarquía de clases.
+                  En Python, la función super() es utilizada para llamar a
+                  métodos de una clase base (superclase) desde una clase
+                  derivada (subclase). Es especialmente útil en el contexto de
+                  la herencia, cuando se quiere acceder a los métodos o
+                  atributos de una clase padre sin tener que referirse
+                  explícitamente a ella.
                 </p>
-                <p>Ejemplo:</p>
-                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <!-- ¿Cómo Funciona super()? -->
+                <div>
+                  <h4>¿Cómo Funciona super()?</h4>
+                  <p>
+                    <code>super()</code> se usa principalmente en el método
+                    <code>__init__()</code> para inicializar una clase base,
+                    pero también se puede usar para invocar cualquier otro
+                    método de la clase base. Su uso facilita la reutilización
+                    del código en una jerarquía de clases.
+                  </p>
+                  <p>Ejemplo:</p>
+                  <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       class Animal:
                           def __init__(self, nombre):
@@ -555,82 +536,72 @@
                       # salida: Rex ladra
                     </code>
                   </pre>
-                <p>Explicación:</p>
-                <ul>
-                  <li>
-                    La clase <code>Perro</code> hereda de <code>Animal</code>.
-                  </li>
-                  <li>
-                    Se utiliza <code>super().__init__(nombre)</code> para
-                    llamar al constructor de la clase base
-                    <code>Animal</code> y asignar el atributo
-                    <code>nombre</code>.
-                  </li>
-                  <li>
-                    Se usa <code>super().hablar()</code> para llamar al método
-                    <code>hablar()</code> de la clase base antes de agregar
-                    funcionalidad adicional en la clase derivada.
-                  </li>
-                </ul>
+                  <p>Explicación:</p>
+                  <ul>
+                    <li>
+                      La clase <code>Perro</code> hereda de <code>Animal</code>.
+                    </li>
+                    <li>
+                      Se utiliza <code>super().__init__(nombre)</code> para
+                      llamar al constructor de la clase base
+                      <code>Animal</code> y asignar el atributo
+                      <code>nombre</code>.
+                    </li>
+                    <li>
+                      Se usa <code>super().hablar()</code> para llamar al método
+                      <code>hablar()</code> de la clase base antes de agregar
+                      funcionalidad adicional en la clase derivada.
+                    </li>
+                  </ul>
+                </div>
+                <!-- ¿Cómo Funciona super()? fin -->
+                <!-- ¿Cuándo Usar super()? -->
+                <div>
+                  <h4>¿Cuándo Usar super()?</h4>
+                  <ul>
+                    <li>
+                      <span class="fw-bold">Herencia múltiple</span>: En Python,
+                      una clase puede heredar de más de una clase base.
+                      <code>super()</code> ayuda a manejar la llamada a los
+                      métodos de las clases base en el orden correcto.
+                    </li>
+                    <li>
+                      <span class="fw-bold">Métodos de clase</span>: Cuando se
+                      necesita modificar o extender el comportamiento de un
+                      método de la clase base sin redefinirlo completamente.
+                    </li>
+                  </ul>
+                </div>
+                <!-- ¿Cuándo Usar super()? fin -->
               </div>
-              <!-- ¿Cómo Funciona super()? fin -->
-              <!-- ¿Cuándo Usar super()? -->
-              <div>
-                <h4>¿Cuándo Usar super()?</h4>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Herencia múltiple</span>: En Python,
-                    una clase puede heredar de más de una clase base.
-                    <code>super()</code> ayuda a manejar la llamada a los
-                    métodos de las clases base en el orden correcto.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Métodos de clase</span>: Cuando se
-                    necesita modificar o extender el comportamiento de un
-                    método de la clase base sin redefinirlo completamente.
-                  </li>
-                </ul>
-              </div>
-              <!-- ¿Cuándo Usar super()? fin -->
+              <!-- super() fin -->
+
             </div>
-            <!-- super() fin -->
-            <!-- Go to top -->
-            <div class="text-center mt-5">
-              <a href="#" id="myBtnScroll2" title="Go to top">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                  class="bi bi-arrow-bar-up" viewBox="0 0 16 16" style="margin-left: -2px">
-                  <path fill-rule="evenodd"
-                    d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5" />
-                </svg>
-              </a>
-            </div>
-            <!-- Go to top Fin-->
-          </div>
-          <!-- Métodos especiales y super() Fin -->
-          <!-- Cómo Construir una Jerarquía de Clases -->
-          <div id="comoConstruirUnaJerarquiaDeClases" class="mt-5 pt-5">
-            <h2 class="mt-1">Cómo Construir una Jerarquía de Clases</h2>
-            <p>
-              Construir una jerarquía de clases en Python implica definir
-              varias clases y establecer relaciones de herencia entre ellas.
-              Aquí tienes un ejemplo básico para ilustrar cómo hacerlo:
-            </p>
-            <ul>
-              <li>
-                <strong>Definir la clase base</strong>: Esta es la clase
-                principal de la que heredarán otras clases.
-              </li>
-              <li>
-                <strong>Definir las clases derivadas</strong>: Estas clases
-                heredan de la clase base y pueden extender o modificar su
-                comportamiento.
-              </li>
-            </ul>
-            <p>
-              A continuación, se muestra un ejemplo de una jerarquía de clases
-              para un sistema de gestión de empleados:
-            </p>
-            <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+            <!-- Métodos especiales y super() Fin -->
+            <!-- Cómo Construir una Jerarquía de Clases -->
+            <div id="comoConstruirUnaJerarquiaDeClases" class="mt-5 pt-5">
+              <h2 class="mt-1">Cómo Construir una Jerarquía de Clases</h2>
+              <p>
+                Construir una jerarquía de clases en Python implica definir
+                varias clases y establecer relaciones de herencia entre ellas.
+                Aquí tienes un ejemplo básico para ilustrar cómo hacerlo:
+              </p>
+              <ul>
+                <li>
+                  <strong>Definir la clase base</strong>: Esta es la clase
+                  principal de la que heredarán otras clases.
+                </li>
+                <li>
+                  <strong>Definir las clases derivadas</strong>: Estas clases
+                  heredan de la clase base y pueden extender o modificar su
+                  comportamiento.
+                </li>
+              </ul>
+              <p>
+                A continuación, se muestra un ejemplo de una jerarquía de clases
+                para un sistema de gestión de empleados:
+              </p>
+              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   # Clase base
                   class Empleado:
@@ -667,157 +638,147 @@
                   # salida: Nombre: Carlos Gómez, Edad: 25, Salario: 60000, Lenguaje de Programación: Python
                 </code>
               </pre>
-            <p>Explicación</p>
-            <ul>
-              <li>
-                <strong>Clase Base (Empleado)</strong>:
-                <ul>
-                  <li>
-                    Tiene un constructor (<code>__init__</code>) que
-                    inicializa los atributos <code>nombre</code>,
-                    <code>edad</code> y <code>salario</code>.
-                  </li>
-                  <li>
-                    Tiene un método <code>mostrar_informacion</code> que
-                    devuelve una cadena con la información del empleado.
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <strong>Clase Derivada 1 (Gerente)</strong>:
-                <ul>
-                  <li>Hereda de <code>Empleado</code>.</li>
-                  <li>
-                    Añade un atributo adicional <code>departamento</code>.
-                  </li>
-                  <li>
-                    Sobrescribe el método
-                    <code>mostrar_informacion</code> para incluir el
-                    departamento.
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <strong>Clase Derivada 2 (Desarrollador)</strong>:
-                <ul>
-                  <li>Hereda de <code>Empleado</code>.</li>
-                  <li>
-                    Añade un atributo adicional
-                    <code>lenguaje_programacion</code>.
-                  </li>
-                  <li>
-                    Sobrescribe el método
-                    <code>mostrar_informacion</code> para incluir el lenguaje
-                    de programación.
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <strong>Creación de Instancias</strong>:
-                <ul>
-                  <li>
-                    Se crean instancias de <code>Empleado</code>,
-                    <code>Gerente</code> y <code>Desarrollador</code>.
-                  </li>
-                  <li>
-                    Se muestra la información de cada instancia utilizando el
-                    método <code>mostrar_informacion</code>.
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <p>
-              Este ejemplo muestra cómo puedes construir una jerarquía de
-              clases en Python utilizando herencia y cómo puedes extender y
-              sobrescribir métodos en las clases derivadas.
-            </p>
-            <p>
-              Este ejemplo muestra cómo se puede construir una jerarquía de
-              clases en Python utilizando herencia y cómo se puede extender y
-              sobrescribir métodos en las clases derivadas.
-            </p>
-            <!-- Go to top -->
-            <div class="text-center mt-5">
-              <a href="#" id="myBtnScroll2" title="Go to top">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                  class="bi bi-arrow-bar-up" viewBox="0 0 16 16" style="margin-left: -2px">
-                  <path fill-rule="evenodd"
-                    d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5" />
-                </svg>
-              </a>
+              <p>Explicación</p>
+              <ul>
+                <li>
+                  <strong>Clase Base (Empleado)</strong>:
+                  <ul>
+                    <li>
+                      Tiene un constructor (<code>__init__</code>) que
+                      inicializa los atributos <code>nombre</code>,
+                      <code>edad</code> y <code>salario</code>.
+                    </li>
+                    <li>
+                      Tiene un método <code>mostrar_informacion</code> que
+                      devuelve una cadena con la información del empleado.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Clase Derivada 1 (Gerente)</strong>:
+                  <ul>
+                    <li>Hereda de <code>Empleado</code>.</li>
+                    <li>
+                      Añade un atributo adicional <code>departamento</code>.
+                    </li>
+                    <li>
+                      Sobrescribe el método
+                      <code>mostrar_informacion</code> para incluir el
+                      departamento.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Clase Derivada 2 (Desarrollador)</strong>:
+                  <ul>
+                    <li>Hereda de <code>Empleado</code>.</li>
+                    <li>
+                      Añade un atributo adicional
+                      <code>lenguaje_programacion</code>.
+                    </li>
+                    <li>
+                      Sobrescribe el método
+                      <code>mostrar_informacion</code> para incluir el lenguaje
+                      de programación.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Creación de Instancias</strong>:
+                  <ul>
+                    <li>
+                      Se crean instancias de <code>Empleado</code>,
+                      <code>Gerente</code> y <code>Desarrollador</code>.
+                    </li>
+                    <li>
+                      Se muestra la información de cada instancia utilizando el
+                      método <code>mostrar_informacion</code>.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <p>
+                Este ejemplo muestra cómo puedes construir una jerarquía de
+                clases en Python utilizando herencia y cómo puedes extender y
+                sobrescribir métodos en las clases derivadas.
+              </p>
+              <p>
+                Este ejemplo muestra cómo se puede construir una jerarquía de
+                clases en Python utilizando herencia y cómo se puede extender y
+                sobrescribir métodos en las clases derivadas.
+              </p>
+
             </div>
-            <!-- Go to top Fin-->
-          </div>
-          <!-- Cómo Construir una Jerarquía de Clases Fin -->
-          <!-- Ventajas de la Herencia -->
-          <div id="ventajasDeLaHerencia" class="mt-5 pt-5">
-            <h2 class="mt-1">Ventajas de la Herencia</h2>
-            <p>
-              La herencia en Python es un mecanismo de programación orientada
-              a objetos que permite crear una nueva clase (llamada clase
-              derivada o subclase) basada en una clase existente (llamada
-              clase base o superclase). Este enfoque tiene varias ventajas
-              significativas:
-            </p>
-            <ul>
-              <li>
-                <span class="fw-bold">Reutilización de código</span>:
-                <ul>
-                  <li>
-                    Se pueden reutilizar los métodos y atributos de una clase
-                    base en una subclase, lo que reduce la duplicación de
-                    código.
-                  </li>
-                  <li>
-                    Facilita la escritura de código más limpio y modular.
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <span class="fw-bold">Mantenimiento más sencillo</span>: Al
-                centralizar la lógica compartida en la clase base, cualquier
-                cambio necesario solo debe realizarse en un lugar, lo que
-                simplifica el mantenimiento del código.
-              </li>
-              <li>
-                <span class="fw-bold">Extensibilidad</span>: Las subclases
-                pueden ampliar o modificar la funcionalidad de las clases base
-                sin afectar a las clases existentes. Esto permite que el
-                código sea más flexible y adaptable a nuevas necesidades.
-              </li>
-              <li>
-                <span class="fw-bold">Polimorfismo</span>: La herencia
-                facilita la implementación de polimorfismo, lo que permite
-                usar un mismo método o atributo con comportamientos
-                específicos para cada subclase. Esto es útil en situaciones en
-                las que diferentes clases comparten una interfaz común.
-              </li>
-              <li>
-                <span class="fw-bold">Organización jerárquica</span>: Permite
-                organizar las clases en una jerarquía lógica, lo que mejora la
-                comprensión y legibilidad del código. Por ejemplo, una clase
-                base <code>Vehículo</code> puede tener subclases como
-                <code>Carro</code> y <code>Moto</code>.
-              </li>
-              <li>
-                <span class="fw-bold">Sobrescritura de métodos</span>: Las
-                subclases pueden redefinir métodos de la clase base para
-                ajustarlos a necesidades específicas, lo que facilita la
-                personalización del comportamiento.
-              </li>
-              <li>
-                <span class="fw-bold">Compatibilidad con múltiples herencias</span>: Python permite la herencia
-                múltiple, lo que significa que
-                una subclase puede derivarse de más de una clase base,
-                combinando las funcionalidades de todas ellas.
-              </li>
-            </ul>
-            <p>
-              En el siguiente ejemplo se muestra cómo la herencia permite
-              crear subclases con comportamientos específicos (polimorfismo) a
-              partir de una clase base.
-            </p>
-            <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+            <!-- Cómo Construir una Jerarquía de Clases Fin -->
+            <!-- Ventajas de la Herencia -->
+            <div id="ventajasDeLaHerencia" class="mt-5 pt-5">
+              <h2 class="mt-1">Ventajas de la Herencia</h2>
+              <p>
+                La herencia en Python es un mecanismo de programación orientada
+                a objetos que permite crear una nueva clase (llamada clase
+                derivada o subclase) basada en una clase existente (llamada
+                clase base o superclase). Este enfoque tiene varias ventajas
+                significativas:
+              </p>
+              <ul>
+                <li>
+                  <span class="fw-bold">Reutilización de código</span>:
+                  <ul>
+                    <li>
+                      Se pueden reutilizar los métodos y atributos de una clase
+                      base en una subclase, lo que reduce la duplicación de
+                      código.
+                    </li>
+                    <li>
+                      Facilita la escritura de código más limpio y modular.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="fw-bold">Mantenimiento más sencillo</span>: Al
+                  centralizar la lógica compartida en la clase base, cualquier
+                  cambio necesario solo debe realizarse en un lugar, lo que
+                  simplifica el mantenimiento del código.
+                </li>
+                <li>
+                  <span class="fw-bold">Extensibilidad</span>: Las subclases
+                  pueden ampliar o modificar la funcionalidad de las clases base
+                  sin afectar a las clases existentes. Esto permite que el
+                  código sea más flexible y adaptable a nuevas necesidades.
+                </li>
+                <li>
+                  <span class="fw-bold">Polimorfismo</span>: La herencia
+                  facilita la implementación de polimorfismo, lo que permite
+                  usar un mismo método o atributo con comportamientos
+                  específicos para cada subclase. Esto es útil en situaciones en
+                  las que diferentes clases comparten una interfaz común.
+                </li>
+                <li>
+                  <span class="fw-bold">Organización jerárquica</span>: Permite
+                  organizar las clases en una jerarquía lógica, lo que mejora la
+                  comprensión y legibilidad del código. Por ejemplo, una clase
+                  base <code>Vehículo</code> puede tener subclases como
+                  <code>Carro</code> y <code>Moto</code>.
+                </li>
+                <li>
+                  <span class="fw-bold">Sobrescritura de métodos</span>: Las
+                  subclases pueden redefinir métodos de la clase base para
+                  ajustarlos a necesidades específicas, lo que facilita la
+                  personalización del comportamiento.
+                </li>
+                <li>
+                  <span class="fw-bold">Compatibilidad con múltiples herencias</span>: Python permite la herencia
+                  múltiple, lo que significa que
+                  una subclase puede derivarse de más de una clase base,
+                  combinando las funcionalidades de todas ellas.
+                </li>
+              </ul>
+              <p>
+                En el siguiente ejemplo se muestra cómo la herencia permite
+                crear subclases con comportamientos específicos (polimorfismo) a
+                partir de una clase base.
+              </p>
+              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   class Animal:
                       def __init__(self, nombre):
@@ -838,54 +799,44 @@
                   # Salida: Michi: El gato maúlla
                 </code>
               </pre>
-            <!-- Go to top -->
-            <div class="text-center mt-5">
-              <a href="#" id="myBtnScroll2" title="Go to top">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                  class="bi bi-arrow-bar-up" viewBox="0 0 16 16" style="margin-left: -2px">
-                  <path fill-rule="evenodd"
-                    d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5" />
-                </svg>
-              </a>
+
             </div>
-            <!-- Go to top Fin-->
-          </div>
-          <!-- Ventajas de la Herencia Fin -->
-          <!-- Buenas Prácticas -->
-          <div id="buenasPracticas" class="mt-5 pt-5">
-            <h2 class="mt-1">Buenas Prácticas</h2>
-            <p>
-              En la programación orientada a objetos en Python, la herencia es
-              una herramienta poderosa para estructurar el código de manera
-              eficiente y reutilizable. Sin embargo, para evitar problemas
-              como el acoplamiento excesivo o la complejidad innecesaria, es
-              importante seguir ciertas buenas prácticas al implementar
-              herencia. A continuación, se presentan algunas recomendaciones
-              clave:
-            </p>
-            <ul>
-              <li>
-                <span class="fw-bold">Usar la herencia solo cuando sea necesaria</span>:
-                <ul>
-                  <li>
-                    <span class="fw-bold">Cuándo usarla</span>: Cuando existe
-                    una relación lógica del tipo "es un(a)" (e.g., un Perro es
-                    un Animal).
-                  </li>
-                  <li>
-                    <span class="fw-bold">Cuándo evitarla</span>: Si la
-                    relación es más bien "tiene un(a)" o "usa un(a)" (e.g., un
-                    Coche tiene un Motor), considere la composición en lugar
-                    de la herencia.
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <span class="fw-bold">Mantener las clases base simples</span>:
-                Evite clases base excesivamente complejas. Mantenga su
-                funcionalidad lo más genérica posible para que sean
-                reutilizables y fáciles de extender.
-                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+            <!-- Ventajas de la Herencia Fin -->
+            <!-- Buenas Prácticas -->
+            <div id="buenasPracticas" class="mt-5 pt-5">
+              <h2 class="mt-1">Buenas Prácticas</h2>
+              <p>
+                En la programación orientada a objetos en Python, la herencia es
+                una herramienta poderosa para estructurar el código de manera
+                eficiente y reutilizable. Sin embargo, para evitar problemas
+                como el acoplamiento excesivo o la complejidad innecesaria, es
+                importante seguir ciertas buenas prácticas al implementar
+                herencia. A continuación, se presentan algunas recomendaciones
+                clave:
+              </p>
+              <ul>
+                <li>
+                  <span class="fw-bold">Usar la herencia solo cuando sea necesaria</span>:
+                  <ul>
+                    <li>
+                      <span class="fw-bold">Cuándo usarla</span>: Cuando existe
+                      una relación lógica del tipo "es un(a)" (e.g., un Perro es
+                      un Animal).
+                    </li>
+                    <li>
+                      <span class="fw-bold">Cuándo evitarla</span>: Si la
+                      relación es más bien "tiene un(a)" o "usa un(a)" (e.g., un
+                      Coche tiene un Motor), considere la composición en lugar
+                      de la herencia.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="fw-bold">Mantener las clases base simples</span>:
+                  Evite clases base excesivamente complejas. Mantenga su
+                  funcionalidad lo más genérica posible para que sean
+                  reutilizables y fáciles de extender.
+                  <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       class Persona:
                       def __init__(self, nombre, edad):
@@ -898,18 +849,18 @@
                       print(persona1.saludar())
                     </code>
                   </pre>
-              </li>
-              <li>
-                <span class="fw-bold">Evitar herencia múltiple si es posible</span>:
-                <ul>
-                  <li>
-                    La herencia múltiple puede introducir ambigüedades y
-                    problemas de resolución de métodos. Use interfaces o
-                    clases mixin para agregar funcionalidades específicas.
-                  </li>
-                  <li>
-                    Ejemplo de una clase mixin:
-                    <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                </li>
+                <li>
+                  <span class="fw-bold">Evitar herencia múltiple si es posible</span>:
+                  <ul>
+                    <li>
+                      La herencia múltiple puede introducir ambigüedades y
+                      problemas de resolución de métodos. Use interfaces o
+                      clases mixin para agregar funcionalidades específicas.
+                    </li>
+                    <li>
+                      Ejemplo de una clase mixin:
+                      <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Definimos un mixin para agregar la funcionalidad de volar.
                           # Un mixin es una clase que proporciona funcionalidad adicional
@@ -942,15 +893,15 @@
                           mi_ave.volar()         # Imprime: ¡Estoy volando!
                         </code>
                       </pre>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <span class="fw-bold">Usar <code>super()</code> para llamar al constructor de la
-                  clase base</span>: Siempre que se sobrescriba el método <code>__init__</code>,
-                utilice <code>super()</code> para garantizar que la clase base
-                sea inicializada correctamente.
-                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="fw-bold">Usar <code>super()</code> para llamar al constructor de la
+                    clase base</span>: Siempre que se sobrescriba el método <code>__init__</code>,
+                  utilice <code>super()</code> para garantizar que la clase base
+                  sea inicializada correctamente.
+                  <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       class Mamifero(Animal):
                           def __init__(self, nombre, tiene_pelo=True):
@@ -958,24 +909,24 @@
                               self.tiene_pelo = tiene_pelo
                     </code>
                   </pre>
-              </li>
-              <li>
-                <span class="fw-bold">Sobrescribir métodos de manera explícita</span>: Si sobrescribe se un método,
-                estar seguro de que sea claro
-                y documentar su propósito. Llamar a los métodos de la clase
-                base si es necesario.
-                <ul>
-                  <li>
-                    Para sobrescribir métodos de manera explícita y hacer el
-                    código más entendible, se puede utilizar el decorador
-                    <code>@override</code>, disponible desde Python 3.12. Esto
-                    deja claro que el método sobrescribe uno de la clase base.
-                    Además, es útil agregar comentarios y dar nombres más
-                    descriptivos si es necesario
-                  </li>
-                  <li>
-                    Aquí está el código ejemplo:
-                    <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                </li>
+                <li>
+                  <span class="fw-bold">Sobrescribir métodos de manera explícita</span>: Si sobrescribe se un método,
+                  estar seguro de que sea claro
+                  y documentar su propósito. Llamar a los métodos de la clase
+                  base si es necesario.
+                  <ul>
+                    <li>
+                      Para sobrescribir métodos de manera explícita y hacer el
+                      código más entendible, se puede utilizar el decorador
+                      <code>@override</code>, disponible desde Python 3.12. Esto
+                      deja claro que el método sobrescribe uno de la clase base.
+                      Además, es útil agregar comentarios y dar nombres más
+                      descriptivos si es necesario
+                    </li>
+                    <li>
+                      Aquí está el código ejemplo:
+                      <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             from typing import override  # Disponible desde Python 3.12
                             class Mamifero:
@@ -992,57 +943,75 @@
                                 gato.hacer_sonido()  # Salida: Miau
                           </code>
                         </pre>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <span class="fw-bold">Evitar dependencias circulares</span>:
-                Las dependencias circulares (cuando una clase depende de otra
-                que a su vez depende de la primera) pueden causar problemas
-                difíciles de depurar. Refactorice para evitar estos casos.
-              </li>
-              <li>
-                <span class="fw-bold">Documentar la jerarquía de clases</span>:
-                <ul>
-                  <li>
-                    Mantenga una buena documentación sobre cómo se relacionan
-                    las clases para evitar confusiones al trabajar con
-                    herencia compleja.
-                  </li>
-                  <li>
-                    Utilice herramientas como diagramas UML si es necesario.
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <span class="fw-bold">Aplicar el Principio de Sustitución de Liskov</span>: Una subclase debe poder
-                reemplazar a su clase base sin
-                alterar la funcionalidad del programa. Esto asegura que el
-                diseño sea sólido y fácil de mantener.
-              </li>
-              <li>
-                <span class="fw-bold">Evitar jerarquías de herencia muy profundas</span>: Las jerarquías de herencia
-                profundas pueden ser difíciles
-                de entender y mantener. Prefiera la composición o el uso de
-                mixins si necesita agregar muchas funcionalidades.
-              </li>
-            </ul>
-            <!-- Go to top -->
-            <div class="text-center mt-5">
-              <a href="#" id="myBtnScroll2" title="Go to top">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                  class="bi bi-arrow-bar-up" viewBox="0 0 16 16" style="margin-left: -2px">
-                  <path fill-rule="evenodd"
-                    d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5" />
-                </svg>
-              </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="fw-bold">Evitar dependencias circulares</span>:
+                  Las dependencias circulares (cuando una clase depende de otra
+                  que a su vez depende de la primera) pueden causar problemas
+                  difíciles de depurar. Refactorice para evitar estos casos.
+                </li>
+                <li>
+                  <span class="fw-bold">Documentar la jerarquía de clases</span>:
+                  <ul>
+                    <li>
+                      Mantenga una buena documentación sobre cómo se relacionan
+                      las clases para evitar confusiones al trabajar con
+                      herencia compleja.
+                    </li>
+                    <li>
+                      Utilice herramientas como diagramas UML si es necesario.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="fw-bold">Aplicar el Principio de Sustitución de Liskov</span>: Una subclase debe poder
+                  reemplazar a su clase base sin
+                  alterar la funcionalidad del programa. Esto asegura que el
+                  diseño sea sólido y fácil de mantener.
+                </li>
+                <li>
+                  <span class="fw-bold">Evitar jerarquías de herencia muy profundas</span>: Las jerarquías de herencia
+                  profundas pueden ser difíciles
+                  de entender y mantener. Prefiera la composición o el uso de
+                  mixins si necesita agregar muchas funcionalidades.
+                </li>
+              </ul>
+
             </div>
-            <!-- Go to top Fin-->
+            <!-- Buenas Prácticas Fin -->
           </div>
-          <!-- Buenas Prácticas Fin -->
-        </div>
-      </article>
-      <!--  POO: Herencia en Python  -->
+        </article>
+        <!--  POO: Herencia en Python  -->
+        <!-- -------------------------------- comentarios -------------------------------- -->
+        <article class="row pt-5" id="comment">
+          <br />
+          <h1>COMENTARIOS</h1>
+          <p>Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del formulario
+            disponible para este propósito.</p>
+          <div class="d-flex justify-content-center">
+            <form action="https://formsubmit.co/herreraforeroeduardo@gmail.com" method="POST" id="myForm">
+              <div class="input-group d-flex justify-content-center flex-column">
+                <label for="name" class="pe-2">Nombre:</label>
+                <input type="text" name="name" id="name" placeholder="Eduardo Herrera Forero" class="rounded"
+                  required="required" />
+                <label for="email" class="pe-2">Email:</label>
+                <input type="email" name="email" id="email" placeholder="herreraforeroeduardo@gmail.com" class="rounded"
+                  required="required" />
+                <label for="message" class="pe-2">Mensaje:</label>
+                <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
+                  class="rounded rounded-3"></textarea>
+                <input class="btn btn-outline-light my-3 border rounded-pill border-2" type="submit"
+                  value="Enviar..." />
+              </div>
+              <p>La política de privacidad, y los términos y condiciones están disponibles en el formulario de contacto.
+              </p>
+            </form>
+          </div>
+        </article>
+        <!-- -------------------------------- fin comentarios -------------------------------- -->
+      </section>
     </main>
     <!-- -------------------------------- fin principal -------------------------------- -->
     <!-- -------------------------------- barra lateral -------------------------------- -->
