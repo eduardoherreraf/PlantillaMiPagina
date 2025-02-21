@@ -1,5 +1,5 @@
  El volumen de la unidad C es Windows-SSD
- El n£mero de serie del volumen es: D06A-EBE3
+ El nï¿½mero de serie del volumen es: D06A-EBE3
 
  Directorio de C:\Users\MP1KGT61\Downloads\aaaaaa_Mis_Repos\PlantillaMiPagina\src
 
