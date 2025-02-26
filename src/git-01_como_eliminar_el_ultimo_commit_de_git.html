@@ -7,33 +7,33 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
-    content="En este artículo se explican las características principales, así como las ventajas y desventajas del sistema de control de versiones GIT." />
-  <meta name="tittle" content="Introducción de GIT para Windows - Ing. Eduardo Herrera Forero" />
+    content="Este artículo describe cómo eliminar el último commit local en GIT o remoto en GITHUB." />
+  <meta name="tittle" content="Como Eliminar el Último Commit de GIT - Ing. Eduardo Herrera Forero." />
   <meta name="author" content="Ing. Eduardo Herrera Forero" />
   <meta name="application-name" content="EHF" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://git-introduccion_de_git_para_windows.html" />
+  <link rel="canonical" href="https://eduardoherreraf.github.io/git-01_como_eliminar_el_ultimo_commit_de_git.html" />
   <!-- Fin Metaetiquetas -->
 
   <!-- Open Graph data -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Introducción de GIT para Windows - Ing. Eduardo Herrera Forero" />
+  <meta property="og:title" content="Como Eliminar el Último Commit de GIT - Ing. Eduardo Herrera Forero." />
   <meta property="og:description"
-    content="En este artículo se explican las características principales, así como las ventajas y desventajas del sistema de control de versiones GIT." />
+    content="Este artículo describe cómo eliminar el último commit local en GIT o remoto en GITHUB." />
   <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
   <meta property="og:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
-  <meta property="og:url" content="https://git-introduccion_de_git_para_windows.html" />
+  <meta property="og:url" content="https://eduardoherreraf.github.io/git-01_como_eliminar_el_ultimo_commit_de_git.html" />
   <meta property="og:locale" content="es_CO" />
   <!-- fin Open Graph data -->
 
   <!-- Twitter cards -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Introducción de GIT para Windows - Ing. Eduardo Herrera Forero" />
+  <meta name="twitter:title" content="Como Eliminar el Último Commit de GIT - Ing. Eduardo Herrera Forero." />
   <meta name="twitter:description"
-    content="En este artículo se explican las características principales, así como las ventajas y desventajas del sistema de control de versiones GIT." />
+    content="Este artículo describe cómo eliminar el último commit local en GIT o remoto en GITHUB." />
   <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
   <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero">
-  <meta name="twitter:url" content="https://git-introduccion_de_git_para_windows.html" />
+  <meta name="twitter:url" content="https://eduardoherreraf.github.io/git-01_como_eliminar_el_ultimo_commit_de_git.html" />
   <meta name="twitter:site" content="@ehfeduardo" />
   <!-- Fin Twitter cards -->
 
@@ -49,7 +49,7 @@
   <!-- fin iconos -->
 
   <title>
-    Introducción de GIT para Windows - Ing. Eduardo Herrera Forero
+    Como Eliminar el Último Commit de GIT - Ing. Eduardo Herrera Forero.
   </title>
 
   <script type="module" defer src="./js/main.js"></script>
@@ -57,7 +57,7 @@
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
-<body>
+<body data-bs-theme="dark">
   <!-- Barra deNavegación -->
   <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
     <div class="container-fluid">
@@ -92,151 +92,161 @@
   <!-- -------------------------------- principal -------------------------------- -->
   <div class="row col">
     <main class="pt-5 col-lg-9">
-      <!-- Introducción de GIT para Windows  -->
       <section class="pb-3">
+        <!-- Borrar Ultimo Commit -->
         <article class="row border-1 border-bottom pb-3">
-          <div class="">
-            <h1>Introducción de GIT para Windows</h1>
+          <h1>Como Eliminar el Último Commit de GIT</h1>
+          <div>
             <p>
-              Git es un sistema de control de versiones distribuido, ampliamente
-              utilizado en el desarrollo de software. Fue creado por Linus
-              Torvalds en 2005, inicialmente para gestionar el desarrollo del
-              núcleo de Linux. Su principal función es llevar un registro de los
-              cambios realizados en el código fuente a lo largo del tiempo,
-              permitiendo a los desarrolladores colaborar de manera eficiente y
-              revertir a versiones anteriores si es necesario.
+              El propósito principal al emplear un sistema de control de
+              versiones como Git es, indudablemente, conservar un historial
+              preciso e inalterado de todas las etapas por las que ha atravesado
+              el código fuente de un proyecto. A medida que realiza
+              modificaciones en el código y se efectúan
+              <span class="fw-bold text-warning">commits</span>, su historial se
+              expande progresivamente. En cualquier momento, se tiene la
+              capacidad de examinar el estado exacto que tenía un archivo en
+              cualquier punto del pasado y, además, identificar quién llevó a
+              cabo un cambio específico, lo cual resulta de gran utilidad. No
+              obstante, en ocasiones, se puede agregar inadvertidamente a este
+              historial cosas que no tenían porque añadir. Por ejemplo, se
+              podría hacer un <span class="fw-bold text-warning">commit</span>
+              sin intención, incluir archivos innecesarios, o incorporar un
+              molesto error que preferiríamos que nadie notara y que se nos haya
+              escapado.
             </p>
-          </div>
-          <!-- Características Principales de Git -->
-          <div id="característicasPrincipalesdeGit" class="mt-5 pt-5 ">
-            <h2 class="mt-1">Características Principales de Git</h2>
-            <ul>
-              <li>
-                <b>Distribuido</b>: A diferencia de los sistemas de control de
-                versiones centralizados, como SubVersioN (SVN), en Git cada
-                desarrollador tiene una copia completa del repositorio,
-                incluyendo el historial completo de cambios.
-              </li>
-              <li>
-                <b>Ramas y Fusiones</b>: Git facilita la creación de ramas para
-                desarrollar características o corregir errores de manera
-                aislada. Estas ramas se pueden fusionar fácilmente con la rama
-                principal una vez que el desarrollo o la corrección ha sido
-                completada.
-              </li>
-              <li>
-                <b>Rendimiento</b>: Git está diseñado para ser rápido. La
-                mayoría de las operaciones se realizan localmente, lo que
-                significa que son casi instantáneas.
-              </li>
-              <li>
-                <b>Integridad</b>: Git asegura la integridad del código y del
-                historial de cambios mediante el uso de sumas de verificación
-                (SHA-1). Esto garantiza que los datos no se corrompan sin ser
-                detectados.
-              </li>
-              <li>
-                <b>Rastreo de Cambios</b>: Git permite ver exactamente qué
-                cambios se realizaron, quién los hizo y cuándo. Esto es crucial
-                para la colaboración en proyectos grandes donde muchos
-                desarrolladores pueden estar trabajando en diferentes partes del
-                código al mismo tiempo.
-              </li>
-            </ul>
-          </div>
-          <!-- ventajas -->
-          <div id="ventajas" class="mt-5 pt-5 ">
-            <h2 class="mt-1">Ventajas</h2>
-            <ul>
-              <li>
-                <b>Distribuido</b>: Cada usuario tiene una copia completa del
-                repositorio, incluyendo todo el historial de cambios. Esto
-                permite trabajar de manera offline y reduce la dependencia de un
-                servidor central.
-              </li>
-              <li>
-                <b>Rendimiento</b>: La mayoría de las operaciones son locales,
-                por lo que son extremadamente rápidas en comparación con los
-                sistemas centralizados. Las acciones como el commit, la creación
-                de ramas y el merge son muy eficientes.
-              </li>
-              <li>
-                <b>Integridad de Datos</b>: Git usa sumas de verificación SHA-1
-                para garantizar la integridad de los datos. Esto asegura que
-                cualquier cambio en el historial de los archivos es detectado,
-                evitando la corrupción de datos.
-              </li>
-              <li>
-                <b>Ramas y Fusiones (Branching and Merging)</b>: Git facilita la
-                creación y el manejo de ramas, lo cual es crucial para el
-                desarrollo de nuevas características y la corrección de errores
-                sin afectar la rama principal. El proceso de fusionar ramas es
-                robusto y eficiente.
-              </li>
-              <li>
-                <b>Colaboración</b>: Git facilita la colaboración entre
-                múltiples desarrolladores. Herramientas como pull requests y
-                revisión de código son soportadas directamente o a través de
-                plataformas como GitHub, GitLab y Bitbucket.
-              </li>
-              <li>
-                <b>Historial Detallado</b>: Permite un seguimiento detallado de
-                todos los cambios realizados, quién los hizo y cuándo. Esto es
-                útil para auditorías y para entender la evolución del proyecto.
-              </li>
-              <li>
-                <b>Herramientas y Ecosistema</b>: Existen muchas herramientas y
-                servicios que se integran bien con Git, como sistemas de
-                integración continua (CI/CD), plataformas de gestión de
-                proyectos, y editores de código.
-              </li>
-            </ul>
-          </div>
-          <!-- desventajas -->
-          <div id="desventajas" class="mt-5 pt-5">
-            <h2 class="mt-1">Desventajas</h2>
-            <ul>
-              <li>
-                <b>Curva de Aprendizaje</b>: Git tiene una curva de aprendizaje
-                pronunciada para los nuevos usuarios. Sus conceptos y comandos
-                pueden ser complejos y confusos al principio.
-              </li>
-              <li>
-                <b>Complejidad en el Manejo de Conflictos</b>: Resolver
-                conflictos de merge puede ser complicado y requiere un buen
-                entendimiento del sistema. Esto puede ser un reto en equipos
-                grandes con múltiples ramas activas.
-              </li>
-              <li>
-                <b>Falta de Interfaz Gráfica Nativa</b>: Aunque existen muchas
-                interfaces gráficas para Git (como GitKraken, Sourcetree, y las
-                integraciones en editores como VSCode), Git en sí mismo es una
-                herramienta de línea de comandos, lo cual puede ser intimidante
-                para algunos usuarios.
-              </li>
-              <li>
-                <b>Tamaño del Repositorio</b>: En proyectos con grandes archivos
-                binarios o repositorios que han crecido mucho con el tiempo, Git
-                puede volverse lento y consumir mucho espacio en disco. Aunque
-                existen soluciones como Git LFS (Large File Storage), esto añade
-                complejidad.
-              </li>
-              <li>
-                <b>Compatibilidad y Conversión</b>: Migrar a Git desde otros
-                sistemas de control de versiones puede ser complicado y puede
-                requerir herramientas especializadas para mantener el historial
-                y la integridad de los datos.
-              </li>
-              <li>
-                <b>Operaciones Distribuidas</b>: La naturaleza distribuida de
-                Git puede llevar a situaciones donde las copias del repositorio
-                se desincronizan, requiriendo una gestión cuidadosa para evitar
-                problemas.
-              </li>
-            </ul>
+            <p class="">
+              Se tratará el caso en el que se refiere exclusivamente a borrar el
+              último <span class="fw-bold text-warning">commit</span> realizado.
+            </p>
+            <div id="commitNoGithub" class="mt-5 pt-5">
+              <h2 class="mt-1">El Commit aún no Está en Github</h2>
+              <p class="">
+                Este es el caso más común y fácil, cuando el
+                <span class="fw-bold text-warning">commit</span>
+                áun no se ha empujado al repo remoto (Github, GitLab,
+                Bitbucket,...), se tiene tres casos posibles:
+              </p>
+              <div id="volverPenultimoBorrandoCambios" class="mt-5 pt-5 ">
+                <h3 class="mt-1">
+                  Volver al Penúltimo Commit Borrando los Últimos Cambios
+                </h3>
+                <p>
+                  Si lo que se necesita es volver al estado que tenía el repo en
+                  el
+                  <span class="fw-bold text-warning">penúltimo commit</span>
+                  , es decir, borrar todos los cambios realizados, se debe
+                  correr en línea de comandos del terminal el siguiente comando:
+                </p>
+                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+            <code
+              class="language-bash"
+              data-prismjs-copy="Copy"
+            >git reset HEAD^ --hard</code>
+          </pre>
+                <p>
+                  Este comando elimina el último
+                  <span class="fw-bold text-warning">commit</span>
+                  del historial, dejando la carpeta de trabajo tal cual estaba
+                  en el
+                  <span class="fw-bold text-warning">penúltimo commit</span>
+                  y ahora este se convierte en el último.
+                </p>
+              </div>
+              <div id="volverPenultimoSinPerderCambios" class="mt-5 pt-5 ">
+                <h3 class="mt-1">
+                  Volver al Penúltimo Commit Sin Perder los Cambios Actuales
+                </h3>
+                <p>
+                  En este caso no se desea perder los cambios, ya sea porque lo
+                  único que se debe hacer es corregir un archivo y no más, en
+                  este caso se usa el siguiente comando:
+                </p>
+                <pre>
+                  <code
+                    class="language-bash"
+                    data-prismjs-copy="Copy"
+                  >git reset HEAD^ --soft</code>
+                </pre>
+              </div>
+              <div id="soloIncluirAlgunosArchivos" class="mt-5 pt-5 ">
+                <h3 class="mt-1">Sólo se Debe Incluir Algunos Archivos</h3>
+                <p>
+                  En algunos casos lo único que hace falta es incluir algún
+                  archivo que se haya omitido por cualquier motivo, se puede
+                  incluir en el último
+                  <span class="fw-bold text-warning">commit</span>
+                  sin necesidad de borrarlo con el siguiente código:
+                </p>
+                <pre>
+                  <code
+                    class="language-bash"
+                    data-prismjs-copy="Copy"
+                  >
+                    git add .
+                    git commit --amend --no-edit
+                    git push origin --force
+                  </code>
+                </pre>
+                <p>
+                  Primero se añaden los archivos para luego incluirlos en el
+                  último
+                  <span class="fw-bold text-warning">commit</span>
+                  . En este caso no se edita el mensaje del
+                  <span class="fw-bold text-warning">commit</span>
+                  .
+                </p>
+              </div>
+            </div>
+            <div id="commitGithub" class="mt-5 pt-5">
+              <h2 class="mt-1">El Commit ya Está en Github</h2>
+              <p>
+                En este caso se debe tener en cuenta que el
+                <span class="fw-bold text-warning">commit</span>
+                ya fue empujado al servidor remoto, puede ser Github, Bitbucket,
+                Gitlab o similar.
+              </p>
+              <p>
+                Hay una condición inflexible, los dos repos, el local y el
+                remoto deben estar sincronizados, es decir, se debió haber usado
+                el comando <code>git pull</code> para sincronizar el repo local
+                con el remoto o haberlo descargado con <code>git clone</code> .
+              </p>
+              <p>
+                Primero, se debe destruir el último
+                <span class="fw-bold text-warning">commit</span> , para ello se
+                usa el comando:
+              </p>
+              <pre>
+                <code
+                  class="language-bash"
+                  data-prismjs-copy="Copy"
+                >git reset HEAD^ --hard</code>
+              </pre>
+              <p>
+                Y luego se debe sincronizar forzosamente este cambio al repo
+                remoto, con el comando:
+              </p>
+              <pre>
+                <code
+                  class="language-bash"
+                  data-prismjs-copy="Copy"
+                >git push origin -f</code>
+              </pre>
+              <p>
+                Donde <span class="fw-bold text-warning">origin</span> es el
+                nombre del repo remoto.
+              </p>
+              <p>
+                Se debe tener mucho cuidado al usar este último comando, porque
+                en el caso que el repo remoto vaya por delante al repo local
+                toda esta información será destruida y este repo quedará igual
+                al local.
+              </p>
+            </div>
           </div>
         </article>
-        <!-- fin Introducción de GIT para Windows -->
+        <!-- fin Borrar Ultimo Commit -->
         <!-- -------------------------------- comentarios -------------------------------- -->
         <article class="row pt-5" id="comment">
           <br />
@@ -273,13 +283,10 @@
         <h1>Índice</h1>
         <ul class="list-group">
           <li class="list-group-item">
-            <a href="#característicasPrincipalesdeGit">Características Principales de Git</a>
+            <a href="#commitNoGithub">El Commit aún no Está en Github</a>
           </li>
           <li class="list-group-item">
-            <a href="#ventajas">Ventajas</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#desventajas">Desventajas</a>
+            <a href="#commitGithub">El Commit ya Está en Github</a>
           </li>
         </ul>
     </aside>
@@ -445,6 +452,5 @@
   </button>
   <!-- Fin button to top -->
 </body>
-
 
 </html>

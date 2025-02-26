@@ -7,39 +7,33 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
-    content="Este artículo explica los comandos más importantes de la terminal (CLI) para la gestión de archivos." />
-  <meta name="tittle"
-    content="Comandos Básicos de Consola / Terminal CLI para Windows - Ing. Eduardo Herrera Forero." />
+    content="Este artículo explica los comandos más importantes para la configuración inicial de GIT." />
+  <meta name="tittle" content="Configuración Inicial de GIT - Ing. Eduardo Herrera Forero." />
   <meta name="author" content="Ing. Eduardo Herrera Forero" />
   <meta name="application-name" content="EHF" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical"
-    href="https://eduardoherreraf.github.io/git-comandos_basicos_de_consola-terminal_cli_para_windows.html" />
+  <link rel="canonical" href="https://eduardoherreraf.github.io/git-04_configuracion_inicial_git.html" />
   <!-- Fin Metaetiquetas -->
 
   <!-- Open Graph data -->
   <meta property="og:type" content="website" />
-  <meta property="og:title"
-    content="Comandos Básicos de Consola / Terminal CLI para Windows - Ing. Eduardo Herrera Forero." />
+  <meta property="og:title" content="Configuración Inicial de GIT - Ing. Eduardo Herrera Forero." />
   <meta property="og:description"
-    content="Este artículo explica los comandos más importantes de la terminal (CLI) para la gestión de archivos." />
+    content="Este artículo explica los comandos más importantes para la configuración inicial de GIT." />
   <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
   <meta property="og:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
-  <meta property="og:url"
-    content="https://eduardoherreraf.github.io/git-comandos_basicos_de_consola-terminal_cli_para_windows.html" />
+  <meta property="og:url" content="https://eduardoherreraf.github.io/git-04_configuracion_inicial_git.html" />
   <meta property="og:locale" content="es_CO" />
   <!-- fin Open Graph data -->
 
   <!-- Twitter cards -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title"
-    content="Comandos Básicos de Consola / Terminal CLI para Windows - Ing. Eduardo Herrera Forero." />
+  <meta name="twitter:title" content="Configuración Inicial de GIT - Ing. Eduardo Herrera Forero." />
   <meta name="twitter:description"
-    content="Este artículo explica los comandos más importantes de la terminal (CLI) para la gestión de archivos." />
+    content="Este artículo explica los comandos más importantes para la configuración inicial de GIT." />
   <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
   <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero">
-  <meta name="twitter:url"
-    content="https://eduardoherreraf.github.io/git-comandos_basicos_de_consola-terminal_cli_para_windows.html" />
+  <meta name="twitter:url" content="https://eduardoherreraf.github.io/git-04_configuracion_inicial_git.html" />
   <meta name="twitter:site" content="@ehfeduardo" />
   <!-- Fin Twitter cards -->
 
@@ -55,7 +49,7 @@
   <!-- fin iconos -->
 
   <title>
-    Comandos Básicos de Consola / Terminal CLI para Windows - Ing. Eduardo Herrera Forero.
+    Configuración Inicial de GIT - Ing. Eduardo Herrera Forero.
   </title>
 
   <script type="module" defer src="./js/main.js"></script>
@@ -99,281 +93,206 @@
   <div class="row col">
     <main class="pt-5 col-lg-9">
       <section class="pb-3">
-        <!-- Comandos Básicos GIT -->
+        <!-- Configuración Inicial de GIT  -->
         <article class="row border-1 border-bottom pb-3">
+          <div class="">
+            <h1>Configuración Inicial de GIT</h1>
+            <p>
+              Los comandos de configuración inicial de Git se utilizan para
+              establecer parámetros globales que definirán cómo Git interactúa
+              con el usuario y cómo registran los cambios. Estos comandos se
+              configuran típicamente cuando se instala GIT por primera vez y se
+              prepara para empezar a trabajar con repositorios. A continuación,
+              se explica cuándo y cómo se usan los comandos de configuración
+              inicial más importantes:
+            </p>
+          </div>
           <div>
-            <h1>
-              Comandos Básicos de Consola / Terminal
-              <abbr title="Command Line Interface">CLI</abbr> para Windows
-            </h1>
-            <div class="">
+            <!-- Configurar el Nombre y el Correo del Usuario -->
+            <div id="configuracionNombreyCorreoUsuario" class="mt-5 pt-5 ">
+              <h2 class="mt-1">
+                Configuración el Nombre y el Correo del Usuario
+              </h2>
               <p>
-                La interfaz de línea de comandos
-                <abbr title="Command Line Interface">(CLI)</abbr> es una
-                herramienta que permite a los usuarios interactuar con el
-                sistema operativo o software mediante la escritura de comandos
-                en una terminal o consola. A diferencia de las interfaces
-                gráficas de usuario
-                <abbr title="Graphical User Interface">(GUI)</abbr>, donde se
-                interactúa con el sistema mediante clics y ventanas, en la CLI
-                se ingresan instrucciones directamente como texto.
+                Estos parámetros son cruciales porque GIT los usa para etiquetar
+                los commits, permitiendo identificar quién hizo los cambios en
+                un proyecto.
               </p>
-              <p>Es muy aconsejable usar siempre los comandos en minúsculas.</p>
+              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-bash" data-prismjs-copy="Copy">
+                    git config --global user.name "Nombre del usuario"
+                    git config --global user.email "Semail@ejemplo.com"
+                  </code>
+                </pre>
+              <p>Estos comandos se usan cuando:</p>
               <p>
-                Se debe tener un cuidado especial con los nombres de los
-                archivos y carpetas, ya que mientras que en Windows no hay
-                diferencias entre el uso de minúsculas y mayúsculas, en los
-                sistemas Linux y Apple (MacOs o IOS) si hay diferencia, es decir
-                Archivo.txt es un archivo totalmente diferente a archivo.txt.
+                Es aconsejable ejecutar estos comandos justo después de instalar
+                Git en el equipo de trabajo.
               </p>
               <p>
-                también se debe tener en cuenta que para referirse a un
-                directorio se debe usar el slash (/) al final de su nombre, p.ej
-                <code>proyectos/</code>.
+                Otra razón para utilizar estos comandos es cuando se comparte la
+                máquina con otros usuarios o se cambia de identidad (por
+                ejemplo, de laboral a personal), en cuyo caso sería conveniente
+                actualizar estos valores.
               </p>
             </div>
-            <!-- pwd -->
-            <div id="pwd" class="mt-5 pt-5 ">
-              <h3 class="mt-1">pwd (Print Working Directory)</h3>
+            <!-- Configuración del Editor por Defecto -->
+            <div id="configuraciondelEditorporDefecto" class="mt-5 pt-5 ">
+              <h2 class="mt-1">Configuración del Editor por Defecto</h2>
               <p>
-                Este comando devuelve la ruta completa del directorio actual, es
-                decir, en donde se encuentra.
+                En algunos casos Git puede pedir que se edite mensajes de commit
+                o archivos de configuración. Es útil configurar el editor de
+                texto preferido para estas tareas.
               </p>
-              <h4>Formato</h4>
               <pre class="line-numbers" data-src-status="loaded" tabindex="0">
-              <code class="language-bash" data-prismjs-copy="Copy">
-                pwd
-              </code>
-            </pre>
+                  <code class="language-bash" data-prismjs-copy="Copy">
+                    git config --global core.editor "nombre-del-editor"
+                    // para VSCode
+                    git config --global core.editor "code --wait"
+                    // VIM (valor por defecto)
+                    git config --global core.editor "vim"
+                    // Atom
+                    git config --global core.editor "atom --wait"
+                    // nano
+                    git config --global core.editor "nano"
+                    // Sublime Text
+                    git config --global core.editor "subl -n -w"
+                  </code>
+                </pre>
+              <p>
+                Se debe estar seguro de que el editor que se elije esté
+                correctamente instalado y accesible desde la línea de comandos.
+                Si el comando para abrir tu editor incluye espacios, colocar el
+                nombre del editor entre comillas dobles, como se muestra en los
+                ejemplos.
+              </p>
             </div>
-            <!-- ls -->
-            <div id="ls" class="mt-5 pt-5 ">
-              <h3 class="mt-1">ls (LiSt)</h3>
+            <!-- Configuración de la terminal de colores: -->
+            <div id="configuracióndelosColoresdeTextolaTerminal" class="mt-5 pt-5 ">
+              <h2 class="mt-1">
+                Configuración de los Colores de Texto la Terminal
+              </h2>
               <p>
-                Este comando se usa para listar o mostrar el contenido de un
-                directorio, por ejemplo, carpetas y archivos.
+                Configurar Git para que use colores en la terminal, lo que hace
+                más fácil leer los mensajes y distinguir diferentes tipos de
+                información.
               </p>
-              <h4>Formato</h4>
+              <p>
+                Se usa principalmente para mejorar la legibilidad de los
+                mensajes en la terminal.
+              </p>
               <pre class="line-numbers" data-src-status="loaded" tabindex="0">
-              <code class="language-bash" data-prismjs-copy="Copy">
-                ls [opciones] [ruta_de_directorio] [nombre_de_los_archivos]
-              </code>
-            </pre>
-              <h4>Usos</h4>
+                  <code class="language-bash" data-prismjs-copy="Copy">
+                    git config --global color.ui auto
+                  </code>
+                </pre>
+            </div>
+            <!-- Configuración del método de fusión -->
+            <div id="configuraciondelMetododeFusion" class="mt-5 pt-5 ">
+              <h2 class="mt-1">Configuración del Método de Fusión</h2>
+              <p>
+                Se puedes especificar cómo Git debe manejar las fusiones de
+                archivos.
+              </p>
+              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-bash" data-prismjs-copy="Copy">
+                    git config --global merge.tool "nombre-del-herramienta-de-fusión"
+                  </code>
+                </pre>
+              <p>Los nombre-del-herramienta-de-fusión pueden ser:</p>
               <ul>
+                <li><b>vimdiff</b>: Utiliza Vim en modo de diferencia.</li>
                 <li>
-                  <code>ls</code>, muestra el listado de archivos en el
-                  directorio de trabajo actual.
+                  <b>meld</b>: Una herramienta gráfica popular para comparar y
+                  fusionar archivos.
                 </li>
                 <li>
-                  <code>ls c:\usuario\proyecto</code>, muestra el listado del
-                  directorio <code>proyecto</code>.
+                  <b>kdiff3</b>: Otra herramienta gráfica para la comparación y
+                  fusión de archivos.
                 </li>
                 <li>
-                  <code>ls ..</code>, muestra el contenido del directorio padre,
-                  es decir el nivel superior.
+                  <b>tortoisemerge</b>: Parte de TortoiseGit, una interfaz de
+                  usuario para Git en Windows.
                 </li>
                 <li>
-                  <code>ls -d */</code>, lista sólo directorios o carpetas.
+                  <b>p4merge</b>: Herramienta de Perforce para la comparación y
+                  fusión de archivos.
                 </li>
                 <li>
-                  <code>ls *</code>, presenta todos los archivos incluyendo los
-                  que están dentro de los subdirectorios.
+                  <b>bc</b>: Beyond Compare, una herramienta comercial de
+                  comparación de archivos.
                 </li>
                 <li>
-                  <code>ls -R</code>, revela todos los archivos incluyendo los
-                  que hay en todas las subcarpetas hasta el último.
+                  <b>opendiff</b>: Utiliza FileMerge de Apple (disponible en
+                  macOS).
                 </li>
                 <li>
-                  <code>ls -s</code>, exhibe los archivos junto a su tamaño.
+                  <b>diffmerge</b>: Otra herramienta gráfica para la comparación
+                  y fusión de archivos.
                 </li>
                 <li>
-                  <code>ls -l</code>, presenta los archivos en formato largo o
-                  más detallado.
+                  <b>araxis</b>: Araxis Merge, una herramienta comercial de
+                  comparación y fusión de archivos.
                 </li>
-                <li>
-                  <code>ls -a</code>, desplega todos los archivos y carpetas
-                  incluyendo los ocultos.
-                </li>
-                <li>
-                  <code>ls -t</code>, muestra los archivos y carpetas ordenados
-                  por de su fecha de modificación en orden descendente (de mayor
-                  a menor).
-                </li>
-                <li>
-                  <code>ls -tr</code>, muestra los archivos y carpetas ordenados
-                  por de su fecha de modificación en orden ascendente (de menor
-                  a mayor).
-                </li>
-                <li>
-                  <code>ls > output.txt</code>, el listado obtenido con el
-                  comando <code>ls</code> se guarda en el archivo
-                  <code>output.txt</code>.
-                </li>
-                <li>
-                  <code>ls --help</code>, muestra la ayuda del comando
-                  <code>ls</code>.
-                </li>
+                <li><b>emerge</b>: Herramienta de fusión de Emacs</li>
               </ul>
-            </div>
-            <!-- cd -->
-            <div id="cd" class="mt-5 pt-5 ">
-              <h3 class="mt-1">cd (Change Directory)</h3>
               <p>
-                Este comando se usa para cambiar el directorio actual en el cual
-                se está trabajando.
-              </p>
-              <h4>Formato</h4>
-              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
-              <code class="language-bash" data-prismjs-copy="Copy">
-                cd [opciones] [ruta_de_directorio] 
-              </code>
-            </pre>
-              <h4>Usos</h4>
-              <ul>
-                <li>
-                  <code>cd proyectos</code>, cambia del directorio actual al de
-                  <code>proyectos</code>, el cual debe estar en el mismo nivel
-                  de anidamiento.
-                </li>
-                <li>
-                  <code>cd ..</code>, su usa para subir un directorio en la
-                  jerarquía de carpetas.
-                </li>
-                <li>
-                  <code>cd ~</code>, <code>~</code> es el directorio
-                  <b>HOME</b> usualmente ubicado en
-                  <code>C:\Users\Nombre-de-usuario</code>
-                </li>
-                <li>
-                  <code>cd --help</code>, desplega la ayuda de este comando.
-                </li>
-              </ul>
-            </div>
-            <!-- mkdir -->
-            <div id="mkdir" class="mt-5 pt-5 ">
-              <h3 class="mt-1">mkdir (Make Directory)</h3>
-              <p>Permite la creación de nuevos directorios.</p>
-              <h4>Formato</h4>
-              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
-              <code class="language-bash" data-prismjs-copy="Copy">
-                mkdir [nombre_de_directorio] 
-              </code>
-            </pre>
-            </div>
-            <!-- touch -->
-            <div id="touch" class="mt-5 pt-5 ">
-              <h3 class="mt-1">touch</h3>
-              <p>Permite la creación de nuevos archivos.</p>
-              <h4>Formato</h4>
-              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
-              <code class="language-bash" data-prismjs-copy="Copy">
-                touch [nombre_del_archivo] 
-              </code>
-            </pre>
-            </div>
-            <!-- rm -->
-            <div id="rm" class="mt-5 pt-5 ">
-              <h3 class="mt-1">rm (ReMove)</h3>
-              <p>Permite la eliminación de un archivo o de un directorio.</p>
-              <h4>Formato</h4>
-              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
-              <code class="language-bash" data-prismjs-copy="Copy">
-                rm [opciones] [ruta_de_directorio]/[nombre_del_archivo]
-              </code>
-            </pre>
-              <h4>Usos</h4>
-              <ul>
-                <li>
-                  <code>rm -i index.css</code>, pide la confirmación antes de la
-                  eliminación del archivo <code>index.css</code>.
-                </li>
-                <li>
-                  <code>rm -r c:\usuarios\respaldo\</code>, se elimina el
-                  directorio de <code>respaldo</code> recursivamente, es decir,
-                  se elimina el directorio con todo su contenido incluyendo
-                  subcarpetas y archivos.
-                </li>
-                <li>
-                  <code>rm -f c:\usuarios\respaldo\index.css</code>, se hace la
-                  eliminación del archivo <code>index.css</code> sin pedir
-                  confirmación alguna.
-                </li>
-                <li>
-                  <code>rm c:\usuarios\respaldo\</code>, borra el directorio
-                  <code>respaldo</code>, si y sólo si, está vacío.
-                </li>
-              </ul>
-            </div>
-            <!-- cp -->
-            <div id="cp" class="mt-5 pt-5 ">
-              <h3 class="mt-1">cp (CoPy)</h3>
-              <p>Este comando se usa para copiar archivos y directorios.</p>
-              <h4>Formato</h4>
-              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
-              <code class="language-bash" data-prismjs-copy="Copy">
-                cp [opciones] origen destino
-              </code>
-            </pre>
-              <h4>Usos</h4>
-              <ul>
-                <li>
-                  <code>cp -i index.html c:\usuario\proyecto</code>, copia el
-                  archivo index.hml en el directorio c:\usuario\proyecto pero si
-                  el archivo ya existe se pide la confirmación.
-                </li>
-                <li>
-                  <code>cp -r c:\usuario\proyecto c:\usuario\respaldo</code>, se
-                  copia recursivamente el contenido de la carpeta proyecto en la
-                  respaldo, o sea, incluyendo todas las subcarpetas y los
-                  archivos.
-                </li>
-                <li>
-                  <code>cp -f origen destino</code>, se hace la copia sin pedir
-                  confirmación alguna.
-                </li>
-                <li>
-                  <code>cp -v origen destino</code>, muestra cada
-                  archivo/directorio que se esta copiando.
-                </li>
-                <li>
-                  <code>cp c:\usuario\archivo_viejo.txt
-                    c:\usuario\archivo_nuevo.txt</code>, renombra el archivo_viejo.txt con archivo_nuevo.txt
-                  quedando ambos archivos en el mismo directorio, ambos son
-                  iguales, se puede borrar el original, archivo_viejo.txt sin
-                  consecuencias.
-                </li>
-              </ul>
-            </div>
-            <!-- clear -->
-            <div id="clear" class="mt-5 pt-5 ">
-              <h3 class="mt-1">clear</h3>
-              <p>Borra la pantalla.</p>
-              <h4>Formato</h4>
-              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
-              <code class="language-bash" data-prismjs-copy="Copy">
-                clear
-              </code>
-            </pre>
-            </div>
-            <!-- history -->
-            <div id="history" class="mt-5 pt-5">
-              <h3 class="mt-1">history</h3>
-              <p>
-                Entrega el listado de los últimos comandos que han sido
-                utilizados.
-              </p>
-              <h4>Formato</h4>
-              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
-              <code class="language-bash" data-prismjs-copy="Copy">
-                history
-              </code>
-            </pre>
-              <p>
-                Cada comando se puede volver a ejecutar usando
-                <code>!n</code>, donde n es la línea del comando.
+                Además, se puede configurar opciones adicionales específicas
+                para cada herramienta, si es necesario. Consultar la
+                documentación de GIT o de la herramienta de fusión específica
+                para obtener más detalles sobre configuraciones adicionales.
               </p>
             </div>
+            <!-- Configuración de alias -->
+            <div id="configuraciondeAlias" class="mt-5 pt-5 ">
+              <h2 class="mt-1">Configuración de Alias</h2>
+              <p>
+                Los alias se utilizan para abreviar comandos largos o
+                complicados, facilitando y agilizando su uso.
+              </p>
+              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-bash" data-prismjs-copy="Copy">
+                    git config --global alias.st status
+                    git config --global alias.co checkout
+                  </code>
+                </pre>
+              <p>
+                En este ejemplo, ambos comandos producen el mismo resultado.
+              </p>
+              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-bash" data-prismjs-copy="Copy">
+                    git st
+                    git status
+                  </code>
+                </pre>
+            </div>
+            <!-- Ver la configuración -->
+            <div id="verlaconfiguracion" class="mt-5 pt-5">
+              <h2 class="mt-1">Ver la configuración</h2>
+              <p>
+                Comando utilizado para mostrar todas las configuraciones que GIT
+                tiene actualmente. Esto incluye ajustes como nombre de usuario,
+                correo electrónico, alias y más. Es un comando útil para revisar
+                la configuración de GIT de un vistazo.
+              </p>
+              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-bash" data-prismjs-copy="Copy">
+                    git config --list
+                  </code>
+                </pre>
+            </div>
+            <p>
+              Estos comandos de configuración inicial se usan generalmente una
+              sola vez cuando se configura GIT por primera vez en un nuevo
+              entorno, pero también pueden ser ajustados en cualquier momento si
+              cambian las preferencias o necesidades. Recordar que el uso del
+              flag
+              <code>--global</code> hace que estas configuraciones se apliquen a
+              nivel global para todos los repositorios guardados en la máquina.
+              Si se necesita configurar algo específico para un solo
+              repositorio, puedes omitir el flag <code>--global</code> y GIT
+              aplicará la configuración solo en el repositorio actual.
+            </p>
           </div>
         </article>
         <!-- fin Comandos Básicos CLI -->
@@ -413,37 +332,27 @@
         <h1>Índice</h1>
         <ul class="list-group">
           <li class="list-group-item">
-            <a href="#pwd">pwd</a>
+            <a href="#configuracionNombreyCorreoUsuario">Configuración el Nombre y el Correo del Usuario</a>
           </li>
           <li class="list-group-item">
-            <a href="#ls">ls</a>
+            <a href="#configuraciondelEditorporDefecto">Configuración del Editor por Defecto</a>
           </li>
           <li class="list-group-item">
-            <a href="#cd">cd</a>
+            <a href="#configuracióndelosColoresdeTextolaTerminal">Configuración de los Colores de Texto la Terminal</a>
           </li>
           <li class="list-group-item">
-            <a href="#mkdir">mkdir</a>
+            <a href="#configuraciondelMetododeFusion">Configuración del Método de Fusión</a>
           </li>
           <li class="list-group-item">
-            <a href="#touch">touch</a>
+            <a href="#configuraciondeAlias">Configuración de Alias</a>
           </li>
           <li class="list-group-item">
-            <a href="#rm">rm</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#cp">cp</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#clear">clear</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#history">history</a>
+            <a href="#verlaconfiguracion">Ver la configuración</a>
           </li>
         </ul>
     </aside>
     <!-- -------------------------------- fin barra lateral -------------------------------- -->
   </div>
-  <!-- -------------------------------- pie de pagina -------------------------------- -->
   <!-- -------------------------------- pie de pagina -------------------------------- -->
   <footer class="row container-fluid border-1 border-top row col">
     <div class="row">

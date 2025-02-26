@@ -7,33 +7,39 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
-    content="Este artículo describe cómo eliminar el último commit local en GIT o remoto en GITHUB." />
-  <meta name="tittle" content="Como Eliminar el Último Commit de GIT - Ing. Eduardo Herrera Forero." />
+    content="Este artículo explica los comandos más importantes de la terminal (CLI) para la gestión de archivos." />
+  <meta name="tittle"
+    content="Comandos Básicos de Consola / Terminal CLI para Windows - Ing. Eduardo Herrera Forero." />
   <meta name="author" content="Ing. Eduardo Herrera Forero" />
   <meta name="application-name" content="EHF" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://eduardoherreraf.github.io/git-como_eliminar_el_ultimo_commit_de_git.html" />
+  <link rel="canonical"
+    href="https://eduardoherreraf.github.io/git-02_comandos_basicos_de_consola-terminal_cli_para_windows.html" />
   <!-- Fin Metaetiquetas -->
 
   <!-- Open Graph data -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Como Eliminar el Último Commit de GIT - Ing. Eduardo Herrera Forero." />
+  <meta property="og:title"
+    content="Comandos Básicos de Consola / Terminal CLI para Windows - Ing. Eduardo Herrera Forero." />
   <meta property="og:description"
-    content="Este artículo describe cómo eliminar el último commit local en GIT o remoto en GITHUB." />
+    content="Este artículo explica los comandos más importantes de la terminal (CLI) para la gestión de archivos." />
   <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
   <meta property="og:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
-  <meta property="og:url" content="https://eduardoherreraf.github.io/git-como_eliminar_el_ultimo_commit_de_git.html" />
+  <meta property="og:url"
+    content="https://eduardoherreraf.github.io/git-02_comandos_basicos_de_consola-terminal_cli_para_windows.html" />
   <meta property="og:locale" content="es_CO" />
   <!-- fin Open Graph data -->
 
   <!-- Twitter cards -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Como Eliminar el Último Commit de GIT - Ing. Eduardo Herrera Forero." />
+  <meta name="twitter:title"
+    content="Comandos Básicos de Consola / Terminal CLI para Windows - Ing. Eduardo Herrera Forero." />
   <meta name="twitter:description"
-    content="Este artículo describe cómo eliminar el último commit local en GIT o remoto en GITHUB." />
+    content="Este artículo explica los comandos más importantes de la terminal (CLI) para la gestión de archivos." />
   <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
   <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero">
-  <meta name="twitter:url" content="https://eduardoherreraf.github.io/git-como_eliminar_el_ultimo_commit_de_git.html" />
+  <meta name="twitter:url"
+    content="https://eduardoherreraf.github.io/git-02_comandos_basicos_de_consola-terminal_cli_para_windows.html" />
   <meta name="twitter:site" content="@ehfeduardo" />
   <!-- Fin Twitter cards -->
 
@@ -49,7 +55,7 @@
   <!-- fin iconos -->
 
   <title>
-    Como Eliminar el Último Commit de GIT - Ing. Eduardo Herrera Forero.
+    Comandos Básicos de Consola / Terminal CLI para Windows - Ing. Eduardo Herrera Forero.
   </title>
 
   <script type="module" defer src="./js/main.js"></script>
@@ -57,7 +63,7 @@
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
-<body data-bs-theme="dark">
+<body>
   <!-- Barra deNavegación -->
   <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
     <div class="container-fluid">
@@ -93,160 +99,284 @@
   <div class="row col">
     <main class="pt-5 col-lg-9">
       <section class="pb-3">
-        <!-- Borrar Ultimo Commit -->
+        <!-- Comandos Básicos GIT -->
         <article class="row border-1 border-bottom pb-3">
-          <h1>Como Eliminar el Último Commit de GIT</h1>
           <div>
-            <p>
-              El propósito principal al emplear un sistema de control de
-              versiones como Git es, indudablemente, conservar un historial
-              preciso e inalterado de todas las etapas por las que ha atravesado
-              el código fuente de un proyecto. A medida que realiza
-              modificaciones en el código y se efectúan
-              <span class="fw-bold text-warning">commits</span>, su historial se
-              expande progresivamente. En cualquier momento, se tiene la
-              capacidad de examinar el estado exacto que tenía un archivo en
-              cualquier punto del pasado y, además, identificar quién llevó a
-              cabo un cambio específico, lo cual resulta de gran utilidad. No
-              obstante, en ocasiones, se puede agregar inadvertidamente a este
-              historial cosas que no tenían porque añadir. Por ejemplo, se
-              podría hacer un <span class="fw-bold text-warning">commit</span>
-              sin intención, incluir archivos innecesarios, o incorporar un
-              molesto error que preferiríamos que nadie notara y que se nos haya
-              escapado.
-            </p>
-            <p class="">
-              Se tratará el caso en el que se refiere exclusivamente a borrar el
-              último <span class="fw-bold text-warning">commit</span> realizado.
-            </p>
-            <div id="commitNoGithub" class="mt-5 pt-5">
-              <h2 class="mt-1">El Commit aún no Está en Github</h2>
-              <p class="">
-                Este es el caso más común y fácil, cuando el
-                <span class="fw-bold text-warning">commit</span>
-                áun no se ha empujado al repo remoto (Github, GitLab,
-                Bitbucket,...), se tiene tres casos posibles:
+            <h1>
+              Comandos Básicos de Consola / Terminal
+              <abbr title="Command Line Interface">CLI</abbr> para Windows
+            </h1>
+            <div class="">
+              <p>
+                La interfaz de línea de comandos
+                <abbr title="Command Line Interface">(CLI)</abbr> es una
+                herramienta que permite a los usuarios interactuar con el
+                sistema operativo o software mediante la escritura de comandos
+                en una terminal o consola. A diferencia de las interfaces
+                gráficas de usuario
+                <abbr title="Graphical User Interface">(GUI)</abbr>, donde se
+                interactúa con el sistema mediante clics y ventanas, en la CLI
+                se ingresan instrucciones directamente como texto.
               </p>
-              <div id="volverPenultimoBorrandoCambios" class="mt-5 pt-5 ">
-                <h3 class="mt-1">
-                  Volver al Penúltimo Commit Borrando los Últimos Cambios
-                </h3>
-                <p>
-                  Si lo que se necesita es volver al estado que tenía el repo en
-                  el
-                  <span class="fw-bold text-warning">penúltimo commit</span>
-                  , es decir, borrar todos los cambios realizados, se debe
-                  correr en línea de comandos del terminal el siguiente comando:
-                </p>
-                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
-            <code
-              class="language-bash"
-              data-prismjs-copy="Copy"
-            >git reset HEAD^ --hard</code>
-          </pre>
-                <p>
-                  Este comando elimina el último
-                  <span class="fw-bold text-warning">commit</span>
-                  del historial, dejando la carpeta de trabajo tal cual estaba
-                  en el
-                  <span class="fw-bold text-warning">penúltimo commit</span>
-                  y ahora este se convierte en el último.
-                </p>
-              </div>
-              <div id="volverPenultimoSinPerderCambios" class="mt-5 pt-5 ">
-                <h3 class="mt-1">
-                  Volver al Penúltimo Commit Sin Perder los Cambios Actuales
-                </h3>
-                <p>
-                  En este caso no se desea perder los cambios, ya sea porque lo
-                  único que se debe hacer es corregir un archivo y no más, en
-                  este caso se usa el siguiente comando:
-                </p>
-                <pre>
-                  <code
-                    class="language-bash"
-                    data-prismjs-copy="Copy"
-                  >git reset HEAD^ --soft</code>
-                </pre>
-              </div>
-              <div id="soloIncluirAlgunosArchivos" class="mt-5 pt-5 ">
-                <h3 class="mt-1">Sólo se Debe Incluir Algunos Archivos</h3>
-                <p>
-                  En algunos casos lo único que hace falta es incluir algún
-                  archivo que se haya omitido por cualquier motivo, se puede
-                  incluir en el último
-                  <span class="fw-bold text-warning">commit</span>
-                  sin necesidad de borrarlo con el siguiente código:
-                </p>
-                <pre>
-                  <code
-                    class="language-bash"
-                    data-prismjs-copy="Copy"
-                  >
-                    git add .
-                    git commit --amend --no-edit
-                    git push origin --force
-                  </code>
-                </pre>
-                <p>
-                  Primero se añaden los archivos para luego incluirlos en el
-                  último
-                  <span class="fw-bold text-warning">commit</span>
-                  . En este caso no se edita el mensaje del
-                  <span class="fw-bold text-warning">commit</span>
-                  .
-                </p>
-              </div>
+              <p>Es muy aconsejable usar siempre los comandos en minúsculas.</p>
+              <p>
+                Se debe tener un cuidado especial con los nombres de los
+                archivos y carpetas, ya que mientras que en Windows no hay
+                diferencias entre el uso de minúsculas y mayúsculas, en los
+                sistemas Linux y Apple (MacOs o IOS) si hay diferencia, es decir
+                Archivo.txt es un archivo totalmente diferente a archivo.txt.
+              </p>
+              <p>
+                también se debe tener en cuenta que para referirse a un
+                directorio se debe usar el slash (/) al final de su nombre, p.ej
+                <code>proyectos/</code>.
+              </p>
             </div>
-            <div id="commitGithub" class="mt-5 pt-5">
-              <h2 class="mt-1">El Commit ya Está en Github</h2>
+            <!-- pwd -->
+            <div id="pwd" class="mt-5 pt-5 ">
+              <h3 class="mt-1">pwd (Print Working Directory)</h3>
               <p>
-                En este caso se debe tener en cuenta que el
-                <span class="fw-bold text-warning">commit</span>
-                ya fue empujado al servidor remoto, puede ser Github, Bitbucket,
-                Gitlab o similar.
+                Este comando devuelve la ruta completa del directorio actual, es
+                decir, en donde se encuentra.
               </p>
+              <h4>Formato</h4>
+              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+              <code class="language-bash" data-prismjs-copy="Copy">
+                pwd
+              </code>
+            </pre>
+            </div>
+            <!-- ls -->
+            <div id="ls" class="mt-5 pt-5 ">
+              <h3 class="mt-1">ls (LiSt)</h3>
               <p>
-                Hay una condición inflexible, los dos repos, el local y el
-                remoto deben estar sincronizados, es decir, se debió haber usado
-                el comando <code>git pull</code> para sincronizar el repo local
-                con el remoto o haberlo descargado con <code>git clone</code> .
+                Este comando se usa para listar o mostrar el contenido de un
+                directorio, por ejemplo, carpetas y archivos.
               </p>
+              <h4>Formato</h4>
+              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+              <code class="language-bash" data-prismjs-copy="Copy">
+                ls [opciones] [ruta_de_directorio] [nombre_de_los_archivos]
+              </code>
+            </pre>
+              <h4>Usos</h4>
+              <ul>
+                <li>
+                  <code>ls</code>, muestra el listado de archivos en el
+                  directorio de trabajo actual.
+                </li>
+                <li>
+                  <code>ls c:\usuario\proyecto</code>, muestra el listado del
+                  directorio <code>proyecto</code>.
+                </li>
+                <li>
+                  <code>ls ..</code>, muestra el contenido del directorio padre,
+                  es decir el nivel superior.
+                </li>
+                <li>
+                  <code>ls -d */</code>, lista sólo directorios o carpetas.
+                </li>
+                <li>
+                  <code>ls *</code>, presenta todos los archivos incluyendo los
+                  que están dentro de los subdirectorios.
+                </li>
+                <li>
+                  <code>ls -R</code>, revela todos los archivos incluyendo los
+                  que hay en todas las subcarpetas hasta el último.
+                </li>
+                <li>
+                  <code>ls -s</code>, exhibe los archivos junto a su tamaño.
+                </li>
+                <li>
+                  <code>ls -l</code>, presenta los archivos en formato largo o
+                  más detallado.
+                </li>
+                <li>
+                  <code>ls -a</code>, desplega todos los archivos y carpetas
+                  incluyendo los ocultos.
+                </li>
+                <li>
+                  <code>ls -t</code>, muestra los archivos y carpetas ordenados
+                  por de su fecha de modificación en orden descendente (de mayor
+                  a menor).
+                </li>
+                <li>
+                  <code>ls -tr</code>, muestra los archivos y carpetas ordenados
+                  por de su fecha de modificación en orden ascendente (de menor
+                  a mayor).
+                </li>
+                <li>
+                  <code>ls > output.txt</code>, el listado obtenido con el
+                  comando <code>ls</code> se guarda en el archivo
+                  <code>output.txt</code>.
+                </li>
+                <li>
+                  <code>ls --help</code>, muestra la ayuda del comando
+                  <code>ls</code>.
+                </li>
+              </ul>
+            </div>
+            <!-- cd -->
+            <div id="cd" class="mt-5 pt-5 ">
+              <h3 class="mt-1">cd (Change Directory)</h3>
               <p>
-                Primero, se debe destruir el último
-                <span class="fw-bold text-warning">commit</span> , para ello se
-                usa el comando:
+                Este comando se usa para cambiar el directorio actual en el cual
+                se está trabajando.
               </p>
-              <pre>
-                <code
-                  class="language-bash"
-                  data-prismjs-copy="Copy"
-                >git reset HEAD^ --hard</code>
-              </pre>
+              <h4>Formato</h4>
+              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+              <code class="language-bash" data-prismjs-copy="Copy">
+                cd [opciones] [ruta_de_directorio] 
+              </code>
+            </pre>
+              <h4>Usos</h4>
+              <ul>
+                <li>
+                  <code>cd proyectos</code>, cambia del directorio actual al de
+                  <code>proyectos</code>, el cual debe estar en el mismo nivel
+                  de anidamiento.
+                </li>
+                <li>
+                  <code>cd ..</code>, su usa para subir un directorio en la
+                  jerarquía de carpetas.
+                </li>
+                <li>
+                  <code>cd ~</code>, <code>~</code> es el directorio
+                  <b>HOME</b> usualmente ubicado en
+                  <code>C:\Users\Nombre-de-usuario</code>
+                </li>
+                <li>
+                  <code>cd --help</code>, desplega la ayuda de este comando.
+                </li>
+              </ul>
+            </div>
+            <!-- mkdir -->
+            <div id="mkdir" class="mt-5 pt-5 ">
+              <h3 class="mt-1">mkdir (Make Directory)</h3>
+              <p>Permite la creación de nuevos directorios.</p>
+              <h4>Formato</h4>
+              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+              <code class="language-bash" data-prismjs-copy="Copy">
+                mkdir [nombre_de_directorio] 
+              </code>
+            </pre>
+            </div>
+            <!-- touch -->
+            <div id="touch" class="mt-5 pt-5 ">
+              <h3 class="mt-1">touch</h3>
+              <p>Permite la creación de nuevos archivos.</p>
+              <h4>Formato</h4>
+              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+              <code class="language-bash" data-prismjs-copy="Copy">
+                touch [nombre_del_archivo] 
+              </code>
+            </pre>
+            </div>
+            <!-- rm -->
+            <div id="rm" class="mt-5 pt-5 ">
+              <h3 class="mt-1">rm (ReMove)</h3>
+              <p>Permite la eliminación de un archivo o de un directorio.</p>
+              <h4>Formato</h4>
+              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+              <code class="language-bash" data-prismjs-copy="Copy">
+                rm [opciones] [ruta_de_directorio]/[nombre_del_archivo]
+              </code>
+            </pre>
+              <h4>Usos</h4>
+              <ul>
+                <li>
+                  <code>rm -i index.css</code>, pide la confirmación antes de la
+                  eliminación del archivo <code>index.css</code>.
+                </li>
+                <li>
+                  <code>rm -r c:\usuarios\respaldo\</code>, se elimina el
+                  directorio de <code>respaldo</code> recursivamente, es decir,
+                  se elimina el directorio con todo su contenido incluyendo
+                  subcarpetas y archivos.
+                </li>
+                <li>
+                  <code>rm -f c:\usuarios\respaldo\index.css</code>, se hace la
+                  eliminación del archivo <code>index.css</code> sin pedir
+                  confirmación alguna.
+                </li>
+                <li>
+                  <code>rm c:\usuarios\respaldo\</code>, borra el directorio
+                  <code>respaldo</code>, si y sólo si, está vacío.
+                </li>
+              </ul>
+            </div>
+            <!-- cp -->
+            <div id="cp" class="mt-5 pt-5 ">
+              <h3 class="mt-1">cp (CoPy)</h3>
+              <p>Este comando se usa para copiar archivos y directorios.</p>
+              <h4>Formato</h4>
+              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+              <code class="language-bash" data-prismjs-copy="Copy">
+                cp [opciones] origen destino
+              </code>
+            </pre>
+              <h4>Usos</h4>
+              <ul>
+                <li>
+                  <code>cp -i index.html c:\usuario\proyecto</code>, copia el
+                  archivo index.hml en el directorio c:\usuario\proyecto pero si
+                  el archivo ya existe se pide la confirmación.
+                </li>
+                <li>
+                  <code>cp -r c:\usuario\proyecto c:\usuario\respaldo</code>, se
+                  copia recursivamente el contenido de la carpeta proyecto en la
+                  respaldo, o sea, incluyendo todas las subcarpetas y los
+                  archivos.
+                </li>
+                <li>
+                  <code>cp -f origen destino</code>, se hace la copia sin pedir
+                  confirmación alguna.
+                </li>
+                <li>
+                  <code>cp -v origen destino</code>, muestra cada
+                  archivo/directorio que se esta copiando.
+                </li>
+                <li>
+                  <code>cp c:\usuario\archivo_viejo.txt
+                    c:\usuario\archivo_nuevo.txt</code>, renombra el archivo_viejo.txt con archivo_nuevo.txt
+                  quedando ambos archivos en el mismo directorio, ambos son
+                  iguales, se puede borrar el original, archivo_viejo.txt sin
+                  consecuencias.
+                </li>
+              </ul>
+            </div>
+            <!-- clear -->
+            <div id="clear" class="mt-5 pt-5 ">
+              <h3 class="mt-1">clear</h3>
+              <p>Borra la pantalla.</p>
+              <h4>Formato</h4>
+              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+              <code class="language-bash" data-prismjs-copy="Copy">
+                clear
+              </code>
+            </pre>
+            </div>
+            <!-- history -->
+            <div id="history" class="mt-5 pt-5">
+              <h3 class="mt-1">history</h3>
               <p>
-                Y luego se debe sincronizar forzosamente este cambio al repo
-                remoto, con el comando:
+                Entrega el listado de los últimos comandos que han sido
+                utilizados.
               </p>
-              <pre>
-                <code
-                  class="language-bash"
-                  data-prismjs-copy="Copy"
-                >git push origin -f</code>
-              </pre>
+              <h4>Formato</h4>
+              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+              <code class="language-bash" data-prismjs-copy="Copy">
+                history
+              </code>
+            </pre>
               <p>
-                Donde <span class="fw-bold text-warning">origin</span> es el
-                nombre del repo remoto.
-              </p>
-              <p>
-                Se debe tener mucho cuidado al usar este último comando, porque
-                en el caso que el repo remoto vaya por delante al repo local
-                toda esta información será destruida y este repo quedará igual
-                al local.
+                Cada comando se puede volver a ejecutar usando
+                <code>!n</code>, donde n es la línea del comando.
               </p>
             </div>
           </div>
         </article>
-        <!-- fin Borrar Ultimo Commit -->
+        <!-- fin Comandos Básicos CLI -->
         <!-- -------------------------------- comentarios -------------------------------- -->
         <article class="row pt-5" id="comment">
           <br />
@@ -283,15 +413,37 @@
         <h1>Índice</h1>
         <ul class="list-group">
           <li class="list-group-item">
-            <a href="#commitNoGithub">El Commit aún no Está en Github</a>
+            <a href="#pwd">pwd</a>
           </li>
           <li class="list-group-item">
-            <a href="#commitGithub">El Commit ya Está en Github</a>
+            <a href="#ls">ls</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#cd">cd</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#mkdir">mkdir</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#touch">touch</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#rm">rm</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#cp">cp</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#clear">clear</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#history">history</a>
           </li>
         </ul>
     </aside>
     <!-- -------------------------------- fin barra lateral -------------------------------- -->
   </div>
+  <!-- -------------------------------- pie de pagina -------------------------------- -->
   <!-- -------------------------------- pie de pagina -------------------------------- -->
   <footer class="row container-fluid border-1 border-top row col">
     <div class="row">
@@ -452,5 +604,6 @@
   </button>
   <!-- Fin button to top -->
 </body>
+
 
 </html>
