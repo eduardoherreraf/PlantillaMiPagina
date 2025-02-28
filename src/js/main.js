@@ -14,6 +14,9 @@ import '../../node_modules/prismjs/plugins/normalize-whitespace/prism-normalize-
 import '../../node_modules/prismjs/plugins/match-braces/prism-match-braces.min.js';
 import '../../node_modules/prismjs/plugins/line-highlight/prism-line-highlight.min.js';
 
+// Import bootstrap 5 icons
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 document.getElementById('myForm').reset();
 
 // Botón to top
