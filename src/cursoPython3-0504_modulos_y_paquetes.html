@@ -1,136 +1,218 @@
 <!-- @format -->
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
+  <head>
+    <!-- Metaetiquetas -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Aprenda a organizar código Python con módulos y paquetes: técnicas de importación, bibliotecas reutilizables y estrategias para programadores."
+    />
+    <meta
+      name="tittle"
+      content="Módulos y Paquetes Python 3 - Ing. Eduardo Herrera Forero."
+    />
+    <meta name="author" content="Ing. Eduardo Herrera Forero" />
+    <meta name="application-name" content="EHF" />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="canonical"
+      href="https://eduardoherreraf.github.io/cursoPython3-0504_modulos_y_paquetes.html"
+    />
+    <!-- Fin Metaetiquetas -->
 
-<head>
-  <!-- Metaetiquetas -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description"
-    content="Aprenda a organizar código Python con módulos y paquetes: técnicas de importación, bibliotecas reutilizables y estrategias para programadores." />
-  <meta name="tittle" content="Módulos y Paquetes Python 3 - Ing. Eduardo Herrera Forero." />
-  <meta name="author" content="Ing. Eduardo Herrera Forero" />
-  <meta name="application-name" content="EHF" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://eduardoherreraf.github.io/cursoPython3-0504_modulos_y_paquetes.html" />
-  <!-- Fin Metaetiquetas -->
+    <!-- Open Graph data -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Módulos y Paquetes Python 3 - Ing. Eduardo Herrera Forero."
+    />
+    <meta
+      property="og:description"
+      content="Aprenda a organizar código Python con módulos y paquetes: técnicas de importación, bibliotecas reutilizables y estrategias para programadores."
+    />
+    <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
+    <meta
+      property="og:image:alt"
+      content="Logo del ingeniero Eduardo Herrera Forero"
+    />
+    <meta
+      property="og:url"
+      content="https://eduardoherreraf.github.io/cursoPython3-0504_modulos_y_paquetes.html"
+    />
+    <meta property="og:locale" content="es_CO" />
+    <!-- fin Open Graph data -->
 
-  <!-- Open Graph data -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Módulos y Paquetes Python 3 - Ing. Eduardo Herrera Forero." />
-  <meta property="og:description"
-    content="Aprenda a organizar código Python con módulos y paquetes: técnicas de importación, bibliotecas reutilizables y estrategias para programadores." />
-  <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
-  <meta property="og:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
-  <meta property="og:url" content="https://eduardoherreraf.github.io/cursoPython3-0504_modulos_y_paquetes.html" />
-  <meta property="og:locale" content="es_CO" />
-  <!-- fin Open Graph data -->
+    <!-- Twitter cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Módulos y Paquetes Python 3 - Ing. Eduardo Herrera Forero."
+    />
+    <meta
+      name="twitter:description"
+      content="Aprenda a organizar código Python con módulos y paquetes: técnicas de importación, bibliotecas reutilizables y estrategias para programadores."
+    />
+    <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
+    <meta
+      name="twitter:image:alt"
+      content="Logo del ingeniero Eduardo Herrera Forero"
+    />
+    <meta
+      name="twitter:url"
+      content="https://eduardoherreraf.github.io/cursoPython3-0504_modulos_y_paquetes.html"
+    />
+    <meta name="twitter:site" content="@ehfeduardo" />
+    <!-- Fin Twitter cards -->
 
-  <!-- Twitter cards -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Módulos y Paquetes Python 3 - Ing. Eduardo Herrera Forero." />
-  <meta name="twitter:description"
-    content="Aprenda a organizar código Python con módulos y paquetes: técnicas de importación, bibliotecas reutilizables y estrategias para programadores." />
-  <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
-  <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero">
-  <meta name="twitter:url" content="https://eduardoherreraf.github.io/cursoPython3-0504_modulos_y_paquetes.html" />
-  <meta name="twitter:site" content="@ehfeduardo" />
-  <!-- Fin Twitter cards -->
+    <!-- iconos -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="android-chrome-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- fin iconos -->
 
-  <!-- iconos -->
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-  <link rel="manifest" href="site.webmanifest" />
-  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
-  <meta name="msapplication-TileColor" content="#da532c" />
-  <meta name="theme-color" content="#ffffff" />
-  <!-- fin iconos -->
+    <title>Módulos y Paquetes Python 3 - Ing. Eduardo Herrera Forero.</title>
 
-  <title>
-    Módulos y Paquetes Python 3 - Ing. Eduardo Herrera Forero.
-  </title>
+    <script type="module" defer src="./js/main.js"></script>
 
-  <script type="module" defer src="./js/main.js"></script>
+    <meta
+      name="google-site-verification"
+      content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc"
+    />
+  </head>
 
-  <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
-</head>
+  <body>
+    <!-- Barra deNavegación -->
+    <nav
+      class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
+    >
+      <div class="container-fluid">
+        <!-- Enlace a la página principal con el logo y nombre -->
+        <a
+          class="navbar-brand d-flex align-items-center ms-2"
+          href="index.html"
+        >
+          <img
+            src="./images/logo.png"
+            alt="Logo de Ing. Eduardo Herrera Forero"
+            width="30"
+            height="30"
+            class="d-inline-block align-text-top me-1"
+          />
+          <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
+        </a>
 
-<body>
-  <!-- Barra deNavegación -->
-  <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
-    <div class="container-fluid">
-      <!-- Enlace a la página principal con el logo y nombre -->
-      <a class="navbar-brand d-flex align-items-center ms-2" href="index.html">
-        <img src="./images/logo.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30"
-          class="d-inline-block align-text-top me-1" />
-        <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
-      </a>
+        <!-- Botón para activar el menú en dispositivos pequeños -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <!-- Botón para activar el menú en dispositivos pequeños -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Menú de navegación -->
-      <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100">
-          <li class="nav-item"><a class="nav-link mx-1" href="index.html">SOBRE MÍ</a></li>
-          <li class="nav-item"><a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a></li>
-          <li class="nav-item"><a class="nav-link mx-1" href="index.html#portfolio">PORTAFOLIO</a></li>
-          <li class="nav-item"><a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a></li>
-          <li class="nav-item"><a class="nav-link mx-1 active" href="index.html#blog">PUBLICACIONES</a></li>
-          <li class="nav-item"><a class="nav-link mx-1" href="index.html#contact">CONTACTO</a></li>
-        </ul>
+        <!-- Menú de navegación -->
+        <div
+          class="collapse navbar-collapse ms-auto text-center"
+          id="navbarSupportedContent"
+        >
+          <ul
+            class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100"
+          >
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="index.html#portfolio"
+                >PORTAFOLIO</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1 active" href="index.html#blog"
+                >PUBLICACIONES</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-  <!-- Barra deNavegación -->
+    </nav>
+    <!-- Barra deNavegación -->
 
-  <!-- -------------------------------- principal -------------------------------- -->
-  <div class="row col mx-1">
-    <main class="pt-5 col-lg-9">
-      <section class="pb-3">
-        <!--  Módulos y Paquetes de Python  -->
-        <article class="row border-1 border-bottom pb-3">
-          <div>
-            <header>
-              <h1>Módulos y Paquetes de Python</h1>
-            </header>
-            <p>
-              Este documento explora el concepto de módulos y paquetes en
-              Python, dos elementos fundamentales que permiten organizar y
-              reutilizar el código de manera eficiente. A través de ejemplos y
-              explicaciones claras, se abordarán las diferencias entre módulos y
-              paquetes, así como su creación y uso en proyectos de programación.
-            </p>
-            <div class="text-center imagen">
-              <picture>
-                <img src="https://i.ibb.co/k5nTj1r/paquetesmodulos.jpg" class="img-fluid  rounded-4" width="70%"
-                  alt="Módulos y Paquetes de Python  " title="Módulo vs Paquete" />
-                <figcaption>Módulos y Paquetes de Python</figcaption>
-              </picture>
-
-            </div>
-            <!-- ¿Qué es un Paquete y un Módulo? -->
-            <div id="queEsUnPaqueteYUnModulo" class="mt-5 pt-5">
-              <h2 class="mt-1">¿Qué es un Paquete y un Módulo?</h2>
-              <!-- Paquete -->
-              <div>
-                <h3>Paquete</h3>
-                <p>
-                  Un paquete es una colección de módulos organizados dentro de
-                  un directorio. Este directorio debe incluir un archivo
-                  especial llamado <code>__init__.py</code>, que indica a Python
-                  que el directorio es un paquete, Si no se necesita lógica
-                  específica, el archivo puede estar vacío. Esto es suficiente
-                  para que Python trate al directorio como un paquete. pero es
-                  buena práctica incluir un docstring que describa el propósito
-                  general del paquete. Ejemplo:
-                </p>
-                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+    <!-- -------------------------------- principal -------------------------------- -->
+    <div class="row col mx-1">
+      <main class="pt-5 col-lg-9">
+        <section class="pb-3">
+          <!--  Módulos y Paquetes de Python  -->
+          <article class="row border-1 border-bottom pb-3">
+            <div>
+              <header>
+                <h1>Módulos y Paquetes de Python</h1>
+              </header>
+              <p>
+                Este documento explora el concepto de módulos y paquetes en
+                Python, dos elementos fundamentales que permiten organizar y
+                reutilizar el código de manera eficiente. A través de ejemplos y
+                explicaciones claras, se abordarán las diferencias entre módulos
+                y paquetes, así como su creación y uso en proyectos de
+                programación.
+              </p>
+              <div class="text-center imagen">
+                <picture>
+                  <img
+                    src="https://i.ibb.co/k5nTj1r/paquetesmodulos.jpg"
+                    class="img-fluid rounded-4"
+                    width="70%"
+                    alt="Módulos y Paquetes de Python  "
+                    title="Módulo vs Paquete"
+                  />
+                  <figcaption>Módulos y Paquetes de Python</figcaption>
+                </picture>
+              </div>
+              <!-- ¿Qué es un Paquete y un Módulo? -->
+              <div id="queEsUnPaqueteYUnModulo" class="mt-5 pt-5">
+                <h2 class="mt-1">¿Qué es un Paquete y un Módulo?</h2>
+                <!-- Paquete -->
+                <div>
+                  <h3>Paquete</h3>
+                  <p>
+                    Un paquete es una colección de módulos organizados dentro de
+                    un directorio. Este directorio debe incluir un archivo
+                    especial llamado <code>__init__.py</code>, que indica a
+                    Python que el directorio es un paquete, Si no se necesita
+                    lógica específica, el archivo puede estar vacío. Esto es
+                    suficiente para que Python trate al directorio como un
+                    paquete. pero es buena práctica incluir un docstring que
+                    describa el propósito general del paquete. Ejemplo:
+                  </p>
+                  <pre
+                    class="line-numbers"
+                    data-src-status="loaded"
+                    tabindex="0"
+                  >
                   <code class="language-python" data-prismjs-copy="Copy">
                     """
                     Paquete: operaciones_matematicas
@@ -138,267 +220,290 @@
                     """
                   </code>
                 </pre>
+                </div>
+                <!-- Paquete fin -->
+                <!-- Buenas Prácticas para Paquetes -->
+                <div>
+                  <h3>Buenas Prácticas para Paquetes</h3>
+                  <ul>
+                    <li>
+                      <span class="fw-bold">Organización y estructura</span>:
+                      <ul>
+                        <li>
+                          Diseñar paquetes con una jerarquía lógica y
+                          responsabilidades claras.
+                        </li>
+                        <li>
+                          Mantener los módulos pequeños y evitar dependencias
+                          circulares.
+                        </li>
+                        <li>
+                          Crear una estructura ordenada que facilite la
+                          navegación.
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span class="fw-bold">Nombrado</span>:
+                      <ul>
+                        <li>
+                          Usar nombres significativos, cortos y en minúsculas
+                          para módulos y paquetes.
+                        </li>
+                        <li>
+                          Evitar nombres que puedan chocar con módulos estándar
+                          de Python.
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span class="fw-bold"
+                        >Uso del archivo <code>__init__.py</code></span
+                      >:
+                      <ul>
+                        <li>
+                          Documentar el propósito del paquete en un docstring.
+                        </li>
+                        <li>
+                          Simplificar importaciones exportando funciones clave
+                          en
+                          <code>__init__.py</code>.
+                        </li>
+                        <li>
+                          Controlar lo que se expone con la variable
+                          <code>__all__</code>.
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span class="fw-bold">Importaciones</span>:
+                      <ul>
+                        <li>
+                          Usar rutas relativas dentro del paquete para mejorar
+                          la portabilidad.
+                        </li>
+                        <li>
+                          Evitar from paquete import * para mantener claridad y
+                          evitar conflictos de nombres.
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span class="fw-bold">Documentación</span>:
+                      <ul>
+                        <li>
+                          Documentar cada módulo, función y clase con docstrings
+                          claros.
+                        </li>
+                        <li>
+                          Incluir un archivo <code>README.md</code>. que
+                          explique el propósito del paquete y cómo usarlo.
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span class="fw-bold">Pruebas</span>:
+                      <ul>
+                        <li>
+                          Agregar pruebas unitarias para cada módulo y usar
+                          herramientas como <code>pytest</code>.
+                        </li>
+                        <li>
+                          Mantener las pruebas en un directorio separado dentro
+                          del proyecto.
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span class="fw-bold">Distribución</span>:
+                      <ul>
+                        <li>
+                          Preparar un archivo <code>setup.py</code> para definir
+                          cómo se instala el paquete.
+                        </li>
+                        <li>
+                          Documentar las dependencias y asegurarse de que el
+                          paquete cumpla estándares si se publicará en PyPI.
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span class="fw-bold">Estilo y calidad</span>:
+                      <ul>
+                        <li>
+                          Seguir las normas de PEP 8 para escribir código limpio
+                          y legible.
+                        </li>
+                        <li>
+                          Usar herramientas como <code>flake8</code> o
+                          <code>black</code> para mantener la calidad del
+                          código.
+                        </li>
+                        <li>
+                          Comentar adecuadamente partes complejas del código.
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Buenas Prácticas para Paquetes fin -->
               </div>
-              <!-- Paquete fin -->
-              <!-- Buenas Prácticas para Paquetes -->
-              <div>
-                <h3>Buenas Prácticas para Paquetes</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Organización y estructura</span>:
-                    <ul>
-                      <li>
-                        Diseñar paquetes con una jerarquía lógica y
-                        responsabilidades claras.
-                      </li>
-                      <li>
-                        Mantener los módulos pequeños y evitar dependencias
-                        circulares.
-                      </li>
-                      <li>
-                        Crear una estructura ordenada que facilite la
-                        navegación.
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Nombrado</span>:
-                    <ul>
-                      <li>
-                        Usar nombres significativos, cortos y en minúsculas para
-                        módulos y paquetes.
-                      </li>
-                      <li>
-                        Evitar nombres que puedan chocar con módulos estándar de
-                        Python.
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Uso del archivo <code>__init__.py</code></span>:
-                    <ul>
-                      <li>
-                        Documentar el propósito del paquete en un docstring.
-                      </li>
-                      <li>
-                        Simplificar importaciones exportando funciones clave en
-                        <code>__init__.py</code>.
-                      </li>
-                      <li>
-                        Controlar lo que se expone con la variable
-                        <code>__all__</code>.
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Importaciones</span>:
-                    <ul>
-                      <li>
-                        Usar rutas relativas dentro del paquete para mejorar la
-                        portabilidad.
-                      </li>
-                      <li>
-                        Evitar from paquete import * para mantener claridad y
-                        evitar conflictos de nombres.
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Documentación</span>:
-                    <ul>
-                      <li>
-                        Documentar cada módulo, función y clase con docstrings
-                        claros.
-                      </li>
-                      <li>
-                        Incluir un archivo <code>README.md</code>. que explique
-                        el propósito del paquete y cómo usarlo.
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Pruebas</span>:
-                    <ul>
-                      <li>
-                        Agregar pruebas unitarias para cada módulo y usar
-                        herramientas como <code>pytest</code>.
-                      </li>
-                      <li>
-                        Mantener las pruebas en un directorio separado dentro
-                        del proyecto.
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Distribución</span>:
-                    <ul>
-                      <li>
-                        Preparar un archivo <code>setup.py</code> para definir
-                        cómo se instala el paquete.
-                      </li>
-                      <li>
-                        Documentar las dependencias y asegurarse de que el
-                        paquete cumpla estándares si se publicará en PyPI.
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Estilo y calidad</span>:
-                    <ul>
-                      <li>
-                        Seguir las normas de PEP 8 para escribir código limpio y
-                        legible.
-                      </li>
-                      <li>
-                        Usar herramientas como <code>flake8</code> o
-                        <code>black</code> para mantener la calidad del código.
-                      </li>
-                      <li>
-                        Comentar adecuadamente partes complejas del código.
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <!-- Buenas Prácticas para Paquetes fin -->
-
-            </div>
-            <!-- ¿Qué es un Paquete y un Módulo y un Módulo? Fin -->
-            <!-- Primer Módulo -->
-            <div id="primerModulo" class="mt-5 pt-5">
-              <h2 class="mt-1">Primer Módulo</h2>
-              <!-- Módulo -->
-              <div>
-                <h3>Módulo</h3>
-                <p>
-                  Un módulo es simplemente un archivo con extensión
-                  <code>.py</code> que contiene código Python, como funciones,
-                  variables o clases. Los módulos ayudan a dividir el código en
-                  partes reutilizables y organizadas.
-                </p>
-              </div>
-              <!-- Módulo fin -->
-              <!-- Manejo de Módulos -->
-              <div>
-                <h3>Manejo de Módulos</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold"><code>module.py</code></span>: Archivo que contiene el código del módulo.
-                    <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+              <!-- ¿Qué es un Paquete y un Módulo y un Módulo? Fin -->
+              <!-- Primer Módulo -->
+              <div id="primerModulo" class="mt-5 pt-5">
+                <h2 class="mt-1">Primer Módulo</h2>
+                <!-- Módulo -->
+                <div>
+                  <h3>Módulo</h3>
+                  <p>
+                    Un módulo es simplemente un archivo con extensión
+                    <code>.py</code> que contiene código Python, como funciones,
+                    variables o clases. Los módulos ayudan a dividir el código
+                    en partes reutilizables y organizadas.
+                  </p>
+                </div>
+                <!-- Módulo fin -->
+                <!-- Manejo de Módulos -->
+                <div>
+                  <h3>Manejo de Módulos</h3>
+                  <ul>
+                    <li>
+                      <span class="fw-bold"><code>module.py</code></span
+                      >: Archivo que contiene el código del módulo.
+                      <pre
+                        class="line-numbers"
+                        data-src-status="loaded"
+                        tabindex="0"
+                      >
                       <code class="language-python" data-prismjs-copy="Copy">
                         print("Me gusta ser un módulo.")
                       </code>
                     </pre>
-                  </li>
-                  <li>
-                    <span class="fw-bold"><code>main.py</code></span>: En este archivo se importa el módulo
-                    <code>module.py</code>, ambos archivos deben estar en la
-                    misma carpeta.
-                    <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code>main.py</code></span
+                      >: En este archivo se importa el módulo
+                      <code>module.py</code>, ambos archivos deben estar en la
+                      misma carpeta.
+                      <pre
+                        class="line-numbers"
+                        data-src-status="loaded"
+                        tabindex="0"
+                      >
                       <code class="language-python" data-prismjs-copy="Copy">
                         import module
                       </code>
                     </pre>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Ejecutar <code>main.py</code></span>: se debe ver el mensaje "Me gusta ser un
-                    módulo".
-                  </li>
-                  <li>
-                    <span class="fw-bold">Carpeta <code>__pycache__</code></span>: Al ejecutar el archivo
-                    <code>main.py</code> se crea una
-                    carpeta con el nombre <code>__pycache__</code>, el cual
-                    contiene el archivo <code>module.cpython-xy.pyc</code>:
-                  </li>
-                  <li>
-                    <span class="fw-bold">Archivo <code>module.cpython-xy.pyc</code></span>:
-                    <ul>
-                      <li>
-                        El archivo se puede llamar (más o menos)
-                        <code>module.cpython-xy.pyc</code> donde
-                        <code>x</code> y <code>y</code> son dígitos derivados de
-                        la versión de Python (por ejemplo, serán 3 y 8 si s
-                        utiliza Python 3.8).
-                      </li>
-                      <li>
-                        El nombre del archivo es el mismo que el del módulo. La
-                        parte posterior al primer punto dice qué implementación
-                        de Python ha creado el archivo (CPython) y su número de
-                        versión. La ultima parte (pyc) viene de las palabras
-                        Python y compilado.
-                      </li>
-                      <li>
-                        Cuando Python importa un módulo por primera vez, traduce
-                        el contenido a una forma algo compilada.
-                      </li>
-                      <li>
-                        El archivo no contiene código en lenguaje máquina: es
-                        código semi-compilado interno de Python, listo para ser
-                        ejecutado por el intérprete de Python. Como tal archivo
-                        no requiere tantas comprobaciones como las de un archivo
-                        fuente, la ejecución comienza más rápido y también se
-                        ejecuta más rápido.
-                      </li>
-                      <li>
-                        Gracias a eso, cada vez que se importe este archivo
-                        posteriormente será más rápida que interpretar el código
-                        fuente desde cero.
-                      </li>
-                      <li>
-                        Python puede verificar si el archivo fuente del módulo
-                        ha sido modificado (en este caso, el archivo pyc será
-                        reconstruido) o no (cuando el archivo pyc pueda ser
-                        ejecutado al instante). Este proceso es completamente
-                        automático y transparente, no tiene que ser tomando en
-                        cuenta.
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Ejecutar <code>module.py</code></span>: se debe ver el mensaje "Me gusta ser
-                    un
-                    módulo" otra vez.
-                  </li>
-                  <li>
-                    Como se puede ver no hay ninguna diferencia en el resultado
-                    de la ejecución del código directamente desde el módulo
-                    <code>module.py</code> o desde un script
-                    <code>main.py</code>, para poder diferenciar quien ejecutó
-                    el código se usa la variable <code>__name__</code>.
-                  </li>
-                  <li>
-                    <span class="fw-bold">variable <code>__name__</code></span>: En Python, la variable especial
-                    <code>__name__</code> es
-                    una cadena que se utiliza para determinar si un archivo
-                    Python está siendo ejecutado directamente o importado como
-                    un módulo. Esto es especialmente útil para controlar qué
-                    partes del código se ejecutan dependiendo del contexto.
-                  </li>
-                </ul>
-                <!-- Contextos de Uso de __name__ -->
-                <div>
-                  <h4>Contextos de Uso de __name__</h4>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Cuando un archivo se ejecuta directamente</span>: Si se ejecuta
-                      directamente,
-                      Python asigna a
-                      <code>__name__</code> el valor <code>__main__</code>. Esto
-                      permite identificar que el archivo es el programa
-                      principal.
                     </li>
                     <li>
-                      <span class="fw-bold">Cuando un archivo se importa como módulo</span>: Si el archivo es importado
-                      en
-                      otro archivo, Python
-                      asigna a<code> __name__</code> el nombre del archivo sin
-                      la extensión .py. Esto asegura que el bloque protegido con
-                      if <code>__name__</code> == <code>__main__</code>: no se
-                      ejecute. <br />
-                      Si al archivo <code>module.py</code> se le adiciona la
-                      instrucción <code>print(__name__)</code> como se muestra a
-                      continuación:
-                      <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                      <span class="fw-bold">Ejecutar <code>main.py</code></span
+                      >: se debe ver el mensaje "Me gusta ser un módulo".
+                    </li>
+                    <li>
+                      <span class="fw-bold"
+                        >Carpeta <code>__pycache__</code></span
+                      >: Al ejecutar el archivo <code>main.py</code> se crea una
+                      carpeta con el nombre <code>__pycache__</code>, el cual
+                      contiene el archivo <code>module.cpython-xy.pyc</code>:
+                    </li>
+                    <li>
+                      <span class="fw-bold"
+                        >Archivo <code>module.cpython-xy.pyc</code></span
+                      >:
+                      <ul>
+                        <li>
+                          El archivo se puede llamar (más o menos)
+                          <code>module.cpython-xy.pyc</code> donde
+                          <code>x</code> y <code>y</code> son dígitos derivados
+                          de la versión de Python (por ejemplo, serán 3 y 8 si s
+                          utiliza Python 3.8).
+                        </li>
+                        <li>
+                          El nombre del archivo es el mismo que el del módulo.
+                          La parte posterior al primer punto dice qué
+                          implementación de Python ha creado el archivo
+                          (CPython) y su número de versión. La ultima parte
+                          (pyc) viene de las palabras Python y compilado.
+                        </li>
+                        <li>
+                          Cuando Python importa un módulo por primera vez,
+                          traduce el contenido a una forma algo compilada.
+                        </li>
+                        <li>
+                          El archivo no contiene código en lenguaje máquina: es
+                          código semi-compilado interno de Python, listo para
+                          ser ejecutado por el intérprete de Python. Como tal
+                          archivo no requiere tantas comprobaciones como las de
+                          un archivo fuente, la ejecución comienza más rápido y
+                          también se ejecuta más rápido.
+                        </li>
+                        <li>
+                          Gracias a eso, cada vez que se importe este archivo
+                          posteriormente será más rápida que interpretar el
+                          código fuente desde cero.
+                        </li>
+                        <li>
+                          Python puede verificar si el archivo fuente del módulo
+                          ha sido modificado (en este caso, el archivo pyc será
+                          reconstruido) o no (cuando el archivo pyc pueda ser
+                          ejecutado al instante). Este proceso es completamente
+                          automático y transparente, no tiene que ser tomando en
+                          cuenta.
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span class="fw-bold"
+                        >Ejecutar <code>module.py</code></span
+                      >: se debe ver el mensaje "Me gusta ser un módulo" otra
+                      vez.
+                    </li>
+                    <li>
+                      Como se puede ver no hay ninguna diferencia en el
+                      resultado de la ejecución del código directamente desde el
+                      módulo
+                      <code>module.py</code> o desde un script
+                      <code>main.py</code>, para poder diferenciar quien ejecutó
+                      el código se usa la variable <code>__name__</code>.
+                    </li>
+                    <li>
+                      <span class="fw-bold">variable <code>__name__</code></span
+                      >: En Python, la variable especial
+                      <code>__name__</code> es una cadena que se utiliza para
+                      determinar si un archivo Python está siendo ejecutado
+                      directamente o importado como un módulo. Esto es
+                      especialmente útil para controlar qué partes del código se
+                      ejecutan dependiendo del contexto.
+                    </li>
+                  </ul>
+                  <!-- Contextos de Uso de __name__ -->
+                  <div>
+                    <h4>Contextos de Uso de __name__</h4>
+                    <ul>
+                      <li>
+                        <span class="fw-bold"
+                          >Cuando un archivo se ejecuta directamente</span
+                        >: Si se ejecuta directamente, Python asigna a
+                        <code>__name__</code> el valor <code>__main__</code>.
+                        Esto permite identificar que el archivo es el programa
+                        principal.
+                      </li>
+                      <li>
+                        <span class="fw-bold"
+                          >Cuando un archivo se importa como módulo</span
+                        >: Si el archivo es importado en otro archivo, Python
+                        asigna a<code> __name__</code> el nombre del archivo sin
+                        la extensión .py. Esto asegura que el bloque protegido
+                        con if <code>__name__</code> == <code>__main__</code>:
+                        no se ejecute. <br />
+                        Si al archivo <code>module.py</code> se le adiciona la
+                        instrucción <code>print(__name__)</code> como se muestra
+                        a continuación:
+                        <pre
+                          class="line-numbers"
+                          data-src-status="loaded"
+                          tabindex="0"
+                        >
                         <code class="language-python" data-prismjs-copy="Copy">
                           # module.py
                           print("Me gusta ser un módulo.")
@@ -406,102 +511,119 @@
                           # Salida: __main__
                         </code>
                       </pre>
-                      <p>
-                        Al ejecutar este módulo la variable
-                        <code>__name__</code> toma el valor de
-                        <code>__main__</code>.
-                      </p>
-                      <p>
-                        Si ejecuta el script que trabaja como paquete,
-                        <code>main.py</code>, la variable
-                        <code>__name__</code> toma el valor de
-                        <code>module</code> es decir el nombre del archivo o
-                        módulo que se está importando sin la extensión
-                        <code>.py</code>.
-                      </p>
-                      <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                        <p>
+                          Al ejecutar este módulo la variable
+                          <code>__name__</code> toma el valor de
+                          <code>__main__</code>.
+                        </p>
+                        <p>
+                          Si ejecuta el script que trabaja como paquete,
+                          <code>main.py</code>, la variable
+                          <code>__name__</code> toma el valor de
+                          <code>module</code> es decir el nombre del archivo o
+                          módulo que se está importando sin la extensión
+                          <code>.py</code>.
+                        </p>
+                        <pre
+                          class="line-numbers"
+                          data-src-status="loaded"
+                          tabindex="0"
+                        >
                       <code class="language-python" data-prismjs-copy="Copy">
                         # main.py
                         import module
                         # Salida: module
                       </code>
                     </pre>
-                      <p>
-                        Sucede lo mismo con todos los módulos importados en el
-                        archivo <code>main.py</code>.
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-                <!-- Contextos de Uso de __name__ fin -->
-              </div>
-              <!-- Manejo de Módulos fin -->
-              <!-- Buenas Prácticas para Módulos -->
-              <div>
-                <h3>Buenas Prácticas para Módulos</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Usar nombres descriptivos y en minúsculas</span>:
-                    <ul>
-                      <li>
-                        El nombre del módulo debe reflejar claramente su
-                        propósito.
-                      </li>
-                      <li>
-                        Evitar nombres genéricos como utilidades.py o
-                        funciones.py.
-                      </li>
-                      <li>
-                        Ejemplo: calculos_financieros.py es más descriptivo que
-                        calculos.py.
+                        <p>
+                          Sucede lo mismo con todos los módulos importados en el
+                          archivo <code>main.py</code>.
+                        </p>
                       </li>
                     </ul>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Evitar el uso de nombres de módulos conflictivos</span>:No nombrar módulos con
-                    nombres que coincidan con
-                    bibliotecas estándar de Python (por ejemplo, math.py o
-                    json.py).
-                  </li>
-                  <li>
-                    <span class="fw-bold">Agrupar funciones relacionadas</span>:
-                    Un módulo debe contener funciones, clases o variables que
-                    tengan un propósito común. Esto mejora la coherencia y
-                    facilita el mantenimiento.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Evitar demasiadas responsabilidades en un módulo</span>: Si un módulo crece
-                    demasiado, divídalo en varios módulos
-                    más pequeños.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Documentar el módulo con un docstring</span>: Incluir un resumen breve al
-                    principio del archivo que
-                    describa su propósito y cómo se usa.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Controlar lo que se exporta</span>:
-                    Utilizar la variable <code>__all__</code> para definir qué
-                    funciones, variables o clases estarán disponibles al usar
-                    <code>from modulo import *</code>.
-                    <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  </div>
+                  <!-- Contextos de Uso de __name__ fin -->
+                </div>
+                <!-- Manejo de Módulos fin -->
+                <!-- Buenas Prácticas para Módulos -->
+                <div>
+                  <h3>Buenas Prácticas para Módulos</h3>
+                  <ul>
+                    <li>
+                      <span class="fw-bold"
+                        >Usar nombres descriptivos y en minúsculas</span
+                      >:
+                      <ul>
+                        <li>
+                          El nombre del módulo debe reflejar claramente su
+                          propósito.
+                        </li>
+                        <li>
+                          Evitar nombres genéricos como utilidades.py o
+                          funciones.py.
+                        </li>
+                        <li>
+                          Ejemplo: calculos_financieros.py es más descriptivo
+                          que calculos.py.
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span class="fw-bold"
+                        >Evitar el uso de nombres de módulos conflictivos</span
+                      >:No nombrar módulos con nombres que coincidan con
+                      bibliotecas estándar de Python (por ejemplo, math.py o
+                      json.py).
+                    </li>
+                    <li>
+                      <span class="fw-bold">Agrupar funciones relacionadas</span
+                      >: Un módulo debe contener funciones, clases o variables
+                      que tengan un propósito común. Esto mejora la coherencia y
+                      facilita el mantenimiento.
+                    </li>
+                    <li>
+                      <span class="fw-bold"
+                        >Evitar demasiadas responsabilidades en un módulo</span
+                      >: Si un módulo crece demasiado, divídalo en varios
+                      módulos más pequeños.
+                    </li>
+                    <li>
+                      <span class="fw-bold"
+                        >Documentar el módulo con un docstring</span
+                      >: Incluir un resumen breve al principio del archivo que
+                      describa su propósito y cómo se usa.
+                    </li>
+                    <li>
+                      <span class="fw-bold">Controlar lo que se exporta</span>:
+                      Utilizar la variable <code>__all__</code> para definir qué
+                      funciones, variables o clases estarán disponibles al usar
+                      <code>from modulo import *</code>.
+                      <pre
+                        class="line-numbers"
+                        data-src-status="loaded"
+                        tabindex="0"
+                      >
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Exportar únicamente lo necesario
                           __all__ = ['suma', 'promedio']
                         </code>
                       </pre>
-                  </li>
-                </ul>
-              </div>
-              <!-- Buenas Prácticas para Módulos fin -->
-              <!-- Plantilla Ejemplo -->
-              <div>
-                <h3>Plantilla Ejemplo</h3>
-                <p>
-                  Se muestra un código nuevo del archivo
-                  <code>module.py</code>. El módulo actualizado está aquí:
-                </p>
-                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                    </li>
+                  </ul>
+                </div>
+                <!-- Buenas Prácticas para Módulos fin -->
+                <!-- Plantilla Ejemplo -->
+                <div>
+                  <h3>Plantilla Ejemplo</h3>
+                  <p>
+                    Se muestra un código nuevo del archivo
+                    <code>module.py</code>. El módulo actualizado está aquí:
+                  </p>
+                  <pre
+                    class="line-numbers"
+                    data-src-status="loaded"
+                    tabindex="0"
+                  >
                     <code class="language-python" data-prismjs-copy="Copy">
                       #!/usr/bin/env python3 
                       "" module.py - an example of a Python module ""
@@ -527,76 +649,81 @@
                         print(prodl(my_list) == 120)
                     </code>
                   </pre>
-                <p>
-                  La línea que comienza con <code>#!</code> recibe múltiples
-                  nombres, como shabang, shebang, hashbang, poundbang o incluso
-                  hashpling. Desde la perspectiva de Python, esta línea no es
-                  más que un comentario, ya que comienza con el carácter
-                  <code>#</code>. Sin embargo, para los sistemas operativos
-                  basados en Unix y similares (incluido macOS), esta línea
-                  instruye al sistema operativo sobre cómo ejecutar el contenido
-                  del archivo, especificando qué programa debe interpretar el
-                  texto. En ciertos entornos, especialmente en aquellos
-                  relacionados con servidores web, la ausencia de esta línea
-                  puede ocasionar problemas de funcionamiento.
-                </p>
-                <p>
-                  Por otro lado, una cadena de texto (que puede ser multilínea)
-                  ubicada antes de cualquier instrucción dentro de un módulo,
-                  incluidas las declaraciones de importación, se denomina
-                  doc-string. Su propósito es proporcionar una breve descripción
-                  del objetivo y contenido del módulo.
-                </p>
-                <p>
-                  Las funciones definidas en el módulo, como
-                  <code>suml()</code> y <code>prodl()</code>, están disponibles
-                  para ser importadas y utilizadas en otros archivos.
-                </p>
-                <p>
-                  Python no ofrece mecanismos para restringir el acceso a
-                  variables privadas de manera que solo puedan ser utilizadas
-                  dentro del módulo al que pertenecen. Se puede comunicar a los
-                  usuarios que esta variable es de uso exclusivo para lectura y
-                  que no debe ser modificada bajo ninguna circunstancia. Para
-                  indicar esta restricción, se antepone un guion bajo
-                  <code>_</code> o dos guiones bajos <code>__</code> al nombre
-                  de la variable. Sin embargo, es importante destacar que esta
-                  práctica es únicamente un acuerdo implícito y no una regla
-                  obligatoria, por lo que los usuarios del módulo pueden decidir
-                  si respetan esta convención o no.
-                </p>
-                <p>
-                  Adicionalmente, la variable especial
-                  <code>__name__</code> se utiliza para identificar si el
-                  archivo se está ejecutando de forma independiente. En tal
-                  caso, se aprovecha esta característica para realizar pruebas
-                  simples del código.
-                </p>
+                  <p>
+                    La línea que comienza con <code>#!</code> recibe múltiples
+                    nombres, como shabang, shebang, hashbang, poundbang o
+                    incluso hashpling. Desde la perspectiva de Python, esta
+                    línea no es más que un comentario, ya que comienza con el
+                    carácter <code>#</code>. Sin embargo, para los sistemas
+                    operativos basados en Unix y similares (incluido macOS),
+                    esta línea instruye al sistema operativo sobre cómo ejecutar
+                    el contenido del archivo, especificando qué programa debe
+                    interpretar el texto. En ciertos entornos, especialmente en
+                    aquellos relacionados con servidores web, la ausencia de
+                    esta línea puede ocasionar problemas de funcionamiento.
+                  </p>
+                  <p>
+                    Por otro lado, una cadena de texto (que puede ser
+                    multilínea) ubicada antes de cualquier instrucción dentro de
+                    un módulo, incluidas las declaraciones de importación, se
+                    denomina doc-string. Su propósito es proporcionar una breve
+                    descripción del objetivo y contenido del módulo.
+                  </p>
+                  <p>
+                    Las funciones definidas en el módulo, como
+                    <code>suml()</code> y <code>prodl()</code>, están
+                    disponibles para ser importadas y utilizadas en otros
+                    archivos.
+                  </p>
+                  <p>
+                    Python no ofrece mecanismos para restringir el acceso a
+                    variables privadas de manera que solo puedan ser utilizadas
+                    dentro del módulo al que pertenecen. Se puede comunicar a
+                    los usuarios que esta variable es de uso exclusivo para
+                    lectura y que no debe ser modificada bajo ninguna
+                    circunstancia. Para indicar esta restricción, se antepone un
+                    guion bajo
+                    <code>_</code> o dos guiones bajos <code>__</code> al nombre
+                    de la variable. Sin embargo, es importante destacar que esta
+                    práctica es únicamente un acuerdo implícito y no una regla
+                    obligatoria, por lo que los usuarios del módulo pueden
+                    decidir si respetan esta convención o no.
+                  </p>
+                  <p>
+                    Adicionalmente, la variable especial
+                    <code>__name__</code> se utiliza para identificar si el
+                    archivo se está ejecutando de forma independiente. En tal
+                    caso, se aprovecha esta característica para realizar pruebas
+                    simples del código.
+                  </p>
+                </div>
+                <!-- Plantilla Ejemplo fin -->
               </div>
-              <!-- Plantilla Ejemplo fin -->
-
-            </div>
-            <!-- Primer Módulo Fin -->
-            <!-- Primer Paquete -->
-            <div id="primerPaquete" class="mt-5 pt-5">
-              <h2 class="mt-1">Primer Paquete</h2>
-              <!-- ¿Qué Es un Paquete en Python? -->
-              <div>
-                <h3>¿Qué Es un Paquete en Python?</h3>
-                <p>Un paquete es una carpeta que:</p>
-                <ul>
-                  <li>
-                    Contiene un archivo especial llamado
-                    <code>__init__.py</code> (en versiones modernas de Python,
-                    este archivo puede ser opcional).
-                  </li>
-                  <li>Agrupa varios módulos relacionados.</li>
-                  <li>
-                    Puede contener subpaquetes, organizando el código en niveles
-                    jerárquicos.
-                  </li>
-                </ul>
-                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+              <!-- Primer Módulo Fin -->
+              <!-- Primer Paquete -->
+              <div id="primerPaquete" class="mt-5 pt-5">
+                <h2 class="mt-1">Primer Paquete</h2>
+                <!-- ¿Qué Es un Paquete en Python? -->
+                <div>
+                  <h3>¿Qué Es un Paquete en Python?</h3>
+                  <p>Un paquete es una carpeta que:</p>
+                  <ul>
+                    <li>
+                      Contiene un archivo especial llamado
+                      <code>__init__.py</code> (en versiones modernas de Python,
+                      este archivo puede ser opcional).
+                    </li>
+                    <li>Agrupa varios módulos relacionados.</li>
+                    <li>
+                      Puede contener subpaquetes, organizando el código en
+                      niveles jerárquicos.
+                    </li>
+                  </ul>
+                  <pre
+                    class="line-numbers"
+                    data-src-status="loaded"
+                    tabindex="0"
+                  >
                   <code class="language-python" data-prismjs-copy="Copy">
                     mi_paquete/
                         __init__.py
@@ -607,69 +734,86 @@
                             modulo3.py
                   </code>
                 </pre>
-                <p>En esta estructura:</p>
-                <ul>
-                  <li><code>mi_paquete</code> es el paquete principal.</li>
-                  <li>
-                    <code>subpaquete</code> es un subpaquete dentro de
-                    <code>mi_paquete</code>.
-                  </li>
-                  <li>
-                    <code>modulo1.py</code>, <code>modulo2.py</code>, y
-                    <code>modulo3.py</code> son módulos que contienen funciones,
-                    clases o variables.
-                  </li>
-                </ul>
-              </div>
-              <!-- ¿Qué Es un Paquete en Python? fin -->
-              <!-- Crear un Paquete -->
-              <div>
-                <h3>Crear un Paquete</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Crear un directorio</span>: Este será
-                    el nombre del paquete.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Añadir un archivo
-                      <code>mi_paquete/__init__.py</code></span>: Este archivo puede estar vacío o contener código para
-                    inicializar el paquete (por ejemplo, importar módulos por
-                    defecto). <br />
-                    Ejemplo: <code>mi_paquete/__init__.py</code> puede contener:
-                    <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <p>En esta estructura:</p>
+                  <ul>
+                    <li><code>mi_paquete</code> es el paquete principal.</li>
+                    <li>
+                      <code>subpaquete</code> es un subpaquete dentro de
+                      <code>mi_paquete</code>.
+                    </li>
+                    <li>
+                      <code>modulo1.py</code>, <code>modulo2.py</code>, y
+                      <code>modulo3.py</code> son módulos que contienen
+                      funciones, clases o variables.
+                    </li>
+                  </ul>
+                </div>
+                <!-- ¿Qué Es un Paquete en Python? fin -->
+                <!-- Crear un Paquete -->
+                <div>
+                  <h3>Crear un Paquete</h3>
+                  <ul>
+                    <li>
+                      <span class="fw-bold">Crear un directorio</span>: Este
+                      será el nombre del paquete.
+                    </li>
+                    <li>
+                      <span class="fw-bold"
+                        >Añadir un archivo
+                        <code>mi_paquete/__init__.py</code></span
+                      >: Este archivo puede estar vacío o contener código para
+                      inicializar el paquete (por ejemplo, importar módulos por
+                      defecto). <br />
+                      Ejemplo: <code>mi_paquete/__init__.py</code> puede
+                      contener:
+                      <pre
+                        class="line-numbers"
+                        data-src-status="loaded"
+                        tabindex="0"
+                      >
                       <code class="language-python" data-prismjs-copy="Copy">
                         from .modulo1 import funcion1
                         from .modulo2 import clase2
                       </code>
                     </pre>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Añadir módulos al paquete</span>: Crea
-                    archivos <code>.py</code> dentro de la carpeta del paquete.
-                    <br />
-                    Ejemplo de <code>modulo1.py</code>:
-                    <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                    </li>
+                    <li>
+                      <span class="fw-bold">Añadir módulos al paquete</span>:
+                      Crea archivos <code>.py</code> dentro de la carpeta del
+                      paquete.
+                      <br />
+                      Ejemplo de <code>modulo1.py</code>:
+                      <pre
+                        class="line-numbers"
+                        data-src-status="loaded"
+                        tabindex="0"
+                      >
                       <code class="language-python" data-prismjs-copy="Copy">
                         def funcion1():
                             print("Hola desde modulo1!")
                       </code>
                     </pre>
-                  </li>
-                </ul>
-              </div>
-              <!-- Crear un Paquete fin -->
-              <!-- Importar y Usar un Paquete -->
-              <div>
-                <h3>Importar y Usar un Paquete</h3>
-                <p>
-                  Una vez que el paquete está configurado, puede ser usado como
-                  un módulo normal en Python.
-                </p>
-                <p>Ejemplo:</p>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Crear la siguiente estructura</span>:
-                    <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                    </li>
+                  </ul>
+                </div>
+                <!-- Crear un Paquete fin -->
+                <!-- Importar y Usar un Paquete -->
+                <div>
+                  <h3>Importar y Usar un Paquete</h3>
+                  <p>
+                    Una vez que el paquete está configurado, puede ser usado
+                    como un módulo normal en Python.
+                  </p>
+                  <p>Ejemplo:</p>
+                  <ul>
+                    <li>
+                      <span class="fw-bold">Crear la siguiente estructura</span
+                      >:
+                      <pre
+                        class="line-numbers"
+                        data-src-status="loaded"
+                        tabindex="0"
+                      >
                       <code class="language-python" data-prismjs-copy="Copy">
                         mi_paquete/
                             __init__.py
@@ -677,47 +821,65 @@
                             modulo2.py
                       </code>
                     </pre>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Código en <code>modulo1.py</code></span>:
-                    <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                    </li>
+                    <li>
+                      <span class="fw-bold"
+                        >Código en <code>modulo1.py</code></span
+                      >:
+                      <pre
+                        class="line-numbers"
+                        data-src-status="loaded"
+                        tabindex="0"
+                      >
                       <code class="language-python" data-prismjs-copy="Copy">
                         def funcion1():
                             return "Función en modulo1"
                       </code>
                     </pre>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Código en modulo2.py</span>:
-                    <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                    </li>
+                    <li>
+                      <span class="fw-bold">Código en modulo2.py</span>:
+                      <pre
+                        class="line-numbers"
+                        data-src-status="loaded"
+                        tabindex="0"
+                      >
                       <code class="language-python" data-prismjs-copy="Copy">
                         def funcion2():
                             return "Función en modulo2"
                       </code>
                     </pre>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Importar en un script Python</span>:
-                    <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                    </li>
+                    <li>
+                      <span class="fw-bold">Importar en un script Python</span>:
+                      <pre
+                        class="line-numbers"
+                        data-src-status="loaded"
+                        tabindex="0"
+                      >
                       <code class="language-python" data-prismjs-copy="Copy">
                         from mi_paquete import modulo1, modulo2
                         print(modulo1.funcion1())  # Salida: Función en modulo1
                         print(modulo2.funcion2())  # Salida: Función en modulo2
                       </code>
                     </pre>
-                  </li>
-                </ul>
-              </div>
-              <!-- Importar y Usar un Paquete fin -->
-              <!-- Paquetes con Subpaquetes -->
-              <div>
-                <h3>Paquetes con Subpaquetes</h3>
-                <p>
-                  Si se tienen subpaquetes, se pueden organizar importaciones
-                  jerárquicas.
-                </p>
-                <p>Ejemplo de estructura:</p>
-                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                    </li>
+                  </ul>
+                </div>
+                <!-- Importar y Usar un Paquete fin -->
+                <!-- Paquetes con Subpaquetes -->
+                <div>
+                  <h3>Paquetes con Subpaquetes</h3>
+                  <p>
+                    Si se tienen subpaquetes, se pueden organizar importaciones
+                    jerárquicas.
+                  </p>
+                  <p>Ejemplo de estructura:</p>
+                  <pre
+                    class="line-numbers"
+                    data-src-status="loaded"
+                    tabindex="0"
+                  >
                   <code class="language-python" data-prismjs-copy="Copy">
                     mi_paquete/
                         __init__.py
@@ -727,8 +889,12 @@
                             modulo3.py
                   </code>
                 </pre>
-                <p>Para usar el subpaquete:</p>
-                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <p>Para usar el subpaquete:</p>
+                  <pre
+                    class="line-numbers"
+                    data-src-status="loaded"
+                    tabindex="0"
+                  >
                   <code class="language-python" data-prismjs-copy="Copy">
                     from mi_paquete.subpaquete import modulo3
                     # Llamar funciones o clases de modulo3
@@ -736,365 +902,370 @@
                     print(resultado)
                   </code>
                 </pre>
-              </div>
-              <!-- Paquetes con Subpaquetes fin -->
-              <!-- Instalar y Usar Paquetes Externos -->
-              <div>
-                <h3>Instalar y Usar Paquetes Externos</h3>
-                <p>
-                  Python usa pip para instalar paquetes externos desde el índice
-                  PyPI.
-                </p>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Instalar un paquete</span>:
-                    <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                </div>
+                <!-- Paquetes con Subpaquetes fin -->
+                <!-- Instalar y Usar Paquetes Externos -->
+                <div>
+                  <h3>Instalar y Usar Paquetes Externos</h3>
+                  <p>
+                    Python usa pip para instalar paquetes externos desde el
+                    índice PyPI.
+                  </p>
+                  <ul>
+                    <li>
+                      <span class="fw-bold">Instalar un paquete</span>:
+                      <pre
+                        class="line-numbers"
+                        data-src-status="loaded"
+                        tabindex="0"
+                      >
                       <code class="language-python" data-prismjs-copy="Copy">
                         pip install numpy
                       </code>
                     </pre>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Usar el paquete instalado</span>:
-                    <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                    </li>
+                    <li>
+                      <span class="fw-bold">Usar el paquete instalado</span>:
+                      <pre
+                        class="line-numbers"
+                        data-src-status="loaded"
+                        tabindex="0"
+                      >
                       <code class="language-python" data-prismjs-copy="Copy">
                         import numpy as np
                         array = np.array([1, 2, 3])
                         print(array)
                       </code>
                     </pre>
-                  </li>
-                </ul>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Instalar y Usar Paquetes Externos fin -->
+                <!-- Buenas Prácticas -->
+                <div>
+                  <h3>Buenas Prácticas</h3>
+                  <ul>
+                    <li>Usa nombres descriptivos para paquetes y módulos.</li>
+                    <li>
+                      Evita conflictos de nombres (no uses nombres como
+                      <code>os.py</code> o <code>sys.py</code>).
+                    </li>
+                    <li>
+                      Estructura el proyecto en paquetes para mantener el código
+                      organizado.
+                    </li>
+                    <li>
+                      Documenta los <code>__init__.py</code> para que otros
+                      sepan qué módulos contiene el paquete.
+                    </li>
+                  </ul>
+                </div>
+                <!-- Buenas Prácticas fin -->
               </div>
-              <!-- Instalar y Usar Paquetes Externos fin -->
-              <!-- Buenas Prácticas -->
-              <div>
-                <h3>Buenas Prácticas</h3>
+              <!-- Primer Paquete Fin -->
+              <!-- Diferencias entre Módulos y Paquetes -->
+              <div id="diferenciasEntreModulosYPaquetes" class="mt-5 pt-5">
+                <h2 class="mt-1">Diferencias entre Módulos y Paquetes</h2>
+                <table class="table table-striped table-bordered">
+                  <thead class="table-dark">
+                    <tr>
+                      <th>Aspecto</th>
+                      <th>Módulo</th>
+                      <th>Paquete</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Definición</td>
+                      <td>
+                        Un módulo es un archivo <code>.py</code>que contiene
+                        código Python reutilizable, como funciones, clases y
+                        variables.
+                      </td>
+                      <td>
+                        Un paquete es un directorio que contiene módulos y
+                        subpaquetes, junto con un archivo especial
+                        <code>__init__.py</code>.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Propósito</td>
+                      <td>
+                        Permite dividir el código en partes pequeñas y
+                        reutilizables para mantener la organización.
+                      </td>
+                      <td>
+                        Agrupa y organiza varios módulos relacionados en un
+                        nivel jerárquico, ideal para proyectos grandes.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Estructura</td>
+                      <td>Es un solo archivo Python.</td>
+                      <td>
+                        Es una carpeta con módulos y un archivo
+                        <code>__init__.py</code>.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Ejemplo</td>
+                      <td>Archivo calculos.py con funciones matemáticas.</td>
+                      <td>
+                        Carpeta matematicas/ que contiene módulos como
+                        calculos.py, estadisticas.py, y
+                        <code>__init__.py</code>.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Importación</td>
+                      <td>
+                        Se importa directamente usando
+                        <code>import modulo</code>.
+                      </td>
+                      <td>
+                        Se importa como un conjunto jerárquico, por ejemplo,
+                        <code>from paquete.modulo import función</code>.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Nivel de complejidad</td>
+                      <td>
+                        Más simple, ideal para proyectos pequeños o
+                        funcionalidades específicas.
+                      </td>
+                      <td>
+                        Más complejo, diseñado para proyectos más grandes o
+                        estructuras modulares avanzadas.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- Diferencias entre Módulos y Paquetes Fin -->
+              <!-- Cuándo Usar Módulos y Paquetes -->
+              <div id="cuandoUsarModulosYPaquetes" class="mt-5 pt-5">
+                <h2 class="mt-1">Cuándo Usar Módulos y Paquetes</h2>
                 <ul>
-                  <li>Usa nombres descriptivos para paquetes y módulos.</li>
                   <li>
-                    Evita conflictos de nombres (no uses nombres como
-                    <code>os.py</code> o <code>sys.py</code>).
+                    <span class="fw-bold">Módulos</span>: Úselos para scripts o
+                    funcionalidades independientes, cuando el proyecto es
+                    pequeño y no requiere organización compleja.
                   </li>
                   <li>
-                    Estructura el proyecto en paquetes para mantener el código
-                    organizado.
-                  </li>
-                  <li>
-                    Documenta los <code>__init__.py</code> para que otros sepan
-                    qué módulos contiene el paquete.
+                    <span class="fw-bold">Paquetes</span>: Son útiles para
+                    proyectos grandes que requieren organización jerárquica y
+                    agrupación de funcionalidades relacionadas.
                   </li>
                 </ul>
               </div>
-              <!-- Buenas Prácticas fin -->
-
+              <!-- Cuándo Usar Módulos y Paquetes Fin -->
             </div>
-            <!-- Primer Paquete Fin -->
-            <!-- Diferencias entre Módulos y Paquetes -->
-            <div id="diferenciasEntreModulosYPaquetes" class="mt-5 pt-5">
-              <h2 class="mt-1">Diferencias entre Módulos y Paquetes</h2>
-              <table class="table table-striped table-bordered">
-                <thead class="table-dark">
-                  <tr>
-                    <th>Aspecto</th>
-                    <th>Módulo</th>
-                    <th>Paquete</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Definición</td>
-                    <td>
-                      Un módulo es un archivo <code>.py</code>que contiene
-                      código Python reutilizable, como funciones, clases y
-                      variables.
-                    </td>
-                    <td>
-                      Un paquete es un directorio que contiene módulos y
-                      subpaquetes, junto con un archivo especial
-                      <code>__init__.py</code>.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Propósito</td>
-                    <td>
-                      Permite dividir el código en partes pequeñas y
-                      reutilizables para mantener la organización.
-                    </td>
-                    <td>
-                      Agrupa y organiza varios módulos relacionados en un nivel
-                      jerárquico, ideal para proyectos grandes.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Estructura</td>
-                    <td>Es un solo archivo Python.</td>
-                    <td>
-                      Es una carpeta con módulos y un archivo
-                      <code>__init__.py</code>.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Ejemplo</td>
-                    <td>Archivo calculos.py con funciones matemáticas.</td>
-                    <td>
-                      Carpeta matematicas/ que contiene módulos como
-                      calculos.py, estadisticas.py, y <code>__init__.py</code>.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Importación</td>
-                    <td>
-                      Se importa directamente usando <code>import modulo</code>.
-                    </td>
-                    <td>
-                      Se importa como un conjunto jerárquico, por ejemplo,
-                      <code>from paquete.modulo import función</code>.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Nivel de complejidad</td>
-                    <td>
-                      Más simple, ideal para proyectos pequeños o
-                      funcionalidades específicas.
-                    </td>
-                    <td>
-                      Más complejo, diseñado para proyectos más grandes o
-                      estructuras modulares avanzadas.
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-
+          </article>
+          <!--  Módulos y Paquetes de Python  -->
+          <!-- -------------------------------- comentarios -------------------------------- -->
+          <article class="row pt-5" id="comment">
+            <br />
+            <h1>COMENTARIOS</h1>
+            <p>
+              Si tiene alguna inquietud, duda o ha encontrado algún error, por
+              favor infórmelo a través del formulario disponible para este
+              propósito.
+            </p>
+            <div class="d-flex justify-content-center">
+              <form
+                action="https://formsubmit.co/herreraforeroeduardo@gmail.com"
+                method="POST"
+                id="myForm"
+              >
+                <div
+                  class="input-group d-flex justify-content-center flex-column"
+                >
+                  <label for="name" class="pe-2">Nombre:</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Eduardo Herrera Forero"
+                    class="rounded"
+                    required="required"
+                  />
+                  <label for="email" class="pe-2">Email:</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="herreraforeroeduardo@gmail.com"
+                    class="rounded"
+                    required="required"
+                  />
+                  <label for="message" class="pe-2">Mensaje:</label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="5"
+                    placeholder="Su comentario..."
+                    class="rounded rounded-3"
+                  ></textarea>
+                  <input
+                    class="btn btn-outline-light my-3 border rounded-pill border-2"
+                    type="submit"
+                    value="Enviar..."
+                  />
+                </div>
+                <p>
+                  La política de privacidad, y los términos y condiciones están
+                  disponibles en el formulario de contacto.
+                </p>
+              </form>
             </div>
-            <!-- Diferencias entre Módulos y Paquetes Fin -->
-            <!-- Cuándo Usar Módulos y Paquetes -->
-            <div id="cuandoUsarModulosYPaquetes" class="mt-5 pt-5">
-              <h2 class="mt-1">Cuándo Usar Módulos y Paquetes</h2>
-              <ul>
-                <li>
-                  <span class="fw-bold">Módulos</span>: Úselos para scripts o
-                  funcionalidades independientes, cuando el proyecto es pequeño
-                  y no requiere organización compleja.
-                </li>
-                <li>
-                  <span class="fw-bold">Paquetes</span>: Son útiles para
-                  proyectos grandes que requieren organización jerárquica y
-                  agrupación de funcionalidades relacionadas.
-                </li>
-              </ul>
+          </article>
+          <!-- -------------------------------- fin comentarios -------------------------------- -->
+        </section>
+      </main>
+      <!-- -------------------------------- fin principal -------------------------------- -->
+      <!-- -------------------------------- barra lateral -------------------------------- -->
+      <aside class="col-lg-3 d-none d-lg-block pt-5">
+        <h1>Índice</h1>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <a href="#queEsUnPaqueteYUnModulo"
+              >¿Qué es un Paquete y un Módulo?</a
+            >
+          </li>
+          <li class="list-group-item">
+            <a href="#primerModulo">Primer Módulo</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#primerPaquete">Primer Paquete</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#diferenciasEntreModulosYPaquetes"
+              >Diferencias entre Módulos y Paquetes</a
+            >
+          </li>
+          <li class="list-group-item">
+            <a href="#cuandoUsarModulosYPaquetes"
+              >Cuándo Usar Módulos y Paquetes</a
+            >
+          </li>
+        </ul>
+      </aside>
+      <!-- -------------------------------- fin barra lateral -------------------------------- -->
+    </div>
+    <!--  Principal Fin  -->
 
-            </div>
-            <!-- Cuándo Usar Módulos y Paquetes Fin -->
-          </div>
-        </article>
-        <!--  Módulos y Paquetes de Python  -->
-        <!-- -------------------------------- comentarios -------------------------------- -->
-        <article class="row pt-5" id="comment">
-          <br />
-          <h1>COMENTARIOS</h1>
-          <p>Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del formulario
-            disponible para este propósito.</p>
-          <div class="d-flex justify-content-center">
-            <form action="https://formsubmit.co/herreraforeroeduardo@gmail.com" method="POST" id="myForm">
-              <div class="input-group d-flex justify-content-center flex-column">
-                <label for="name" class="pe-2">Nombre:</label>
-                <input type="text" name="name" id="name" placeholder="Eduardo Herrera Forero" class="rounded"
-                  required="required" />
-                <label for="email" class="pe-2">Email:</label>
-                <input type="email" name="email" id="email" placeholder="herreraforeroeduardo@gmail.com" class="rounded"
-                  required="required" />
-                <label for="message" class="pe-2">Mensaje:</label>
-                <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
-                  class="rounded rounded-3"></textarea>
-                <input class="btn btn-outline-light my-3 border rounded-pill border-2" type="submit"
-                  value="Enviar..." />
-              </div>
-              <p>La política de privacidad, y los términos y condiciones están disponibles en el formulario de contacto.
-              </p>
-            </form>
-          </div>
-        </article>
-        <!-- -------------------------------- fin comentarios -------------------------------- -->
-      </section>
-    </main>
-    <!-- -------------------------------- fin principal -------------------------------- -->
-    <!-- -------------------------------- barra lateral -------------------------------- -->
-    <aside class="col-lg-3 d-none d-lg-block pt-5">
-      <h1>Índice</h1>
-      <ul class="list-group">
-        <li class="list-group-item">
-          <a href="#queEsUnPaqueteYUnModulo">¿Qué es un Paquete y un Módulo?</a>
-        </li>
-        <li class="list-group-item">
-          <a href="#primerModulo">Primer Módulo</a>
-        </li>
-        <li class="list-group-item">
-          <a href="#primerPaquete">Primer Paquete</a>
-        </li>
-        <li class="list-group-item">
-          <a href="#diferenciasEntreModulosYPaquetes">Diferencias entre Módulos y Paquetes</a>
-        </li>
-        <li class="list-group-item">
-          <a href="#cuandoUsarModulosYPaquetes">Cuándo Usar Módulos y Paquetes</a>
-        </li>
-      </ul>
-    </aside>
-    <!-- -------------------------------- fin barra lateral -------------------------------- -->
-  </div>
-  <!--  Principal Fin  -->
-  <!-- -------------------------------- pie de pagina -------------------------------- -->
-  <footer class="row container-fluid border-1 border-top row col">
-    <div class="row">
-      <!-- contacto -->
-      <div class="col-lg-4 d-flex flex-column align-items-center">
-        <div>
+    <!-- -------------------------------- pie de pagina -------------------------------- -->
+    <footer class="row container-fluid border-1 border-top row col">
+      <div class="row mt-3">
+        <!-- contacto -->
+        <div class="col-lg-4 d-flex flex-column align-items-center">
           <div class="text-center fs-2">Contacto</div>
-          <div class="d-flex flex-row m-3 align-text-top">
-            <!-- <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-phone"
-                  viewBox="0 0 16 16">
-                  <path
-                    d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"></path>
-                  <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path>
-                </svg>
-                <span class="ms-3">(57) 300-614-6402</span>
-              </div> -->
+          <div class="d-flex flex-row align-items-center">
+            <i class="bi bi-envelope-at fs-3"></i>
+            <span class="ms-3">
+              <a href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
+            </span>
           </div>
-          <div class="d-flex flex-row m-3 align-text-top">
-            <div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-envelope-at" viewBox="0 0 16 16">
-                <path
-                  d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z">
-                </path>
-                <path
-                  d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z">
-                </path>
-              </svg>
-              <span class="ms-3">
-                <a href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
-              </span>
-            </div>
-          </div>
-          <div class="d-flex flex-row m-3 align-text-top">
-            <div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
-                viewBox="0 0 16 16">
-                <path
-                  d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z">
-                </path>
-                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
-              </svg>
-            </div>
+          <div class="d-flex flex-row align-items-center m-3">
+            <i class="bi bi-geo-alt fs-3"></i>
             <span class="ms-3">Bogotá D. C. - Colombia</span>
           </div>
         </div>
+        <!-- mapa del sitio -->
+        <div class="col-lg-4 d-flex flex-column align-items-center">
+          <div>
+            <div class="text-center fs-2">Mapa del Sitio</div>
+            <ul class="list-unstyled text-center">
+              <li>
+                <a href="index.html#about">Sobre Mí</a>
+              </li>
+              <li>
+                <a href="index.html#resume">Experiencia</a>
+              </li>
+              <li>
+                <a href="index.html#portfolio">Portafolio</a>
+              </li>
+              <li>
+                <a href="index.html#studies">Estudios</a>
+              </li>
+              <li>
+                <a href="index.html#blog">Publicaciones</a>
+              </li>
+              <li>
+                <a href="index.html#contact">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- redes sociales -->
+        <div class="col-lg-4 d-flex flex-column">
+          <div class="text-center fs-2">Redes Sociales</div>
+          <div class="d-flex justify-content-center gap-5">
+            <div>
+              <a
+                href="https://www.linkedin.com/in/eduardoherreraf/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bi bi-linkedin fs-1"></i>
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://github.com/eduardoherreraf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bi bi-github fs-1"></i>
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://www.facebook.com/eduardoherreraforero/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bi bi-facebook fs-1"></i>
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://twitter.com/ehfeduardo/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bi bi-twitter-x fs-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- mapa del sitio -->
-      <div class="col-lg-4 d-flex flex-column align-items-center">
+      <div class="d-flex m-3 align-items-center justify-content-center gap-2">
         <div>
-          <div class="text-center fs-2">Mapa del Sitio</div>
-          <ul class="list-unstyled">
-            <li>
-              <a href="index.html#about">Sobre Mí</a>
-            </li>
-            <li>
-              <a href="index.html#resume">Experiencia</a>
-            </li>
-            <li>
-              <a href="index.html#portfolio">Portafolio</a>
-            </li>
-            <li>
-              <a href="index.html#studies">Estudios</a>
-            </li>
-            <li>
-              <a href="index.html#blog">Publicaciones</a>
-            </li>
-            <li>
-              <a href="index.html#contact">Contacto</a>
-            </li>
-          </ul>
+          <i class="bi bi-c-circle fs-5"></i>
         </div>
+        <div class="ms-2">All Rights Reserved 2025</div>
       </div>
-      <!-- redes sociales -->
-      <div class="col-lg-4 d-flex align-items-center flex-column">
-        <div class="text-center fs-2">Redes Sociales</div>
-        <div class="d-flex m-3 justify-content-between flex-column">
-          <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer" class="mb-1">
-            <i class="bi bi-linkedin fs-1"></i>
-          </a>
-          <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer" class="mb-1">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" <i class="bi bi-github  fs-1"></i>
-              viewBox="0 0 16 16">
-              <path
-                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z">
-              </path>
-            </svg>
-          </a>
-          <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer"
-            class="mb-1">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-facebook"
-              viewBox="0 0 16 16">
-              <path
-                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
-              </path>
-            </svg>
-          </a>
-          <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer" class="mb-1">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-twitter"
-              viewBox="0 0 16 16">
-              <path
-                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z">
-              </path>
-            </svg>
-          </a>
-          <!-- <a
-              href="http://wa.me/573006145402?text=Buen día..."
-              target="_blank"
-              rel="noopener noreferrer"
-              class="mb-1">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                fill="currentColor"
-                class="bi bi-whatsapp"
-                viewBox="0 0 16 16">
-                <path
-                  d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
-              </svg>
-            </a> -->
-        </div>
-      </div>
-    </div>
-    <div class="d-flex m-3 align-text-top justify-content-center">
-      <div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-c-circle"
-          viewBox="0 0 16 16">
-          <path
-            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z">
-          </path>
-        </svg>
-      </div>
-      <span class="ms-3">All Rights Reserved 2023</span>
-    </div>
-  </footer>
-  <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
-    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
-      viewBox="0 0 16 16" style="margin-left: -2px">
-      <path fill-rule="evenodd"
-        d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5">
-      </path>
-    </svg>
-  </button>
-  <!-- Fin button to top -->
-</body>
-
+    </footer>
+    <!-- -------------------------------- pie de pagina fin -------------------------------- -->
+    <!-- button to top -->
+    <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        fill="currentColor"
+        class="bi bi-arrow-bar-up"
+        viewBox="0 0 16 16"
+        style="margin-left: -2px"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"
+        ></path>
+      </svg>
+    </button>
+    <!-- Fin button to top -->
+  </body>
 </html>
