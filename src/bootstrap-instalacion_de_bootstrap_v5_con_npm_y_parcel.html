@@ -21,7 +21,6 @@
       href="https://eduardoherreraf.github.io/bootstrap-instalacion_de_bootstrap_v5_con_npm_y_parcel.html"
     />
     <!-- Fin Metaetiquetas -->
-
     <!-- Open Graph data -->
     <meta property="og:type" content="website" />
     <meta
@@ -43,9 +42,8 @@
     />
     <meta property="og:locale" content="es_CO" />
     <!-- fin Open Graph data -->
-
     <!-- Twitter cards -->
-    <meta name="twitter:card" content=content="summary" />
+    <meta name="twitter:card" content="content" ="summary" />
     <meta
       name="twitter:title"
       content="Instalación de Bootstrap V5, NPM y PARCEL - Ing. Eduardo Herrera Forero."
@@ -65,7 +63,6 @@
     />
     <meta name="twitter:site" content="@ehfeduardo" />
     <!-- Fin Twitter cards -->
-
     <!-- iconos -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
@@ -81,19 +78,15 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
     <!-- fin iconos -->
-
     <title>
       Instalación de Bootstrap V5, NPM y PARCEL - Ing. Eduardo Herrera Forero.
     </title>
-
     <script type="module" defer src="./js/main.js"></script>
-
     <meta
       name="google-site-verification"
       content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc"
     />
   </head>
-
   <body>
     <!-- Barra deNavegación -->
     <nav
@@ -114,7 +107,6 @@
           />
           <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
         </a>
-
         <!-- Botón para activar el menú en dispositivos pequeños -->
         <button
           class="navbar-toggler"
@@ -127,7 +119,6 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <!-- Menú de navegación -->
         <div
           class="collapse navbar-collapse ms-auto text-center"
@@ -163,39 +154,59 @@
       </div>
     </nav>
     <!-- Barra deNavegación -->
-
     <!-- -------------------------------- principal -------------------------------- -->
     <div class="row col mx-1">
       <main class="pt-5 col-lg-9">
         <section class="pb-3">
           <!-- Parcel NPM -->
-          <article class="row border-1 border-bottom pb-3">
+          <article
+            class="row border-1 border-bottom pb-3"
+            data-bs-spy="scroll"
+            data-bs-target="#list-example"
+            data-bs-smooth-scroll="true"
+          >
             <h1>Instalación de Bootstrap V5, NPM y PARCEL</h1>
             <div>
-              <p>
-                La guía oficial sobre cómo incluir y empaquetar el CSS y
-                JavaScript de Bootstrap en un proyecto utilizando Parcel.
-              </p>
-              <p>
-                A diferencia de empaquetador Vite, PARCEL permite empacar
-                archivos HTML, CSS Y JS sin pertenecer a una librería o
-                framework de javascript (ReactJS, AngularJS,...) como lo es
-                Bootstrap una librería de CSS, además también permite realizar
-                sitios web MPA (Multi Page Application).
-              </p>
-              <p class="">
-                Esta documentación se realizó con base a la oficial entregada
-                por Bootstrap en su página web
-                <a
-                  href="https://getbootstrap.com/docs/5.3/getting-started/parcel/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Bootstrap and Parcel</a
-                >, todos los comando que se usaran en este tutorial son
-                ejecutados en la terminal BASH de GIT.
-              </p>
-              <div id="configuracionInical" class="mt-5 pt-5">
+              <div id="introduccion" class="mt-5">
+                <h2 class="mt-1">Introducción</h2>
+                <p>
+                  La guía oficial sobre cómo incluir y empaquetar el CSS y
+                  JavaScript de Bootstrap en un proyecto utilizando Parcel.
+                </p>
+                <p>
+                  A diferencia de empaquetador Vite, PARCEL permite empacar
+                  archivos HTML, CSS Y JS sin pertenecer a una librería o
+                  framework de javascript (ReactJS, AngularJS,...) como lo es
+                  Bootstrap una librería de CSS, además también permite realizar
+                  sitios web MPA (Multi Page Application).
+                </p>
+                <p class="">
+                  Esta documentación se realizó con base a la oficial entregada
+                  por Bootstrap en su página web
+                  <a
+                    href="https://getbootstrap.com/docs/5.3/getting-started/parcel/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Bootstrap and Parcel</a
+                  >, todos los comando que se usaran en este tutorial son
+                  ejecutados en la terminal BASH de GIT.
+                </p>
+              </div>
+              <div id="configuracionInical" class="mt-5">
                 <h2 class="mt-1">Configuración Inicial</h2>
+                <p>
+                  Se esta construyendo un proyecto Parcel con Bootstrap desde
+                  cero, por lo que hay algunos requisitos previos y pasos por
+                  adelantado antes de que se pueda empezar. Esta guía requiere
+                  que se tenga instalado Node.js y cierta familiaridad con el
+                  terminal.
+                </p>
+                <h3>Crear una Carpeta de Proyecto y Configurar npm</h3>
+                <p>
+                  Se creará la carpeta <code>mi-proyecto</code> e
+                  inicializaremos npm con el argumento <code>-y</code> para
+                  evitar que haga todas las preguntas interactivas.
+                </p>
                 <pre
                   class="line-numbers"
                   data-src-status="loaded"
@@ -207,6 +218,15 @@
                 <h3 id="configuracionEspacioTrabajo">
                   Configuración del Espacio de Trabajo
                 </h3>
+                <p>
+                  Ya se ha creado la carpeta <code>my-project</code> e
+                  inicializado npm. Ahora también se creará la carpeta
+                  <code>src</code>, la hoja de estilos y el archivo JavaScript
+                  para completar la estructura del proyecto. Ejecutar los
+                  siguiente comandos desde <code>mi-proyecto</code>, o crear
+                  manualmente la estructura de carpetas y archivos que se
+                  muestra a continuación.
+                </p>
                 <pre
                   class="line-numbers"
                   data-src-status="loaded"
@@ -216,23 +236,30 @@
               touch src/index.html src/js/main.js src/scss/styles.scss
             </code></pre>
               </div>
-              <div id="instalacionParcel" class="mt-5 pt-5">
+              <div id="instalacionParcel" class="mt-5">
                 <h2 class="mt-1">Instalación de Parcel</h2>
-                <pre
-                  class="line-numbers"
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-bash" data-prismjs-copy="Copy">
-            npm i --save-dev parcel
-          </code></pre>
                 <p>
-                  Se usa la bandera
-                  <span class="fw-bold text-warning">--save-dev</span> para que
-                  parcel sólo esté en desarrollo y no en producción
+                  Sólo hay una dependencia de una única herramienta de
+                  compilación. Parcel instalará automáticamente los
+                  transformadores de lenguaje (como Sass) cuando los detecte. Se
+                  Usa la bandera <code>--save-dev</code> para indicar que esta
+                  dependencia es sólo para uso de desarrollo y no para
+                  producción.
                 </p>
+                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-bash" data-prismjs-copy="Copy">
+                    npm i --save-dev parcel
+                  </code>
+                </pre>
               </div>
-              <div id="instalacionBootstrapv5" class="mt-5 pt-5">
+              <div id="instalacionBootstrapv5" class="mt-5">
                 <h2 class="mt-1">Instalación de Bootstrap</h2>
+                <p>
+                  Ahora se puede instalar Bootstrap.También se instalará Popper
+                  ya que los desplegables, popovers y tooltips dependen de él
+                  para su posicionamiento. Si no se planea usar esos
+                  componentes, se puede omitir Popper aquí.
+                </p>
                 <pre
                   class="line-numbers"
                   data-src-status="loaded"
@@ -240,8 +267,13 @@
                 ><code class="language-bash" data-prismjs-copy="Copy">
               npm i --save bootstrap @popperjs/core
           </code></pre>
+                <p>
+                  Ahora ya se tiene todas las dependencias necesarias instaladas
+                  y se puede poner manos a la obra para configurar Parcel e
+                  importar Bootstrap.
+                </p>
               </div>
-              <div id="configuracionParcel" class="mt-5 pt-5">
+              <div id="configuracionParcel" class="mt-5">
                 <h2 class="mt-1">Configuración de Parcel</h2>
                 <p>
                   El archivo
@@ -394,7 +426,7 @@
               npm run dev
             </code></pre>
               </div>
-              <div id="importacionBootstrapv5" class="mt-5 pt-5">
+              <div id="importacionBootstrapv5" class="mt-5">
                 <h2 class="mt-1">Importación de BOOTSTRAP</h2>
                 <p>
                   Para la importación de Bootstrap en Parcel se requiere dos
@@ -441,7 +473,7 @@
                   y Parcel.
                 </p>
               </div>
-              <div id="compilacionProyectoProduccion" class="mt-5 pt-5">
+              <div id="compilacionProyectoProduccion" class="mt-5">
                 <h2 class="mt-1">Compilación del proyecto para Producción</h2>
                 <p>
                   Cuando se haya terminado y se quiera obtener la versión para
@@ -468,9 +500,8 @@
             </div>
           </article>
           <!-- fin Parcel NPM -->
-
           <!-- -------------------------------- comentarios -------------------------------- -->
-          <article class="row pt-5" id="comment">
+          <article class="row" id="comment">
             <br />
             <h1>COMENTARIOS</h1>
             <p>
@@ -533,35 +564,35 @@
       <!-- -------------------------------- fin principal -------------------------------- -->
       <!-- -------------------------------- barra lateral -------------------------------- -->
       <aside class="col-lg-3 d-none d-lg-block pt-5">
-        <div>
-          <h1>Índice</h1>
-          <ul class="list-group">
-            <li class="list-group-item">
-              <a href="#configuracionInical">Configuración Inicial</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#instalacionParcel">Instalación de Parcel</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#instalacionBootstrapv5">Instalación de Bootstrap</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#configuracionParcel">Configuración de Parcel</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#importacionBootstrapv5">Importación Bootstrap v5</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#compilacionProyectoProduccion"
-                >Compilación del proyecto para Producción</a
-              >
-            </li>
-          </ul>
-        </div>
+        <h1>Índice</h1>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <a href="#introduccion">Introducción</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#configuracionInical">Configuración Inicial</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#instalacionParcel">Instalación de Parcel</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#instalacionBootstrapv5">Instalación de Bootstrap</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#configuracionParcel">Configuración de Parcel</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#importacionBootstrapv5">Importación Bootstrap v5</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#compilacionProyectoProduccion"
+              >Compilación del proyecto para Producción</a
+            >
+          </li>
+        </ul>
       </aside>
       <!-- -------------------------------- fin barra lateral -------------------------------- -->
     </div>
-
     <!-- -------------------------------- pie de pagina -------------------------------- -->
     <footer class="row col border-top border-1 m-1">
       <div class="row">

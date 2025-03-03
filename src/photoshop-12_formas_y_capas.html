@@ -45,7 +45,7 @@
     <!-- fin Open Graph data -->
 
     <!-- Twitter cards -->
-    <meta name="twitter:card" content=content="summary" />
+    <meta name="twitter:card" content="content" ="summary" />
     <meta
       name="twitter:title"
       content="Formas y Capas en Photoshop - Ing. Eduardo Herrera Forero."
@@ -167,32 +167,43 @@
       <main class="pt-5 col-lg-9">
         <section class="pb-3">
           <!--  Formas y Capas  -->
-          <article class="row border-1 border-bottom pb-3">
+          <article
+            class="row border-1 border-bottom pb-3"
+            data-bs-spy="scroll"
+            data-bs-target="#list-example"
+            data-bs-smooth-scroll="true"
+          >
             <div>
-              <h1>Formas y Capas</h1>
-              <p>
-                Adobe Photoshop permite a los diseñadores y fotógrafos trabajar
-                de manera eficiente mediante formas y capas, dos herramientas
-                esenciales que facilitan la creación de proyectos visuales
-                complejos.
-              </p>
-              <p>
-                <span class="fw-bold">Formas en Photoshop</span>: Las formas son
-                objetos vectoriales que pueden ser creados, modificados y
-                escalados sin perder calidad. Las formas comunes incluyen
-                rectángulos, elipses y líneas, permitiendo diseñar gráficos
-                precisos para interfaces web o impresiones de alta resolución.
-              </p>
-              <p>
-                <span class="fw-bold">Capas en Photoshop</span>: Las capas son
-                fundamentales para organizar elementos gráficos. Cada elemento,
-                desde una imagen hasta un texto, se coloca en una capa
-                individual, lo que facilita la edición no destructiva. Las capas
-                pueden reordenarse, combinarse o modificarse usando máscaras o
-                modos de fusión.
-              </p>
+              <header><h1>Formas y Capas</h1></header>
+              <!-- Introducción -->
+              <div id="introduccion" class="mt-5">
+                <h2 class="mt-1">Introducción</h2>
+
+                <p>
+                  Adobe Photoshop permite a los diseñadores y fotógrafos
+                  trabajar de manera eficiente mediante formas y capas, dos
+                  herramientas esenciales que facilitan la creación de proyectos
+                  visuales complejos.
+                </p>
+                <p>
+                  <span class="fw-bold">Formas en Photoshop</span>: Las formas
+                  son objetos vectoriales que pueden ser creados, modificados y
+                  escalados sin perder calidad. Las formas comunes incluyen
+                  rectángulos, elipses y líneas, permitiendo diseñar gráficos
+                  precisos para interfaces web o impresiones de alta resolución.
+                </p>
+                <p>
+                  <span class="fw-bold">Capas en Photoshop</span>: Las capas son
+                  fundamentales para organizar elementos gráficos. Cada
+                  elemento, desde una imagen hasta un texto, se coloca en una
+                  capa individual, lo que facilita la edición no destructiva.
+                  Las capas pueden reordenarse, combinarse o modificarse usando
+                  máscaras o modos de fusión.
+                </p>
+              </div>
+
               <!-- Estilos de Capa -->
-              <div id="estilosdeCapa" class="mt-5 pt-5">
+              <div id="estilosdeCapa" class="mt-5">
                 <h2 class="mt-1">Estilos de Capa</h2>
                 <p>
                   Los estilos de capa en Photoshop son efectos predefinidos que
@@ -451,7 +462,7 @@
                 </div>
               </div>
               <!-- Crear una Forma Gráfica -->
-              <div id="crearFormaGrafica" class="mt-5 pt-5">
+              <div id="crearFormaGrafica" class="mt-5">
                 <h2 class="mt-1">Crear una Forma Gráfica</h2>
                 <p>
                   En Photoshop, las herramientas de formas geométricas permiten
@@ -724,7 +735,7 @@
                 </div>
               </div>
               <!-- Agregar una Forma Personalizada -->
-              <div id="agregarFormaPersonalizada" class="mt-5 pt-5">
+              <div id="agregarFormaPersonalizada" class="mt-5">
                 <h2 class="mt-1">Agregar una Forma Personalizada</h2>
                 <div>
                   <p>
@@ -892,7 +903,7 @@
                 </div>
               </div>
               <!-- Modos de fusión -->
-              <div id="modosFusion" class="mt-5 pt-5">
+              <div id="modosFusion" class="mt-5">
                 <h2 class="mt-1">Modos de Fusión (Blending Modes)</h2>
                 <p>
                   Los modos de fusión (blending modes) en Photoshop son una
@@ -1185,7 +1196,7 @@
                 </div>
               </div>
               <!-- Máscaras de Capa -->
-              <div id="mascarasCapa" class="mt-5 pt-5">
+              <div id="mascarasCapa" class="mt-5">
                 <h2 class="mt-1">Máscaras de Capa</h2>
                 <p>
                   Las máscaras de capa en Photoshop son una herramienta poderosa
@@ -1274,7 +1285,7 @@
                 </div>
               </div>
               <!-- Reemplazar un Fondo con una Máscara de Capa -->
-              <div id="reemplazarFondoMascaraCapa" class="mt-5 pt-5">
+              <div id="reemplazarFondoMascaraCapa" class="mt-5">
                 <h2 class="mt-1">
                   Reemplazar un Fondo con una Máscara de Capa
                 </h2>
@@ -1439,6 +1450,9 @@
       <aside class="col-lg-3 d-none d-lg-block pt-5">
         <h1>Índice</h1>
         <ul class="list-group">
+          <li class="list-group-item">
+            <a href="#introduccion">Introducción</a>
+          </li>
           <li class="list-group-item">
             <a href="#estilosdeCapa">Estilos de Capa</a>
           </li>

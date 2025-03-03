@@ -45,7 +45,7 @@
     <!-- fin Open Graph data -->
 
     <!-- Twitter cards -->
-    <meta name="twitter:card" content=content="summary" />
+    <meta name="twitter:card" content="content" ="summary" />
     <meta
       name="twitter:title"
       content="Filtro licuar en Photoshop - Ing. Eduardo Herrera Forero."
@@ -167,61 +167,72 @@
       <main class="pt-5 col-lg-9">
         <section class="pb-3">
           <!--  Filtros Licuar  -->
-          <article class="row border-1 border-bottom pb-3">
+          <article
+            class="row border-1 border-bottom pb-3"
+            data-bs-spy="scroll"
+            data-bs-target="#list-example"
+            data-bs-smooth-scroll="true"
+          >
             <div>
-              <h1>Filtros Licuar</h1>
-              <p>
-                Los filtros de licuar en Adobe Photoshop permiten realizar
-                ajustes en las imágenes de manera no destructiva, manipulando
-                píxeles para alterar formas y detalles sin afectar la calidad
-                general de la imagen. A continuación, se detallan las
-                herramientas clave del filtro de licuar:
-              </p>
-              <ul>
-                <li>
-                  <span class="fw-bold">Herramienta de Deformación</span>:
-                  Permite empujar los píxeles en cualquier dirección, ideal para
-                  cambiar la forma de objetos o rostros.
-                </li>
-                <li>
-                  <span class="fw-bold">Herramienta de Reconstrucción</span>:
-                  Revierte los cambios aplicados, volviendo gradualmente la
-                  imagen a su estado original en áreas seleccionadas.
-                </li>
-                <li>
-                  <span class="fw-bold">Herramienta de Inflar</span>: Aumenta el
-                  tamaño de una selección, como si se estuviera "inflando" una
-                  parte de la imagen.
-                </li>
-                <li>
-                  <span class="fw-bold">Herramienta de Desinflar</span>: Reduce
-                  el tamaño de una selección, útil para adelgazar partes de la
-                  imagen.
-                </li>
-                <li>
-                  <span class="fw-bold">Herramienta de Remolino</span>: Rota los
-                  píxeles de una selección en una dirección, generando un efecto
-                  de espiral.
-                </li>
-                <li>
-                  <span class="fw-bold"
-                    >Herramienta de Desplazar hacia la Izquierda o Derecha</span
-                  >: Mueve los píxeles horizontalmente, lo que es útil para
-                  ajustar la simetría en los elementos de la imagen.
-                </li>
-                <li>
-                  <span class="fw-bold">Máscaras de licuar</span>: Permiten
-                  proteger áreas específicas de la imagen para evitar que se
-                  deformen al aplicar las herramientas de licuar.
-                </li>
-              </ul>
-              <p>
-                El filtro de licuar es útil para realizar retoques fotográficos
-                como ajustes faciales, cambios en la figura y también en la
-                manipulación creativa de imágenes.
-              </p>
+              <header><h1>Filtros Licuar</h1></header>
+
+              <!-- Introducción -->
+              <div id="introduccion" class="mt-5">
+                <h2 class="mt-1">Introducción</h2>
+                <p>
+                  Los filtros de licuar en Adobe Photoshop permiten realizar
+                  ajustes en las imágenes de manera no destructiva, manipulando
+                  píxeles para alterar formas y detalles sin afectar la calidad
+                  general de la imagen. A continuación, se detallan las
+                  herramientas clave del filtro de licuar:
+                </p>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Herramienta de Deformación</span>:
+                    Permite empujar los píxeles en cualquier dirección, ideal
+                    para cambiar la forma de objetos o rostros.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Herramienta de Reconstrucción</span>:
+                    Revierte los cambios aplicados, volviendo gradualmente la
+                    imagen a su estado original en áreas seleccionadas.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Herramienta de Inflar</span>: Aumenta
+                    el tamaño de una selección, como si se estuviera "inflando"
+                    una parte de la imagen.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Herramienta de Desinflar</span>:
+                    Reduce el tamaño de una selección, útil para adelgazar
+                    partes de la imagen.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Herramienta de Remolino</span>: Rota
+                    los píxeles de una selección en una dirección, generando un
+                    efecto de espiral.
+                  </li>
+                  <li>
+                    <span class="fw-bold"
+                      >Herramienta de Desplazar hacia la Izquierda o
+                      Derecha</span
+                    >: Mueve los píxeles horizontalmente, lo que es útil para
+                    ajustar la simetría en los elementos de la imagen.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Máscaras de licuar</span>: Permiten
+                    proteger áreas específicas de la imagen para evitar que se
+                    deformen al aplicar las herramientas de licuar.
+                  </li>
+                </ul>
+                <p>
+                  El filtro de licuar es útil para realizar retoques
+                  fotográficos como ajustes faciales, cambios en la figura y
+                  también en la manipulación creativa de imágenes.
+                </p>
+              </div>
               <!-- Herramienta Licuar - Cara -->
-              <div id="HerramientaLicuarCara" class="mt-5 pt-5">
+              <div id="HerramientaLicuarCara" class="mt-5">
                 <h2 class="mt-1">Herramienta Licuar - Cara</h2>
                 <p>
                   A continuación, se explica cómo se utiliza esta herramienta:
@@ -471,7 +482,7 @@
                 </ul>
               </div>
               <!-- Herramienta Licuar - Deformar Hacia Adelante -->
-              <div id="herramientadeformarHaciaAdelante" class="mt-5 pt-5">
+              <div id="herramientadeformarHaciaAdelante" class="mt-5">
                 <h2 class="mt-1">
                   Herramienta Licuar - Deformar Hacia Adelante
                 </h2>
@@ -608,9 +619,12 @@
       </main>
       <!-- -------------------------------- fin principal -------------------------------- -->
       <!-- -------------------------------- barra lateral -------------------------------- -->
-      <aside class="col-lg-3 d-none d-lg-block pt-5">
+      <aside class="col-lg-3 d-none pt-5 d-lg-block">
         <h1>Índice</h1>
         <ul class="list-group">
+          <li class="list-group-item">
+            <a href="#introduccion">Introducción</a>
+          </li>
           <li class="list-group-item">
             <a href="#HerramientaLicuarCara">Herramienta Licuar - Cara</a>
           </li>

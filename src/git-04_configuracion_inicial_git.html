@@ -1,115 +1,189 @@
 <!-- @format -->
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
-
-<head>
-  <!-- Metaetiquetas -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description"
-    content="Este artículo explica los comandos más importantes para la configuración inicial de GIT." />
-  <meta name="tittle" content="Configuración Inicial de GIT - Ing. Eduardo Herrera Forero." />
-  <meta name="author" content="Ing. Eduardo Herrera Forero" />
-  <meta name="application-name" content="EHF" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://eduardoherreraf.github.io/git-04_configuracion_inicial_git.html" />
-  <!-- Fin Metaetiquetas -->
-
-  <!-- Open Graph data -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Configuración Inicial de GIT - Ing. Eduardo Herrera Forero." />
-  <meta property="og:description"
-    content="Este artículo explica los comandos más importantes para la configuración inicial de GIT." />
-  <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
-  <meta property="og:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
-  <meta property="og:url" content="https://eduardoherreraf.github.io/git-04_configuracion_inicial_git.html" />
-  <meta property="og:locale" content="es_CO" />
-  <!-- fin Open Graph data -->
-
-  <!-- Twitter cards -->
-  <meta name="twitter:card" content=content="summary">
-  <meta name="twitter:title" content="Configuración Inicial de GIT - Ing. Eduardo Herrera Forero." />
-  <meta name="twitter:description"
-    content="Este artículo explica los comandos más importantes para la configuración inicial de GIT." />
-  <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
-  <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero">
-  <meta name="twitter:url" content="https://eduardoherreraf.github.io/git-04_configuracion_inicial_git.html" />
-  <meta name="twitter:site" content="@ehfeduardo" />
-  <!-- Fin Twitter cards -->
-
-  <!-- iconos -->
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-  <link rel="manifest" href="site.webmanifest" />
-  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
-  <meta name="msapplication-TileColor" content="#da532c" />
-  <meta name="theme-color" content="#ffffff" />
-  <!-- fin iconos -->
-
-  <title>
-    Configuración Inicial de GIT - Ing. Eduardo Herrera Forero.
-  </title>
-
-  <script type="module" defer src="./js/main.js"></script>
-
-  <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
-</head>
-
-<body>
-  <!-- Barra deNavegación -->
-  <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
-    <div class="container-fluid">
-      <!-- Enlace a la página principal con el logo y nombre -->
-      <a class="navbar-brand d-flex align-items-center ms-2" href="index.html">
-        <img src="./images/logo.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30"
-          class="d-inline-block align-text-top me-1" />
-        <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
-      </a>
-
-      <!-- Botón para activar el menú en dispositivos pequeños -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Menú de navegación -->
-      <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100">
-          <li class="nav-item"><a class="nav-link mx-1" href="index.html">SOBRE MÍ</a></li>
-          <li class="nav-item"><a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a></li>
-          <li class="nav-item"><a class="nav-link mx-1" href="index.html#portfolio">PORTAFOLIO</a></li>
-          <li class="nav-item"><a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a></li>
-          <li class="nav-item"><a class="nav-link mx-1 active" href="index.html#blog">PUBLICACIONES</a></li>
-          <li class="nav-item"><a class="nav-link mx-1" href="index.html#contact">CONTACTO</a></li>
-        </ul>
+  <head>
+    <!-- Metaetiquetas -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Este artículo explica los comandos más importantes para la configuración inicial de GIT."
+    />
+    <meta
+      name="tittle"
+      content="Configuración Inicial de GIT - Ing. Eduardo Herrera Forero."
+    />
+    <meta name="author" content="Ing. Eduardo Herrera Forero" />
+    <meta name="application-name" content="EHF" />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="canonical"
+      href="https://eduardoherreraf.github.io/git-04_configuracion_inicial_git.html"
+    />
+    <!-- Fin Metaetiquetas -->
+    <!-- Open Graph data -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Configuración Inicial de GIT - Ing. Eduardo Herrera Forero."
+    />
+    <meta
+      property="og:description"
+      content="Este artículo explica los comandos más importantes para la configuración inicial de GIT."
+    />
+    <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
+    <meta
+      property="og:image:alt"
+      content="Logo del ingeniero Eduardo Herrera Forero"
+    />
+    <meta
+      property="og:url"
+      content="https://eduardoherreraf.github.io/git-04_configuracion_inicial_git.html"
+    />
+    <meta property="og:locale" content="es_CO" />
+    <!-- fin Open Graph data -->
+    <!-- Twitter cards -->
+    <meta name="twitter:card" content="content" ="summary" />
+    <meta
+      name="twitter:title"
+      content="Configuración Inicial de GIT - Ing. Eduardo Herrera Forero."
+    />
+    <meta
+      name="twitter:description"
+      content="Este artículo explica los comandos más importantes para la configuración inicial de GIT."
+    />
+    <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
+    <meta
+      name="twitter:image:alt"
+      content="Logo del ingeniero Eduardo Herrera Forero"
+    />
+    <meta
+      name="twitter:url"
+      content="https://eduardoherreraf.github.io/git-04_configuracion_inicial_git.html"
+    />
+    <meta name="twitter:site" content="@ehfeduardo" />
+    <!-- Fin Twitter cards -->
+    <!-- iconos -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="android-chrome-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- fin iconos -->
+    <title>Configuración Inicial de GIT - Ing. Eduardo Herrera Forero.</title>
+    <script type="module" defer src="./js/main.js"></script>
+    <meta
+      name="google-site-verification"
+      content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc"
+    />
+  </head>
+  <body>
+    <!-- Barra deNavegación -->
+    <nav
+      class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
+    >
+      <div class="container-fluid">
+        <!-- Enlace a la página principal con el logo y nombre -->
+        <a
+          class="navbar-brand d-flex align-items-center ms-2"
+          href="index.html"
+        >
+          <img
+            src="./images/logo.png"
+            alt="Logo de Ing. Eduardo Herrera Forero"
+            width="30"
+            height="30"
+            class="d-inline-block align-text-top me-1"
+          />
+          <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
+        </a>
+        <!-- Botón para activar el menú en dispositivos pequeños -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Menú de navegación -->
+        <div
+          class="collapse navbar-collapse ms-auto text-center"
+          id="navbarSupportedContent"
+        >
+          <ul
+            class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100"
+          >
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="index.html#portfolio"
+                >PORTAFOLIO</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1 active" href="index.html#blog"
+                >PUBLICACIONES</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-  <!-- Barra deNavegación -->
-
-  <!-- -------------------------------- principal -------------------------------- -->
-  <div class="row col mx-1">
-    <main class="pt-5 col-lg-9">
-      <section class="pb-3">
-        <!-- Configuración Inicial de GIT  -->
-        <article class="row border-1 border-bottom pb-3">
-          <div class="">
+    </nav>
+    <!-- Barra deNavegación -->
+    <!-- -------------------------------- principal -------------------------------- -->
+    <div class="row col mx-1">
+      <main class="pt-5 col-lg-9">
+        <section class="pb-3">
+          <!-- Configuración Inicial de GIT  -->
+          <article
+            class="row border-1 border-bottom pb-3"
+            data-bs-spy="scroll"
+            data-bs-target="#list-example"
+            data-bs-smooth-scroll="true"
+          >
             <h1>Configuración Inicial de GIT</h1>
-            <p>
-              Los comandos de configuración inicial de Git se utilizan para
-              establecer parámetros globales que definirán cómo Git interactúa
-              con el usuario y cómo registran los cambios. Estos comandos se
-              configuran típicamente cuando se instala GIT por primera vez y se
-              prepara para empezar a trabajar con repositorios. A continuación,
-              se explica cuándo y cómo se usan los comandos de configuración
-              inicial más importantes:
-            </p>
-          </div>
-          <div>
+            <!-- Introducción -->
+            <div id="introduccion" class="mt-5">
+              <h2 class="mt-1">Introducción</h2>
+              <p>
+                Los comandos de configuración inicial de Git permiten establecer
+                parámetros globales que definen cómo Git interactúa con el
+                usuario y cómo se registran los cambios en los repositorios.
+                Estos comandos suelen configurarse al instalar Git por primera
+                vez y son esenciales para garantizar un correcto funcionamiento
+                del sistema de control de versiones.
+              </p>
+              <p>
+                A continuación, se explican los comandos de configuración
+                inicial más importantes, cuándo deben utilizarse y cómo
+                aplicarlos correctamente.
+              </p>
+            </div>
+
             <!-- Configurar el Nombre y el Correo del Usuario -->
-            <div id="configuracionNombreyCorreoUsuario" class="mt-5 pt-5 ">
+            <div id="configuracionNombreyCorreoUsuario" class="mt-5">
               <h2 class="mt-1">
                 Configuración el Nombre y el Correo del Usuario
               </h2>
@@ -124,20 +198,48 @@
                     git config --global user.email "Semail@ejemplo.com"
                   </code>
                 </pre>
-              <p>Estos comandos se usan cuando:</p>
               <p>
-                Es aconsejable ejecutar estos comandos justo después de instalar
-                Git en el equipo de trabajo.
+                <strong>--global</strong>: Aplica la configuración a nivel
+                global, es decir, a todos los repositorios en el equipo. Si se
+                desea establecer un nombre y correo específicos para un solo
+                repositorio en particular, se puede omitir
+                <strong>--global</strong>:
               </p>
-              <p>
-                Otra razón para utilizar estos comandos es cuando se comparte la
-                máquina con otros usuarios o se cambia de identidad (por
-                ejemplo, de laboral a personal), en cuyo caso sería conveniente
-                actualizar estos valores.
-              </p>
+              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <code class="language-python" data-prismjs-copy="Copy">
+                  git config user.name "Otro Nombre"
+                  git config user.email "otro_email@ejemplo.com"
+                </code>
+              </pre>
+
+              <!-- ¿Cuándo es Necesario Ejecutar estos Comandos? -->
+              <div>
+                <h3>¿Cuándo es Necesario Ejecutar estos Comandos?</h3>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Después de instalar Git</span>: Es
+                    recomendable configurarlos inmediatamente tras instalar Git
+                    en el equipo.
+                  </li>
+                  <li>
+                    <span class="fw-bold"
+                      >Cuando se usa una computadora compartida</span
+                    >: Si varias personas utilizan la misma máquina, cada
+                    usuario debe asegurarse de establecer su propia identidad en
+                    Git.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Al alternar entre identidades</span>:
+                    Si se usa Git para proyectos personales y laborales, es útil
+                    cambiar el nombre y el correo según el contexto.
+                  </li>
+                </ul>
+              </div>
+              <!-- ¿Cuándo es Necesario Ejecutar estos Comandos? fin -->
             </div>
+
             <!-- Configuración del Editor por Defecto -->
-            <div id="configuraciondelEditorporDefecto" class="mt-5 pt-5 ">
+            <div id="configuraciondelEditorporDefecto" class="mt-5">
               <h2 class="mt-1">Configuración del Editor por Defecto</h2>
               <p>
                 En algunos casos Git puede pedir que se edite mensajes de commit
@@ -167,8 +269,9 @@
                 ejemplos.
               </p>
             </div>
-            <!-- Configuración de la terminal de colores: -->
-            <div id="configuracióndelosColoresdeTextolaTerminal" class="mt-5 pt-5 ">
+
+            <!-- Configuración de la terminal de colores -->
+            <div id="configuracióndelosColoresdeTextolaTerminal" class="mt-5">
               <h2 class="mt-1">
                 Configuración de los Colores de Texto la Terminal
               </h2>
@@ -186,9 +289,81 @@
                     git config --global color.ui auto
                   </code>
                 </pre>
+
+              <!-- Configuraciones Específicas de Color -->
+              <div>
+                <h3>Configuraciones Específicas de Color</h3>
+                <p>
+                  Además, se pueden personalizar colores para distintas
+                  secciones de los mensajes en Git:
+                </p>
+                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-python" data-prismjs-copy="Copy">
+                    # Colorea la salida de 'git status'
+                    git config --global color.status auto
+
+                    # Colorea la salida de 'git diff'
+                    git config --global color.diff auto
+
+                    # Colorea la salida de 'git branch'
+                    git config --global color.branch auto
+
+                    # Colorea las opciones en el modo interactivo
+                    git config --global color.interactive auto
+                  </code>
+                </pre>
+              </div>
+              <!-- Configuraciones Específicas de Color fin -->
+
+              <!-- Personalización Avanzada de Colores -->
+              <div>
+                <h3>Personalización Avanzada de Colores</h3>
+                <p>
+                  Si se desea personalizar los colores con más detalle, se
+                  pueden definir colores específicos. Por ejemplo:
+                </p>
+                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-python" data-prismjs-copy="Copy">
+                    # Archivos añadidos en verde y negrita
+                    git config --global color.status.added "green bold"
+
+                    # Archivos modificados en amarillo y negrita
+                    git config --global color.status.changed "yellow bold"
+
+                    # Archivos no rastreados en rojo y negrita
+                    git config --global color.status.untracked "red bold"
+                  </code>
+                </pre>
+                <p>
+                  Para ver todas las opciones de colores disponibles, se puede
+                  consultar la documentación de Git con:
+                </p>
+                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-python" data-prismjs-copy="Copy">
+                    git help config
+                  </code>
+                </pre>
+              </div>
+              <!-- Personalización Avanzada de Colores fin -->
+
+              <!-- Verificación de la Configuración -->
+              <div>
+                <h3>Verificación de la Configuración</h3>
+                <p>
+                  Para comprobar la configuración de colores en Git, se puede
+                  ejecutar:
+                </p>
+                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-python" data-prismjs-copy="Copy">
+                    git config --global --list | grep color
+                  </code>
+                </pre>
+              </div>
+              <!-- Verificación de la Configuración fin -->
             </div>
+
             <!-- Configuración del método de fusión -->
-            <div id="configuraciondelMetododeFusion" class="mt-5 pt-5 ">
+            <div id="configuraciondelMetododeFusion" class="mt-5">
               <h2 class="mt-1">Configuración del Método de Fusión</h2>
               <p>
                 Se puedes especificar cómo Git debe manejar las fusiones de
@@ -243,8 +418,9 @@
                 para obtener más detalles sobre configuraciones adicionales.
               </p>
             </div>
+
             <!-- Configuración de alias -->
-            <div id="configuraciondeAlias" class="mt-5 pt-5 ">
+            <div id="configuraciondeAlias" class="mt-5">
               <h2 class="mt-1">Configuración de Alias</h2>
               <p>
                 Los alias se utilizan para abreviar comandos largos o
@@ -265,9 +441,190 @@
                     git status
                   </code>
                 </pre>
+
+              <!-- Alias de Git Más Usados -->
+              <div>
+                <h3>Alias de Git Más Usados</h3>
+                <!-- Alias para comandos básicos -->
+                <div>
+                  <h4>Alias para comandos básicos</h4>
+                  <pre
+                    class="line-numbers"
+                    data-src-status="loaded"
+                    tabindex="0"
+                  >
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      # Muestra el estado del repositorio
+                      git config --global alias.st status
+
+                      # Cambia de rama o restaura archivos
+                      git config --global alias.co checkout
+
+                      # Lista, crea o elimina ramas
+                      git config --global alias.br branch
+
+                      # Realiza un commit
+                      git config --global alias.cm commit
+
+                      # Clona un repositorio
+                      git config --global alias.cl clone
+
+                      # Muestra los cambios entre commits o archivos
+                      git config --global alias.df diff
+
+                      # Proporciona un historial gráfico simplificado de commits.
+                      git config --global alias.logg "log --oneline --graph --decorate --all"
+                    </code>
+                  </pre>
+                </div>
+                <!-- Alias para comandos básicos fin -->
+
+                <!-- Alias para Agregar y Confirmar Cambios -->
+                <div>
+                  <h4>Alias para Agregar y Confirmar Cambios</h4>
+                  <pre
+                    class="line-numbers"
+                    data-src-status="loaded"
+                    tabindex="0"
+                  >
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      # Añade todos los cambios al área de preparación
+                      git config --global alias.ad "add ."
+
+                      # Añade y confirma cambios en un solo paso
+                      git config --global alias.ca "commit -am"
+
+                      # Modifica el último commit sin cambiar el mensaje
+                      git config --global alias.cane "commit --amend --no-edit"
+                    </code>
+                  </pre>
+                  <p>
+                    En Git, cuando se define un alias que incluye más de una
+                    palabra, se deben usar comillas para encapsular el comando
+                    completo.
+                  </p>
+                </div>
+                <!-- Alias para Agregar y Confirmar Cambios fin -->
+
+                <!-- Alias para Manejar Ramas -->
+                <div>
+                  <h4>Alias para Manejar Ramas</h4>
+                  <pre
+                    class="line-numbers"
+                    data-src-status="loaded"
+                    tabindex="0"
+                  >
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        # Crea y cambia a una nueva rama
+                        git config --global alias.ck "checkout -b"
+
+                        # Fusiona ramas
+                        git config --global alias.mg "merge"
+
+                        # Reorganiza commits con rebase
+                        git config --global alias.rb "rebase"
+
+                        # Cancela un rebase en curso
+                        git config --global alias.rba "rebase --abort"
+
+                        # Continúa un rebase tras resolver conflictos
+                        git config --global alias.rbc "rebase --continue"
+                      </code>
+                    </pre>
+                </div>
+                <!-- Alias para Manejar Ramas fin -->
+
+                <!-- Alias para Trabajar con Remotos -->
+                <div>
+                  <h4>Alias para Trabajar con Remotos</h4>
+                  <pre
+                    class="line-numbers"
+                    data-src-status="loaded"
+                    tabindex="0"
+                  >
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      # Envía cambios al repositorio remoto
+                      git config --global alias.pu "push"
+
+                      # Obtiene cambios del remoto
+                      git config --global alias.pl "pull"
+
+                      # Descarga cambios sin fusionarlos y elimina ramas remotas eliminadas
+                      git config --global alias.fu "fetch -p"
+                    </code>
+                  </pre>
+                  <p>
+                    El <code>alias fu</code> es útil para limpiar referencias a
+                    ramas eliminadas en el remoto.
+                  </p>
+                </div>
+                <!-- Alias para Trabajar con Remotos fin -->
+
+                <!-- Alias para Reiniciar y Limpiar Cambios -->
+                <div>
+                  <h4>Alias para Reiniciar y Limpiar Cambios</h4>
+                  <pre
+                    class="line-numbers"
+                    data-src-status="loaded"
+                    tabindex="0"
+                  >
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        # Revierte el último commit manteniendo los cambios
+                        git config --global alias.undo "reset --soft HEAD~1"
+
+                        # Borra cambios no confirmados
+                        git config --global alias.clean "reset --hard HEAD"
+
+                        # Quita archivos del área de preparación sin eliminar cambios
+                        git config --global alias.unstage "reset HEAD --"
+                      </code>
+                    </pre>
+                  <p>Útil para corregir errores sin perder trabajo.</p>
+                </div>
+                <!-- Alias para Reiniciar y Limpiar Cambios fin -->
+
+                <!-- Alias Avanzados -->
+                <div>
+                  <h4>Alias Avanzados</h4>
+                  <pre
+                    class="line-numbers"
+                    data-src-status="loaded"
+                    tabindex="0"
+                  >
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        git config --global alias.lg "log --graph --decorate --oneline --all"
+
+                        git config --global alias.last "log -1 HEAD"
+
+                        git config --global alias.who "shortlog -sn --all"
+                      </code>
+                    </pre>
+                  <p>
+                    Estos alias ayudan a visualizar el historial de commits de
+                    manera rápida y efectiva.
+                  </p>
+                </div>
+                <!-- Alias Avanzados fin -->
+              </div>
+              <!-- Alias de Git Más Usados fin -->
+
+              <!-- Cómo Ver los alias Configurados -->
+              <div>
+                <h3>Cómo Ver los alias Configurados</h3>
+                <p>
+                  Para ver la lista completa de alias configurados en Git, usar:
+                </p>
+                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-python" data-prismjs-copy="Copy">
+                    git config --global --list | grep alias
+                  </code>
+                </pre>
+              </div>
+              <!-- Cómo Ver los alias Configurados fin -->
             </div>
+
             <!-- Ver la configuración -->
-            <div id="verlaconfiguracion" class="mt-5 pt-5">
+            <div id="verlaconfiguracion" class="mt-5">
               <h2 class="mt-1">Ver la configuración</h2>
               <p>
                 Comando utilizado para mostrar todas las configuraciones que GIT
@@ -293,67 +650,105 @@
               repositorio, puedes omitir el flag <code>--global</code> y GIT
               aplicará la configuración solo en el repositorio actual.
             </p>
-          </div>
-        </article>
-        <!-- fin Comandos Básicos CLI -->
-        <!-- -------------------------------- comentarios -------------------------------- -->
-        <article class="row pt-5" id="comment">
-          <br />
-          <h1>COMENTARIOS</h1>
-          <p>Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del formulario
-            disponible para este propósito.</p>
-          <div class="d-flex justify-content-center">
-            <form action="https://formsubmit.co/herreraforeroeduardo@gmail.com" method="POST" id="myForm">
-              <div class="input-group d-flex justify-content-center flex-column">
-                <label for="name" class="pe-2">Nombre:</label>
-                <input type="text" name="name" id="name" placeholder="Eduardo Herrera Forero" class="rounded"
-                  required="required" />
-                <label for="email" class="pe-2">Email:</label>
-                <input type="email" name="email" id="email" placeholder="herreraforeroeduardo@gmail.com" class="rounded"
-                  required="required" />
-                <label for="message" class="pe-2">Mensaje:</label>
-                <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
-                  class="rounded rounded-3"></textarea>
-                <input class="btn btn-outline-light my-3 border rounded-pill border-2" type="submit"
-                  value="Enviar..." />
-              </div>
-              <p>La política de privacidad, y los términos y condiciones están disponibles en el formulario de contacto.
-              </p>
-            </form>
-          </div>
-        </article>
-        <!-- -------------------------------- fin comentarios -------------------------------- -->
-      </section>
-    </main>
-    <!-- -------------------------------- fin principal -------------------------------- -->
-    <!-- -------------------------------- barra lateral -------------------------------- -->
-    <aside class="col-lg-3 d-none d-lg-block pt-5">
-      <div>
+          </article>
+          <!-- fin Comandos Básicos CLI -->
+          <!-- -------------------------------- comentarios -------------------------------- -->
+          <article class="row" id="comment">
+            <br />
+            <h1>COMENTARIOS</h1>
+            <p>
+              Si tiene alguna inquietud, duda o ha encontrado algún error, por
+              favor infórmelo a través del formulario disponible para este
+              propósito.
+            </p>
+            <div class="d-flex justify-content-center">
+              <form
+                action="https://formsubmit.co/herreraforeroeduardo@gmail.com"
+                method="POST"
+                id="myForm"
+              >
+                <div
+                  class="input-group d-flex justify-content-center flex-column"
+                >
+                  <label for="name" class="pe-2">Nombre:</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Eduardo Herrera Forero"
+                    class="rounded"
+                    required="required"
+                  />
+                  <label for="email" class="pe-2">Email:</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="herreraforeroeduardo@gmail.com"
+                    class="rounded"
+                    required="required"
+                  />
+                  <label for="message" class="pe-2">Mensaje:</label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="5"
+                    placeholder="Su comentario..."
+                    class="rounded rounded-3"
+                  ></textarea>
+                  <input
+                    class="btn btn-outline-light my-3 border rounded-pill border-2"
+                    type="submit"
+                    value="Enviar..."
+                  />
+                </div>
+                <p>
+                  La política de privacidad, y los términos y condiciones están
+                  disponibles en el formulario de contacto.
+                </p>
+              </form>
+            </div>
+          </article>
+          <!-- -------------------------------- fin comentarios -------------------------------- -->
+        </section>
+      </main>
+      <!-- -------------------------------- fin principal -------------------------------- -->
+      <!-- -------------------------------- barra lateral -------------------------------- -->
+      <aside class="col-lg-3 d-none d-lg-block pt-5">
         <h1>Índice</h1>
         <ul class="list-group">
           <li class="list-group-item">
-            <a href="#configuracionNombreyCorreoUsuario">Configuración el Nombre y el Correo del Usuario</a>
+            <a href="#introduccion">Introducción</a>
           </li>
           <li class="list-group-item">
-            <a href="#configuraciondelEditorporDefecto">Configuración del Editor por Defecto</a>
+            <a href="#configuracionNombreyCorreoUsuario"
+              >Configuración el Nombre y el Correo del Usuario</a
+            >
           </li>
           <li class="list-group-item">
-            <a href="#configuracióndelosColoresdeTextolaTerminal">Configuración de los Colores de Texto la Terminal</a>
+            <a href="#configuraciondelEditorporDefecto"
+              >Configuración del Editor por Defecto</a
+            >
           </li>
           <li class="list-group-item">
-            <a href="#configuraciondelMetododeFusion">Configuración del Método de Fusión</a>
+            <a href="#configuracióndelosColoresdeTextolaTerminal"
+              >Configuración de los Colores de Texto la Terminal</a
+            >
           </li>
           <li class="list-group-item">
+            <a href="#configuraciondelMetododeFusion"
+              >Configuración del Método de Fusión</a
+            >
             <a href="#configuraciondeAlias">Configuración de Alias</a>
           </li>
           <li class="list-group-item">
             <a href="#verlaconfiguracion">Ver la configuración</a>
           </li>
         </ul>
-    </aside>
-    <!-- -------------------------------- fin barra lateral -------------------------------- -->
-  </div>
-
+      </aside>
+      <!-- -------------------------------- fin barra lateral -------------------------------- -->
+    </div>
     <!-- -------------------------------- pie de pagina -------------------------------- -->
     <footer class="row col border-top border-1 m-1">
       <div class="row">

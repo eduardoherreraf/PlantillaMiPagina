@@ -11,7 +11,7 @@
     />
     <meta
       name="tittle"
-      content="Instalación de Bootstrap V5, NPM y VITE - Ing. Eduardo Herrera Forero - Ing. Eduardo Herrera Forero."
+      content="Instalación de Bootstrap V5, NPM y VITE - Ing. Eduardo Herrera Forero."
     />
     <meta name="author" content="Ing. Eduardo Herrera Forero" />
     <meta name="application-name" content="EHF" />
@@ -26,7 +26,7 @@
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
-      content="Instalación de Bootstrap V5, NPM y VITE - Ing. Eduardo Herrera Forero - Ing. Eduardo Herrera Forero."
+      content="Instalación de Bootstrap V5, NPM y VITE - Ing. Eduardo Herrera Forero"
     />
     <meta
       property="og:description"
@@ -45,10 +45,10 @@
     <!-- fin Open Graph data -->
 
     <!-- Twitter cards -->
-    <meta name="twitter:card" content=content="summary" />
+    <meta name="twitter:card" content="content" ="summary" />
     <meta
       name="twitter:title"
-      content="Instalación de Bootstrap V5, NPM y VITE - Ing. Eduardo Herrera Forero - Ing. Eduardo Herrera Forero."
+      content="Instalación de Bootstrap V5, NPM y VITE - Ing. Eduardo Herrera Forero."
     />
     <meta
       name="twitter:description"
@@ -83,8 +83,7 @@
     <!-- fin iconos -->
 
     <title>
-      Instalación de Bootstrap V5, NPM y VITE - Ing. Eduardo Herrera Forero -
-      Ing. Eduardo Herrera Forero.
+      Instalación de Bootstrap V5, NPM y VITE - Ing. Eduardo Herrera Forero
     </title>
 
     <script type="module" defer src="./js/main.js"></script>
@@ -170,53 +169,78 @@
       <main class="pt-5 col-lg-9">
         <section class="pb-3">
           <!-- vite NPM -->
-          <article class="row border-1 border-bottom pb-3">
+          <article
+            class="row border-1 border-bottom pb-3"
+            data-bs-spy="scroll"
+            data-bs-target="#list-example"
+            data-bs-smooth-scroll="true"
+          >
             <h1>Instalación de Bootstrap V5, NPM y VITE</h1>
-            <p>
-              Esta documentación se realizó con base a la oficial entregada por
-              Bootstrap en su página web
-              <a
-                href="https://getbootstrap.com/docs/5.3/getting-started/vite/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Bootstrap and Vite</a
-              >, todos los comando que se usaran en este tutorial son ejecutados
-              en la terminal BASH de GIT.
-            </p>
-            <p class="">
-              Se va a crear un proyecto Bootstrap con Vite desde cero, por lo
-              que es necesario cumplir con algunos requisitos previos y seguir
-              ciertos pasos antes de comenzar. Esta guía asume que se tiene
-              instalado Node.js y que se tiene cierta experiencia con el uso del
-              terminal.
-            </p>
-            <div id="configuracionInicial" class="mt-5 pt-5">
+            <div id="introduccion" class="mt-5">
+              <h2 class="mt-1">Introducción</h2>
+              <p>
+                Esta documentación se realizó con base a la oficial entregada
+                por Bootstrap en su página web
+                <a
+                  href="https://getbootstrap.com/docs/5.3/getting-started/vite/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Bootstrap and Vite</a
+                >, todos los comando que se usaran en este tutorial son
+                ejecutados en la terminal BASH de GIT.
+              </p>
+              <p>
+                Se va a crear un proyecto Bootstrap con Vite desde cero, por lo
+                que es necesario cumplir con algunos requisitos previos y seguir
+                ciertos pasos antes de comenzar. Esta guía asume que se tiene
+                instalado Node.js y que se tiene cierta experiencia con el uso
+                del terminal.
+              </p>
+
+              <div class="text-center imagen">
+                <picture>
+                  <img
+                    src="https://i.ibb.co/SDgmGxnB/bootstrap-vite-2x.png"
+                    class="img-fluid"
+                    width="50%"
+                    alt="Instalación de Bootstrap V5, NPM y VITE"
+                  />
+                  <figcaption>
+                    Instalación de Bootstrap V5, NPM y VITE
+                  </figcaption>
+                </picture>
+              </div>
+            </div>
+
+            <div id="configuracionInicial" class="mt-5">
               <h2 class="mt-1">Configuración Inicial</h2>
-              <pre
-                class="line-numbers"
-                data-src-status="loaded"
-                tabindex="0"
-              ><code class="language-bash" data-prismjs-copy="Copy">
-                  mkdir my-project && cd my-project
-                  npm init -y
-                  npm i --save-dev vite
-                  npm i --save bootstrap @popperjs/core
-                  npm i --save-dev sass
-              </code></pre>
               <p>
                 <b
                   >Crear una carpeta de proyecto e inicializar
                   <code>npm</code></b
                 >: Se creará la carpeta "mi-proyecto" y se inicializará
                 <code>npm</code> con el argumento <code>-y</code>
-                para evitar que haga las preguntas interactivas.
+                para evitar que haga las preguntas interactivas. Es importante
+                señalar que el nombre de la carpeta puede ser cualquier otro
+                según las necesidades del proyecto.
               </p>
+              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <code class="language-bash" data-prismjs-copy="Copy">
+                  mkdir mi-proyecto && cd mi-proyecto
+                  npm init -y
+                </code>
+              </pre>
               <p>
                 <b>Instalación Vite</b>: Aquí sólo hay una dependencia de la
                 herramienta de compilación. Se Usará
                 <code>--save-dev</code> para indicar que esta dependencia es
                 sólo para uso de desarrollo y no para producción.
               </p>
+              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <code class="language-bash" data-prismjs-copy="Copy">
+                  npm i --save-dev vite
+                </code>
+              </pre>
               <p>
                 <b>Instalar Bootstrap</b>: Se puede instalar Bootstrap. Además,
                 se instalará Popper, ya que es necesario para el posicionamiento
@@ -224,30 +248,69 @@
                 previsto usar esos componentes, se puede omitir la instalación
                 de este último.
               </p>
-              <p class="">
+              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <code class="language-bash" data-prismjs-copy="Copy">
+                  npm i --save bootstrap @popperjs/core
+                </code>
+              </pre>
+              <p>
                 <b>Instalación dependencias adicionales</b>: Además de Vite y
                 Bootstrap, es necesario contar con otra dependencia (Sass) para
                 importar y empaquetar correctamente el CSS de Bootstrap.
               </p>
-              <div id="configuracionEspacioTrabajo" class="mt-5 pt-5">
+              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <code class="language-bash" data-prismjs-copy="Copy">
+                  npm i --save-dev sass
+                </code>
+              </pre>
+              <p>
+                Ahora se tiene todas las dependencias necesarias instaladas y
+                configuradas, ya se puede trabajar creando los archivos del
+                proyecto e importando Bootstrap.
+              </p>
+
+              <div id="configuracionEspacioTrabajo">
                 <h3 class="mt-1">Configuración del Espacio de Trabajo</h3>
-                <pre
-                  class="line-numbers"
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-bash" data-prismjs-copy="Copy">
-                  mkdir {src,src/js,src/scss}
-                  touch src/index.html src/js/main.js src/scss/styles.scss vite.config.js
-              </code></pre>
                 <p>
-                  La carpeta "my-project" ya ha sido creada y se ha inicializado
+                  La carpeta "mi-proyecto" ya ha sido creada y se ha
+                  inicializado
                   <code>npm</code>. Ahora, se procederá a crear la carpeta
                   "src", el archivo de hojas de estilo y el archivo JavaScript
                   para completar la estructura del proyecto. Para llevar a cabo
-                  esto, ejecuta el siguiente código dentro de "my-project".
+                  esto, ejecuta el siguiente código dentro de "mi-proyecto".
+                </p>
+                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-bash" data-prismjs-copy="Copy">
+                    mkdir {src,src/js,src/scss}
+                    touch src/index.html src/js/main.js src/scss/styles.scss vite.config.js
+                  </code>
+                </pre>
+                <p>
+                  Cuando se haya terminado, el proyecto completo debería tener
+                  este aspecto:
+                </p>
+
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-none" data-prismjs-copy="Copy">
+                    mi-proyecto/
+                    ├── src/
+                    │ ├── js/
+                    │ │    └── main.js
+                    │ └── scss/
+                    │ |    └── styles.scss
+                    | └── index.html
+                    ├── package-lock.json
+                    ├── package.json
+                    └── vite.config.js
+                  </code>
+                </pre>
+                <p>
+                  En este punto, todo está en el lugar correcto, pero Vite no
+                  funcionará porque aún no se ha rellenado el archivo
+                  vite.config.js.
                 </p>
               </div>
-              <div id="configuracionVite" class="mt-5 pt-5">
+              <div id="configuracionVite">
                 <h3 class="mt-1">Configuración de Vite</h3>
                 <p>
                   En el archivo
@@ -321,10 +384,11 @@
                 </p>
               </div>
             </div>
-            <div id="importacionBootstrapv5" class="mt-5 pt-5">
+
+            <div id="importacionBootstrapv5" class="mt-5">
               <h2 class="mt-1">Importación Bootstrap v5</h2>
               <p>
-                En el archivo
+                <b>Importación de archivos CSS de Bootstrap:</b> En el archivo
                 <span class="fw-bold text-warning">src/scss/styles.scss</span>
                 se importa los estilos CSS:
               </p>
@@ -337,22 +401,52 @@
                   @import "bootstrap/scss/bootstrap";
               </code></pre>
               <p>
+                <b>Importación del archivo JavaScript de Bootstrap:</b>
                 El archivo
                 <span class="fw-bold text-warning">src/js/main.js</span> se
                 carga e importa los CSS y JS de Bootstrap agregando.
               </p>
-              <pre
-                class="line-numbers"
-                data-src-status="loaded"
-                tabindex="0"
-              ><code class="language-js" data-prismjs-copy="Copy">
+              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <code class="language-js" data-prismjs-copy="Copy">
                   // Import our custom CSS
                   import '../scss/styles.scss'
                   // Import all of Bootstrap's JS
                   import * as bootstrap from 'bootstrap'
-              </code></pre>
+                </code>
+              </pre>
+              <p>
+                También puede importar plugins JavaScript individualmente según
+                sea necesario para mantener el tamaño de los paquetes bajo:
+              </p>
+              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <code class="language-js" data-prismjs-copy="Copy">
+                  import Alert from 'bootstrap/js/dist/alert';
+
+                  // o, especificar cual plugin es necesario:
+                  import { Tooltip, Toast, Popover } from 'bootstrap';
+                </code>
+              </pre>
+              <p>
+                Con las fuentes Sass y JS de Bootstrap completamente cargadas,
+                el servidor de desarrollo local debería tener ahora este
+                aspecto:
+              </p>
+              <div class="text-center imagen">
+                <picture>
+                  <img
+                    src="https://i.ibb.co/398cGstB/vite-dev-server-bootstrap.png"
+                    class="img-fluid rounded-3"
+                    width="50%"
+                    alt="Vite dev server funcionando con Bootstrap"
+                  />
+                  <figcaption>
+                    Vite dev server funcionando con Bootstrap.
+                  </figcaption>
+                </picture>
+              </div>
             </div>
-            <div id="instalacionpluginPurgeCSSHTML" class="mt-5 pt-5">
+
+            <div id="instalacionpluginPurgeCSSHTML" class="mt-5">
               <h2 class="mt-1">Instalación Plugin PurgeCSS y Plugin HTML</h2>
               <pre
                 class="line-numbers"
@@ -364,9 +458,9 @@
               </code></pre>
               <p>
                 El plugin <b>purgecss</b> elimina toda clase de CSS que no sea
-                utilizada y el <b>HTML</b> elimina todo espacio extra o cambio
-                de línea del documento HTML y deja todo el código en una sola
-                línea.
+                utilizada y el plugin <b>HTML</b> elimina todo espacio extra o
+                cambio de línea del documento HTML y deja todo el código en una
+                sola línea.
               </p>
               <p>El archivo vite.cfg.js se debe configurar asi:</p>
               <pre
@@ -397,7 +491,8 @@
                   }
               </code></pre>
             </div>
-            <div id="configuracionesFinales" class="mt-5 pt-5">
+
+            <div id="configuracionesFinales" class="mt-5">
               <h2 class="mt-1">Configuraciones Finales</h2>
               <p>
                 El archivo
@@ -410,7 +505,7 @@
                 tabindex="0"
               ><code class="language-javascript" data-prismjs-copy="Copy">
                   {
-                    "name": "my-project",
+                    "name": "mi-proyecto",
                     "version": "1.0.0",
                     "description": "",
                     "main": "index.js",
@@ -435,31 +530,35 @@
                   }
               </code></pre>
             </div>
-            <div id="compilacionProyectoProduccion" class="mt-5 pt-5">
+
+            <div id="compilacionProyectoProduccion" class="mt-5">
               <h2 class="mt-1">Compilación del proyecto para Producción</h2>
-              <p class="">
-                Cuando se haya terminado y se quiera obtener la versión para
-                producción se ejecuta el comando:
-                <span class="fw-bold text-warning">npm run build</span> y los
-                archivos se quedan disponibles en la carpeta <b>dist</b>."
+              <p>
+                Una vez finalizado el desarrollo, para generar la versión
+                optimizada para producción, se debe ejecutar el comando
+                <span class="fw-bold text-warning">npm run build</span>. Esto
+                procesará los archivos y guardará el resultado en la carpeta
+                <b>dist</b>, listo para su despliegue.
               </p>
-              <div id="correccionArchivoIndex.html" class="mt-5 pt-5">
+
+              <div id="correccionArchivoIndex.html">
                 <h3 class="mt-1">Corrección del Archivo <b>index.html</b></h3>
                 <p>
-                  Corregir las direcciones de llamado a los archivos css y js
-                  insertando un punto "." antes del slash, debe quedar asi en la
-                  cabecera
+                  Se debe corregir las rutas de los archivos CSS y JS agregando
+                  un punto (.) antes del slash (&#47;). La estructura en la
+                  sección
                   <span class="fw-bold text-warning">&lt;head&gt;</span> del
-                  archivo:
+                  archivo debe quedar de la siguiente manera:
                 </p>
-                <pre
-                  class="line-numbers"
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-html" data-prismjs-copy="Copy">
-                  &lt;script type="module" crossorigin src="./assets/index-e9ba998b.js"&gt;&lt;/script&gt; y
-                  &lt;link rel="stylesheet" href="./assets/index-1b619488.css"&gt;
-              </code></pre>
+                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-html" data-prismjs-copy="Copy">
+                    &lt;head&gt;
+                    ...
+                      &lt;script type="module" crossorigin src="./assets/index-e9ba998b.js"&gt;&lt;/script&gt; y
+                      &lt;link rel="stylesheet" href="./assets/index-1b619488.css"&gt;
+                    &lt;/head&gt;
+                  </code>
+                </pre>
                 <p>
                   Si se tienen imágenes que están guardadas en la carpeta
                   <span class="fw-bold text-warning">assets/</span>, también se
@@ -547,30 +646,31 @@
       <!-- -------------------------------- fin principal -------------------------------- -->
       <!-- -------------------------------- barra lateral -------------------------------- -->
       <aside class="col-lg-3 d-none d-lg-block pt-5">
-        <div>
-          <h1>Índice</h1>
-          <ul class="list-group">
-            <li class="list-group-item">
-              <a href="#configuracionInicial">Configuración Inicial</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#importacionBootstrapv5">Importación Bootstrap v5</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#instalacionpluginPurgeCSSHTML"
-                >Instalación plugin PurgeCSS y plugin HTML</a
-              >
-            </li>
-            <li class="list-group-item">
-              <a href="#configuracionesFinales">Configuraciones Finales</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#compilacionProyectoProduccion"
-                >Compilación del proyecto para Producción</a
-              >
-            </li>
-          </ul>
-        </div>
+        <h1>Índice</h1>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <a href="#introduccion">Introducción</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#configuracionInicial">Configuración Inicial</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#importacionBootstrapv5">Importación Bootstrap v5</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#instalacionpluginPurgeCSSHTML"
+              >Instalación Plugin PurgeCSS y Plugin HTML</a
+            >
+          </li>
+          <li class="list-group-item">
+            <a href="#configuracionesFinales">Configuraciones Finales</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#compilacionProyectoProduccion"
+              >Compilación del proyecto para Producción</a
+            >
+          </li>
+        </ul>
       </aside>
       <!-- -------------------------------- fin barra lateral -------------------------------- -->
     </div>

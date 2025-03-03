@@ -45,7 +45,7 @@
     <!-- fin Open Graph data -->
 
     <!-- Twitter cards -->
-    <meta name="twitter:card" content=content="summary" />
+    <meta name="twitter:card" content="content" ="summary" />
     <meta
       name="twitter:title"
       content="El módulo os, Interactuando con el sistema operativo Python 3 - Ing. Eduardo Herrera Forero."
@@ -170,38 +170,45 @@
       <main class="pt-5 col-lg-9">
         <section class="pb-3">
           <!--  El módulo os, Interactuando con el sistema operativo en Python  -->
-          <article class="row border-1 border-bottom pb-3">
+          <article
+            class="row border-1 border-bottom pb-3"
+            data-bs-spy="scroll"
+            data-bs-target="#list-example"
+            data-bs-smooth-scroll="true"
+          >
             <div>
               <header>
                 <h1>
                   El módulo os, Interactuando con el sistema operativo en Python
                 </h1>
               </header>
-              <p>
-                El módulo <code>OS</code> en Python es una herramienta poderosa
-                que permite a los desarrolladores interactuar con el sistema
-                operativo de manera eficiente. Este documento explora las
-                funcionalidades más comunes del módulo os, incluyendo la
-                manipulación de archivos y directorios, la obtención de
-                información del sistema y la ejecución de comandos del sistema
-                operativo. A través de ejemplos prácticos, se demostrará cómo
-                utilizar este módulo para facilitar tareas cotidianas en la
-                programación.
-              </p>
-              <div class="text-center imagen">
-                <picture>
-                  <img
-                    src="https://i.ibb.co/GkPHLKv/moduloos.jpg"
-                    class="img-fluid rounded-4"
-                    width="70%"
-                    alt="El módulo os, Interactuando con el sistema operativo en Python  "
-                    title="Explorando las Funcionalidades del Módulo <code>OS</code> de Python"
-                  />
-                  <figcaption>
-                    El módulo os, Interactuando con el sistema operativo en
-                    Python
-                  </figcaption>
-                </picture>
+              <div class="pt-5">
+                <p>
+                  El módulo <code>OS</code> en Python es una herramienta
+                  poderosa que permite a los desarrolladores interactuar con el
+                  sistema operativo de manera eficiente. Este documento explora
+                  las funcionalidades más comunes del módulo os, incluyendo la
+                  manipulación de archivos y directorios, la obtención de
+                  información del sistema y la ejecución de comandos del sistema
+                  operativo. A través de ejemplos prácticos, se demostrará cómo
+                  utilizar este módulo para facilitar tareas cotidianas en la
+                  programación.
+                </p>
+                <div class="text-center imagen">
+                  <picture>
+                    <img
+                      src="https://i.ibb.co/GkPHLKv/moduloos.jpg"
+                      class="img-fluid rounded-4"
+                      width="70%"
+                      alt="El módulo os, Interactuando con el sistema operativo en Python  "
+                      title="Explorando las Funcionalidades del Módulo <code>OS</code> de Python"
+                    />
+                    <figcaption>
+                      El módulo os, Interactuando con el sistema operativo en
+                      Python
+                    </figcaption>
+                  </picture>
+                </div>
               </div>
               <!-- Introducción al Módulo OS -->
               <div id="introduccionAlModuloOS" class="mt-5 pt-5">
@@ -490,9 +497,9 @@
                 </ul>
               </div>
               <!-- Compatibilidad con Sistemas Operativos Fin -->
-              <!-- Buenas Prácticas al Usar OS -->
-              <div id="buenasPracticasAlUsarOS" class="mt-5 pt-5">
-                <h2 class="mt-1">Buenas Prácticas al Usar OS</h2>
+              <!-- Buenas Prácticas para Usar OS -->
+              <div id="buenasPracticasParaUsarOS" class="mt-5 pt-5">
+                <h2 class="mt-1">Buenas Practicas para Usar OS</h2>
                 <ul>
                   <li>
                     <span class="fw-bold">Usar <code>os.path</code></span
@@ -516,7 +523,7 @@
               </code>
               </pre>
               </div>
-              <!-- Buenas Prácticas al Usar OS Fin -->
+              <!-- Buenas Practicas para Usar OS -->
             </div>
           </article>
           <!--  El módulo os, Interactuando con el sistema operativo en Python  -->
@@ -620,6 +627,11 @@
           <li class="list-group-item">
             <a href="#compatibilidadConSistemasOperativos"
               >Compatibilidad con Sistemas Operativos</a
+            >
+          </li>
+          <li class="list-group-item">
+            <a href="#buenasPracticasParaUsarOS"
+              >Buenas Practicas para Usar OS</a
             >
           </li>
         </ul>

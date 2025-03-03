@@ -228,7 +228,7 @@ nav {
 
 /* item del la lateral */
 .list-group-item, .list-unstyled {
-  font-size: .9rem;
+  font-size: .8rem;
 }
 
 /* aside */
@@ -240,7 +240,14 @@ aside {
   right: 0;
 }
 
-footer {
-  z-index: 100;
-  ;
+.barraLateral:hover {
+  background-color: #0D6EFD;
+  color: #ffffff;
+}
+
+.barraLateral:hover code {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2); /* Fondo semitransparente para destacar */
+  padding: 2px 4px;
+  border-radius: 4px;
 }

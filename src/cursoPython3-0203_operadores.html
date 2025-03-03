@@ -45,7 +45,7 @@
     <!-- fin Open Graph data -->
 
     <!-- Twitter cards -->
-    <meta name="twitter:card" content=content="summary" />
+    <meta name="twitter:card" content="content" ="summary" />
     <meta
       name="twitter:title"
       content="Operadores Python 3 - Ing. Eduardo Herrera Forero."
@@ -167,7 +167,12 @@
       <main class="pt-5 col-lg-9">
         <section class="pb-3">
           <!--  Operadores  -->
-          <article class="row border-1 border-bottom pb-3">
+          <article
+            class="row border-1 border-bottom pb-3"
+            data-bs-spy="scroll"
+            data-bs-target="#list-example"
+            data-bs-smooth-scroll="true"
+          >
             <div>
               <header>
                 <h1>Operadores en Python</h1>
@@ -191,7 +196,7 @@
                 </picture>
               </div>
               <!-- Operadores Aritméticos -->
-              <div id="operadoresAritmeticos" class="mt-5 pt-5">
+              <div id="operadoresAritmeticos" class="mt-5">
                 <h2 class="mt-1">Operadores Aritméticos</h2>
                 <pre
                   class="line-numbers"
@@ -208,7 +213,7 @@
                     </code></pre>
               </div>
               <!-- Operadores de Comparación -->
-              <div id="operadoresComparacion" class="mt-5 pt-5">
+              <div id="operadoresComparacion" class="mt-5">
                 <h2 class="mt-1">Operadores de Comparación</h2>
                 <p>
                   Comparan dos valores y devuelven un valor booleano (<code
@@ -230,7 +235,7 @@
                   </code></pre>
               </div>
               <!-- Operadores Lógicos -->
-              <div id="operadoresLogicos" class="mt-5 pt-5">
+              <div id="operadoresLogicos" class="mt-5">
                 <h2 class="mt-1">Operadores Lógicos</h2>
                 <pre
                   class="line-numbers"
@@ -243,7 +248,7 @@ not: Negación lógica                      # not(5 > 3) Resultado: False
                   </code></pre>
               </div>
               <!-- Operadores de Asignación -->
-              <div id="operadoresAsignacion" class="mt-5 pt-5">
+              <div id="operadoresAsignacion" class="mt-5">
                 <h2 class="mt-1">Operadores de Asignación</h2>
                 <pre
                   class="line-numbers"
@@ -261,7 +266,7 @@ not: Negación lógica                      # not(5 > 3) Resultado: False
                   </code></pre>
               </div>
               <!-- Operadores de Identidad -->
-              <div id="operadoresIdentidad" class="mt-5 pt-5">
+              <div id="operadoresIdentidad" class="mt-5">
                 <h2 class="mt-1">Operadores de Identidad</h2>
                 <p>
                   Comprueban si dos variables hacen referencia al mismo objeto
@@ -282,7 +287,7 @@ x is not y  # Resultado: True
                     </code></pre>
               </div>
               <!-- Operadores de Pertenencia -->
-              <div id="operadoresPertenencia" class="mt-5 pt-5">
+              <div id="operadoresPertenencia" class="mt-5">
                 <h2 class="mt-1">Operadores de Pertenencia</h2>
                 <p>
                   Comprueban si un valor está presente en una secuencia, como
@@ -299,7 +304,7 @@ not in: Comprueba si un valor no está en una secuencia
                   </code></pre>
               </div>
               <!-- Operadores Bit a Bit (Para tipos enteros) -->
-              <div id="operadoresBitaBit" class="mt-5 pt-5">
+              <div id="operadoresBitaBit" class="mt-5">
                 <h2 class="mt-1">Operadores Bit a Bit (Para tipos enteros)</h2>
                 <p></p>
                 <pre
@@ -321,7 +326,7 @@ not in: Comprueba si un valor no está en una secuencia
 </code></pre>
               </div>
               <!-- Prioridad de los Operadores -->
-              <div id="prioridadOperadores" class="mt-5 pt-5">
+              <div id="prioridadOperadores" class="mt-5">
                 <h2 class="mt-1">Prioridad de los Operadores</h2>
                 <p>
                   En Python, los operadores tienen una prioridad o precedencia
@@ -667,7 +672,7 @@ not in: Comprueba si un valor no está en una secuencia
               <a href="#operadoresIdentidad">Operadores de Identidad</a>
             </li>
             <li class="list-group-item">
-              <a href="#operadoresBitaBit">Operadores de Pertenencia</a>
+              <a href="#operadoresPertenencia">Operadores de Pertenencia</a>
             </li>
             <li class="list-group-item">
               <a href="#operadoresBitaBit"

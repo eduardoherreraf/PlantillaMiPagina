@@ -45,7 +45,7 @@
     <!-- fin Open Graph data -->
 
     <!-- Twitter cards -->
-    <meta name="twitter:card" content=content="summary" />
+    <meta name="twitter:card" content="content" ="summary" />
     <meta
       name="twitter:title"
       content="Metadatos y Exportación en Photoshop - Ing. Eduardo Herrera Forero."
@@ -169,24 +169,33 @@
       <main class="pt-5 col-lg-9">
         <section class="pb-3">
           <!--  Metadatos y Exportación  -->
-          <article class="row border-1 border-bottom pb-3">
+          <article
+            class="row border-1 border-bottom pb-3"
+            data-bs-spy="scroll"
+            data-bs-target="#list-example"
+            data-bs-smooth-scroll="true"
+          >
             <div>
-              <h1>Metadatos y Exportación</h1>
-              <p>
-                Los metadatos en Photoshop se refieren a la información
-                adicional sobre una imagen, como detalles técnicos (por ejemplo,
-                dimensiones, resolución), información del autor, derechos de
-                autor, y más. Estos metadatos son útiles para mantener un
-                registro detallado sobre la creación, edición y uso de las
-                imágenes.
-              </p>
-              <p>
-                Photoshop permite exportar imágenes en diversos formatos,
-                dependiendo del uso que se quiera dar a la imagen (web,
-                impresión, etc.).
-              </p>
+              <header><h1>Metadatos y Exportación</h1></header>
+              <!-- Introducción -->
+              <div id="introduccion" class="mt-5">
+                <h2 class="mt-1">Introducción</h2>
+                <p>
+                  Los metadatos en Photoshop se refieren a la información
+                  adicional sobre una imagen, como detalles técnicos (por
+                  ejemplo, dimensiones, resolución), información del autor,
+                  derechos de autor, y más. Estos metadatos son útiles para
+                  mantener un registro detallado sobre la creación, edición y
+                  uso de las imágenes.
+                </p>
+                <p>
+                  Photoshop permite exportar imágenes en diversos formatos,
+                  dependiendo del uso que se quiera dar a la imagen (web,
+                  impresión, etc.).
+                </p>
+              </div>
               <!-- Conceptos Básicos -->
-              <div id="conceptosBasicos" class="mt-5 pt-5">
+              <div id="conceptosBasicos" class="mt-5">
                 <h2 class="mt-1">Conceptos Básicos</h2>
                 <!-- metadatos -->
                 <div>
@@ -265,7 +274,7 @@
                 </div>
               </div>
               <!-- Agregar y Quitar Metadatos -->
-              <div id="agregarQuitarMetadatos" class="mt-5 pt-5">
+              <div id="agregarQuitarMetadatos" class="mt-5">
                 <h2 class="mt-1">Agregar y Quitar Metadatos</h2>
                 <!--Visualización y Edición de Metadatos en Photoshop  -->
                 <div>
@@ -298,7 +307,7 @@
                 </div>
               </div>
               <!-- Exportar Composiciones -->
-              <div id="exportarComposiciones" class="mt-5 pt-5">
+              <div id="exportarComposiciones" class="mt-5">
                 <h2 class="mt-1">Guardar y Exportar Composiciones</h2>
                 <ul>
                   <li>
@@ -468,6 +477,9 @@
       <aside class="col-lg-3 d-none d-lg-block pt-5">
         <h1>Índice</h1>
         <ul class="list-group">
+          <li class="list-group-item">
+            <a href="#introduccion">Introducción</a>
+          </li>
           <li class="list-group-item">
             <a href="#conceptosBasicos">Conceptos Básicos</a>
           </li>

@@ -1,114 +1,184 @@
 <!-- @format -->
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
-
-<head>
-  <!-- Metaetiquetas -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description"
-    content="Este artículo detalla cómo ejecutar código JavaScript según las exigencias específicas." />
-  <meta name="tittle" content="Como Ejecutar un Código Javascript - Ing. Eduardo Herrera Forero." />
-  <meta name="author" content="Ing. Eduardo Herrera Forero" />
-  <meta name="application-name" content="EHF" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://eduardoherreraf.github.io/javascript-como_ejecutar_un_codigo_javascript.html" />
-  <!-- Fin Metaetiquetas -->
-
-  <!-- Open Graph data -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Como Ejecutar un Código Javascript - Ing. Eduardo Herrera Forero." />
-  <meta property="og:description"
-    content="Este artículo detalla cómo ejecutar código JavaScript según las exigencias específicas." />
-  <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
-  <meta property="og:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
-  <meta property="og:url"
-    content="https://eduardoherreraf.github.io/javascript-como_ejecutar_un_codigo_javascript.html" />
-  <meta property="og:locale" content="es_CO" />
-  <!-- fin Open Graph data -->
-
-  <!-- Twitter cards -->
-  <meta name="twitter:card" content=content="summary">
-  <meta name="twitter:title" content="Como Ejecutar un Código Javascript - Ing. Eduardo Herrera Forero." />
-  <meta name="twitter:description"
-    content="Este artículo detalla cómo ejecutar código JavaScript según las exigencias específicas." />
-  <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
-  <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero">
-  <meta name="twitter:url"
-    content="https://eduardoherreraf.github.io/javascript-como_ejecutar_un_codigo_javascript.html" />
-  <meta name="twitter:site" content="@ehfeduardo" />
-  <!-- Fin Twitter cards -->
-
-  <!-- iconos -->
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-  <link rel="manifest" href="site.webmanifest" />
-  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
-  <meta name="msapplication-TileColor" content="#da532c" />
-  <meta name="theme-color" content="#ffffff" />
-  <!-- fin iconos -->
-
-  <title>
-    Como Ejecutar un Código Javascript - Ing. Eduardo Herrera Forero.
-  </title>
-
-  <script type="module" defer src="./js/main.js"></script>
-
-  <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
-</head>
-
-<body>
-  <!-- Barra deNavegación -->
-  <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
-    <div class="container-fluid">
-      <!-- Enlace a la página principal con el logo y nombre -->
-      <a class="navbar-brand d-flex align-items-center ms-2" href="index.html">
-        <img src="./images/logo.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30"
-          class="d-inline-block align-text-top me-1" />
-        <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
-      </a>
-
-      <!-- Botón para activar el menú en dispositivos pequeños -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Menú de navegación -->
-      <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100">
-          <li class="nav-item"><a class="nav-link mx-1" href="index.html">SOBRE MÍ</a></li>
-          <li class="nav-item"><a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a></li>
-          <li class="nav-item"><a class="nav-link mx-1" href="index.html#portfolio">PORTAFOLIO</a></li>
-          <li class="nav-item"><a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a></li>
-          <li class="nav-item"><a class="nav-link mx-1 active" href="index.html#blog">PUBLICACIONES</a></li>
-          <li class="nav-item"><a class="nav-link mx-1" href="index.html#contact">CONTACTO</a></li>
-        </ul>
+  <head>
+    <!-- Metaetiquetas -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Este artículo detalla cómo ejecutar código JavaScript según las exigencias específicas."
+    />
+    <meta
+      name="tittle"
+      content="Como Ejecutar un Código Javascript - Ing. Eduardo Herrera Forero."
+    />
+    <meta name="author" content="Ing. Eduardo Herrera Forero" />
+    <meta name="application-name" content="EHF" />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="canonical"
+      href="https://eduardoherreraf.github.io/javascript-como_ejecutar_un_codigo_javascript.html"
+    />
+    <!-- Fin Metaetiquetas -->
+    <!-- Open Graph data -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Como Ejecutar un Código Javascript - Ing. Eduardo Herrera Forero."
+    />
+    <meta
+      property="og:description"
+      content="Este artículo detalla cómo ejecutar código JavaScript según las exigencias específicas."
+    />
+    <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
+    <meta
+      property="og:image:alt"
+      content="Logo del ingeniero Eduardo Herrera Forero"
+    />
+    <meta
+      property="og:url"
+      content="https://eduardoherreraf.github.io/javascript-como_ejecutar_un_codigo_javascript.html"
+    />
+    <meta property="og:locale" content="es_CO" />
+    <!-- fin Open Graph data -->
+    <!-- Twitter cards -->
+    <meta name="twitter:card" content="content" ="summary" />
+    <meta
+      name="twitter:title"
+      content="Como Ejecutar un Código Javascript - Ing. Eduardo Herrera Forero."
+    />
+    <meta
+      name="twitter:description"
+      content="Este artículo detalla cómo ejecutar código JavaScript según las exigencias específicas."
+    />
+    <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
+    <meta
+      name="twitter:image:alt"
+      content="Logo del ingeniero Eduardo Herrera Forero"
+    />
+    <meta
+      name="twitter:url"
+      content="https://eduardoherreraf.github.io/javascript-como_ejecutar_un_codigo_javascript.html"
+    />
+    <meta name="twitter:site" content="@ehfeduardo" />
+    <!-- Fin Twitter cards -->
+    <!-- iconos -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="android-chrome-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- fin iconos -->
+    <title>
+      Como Ejecutar un Código Javascript - Ing. Eduardo Herrera Forero.
+    </title>
+    <script type="module" defer src="./js/main.js"></script>
+    <meta
+      name="google-site-verification"
+      content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc"
+    />
+  </head>
+  <body>
+    <!-- Barra deNavegación -->
+    <nav
+      class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
+    >
+      <div class="container-fluid">
+        <!-- Enlace a la página principal con el logo y nombre -->
+        <a
+          class="navbar-brand d-flex align-items-center ms-2"
+          href="index.html"
+        >
+          <img
+            src="./images/logo.png"
+            alt="Logo de Ing. Eduardo Herrera Forero"
+            width="30"
+            height="30"
+            class="d-inline-block align-text-top me-1"
+          />
+          <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
+        </a>
+        <!-- Botón para activar el menú en dispositivos pequeños -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Menú de navegación -->
+        <div
+          class="collapse navbar-collapse ms-auto text-center"
+          id="navbarSupportedContent"
+        >
+          <ul
+            class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100"
+          >
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="index.html#portfolio"
+                >PORTAFOLIO</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1 active" href="index.html#blog"
+                >PUBLICACIONES</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-  <!-- Barra deNavegación -->
+    </nav>
+    <!-- Barra deNavegación -->
+    <!-- -------------------------------- principal -------------------------------- -->
+    <div class="row col mx-1 pb-5">
+      <main class="pt-5 col-lg-9">
+        <section class="pb-3">
+          <!-- Como Ejecutar un Código Javascript -->
+          <article
+            class="row border-1 border-bottom"
+            data-bs-spy="scroll"
+            data-bs-target="#list-example"
+            data-bs-smooth-scroll="true"
+          >
+            <header>
+              <h1>Como Ejecutar un Código Javascript</h1>
+            </header>
 
-  <!-- -------------------------------- principal -------------------------------- -->
-  <div class="row col mx-1">
-    <main class="pt-5 col-lg-9">
-      <!-- Como Ejecutar un Código Javascript -->
-      <section class="pb-3">
-        <article class="row border-1 border-bottom pb-3">
-          <header>
-            <h1>Como Ejecutar un Código Javascript</h1>
-          </header>
-          <div>
-            <div>
+            <div id="introduccion" class="mt-5">
+              <h2 class="mt-1">Introducción</h2>
               <p>
                 Existen varias formas de ejecutar código JavaScript en un PC,
                 dependiendo de las necesidades y del entorno en el que se
                 prefiera trabajar. Algunas opciones podrían ser:
               </p>
             </div>
-            <div id="consoladelNavegador" class="mt-5 pt-5 ">
+
+            <div id="consoladelNavegador" class="mt-5">
               <h2 class="mt-1">Consola del Navegador</h2>
               <p>
                 La forma más rápida y sencilla de ejecutar JavaScript es a
@@ -153,9 +223,15 @@
                   depuración, <code>console.log()</code>, para mostrar el
                   resultado de la suma.
                 </p>
-                <a href="./images/js-consola.jpg" target="_blank" rel="noopener noreferrer"><img
-                    src="./images/js-consola_tn.jpg" alt="Consola del navegador Mozilla Firefox"
-                    class="img-fluid mb-3" /></a>
+                <a
+                  href="./images/js-consola.jpg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img
+                    src="./images/js-consola_tn.jpg"
+                    alt="Consola del navegador Mozilla Firefox"
+                    class="img-fluid mb-3"
+                /></a>
               </div>
               <div>
                 <h3>Ventajas</h3>
@@ -309,7 +385,8 @@
                 </ul>
               </div>
             </div>
-            <div id="archivosHTML" class="mt-5 pt-5 ">
+
+            <div id="archivosHTML" class="mt-5">
               <h2 class="mt-1">Archivos HTML</h2>
               <p>
                 Se puede escribir el código JavaScript dentro de un archivo
@@ -482,7 +559,8 @@
                 </ul>
               </div>
             </div>
-            <div id="nodejs" class="mt-5 pt-5 ">
+
+            <div id="nodejs" class="mt-5">
               <h2 class="mt-1">Node.js</h2>
               <p>
                 Node.js es un
@@ -500,7 +578,11 @@
                   <li>
                     <b>Creación del archivo fuente js</b>: Crear el archivo con
                     extensión <code>.js</code>, por ejemplo <code>app.js</code>:
-                    <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                    <pre
+                      class="line-numbers"
+                      data-src-status="loaded"
+                      tabindex="0"
+                    >
                       <code class="language-bash" data-prismjs-copy="Copy">
                         console.log('Hola desde Node.js');
                       </code>
@@ -510,7 +592,11 @@
                     <b>Ejecutar el archivo fuente js</b>: Abrir la terminal o el
                     símbolo del sistema, navegar hasta el directorio donde está
                     guardado el archivo <code>app.js</code> y ejecutar:
-                    <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                    <pre
+                      class="line-numbers"
+                      data-src-status="loaded"
+                      tabindex="0"
+                    >
                       <code class="language-bash" data-prismjs-copy="Copy">
                         node app.js
                       </code>
@@ -671,31 +757,129 @@
                 </ul>
               </div>
             </div>
-            <div id="entornosdeDesarrolloIntegrados" class="mt-5 pt-5 ">
+
+            <div id="entornosdeDesarrolloIntegrados" class="mt-5">
               <h2 class="mt-1">
-                Entornos de Desarrollo Integrados (<abbr title="Integrated Development Environment">IDE</abbr>)
+                Entornos de Desarrollo Integrados (<abbr
+                  title="Integrated Development Environment"
+                  >IDE</abbr
+                >)
               </h2>
               <p>
-                Un IDE como Visual Studio Code, WebStorm, o Sublime Text ofrecen
-                características avanzadas para escribir y ejecutar código
-                JavaScript.
+                Un Entorno de Desarrollo Integrado (IDE) es una herramienta
+                esencial para escribir, depurar y ejecutar código de manera
+                eficiente. Existen diversas opciones que ofrecen características
+                avanzadas para el desarrollo en JavaScript, entre ellas Visual
+                Studio Code, WebStorm y Sublime Text.
               </p>
-              <ol>
-                <li>
-                  <b>Visual Studio Code</b>: Tiene una terminal integrada donde
-                  se puede ejecutar Node.js directamente. Además, se puede usar
-                  extensiones como "Live Server" para ejecutar y ver cambios en
-                  archivos HTML/JS en tiempo real o el complemento "Code Runner"
-                  para ejecutar el código JavaScript.
-                </li>
-                <li>
-                  <b>WebStorm</b>: Ofrece herramientas integradas para
-                  desarrollo JavaScript, incluyendo un terminal y soporte para
-                  Node.js.
-                </li>
-              </ol>
+              <!-- Visual Studio Code (VS Code) -->
+              <div>
+                <h3>Visual Studio Code (VS Code)</h3>
+                <p>
+                  Visual Studio Code es uno de los editores más populares para
+                  JavaScript gracias a su versatilidad y amplia comunidad de
+                  desarrolladores. Entre sus principales características
+                  destacan:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Terminal integrada</strong>: Permite ejecutar
+                    Node.js directamente sin necesidad de abrir una consola
+                    externa.
+                  </li>
+                  <li>
+                    <strong>Extensiones</strong>: Se pueden instalar
+                    complementos como:
+                    <ul>
+                      <li>
+                        <strong>Live Server</strong>: Facilita la ejecución de
+                        proyectos HTML/JS con recarga en tiempo real.
+                      </li>
+                      <li>
+                        <strong>Code Runner</strong>: Permite ejecutar
+                        fragmentos de código JavaScript y otros lenguajes sin
+                        necesidad de configurar un entorno completo.
+                      </li>
+                      <li>
+                        <strong>ESLint</strong>: Ayuda a mantener la calidad del
+                        código detectando errores y aplicando buenas prácticas.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Depuración</strong>: Dispone de herramientas
+                    integradas para el debugging de código JavaScript,
+                    permitiendo establecer puntos de interrupción y visualizar
+                    el flujo de ejecución.
+                  </li>
+                </ul>
+              </div>
+              <!-- Visual Studio Code (VS Code) fin -->
+
+              <!-- WebStorm -->
+              <div>
+                <h3>WebStorm</h3>
+                <p>
+                  WebStorm, desarrollado por JetBrains, es un IDE especializado
+                  en JavaScript que proporciona un conjunto de herramientas
+                  avanzadas para facilitar el desarrollo. Algunas de sus
+                  características más destacadas incluyen:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Soporte nativo para Node.js</strong>: Permite
+                    ejecutar aplicaciones Node.js directamente desde el IDE.
+                  </li>
+                  <li>
+                    <strong>Depurador integrado</strong>: Facilita la detección
+                    y corrección de errores mediante herramientas avanzadas de
+                    debugging.
+                  </li>
+                  <li>
+                    <strong>Integración con control de versiones</strong>:
+                    Soporte completo para Git, permitiendo gestionar
+                    repositorios sin salir del entorno de desarrollo.
+                  </li>
+                  <li>
+                    <strong>Autocompletado inteligente</strong>: Ofrece
+                    sugerencias avanzadas para mejorar la productividad al
+                    escribir código.
+                  </li>
+                </ul>
+              </div>
+              <!-- WebStorm fin -->
+
+              <!-- Sublime Text -->
+              <div>
+                <h3>Sublime Text</h3>
+                <p>
+                  Sublime Text es un editor de código ligero y rápido, ideal
+                  para quienes buscan un entorno minimalista sin perder
+                  funcionalidades esenciales. Sus principales ventajas son:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Inicio rápido y bajo consumo de recursos</strong>:
+                    Es una excelente opción para sistemas con hardware limitado.
+                  </li>
+                  <li>
+                    <strong>Soporte para JavaScript y otros lenguajes</strong>:
+                    Permite escribir código de manera eficiente con resaltado de
+                    sintaxis.
+                  </li>
+                  <li>
+                    <strong>Extensiones a través de Package Control</strong>:
+                    Aunque no es un IDE completo, se puede mejorar su
+                    funcionalidad con paquetes adicionales como Terminus
+                    (terminal integrada) y LiveReload (vista en tiempo real de
+                    cambios en HTML/JS).
+                  </li>
+                </ul>
+              </div>
+              <!-- Sublime Text fin -->
             </div>
-            <div id="playgroundsenLínea" class="mt-5 pt-5">
+
+            <div id="playgroundsenLínea" class="mt-5">
               <h2 class="mt-1">Playgrounds en Línea</h2>
               <p>
                 Existen plataformas en línea donde se puede escribir y ejecutar
@@ -704,23 +888,46 @@
               <p>Algunas populares incluyen:</p>
               <ol>
                 <li>
-                  <b><a href="https://codepen.io/" target="_blank" rel="noopener noreferrer">CodePen</a></b>: Ideal para
-                  prototipos rápidos de HTML, CSS y JavaScript.
+                  <b
+                    ><a
+                      href="https://codepen.io/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >CodePen</a
+                    ></b
+                  >: Ideal para prototipos rápidos de HTML, CSS y JavaScript.
                 </li>
                 <li>
-                  <b><a href="https://jsfiddle.net/" target="_blank" rel="noopener noreferrer">JSFiddle</a></b>: Similar
-                  a
-                  CodePen, permite probar código JavaScript junto
+                  <b
+                    ><a
+                      href="https://jsfiddle.net/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >JSFiddle</a
+                    ></b
+                  >: Similar a CodePen, permite probar código JavaScript junto
                   con HTML y CSS.
                 </li>
                 <li>
-                  <b><a href="https://replit.com/" target="_blank" rel="noopener noreferrer">Repl.it</a></b>: Permite
-                  ejecutar código en múltiples lenguajes, incluyendo
+                  <b
+                    ><a
+                      href="https://replit.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Repl.it</a
+                    ></b
+                  >: Permite ejecutar código en múltiples lenguajes, incluyendo
                   JavaScript.
                 </li>
                 <li>
-                  <b><a href="https://jsbin.com/" target="_blank" rel="noopener noreferrer">JSBin</a></b>: También se
-                  utiliza para prototipos rápidos de HTML, CSS y
+                  <b
+                    ><a
+                      href="https://jsbin.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >JSBin</a
+                    ></b
+                  >: También se utiliza para prototipos rápidos de HTML, CSS y
                   JavaScript. En este ejemplo se tiene un código en la columna
                   HTML. <br />
                   En este caso, se presenta un fragmento de código en la sección
@@ -731,50 +938,90 @@
                   console opera de manera similar a la consola de Git, y la
                   sección output muestra cómo se visualizaría la página en un
                   navegador.
-                  <a href="./images/js-jsbin.jpg" target="_blank" rel="noopener noreferrer"
-                    class="d-flex justify-content-center mt-3"><img src="./images/js-jsbin_tn.jpg" class="img-fluid"
-                      alt="Plataforma en línea JSBIN" /></a>
+                  <a
+                    href="./images/js-jsbin.jpg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="d-flex justify-content-center mt-3"
+                    ><img
+                      src="./images/js-jsbin_tn.jpg"
+                      class="img-fluid"
+                      alt="Plataforma en línea JSBIN"
+                  /></a>
                 </li>
               </ol>
             </div>
-          </div>
-        </article>
-        <!-- Como Ejecutar un Código Javascript Fin-->
-        <!-- -------------------------------- comentarios -------------------------------- -->
-        <article class="row pt-5" id="comment">
-          <br />
-          <h1>COMENTARIOS</h1>
-          <p>Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del formulario
-            disponible para este propósito.</p>
-          <div class="d-flex justify-content-center">
-            <form action="https://formsubmit.co/herreraforeroeduardo@gmail.com" method="POST" id="myForm">
-              <div class="input-group d-flex justify-content-center flex-column">
-                <label for="name" class="pe-2">Nombre:</label>
-                <input type="text" name="name" id="name" placeholder="Eduardo Herrera Forero" class="rounded"
-                  required="required" />
-                <label for="email" class="pe-2">Email:</label>
-                <input type="email" name="email" id="email" placeholder="herreraforeroeduardo@gmail.com" class="rounded"
-                  required="required" />
-                <label for="message" class="pe-2">Mensaje:</label>
-                <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
-                  class="rounded rounded-3"></textarea>
-                <input class="btn btn-outline-light my-3 border rounded-pill border-2" type="submit"
-                  value="Enviar..." />
-              </div>
-              <p>La política de privacidad, y los términos y condiciones están disponibles en el formulario de contacto.
-              </p>
-            </form>
-          </div>
-        </article>
-        <!-- -------------------------------- fin comentarios -------------------------------- -->
-      </section>
-    </main>
-    <!-- -------------------------------- fin principal -------------------------------- -->
-    <!-- -------------------------------- barra lateral -------------------------------- -->
-    <aside class="col-lg-3 d-none d-lg-block pt-5">
-      <div>
+          </article>
+          <!-- Como Ejecutar un Código Javascript Fin-->
+          <!-- -------------------------------- comentarios -------------------------------- -->
+          <article class="row" id="comment">
+            <br />
+            <h1>COMENTARIOS</h1>
+            <p>
+              Si tiene alguna inquietud, duda o ha encontrado algún error, por
+              favor infórmelo a través del formulario disponible para este
+              propósito.
+            </p>
+            <div class="d-flex justify-content-center">
+              <form
+                action="https://formsubmit.co/herreraforeroeduardo@gmail.com"
+                method="POST"
+                id="myForm"
+              >
+                <div
+                  class="input-group d-flex justify-content-center flex-column"
+                >
+                  <label for="name" class="pe-2">Nombre:</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Eduardo Herrera Forero"
+                    class="rounded"
+                    required="required"
+                  />
+                  <label for="email" class="pe-2">Email:</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="herreraforeroeduardo@gmail.com"
+                    class="rounded"
+                    required="required"
+                  />
+                  <label for="message" class="pe-2">Mensaje:</label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="5"
+                    placeholder="Su comentario..."
+                    class="rounded rounded-3"
+                  ></textarea>
+                  <input
+                    class="btn btn-outline-light my-3 border rounded-pill border-2"
+                    type="submit"
+                    value="Enviar..."
+                  />
+                </div>
+                <p>
+                  La política de privacidad, y los términos y condiciones están
+                  disponibles en el formulario de contacto.
+                </p>
+              </form>
+            </div>
+          </article>
+          <!-- -------------------------------- fin comentarios -------------------------------- -->
+        </section>
+      </main>
+      <!-- -------------------------------- fin principal -------------------------------- -->
+      <!-- -------------------------------- barra lateral -------------------------------- -->
+      <aside class="col-lg-3 d-none d-lg-block pt-5">
         <h1>Índice</h1>
         <ul class="list-group">
+          <li class="list-group-item">
+            <a href="#introduccion">Introducción</a>
+          </li>
           <li class="list-group-item">
             <a href="#consoladelNavegador">Consola del Navegador</a>
           </li>
@@ -785,17 +1032,17 @@
             <a href="#nodejs">Node.js</a>
           </li>
           <li class="list-group-item">
-            <a href="#entornosdeDesarrolloIntegrados">Entornos de Desarrollo Integrados (IDE)
+            <a href="#entornosdeDesarrolloIntegrados"
+              >Entornos de Desarrollo Integrados (IDE)
             </a>
           </li>
           <li class="list-group-item">
             <a href="#playgroundsenLínea">Playgrounds en Línea</a>
           </li>
         </ul>
-    </aside>
-    <!-- -------------------------------- fin barra lateral -------------------------------- -->
-  </div>
-  
+      </aside>
+      <!-- -------------------------------- fin barra lateral -------------------------------- -->
+    </div>
     <!-- -------------------------------- pie de pagina -------------------------------- -->
     <footer class="row col border-top border-1 m-1">
       <div class="row">
