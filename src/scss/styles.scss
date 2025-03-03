@@ -217,17 +217,30 @@ code {
 
 /* Barra de navegación */
 nav {
-  background-color:rgb(56, 56, 56);
+  background-color: rgb(56, 56, 56);
   font-size: .9rem;
 }
 
 /*  */
-.navbar-toggler-icon{
-  border: 0!important;
+.navbar-toggler-icon {
+  border: 0 !important;
 }
 
 /* item del la lateral */
-.list-group-item{
+.list-group-item {
   font-size: .9rem;
 }
 
+/* aside */
+aside {
+  position: fixed;
+  height: 68vh;
+  overflow-y: auto;
+  top: 0;
+  right: 0;
+}
+
+footer {
+  z-index: 100;
+  ;
+}
