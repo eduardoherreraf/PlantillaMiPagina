@@ -227,14 +227,14 @@ nav {
 }
 
 /* item del la lateral */
-.list-group-item {
+.list-group-item, .list-unstyled {
   font-size: .9rem;
 }
 
 /* aside */
 aside {
   position: fixed;
-  height: 68vh;
+  height: 70vh;
   overflow-y: auto;
   top: 0;
   right: 0;
