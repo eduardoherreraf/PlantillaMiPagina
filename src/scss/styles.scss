@@ -10,7 +10,7 @@ $enable-negative-margins: true;
 @import url("https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100&display=swap");
 
 // Import all of Prism's theme
-@import "../../node_modules/prismjs/themes/prism-coy.css";
+@import "../../node_modules/prismjs/themes/prism-twilight.css";
 
 // Import Prims's plugins
 @import "../../node_modules/prismjs/plugins/line-numbers/prism-line-numbers.min.css";
@@ -227,7 +227,8 @@ nav {
 }
 
 /* item del la lateral */
-.list-group-item, .list-unstyled {
+.list-group-item,
+.list-unstyled {
   font-size: .8rem;
 }
 
@@ -247,7 +248,8 @@ aside {
 
 .barraLateral:hover code {
   color: #ffffff;
-  background-color: rgba(255, 255, 255, 0.2); /* Fondo semitransparente para destacar */
+  background-color: rgba(255, 255, 255, 0.2);
+  /* Fondo semitransparente para destacar */
   padding: 2px 4px;
   border-radius: 4px;
 }
