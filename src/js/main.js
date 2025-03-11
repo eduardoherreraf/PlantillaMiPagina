@@ -13,6 +13,8 @@ import '../../node_modules/prismjs/plugins/show-language/prism-show-language.min
 import '../../node_modules/prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.min.js';
 import '../../node_modules/prismjs/plugins/match-braces/prism-match-braces.min.js';
 import '../../node_modules/prismjs/plugins/line-highlight/prism-line-highlight.min.js';
+import '../../node_modules/prismjs/components/prism-python.min'
+import 'prismjs/components/prism-python.min.js';
 
 // Import bootstrap 5 icons
 import 'bootstrap-icons/font/bootstrap-icons.css';
