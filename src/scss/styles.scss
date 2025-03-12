@@ -253,3 +253,21 @@ aside {
   padding: 2px 4px;
   border-radius: 4px;
 }
+
+/* iconos */
+.icons {
+  width: 127px;
+  height: 127px;
+}
+
+/* Contador de filas tablas índice */
+tbody {
+  counter-reset: rowCounter;
+}
+
+tbody tr td:first-child::before {
+  content: counter(rowCounter) ".";
+  counter-increment: rowCounter;
+  padding-right: 10px;
+  display: inline-block;
+}
