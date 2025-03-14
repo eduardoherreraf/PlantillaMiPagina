@@ -10,7 +10,7 @@ $enable-negative-margins: true;
 @import url("https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100&display=swap");
 
 // Import all of Prism's theme
-@import "../../node_modules/prismjs/themes/prism-twilight.css";
+@import "../../node_modules/prismjs/themes/prism-okaidia.min.css";
 
 // Import Prims's plugins
 @import "../../node_modules/prismjs/plugins/line-numbers/prism-line-numbers.min.css";
