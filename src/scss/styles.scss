@@ -271,3 +271,8 @@ tbody tr td:first-child::before {
   padding-right: 10px;
   display: inline-block;
 }
+
+pre{
+  border: 3px solid grey;
+  border-radius: 10%;
+}
