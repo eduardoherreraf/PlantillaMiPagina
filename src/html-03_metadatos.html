@@ -1,4 +1,5 @@
 <!-- @format -->
+
 <html lang="es" data-bs-theme="dark">
   <head>
     <!-- Metaetiquetas -->
@@ -17,7 +18,7 @@
     <meta name="robots" content="index, follow" />
     <link
       rel="canonical"
-      href="https://eduardoherreraf.github.io/html-02_estructura_del_documento.html"
+      href="https://eduardoherreraf.github.io/html-02_estructura_del_documento_html.html"
     />
     <!-- Fin Metaetiquetas -->
 
@@ -41,7 +42,7 @@
     />
     <meta
       property="og:url"
-      content="https://eduardoherreraf.github.io/html-02_estructura_del_documento.html"
+      content="https://eduardoherreraf.github.io/html-02_estructura_del_documento_html.html"
     />
     <meta property="og:locale" content="es_CO" />
     <!-- fin Open Graph data -->
@@ -66,7 +67,7 @@
     />
     <meta
       name="twitter:url"
-      content="https://eduardoherreraf.github.io/html-02_estructura_del_documento.html"
+      content="https://eduardoherreraf.github.io/html-02_estructura_del_documento_html.html"
     />
     <meta name="twitter:site" content="@ehfeduardo" />
     <!-- Fin Twitter cards -->
@@ -171,36 +172,42 @@
         <section class="pb-3">
           <!--  Estructura del Documento HTML -->
           <article
-            class="row pb-3"
-            data-bs-spy="scroll"
-            data-bs-target="#list-example"
+            class="row border-1 border-bottom pb-3"
             data-bs-smooth-scroll="true"
           >
             <div>
               <header><h1>Estructura del Documento HTML</h1></header>
 
-              <!-- Introducción -->
-              <div id="introduccion" class="mt-5">
-                <h2 class="mt-1">Introducción</h2>
+              <p>
+                Un documento HTML debe estar correctamente estructurado para que
+                el navegador pueda interpretarlo sin errores y mostrar el
+                contenido de manera adecuada. Para lograr esto, es fundamental
+                seguir una organización clara y utilizar las etiquetas HTML
+                esenciales, además de considerar ciertas prácticas recomendadas
+                que mejoran la accesibilidad y el rendimiento del sitio web.
+              </p>
+              <p>
+                En términos generales, la estructura de un documento HTML se
+                puede dividir en tres secciones principales, cada una con un
+                propósito específico que contribuye al correcto funcionamiento y
+                presentación de la página.
+              </p>
+              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+              <code class="language-html" data-prismjs-copy="Copy">
+                &lt;!DOCTYPE html>
+                &lt;html>
+                &lt;head>
+                    &lt;!-- metadatos y enlaces a recursos esenciales para la 
+                    configuración y presentación de una página web. --&gt;
+                  &lt;/head>
+                  &lt;body>
 
-                <p>
-                  Un documento HTML debe estar correctamente estructurado para
-                  que el navegador pueda interpretarlo sin errores y mostrar el
-                  contenido de manera adecuada. Para lograr esto, es fundamental
-                  seguir una organización clara y utilizar las etiquetas HTML
-                  esenciales, además de considerar ciertas prácticas
-                  recomendadas que mejoran la accesibilidad y el rendimiento del
-                  sitio web.
-                </p>
-                <p>
-                  En términos generales, la estructura de un documento HTML se
-                  puede dividir en tres secciones principales, cada una con un
-                  propósito específico que contribuye al correcto funcionamiento
-                  y presentación de la página.
-                </p>
-              </div>
-              <!-- Introducción fin -->
+                    &lt;!-- Contenido visible de la página --&gt;
 
+                  &lt;/body>
+                &lt;/html>
+              </code>
+            </pre>
               <!-- Estructura de la Página -->
               <div id="estructura-de-la-pagina" class="mt-5">
                 <h2 class="mt-1">Estructura de la Página</h2>
@@ -217,22 +224,6 @@
                   (<code>&lt;body></code>), donde se define el contenido visible
                   de la página web.
                 </p>
-                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
-                  <code class="language-html" data-prismjs-copy="Copy">
-                    &lt;!DOCTYPE html>
-                    &lt;html>
-                    &lt;head>
-                        &lt;!-- metadatos y enlaces a recursos esenciales para la 
-                        configuración y presentación de una página web. --&gt;
-                      &lt;/head>
-                      &lt;body>
-
-                        &lt;!-- Contenido visible de la página --&gt;
-
-                      &lt;/body>
-                    &lt;/html>
-                  </code>
-                </pre>
               </div>
               <!-- Estructura de la Página Fin -->
 
@@ -322,7 +313,7 @@
                   </li>
                   <li>
                     <strong>Icono de la página</strong>: Aparece en la pestaña
-                    del navegador, también se llama Favicon.
+                    del navegador, tambien se llama Favicon.
                   </li>
                 </ul>
                 <p>
@@ -332,256 +323,10 @@
                   <strong>scripts de JavaScript</strong> <code>.js</code>,
                   manteniendo así una estructura organizada y separada.
                 </p>
-                <a href="./html-03_metadatos.html"
-                  >Información completa y detallada sobre metadatos HTML</a
-                >
               </div>
               <!-- Encabezado Fin -->
-
-              <!-- Cuerpo de Página -->
-              <div id="cuerpo-de-pagina" class="mt-5">
-                <h2 class="mt-1">Cuerpo de Página</h2>
-                <p>
-                  La etiqueta <code>&lt;body></code> en HTML define la sección
-                  del documento donde se incorpora todo el contenido visual e
-                  interactivo de una página web, incluyendo texto, imágenes,
-                  videos, enlaces, botones, formularios y otros elementos
-                  multimedia. Forma parte de la estructura esencial de un
-                  archivo HTML y se ubica inmediatamente después de la etiqueta
-                  <code>&lt;head></code>, asegurando que la información
-                  estructurada en el encabezado se procese antes de renderizar
-                  el contenido visible en el navegador.
-                </p>
-                <!-- Características y Función de &lt;body> -->
-                <div>
-                  <h3>Características y Función de &lt;body></h3>
-                  <ul>
-                    <li>
-                      <strong>Contiene todo el contenido visible</strong>: Todo
-                      lo que se muestra en la página, incluyendo texto,
-                      imágenes, videos, enlaces, botones y formularios, se
-                      encuentra dentro de <code>&lt;body></code>.
-                    </li>
-                    <li>
-                      <strong>Debe ser único</strong>: Solo puede haber un
-                      <code>&lt;body></code> por documento HTML.
-                    </li>
-                    <li>
-                      <strong>Permite atributos globales</strong>: Se pueden
-                      aplicar atributos como id, class, style, entre otros.
-                    </li>
-                    <li>
-                      <strong>Puede incluir eventos de JavaScript</strong>: Se
-                      pueden manejar eventos como onload, onunload, etc.
-                    </li>
-                  </ul>
-                </div>
-                <!-- Características y Función de &lt;body> fin -->
-
-                <!-- Atributos Comunes de &lt;body> -->
-                <div>
-                  <h3>Atributos Comunes de &lt;body></h3>
-                  <p>
-                    La etiqueta <code>&lt;body></code> puede incluir diversos
-                    atributos que permiten modificar su comportamiento o
-                    apariencia. Aunque en HTML5 se recomienda aplicar estilos
-                    mediante CSS y manejar eventos con JavaScript, aún es
-                    posible utilizar ciertos atributos directamente en
-                    <code>&lt;body></code>.
-                  </p>
-                  <!-- Atributos Globales -->
-                  <div>
-                    <h4>Atributos Globales</h4>
-                    <p>
-                      Estos atributos pueden aplicarse a cualquier elemento
-                      HTML, incluyendo <code>&lt;body></code>.
-                    </p>
-                    <ul>
-                      <li>
-                        <code>id</code>: Asigna un identificador único al
-                        <code>&lt;body></code>, útil para aplicar estilos o
-                        manipularlo con JavaScript.
-                      </li>
-                      <li>
-                        <code>class</code>: Permite asignar una o más clases CSS
-                        para aplicar estilos específicos.
-                      </li>
-                      <li>
-                        <code>style</code>: Define estilos CSS en línea para
-                        modificar la apariencia del cuerpo de la página.
-                      </li>
-                      <li>
-                        <code>title</code>: Muestra un texto emergente cuando el
-                        usuario pasa el cursor sobre la pestaña del navegador,
-                        mostrando el contenido completo cuando el título es
-                        demasiado largo para ser visualizado en el espacio
-                        disponible de la pestaña.
-                      </li>
-                      <li>
-                        <code>lang</code>: Especifica el idioma principal del
-                        contenido dentro del <code>&lt;body></code>,
-                        complementando el atributo en <code>&lt;html></code>.
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- Atributos Globales fin -->
-
-                  <!-- Atributos de Eventos en JavaScript -->
-                  <div>
-                    <h4>Atributos de Eventos en JavaScript</h4>
-                    <p>
-                      La etiqueta <code>&lt;body></code> también permite manejar
-                      eventos de carga, interacción y cierre de la página
-                      mediante atributos de eventos de JavaScript.
-                    </p>
-                    <ul>
-                      <li>
-                        <code>onload</code>: Se ejecuta cuando la página se ha
-                        cargado completamente.
-                      </li>
-                      <li>
-                        <code>onunload</code>: Se activa cuando el usuario
-                        abandona la página o la recarga.
-                      </li>
-                      <li>
-                        <code>onresize</code>: Se dispara cuando la ventana del
-                        navegador cambia de tamaño.
-                      </li>
-                      <li>
-                        <code>onhashchange</code>: Se ejecuta cuando cambia la
-                        parte de la URL después del #.
-                      </li>
-                      <li>
-                        <code>onbeforeunload</code>: Permite mostrar una
-                        advertencia antes de que el usuario cierre o recargue la
-                        página.
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- Atributos de Eventos en JavaScript fin -->
-
-                  <!-- Ejemplos de Uso -->
-                  <div>
-                    <h4>Ejemplos de Uso</h4>
-                    <ul>
-                      <li>
-                        <strong>Aplicación de estilos con style</strong>:
-                        <pre
-                          class="line-numbers"
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
-                          <code class="language-html" data-prismjs-copy="Copy">
-                            &lt;body style="background-color: lightblue; color: black;">
-                              &lt;h1>Ejemplo de estilos en línea&lt;/h1>
-                          &lt;/body>
-                          </code>
-                        </pre>
-                      </li>
-                      <li>
-                        <strong
-                          >Uso del evento onload para mostrar un mensaje al
-                          cargar la página</strong
-                        >:
-                        <pre
-                          class="line-numbers"
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
-                          <code class="language-html" data-prismjs-copy="Copy">
-                            &lt;body onload="alert('Bienvenido a mi página web')">
-                              &lt;h1>Página de ejemplo&lt;/h1>
-                            &lt;/body>
-                          </code>
-                        </pre>
-                      </li>
-                      <li>
-                        <strong
-                          >Advertencia antes de salir de la página con
-                          onbeforeunload</strong
-                        >:
-                        <pre
-                          class="line-numbers"
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
-                          <code class="language-html" data-prismjs-copy="Copy">
-                            &lt;body onbeforeunload="return confirm('¿Seguro que quieres salir de la página?');">
-                              &lt;h1>Contenido de la página&lt;/h1>
-                            &lt;/body>
-                          </code>
-                        </pre>
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- Ejemplos de Uso fin -->
-                </div>
-                <!-- Atributos Comunes de &lt;body> fin -->
-              </div>
-              <!-- Cuerpo de Página Fin -->
             </div>
           </article>
-          <!--  Estructura del Documento HTML fin-->
-
-          <!--  Comentarios -->
-          <article class="row pt-5" id="comment">
-            <br />
-            <h1>COMENTARIOS</h1>
-            <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por
-              favor infórmelo a través del formulario disponible para este
-              propósito.
-            </p>
-            <div class="d-flex justify-content-center">
-              <form
-                action="https://formsubmit.co/herreraforeroeduardo@gmail.com"
-                method="POST"
-                id="myForm"
-              >
-                <div
-                  class="input-group d-flex justify-content-center flex-column"
-                >
-                  <label for="name" class="pe-2">Nombre:</label>
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="Eduardo Herrera Forero"
-                    class="rounded"
-                    required="required"
-                  />
-                  <label for="email" class="pe-2">Email:</label>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="herreraforeroeduardo@gmail.com"
-                    class="rounded"
-                    required="required"
-                  />
-                  <label for="message" class="pe-2">Mensaje:</label>
-                  <textarea
-                    name="message"
-                    id="message"
-                    cols="30"
-                    rows="5"
-                    placeholder="Su comentario..."
-                    class="rounded rounded-3"
-                  ></textarea>
-                  <input
-                    class="btn btn-outline-light my-3 border rounded-pill border-2"
-                    type="submit"
-                    value="Enviar..."
-                  />
-                </div>
-                <p>
-                  La política de privacidad, y los términos y condiciones están
-                  disponibles en el formulario de contacto.
-                </p>
-              </form>
-            </div>
-          </article>
-          <!-- -------------------------------- fin comentarios -------------------------------- -->
         </section>
         <!--  Estructura del Documento HTML -->
       </main>
@@ -591,19 +336,7 @@
         <h1>Índice</h1>
         <ul class="list-group">
           <li class="list-group-item">
-            <a href="#introduccion">Introducción</a>
-          </li>
-          <li class="list-group-item">
             <a href="#estructura-de-la-pagina">Estructura de la Página</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#tipo-de-documento">Tipo de Documento</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#encabezado">Encabezado</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#cuerpo-de-pagina">Cuerpo de Página</a>
           </li>
         </ul>
       </aside>
