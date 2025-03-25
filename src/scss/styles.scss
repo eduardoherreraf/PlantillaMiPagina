@@ -210,7 +210,7 @@ p {
 code {
   color: #6ea8fe;
   font-size: 1.1rem;
-  padding: 2px 4px;
+  padding: 2px 1px;
   background: #333;
   border-radius: 6px;
 }
@@ -235,10 +235,11 @@ nav {
 /* aside */
 aside {
   position: fixed;
-  height: 70vh;
+  height: 100dvh;
   overflow-y: auto;
   top: 0;
   right: 0;
+  padding-bottom: 5px;
 }
 
 .barraLateral:hover {
@@ -274,10 +275,20 @@ tbody tr td:first-child::before {
 
 pre{
   border: 3px solid grey;
-  border-radius: 10%;
+  border-radius: 1%;
 }
 
 strong{
   font-weight: bold;
   color: orange;
+}
+
+/* listas */
+.list-no-bullets {
+  list-style: none;
+  padding-left: 0;
+}
+.list-no-bullets > li{
+  list-style: none;
+  padding-left: 15px; /* Espaciado para sublistas */
 }
