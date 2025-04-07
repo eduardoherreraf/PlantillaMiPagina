@@ -171,18 +171,19 @@
         <section class="pb-3">
           <!--  Estructura del Documento HTML -->
           <article
-            class="row pb-3"
+            class="row pb-3 border-bottom border-1"
             data-bs-spy="scroll"
             data-bs-target="#list-example"
             data-bs-smooth-scroll="true"
           >
             <div>
-              <header><h1>Estructura del Documento HTML</h1></header>
+              <header>
+                <h1 id="introduccion">Estructura del Documento HTML</h1>
+              </header>
 
               <!-- Introducción -->
-              <div id="introduccion" class="mt-5">
+              <div class="mt-5">
                 <h2 class="mt-1">Introducción</h2>
-
                 <p>
                   Un documento HTML debe estar correctamente estructurado para
                   que el navegador pueda interpretarlo sin errores y mostrar el
@@ -352,9 +353,11 @@
                   estructurada en el encabezado se procese antes de renderizar
                   el contenido visible en el navegador.
                 </p>
-                <!-- Características y Función de &lt;body> -->
+                <!-- Características y Función de <body> -->
                 <div>
-                  <h3>Características y Función de &lt;body></h3>
+                  <h3 id="caracteristicas-y-funcion-de-body">
+                    Características y Función de &lt;body>
+                  </h3>
                   <ul>
                     <li>
                       <strong>Contiene todo el contenido visible</strong>: Todo
@@ -378,9 +381,11 @@
                 </div>
                 <!-- Características y Función de &lt;body> fin -->
 
-                <!-- Atributos Comunes de &lt;body> -->
+                <!-- Atributos Comunes de <body> -->
                 <div>
-                  <h3>Atributos Comunes de &lt;body></h3>
+                  <h3 id="atributos-comunes-de-body">
+                    Atributos Comunes de &lt;body>
+                  </h3>
                   <p>
                     La etiqueta <code>&lt;body></code> puede incluir diversos
                     atributos que permiten modificar su comportamiento o
@@ -602,8 +607,21 @@
           <li class="list-group-item">
             <a href="#encabezado">Encabezado</a>
           </li>
+
           <li class="list-group-item">
             <a href="#cuerpo-de-pagina">Cuerpo de Página</a>
+            <ul class="list-no-bullets">
+              <li>
+                <a href="#caracteristicas-y-funcion-de-body"
+                  >Características y Función de &lt;body></a
+                >
+              </li>
+              <li>
+                <a href="#atributos-comunes-de-body"
+                  >Atributos Comunes de &lt;body></a
+                >
+              </li>
+            </ul>
           </li>
         </ul>
       </aside>
