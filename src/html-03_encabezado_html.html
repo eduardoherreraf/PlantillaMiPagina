@@ -176,30 +176,9 @@
             data-bs-smooth-scroll="true"
           >
             <div>
-              <header><h1>El Encabezado HTML</h1></header>
-              <p>
-                El encabezado HTML es una parte fundamental de cualquier
-                documento web, ya que contiene información crucial sobre el
-                contenido de la página. En este artículo, exploraremos qué es El
-                encabezado HTML, su estructura y las etiquetas que la componen,
-                así como su importancia en la optimización y presentación de un
-                sitio web.
-              </p>
-              <div class="text-center imagen">
-                <picture>
-                  <img
-                    src="https://i.postimg.cc/Wpd7qDHj/Cabecera-html.jpg"
-                    class="img-fluid"
-                    width="50%"
-                    alt="Encabezado HTML "
-                    title="Encabezado HTML "
-                  />
-                  <figcaption>Encabezado HTML</figcaption>
-                </picture>
-              </div>
-
+              <header><h1 id="introduccion">El Encabezado HTML</h1></header>
               <!-- Introducción -->
-              <div id="introduccion" class="mt-5">
+              <div class="mt-5">
                 <h2 class="mt-1">Introducción</h2>
                 <p>
                   El encabezado HTML es la sección de un documento HTML que se
@@ -211,6 +190,19 @@
                   navegadores, motores de búsqueda y otros servicios en línea
                   sobre cómo interpretar y procesar el contenido del documento.
                 </p>
+                <div class="text-center imagen">
+                  <picture>
+                    <img
+                      src="https://i.postimg.cc/Wpd7qDHj/Cabecera-html.jpg"
+                      class="img-fluid"
+                      width="50%"
+                      alt="Encabezado HTML "
+                      title="Encabezado HTML "
+                    />
+                    <figcaption>Encabezado HTML</figcaption>
+                  </picture>
+                </div>
+
                 <p>
                   Esta sección incluye elementos clave como la codificación de
                   caracteres, el título de la página, los metadatos para SEO, la
@@ -245,12 +237,12 @@
               </div>
               <!-- Introducción Fin -->
 
-              <!-- Las Etiquetas y su Funciones -->
-              <div id="las-etiquetas-y-su-funciones" class="mt-5">
-                <h2 class="mt-1">Las Etiquetas y su Funciones</h2>
+              <!-- Las Etiquetas y sus Funciones -->
+              <div id="las-etiquetas-y-sus-funciones" class="mt-5">
+                <h2 class="mt-1">Las Etiquetas y sus Funciones</h2>
                 <!-- <meta> -->
                 <div>
-                  <h3>&lt;meta></h3>
+                  <h3 id="etiqueta-html-meta">&lt;meta></h3>
                   <p>
                     La etiqueta <code>&lt;meta></code> proporciona metadatos
                     sobre un documento HTML. No tiene contenido visible para el
@@ -794,7 +786,7 @@
 
                 <!-- <link> -->
                 <div>
-                  <h3>&lt;link></h3>
+                  <h3 id="etiqueta-html-link">&lt;link></h3>
                   <p>
                     La etiqueta <code>&lt;link></code> es un elemento HTML que
                     se coloca dentro de la sección <code>&lt;head></code> del
@@ -876,7 +868,7 @@
 
                 <!-- <title> -->
                 <div>
-                  <h3>&lt;title></h3>
+                  <h3 id="etiqueta-html-title">&lt;title></h3>
                   <p>
                     La etiqueta <code>&lt;title></code> es un elemento HTML que
                     se coloca dentro de la sección <code>&lt;head></code> del
@@ -924,7 +916,7 @@
 
                 <!-- <style> -->
                 <div>
-                  <h3>&lt;style></h3>
+                  <h3 id="etiqueta-html-style">&lt;style></h3>
                   <p>
                     La etiqueta <code>&lt;style></code> es un elemento HTML que
                     se coloca típicamente dentro de la sección
@@ -980,8 +972,7 @@
 
                 <!-- <script> -->
                 <div>
-                  <h3>&lt;script></h3>
-
+                  <h3 id="etiqueta-html-script">&lt;script></h3>
                   <p>
                     La etiqueta <code>&lt;script></code> es un elemento HTML que
                     se utiliza para incorporar o referenciar código JavaScript
@@ -1071,9 +1062,7 @@
 
                 <!-- <noscript> -->
                 <div>
-                  <h3>&lt;noscript></h3>
-
-                  <p>
+                  <h3 id="etiqueta-html-noscript">&lt;noscript></h3>                  <p>
                     La etiqueta <code>&lt;noscript></code> es un elemento HTML
                     que se utiliza para proporcionar contenido alternativo
                     cuando el navegador del usuario tiene JavaScript desactivado
@@ -1182,9 +1171,7 @@
 
                 <!-- <base> -->
                 <div>
-                  <h3>&lt;base></h3>
-
-                  <p>
+                  <h3 id="etiqueta-html-base">&lt;base></h3>                  <p>
                     La etiqueta <code>&lt;base></code> es un elemento HTML que
                     se coloca dentro de la sección <code>&lt;head></code> del
                     documento y se utiliza para especificar la URL base que se
@@ -1282,7 +1269,7 @@
                 </div>
                 <!-- <base> fin -->
               </div>
-              <!-- Las Etiquetas y su Funciones Fin -->
+              <!-- Las Etiquetas y sus Funciones Fin -->
 
               <!-- Estructura Básica del Encabezado HTML -->
               <div id="estructura-basica-del-encabezado-html" class="mt-5">
@@ -1451,10 +1438,20 @@
             <a href="#introduccion">Introducción</a>
           </li>
           <li class="list-group-item">
-            <a href="#las-etiquetas-y-su-funciones"
-              >Las Etiquetas y su Funciones</a
+            <a href="#las-etiquetas-y-sus-funciones"
+              >Las Etiquetas y sus Funciones</a
             >
+            <ul class="list-no-bullets">
+              <li><a href="#etiqueta-html-meta">&lt;meta></a></li>
+              <li><a href="#etiqueta-html-link">&lt;link></a></li>
+              <li><a href="#etiqueta-html-title">&lt;title></a></li>
+              <li><a href="#etiqueta-html-style">&lt;style></a></li>
+              <li><a href="#etiqueta-html-script">&lt;script></a></li>
+              <li><a href="#etiqueta-html-noscript">&lt;noscript></a></li>
+              <li><a href="#etiqueta-html-base">&lt;base></a></li>
+            </ul>
           </li>
+
           <li class="list-group-item">
             <a href="#estructura-basica-del-encabezado-html"
               >Estructura Básica del Encabezado HTML</a
