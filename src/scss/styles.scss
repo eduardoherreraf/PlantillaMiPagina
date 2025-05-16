@@ -246,9 +246,12 @@ aside {
 
 .barraLateral {
   overflow-y: auto;
-  flex-grow: 1; /* Ocupa todo el espacio disponible del aside */
-  margin-top: 0; /* ← Asegura que no haya margen */
-  padding-top: 0; /* ← Asegura que no haya relleno */
+  flex-grow: 1;
+  /* Ocupa todo el espacio disponible del aside */
+  margin-top: 0;
+  /* ← Asegura que no haya margen */
+  padding-top: 0;
+  /* ← Asegura que no haya relleno */
 }
 
 .barraLateral:hover {
@@ -262,11 +265,13 @@ aside {
 }
 
 aside h1 {
-  flex-shrink: 0; /* Evita que el título se comprima */
+  flex-shrink: 0;
+  /* Evita que el título se comprima */
   margin-bottom: 0rem;
   position: sticky;
   top: 0;
-  z-index: 10; /* Asegura que quede sobre el contenido que se desplaza */
+  z-index: 10;
+  /* Asegura que quede sobre el contenido que se desplaza */
   padding: 0.5rem 0;
   z-index: 2;
   background-color: #212529;
@@ -313,7 +318,30 @@ strong {
   list-style: none;
   padding-left: 0;
 }
-.list-no-bullets > li {
+
+.list-no-bullets>li {
   list-style: none;
-  padding-left: 15px; /* Espaciado para sublistas */
+  padding-left: 15px;
+  /* Espaciado para sublistas */
+}
+
+
+/* Fonts titilando */
+.text-blink-yellow {
+  color: yellow;
+  animation: blinkRed 1s infinite;
+}
+
+@keyframes blinkRed {
+  0% {
+    color: yellow;
+  }
+
+  50% {
+    color: transparent;
+  }
+
+  100% {
+    color: yellow;
+  }
 }
