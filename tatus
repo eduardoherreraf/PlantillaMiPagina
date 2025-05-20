@@ -1,0 +1,187 @@
+[33mc0efd50[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Fix: <hr> en blogs de html
+[33m2a24d00[m Add: html-06_Etiquetas_de_texto.html
+[33m54ff476[m Add: generar archivos con el mismo nombre en bootstrap-instalacion_de_bootstrap_v5_con_npm_y_parcel.html
+[33m0f48723[m fix: scroll <aside> para que el contenido no sobreponga sobre el h1
+[33m8b29a2e[m fix: <footer> index.html
+[33mc79e7c0[m add: chatgpt-02_curso_completo_de_chatgpt_2025.html
+[33mb0c3ff8[m add: imagen HTML no semántico vs HTML semántico en html-04_cuerpo_html.html
+[33m28043ac[m Remove: footers
+[33m5fcfed0[m Fix: menu aside html-01_introduccion_html.html
+[33m02b53fb[m Fix: menu aside html-02_estructura_del_documento_html.html
+[33m922a004[m Fix: menu aside html-03_encabezado_html.html
+[33mcaa2ccc[m Add: html-04_cuerpo_html.html
+[33m3b980c5[m add: src/html-04_cuerpo_html.html
+[33m1e3b5f8[m Change: url -> html-02_estructura_del_documento_html.html
+[33mc51fb88[m add: src/html-03_el_encabezado_html.html
+[33m092900c[m carrect: title and url src/html-02_estructura_del_documento_html.html
+[33md74700b[m add: border <pre>
+[33m449eeb8[m add: contact form html-01_introduccion_html.html
+[33mfbc56c5[m add: html-02_estructura_del_documento.html
+[33m31ffa6f[m change: tema primsjs
+[33ma26fa70[m add: html-01_introduccion_html.html
+[33mb8e92c2[m add: html.html
+[33m96c941b[m add: html.html
+[33m4a8d77a[m Config: total y final de prismjs
+[33m03faad1[m Change: tema a prism-twilight.css
+[33mee7582d[m fix: paginas que no existen en robots Disallow: /
+[33m55cb727[m add: .parcelrc
+[33mbc7754b[m fix: <aside> index.html
+[33mfa2eec3[m fix: todos los pie de página <footer>
+[33m83d17eb[m fix: footer y aside se deja fijo
+[33m22ff5a1[m cambio: twitter card summary_large a summary
+[33mddb84a3[m Agregar: git-05_reiniciar_repositorio_en_git-github.html
+[33m2ba1490[m Arreglar footer
+[33maa8005a[m cambio iconos con bi bi-xxx fs-3</i>
+[33m62f42d5[m Eliminando archivos innecesarios del control de versiones
+[33md6f687e[m Correción footer
+[33mcaf99ff[m Arreglo de margen mx-1 en todas las paginas
+[33m8445f96[m agregar Reiniciar Repositorio en GIT / GITHUB
+[33m1278737[m correccion urls paginas git
+[33m8d39d57[m Correcion de <nav>
+[33m1d3c8ce[m cambio font-size:.9 <nav>
+[33m2218c19[m Corregir en urls a minusculas GIT, CLI y PIP
+[33m5101c2c[m Correccion Twitter Cards
+[33md81352f[m correccion Twitter Cards
+[33m66ed592[m Correccción: URL con mayusculas
+[33m330d35f[m Eliminación <script> git-como_eliminar_el_ultimo_commit_de_git.html
+[33m4e769db[m correcion navbar
+[33m933d471[m Completar: todos los <aside> con lista con .list-group
+[33md3900d5[m Borrar: script cambio de tema en todas las páginas
+[33m52835b7[m Cambio opción publicaciones por artículos
+[33m5b6b43a[m Add: formulario de comentarios y botón toTop
+[33mdfff497[m fix: las URLs de las páginas de photoshop de acuerdo al orden
+[33m1ba6a89[m Order: ornenando ascendentemente las páginas photoshop
+[33me7f2572[m Fix: menu principal enlaces a la derecha
+[33m6a2cdaf[m change: dirección correo contacto
+[33m341db14[m Delete: todos las lineas en blanco sobrantes en todas las páginas web
+[33me543a1d[m Fix: menu de todos las páginas de documtación, marca en el menu la opción publicaciones
+[33mec26a51[m change: font-size de .list-group-item
+[33md36b692[m Add: comentarios para importacion main.js y código verificación Google
+[33m923b4d8[m Delete: <script>
+[33m017cce1[m Remove: <meta name=robots content=noindex />
+[33ma2e7c0a[m correct: canonical url
+[33mafc068e[m Change: barra de menu de todas las páginas a gris por ccs.
+[33m428c20d[m fix: index.html, se borra un </li> demás
+[33m01fc6ff[m Add the Go to top button to each page of the curso Python
+[33m73a6ab5[m fix: urls js y reemplazo imagenes de curso python 3 a online
+[33m8a1d60a[m fix: urls Otros Temas
+[33me53cd09[m fix: urls Photoshop
+[33m9ea31c6[m fix: urls bootstrap
+[33m1bb3e55[m fix: url de curso Python 3
+[33m2bc03f3[m Fix: Urls de unidad 1 y 2
+[33mcd35fd9[m Add: cursoPython3@0805_modulo_calendar_trabajando_con_funciones_relacionadas_con_el_calendario.html
+[33mf2146aa[m Add: cursoPython3@0804_modulo_datetime_funciones_para_manejo_de_la_hora_y_la_fecha.html
+[33m1871588[m Add: cursoPython3@0803_el_modulo_ os_interactuando_con_el_sistema_operativo.html
+[33mfa06c64[m Add: cursoPython3@0802_manejo_de_archivos.html
+[33m5ca4b4d[m Fix: URL de cursoPython3@0705_POO_herencia.html y cursoPython3@0706_POO_excepciones.html
+[33ma416dac[m Add: cursoPython3@0801_iteradores,_generadores_y_cierres.html
+[33m8cd226e[m Fix: las imágenes faltantes subidas a imgbox de Curso Python 3
+[33mfcd61f2[m Fix: la imagen de index.html#blog con cambiadas a imgbox
+[33m5858c5c[m Fix: la imagen de index.html#blog con cambiadas a imgbox
+[33mbfdc64a[m Fix: la imagen de cursoPython3@0303_bucles_en_python_una_guia_completa.html con cambiadas a imgbox
+[33m61ee864[m Fix: la imagen de cursoPython3@0302_sentencia_if_de_control_de_flujo.html con cambiadas a imgbox
+[33m3ddad46[m Fix: la imagen de  ccursoPython3@0301_operadores_de_comparacion_y_logicos_en_python.htm con cambiadas a imgbox
+[33mdafff45[m Fix: las cuatro imagenes de cursoPython3@01_introduccion.html son cambiadas a imgbox
+[33m60a7c2f[m Add: cursoPython3@0706_fundamentos_de_la_POO_excepciones.html
+[33m08d7bca[m Add: cursoPython3@0705_fundamentos_de_la_POO_Herencia.html
+[33m69b667b[m Add: cursoPython3@0704_ POO_metodos.html
+[33m02234d0[m Add: cursoPython3@0703_ POO_propiedades.html
+[33m8b18425[m Add: cursoPython3@0702_comparando_paradigmas_programación_procedimental_y_orientada_a_objetos.html
+[33mcc18135[m cursoPython3@0701_los_fundamentos_de_la_POO.html
+[33m9ea511f[m Add: cursoPython3@0602_errores-el_pan_diario_del_programador.html
+[33me21f703[m Add:cursoPython3@0601_la_naturaleza_de_las_cadenas
+[33m7612b10[m Add: cursoPython3@0505_instalador_de_paquetes_PIP.html
+[33mc1920da[m Add: cursoPython3@0504_modulos_y_paquetes.html
+[33mbb75713[m Add: cursoPython3@0503_modulos_especializados_de_python-matemático_aleatorio_y_de_sistema.html
+[33m75b29df[m Add: cursoPython3@0502_importacion_de_modulos.html
+[33md96b9e9[m Add: cursoPython3@0501_introduccion_a_los_modulos.html
+[33m7889487[m Add: cursoPython3@0402_como_las_funciones_se_comunican_con_su_entorno.html#parametrosVariables
+[33m5daa5b4[m Add: cursoPython3@0404_el_alcance_de_las_variables.html
+[33maded481[m Add: cursoPython3@0403_devolviendo_el_resultado_de_una_funcion.html
+[33mf60eddf[m Add: cursoPython3@0402_como_las_funciones_se_comunican_con_su_entorno.html
+[33mbaf44da[m Add: cursoPython3@0401_introduccion_funciones.html
+[33m763ef74[m add: cursoPython3@0307_operaciones_con_ listas.html
+[33m2138450[m Add: cursoPython3@0305_listas.html
+[33m3f2aec1[m fix: cursoPython3.html
+[33m63702b2[m Add: cursoPython3@0304_operadores_logicos_y_operaciones_bit_a_bit_en_python.html
+[33mebe8f70[m Add: cursoPython3@0304_operadores_logicos_y_operaciones_bit_a_bit_en_python.html
+[33m9ff13db[m Merge branch 'main' of github.com:eduardoherreraf/PlantillaMiPagina
+[33m2349a18[m fix: Go to top button
+[33m3222dac[m fix: Go to top button
+[33m958eaca[m fix
+[33mcc6c5aa[m Add: Go to To Button in cursoPython3@0303_bucles_en_python_una_guia_completa.html
+[33m548c7b9[m Add: Go to To Button in cursoPython3@0303_bucles_en_python_una_guia_completa.html
+[33mea9d444[m fix: <code> became as a button
+[33m1ef6afc[m fix: <code> became as a button
+[33mb369ecd[m fix: code
+[33m8cac5db[m Merge branch 'main' of github.com:eduardoherreraf/PlantillaMiPagina
+[33mb96ac2a[m Merge branch 'main' of github.com:eduardoherreraf/PlantillaMiPagina
+[33m1af1f6c[m fix: <code> became as a button
+[33m4693a25[m fix: <code> became as a button
+[33m7b37ab6[m Add: cursoPython3@0303_bucles_en_python_una_guia_completa.html
+[33m23749c9[m Add: cursoPython3@0301_operadores_de_comparacion_en_python.html
+[33m4653783[m Add: cursoPython3@01b_instalación de_python_localmente.html
+[33mc5c7d84[m Add: cursoPython3@07_interaccion_con_el_usuario.html
+[33mc350067[m Add: cursoPython3@06_comentarios.html
+[33medc07a8[m Fix: cursoPython3@05_variables.html#OperadoresAbreviados
+[33m32731d0[m Fix: cursoPython3@05_variables.html#OperadoresAbreviados
+[33medc0736[m Add: cursoPython3@05_variables.html#OperadoresAbreviados
+[33m5e5f042[m add: cursoPython3@04_operadores.html
+[33m12711fc[m Add: cursoPython3@03_literales.html
+[33m744f971[m add: cursoPython3@02_funcion_print.html
+[33m82eae64[m fix: otrosTemas@como_borrar_la_cache_y_archivos_basura_en_windows.html
+[33m99358e8[m add: otrosTemas@como_borrar_la_cache_y_archivos_basura_en_windows.html
+[33mc4d1d5a[m otrosTemas@como_aprender_cualquier_habilidad_facilmente_con_chatgpt.html
+[33m22dd748[m Fix: photoshop@Agregar_y_Quitar_Objetos.html
+[33mf238f39[m fix: npm audit fix
+[33m20dce1a[m Add: photoshop@metadata_y_Exportacion.html
+[33mdb31639[m add: photoshop@filtros_licuar.html
+[33mfc1c053[m add: photoshop@filtros_licuar.html
+[33m2192b23[m add: Filtros_neurales.html
+[33meff0609[m Add: photoshop@color_y_degradados.html
+[33me4041f9[m add: photoshop@uso_de_pinceles.html
+[33mb296a03[m Add: Agregar y Quitar Objetos.html
+[33m903065d[m fix: eiqueta <main>
+[33m26203e7[m fix: tamaño de columnas main y aside
+[33me830979[m fix: Version Adaptable
+[33mb8b244f[m fix: Margen inferior articule
+[33m0b3be88[m add: photoshop@herramientas_de_seleccion.html
+[33m39c3b24[m Add: photoshop@ajuste_tono_brillo_y_saturacion.html
+[33m411589f[m photoshop@ajuste_tono,_brillo_y_saturacion.html
+[33mbb4171c[m Hide: Botón cambio de tema
+[33mabd06a6[m Update README.md
+[33m95cf31d[m Update README.md
+[33m2bdaa4e[m add: Trabajo con capas
+[33m8f9311f[m add: los cuatro primeros de Photoshop
+[33m0207260[m fix: todo el sitio es reparado
+[33m93c6b19[m Fix: menus de indice de los seis atrticulos
+[33ma0a1868[m add: js@configurar_el_entorno_de_trabajo_Javascript.html
+[33m7ed8d00[m add: js@configurar_el_entorno_de_trabajo_Javascript.html#nodejs
+[33m4b97b74[m js@como_ejecutar_un_codigo_javascript.html
+[33ma46ae07[m add: Como Ejecutar un Código Javascript
+[33m281db61[m Del: números telefónicos
+[33m0c2c6c4[m Del: números telefónicos
+[33m2fea172[m Restructuración de todo el sitio - addición de paginas para índice de Bootstrap y git
+[33m6e88b5c[m Actualización archivo head.xlsx
+[33m67fe94b[m Fix: Etiquetas de redes sociales
+[33m5f229c0[m comandos basicos de git para windows
+[33m0be402f[m Add: Comandos Básicos de GIT
+[33m0ff2ea5[m[33m ([m[1;33mtag: [m[1;33mv3.1[m[33m)[m Reparación: todas las paginas modo oscuro por defecto
+[33mb3ff4f3[m Reparación: navbar de último commit
+[33mf143913[m Reparación: tema oscuro al inicio
+[33m895603b[m arreglo tema nocturno
+[33m4dac009[m Arreglo de formatos
+[33m5d69252[m bla
+[33m0428192[m Correcon: Ortografia
+[33m2864dc9[m Correción: formato
+[33mf10a02c[m Archivo Nuevo: Cómo eliminar el último commit de Git
+[33m52155c0[m Corrección de barra lateral
+[33m071eb3e[m reaparación de enlaces laterales
+[33m7de3844[m arreglo de los articulos en barra lateral
+[33m4036b20[m Correccion boton de cambio de tema
+[33m33a75c4[m fix enlaces de vite y parcel, creación pagina de parcel
+[33m59db9c1[m fix - direccion boobtstrapvitenpm.html
+[33mdcae503[m cambio de estilos enlace de vite en publicaciones
+[33mc7446ad[m página con Vite
+[33mbdc3eea[m primer commit
+[33m1f5dcde[m Initial commit
