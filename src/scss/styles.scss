@@ -345,3 +345,14 @@ strong {
     color: yellow;
   }
 }
+
+hr.subtle-divider {
+  border: none;
+  /* Elimina el borde por defecto */
+  height: 3px;
+  /* Grosor de la línea */
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), white, rgba(50, 50, 50, 0.6));
+  /* Degradado */
+  margin: 20px 1.25rem;
+  /* Margen */
+}
