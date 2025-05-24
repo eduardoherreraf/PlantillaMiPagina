@@ -303,11 +303,6 @@ tbody tr td:first-child::before {
   display: inline-block;
 }
 
-pre {
-  border: 3px solid grey;
-  border-radius: 1%;
-}
-
 strong {
   font-weight: bold;
   color: orange;
@@ -365,4 +360,81 @@ hr.subtle-divider {
   /* Degradado */
   margin: 20px 1.25rem;
   /* Margen */
+}
+
+.texto-italico {
+  font-style: italic;
+}
+
+/* Estilos básicos para las cajas de código HTML y CSS */
+.code-html,
+.code-css {
+  background-color: #f8f9fa;
+  /* Color de fondo gris claro para ambas cajas */
+  border: 1px solid #dee2e6;
+  /* Borde gris claro */
+  border-radius: 0.375rem;
+  /* Bordes redondeados */
+  padding: 1rem;
+  /* Espaciado interno */
+  margin-bottom: 1rem;
+  /* Espaciado inferior entre las cajas */
+  min-height: auto;
+  /* Altura mínima automática (puede crecer según el contenido) */
+}
+
+/* Estilos básicos para la caja de resultados */
+.box-code {
+  position: relative;
+  /* Para posicionar el título de forma absoluta dentro de la caja */
+  padding: 1rem;
+  border: 1px solid #dee2e6;
+  /* Se añade un borde para que se vea la caja (opcional) */
+}
+
+.results h1 {
+  font-size: 2rem;
+}
+
+.box-code {
+  padding: 1rem;
+  border-radius: .4rem;
+}
+
+pre,
+.results {
+  border: 3px solid grey;
+  border-radius: 1%;
+}
+
+.results::before {
+  content: "Resultados";
+  /* Texto a mostrar */
+  position: absolute;
+  /* Posicionamiento absoluto dentro de .box-code */
+  top: 0.1rem;
+  /* Separación desde arriba */
+  right: 0.1rem;
+  /* Separación desde la derecha */
+  font-size: .8rem;
+  /* Tamaño de fuente */
+  color: rgb(165, 165, 165);
+  /* Color verde (opcional, se puede cambiar) */
+  background-color: #353535;
+  /* Fondo opcional para mejor visibilidad */
+  padding: 0.2rem 0.5rem;
+  /* Espaciado interno del título */
+  border-radius: 0.5rem;
+  /* Bordes redondeados */
+}
+
+.results {
+  position: relative;
+  /* Para posicionar el título de forma absoluta dentro de la caja */
+  padding: 1rem;
+  border: 3px solid grey;
+  /* Se añade un borde para que se vea la caja (opcional) */
+  background-color: #272822;;
+  /* Color fondo caja resultados */
+  border-radius: 1%;
 }
