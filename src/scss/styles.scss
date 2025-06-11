@@ -945,3 +945,77 @@ dd {
   padding: 8px;
   margin: 5px 0;
 }
+
+.ej-table {
+  border: solid 1px black;
+}
+
+// tamaño columnas de las tablas
+.col-etiqueta {
+  width: 30%;
+}
+.col-funcion {
+  width: 70%;
+}
+
+// tabla
+.ej-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.ej-caption {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #34495e;
+  background-color: #ecf0f1;
+  padding: 12px;
+  border-radius: 5px;
+  text-align: center;
+  caption-side: top;
+}
+
+.ej-th,
+.ej-td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #bdc3c7;
+}
+
+.ej-th {
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+}
+
+/* Columna del nombre */
+.ej-col-nombre {
+  background-color: #e8f4fd;
+  width: 25%;
+}
+
+/* Las dos columnas de notas (span="2") */
+.ej-col-notas {
+  background-color: #fff3cd;
+  width: 20%;
+  text-align: center;
+}
+
+/* La columna de promedio */
+.ej-col-promedio {
+  background-color: #d4edda;
+  width: 15%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.ej-tfoot {
+  background-color: #e6e6e6;
+  font-weight: bold;
+}
+
+.tfoot .td {
+  border-top: 2px solid #333;
+}
