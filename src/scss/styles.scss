@@ -18,6 +18,12 @@ $enable-negative-margins: true;
 @import "../../node_modules/prismjs/plugins/match-braces/prism-match-braces.min.css";
 @import "../../node_modules/prismjs/plugins/line-highlight/prism-line-highlight.min.css";
 
+:root {
+  --color-texto: #e7e9eb;
+  --color-borde: #5c6670;
+  --color-fondo: #212529;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -25,6 +31,13 @@ html {
 body {
   box-sizing: border-box;
   font-size: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+pre[class*="language-"],
+code[class*="language-"] {
+  background-color: var(--color-fondo);
 }
 
 h1,
@@ -35,6 +48,7 @@ h3 {
   text-transform: uppercase;
   text-wrap: balance;
   color: #0d6efd;
+  margin-top: 1rem;
 }
 
 h4,
@@ -70,6 +84,14 @@ h5 {
 
 h6 {
   font-size: 1rem;
+}
+
+picture img {
+  border-radius: 0.5rem;
+}
+
+.h3-code {
+  font-size: 2.5rem;
 }
 
 .gris {
@@ -145,14 +167,14 @@ textarea::placeholder {
   display: none;
   transition: 0.9s;
   padding: 10px;
-  background: #333;
+  background: #212529;
   color: rgb(204, 203, 203);
   border-radius: 5px;
   border: 0;
 }
 
 #myBtnScroll2 {
-  background: #333;
+  background: #212529;
   color: rgb(204, 203, 203);
   border-radius: 5px;
   border: none;
@@ -216,7 +238,7 @@ li {
 code {
   color: #6ea8fe;
   font-size: 1.1rem;
-  background: #333;
+  background: #212529;
   border-radius: 6px;
 }
 
@@ -250,8 +272,8 @@ aside {
 }
 
 .barraLateral {
-  overflow-y: auto;
-  flex-grow: 1;
+  // overflow-y: auto;
+  // flex-grow: 1;
   /* Ocupa todo el espacio disponible del aside */
   margin-top: 0;
   /* ← Asegura que no haya margen */
@@ -380,23 +402,19 @@ hr.subtle-divider {
   /* Margen */
 }
 
-.texto-italico {
-  font-style: italic;
-}
-
 /* Estilos básicos para las cajas de código HTML y CSS */
 .code-html,
 .code-css {
   // background-color: #272822;
   /* Color de fondo gris claro para ambas cajas */
-  border: 1px solid #dee2e6;
+  border: 2px solid var(--color-borde);
   /* Borde gris claro */
   border-radius: 0.375rem;
   /* Bordes redondeados */
   padding: 1rem;
   /* Espaciado inferior entre las cajas */
-  min-height: auto;
-  /* Altura mínima automática (puede crecer según el contenido) */
+  width: 100%;
+  /* Ocupa todo el espacio restantes */
 }
 
 /* Estilos básicos para la caja de resultados */
@@ -454,16 +472,46 @@ hr.subtle-divider {
 .codes {
   position: relative;
   color: black;
-  /* Para posicionar el título de forma absoluta dentro de la caja */
+  /* Usar flexbox para distribución equitativa */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Espacio entre las cajas */
+  /*height: 100%;  Ocupar todo el alto disponible */
 }
 
 .code-html,
 .code-css {
-  position: relative;
+  border: 1px solid #dee2e6;
   background-color: whitesmoke;
-  /* Color de fondo gris claro para ambas cajas */
-  padding-top: 1.5rem;
+  border-radius: 0.375rem;
+  padding: 1rem;
+  /* Hacer que ambas cajas crezcan de manera equitativa */
+  /*   flex: 1; */
+  /* Asegurar que el contenido no desborde */
+  /*   overflow-y: auto; */
+  position: relative; /* ← Añadir esto */
 }
+
+.code-css {
+  border: 1px solid #dee2e6;
+  border-radius: 0.375rem;
+  padding: 1rem;
+  width: 100%;
+  /* Hacer que ambas cajas crezcan de manera equitativa */
+  // flex: 1;
+  /* Asegurar que el contenido no desborde */
+  /*   overflow-y: auto; */
+}
+
+.code-html {
+  border: 1px solid #dee2e6;
+  border-radius: 0.375rem;
+  padding: 1rem;
+  /* Sin flex: mantiene su tamaño natural */
+}
+/* .code {
+  margin: 0.5rem 0;
+} */
 
 .code-html-letrero::before {
   content: "HTML";
@@ -527,11 +575,6 @@ hr.subtle-divider {
   font-size: 0.8rem; /*  Tamaño de fuente más pequeño */
 }
 
-pre {
-  border: 1px solid #f8f9fa;
-  border-radius: 1%;
-}
-
 .code-result {
   padding: 0.5rem;
   /* Espaciado interno */
@@ -546,17 +589,45 @@ pre {
 }
 
 // ejemplo de código
-.ej-example {
-  background: #f8f9fa;
-  border: 1px solid #e9ecef;
-  border-radius: 8px;
-  padding: 20px;
-  margin: 20px 0;
+.ej-ejemplo {
+  border-radius: 5px;
+  background-color: #e7e9eb;
+  color: black;
+  padding: 2rem;
 }
 
-.ej-example h3 {
-  margin-top: 0;
-  color: blue;
+.ej-ejecutado {
+  border-top: 1px solid var(--color-borde);
+  border-right: 1px solid var(--color-borde);
+  // border-bottom: 1px solid var(--color-borde);
+  border-left: 8px solid red;
+
+  // margin-bottom: 20px;
+  padding: 10px;
+  // margin: 20px 0;
+  border-radius: 8px;
+  background-color: #272822;
+  color: white;
+}
+
+.ej-code-html {
+  font-size: 1rem;
+  border-top: 2px solid var(--color-borde);
+  border-right: 2px solid var(--color-borde);
+  border-bottom: 2px solid var(--color-borde);
+  border-left: 8px solid #04aa6d;
+  background-color: #272822;
+  border-radius: 8px;
+}
+
+.ej-code-css {
+  font-size: 1rem;
+  border-top: 2px solid var(--color-borde);
+  border-right: 2px solid var(--color-borde);
+  border-bottom: 2px solid var(--color-borde);
+  border-left: 8px solid #2304aa;
+  background-color: #272822;
+  border-radius: 8px;
 }
 
 .ej-search-result {
@@ -576,7 +647,7 @@ pre {
   font-style: italic;
 }
 .ej-search-highlight,
-.ej-code-highlight {
+.-highlight {
   background-color: green;
   color: white;
 }
@@ -685,13 +756,6 @@ pre {
   border-left: 3px solid #dc2626;
 }
 
-.ej-example h3 {
-  color: #2563eb;
-  margin-top: 0;
-  border-bottom: 2px solid #e5e7eb;
-  padding-bottom: 10px;
-}
-
 .ej-success-output {
   background-color: #f0fdf4;
   color: #16a34a;
@@ -724,7 +788,7 @@ pre {
 
 .ej-code {
   background: #f1f3f4;
-  padding: 12px;
+  /*   padding: 12px; */
   border-radius: 4px;
   display: block;
   margin: 10px 0;
@@ -763,15 +827,6 @@ pre {
   list-style-image: url("../images/Vergina_Sun_comp_redim.ico");
 }
 
-/* caja listas */
-.ej-example-box {
-  background: #fff;
-  border: 2px dashed #667eea;
-  padding: 20px;
-  margin: 15px 0;
-  border-radius: 8px;
-}
-
 /* Estilos básicos para dl */
 dl {
   margin: 20px 0;
@@ -783,7 +838,7 @@ dl {
 
 dt {
   font-weight: bold;
-  color: #333;
+  color: #212529;
   margin-top: 15px;
   font-size: 1.1em;
 }
@@ -1017,5 +1072,180 @@ dd {
 }
 
 .tfoot .td {
-  border-top: 2px solid #333;
+  border-top: 2px solid #212529;
+}
+
+.ej-centrar-imagen {
+  /*   display: block;
+  margin-left: auto;
+  margin-right: auto; */
+  text-align: center;
+}
+
+// multimedia
+.video-container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100vh; /* Ajusta la altura del contenedor, opcional */
+}
+
+.ej-sintaxis {
+  border: 2px solid var(--color-borde);
+  border-radius: 5px;
+  /*   margin-left: 5px;
+  margin-right: 5px; */
+  margin-bottom: 7px;
+  background-color: var(
+    --color-fondo
+  ); /* Línea añadida para el color de fondo */
+}
+
+.ej-letra-2rem {
+  font-size: 2rem;
+}
+
+/* html-11_enlaces_y_hipervinculos.html */
+.ej-boton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.ej-boton:hover {
+  background-color: #0056b3;
+}
+
+.ej-form {
+  margin: 0;
+  padding: 0;
+}
+
+// barra lateral
+.menu-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--color-fondo);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 1px solid var(--color-borde); /* ¡Cambio aplicado aquí! */
+}
+
+.menu-item {
+  border-bottom: 1px solid var(--color-borde);
+}
+
+.menu-item:last-child {
+  border-bottom: 1px solid var(--color-borde);
+}
+
+/* Estilos para enlaces simples */
+.simple-link {
+  display: block;
+  padding: 6px 10px;
+  text-decoration: none;
+  color: var(--color-texto);
+  transition: background-color 0.2s;
+  border-top: 1px solid var(--color-borde); /* ¡Cambio aplicado aquí! */
+}
+
+.simple-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--color-texto);
+}
+
+/* Estilos para details y summary */
+details {
+  border: none;
+}
+
+summary {
+  padding: 6px 10px;
+  cursor: pointer;
+  list-style: none;
+  background-color: var(--color-fondo);
+  transition: background-color 0.2s;
+  position: relative;
+  user-select: none;
+  color: var(--color-texto);
+  border-top: 1px solid var(--color-borde);
+  transition: background-color 1s ease, color 0.3s ease;
+}
+
+summary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--color-texto);
+}
+
+details[open] summary {
+  background-color: #e0f7fa; /* Color de fondo cuando está abierto */
+  color: #006064; /* Color del texto cuando está abierto */
+}
+
+/* Flecha personalizada */
+summary::after {
+  content: "▶";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.2s;
+  color: var(--color-texto);
+}
+
+details[open] summary::after {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+/* Remover el marcador por defecto */
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Contenido desplegable */
+.submenu {
+  background-color: var(--color-fondo);
+  border-top: 1px solid var(--color-borde);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+details[open] .submenu {
+  max-height: 500px;
+}
+
+.submenu-item {
+  display: block;
+  padding: 5px 40px;
+  text-decoration: none;
+  color: var(--color-texto);
+  border-bottom: 1px solid var(--color-borde);
+  transition: all 0.2s;
+}
+
+.submenu-item:last-child {
+  border-bottom: none;
+}
+
+.submenu-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--color-texto);
+  padding-left: 45px;
+}
+
+/* Título del menú */
+.menu-title {
+  background: var(--color-fondo);
+  color: var(--color-texto);
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+  font-size: 1.5em;
+  border-bottom: 1px solid var(--color-borde);
 }
