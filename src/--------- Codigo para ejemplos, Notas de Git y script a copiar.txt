@@ -35,3 +35,38 @@ git push origin v3.1
   </div>
 </div>
 <!-- Ejemplos de código fin -->
+
+---------------------------------------------------- ejemplo ------------
+
+<!-- Ejemplo -->
+<div class="ej-ejemplo">
+  <div class="row ej-example">
+    <!-- código ejecutado -->
+
+    <!-- código ejecutado fin -->
+  </div>
+  <div class="row">
+    <div class="ej-code-html col-lg-6 mb-lg-3">
+      <!-- código HTML -->
+      <pre>
+        <code class="language-html" data-prismjs-copy="Copy">
+
+        </code>
+      </pre>
+      <!-- código HTML -->
+    </div>
+    <div class="ej-code-css col-lg-6 mb-lg-3">
+      <!-- código CSS -->
+      <pre>
+        <code class="language-css" data-prismjs-copy="Copy">
+ 
+        </code>
+      </pre>
+      <!-- código HTML -->
+    </div>
+  </div>
+</div>
+<!-- Ejemplo fin -->
+
+si no se necesita ej-code-css, borrarlo y 
+cambiar <div class="ej-code-html col-lg-6 mb-lg-3"> por <div class="ej-code-html mb-lg-3">
