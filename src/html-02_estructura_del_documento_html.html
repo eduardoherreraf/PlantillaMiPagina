@@ -250,22 +250,24 @@
                   (<code>&lt;body></code>), donde se define el contenido visible
                   de la página web.
                 </p>
-                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
-                  <code class="language-html" data-prismjs-copy="Copy">
-                    &lt;!DOCTYPE html>
-                    &lt;html>
-                    &lt;head>
-                        &lt;!-- metadatos y enlaces a recursos esenciales para la 
-                        configuración y presentación de una página web. --&gt;
-                      &lt;/head>
-                      &lt;body>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-html" data-prismjs-copy="Copy">
+                      &lt;!DOCTYPE html>
+                      &lt;html>
+                      &lt;head>
+                          &lt;!-- metadatos y enlaces a recursos esenciales para la 
+                          configuración y presentación de una página web. --&gt;
+                        &lt;/head>
+                        &lt;body>
 
-                        &lt;!-- Contenido visible de la página --&gt;
+                          &lt;!-- Contenido visible de la página --&gt;
 
-                      &lt;/body>
-                    &lt;/html>
-                  </code>
-                </pre>
+                        &lt;/body>
+                      &lt;/html>
+                    </code>
+                  </pre>
+                </div>
               </div>
               <!-- Estructura de la Página Fin -->
 
@@ -296,13 +298,8 @@
                   incluir siempre la declaración <code>!DOCTYPE</code> antes de
                   cualquier otro contenido en el documento HTML. En el caso de
                   HTML5, se debe utilizar la siguiente sintaxis en la primera
-                  línea del archivo:
+                  línea del archivo: <code>&lt;!DOCTYPE html></code>
                 </p>
-                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
-                <code class="language-html" data-prismjs-copy="Copy">
-                  &lt;!DOCTYPE html>
-                </code>
-              </pre>
                 <p>
                   Antes de renderizar una página web, los navegadores primero
                   analizan la línea que especifica el tipo de documento. Esto
@@ -510,51 +507,45 @@
                     <ul>
                       <li>
                         <strong>Aplicación de estilos con style</strong>:
-                        <pre
-                          class="line-numbers"
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
-                          <code class="language-html" data-prismjs-copy="Copy">
-                            &lt;body style="background-color: lightblue; color: black;">
-                              &lt;h1>Ejemplo de estilos en línea&lt;/h1>
-                          &lt;/body>
-                          </code>
-                        </pre>
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
+                            <code class="language-html" data-prismjs-copy="Copy">
+                              &lt;body style="background-color: lightblue; color: black;">
+                                &lt;h1>Ejemplo de estilos en línea&lt;/h1>
+                            &lt;/body>
+                            </code>
+                          </pre>
+                        </div>
                       </li>
                       <li>
                         <strong
                           >Uso del evento onload para mostrar un mensaje al
                           cargar la página</strong
                         >:
-                        <pre
-                          class="line-numbers"
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
-                          <code class="language-html" data-prismjs-copy="Copy">
-                            &lt;body onload="alert('Bienvenido a mi página web')">
-                              &lt;h1>Página de ejemplo&lt;/h1>
-                            &lt;/body>
-                          </code>
-                        </pre>
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
+                            <code class="language-html" data-prismjs-copy="Copy">
+                              &lt;body onload="alert('Bienvenido a mi página web')">
+                                &lt;h1>Página de ejemplo&lt;/h1>
+                              &lt;/body>
+                            </code>
+                          </pre>
+                        </div>
                       </li>
                       <li>
                         <strong
                           >Advertencia antes de salir de la página con
                           onbeforeunload</strong
                         >:
-                        <pre
-                          class="line-numbers"
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
-                          <code class="language-html" data-prismjs-copy="Copy">
-                            &lt;body onbeforeunload="return confirm('¿Seguro que quieres salir de la página?');">
-                              &lt;h1>Contenido de la página&lt;/h1>
-                            &lt;/body>
-                          </code>
-                        </pre>
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
+                            <code class="language-html" data-prismjs-copy="Copy">
+                              &lt;body onbeforeunload="return confirm('¿Seguro que quieres salir de la página?');">
+                                &lt;h1>Contenido de la página&lt;/h1>
+                              &lt;/body>
+                            </code>
+                          </pre>
+                        </div>
                       </li>
                     </ul>
                   </div>
