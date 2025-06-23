@@ -1183,8 +1183,14 @@ summary:hover {
 }
 
 details[open] summary {
-  background-color: #e0f7fa; /* Color de fondo cuando está abierto */
-  color: #006064; /* Color del texto cuando está abierto */
+  background-color: var(--color-texto); /* Color de fondo cuando está abierto */
+  color: var(--color-fondo); /* Color del texto cuando está abierto */
+}
+
+/* Color del marker cuando está abierto */
+details[open] summary::after {
+  transform: translateY(-50%) rotate(90deg);
+  color: var(--color-fondo);
 }
 
 /* Flecha personalizada */
