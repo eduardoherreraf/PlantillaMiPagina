@@ -239,15 +239,15 @@
                 <h2 class="mt-1">Estructura de la Página</h2>
                 <p>
                   Como se observa en la gráfica anterior, la primera etiqueta
-                  (<code>&lt;!DOCTYPE html></code>) indica el tipo de documento
+                  (<code class="language-html">&lt;!DOCTYPE html></code>) indica el tipo de documento
                   y especifica que se trata de una página web basada en HTML5. A
-                  continuación, se encuentra la etiqueta <code>&lt;html></code>,
+                  continuación, se encuentra la etiqueta <code class="language-html">&lt;html></code>,
                   la cual actúa como el contenedor principal de todo el
                   contenido de la página. Dentro de esta, se distinguen dos
                   secciones fundamentales: la cabecera del documento
-                  (<code>&lt;head></code>), que incluye metadatos, enlaces a
+                  (<code class="language-html">&lt;head></code>), que incluye metadatos, enlaces a
                   hojas de estilo y scripts, y el cuerpo del documento
-                  (<code>&lt;body></code>), donde se define el contenido visible
+                  (<code class="language-html">&lt;body></code>), donde se define el contenido visible
                   de la página web.
                 </p>
                 <div class="ej-sintaxis">
@@ -277,7 +277,7 @@
               <div id="tipo-de-documento" class="mt-5">
                 <h2 class="mt-1">Tipo de Documento</h2>
                 <p>
-                  El <code>!DOCTYPE</code> o tipo de documento es una
+                  El <code class="language-html">!DOCTYPE</code> o tipo de documento es una
                   declaración especial que se escribe en la primera línea de un
                   documento HTML. Su función es informar al navegador sobre la
                   versión de HTML que se está utilizando, permitiéndole
@@ -295,10 +295,10 @@
                 <p>
                   Para garantizar una correcta interpretación del código y
                   evitar posibles problemas de compatibilidad, es recomendable
-                  incluir siempre la declaración <code>!DOCTYPE</code> antes de
+                  incluir siempre la declaración <code class="language-html">!DOCTYPE</code> antes de
                   cualquier otro contenido en el documento HTML. En el caso de
                   HTML5, se debe utilizar la siguiente sintaxis en la primera
-                  línea del archivo: <code>&lt;!DOCTYPE html></code>
+                  línea del archivo: <code class="language-html">&lt;!DOCTYPE html></code>
                 </p>
                 <p>
                   Antes de renderizar una página web, los navegadores primero
@@ -324,7 +324,7 @@
               <div id="encabezado" class="mt-5">
                 <h2 class="mt-1">Encabezado</h2>
                 <p>
-                  La etiqueta <code>&lt;head></code> constituye una de las
+                  La etiqueta <code class="language-html">&lt;head></code> constituye una de las
                   secciones esenciales dentro de un documento HTML, ya que
                   alberga metadatos e información crucial tanto para el
                   navegador como para los motores de búsqueda. Aunque su
@@ -362,8 +362,8 @@
                 <p>
                   También es el espacio adecuado para incorporar etiquetas que
                   vinculen el documento actual con archivos externos, como
-                  <strong>hojas de estilo</strong> <code>.css</code> o
-                  <strong>scripts de JavaScript</strong> <code>.js</code>,
+                  <strong>hojas de estilo</strong> <code class="language-html">.css</code> o
+                  <strong>scripts de JavaScript</strong> <code class="language-html">.js</code>,
                   manteniendo así una estructura organizada y separada.
                 </p>
                 <a href="./html-03_encabezado_html.html"
@@ -378,13 +378,13 @@
               <div id="cuerpo-de-pagina" class="mt-5">
                 <h2 class="mt-1">Cuerpo de Página</h2>
                 <p>
-                  La etiqueta <code>&lt;body></code> en HTML define la sección
+                  La etiqueta <code class="language-html">&lt;body></code> en HTML define la sección
                   del documento donde se incorpora todo el contenido visual e
                   interactivo de una página web, incluyendo texto, imágenes,
                   videos, enlaces, botones, formularios y otros elementos
                   multimedia. Forma parte de la estructura esencial de un
                   archivo HTML y se ubica inmediatamente después de la etiqueta
-                  <code>&lt;head></code>, asegurando que la información
+                  <code class="language-html">&lt;head></code>, asegurando que la información
                   estructurada en el encabezado se procese antes de renderizar
                   el contenido visible en el navegador.
                 </p>
@@ -398,11 +398,11 @@
                       <strong>Contiene todo el contenido visible</strong>: Todo
                       lo que se muestra en la página, incluyendo texto,
                       imágenes, videos, enlaces, botones y formularios, se
-                      encuentra dentro de <code>&lt;body></code>.
+                      encuentra dentro de <code class="language-html">&lt;body></code>.
                     </li>
                     <li>
                       <strong>Debe ser único</strong>: Solo puede haber un
-                      <code>&lt;body></code> por documento HTML.
+                      <code class="language-html">&lt;body></code> por documento HTML.
                     </li>
                     <li>
                       <strong>Permite atributos globales</strong>: Se pueden
@@ -422,12 +422,12 @@
                     Atributos Comunes de &lt;body>
                   </h3>
                   <p>
-                    La etiqueta <code>&lt;body></code> puede incluir diversos
+                    La etiqueta <code class="language-html">&lt;body></code> puede incluir diversos
                     atributos que permiten modificar su comportamiento o
                     apariencia. Aunque en HTML5 se recomienda aplicar estilos
                     mediante CSS y manejar eventos con JavaScript, aún es
                     posible utilizar ciertos atributos directamente en
-                    <code>&lt;body></code>.
+                    <code class="language-html">&lt;body></code>.
                   </p>
                   <!-- Atributos Globales -->
                   <div>
@@ -435,33 +435,33 @@
                     <p>
                       Estos atributos pueden aplicarse a cualquier elemento
                       HTML, incluyendo
-                      <code>&lt;body></code>.
+                      <code class="language-html">&lt;body></code>.
                     </p>
                     <ul>
                       <li>
-                        <code>id</code>: Asigna un identificador único al
-                        <code>&lt;body></code>, útil para aplicar estilos o
+                        <code class="language-html">id</code>: Asigna un identificador único al
+                        <code class="language-html">&lt;body></code>, útil para aplicar estilos o
                         manipularlo con JavaScript.
                       </li>
                       <li>
-                        <code>class</code>: Permite asignar una o más clases CSS
+                        <code class="language-html">class</code>: Permite asignar una o más clases CSS
                         para aplicar estilos específicos.
                       </li>
                       <li>
-                        <code>style</code>: Define estilos CSS en línea para
+                        <code class="language-html">style</code>: Define estilos CSS en línea para
                         modificar la apariencia del cuerpo de la página.
                       </li>
                       <li>
-                        <code>title</code>: Muestra un texto emergente cuando el
+                        <code class="language-html">title</code>: Muestra un texto emergente cuando el
                         usuario pasa el cursor sobre la pestaña del navegador,
                         mostrando el contenido completo cuando el título es
                         demasiado largo para ser visualizado en el espacio
                         disponible de la pestaña.
                       </li>
                       <li>
-                        <code>lang</code>: Especifica el idioma principal del
-                        contenido dentro del <code>&lt;body></code>,
-                        complementando el atributo en <code>&lt;html></code>.
+                        <code class="language-html">lang</code>: Especifica el idioma principal del
+                        contenido dentro del <code class="language-html">&lt;body></code>,
+                        complementando el atributo en <code class="language-html">&lt;html></code>.
                       </li>
                     </ul>
                   </div>
@@ -471,29 +471,29 @@
                   <div>
                     <h4>Atributos de Eventos en JavaScript</h4>
                     <p>
-                      La etiqueta <code>&lt;body></code> también permite manejar
+                      La etiqueta <code class="language-html">&lt;body></code> también permite manejar
                       eventos de carga, interacción y cierre de la página
                       mediante atributos de eventos de JavaScript.
                     </p>
                     <ul>
                       <li>
-                        <code>onload</code>: Se ejecuta cuando la página se ha
+                        <code class="language-html">onload</code>: Se ejecuta cuando la página se ha
                         cargado completamente.
                       </li>
                       <li>
-                        <code>onunload</code>: Se activa cuando el usuario
+                        <code class="language-html">onunload</code>: Se activa cuando el usuario
                         abandona la página o la recarga.
                       </li>
                       <li>
-                        <code>onresize</code>: Se dispara cuando la ventana del
+                        <code class="language-html">onresize</code>: Se dispara cuando la ventana del
                         navegador cambia de tamaño.
                       </li>
                       <li>
-                        <code>onhashchange</code>: Se ejecuta cuando cambia la
+                        <code class="language-html">onhashchange</code>: Se ejecuta cuando cambia la
                         parte de la URL después del #.
                       </li>
                       <li>
-                        <code>onbeforeunload</code>: Permite mostrar una
+                        <code class="language-html">onbeforeunload</code>: Permite mostrar una
                         advertencia antes de que el usuario cierre o recargue la
                         página.
                       </li>
