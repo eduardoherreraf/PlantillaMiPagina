@@ -1990,63 +1990,89 @@
                     <div class="row ej-ejecutado mt-3">
                       <!-- código ejecutado -->
                       <div>
-                        <p class="fw-bold">
-                          Ejemplos básicos de uso de
-                          <code>&lt;sup&gt;</code>
+                        <p>
+                          Cambio simple de palabra: El producto cuesta:
+                          <del>$50</del> <ins>$40</ins>.
                         </p>
 
                         <p>
-                          Exponente en Matemáticas: El valor de 2<sup>3</sup>
-                          es 8.
-                        </p>
-
-                        <p>
-                          Abreviatura Lingüística (Francés): Robert a présenté
-                          son rapport à M<sup>lle</sup> Bernard. Aquí, M<sup
-                            >lle</sup
+                          Con atributos <code class="language-html">cite</code>:
+                          El precio del producto es
+                          <del cite="https://empresa.com/cambios-precios-2024"
+                            >$50</del
                           >
-                          es una abreviatura de "Mademoiselle", un uso
-                          tipográfico específico de algunos idiomas.
+                          <ins cite="https://empresa.com/cambios-precios-2024"
+                            >$45</ins
+                          >
+                          debido a la promoción de temporada.
                         </p>
 
                         <p>
-                          Número Ordinal (Inglés): La 5<sup>th</sup>
-                          edición del libro.
+                          Con atributos
+                          <code class="language-html">datetime</code>: La
+                          reunión será el
+                          <del datetime="2024-05-27T10:30:00"
+                            >viernes a las 2 PM</del
+                          >
+                          <ins datetime="2024-05-27T11:15:00"
+                            >jueves a las 3 PM</ins
+                          >
+                          en la sala de conferencias.
                         </p>
 
                         <p>
-                          Marca Registrada: Nombre de la Empresa<sup>®</sup>
-                        </p>
-
-                        <p class="fw-bold">
-                          Ejemplos de
-                          <code>&lt;sub&gt;</code>:
-                        </p>
-
-                        <p>
-                          Fórmula Química: La fórmula del agua es
-                          H<sub>2</sub>O.
+                          Con atributos
+                          <code class="language-html">aria-label</code>: El
+                          estado del pedido es:
+                          <del aria-label="estado anterior eliminado"
+                            >En proceso</del
+                          >
+                          <ins aria-label="nuevo estado agregado">Enviado</ins>
                         </p>
 
                         <p>
-                          Variable con Subíndice: El resultado queda guardado en
-                          la variable
-                          <var>x<sub>t</sub></var
-                          >.
-                        </p>
-
-                        <p class="fw-bold">
-                          Combinación de Superíndices y Subíndices:
-                        </p>
-
-                        <p>
-                          Fórmula Química Compleja: El ion sulfato se representa
-                          como SO<sub>4</sub><sup>2-</sup>.
+                          <del
+                            aria-label="párrafo eliminado sobre política antigua"
+                          >
+                            Política de devoluciones: 15 días
+                          </del>
+                          <ins aria-label="párrafo agregado con nueva política">
+                            Política de devoluciones: 30 días con garantía
+                            completa
+                          </ins>
                         </p>
 
                         <p>
-                          Notas al Pie Combinadas: Este texto contiene una
-                          referencia<sup>1</sup> y otra<sup>2</sup>.
+                          Con atributos
+                          <code class="language-html">title</code>: El nombre de
+                          la empresa es
+                          <del title="Nombre anterior antes de la fusión"
+                            >TechCorp</del
+                          >
+                          <ins
+                            title="Nuevo nombre después de la fusión con InnovaSoft"
+                            >TechCorp InnovaSoft</ins
+                          >
+                        </p>
+                        <div>
+                          <del
+                            title="Sección eliminada por información desactualizada - Revisión del 25/05/2024"
+                          >
+                            Esta función estará disponible en la próxima
+                            actualización.
+                          </del>
+                          <ins
+                            title="Información actualizada con fecha de lanzamiento - Agregado el 27/05/2024"
+                          >
+                            Esta función ya está disponible desde la versión 2.1
+                            lanzada el 20 de mayo.
+                          </ins>
+                        </div>
+
+                        <p>
+                          Con estilos personalizados: El precio ha cambiado de
+                          <del class="revision-del">$100</del> a
+                          <ins class="revision-ins">$80</ins>
                         </p>
                       </div>
                       <!-- código ejecutado fin -->
@@ -2057,95 +2083,94 @@
                         <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             <div>
-                              &lt;p class="fw-bold">
-                                Ejemplos básicos de uso de
-                                &lt;code class="language-html"
-                                  >&lt;span class="token tag"
-                                    >&lt;span class="token tag"
-                                      >&lt;span class="token ej-punctuation">&lt;&lt;/span
-                                      >sup&lt;/span
-                                    >&lt;span class="token ej-punctuation">&gt;&lt;/span>&lt;/span
-                                  >&lt;/code
-                                >:
+                              &lt;p>
+                                Cambio simple de palabra: El producto cuesta:
+                                &lt;del>$50&lt;/del> &lt;ins>$40&lt;/ins>.
                               &lt;/p>
 
                               &lt;p>
-                                Exponente en Matemáticas: El valor de 2&lt;sup
-                                  
-                                  >3&lt;/sup
+                                Con atributos &lt;code class="language-html">cite&lt;/code>:
+                                El precio del producto es
+                                &lt;del cite="https://empresa.com/cambios-precios-2024"
+                                  >$50&lt;/del
                                 >
-                                es 8.
-                              &lt;/p>
-
-                              &lt;p>
-                                Abreviatura Lingüística (Francés): Robert a présenté
-                                son rapport à M&lt;sup >lle&lt;/sup> Bernard.
-                                Aquí, M&lt;sup >lle&lt;/sup>
-                                es una abreviatura de "Mademoiselle", un uso
-                                tipográfico específico de algunos idiomas.
-                              &lt;/p>
-
-                              &lt;p>
-                                Número Ordinal (Inglés): La 5&lt;sup 
-                                  >th&lt;/sup
+                                &lt;ins cite="https://empresa.com/cambios-precios-2024"
+                                  >$45&lt;/ins
                                 >
-                                edición del libro.
+                                debido a la promoción de temporada.
                               &lt;/p>
 
                               &lt;p>
-                                Marca Registrada: Nombre de la Empresa&lt;sup
-                                  
-                                  >®&lt;/sup
+                                Con atributos
+                                &lt;code class="language-html">datetime&lt;/code>: La
+                                reunión será el
+                                &lt;del datetime="2024-05-27T10:30:00"
+                                  >viernes a las 2 PM&lt;/del
+                                >
+                                &lt;ins datetime="2024-05-27T11:15:00"
+                                  >jueves a las 3 PM&lt;/ins
+                                >
+                                en la sala de conferencias.
+                              &lt;/p>
+
+                              &lt;p>
+                                Con atributos
+                                &lt;code class="language-html">aria-label&lt;/code>: El
+                                estado del pedido es:
+                                &lt;del aria-label="estado anterior eliminado"
+                                  >En proceso&lt;/del
+                                >
+                                &lt;ins aria-label="nuevo estado agregado">Enviado&lt;/ins>
+                              &lt;/p>
+
+                              &lt;p>
+                                &lt;del
+                                  aria-label="párrafo eliminado sobre política antigua"
+                                >
+                                  Política de devoluciones: 15 días
+                                &lt;/del>
+                                &lt;ins aria-label="párrafo agregado con nueva política">
+                                  Política de devoluciones: 30 días con garantía
+                                  completa
+                                &lt;/ins>
+                              &lt;/p>
+
+                              &lt;p>
+                                Con atributos
+                                &lt;code class="language-html">title&lt;/code>: El nombre de
+                                la empresa es
+                                &lt;del title="Nombre anterior antes de la fusión"
+                                  >TechCorp&lt;/del
+                                >
+                                &lt;ins
+                                  title="Nuevo nombre después de la fusión con InnovaSoft"
+                                  >TechCorp InnovaSoft&lt;/ins
                                 >
                               &lt;/p>
-
-                              &lt;p class="fw-bold">
-                                Ejemplos de
-                                &lt;code class="language-html"
-                                  >&lt;span class="token tag"
-                                    >&lt;span class="token tag"
-                                      >&lt;span class="token ej-punctuation">&lt;&lt;/span
-                                      >sub&lt;/span
-                                    >&lt;span class="token ej-punctuation">&gt;&lt;/span>&lt;/span
-                                  >&lt;/code
-                                >:
-                              &lt;/p>
-
-                              &lt;p>
-                                Fórmula Química: La fórmula del agua es H&lt;sub
-                                 
-                                  >2&lt;/sub
-                                >O.
-                              &lt;/p>
+                              &lt;div>
+                                &lt;del
+                                  title="Sección eliminada por información desactualizada - Revisión del 25/05/2024"
+                                >
+                                  Esta función estará disponible en la próxima
+                                  actualización.
+                                &lt;/del>
+                                &lt;ins
+                                  title="Información actualizada con fecha de lanzamiento - Agregado el 27/05/2024"
+                                >
+                                  Esta función ya está disponible desde la versión 2.1
+                                  lanzada el 20 de mayo.
+                                &lt;/ins>
+                              &lt;/div>
 
                               &lt;p>
-                                Variable con Subíndice: El resultado queda guardado en
-                                la variable
-                                &lt;var>x&lt;sub>t&lt;/sub>&lt;/var
-                                >.
+                                Con estilos personalizados: El precio ha cambiado de
+                                &lt;del class="revision-del">$100&lt;/del> a
+                                &lt;ins class="revision-ins">$80&lt;/ins>
                               &lt;/p>
-
-                              &lt;p class="fw-bold">
-                                Combinación de Superíndices y Subíndices:
-                              &lt;/p>
-
-                              &lt;p>
-                                Fórmula Química Compleja: El ion sulfato se representa
-                                como SO&lt;sub>4&lt;/sub
-                                >&lt;sup >2-&lt;/sup>.
-                              &lt;/p>
-
-                              &lt;p>
-                                Notas al Pie Combinadas: Este texto contiene una
-                                referencia&lt;sup >1&lt;/sup> y otra&lt;sup
-                                  
-                                  >2&lt;/sup
-                                >.
-                              &lt;/p>
-
-                            </div>                     
+                            </div>                      
                            </code>
                         </pre>
+
                         <!-- código HTML -->
                       </div>
                       <div class="ej-code-css col-lg-6 mb-3">
@@ -2153,21 +2178,21 @@
                         <pre data-src-status="loaded" tabindex="0">
                           <code class="language-css" data-prismjs-copy="Copy">
                             <div>
-                              sup {
-                                background-color: #e6ffe6;
-                                color: #006600;
-                                font-weight: bold;
-                                padding: 1px 3px;
-                                border-radius: 3px;
-                              }
+                              .revision-del {
+                                &nbsp;&nbsp;background-color: #ffe6e6;
+                                &nbsp;&nbsp;text-decoration: line-through;
+                                &nbsp;&nbsp;color: #cc0000;
+                                &nbsp;&nbsp;padding: 2px 4px;
+                                &nbsp;&nbsp;border-radius: 3px;
+                                }
 
-                              sub {
-                                background-color: #e6f3ff;
-                                color: #0066cc;
-                                font-weight: bold;
-                                padding: 1px 3px;
-                                border-radius: 3px;
-                              }
+                              .revision-ins {
+                                &nbsp;&nbsp;background-color: #e6ffe6;
+                                &nbsp;&nbsp;text-decoration: underline;
+                                &nbsp;&nbsp;color: #006600;
+                                &nbsp;&nbsp;padding: 2px 4px;
+                                &nbsp;&nbsp;border-radius: 3px;
+                                } 
                             </div>
                           </code>
                         </pre>
@@ -2176,6 +2201,204 @@
                     </div>
                   </div>
                   <!-- Ejemplo fin -->
+                  -------->
+                  <!-- Ejemplos de código -->
+                  <div class="code border border-1 border-light p-3 rounded-2">
+                    <div class="row">
+                      <!-- Contenedor de código: ocupa toda la fila en móvil, mitad en lg -->
+                      <div class="col-12 col-lg-6">
+                        <div class="codes">
+                          <div class="code-html code-html-letrero mb-3">
+                            <!-- Aquí va el código HTML -->
+                            &lt;p>Cambio simple de palabra:&lt;/p> <br />
+                            &lt;p>El producto cuesta: &lt;del>$50&lt;/del>
+                            &lt;ins>$40&lt;/ins>.&lt;/p>
+                            <br /><br />
+                            &lt;p>Con atributos &lt;code>cite&lt;/code>:&lt;/p>
+                            <br />
+                            &lt;p>El precio del producto es &lt;del
+                            cite="https://empresa.com/cambios-precios-2024">$50&lt;/del>
+                            &lt;ins
+                            cite="https://empresa.com/cambios-precios-2024">$45&lt;/ins>
+                            <br />
+                            debido a la promoción de temporada.&lt;/p>
+                            <br /><br />
+                            &lt;p>Con atributos
+                            &lt;code>datetime&lt;/code>:&lt;/p> <br />
+                            &lt;p>La reunión será el &lt;del
+                            datetime="2024-05-27T10:30:00">viernes a las 2
+                            PM&lt;/del> &lt;ins
+                            datetime="2024-05-27T11:15:00">jueves a las 3
+                            PM&lt;/ins> en la sala de conferencias. &lt;/p>
+                            <br /><br />
+                            &lt;p>Con atributos
+                            &lt;code>aria-label&lt;/code>:&lt;/p> <br />
+                            &lt;p>El estado del pedido es: &lt;del
+                            aria-label="estado anterior eliminado">En
+                            proceso&lt;/del> &lt;ins aria-label="nuevo estado
+                            agregado">Enviado&lt;/ins>&lt;/p><br />
+                            &lt;p> <br />
+                            &nbsp;&lt;del aria-label="párrafo eliminado sobre
+                            política antigua"> Política de devoluciones: 15 días
+                            &lt;/del> &lt;ins aria-label="párrafo agregado con
+                            nueva política"> Política de devoluciones: 30 días
+                            con garantía completa &lt;/ins> &lt;/p>
+                            <br /><br />
+                            &lt;p>Con atributos &lt;code>title&lt;/code>:&lt;/p>
+                            <br />
+                            &lt;p>El nombre de la empresa es &lt;del
+                            title="Nombre anterior antes de la
+                            fusión">TechCorp&lt;/del> &lt;ins title="Nuevo
+                            nombre después de la fusión con InnovaSoft">TechCorp
+                            InnovaSoft&lt;/ins> &lt;/p><br />
+                            &lt;article> <br />
+                            &nbsp;&lt;del title="Sección eliminada por
+                            información desactualizada - Revisión del
+                            25/05/2024"> Esta función estará disponible en la
+                            próxima actualización. &lt;/del> &lt;ins
+                            title="Información actualizada con fecha de
+                            lanzamiento - Agregado el 27/05/2024"> Esta función
+                            ya está disponible desde la versión 2.1 lanzada el
+                            20 de mayo. &lt;/ins> <br />
+                            &lt;/article>
+                            <br /><br />
+                            &lt;p>Con estilos personalizados:&lt;/p> <br />
+                            &lt;p> El precio ha cambiado de <br />
+                            &nbsp;&lt;del class="revision-del">$100&lt;/del> a
+                            <br />
+                            &nbsp;&lt;ins class="revision-ins">$80&lt;/ins>
+                            <br />
+                            &lt;/p>
+                            <!-- Aquí va el código HTML fin -->
+                          </div>
+                          <div class="code-css code-css-letrero">
+                            <!-- Aquí va el código CSS -->
+                            .revision-del { <br />
+                            &nbsp;background-color: #ffe6e6; <br />
+                            &nbsp;text-decoration: line-through; <br />
+                            &nbsp;color: #cc0000; <br />
+                            &nbsp;padding: 2px 4px; <br />
+                            &nbsp;border-radius: 3px; <br />
+                            } <br /><br />
+
+                            .revision-ins { <br />
+                            &nbsp;background-color: #e6ffe6; <br />
+                            &nbsp;text-decoration: underline; <br />
+                            &nbsp;color: #006600; <br />
+                            &nbsp;padding: 2px 4px; <br />
+                            &nbsp;border-radius: 3px; <br />
+                            }
+                            <!-- Aquí va el código CSS fin -->
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Contenedor de resultado: ocupa toda la fila en móvil, mitad en lg -->
+                      <div class="col-12 col-lg-6 mt-3 mt-lg-0">
+                        <div class="code-result results">
+                          <!-- Aquí va el resultado -->
+                          <p class="fw-bold">Cambio simple de palabra:</p>
+                          <p>
+                            El producto cuesta: <del>$50</del> <ins>$40</ins>.
+                          </p>
+
+                          <p class="fw-bold">
+                            Con atributos
+                            <code class="language-html">cite</code>:
+                          </p>
+                          <p>
+                            El precio del producto es
+                            <del cite="https://empresa.com/cambios-precios-2024"
+                              >$50</del
+                            >
+                            <ins cite="https://empresa.com/cambios-precios-2024"
+                              >$45</ins
+                            >
+                            debido a la promoción de temporada.
+                          </p>
+
+                          <p class="fw-bold">
+                            Con atributos
+                            <code class="language-html">datetime</code>:
+                          </p>
+                          <p>
+                            La reunión será el
+                            <del datetime="2024-05-27T10:30:00"
+                              >viernes a las 2 PM</del
+                            >
+                            <ins datetime="2024-05-27T11:15:00"
+                              >jueves a las 3 PM</ins
+                            >
+                            en la sala de conferencias.
+                          </p>
+
+                          <p class="fw-bold">
+                            Con atributos
+                            <code class="language-html">aria-label</code>:
+                          </p>
+                          <p>
+                            El estado del pedido es:
+                            <del aria-label="estado anterior eliminado"
+                              >En proceso</del
+                            >
+                            <ins aria-label="nuevo estado agregado"
+                              >Enviado</ins
+                            >
+                          </p>
+                          <p>
+                            <del
+                              aria-label="párrafo eliminado sobre política antigua"
+                            >
+                              Política de devoluciones: 15 días
+                            </del>
+                            <ins
+                              aria-label="párrafo agregado con nueva política"
+                            >
+                              Política de devoluciones: 30 días con garantía
+                              completa
+                            </ins>
+                          </p>
+
+                          <p class="fw-bold">
+                            Con atributos
+                            <code class="language-html">title</code>:
+                          </p>
+                          <p>
+                            El nombre de la empresa es
+                            <del title="Nombre anterior antes de la fusión"
+                              >TechCorp</del
+                            >
+                            <ins
+                              title="Nuevo nombre después de la fusión con InnovaSoft"
+                              >TechCorp InnovaSoft</ins
+                            >
+                          </p>
+                          <article>
+                            <del
+                              title="Sección eliminada por información desactualizada - Revisión del 25/05/2024"
+                            >
+                              Esta función estará disponible en la próxima
+                              actualización.
+                            </del>
+                            <ins
+                              title="Información actualizada con fecha de lanzamiento - Agregado el 27/05/2024"
+                            >
+                              Esta función ya está disponible desde la versión
+                              2.1 lanzada el 20 de mayo.
+                            </ins>
+                          </article>
+                          <br />
+                          <p class="fw-bold">Con estilos personalizados:</p>
+                          <p>
+                            El precio ha cambiado de
+                            <del class="ej-revision-del">$100</del> a
+                            <ins class="ej-revision-ins">$80</ins>
+                          </p>
+                          <!-- Aquí va el resultado fin -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Ejemplos de código fin -->
                 </div>
                 <!-- Ejemplos de código <del> y <ins> fin -->
 
@@ -2217,92 +2440,84 @@
                     usar elementos <code class="language-html">span</code> con
                     clases personalizadas:
                   </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-html" data-prismjs-copy="Copy">
-                        &lt;p>
-                          Precio anterior: &lt;span class="tachado">$50&lt;/span>,
-                          nuevo precio: &lt;span class="resaltado">$40&lt;/span>
-                        &lt;/p>
-                      </code>
-                    </pre>
-                    <div class="ej-sintaxis"></div>
-                    <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-css" data-prismjs-copy="Copy">
-                        .tachado {
-                          text-decoration: line-through;
-                          color: gray;
-                        }
-
-                        .resaltado {
-                          text-decoration: underline;
-                          font-weight: bold;
-                          color: green;
-                        }
-                      </code>
-                    </pre>
-                  </div>
-                  <p>Para mostrar estados (disponible/no disponible):</p>
-
                   <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-css" data-prismjs-copy="Copy">
-                      /* Mejor alternativa con clases semánticas */
-                      .product-unavailable {
-                          text-decoration: line-through;
-                          opacity: 0.6;
-                          color: #666;
-                      }
+                  <code class="language-html" data-prismjs-copy="Copy">
+                    &lt;p>
+                      Precio anterior: &lt;span class="tachado">$50&lt;/span>,
+                      nuevo precio: &lt;span class="resaltado">$40&lt;/span>
+                    &lt;/p>
+                  </code>
+                </pre>
+                  <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-css" data-prismjs-copy="Copy">
+                    .tachado {
+                      text-decoration: line-through;
+                      color: gray;
+                    }
 
-                      .product-featured {
-                          background-color: #fff3cd;
-                          border-left: 4px solid #ffc107;
-                          padding-left: 1rem;
-                      }
-                    </code>
-                  </pre>
+                    .resaltado {
+                      text-decoration: underline;
+                      font-weight: bold;
+                      color: green;
+                    }
+                  </code>
+                </pre>
+                  <p>Para mostrar estados (disponible/no disponible):</p>
+                  <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-css" data-prismjs-copy="Copy">
+                    /* Mejor alternativa con clases semánticas */
+                    .product-unavailable {
+                        text-decoration: line-through;
+                        opacity: 0.6;
+                        color: #666;
+                    }
+
+                    .product-featured {
+                        background-color: #fff3cd;
+                        border-left: 4px solid #ffc107;
+                        padding-left: 1rem;
+                    }
+                  </code>
+                </pre>
                   <p>Para comparaciones de precios complejas:</p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-html" data-prismjs-copy="Copy">
-                        &lt;!--  Estructura más semántica --&gt;
-                        &lt;div class="price-comparison">
-                            &lt;span class="price-old" aria-label="precio anterior">$29.99&lt;/span>
-                            &lt;span class="price-current" aria-label="precio actual">$19.99&lt;/span>
-                            &lt;span class="discount">33% descuento&lt;/span>
-                        &lt;/div>
-                      </code>
-                    </pre>
-                  </div>
+                  <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-html" data-prismjs-copy="Copy">
+                    &lt;!--  Estructura más semántica --&gt;
+                    &lt;div class="price-comparison">
+                        &lt;span class="price-old" aria-label="precio anterior">$29.99&lt;/span>
+                        &lt;span class="price-current" aria-label="precio actual">$19.99&lt;/span>
+                        &lt;span class="discount">33% descuento&lt;/span>
+                    &lt;/div>
+                  </code>
+                </pre>
                   <p>Componentes modernos con CSS:</p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-css" data-prismjs-copy="Copy">
-                      .revision-block {
-                          border-left: 4px solid #e9ecef;
-                          padding-left: 1rem;
-                          margin: 1rem 0;
-                      }
+                  <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-css" data-prismjs-copy="Copy">
+                    .revision-block {
+                        border-left: 4px solid #e9ecef;
+                        padding-left: 1rem;
+                        margin: 1rem 0;
+                    }
 
-                      .revision-block del {
-                          display: block;
-                          background-color: #f8d7da;
-                          color: #721c24;
-                          padding: 0.5rem;
-                          margin-bottom: 0.5rem;
-                          border-radius: 0.25rem;
-                      }
+                    .revision-block del {
+                        display: block;
+                        background-color: #f8d7da;
+                        color: #721c24;
+                        padding: 0.5rem;
+                        margin-bottom: 0.5rem;
+                        border-radius: 0.25rem;
+                    }
 
-                      .revision-block ins {
-                          display: block;
-                          background-color: #d4edda;
-                          color: #155724;
-                          padding: 0.5rem;
-                          border-radius: 0.25rem;
-                          text-decoration: none;
-                      }
-                    </code>
-                  </pre>
-                  </div>
+                    .revision-block ins {
+                        display: block;
+                        background-color: #d4edda;
+                        color: #155724;
+                        padding: 0.5rem;
+                        border-radius: 0.25rem;
+                        text-decoration: none;
+                    }
+                  </code>
+                </pre>
                 </div>
                 <!-- Alternativas CSS recomendadas <del> y <ins> fin -->
               </div>
@@ -2491,21 +2706,19 @@
                           Agregar un atributo
                           <code class="language-html">aria-label</code> o usar
                           etiquetas explicativas cuando el contexto lo requiera:
-                          <div class="ej-sintaxis">
-                            <pre data-src-status="loaded" tabindex="0">
-                              <code class="language-html" data-prismjs-copy="Copy">
-                                &lt;!-- Añadir contexto con aria-label --&gt;
-                                &lt;span aria-label="Agua, H dos O">H&lt;sub>2&lt;/sub>O&lt;/span>
+                          <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-html" data-prismjs-copy="Copy">
+                            &lt;!-- Añadir contexto con aria-label --&gt;
+                            &lt;span aria-label="Agua, H dos O">H&lt;sub>2&lt;/sub>O&lt;/span>
 
-                                &lt;!-- Usar role="img" para fórmulas complejas --&gt;
-                                &lt;span role="img" aria-label="x al cuadrado">x&lt;sup>2&lt;/sup>&lt;/span>
+                            &lt;!-- Usar role="img" para fórmulas complejas --&gt;
+                            &lt;span role="img" aria-label="x al cuadrado">x&lt;sup>2&lt;/sup>&lt;/span>
 
-                                &lt;!-- Proporcionar texto alternativo --&gt;
-                                &lt;p>Einstein demostró que E=mc&lt;sup>2&lt;/sup>
-                                  &lt;span class="sr-only">(E igual a m por c al cuadrado)&lt;/span>&lt;/p>
-                              </code>
-                            </pre>
-                          </div>
+                            &lt;!-- Proporcionar texto alternativo --&gt;
+                            &lt;p>Einstein demostró que E=mc&lt;sup>2&lt;/sup>
+                              &lt;span class="sr-only">(E igual a m por c al cuadrado)&lt;/span>&lt;/p>
+                          </code>
+                        </pre>
                         </li>
                         <li>
                           Evitar usarlos únicamente como medio de transmitir
@@ -2534,23 +2747,21 @@
                     Los navegadores aplican estilos predefinidos para estas
                     etiquetas:
                   </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-css" data-prismjs-copy="Copy">
-                        sup {
-                          vertical-align: super;
-                          font-size: smaller;
-                          line-height: normal;
-                        }
+                  <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-css" data-prismjs-copy="Copy">
+                    sup {
+                      vertical-align: super;
+                      font-size: smaller;
+                      line-height: normal;
+                    }
 
-                        sub {
-                          vertical-align: sub;
-                          font-size: smaller;
-                          line-height: normal;
-                        }
-                      </code>
-                    </pre>
-                  </div>
+                    sub {
+                      vertical-align: sub;
+                      font-size: smaller;
+                      line-height: normal;
+                    }
+                  </code>
+                </pre>
                   <p>
                     Esto significa que el texto aparecerá más pequeño y
                     desplazado hacia arriba (<code class="language-html"
@@ -2558,192 +2769,214 @@
                     >) o hacia abajo (<code class="language-html">sub</code>).
                   </p>
                   <p>Personalización común:</p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-css" data-prismjs-copy="Copy">
-                        sup, sub {
-                            font-size: 0.75em;
-                            line-height: 0;
-                            position: relative;
-                            vertical-align: baseline;
-                        }
+                  <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-css" data-prismjs-copy="Copy">
+                    sup, sub {
+                        font-size: 0.75em;
+                        line-height: 0;
+                        position: relative;
+                        vertical-align: baseline;
+                    }
 
-                        sup {
-                            top: -0.5em;
-                        }
+                    sup {
+                        top: -0.5em;
+                    }
 
-                        sub {
-                            bottom: -0.25em;
-                        }
-                      </code>
-                    </pre>
-                  </div>
+                    sub {
+                        bottom: -0.25em;
+                    }
+                  </code>
+                </pre>
                 </div>
                 <!-- Configuración CSS por Defecto <sup> y <sub> fin -->
 
                 <!-- Ejemplos de código <sup> y <sub> -->
                 <div>
                   <h3>Ejemplos de código &lt;sup> y &lt;sub></h3>
-                  <!-- Ejemplo -->
-                  <div class="ej-ejemplo">
-                    <div class="row ej-ejecutado mt-3">
-                      <!-- código ejecutado -->
-                      <div>
-                        <p class="fw-bold">
-                          Ejemplos básicos de uso de
-                          <code class="language-html"
-                            ><span class="ej-token-tag"
-                              ><span class="ej-token-tag"
-                                ><span class="ej-token ej-punctuation"
-                                  >&lt;</span
-                                >sup</span
-                              ><span class="ej-token ej-punctuation"
-                                >&gt;</span
-                              ></span
-                            ></code
-                          >
-                        </p>
-                        <p>
-                          Exponente en Matemáticas: El valor de 2<sup>3</sup>
-                          es 8.
-                        </p>
-                        <p>
-                          Abreviatura Lingüística (Francés): Robert a présenté
-                          son rapport à M<sup>lle</sup> Bernard. Aquí, M<sup
-                            >lle</sup
-                          >
-                          es una abreviatura de "Mademoiselle", un uso
-                          tipográfico específico de algunos idiomas.
-                        </p>
-                        <p>
-                          Número Ordinal (Inglés): La 5<sup>th</sup>
-                          edición del libro.
-                        </p>
-                        <p>
-                          Marca Registrada: Nombre de la Empresa<sup>®</sup>
-                        </p>
-                        <p class="fw-bold">
-                          Ejemplos de
-                          <code class="language-html"
-                            ><span class="ej-token-tag"
-                              ><span class="ej-token-tag"
-                                ><span class="ej-token ej-punctuation"
-                                  >&lt;</span
-                                >sub</span
-                              ><span class="ej-token ej-punctuation"
-                                >&gt;</span
-                              ></span
-                            ></code
-                          >:
-                        </p>
-                        <p>
-                          Fórmula Química: La fórmula del agua es
-                          H<sub>2</sub>O.
-                        </p>
-                        <p>
-                          Variable con Subíndice: El resultado queda guardado en
-                          la variable
-                          <var>x<sub>t</sub></var
-                          >.
-                        </p>
-                        <p class="fw-bold">
-                          Combinación de Superíndices y Subíndices:
-                        </p>
-                        <p>
-                          Fórmula Química Compleja: El ion sulfato se representa
-                          como SO<sub>4</sub><sup>2-</sup>.
-                        </p>
-                        <p>
-                          Notas al Pie Combinadas: Este texto contiene una
-                          referencia<sup>1</sup> y otra<sup>2</sup>.
-                        </p>
-                      </div>
-                      <!-- código ejecutado fin -->
-                    </div>
+                  <!-- Ejemplos de código -->
+                  <div class="code border border-1 border-light p-3 rounded-2">
                     <div class="row">
-                      <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
-                        <!-- código HTML -->
-                        <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-html" data-prismjs-copy="Copy">
-                            <div>
-                            &lt;p class="fw-bold">
+                      <!-- Contenedor de código: ocupa toda la fila en móvil, mitad en lg -->
+                      <div class="col-12 col-lg-6">
+                        <div class="codes">
+                          <div class="code-html code-html-letrero mb-3">
+                            <!-- Aquí va el código HTML -->
+                            &lt;p> Ejemplos básicos de uso de &lt;code>
+                            &lt;sup>&lt;/code>&lt;/p> <br />
+                            &lt;p>Exponente en Matemáticas: El valor de
+                            2&lt;sup>3&lt;/sup > es 8. &lt;/p> <br />
+                            &lt;p> Abreviatura Lingüística (Francés): Robert a
+                            présenté son rapport à M&lt;sup >lle&lt;/sup>
+                            Bernard. Aquí, M&lt;sup>lle&lt;/sup> es una
+                            abreviatura de "Mademoiselle", un uso tipográfico
+                            específico de algunos idiomas. &lt;/p> <br />
+                            &lt;p> Número Ordinal (Inglés): La 5&lt;sup
+                            >th&lt;/sup > edición del libro. &lt;/p> <br />
+                            &lt;p> Marca Registrada: Nombre de la Empresa&lt;sup
+                            >®&lt;/sup > &lt;/p> <br />
+                            &lt;p> Ejemplos de &lt;code>&lt;sub>&lt;/code>:
+                            &lt;/p> <br />
+                            &lt;p> Fórmula Química: La fórmula del agua es
+                            H&lt;sub >2&lt;/sub >O. &lt;/p> <br />
+                            &lt;p> Variable con Subíndice: El resultado queda
+                            guardado en la variable &lt;var>x&lt;sub
+                            >t&lt;/sub>&lt;/var >. &lt;/p> <br />
+                            &lt;p> Combinación de Superíndices y Subíndices:
+                            &lt;/p> <br />
+                            &lt;p> Fórmula Química Compleja: El ion sulfato se
+                            representa como SO&lt;sub >4&lt;/sub >&lt;sup
+                            >2-&lt;/sup>. &lt;/p> <br />
+                            &lt;p> Notas al Pie Combinadas: Este texto contiene
+                            una referencia&lt;sup >1&lt;/sup> y otra&lt;sup
+                            >2&lt;/sup >. &lt;/p>
+
+                            <!-- Aquí va el código HTML fin -->
+                          </div>
+                          <div class="code-css code-css-letrero">
+                            <!-- Aquí va el código CSS -->
+                            .sub {<br />
+                            &nbsp;background-color: #ffe6e6;<br />
+                            &nbsp;color:blue;<br />
+                            }<br />
+                            <br />
+                            .sup {<br />
+                            &nbsp;background-color: #ffe6e6;<br />
+                            &nbsp;color: green;<br />
+                            }<br />
+
+                            <!-- Aquí va el código CSS fin -->
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Contenedor de resultado: ocupa toda la fila en móvil, mitad en lg -->
+                      <div class="col-12 col-lg-6 mt-3 mt-lg-0">
+                        <div class="code-result results">
+                          <!-- Aquí va el resultado -->
+                          <p class="fw-bold">
                             Ejemplos básicos de uso de
-                            &lt;code class="language-html">&lt;span class="token tag">&lt;span class="token tag">&lt;span class="token ej-punctuation">&lt;&lt;/span>sup&lt;/span>&lt;span class="token ej-punctuation">&gt;&lt;/span>&lt;/span>&lt;/code>
-                          &lt;/p>
-                          &lt;p>
-                            Exponente en Matemáticas: El valor de 2&lt;sup >3&lt;/sup>
+                            <code class="language-html">&lt;sup></code>
+                          </p>
+                          <p>
+                            Exponente en Matemáticas: El valor de 2<sup
+                              class="ej-sup"
+                              >3</sup
+                            >
                             es 8.
-                          &lt;/p>
-                          &lt;p>
+                          </p>
+                          <p>
                             Abreviatura Lingüística (Francés): Robert a présenté
-                            son rapport à M&lt;sup >lle&lt;/sup>
-                            Bernard. Aquí, M&lt;sup>lle&lt;/sup>
+                            son rapport à M<sup class="ej-sup">lle</sup>
+                            Bernard. Aquí, M<sup>lle</sup>
                             es una abreviatura de "Mademoiselle", un uso
                             tipográfico específico de algunos idiomas.
-                          &lt;/p>
-                          &lt;p>
-                            Número Ordinal (Inglés): La 5&lt;sup >th&lt;/sup>
+                          </p>
+                          <p>
+                            Número Ordinal (Inglés): La 5<sup class="ej-sup"
+                              >th</sup
+                            >
                             edición del libro.
-                          &lt;/p>
-                          &lt;p>
-                            Marca Registrada: Nombre de la Empresa&lt;sup >®&lt;/sup>
-                          &lt;/p>
-                          &lt;p class="fw-bold">
+                          </p>
+                          <p>
+                            Marca Registrada: Nombre de la Empresa<sup
+                              class="ej-sup"
+                              >®</sup
+                            >
+                          </p>
+                          <p class="fw-bold">
                             Ejemplos de
-                            &lt;code class="language-html">&lt;span class="token tag">&lt;span class="token tag">&lt;span class="token ej-punctuation">&lt;&lt;/span>sub&lt;/span>&lt;span class="token ej-punctuation">&gt;&lt;/span>&lt;/span>&lt;/code>:
-                          &lt;/p>
-                          &lt;p>
-                            Fórmula Química: La fórmula del agua es H&lt;sub>2&lt;/sub>O.
-                          &lt;/p>
-                          &lt;p>
+                            <code class="language-html">&lt;sub></code>:
+                          </p>
+                          <p>
+                            Fórmula Química: La fórmula del agua es H<sub
+                              class="ej-sub"
+                              >2</sub
+                            >O.
+                          </p>
+                          <p>
                             Variable con Subíndice: El resultado queda guardado
                             en la variable
-                            &lt;var>x&lt;sub>t&lt;/sub>&lt;/var>.
-                          &lt;/p>
-                          &lt;p class="fw-bold">
+                            <var>x<sub class="ej-sub">t</sub></var
+                            >.
+                          </p>
+                          <p class="fw-bold">
                             Combinación de Superíndices y Subíndices:
-                          &lt;/p>
-                          &lt;p>
+                          </p>
+                          <p>
                             Fórmula Química Compleja: El ion sulfato se
-                            representa como SO&lt;sub>4&lt;/sub>&lt;sup >2-&lt;/sup>.
-                          &lt;/p>
-                          &lt;p>
+                            representa como SO<sub class="ej-sub">4</sub
+                            ><sup class="ej-sup">2-</sup>.
+                          </p>
+                          <p>
                             Notas al Pie Combinadas: Este texto contiene una
-                            referencia&lt;sup >1&lt;/sup> y otra&lt;sup >2&lt;/sup>.
-                          &lt;/p>                              
-                            </div>        
-                          </code>
-                        </pre>
-                        <!-- código HTML -->
-                      </div>
-                      <div class="ej-code-css col-lg-6 mb-3">
-                        <!-- código CSS -->
-                        <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-css" data-prismjs-copy="Copy">
-                            <div>
-                              sup {
-                                background-color: #e6ffe6;
-                                color: #006600;
-                                font-weight: bold;
-                                padding: 1px 3px;
-                                border-radius: 3px;
-                              }
-
-                              sub {
-                                background-color: #e6f3ff;
-                                color: #0066cc;
-                                font-weight: bold;
-                                padding: 1px 3px;
-                                border-radius: 3px;
-                              }                              
-                            </div>        
-                          </code>
-                         </pre>
-                        <!-- código CSS -->
+                            referencia<sup class="ej-sup">1</sup> y otra<sup
+                              class="ej-sup"
+                              >2</sup
+                            >.
+                          </p>
+                          <!-- Aquí va el resultado fin -->
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <!-- Ejemplo fin -->
+                  <!-- Ejemplos de código fin -->
+
+                  <ul>
+                    <li>
+                      <span class="fw-bold"
+                        >Ejemplos de Implementación Correcta de Ejemplos de
+                        Implementación Correcta de
+                        <code class="language-html">&lt;sup></code></span
+                      >:
+                      <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-html" data-prismjs-copy="Copy">
+                        &lt;!-- Exponente en Matemáticas --&gt;
+                        &lt;p>El valor de 2&lt;sup>3&lt;/sup> es 8.&lt;/p>
+                        &lt;!-- Este ejemplo muestra cómo representar una potencia, donde el "3" es un exponente del "2".  --&gt;
+
+                        &lt;!-- Abreviatura Lingüística (Francés) --&gt;
+                        &lt;p>Robert a présenté son rapport à M&lt;sup>lle&lt;/sup> Bernard.&lt;/p>
+                        &lt;!-- Aquí, M&lt;sup>lle&lt;/sup> es una abreviatura de "Mademoiselle", un uso tipográfico específico de algunos idiomas. --&gt;
+
+                        &lt;!-- Número Ordinal (Inglés) --&gt;
+                        &lt;p>La 5&lt;sup>th&lt;/sup> edición del libro.&lt;/p>
+
+                        &lt;!-- Marca Registrada: --&gt;
+                        &lt;p>Nombre de la Empresa&lt;sup>&reg;&lt;/sup>&lt;/p>
+                      </code>
+                    </pre>
+                    </li>
+
+                    <li>
+                      <span class="fw-bold"
+                        >Ejemplos de Implementación Correcta de
+                        <code class="language-html">&lt;sub></code></span
+                      >:
+                      <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-html" data-prismjs-copy="Copy">
+                        &lt;!-- Fórmula Química --&gt;
+                        &lt;p>La fórmula del agua es H&lt;sub>2&lt;/sub>O.&lt;/p>
+
+                        &lt;!-- Variable con Subíndice --&gt;
+                        &lt;p>El resultado queda guardado en la variable &lt;var>x&lt;sub>t&lt;/sub>&lt;/var>.&lt;/p>
+                      </code>
+                    </pre>
+                    </li>
+                    <li>
+                      <span class="fw-bold"
+                        >Combinación de Superíndices y Subíndices en Contextos
+                        Específicos</span
+                      >:
+                      <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-html" data-prismjs-copy="Copy">
+                        &lt;!-- Fórmula Química Compleja --&gt;
+                        &lt;p>El ion sulfato se representa como SO&lt;sub>4&lt;/sub>&lt;sup>2-&lt;/sup>.&lt;/p>
+
+                        &lt;!-- Notas al Pie Combinadas --&gt;
+                        &lt;p>Este texto contiene una referencia&lt;sup>1&lt;/sup> y otra&lt;sup>2&lt;/sup>.&lt;/p>
+                      </code>
+                    </pre>
+                    </li>
+                  </ul>
                 </div>
                 <!-- Ejemplos de código <sup> y <sub> fin -->
 
@@ -2790,51 +3023,48 @@
                     Cuando se desee crear el efecto visual sin usar etiquetas
                     semánticas, puede emplearse CSS:
                   </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-css" data-prismjs-copy="Copy">
-                        /* Alternativa CSS para superíndice decorativo */
-                        .superscript {
-                            font-size: 0.8em;
-                            vertical-align: super;
-                            line-height: 0;
-                        }
+                  <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-css" data-prismjs-copy="Copy">
+                    /* Alternativa CSS para superíndice decorativo */
+                    .superscript {
+                        font-size: 0.8em;
+                        vertical-align: super;
+                        line-height: 0;
+                    }
 
-                        /* Alternativa CSS para subíndice decorativo */
-                        .subscript {
-                            font-size: 0.8em;
-                            vertical-align: sub;
-                            line-height: 0;
-                        }
+                    /* Alternativa CSS para subíndice decorativo */
+                    .subscript {
+                        font-size: 0.8em;
+                        vertical-align: sub;
+                        line-height: 0;
+                    }
 
-                        /* Para alineación vertical compleja */
-                        .formula {
-                            display: inline-flex;
-                            flex-direction: column;
-                            align-items: center;
-                        }
+                    /* Para alineación vertical compleja */
+                    .formula {
+                        display: inline-flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
 
-                        .numerator {
-                            font-size: 0.8em;
-                            border-bottom: 1px solid;
-                            padding-bottom: 2px;
-                        }
+                    .numerator {
+                        font-size: 0.8em;
+                        border-bottom: 1px solid;
+                        padding-bottom: 2px;
+                    }
 
-                        .denominator {
-                            font-size: 0.8em;
-                            padding-top: 2px;
-                        }
-                      </code>
-                    </pre>
-                  </div>
+                    .denominator {
+                        font-size: 0.8em;
+                        padding-top: 2px;
+                    }
+                  </code>
+                </pre>
                 </div>
                 <!-- Alternativas CSS recomendadas <sup> y <sub> fin -->
               </div>
               <!-- Etiquetas HTML <sup> Superíndice y <sub> Subíndice Fin -->
             </div>
-            <hr class="subtle-divider" />
 
-            <!-- Etiquetas HTML <code> Código de Programación -->
+            <!-- Etiquetas HTML <code class="language-html"> Código de Programación -->
             <div id="etiquetas-html-code-codigo-de-programacion" class="mt-5">
               <h2 class="mt-1">
                 Etiquetas HTML &lt;code> Código de Programación
@@ -2854,9 +3084,9 @@
                   y terminales.
                 </p>
               </div>
-              <!-- Definición <code fin -->
+              <!-- Definición <code class="language-html"> fin -->
 
-              <!-- Cuándo usar <code "> -->
+              <!-- Cuándo usar <code class="language-html"> -->
               <div>
                 <h3>Cuándo usar &lt;code></h3>
                 <ul>
@@ -2895,13 +3125,11 @@
                   </li>
                 </ul>
                 <p>Por ejemplo:</p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-html" data-prismjs-copy="Copy">
-                      &lt;p>Para imprimir un mensaje en Python, se utiliza la función &lt;code>print()&lt;/code>.&lt;/p>
-                    </code>
-                  </pre>
-                </div>
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-html" data-prismjs-copy="Copy">
+                    &lt;p>Para imprimir un mensaje en Python, se utiliza la función &lt;code>print()&lt;/code>.&lt;/p>
+                  </code>
+                </pre>
                 <p>
                   No se recomienda utilizar
                   <code class="language-html">&lt;code></code> para bloques de
@@ -2910,24 +3138,22 @@
                   <code class="language-html">&lt;pre></code> combinado con
                   <code class="language-html">&lt;code></code>: a saber:
                 </p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-js" data-prismjs-copy="Copy">
-                      function alertMessage() {
-                          return "ALERTA: El lector es demasiado atractivo.";
-                      }
-                    </code>
-                  </pre>
-                </div>
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-js" data-prismjs-copy="Copy">
+                    function alertMessage() {
+                        return "ALERTA: El lector es demasiado atractivo.";
+                    }
+                  </code>
+                </pre>
                 <p>
                   En esta página se utiliza la biblioteca
                   <code class="language-html">prism.js</code> para darle formato
                   a los bloques de código.
                 </p>
               </div>
-              <!-- Cuándo usar <code> fin -->
+              <!-- Cuándo usar <code class="language-html"> fin -->
 
-              <!-- Accesibilidad y lectores de pantalla <code> -->
+              <!-- Accesibilidad y lectores de pantalla <code class="language-html"> -->
               <div>
                 <h3>Accesibilidad y lectores de pantalla &lt;code></h3>
                 <p>
@@ -2948,13 +3174,11 @@
                   y la comprensión del contenido del documento.
                 </p>
               </div>
-              <!-- Accesibilidad y lectores de pantalla <code> fin -->
-
-              <!-- Configuración CSS por Defecto <code>"> -->
+              <!-- Accesibilidad y lectores de pantalla <code class="language-html"> fin -->
+              <!-- Configuración CSS por Defecto <code class="language-html"> -->
               <div>
                 <h3>Configuración CSS por Defecto &lt;code></h3>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                   <code class="language-css" data-prismjs-copy="Copy">
                     code {
                         display: inline;
@@ -2969,47 +3193,83 @@
                     }
                   </code>
                 </pre>
-                </div>
+              </div>
+              <!-- Configuración CSS por Defecto <code class="language-html"> fin -->
 
-                <!-- Configuración CSS por Defecto <code>> fin -->
+              <!-- Ejemplos de código <code class="language-html"> -->
+              <div>
+                <h3>Ejemplos de código &lt;code></h3>
+                <!-- Ejemplos de código -->
+                <div class="code border border-1 border-light p-3 rounded-2">
+                  <div class="row">
+                    <!-- Contenedor de código: ocupa toda la fila en móvil, mitad en lg -->
+                    <div class="col-12 col-lg-6">
+                      <div class="codes">
+                        <div class="code-html code-html-letrero mb-3">
+                          <!-- Aquí va el código HTML -->
+                          &lt;p>Código en línea (inline): Para declarar una
+                          variable en JavaScript, se puede usar la palabra clave
+                          &lt;code>let&lt;/code>.&lt;/p> <br /><br />
+                          &lt;p>Bloque de código (block) con &lt;code>&lt;pre>:
+                          Cuando el formato (espacios en blanco, saltos de
+                          línea, sangría) es importante, se puede usar un bloque
+                          de código: &lt;/p>
+                          <br />
+                          &lt;pre>&lt;code class="language-js"> <br />
+                          &nbsp;const usuarios = [ <br />
+                          &nbsp;&nbsp;{id: 1, nombre: 'Ana' }, <br />
+                          &nbsp;&nbsp;{ id: 2, nombre: 'Luis' } ]; <br />
+                          &lt;/code>&lt;/pre>
+                          <br /><br />
+                          &lt;p>Aclarar el contexto: Usar ARIA&lt;/p> <br />
+                          &lt;p>En JavaScript, usa &lt;code
+                          aria-describedby="js-tip">typeof variable&lt;/code>
+                          para verificar el tipo de dato &lt;/p> <br />
+                          &lt;div id="js-tip" class="sr-only"> Operador
+                          JavaScript para verificación de tipos &lt;/div>
 
-                <!-- Ejemplos de código <code>> -->
-                <div>
-                  <h3>Ejemplos de código &lt;code></h3>
-                  <!-- Ejemplo -->
-                  <div class="ej-ejemplo">
-                    <div class="row ej-ejecutado mt-3">
-                      <!-- código ejecutado -->
-                      <div>
+                          <!-- Aquí va el código HTML fin-->
+                        </div>
+                        <div class="code-css code-css-letrero">
+                          <!-- Aquí va el código CSS -->
+                          code { <br />
+                          &nbsp;color: #6ea8fe; <br />
+                          &nbsp;font-size: 1.1rem; <br />
+                          &nbsp;background: #333; <br />
+                          &nbsp;border-radius: 6px; <br />
+                          }
+                          <!-- Aquí va el código CSS fin-->
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Contenedor de resultado: ocupa toda la fila en móvil, mitad en lg -->
+                    <div class="col-12 col-lg-6 mt-3 mt-lg-0">
+                      <div class="code-result results">
+                        <!-- Aquí va el resultado -->
                         <p>
                           <span class="fw-bold">Código en línea (inline)</span>:
                           Para declarar una variable en JavaScript, se puede
                           usar la palabra clave
                           <code class="language-html">let</code>.
                         </p>
-
                         <p>
                           <span class="fw-bold"
                             >Bloque de código (block) con
                             <code class="language-html"
-                              >&lt;pre&gt;&lt;code&gt;</code
+                              >&lt;pre>&lt;code></code
                             ></span
                           >: Cuando el formato (espacios en blanco, saltos de
                           línea, sangría) es importante, se puede usar un bloque
-                          de código:
-                          <br />
+                          de código: <br />
                         </p>
-
-                        <div class="ej-code-toolbar">
-                          <pre
-                            class="language-js"
-                            tabindex="0"
-                          ><code class="language-js"><span class="ej-keyword">const</span> usuarios <span class="ej-operator">=</span> <span class="ej-punctuation">[</span>
-    <span class="ej-punctuation">{</span> <span class="ej-iteral-property ej-property">id</span><span class="ej-operator">:</span> <span class="ej-number">1</span><span class="ej-punctuation">,</span> <span class="ej-iteral-property ej-property">nombre</span><span class="ej-operator">:</span> <span class="ej-string">'Ana'</span> <span class="ej-punctuation">}</span><span class="ej-punctuation">,</span>
-    <span class="ej-punctuation">{</span> <span class="ej-iteral-property ej-property">id</span><span class="ej-operator">:</span> <span class="ej-number">2</span><span class="ej-punctuation">,</span> <span class="ej-iteral-property ej-property">nombre</span><span class="ej-operator">:</span> <span class="ej-string">'Luis'</span> <span class="ej-punctuation">}</span>
-<span class="ej-punctuation">]</span><span class="ej-punctuation">;</span></code></pre>
-                        </div>
-
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-js">
+                            const usuarios = [
+                              { id: 1, nombre: 'Ana' },
+                              { id: 2, nombre: 'Luis' }
+                            ];
+                          </code>
+                        </pre>
                         <p>
                           La clase
                           <code class="language-html">language-js</code> se
@@ -3018,144 +3278,28 @@
                           opcional, omitirla impedirá el resaltado sintáctico
                           del código.
                         </p>
-
                         <p>
                           <span class="fw-bold">Aclarar el contexto</span>: Usar
                           ARIA
                         </p>
-
                         <p>
                           En JavaScript, usa
                           <code aria-describedby="js-tip">typeof variable</code>
                           para verificar el tipo de dato
                         </p>
-
                         <div id="js-tip" class="sr-only">
                           Operador JavaScript para verificación de tipos
                         </div>
-                      </div>
-                      <!-- código ejecutado fin -->
-                    </div>
-                    <div class="row">
-                      <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
-                        <!-- código HTML -->
-                        <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-html" data-prismjs-copy="Copy">
-                          <div>
-                            &lt;p>
-                                &lt;span class="fw-bold">Código en línea (inline)&lt;/span>:
-                                Para declarar una variable en JavaScript, se puede usar
-                                la palabra clave &lt;code class="language-html">let&lt;/code>.
-                              &lt;/p>
-
-                              &lt;p>
-                                &lt;span class="fw-bold"
-                                  >Bloque de código (block) con
-                                  &lt;code class="language-html"
-                                    >&lt;pre&gt;&lt;code&gt;&lt;/code
-                                  >&lt;/span
-                                >: Cuando el formato (espacios en blanco, saltos de
-                                línea, sangría) es importante, se puede usar un bloque
-                                de código:
-                                &lt;br />
-                              &lt;/p>
-
-                              &lt;div class="code-toolbar">
-                                &lt;pre
-                                  class="language-js"
-                                  tabindex="0"
-                                >&lt;code class="language-js">&lt;span class="keyword">const&lt;/span> usuarios &lt;span class="operator">=&lt;/span> &lt;span class="punctuation">[&lt;/span>
-                                    &lt;span class="punctuation">{&lt;/span> &lt;span class="literal-property property">id&lt;/span>&lt;span class="operator">:&lt;/span> &lt;span class="number">1&lt;/span>&lt;span class="punctuation">,&lt;/span> &lt;span class="literal-property property">nombre&lt;/span>&lt;span class="operator">:&lt;/span> &lt;span class="string">'Ana'&lt;/span> &lt;span class="punctuation">}&lt;/span>&lt;span class="punctuation">,&lt;/span>
-                                    &lt;span class="punctuation">{&lt;/span> &lt;span class="literal-property property">id&lt;/span>&lt;span class="operator">:&lt;/span> &lt;span class="number">2&lt;/span>&lt;span class="punctuation">,&lt;/span> &lt;span class="literal-property property">nombre&lt;/span>&lt;span class="operator">:&lt;/span> &lt;span class="string">'Luis'&lt;/span> &lt;span class="punctuation">}&lt;/span>
-                                &lt;span class="punctuation">]&lt;/span>&lt;span class="punctuation">;&lt;/span>&lt;/code>&lt;/pre>
-                              &lt;/div>
-
-                              &lt;p>
-                                La clase
-                                &lt;code class="language-html">language-js&lt;/code> se
-                                utiliza para resaltar el código según las reglas de
-                                JavaScript, mejorando su legibilidad. Aunque es
-                                opcional, omitirla impedirá el resaltado sintáctico del
-                                código.
-                              &lt;/p>
-
-                              &lt;p>
-                                &lt;span class="fw-bold">Aclarar el contexto&lt;/span>: Usar
-                                ARIA
-                              &lt;/p>
-
-                              &lt;p>
-                                En JavaScript, usa
-                                &lt;code aria-describedby="js-tip">typeof variable&lt;/code>
-                                para verificar el tipo de dato
-                              &lt;/p>
-
-                              &lt;div id="js-tip" class="sr-only">
-                                Operador JavaScript para verificación de tipos
-                              &lt;/div>
-                    
-                          </div>    
-                        </code>
-                      </pre>
-                        <!-- código HTML -->
-                      </div>
-                      <div class="ej-code-css col-lg-6 mb-3">
-                        <!-- código CSS -->
-                        <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-css" data-prismjs-copy="Copy">
-                          <div>
-                          .sr-only {
-                            position: absolute;
-                            width: 1px;
-                            height: 1px;
-                            padding: 0;
-                            margin: -1px;
-                            overflow: hidden;
-                            clip: rect(0, 0, 0, 0);
-                            white-space: nowrap;
-                            border: 0;
-                          }
-
-                          .keyword {
-                            color: #0066cc;
-                            font-weight: bold;
-                          }
-                          .operator {
-                            color: #666;
-                          }
-                          .punctuation {
-                            color: #999;
-                          }
-                          .literal-property {
-                            color: #0088aa;
-                          }
-                          .property {
-                            color: #0088aa;
-                          }
-                          .number {
-                            color: #009900;
-                          }
-                          .string {
-                            color: #cc0000;
-                          }
-
-                          .code-toolbar {
-                                position: relative;
-                                margin: 15px 0;
-                            }    
-                          </div>        
-                        </code>
-                         </pre>
-                        <!-- código HTML -->
+                        <!-- Aquí va el resultado fin -->
                       </div>
                     </div>
                   </div>
                 </div>
-                <!-- Ejemplo fin -->
+                <!-- Ejemplos de código fin -->
               </div>
-              <!-- Ejemplos de código <code> fin -->
+              <!-- Ejemplos de código <code class="language-html"> fin -->
 
-              <!-- Buenas prácticas modernas <code> -->
+              <!-- Buenas prácticas modernas <code class="language-html"> -->
               <div>
                 <h3>Buenas prácticas modernas &lt;code></h3>
                 <p>
@@ -3194,13 +3338,13 @@
                   </li>
                 </ul>
               </div>
-              <!-- Buenas prácticas modernas <code> fin -->
+              <!-- Buenas prácticas modernas <code class="language-html"> fin -->
 
-              <!-- Alternativas CSS recomendadas <code class="langua> -->
+              <!-- Alternativas CSS recomendadas <code class="language-html"> -->
               <div>
                 <h3>Alternativas CSS recomendadas &lt;code></h3>
 
-                <!-- Estilos Básico para <code> Fin -->
+                <!-- Estilos Básico para <code class="language-html"> -->
                 <div>
                   <h4>Estilos Básico para &lt;code></h4>
                   <p>
@@ -3208,85 +3352,76 @@
                     <code class="language-html">&lt;code></code>, se pueden usar
                     las siguientes recomendaciones CSS:
                   </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-css" data-prismjs-copy="Copy">
-                      code {
-                        background-color: #f5f5f5;
-                        padding: 0.2em 0.4em;
-                        border-radius: 4px;
-                        font-family: 'Fira Code', 'Courier New', monospace;
-                        font-size: 0.95em;
-                        color: #c7254e;
-                      }
-                    </code>
-                  </pre>
-                  </div>
+                  <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-css" data-prismjs-copy="Copy">
+                    code {
+                      background-color: #f5f5f5;
+                      padding: 0.2em 0.4em;
+                      border-radius: 4px;
+                      font-family: 'Fira Code', 'Courier New', monospace;
+                      font-size: 0.95em;
+                      color: #c7254e;
+                    }
+                  </code>
+                </pre>
                 </div>
-                <!-- Estilos Básico para <code> fin -->
+                <!-- Estilos Básico para <code class="language-html"> fin -->
 
-                <!-- Estilos base modernos para <code> -->
+                <!-- Estilos base modernos para <code class="language-html"> -->
                 <div>
                   <h4>Estilos base modernos para &lt;code></h4>
                   <p>Estilo minimalista:</p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-css" data-prismjs-copy="Copy">
-                        code {
-                            font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
-                            font-size: 0.875em;
-                            background-color: #f6f8fa;
-                            padding: 0.2em 0.4em;
-                            border-radius: 6px;
-                            border: 1px solid #d0d7de;
-                        }
-                      </code>
-                    </pre>
-                  </div>
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-css" data-prismjs-copy="Copy">
+                      code {
+                          font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+                          font-size: 0.875em;
+                          background-color: #f6f8fa;
+                          padding: 0.2em 0.4em;
+                          border-radius: 6px;
+                          border: 1px solid #d0d7de;
+                      }
+                    </code>
+                  </pre>
                   <p>Tema oscuro:</p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-css" data-prismjs-copy="Copy">
-                        @media (prefers-color-scheme: dark) {
-                            code {
-                                background-color: #161b22;
-                                border-color: #30363d;
-                                color: #e6edf3;
-                            }
-                        }
-                      </code>
-                    </pre>
-                  </div>
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-css" data-prismjs-copy="Copy">
+                      @media (prefers-color-scheme: dark) {
+                          code {
+                              background-color: #161b22;
+                              border-color: #30363d;
+                              color: #e6edf3;
+                          }
+                      }
+                    </code>
+                  </pre>
                   <p>Para código inline vs bloques:</p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-css" data-prismjs-copy="Copy">
-                        code {
-                            /* Inline code */
-                            background: #f8f9fa;
-                            padding: 2px 4px;
-                            border-radius: 3px;
-                            font-size: 0.9em;
-                        }
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-css" data-prismjs-copy="Copy">
+                      code {
+                          /* Inline code */
+                          background: #f8f9fa;
+                          padding: 2px 4px;
+                          border-radius: 3px;
+                          font-size: 0.9em;
+                      }
 
-                        pre code {
-                            /* Block code - reset inline styles */
-                            background: transparent;
-                            padding: 0;
-                            border-radius: 0;
-                            font-size: inherit;
-                        }                  
-                      </code>
-                    </pre>
-                  </div>
+                      pre code {
+                          /* Block code - reset inline styles */
+                          background: transparent;
+                          padding: 0;
+                          border-radius: 0;
+                          font-size: inherit;
+                      }                  
+                    </code>
+                  </pre>
                 </div>
-                <!-- Estilos base modernos para <code> fin -->
+                <!-- Estilos base modernos para <code class="language-html"> fin -->
               </div>
-              <!-- Alternativas CSS recomendadas <code> fin -->
-              <hr class="subtle-divider" />
-
-              <!-- Etiquetas HTML <code> Código de Programación Fin -->
+              <!-- Alternativas CSS recomendadas <code class="language-html"> fin -->
             </div>
+            <!-- Etiquetas HTML <code class="language-html"> Código de Programación Fin -->
+
             <!-- Etiquetas HTML <kbd> Entrada del Teclado -->
             <div id="etiquetas-html-kbd-entrada-del-teclado" class="mt-5">
               <h2 class="mt-1">Etiquetas HTML &lt;kbd> Entrada del Teclado</h2>
@@ -3361,9 +3496,8 @@
               <div>
                 <h3>Accesibilidad y lectores de pantalla &lt;kbd></h3>
                 <p>
-                  El elemento
-                  <code class="language-html">&lt;kbd></code> tiene un propósito
-                  semántico que beneficia la accesibilidad:
+                  El elemento <code class="language-html">&lt;kbd></code> tiene
+                  un propósito semántico que beneficia la accesibilidad:
                 </p>
                 <ul>
                   <li>
@@ -3409,204 +3543,293 @@
                   La mayoría de navegadores aplican estos estilos por defecto al
                   elemento <code class="language-html">&lt;kbd></code>:
                 </p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-css" data-prismjs-copy="Copy">
-                      kbd {
-                          font-family: monospace;
-                          font-size: smaller;
-                          background-color: #f0f0f0;
-                          border: 1px solid #ccc;
-                          border-radius: 3px;
-                          padding: 2px 4px;
-                          box-shadow: inset 0 -1px 0 rgba(0,0,0,0.25);
-                          display: inline;
-                      }
-                    </code>
-                  </pre>
-                </div>
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-css" data-prismjs-copy="Copy">
+                    kbd {
+                        font-family: monospace;
+                        font-size: smaller;
+                        background-color: #f0f0f0;
+                        border: 1px solid #ccc;
+                        border-radius: 3px;
+                        padding: 2px 4px;
+                        box-shadow: inset 0 -1px 0 rgba(0,0,0,0.25);
+                        display: inline;
+                    }
+                  </code>
+                </pre>
               </div>
               <!-- Configuración CSS por Defecto <kbd> fin -->
 
               <!-- Ejemplos de código <kbd> -->
               <div>
                 <h3>Ejemplos de código &lt;kbd></h3>
-                <!-- Ejemplo -->
-                <div class="ej-ejemplo">
-                  <div class="row ej-ejecutado mt-3">
-                    <!-- código ejecutado -->
-                    <div>
-                      <div>
-                        <p class="h3">Teclas individuales</p>
-                        <p>
-                          Presiona <kbd>Enter</kbd> para confirmar. Usa las
-                          teclas de dirección: <kbd>↑</kbd> <kbd>↓</kbd>
-                          <kbd>←</kbd> <kbd>→</kbd>. Teclas de función:
-                          <kbd>F1</kbd>, <kbd>F5</kbd>, <kbd>F12</kbd>
-                        </p>
-                        <p class="h3">Combinaciones de teclas</p>
-                        <p>
-                          Copia con <kbd>Ctrl+C</kbd> y pega con
-                          <kbd>Ctrl+V</kbd>. Cambia de ventana con
-                          <kbd>Alt+Tab</kbd>. Abre el administrador de tareas:
-                          <kbd>Ctrl+Shift+Esc</kbd>. En Mac:
-                          <kbd>⌘+Space</kbd> para Spotlight
-                        </p>
-                      </div>
-
-                      <div>
-                        <p class="h3">Comandos de terminal</p>
-                        <div class="ej-instructions">
-                          <p>Para instalar las dependencias del proyecto:</p>
-                          <div class="ej-code-block">
-                            $ <kbd>npm install</kbd>
-                          </div>
-                        </div>
-
-                        <div class="ej-instructions">
-                          <p>Para ver el historial de git:</p>
-                          <div class="ej-code-block">
-                            $ <kbd>git log --oneline</kbd>
-                          </div>
-                        </div>
-                        <div class="ej-instructions">
-                          <p>Para crear un nuevo directorio:</p>
-                          <div class="ej-code-block">
-                            $ <kbd>mkdir mi-proyecto</kbd>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div>
-                        <p class="h3">Instrucciones paso a paso</p>
-                        <h4>Para crear un nuevo documento:</h4>
-                        <ol>
-                          <li>
-                            Presiona <kbd>Ctrl+N</kbd> para abrir un nuevo
-                            documento
-                          </li>
-                          <li>Escribe tu contenido</li>
-                          <li>Guarda con <kbd>Ctrl+S</kbd></li>
-                          <li>Si necesitas ayuda, presiona <kbd>F1</kbd></li>
-                        </ol>
-
-                        <p class="h3">Teclas especiales y símbolos</p>
-                        <p>Tecla Windows: <kbd>⊞ Win</kbd></p>
-                        <p>Tecla Comando (Mac): <kbd>⌘ Cmd</kbd></p>
-                        <p>Tecla Option (Mac): <kbd>⌥ Opt</kbd></p>
-                        <p>Tecla Control: <kbd>Ctrl</kbd></p>
-                        <p>Tecla Alt: <kbd>Alt</kbd></p>
-                        <p>Tecla Shift: <kbd>⇧ Shift</kbd></p>
-                        <p>Tecla Tab: <kbd>⇥ Tab</kbd></p>
-                        <p>Tecla Escape: <kbd>Esc</kbd></p>
-                      </div>
-                    </div>
-                    <!-- código ejecutado fin -->
-                  </div>
+                <!-- Ejemplos de código -->
+                <div class="code border border-1 border-light p-3 rounded-2">
                   <div class="row">
-                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
-                      <!-- código HTML -->
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-html" data-prismjs-copy="Copy">
-                       <div>
-                        &lt;p class="h3">Teclas individuales&lt;/p>
-                        &lt;p>
-                          Presiona &lt;kbd>Enter&lt;/kbd> para confirmar. Usa las
-                          teclas de dirección: &lt;kbd>↑&lt;/kbd> &lt;kbd>↓&lt;/kbd>
-                          &lt;kbd>←&lt;/kbd> &lt;kbd>→&lt;/kbd>. Teclas de función:
-                          &lt;kbd>F1&lt;/kbd>, &lt;kbd>F5&lt;/kbd>, &lt;kbd>F12&lt;/kbd>
-                        &lt;/p>
-                        &lt;p class="h3">Combinaciones de teclas&lt;/p>
-                        &lt;p>
-                          Copia con &lt;kbd>Ctrl+C&lt;/kbd> y pega con
-                          &lt;kbd>Ctrl+V&lt;/kbd>. Cambia de ventana con
-                          &lt;kbd>Alt+Tab&lt;/kbd>. Abre el administrador de tareas:
-                          &lt;kbd>Ctrl+Shift+Esc&lt;/kbd>. En Mac:
-                          &lt;kbd>⌘+Space&lt;/kbd> para Spotlight
-                        &lt;/p>
-                      &lt;/div>
-
-                      &lt;div>
-                        &lt;p class="h3">Comandos de terminal&lt;/p>
-                        &lt;div class="instructions">
-                          &lt;p>Para instalar las dependencias del proyecto:&lt;/p>
-                          &lt;div class="code-block">
-                            $ &lt;kbd>npm install&lt;/kbd>
+                    <!-- Contenedor de código: ocupa toda la fila en móvil, mitad en lg -->
+                    <div class="col-12 col-lg-6">
+                      <div class="codes">
+                        <div class="code-html code-html-letrero mb-3">
+                          <!-- Aquí va el código HTML -->
+                          &lt;div class="example"> <br />
+                          &nbsp;&lt;h3>Teclas individuales&lt;/h3> <br />
+                          &nbsp;&lt;p>Presiona &lt;kbd>Enter&lt;/kbd> para
+                          confirmar.&lt;/p> <br />
+                          &nbsp; &lt;p> Usa las teclas de dirección:
+                          &lt;kbd>↑&lt;/kbd> &lt;kbd>↓&lt;/kbd>
+                          &lt;kbd>←&lt;/kbd> &lt;kbd>→&lt;/kbd> &lt;/p> <br />
+                          &nbsp;&lt;p> Teclas de función: &lt;kbd>F1&lt;/kbd>,
+                          &lt;kbd>F5&lt;/kbd>, &lt;kbd>F12&lt;/kbd> &lt;/p><br />
+                          &lt;/div> <br />
+                          <br />
+                          &lt;div class="example"> <br />
+                          &nbsp;&lt;h3>Combinaciones de teclas&lt;/h3> <br />
+                          &nbsp;&lt;p> Copia con &lt;kbd>Ctrl+C&lt;/kbd> y pega
+                          con &lt;kbd>Ctrl+V&lt;/kbd> &lt;/p> <br />
+                          &nbsp;&lt;p>Cambia de ventana con
+                          &lt;kbd>Alt+Tab&lt;/kbd>&lt;/p> &lt;p> Abre el
+                          administrador de tareas:
+                          &lt;kbd>Ctrl+Shift+Esc&lt;/kbd> &lt;/p> <br />
+                          &nbsp;&lt;p>En Mac: &lt;kbd>⌘+Space&lt;/kbd> para
+                          Spotlight&lt;/p> <br />
+                          &lt;/div> <br />
+                          <br />
+                          &lt;div class="example"> <br />
+                          &nbsp;&lt;h3>Comandos de terminal&lt;/h3> <br />
+                          &nbsp;&lt;div class="instructions"> <br />
+                          &nbsp;&nbsp;&lt;p> Para instalar las dependencias del
+                          proyecto: &lt;/p> <br />
+                          &nbsp;&nbsp;&lt;div class="code-block"> $ &lt;kbd>npm
+                          install&lt;/kbd>&lt;/div> <br />
+                          &lt;/div> <br />
+                          &lt;div class="instructions"> <br />
+                          &nbsp;&nbsp;&lt;p>Para ver el historial de git:&lt;/p>
+                          <br />
+                          &nbsp;&lt;div class="code-block">$ &lt;kbd>git log
+                          --oneline&lt;/kbd>&lt;/div> <br />
+                          &lt;/div> <br />
+                          &lt;div class="instructions"> <br />
+                          &nbsp;&lt;p>Para crear un nuevo directorio:&lt;/p>
+                          <br />
+                          &nbsp;&lt;div class="code-block"> $ &lt;kbd>mkdir
+                          mi-proyecto&lt;/kbd>&lt;/div> <br />
+                          &nbsp;&lt;/div> <br />
+                          &lt;/div> <br />
+                          <br />
+                          &lt;div class="example"> <br />
+                          &nbsp;&lt;h3>Atajos de editor de código&lt;/h3> <br />
+                          &nbsp;&lt;p>Comenta línea:
+                          &lt;kbd>Ctrl+/&lt;/kbd>&lt;/p>
+                          <br />
+                          &nbsp;&lt;p>Buscar en archivo:
+                          &lt;kbd>Ctrl+F&lt;/kbd>&lt;/p> <br />
+                          &nbsp;&lt;p>Buscar y reemplazar:
+                          &lt;kbd>Ctrl+H&lt;/kbd>&lt;/p> <br />
+                          &nbsp;&lt;p>Formato automático:
+                          &lt;kbd>Shift+Alt+F&lt;/kbd>&lt;/p> <br />
+                          &nbsp;&lt;p>Duplicar línea:
+                          &lt;kbd>Shift+Alt+↓&lt;/kbd>&lt;/p> <br />
+                          &lt;/div> <br />
+                          <br />
+                          &lt;div class="example"> <br />
+                          &nbsp;&lt;h3>Navegación web&lt;/h3> <br />
+                          &nbsp;&lt;p>Nueva pestaña:
+                          &lt;kbd>Ctrl+T&lt;/kbd>&lt;/p>
+                          <br />
+                          &nbsp;&lt;p>Cerrar pestaña:
+                          &lt;kbd>Ctrl+W&lt;/kbd>&lt;/p>
+                          <br />
+                          &nbsp;&lt;p> Recargar página: &lt;kbd>F5&lt;/kbd> o
+                          &lt;kbd>Ctrl+R&lt;/kbd> &lt;/p> <br />
+                          &nbsp;&lt;p> Abrir herramientas de desarrollador:
+                          &lt;kbd>F12&lt;/kbd> &lt;/p> <br />
+                          &nbsp;&lt;p> Ir a la barra de direcciones:
+                          &lt;kbd>Ctrl+L&lt;/kbd> &lt;/p> <br />
+                          &lt;/div> <br />
+                          <br />
+                          &lt;div class="example"> <br />
+                          &nbsp;&lt;h3>Instrucciones paso a paso&lt;/h3> <br />
+                          &nbsp;&lt;div class="instructions"> <br />
+                          &nbsp;&nbsp;&lt;h4>Para crear un nuevo
+                          documento:&lt;/h4> <br />
+                          &nbsp;&nbsp;&lt;ol> <br />
+                          &nbsp;&nbsp;&nbsp;&lt;li> Presiona
+                          &lt;kbd>Ctrl+N&lt;/kbd> para abrir un nuevo documento
+                          &lt;/li> <br />
+                          &nbsp;&nbsp;&nbsp;&lt;li>Escribe tu contenido&lt;/li>
+                          <br />
+                          &nbsp;&nbsp;&nbsp;&lt;li>Guarda con
+                          &lt;kbd>Ctrl+S&lt;/kbd>&lt;/li> <br />
+                          &nbsp;&nbsp;&nbsp;&lt;li> Si necesitas ayuda, presiona
+                          &lt;kbd>F1&lt;/kbd> &lt;/li> <br />
+                          &nbsp;&nbsp;&lt;/ol> <br />
+                          &nbsp;&lt;/div> <br />
+                          &lt;/div> <br />
+                          <br />
+                          &lt;div class="example"> <br />
+                          &nbsp;&lt;h3>Teclas especiales y símbolos&lt;/h3>
+                          <br />
+                          &nbsp;&lt;p>Tecla Windows: &lt;kbd>⊞
+                          Win&lt;/kbd>&lt;/p>
+                          <br />
+                          &nbsp;&lt;p>Tecla Comando (Mac): &lt;kbd>⌘
+                          Cmd&lt;/kbd>&lt;/p> <br />
+                          &nbsp;&lt;p>Tecla Option (Mac): &lt;kbd>⌥
+                          Opt&lt;/kbd>&lt;/p> <br />
+                          &nbsp;&lt;p>Tecla Control:
+                          &lt;kbd>Ctrl&lt;/kbd>&lt;/p>
+                          <br />
+                          &nbsp;&lt;p>Tecla Alt: &lt;kbd>Alt&lt;/kbd>&lt;/p>
+                          <br />
+                          &nbsp;&lt;p>Tecla Shift: &lt;kbd>⇧
+                          Shift&lt;/kbd>&lt;/p>
+                          <br />
+                          &nbsp;&lt;p>Tecla Tab: &lt;kbd>⇥ Tab&lt;/kbd>&lt;/p>
+                          <br />
+                          &nbsp;&lt;p>Tecla Escape: &lt;kbd>Esc&lt;/kbd>&lt;/p>
+                          <br />
                           &lt;/div>
-                        &lt;/div>
 
-                        &lt;div class="instructions">
-                          &lt;p>Para ver el historial de git:&lt;/p>
-                          &lt;div class="code-block">
-                            $ &lt;kbd>git log --oneline&lt;/kbd>
-                          &lt;/div>
-                        &lt;/div>
-                        &lt;div class="instructions">
-                          &lt;p>Para crear un nuevo directorio:&lt;/p>
-                          &lt;div class="code-block">
-                            $ &lt;kbd>mkdir mi-proyecto&lt;/kbd>
-                          &lt;/div>
-                        &lt;/div>
-                      &lt;/div>
-
-                      &lt;div>
-                        &lt;p class="h3">Instrucciones paso a paso&lt;/p>
-                        &lt;h4>Para crear un nuevo documento:&lt;/h4>
-                        &lt;ol>
-                          &lt;li>
-                            Presiona &lt;kbd>Ctrl+N&lt;/kbd> para abrir un nuevo
-                            documento
-                          &lt;/li>
-                          &lt;li>Escribe tu contenido&lt;/li>
-                          &lt;li>Guarda con &lt;kbd>Ctrl+S&lt;/kbd>&lt;/li>
-                          &lt;li>Si necesitas ayuda, presiona &lt;kbd>F1&lt;/kbd>&lt;/li>
-                        &lt;/ol>
-
-                        &lt;p class="h3">Teclas especiales y símbolos&lt;/p>
-                        &lt;p>Tecla Windows: &lt;kbd>⊞ Win&lt;/kbd>&lt;/p>
-                        &lt;p>Tecla Comando (Mac): &lt;kbd>⌘ Cmd&lt;/kbd>&lt;/p>
-                        &lt;p>Tecla Option (Mac): &lt;kbd>⌥ Opt&lt;/kbd>&lt;/p>
-                        &lt;p>Tecla Control: &lt;kbd>Ctrl&lt;/kbd>&lt;/p>
-                        &lt;p>Tecla Alt: &lt;kbd>Alt&lt;/kbd>&lt;/p>
-                        &lt;p>Tecla Shift: &lt;kbd>⇧ Shift&lt;/kbd>&lt;/p>
-                        &lt;p>Tecla Tab: &lt;kbd>⇥ Tab&lt;/kbd>&lt;/p>
-                        &lt;p>Tecla Escape: &lt;kbd>Esc&lt;/kbd>&lt;/p>
-                      &lt;/div>
-                       </div>    
-                        </code>
-                      </pre>
-                      <!-- código HTML -->
+                          <!-- Aquí va el código HTML fin-->
+                        </div>
+                        <div class="code-css code-css-letrero">
+                          <!-- Aquí va el código CSS -->
+                          .instructions { <br />
+                          &nbsp;background: #e8f4fd; <br />
+                          &nbsp;padding: 15px; <br />
+                          &nbsp;border-radius: 8px; <br />
+                          &nbsp;margin: 15px 0; <br />
+                          } <br />
+                          <br />
+                          .code-block { <br />
+                          &nbsp;background: #2d3748; <br />
+                          &nbsp;color: #e2e8f0; <br />
+                          &nbsp;padding: 15px; <br />
+                          &nbsp;border-radius: 6px; <br />
+                          &nbsp;font-family: "Courier New", monospace; <br />
+                          &nbsp;margin: 10px 0; <br />
+                          &nbsp;overflow-x: auto; <br />
+                          }
+                          <!-- Aquí va el código CSS fin-->
+                        </div>
+                      </div>
                     </div>
-                    <div class="ej-code-css col-lg-6 mb-3">
-                      <!-- código CSS -->
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-css" data-prismjs-copy="Copy">
-                          <div>
-                            .instructions {
-                              background: #e8f4fd;
-                              padding: 15px;
-                              border-radius: 8px;
-                              margin: 15px 0;
-                              color: var(--color-fondo)
-                            }
+                    <!-- Contenedor de resultado: ocupa toda la fila en móvil, mitad en lg -->
+                    <div class="col-12 col-lg-6 mt-3 mt-lg-0">
+                      <div class="code-result results">
+                        <!-- Aquí va el resultado -->
+                        <div>
+                          <div class="ej-example">
+                            <h3>Teclas individuales</h3>
+                            <p>Presiona <kbd>Enter</kbd> para confirmar.</p>
+                            <p>
+                              Usa las teclas de dirección: <kbd>↑</kbd>
+                              <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd>
+                            </p>
+                            <p>
+                              Teclas de función: <kbd>F1</kbd>, <kbd>F5</kbd>,
+                              <kbd>F12</kbd>
+                            </p>
+                          </div>
 
-                            .code-block {
-                              background: #2d3748;
-                              color: #e2e8f0;
-                              padding: 15px;
-                              border-radius: 6px;
-                              font-family: "Courier New", monospace;
-                              margin: 10px 0;
-                              overflow-x: auto;
-                            }                              
-                          </div>        
-                        </code>
-                        </pre>
-                      <!-- código HTML -->
+                          <div class="ej-example">
+                            <h3>Combinaciones de teclas</h3>
+                            <p>
+                              Copia con <kbd>Ctrl+C</kbd> y pega con
+                              <kbd>Ctrl+V</kbd>
+                            </p>
+                            <p>Cambia de ventana con <kbd>Alt+Tab</kbd></p>
+                            <p>
+                              Abre el administrador de tareas:
+                              <kbd>Ctrl+Shift+Esc</kbd>
+                            </p>
+                            <p>En Mac: <kbd>⌘+Space</kbd> para Spotlight</p>
+                          </div>
+
+                          <div class="ej-example">
+                            <h3>Comandos de terminal</h3>
+                            <div class="ej-instructions">
+                              <p>
+                                Para instalar las dependencias del proyecto:
+                              </p>
+                              <div class="ej-code-block">
+                                $ <kbd>npm install</kbd>
+                              </div>
+                            </div>
+                            <div class="ej-instructions">
+                              <p>Para ver el historial de git:</p>
+                              <div class="ej-code-block">
+                                $ <kbd>git log --oneline</kbd>
+                              </div>
+                            </div>
+                            <div class="ej-instructions">
+                              <p>Para crear un nuevo directorio:</p>
+                              <div class="ej-code-block">
+                                $ <kbd>mkdir mi-proyecto</kbd>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="ej-example">
+                            <h3>Atajos de editor de código</h3>
+                            <p>Comenta línea: <kbd>Ctrl+/</kbd></p>
+                            <p>Buscar en archivo: <kbd>Ctrl+F</kbd></p>
+                            <p>Buscar y reemplazar: <kbd>Ctrl+H</kbd></p>
+                            <p>Formato automático: <kbd>Shift+Alt+F</kbd></p>
+                            <p>Duplicar línea: <kbd>Shift+Alt+↓</kbd></p>
+                          </div>
+
+                          <div class="ej-example">
+                            <h3>Navegación web</h3>
+                            <p>Nueva pestaña: <kbd>Ctrl+T</kbd></p>
+                            <p>Cerrar pestaña: <kbd>Ctrl+W</kbd></p>
+                            <p>
+                              Recargar página: <kbd>F5</kbd> o <kbd>Ctrl+R</kbd>
+                            </p>
+                            <p>
+                              Abrir herramientas de desarrollador:
+                              <kbd>F12</kbd>
+                            </p>
+                            <p>
+                              Ir a la barra de direcciones: <kbd>Ctrl+L</kbd>
+                            </p>
+                          </div>
+
+                          <div class="ej-example">
+                            <h3>Instrucciones paso a paso</h3>
+                            <div class="ej-instructions">
+                              <h4>Para crear un nuevo documento:</h4>
+                              <ol>
+                                <li>
+                                  Presiona <kbd>Ctrl+N</kbd> para abrir un nuevo
+                                  documento
+                                </li>
+                                <li>Escribe tu contenido</li>
+                                <li>Guarda con <kbd>Ctrl+S</kbd></li>
+                                <li>
+                                  Si necesitas ayuda, presiona <kbd>F1</kbd>
+                                </li>
+                              </ol>
+                            </div>
+                          </div>
+                          <div class="ej-example">
+                            <h3>Teclas especiales y símbolos</h3>
+                            <p>Tecla Windows: <kbd>⊞ Win</kbd></p>
+                            <p>Tecla Comando (Mac): <kbd>⌘ Cmd</kbd></p>
+                            <p>Tecla Option (Mac): <kbd>⌥ Opt</kbd></p>
+                            <p>Tecla Control: <kbd>Ctrl</kbd></p>
+                            <p>Tecla Alt: <kbd>Alt</kbd></p>
+                            <p>Tecla Shift: <kbd>⇧ Shift</kbd></p>
+                            <p>Tecla Tab: <kbd>⇥ Tab</kbd></p>
+                            <p>Tecla Escape: <kbd>Esc</kbd></p>
+                          </div>
+                        </div>
+                        <!-- Aquí va el resultado fin -->
+                      </div>
                     </div>
                   </div>
                 </div>
-                <!-- Ejemplo fin -->
+                <!-- Ejemplos de código fin -->
               </div>
               <!-- Ejemplos de código <kbd> fin -->
 
@@ -3646,8 +3869,8 @@
                   </li>
                   <li>
                     Asegura accesibilidad con texto descriptivo, como
-                    <code class="language-html">&lt;kbd>Tab&lt;/kbd></code>
-                    para navegar entre elementos.
+                    <code class="language-html">&lt;kbd>Tab&lt;/kbd></code> para
+                    navegar entre elementos.
                   </li>
                 </ul>
               </div>
@@ -3657,52 +3880,47 @@
               <div>
                 <h3>Alternativas CSS recomendadas &lt;kbd></h3>
                 <p>Estilo moderno con gradiente sutil:</p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-css" data-prismjs-copy="Copy">
-                      kbd {
-                          background: linear-gradient(145deg, #ffffff, #f0f0f0);
-                          border: 1px solid #d1d5db;
-                          border-radius: 6px;
-                          padding: 4px 8px;
-                          font-family: 'SF Mono', 'Monaco', 'Cascadia Code', monospace;
-                          font-size: 0.875em;
-                          font-weight: 600;
-                          color: #374151;
-                          box-shadow: 
-                              0 1px 3px rgba(0,0,0,0.1),
-                              inset 0 1px 0 rgba(255,255,255,0.7);
-                          transition: transform 0.2s ease;
-                      }
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-css" data-prismjs-copy="Copy">
+                    kbd {
+                        background: linear-gradient(145deg, #ffffff, #f0f0f0);
+                        border: 1px solid #d1d5db;
+                        border-radius: 6px;
+                        padding: 4px 8px;
+                        font-family: 'SF Mono', 'Monaco', 'Cascadia Code', monospace;
+                        font-size: 0.875em;
+                        font-weight: 600;
+                        color: #374151;
+                        box-shadow: 
+                            0 1px 3px rgba(0,0,0,0.1),
+                            inset 0 1px 0 rgba(255,255,255,0.7);
+                        transition: transform 0.2s ease;
+                    }
 
-                      kbd:hover {
-                          transform: translateY(-1px);
-                      }
-                    </code>
-                  </pre>
-                </div>
+                    kbd:hover {
+                        transform: translateY(-1px);
+                    }
+                  </code>
+                </pre>
                 <p>Para modo oscuro:</p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-css" data-prismjs-copy="Copy">
-                      @media (prefers-color-scheme: dark) {
-                          kbd {
-                              background: linear-gradient(145deg, #374151, #1f2937);
-                              border-color: #6b7280;
-                              color: #f9fafb;
-                              box-shadow: 
-                                  0 1px 3px rgba(0,0,0,0.3),
-                                  inset 0 1px 0 rgba(255,255,255,0.1);
-                          }
-                      }
-                    </code>
-                  </pre>
-                </div>
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-css" data-prismjs-copy="Copy">
+                    @media (prefers-color-scheme: dark) {
+                        kbd {
+                            background: linear-gradient(145deg, #374151, #1f2937);
+                            border-color: #6b7280;
+                            color: #f9fafb;
+                            box-shadow: 
+                                0 1px 3px rgba(0,0,0,0.3),
+                                inset 0 1px 0 rgba(255,255,255,0.1);
+                        }
+                    }
+                  </code>
+                </pre>
               </div>
               <!-- Alternativas CSS recomendadas <kbd> fin -->
             </div>
             <!-- Etiquetas HTML <kbd> Entrada del Teclado Fin -->
-            <hr class="subtle-divider" />
 
             <!-- Etiquetas HTML <samp> Salida de un programa -->
             <div id="etiquetas-html-samp-salida-de-un-programa" class="mt-5">
@@ -3713,8 +3931,8 @@
               <div>
                 <h3>Definición &lt;samp></h3>
                 <p>
-                  El elemento HTML
-                  <code class="language-html">&lt;samp></code>, derivado de
+                  El elemento HTML <code class="language-html">&lt;samp></code>,
+                  derivado de
                   <span class="fst-italic">sample output</span> (salida de
                   muestra), se utiliza para marcar texto en línea que representa
                   una muestra o un ejemplo de salida generada por un programa,
@@ -3793,210 +4011,202 @@
                   estilo similar al de
                   <code class="language-html">&lt;code></code>, es decir:
                 </p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-css" data-prismjs-copy="Copy">
-                      samp {
-                          font-family: monospace;
-                          font-size: 1em;
-                          white-space: pre;
-                          display: inline;
-                      }
-                    </code>
-                  </pre>
-                </div>
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-css" data-prismjs-copy="Copy">
+                    samp {
+                        font-family: monospace;
+                        font-size: 1em;
+                        white-space: pre;
+                        display: inline;
+                    }
+                  </code>
+                </pre>
               </div>
               <!-- Configuración CSS por Defecto <samp> fin -->
 
               <!-- Ejemplos de código <samp> -->
               <div>
                 <h3>Ejemplos de código &lt;samp></h3>
-                <!-- Ejemplo -->
-                <div class="ej-ejemplo">
-                  <div class="row ej-ejecutado mt-3">
-                    <!-- código ejecutado -->
-                    <div>
-                      <h3>Salida básica de terminal</h3>
-                      <p>
-                        Cuando se ejecuta el comando
-                        <code class="language-html">ls -la</code>, se obtiene:
-                      </p>
-                      <samp>
-                        total 24 drwxr-xr-x 3 usuario staff 96 Jun 6 10:30 .
-                        drwxr-xr-x 15 usuario staff 480 Jun 6 10:29 ..
-                        -rw-r--r-- 1 usuario staff 1024 Jun 6 10:30 archivo.txt
-                      </samp>
-                    </div>
-
-                    <div>
-                      <h3>Mensajes de error del sistema</h3>
-                      <p>Error típico de permisos:</p>
-                      <samp class="ej-error-output"
-                        >Permission denied: cannot access
-                        '/root/protected_file'</samp
-                      >
-
-                      <p>Error de archivo no encontrado:</p>
-                      <samp class="ej-error-output"
-                        >bash: comando_inexistente: command not found</samp
-                      >
-                    </div>
-
-                    <div>
-                      <h3>Salida de compilador</h3>
-                      <p>Mensaje de compilación exitosa:</p>
-                      <samp class="ej-success-output"
-                        >Build successful! ✓ Compiled successfully in 2.34s ✓
-                        Assets optimized ✓ Ready for production</samp
-                      >
-
-                      <p>Errores de compilación:</p>
-                      <samp class="ej-error-output"
-                        >Error: Syntax error in main.js:15:7 Expected ';' but
-                        found 'const' Warning: Unused variable 'unusedVar' in
-                        utils.js:42</samp
-                      >
-                    </div>
-                    <div>
-                      <h3>Combinación con &lt;code&gt;</h3>
-                      <p>Para mostrar código y su salida:</p>
-                      <p>
-                        Ejecuta:
-                        <code class="language-html">node --version</code>
-                      </p>
-                      <p>Salida: <samp>v18.17.0</samp></p>
-
-                      <div class="ej-code-block">
-                        <code class="language-html"
-                          >console.log("Hola mundo");</code
-                        >
-                      </div>
-                      <p>Resultado:</p>
-                      <samp class="ej-custom-samp">Hola mundo</samp>
-                    </div>
-                    <div>
-                      <h3>Con atributos ARIA para accesibilidad</h3>
-                      <p>Salida de consulta a base de datos:</p>
-                      <samp
-                        aria-label="Resultado de consulta SQL con 3 registros encontrados"
-                      >
-                        Query executed successfully Rows affected: 3 Execution
-                        time: 0.045s
-                      </samp>
-                    </div>
-
-                    <!-- código ejecutado fin -->
-                  </div>
+                <!-- Ejemplos de código -->
+                <div class="code border border-1 border-light p-3 rounded-2">
                   <div class="row">
-                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
-                      <!-- código HTML -->
-                      <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-html" data-prismjs-copy="Copy">
-                            <div>
-                              &lt;div>
-                                &lt;h3>Salida básica de terminal&lt;/h3>
-                                &lt;p>
-                                  Cuando se ejecuta el comando
-                                  &lt;code class="language-html">ls -la&lt;/code>, se obtiene:
-                                &lt;/p>
-                                &lt;samp>
-                                  total 24 drwxr-xr-x 3 usuario staff 96 Jun 6 10:30 .
-                                  drwxr-xr-x 15 usuario staff 480 Jun 6 10:29 ..
-                                  -rw-r--r-- 1 usuario staff 1024 Jun 6 10:30 archivo.txt
-                                &lt;/samp>
-                              &lt;/div>
-
-                              &lt;div>
-                                &lt;h3>Mensajes de error del sistema&lt;/h3>
-                                &lt;p>Error típico de permisos:&lt;/p>
-                                &lt;samp class="error-output">Permission denied: cannot access
-                                  '/root/protected_file'&lt;/samp>
-
-                                &lt;p>Error de archivo no encontrado:&lt;/p>
-                                &lt;samp class="error-output">bash: comando_inexistente: command not found&lt;/samp>
-                              &lt;/div>
-
-                              &lt;div>
-                                &lt;h3>Salida de compilador&lt;/h3>
-                                &lt;p>Mensaje de compilación exitosa:&lt;/p>
-                                &lt;samp class="success-output">Build successful! ✓ Compiled successfully in 2.34s ✓
-                                  Assets optimized ✓ Ready for production&lt;/samp>
-
-                                &lt;p>Errores de compilación:&lt;/p>
-                                &lt;samp class="error-output">Error: Syntax error in main.js:15:7 Expected ';' but
-                                  found 'const' Warning: Unused variable 'unusedVar' in
-                                  utils.js:42&lt;/samp>
-                              &lt;/div>
-                              &lt;div>
-                                &lt;h3>Combinación con &lt;code&gt;&lt;/h3>
-                                &lt;p>Para mostrar código y su salida:&lt;/p>
-                                &lt;p>
-                                  Ejecuta:
-                                  &lt;code class="language-html">node --version&lt;/code>
-                                &lt;/p>
-                                &lt;p>Salida: &lt;samp>v18.17.0&lt;/samp>&lt;/p>
-
-                                &lt;div class="code-block">
-                                  &lt;code class="language-html">console.log("Hola mundo");&lt;/code>
-                                &lt;/div>
-                                &lt;p>Resultado:&lt;/p>
-                                &lt;samp class="custom-samp">Hola mundo&lt;/samp>
-                              &lt;/div>
-                              &lt;div>
-                                &lt;h3>Con atributos ARIA para accesibilidad&lt;/h3>
-                                &lt;p>Salida de consulta a base de datos:&lt;/p>
-                                &lt;samp aria-label="Resultado de consulta SQL con 3 registros encontrados">
-                                  Query executed successfully Rows affected: 3 Execution
-                                  time: 0.045s
-                                &lt;/samp>
-                              &lt;/div>                              
-                            </div>     
-                          </code>
-                        </pre>
-                      <!-- código HTML -->
+                    <!-- Contenedor de código: ocupa toda la fila en móvil, mitad en lg -->
+                    <div class="col-12 col-lg-6">
+                      <div class="codes">
+                        <div class="code-html code-html-letrero mb-3">
+                          <!-- Aquí va el código HTML -->
+                          &lt;div class="example"> <br />
+                          &nbsp;&lt;h3>Salida básica de terminal&lt;/h3> <br />
+                          &nbsp;&lt;p>Cuando se ejecuta el comando &lt;code>ls
+                          -la&lt;/code>, se obtiene:&lt;/p> <br />
+                          &nbsp;&lt;samp> total 24 drwxr-xr-x 3 usuario staff 96
+                          Jun 6 10:30 . drwxr-xr-x 15 usuario staff 480 Jun 6
+                          10:29 .. -rw-r--r-- 1 usuario staff 1024 Jun 6 10:30
+                          archivo.txt &lt;/samp> <br />
+                          &lt;/div>
+                          <br /><br />
+                          &lt;div class="example"> <br />
+                          &nbsp;&lt;h3>Mensajes de error del sistema&lt;/h3>
+                          <br />
+                          &nbsp;&lt;p>Error típico de permisos:&lt;/p> <br />
+                          &nbsp;&lt;samp class="error-output">Permission denied:
+                          cannot access '/root/protected_file'&lt;/samp> <br />
+                          &nbsp;&lt;p>Error de archivo no encontrado:&lt;/p>
+                          <br />
+                          &nbsp;&lt;samp class="error-output">bash:
+                          comando_inexistente: command not found&lt;/samp><br />
+                          &lt;/div>
+                          <br /><br />
+                          &lt;div class="example"><br />
+                          &lt;h3>Salida de compilador&lt;/h3><br />
+                          &lt;p>Mensaje de compilación exitosa:&lt;/p><br />
+                          &lt;samp class="success-output">Build successful! ✓
+                          Compiled successfully in 2.34s ✓ Assets optimized ✓
+                          Ready for production&lt;/samp><br />
+                          &lt;p>Errores de compilación:&lt;/p><br />
+                          &lt;samp class="error-output">Error: Syntax error in
+                          main.js:15:7 Expected ';' but found 'const' Warning:
+                          Unused variable 'unusedVar' in
+                          utils.js:42&lt;/samp><br />
+                          &lt;/div>
+                          <br /><br />
+                          &lt;div class="example"> <br />
+                          &nbsp;&lt;h3>Combinación con
+                          &nbsp;&lt;code&gt;&lt;/h3> <br />
+                          &nbsp;&lt;p>Para mostrar código y su salida:&lt;/p>
+                          <br />
+                          &nbsp;&lt;p>Ejecuta: &lt;code>node
+                          --version&lt;/code>&lt;/p> <br />
+                          &nbsp;&lt;p>Salida: &lt;samp>v18.17.0&lt;/samp>&lt;/p>
+                          <br />
+                          &nbsp;&lt;div class="code-block"> <br />
+                          &nbsp;&nbsp;&lt;code>console.log("Hola
+                          mundo");&lt;/code> <br />
+                          &nbsp;&lt;/div> <br />
+                          &nbsp;&lt;p>Resultado:&lt;/p> <br />
+                          &nbsp;&lt;samp class="custom-samp">Hola
+                          mundo&lt;/samp> <br />
+                          &lt;/div>
+                          <br /><br />
+                          &lt;div class="example"> <br />
+                          &nbsp;&lt;h3>Con atributos ARIA para
+                          accesibilidad&lt;/h3><br />
+                          &nbsp;&lt;p>Salida de consulta a base de
+                          datos:&lt;/p><br />
+                          &nbsp;&lt;samp aria-label="Resultado de consulta SQL
+                          con 3 registros encontrados"> Query executed
+                          successfully Rows affected: 3 Execution time: 0.045s
+                          &lt;/samp> <br />
+                          &lt;/div>
+                          <!-- Aquí va el código HTML fin-->
+                        </div>
+                        <div class="code-css code-css-letrero">
+                          <!-- Aquí va el código CSS -->
+                          .example { <br />
+                          &nbsp;background: white; <br />
+                          &nbsp;padding: 20px; <br />
+                          &nbsp;margin: 20px 0; <br />
+                          &nbsp;border-radius: 8px; <br />
+                          &nbsp;box-shadow: 0 2px 4px rgba(0,0,0,0.1); <br />
+                          } <br />
+                          <br />
+                          .example h3 { <br />
+                          &nbsp;color: #2563eb; <br />
+                          &nbsp;margin-top: 0; <br />
+                          &nbsp;border-bottom: 2px solid #e5e7eb; <br />
+                          &nbsp;padding-bottom: 10px; <br />
+                          }
+                          <br /><br />
+                          .error-output { <br />
+                          &nbsp;background-color: #fef2f2; <br />
+                          &nbsp;color: #dc2626; <br />
+                          &nbsp;border-left: 3px solid #dc2626; <br />
+                          }
+                          <!-- Aquí va el código CSS fin-->
+                        </div>
+                      </div>
                     </div>
-                    <div class="ej-code-css col-lg-6 mb-3">
-                      <!-- código CSS -->
-                      <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-css" data-prismjs-copy="Copy">
-                            <div>
-                              .code-block {
-                                background: #2d3748;
-                                color: #e2e8f0;
-                                padding: 15px;
-                                border-radius: 6px;
-                                font-family: "Courier New", monospace;
-                                margin: 10px 0;
-                                overflow-x: auto;
-                              }
+                    <!-- Contenedor de resultado: ocupa toda la fila en móvil, mitad en lg -->
+                    <div class="col-12 col-lg-6 mt-3 mt-lg-0">
+                      <div class="code-result results">
+                        <!-- Aquí va el resultado -->
+                        <div class="ej-example">
+                          <h3>Salida básica de terminal</h3>
+                          <p>
+                            Cuando se ejecuta el comando
+                            <code class="language-html">ls -la</code>, se
+                            obtiene:
+                          </p>
+                          <samp>
+                            total 24 drwxr-xr-x 3 usuario staff 96 Jun 6 10:30 .
+                            drwxr-xr-x 15 usuario staff 480 Jun 6 10:29 ..
+                            -rw-r--r-- 1 usuario staff 1024 Jun 6 10:30
+                            archivo.txt
+                          </samp>
+                        </div>
 
-                              .error-output {
-                                background-color: #fef2f2;
-                                color: #dc2626;
-                                border-left: 3px solid #dc2626;
-                              }
+                        <div class="ej-example">
+                          <h3>Mensajes de error del sistema</h3>
+                          <p>Error típico de permisos:</p>
+                          <samp class="ej-error-output"
+                            >Permission denied: cannot access
+                            '/root/protected_file'</samp
+                          >
 
-                              .success-output {
-                                background-color: #f0fdf4;
-                                color: #16a34a;
-                                border-left: 3px solid #16a34a;
-                              }
+                          <p>Error de archivo no encontrado:</p>
+                          <samp class="ej-error-output"
+                            >bash: comando_inexistente: command not found</samp
+                          >
+                        </div>
 
-                              .custom-samp {
-                                background-color: #f1f5f9;
-                                padding: 2px 6px;
-                                border-radius: 4px;
-                                border-left: 3px solid #10b981;
-                                color: var(--color-fondo);
-                              }                              
-                            </div>       
-                          </code>
-                         </pre>
-                      <!-- código HTML -->
+                        <div class="ej-example">
+                          <h3>Salida de compilador</h3>
+                          <p>Mensaje de compilación exitosa:</p>
+                          <samp class="ej-success-output"
+                            >Build successful! ✓ Compiled successfully in 2.34s
+                            ✓ Assets optimized ✓ Ready for production</samp
+                          >
+
+                          <p>Errores de compilación:</p>
+                          <samp class="ej-error-output"
+                            >Error: Syntax error in main.js:15:7 Expected ';'
+                            but found 'const' Warning: Unused variable
+                            'unusedVar' in utils.js:42</samp
+                          >
+                        </div>
+                        <div class="ej-example">
+                          <h3>Combinación con &lt;code&gt;</h3>
+                          <p>Para mostrar código y su salida:</p>
+                          <p>
+                            Ejecuta:
+                            <code class="language-html">node --version</code>
+                          </p>
+                          <p>Salida: <samp>v18.17.0</samp></p>
+
+                          <div class="ej-code-block">
+                            <code class="language-html"
+                              >console.log("Hola mundo");</code
+                            >
+                          </div>
+                          <p>Resultado:</p>
+                          <samp class="ej-custom-samp">Hola mundo</samp>
+                        </div>
+                        <div class="ej-example">
+                          <h3>Con atributos ARIA para accesibilidad</h3>
+                          <p>Salida de consulta a base de datos:</p>
+                          <samp
+                            aria-label="Resultado de consulta SQL con 3 registros encontrados"
+                          >
+                            Query executed successfully Rows affected: 3
+                            Execution time: 0.045s
+                          </samp>
+                        </div>
+                        <!-- Aquí va el resultado fin -->
+                      </div>
                     </div>
                   </div>
                 </div>
-                <!-- Ejemplo fin -->
+                <!-- Ejemplos de código fin -->
               </div>
               <!-- Ejemplos de código <samp> fin -->
 
@@ -4039,18 +4249,16 @@
                   </li>
                   <li>
                     Dar siempre un contexto:
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-html" data-prismjs-copy="Copy">
-                          &lt;!-- Correcto: contexto claro --&gt;
-                          &lt;p>El script devolvió el siguiente error:&lt;/p>
-                          &lt;samp>FileNotFoundError: No such file or directory&lt;/samp>
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-html" data-prismjs-copy="Copy">
+                        &lt;!-- Correcto: contexto claro --&gt;
+                        &lt;p>El script devolvió el siguiente error:&lt;/p>
+                        &lt;samp>FileNotFoundError: No such file or directory&lt;/samp>
 
-                          &lt;!-- Incorrecto: sin contexto --&gt;
-                          &lt;samp>FileNotFoundError: No such file or directory&lt;/samp>
-                        </code>
-                      </pre>
-                    </div>
+                        &lt;!-- Incorrecto: sin contexto --&gt;
+                        &lt;samp>FileNotFoundError: No such file or directory&lt;/samp>
+                      </code>
+                    </pre>
                   </li>
                 </ul>
               </div>
@@ -4059,42 +4267,40 @@
               <!-- Alternativas CSS recomendadas <samp> -->
               <div>
                 <h3>Alternativas CSS recomendadas &lt;samp></h3>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-css" data-prismjs-copy="Copy">
-                      /* Clase utilitaria para texto monoespaciado */
-                      .mono-text {
-                          font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', 
-                                      Consolas, 'Courier New', monospace;
-                          font-size: 0.9em;
-                          background-color: #f6f8fa;
-                          padding: 2px 4px;
-                          border-radius: 3px;
-                      }
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-css" data-prismjs-copy="Copy">
+                    /* Clase utilitaria para texto monoespaciado */
+                    .mono-text {
+                        font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', 
+                                    Consolas, 'Courier New', monospace;
+                        font-size: 0.9em;
+                        background-color: #f6f8fa;
+                        padding: 2px 4px;
+                        border-radius: 3px;
+                    }
 
-                      /* Para bloques de código más complejos */
-                      .code-output {
-                          font-family: 'JetBrains Mono', 'Fira Code', monospace;
-                          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-                          color: white;
-                          padding: 16px;
-                          border-radius: 8px;
-                          white-space: pre-wrap;
-                          line-height: 1.4;
-                      }
+                    /* Para bloques de código más complejos */
+                    .code-output {
+                        font-family: 'JetBrains Mono', 'Fira Code', monospace;
+                        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                        color: white;
+                        padding: 16px;
+                        border-radius: 8px;
+                        white-space: pre-wrap;
+                        line-height: 1.4;
+                    }
 
-                      /* Estilo tipo terminal */
-                      .terminal-output {
-                          background: #1a1a1a;
-                          color: #00ff41;
-                          font-family: 'Ubuntu Mono', monospace;
-                          padding: 20px;
-                          border-radius: 10px;
-                          box-shadow: inset 0 0 20px rgba(0,255,65,0.1);
-                      }
-                    </code>
-                  </pre>
-                </div>
+                    /* Estilo tipo terminal */
+                    .terminal-output {
+                        background: #1a1a1a;
+                        color: #00ff41;
+                        font-family: 'Ubuntu Mono', monospace;
+                        padding: 20px;
+                        border-radius: 10px;
+                        box-shadow: inset 0 0 20px rgba(0,255,65,0.1);
+                    }
+                  </code>
+                </pre>
                 <p>
                   <span class="fw-bold">Cuándo usar alternativas CSS</span>:
                 </p>
@@ -4127,7 +4333,6 @@
               <!-- Alternativas CSS recomendadas <samp> fin -->
             </div>
             <!-- Etiquetas HTML <samp> Salida de un programa Fin -->
-            <hr class="subtle-divider" />
 
             <!-- Etiquetas HTML <var> Variable -->
             <div id="etiquetas-html-var-variable" class="mt-5">
@@ -4237,19 +4442,17 @@
                   <code class="language-html">&lt;var></code> suele heredar las
                   siguientes propiedades CSS:
                 </p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-css" data-prismjs-copy="Copy">
-                    var {
-                      font-style: italic;
-                      font-family: inherit;
-                      font-size: inherit;
-                      font-weight: inherit;
-                      display: inline;
-                    }
-                    </code>
-                  </pre>
-                </div>
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-css" data-prismjs-copy="Copy">
+                  var {
+                    font-style: italic;
+                    font-family: inherit;
+                    font-size: inherit;
+                    font-weight: inherit;
+                    display: inline;
+                  }
+                  </code>
+                </pre>
                 <p>
                   Esto significa que, por defecto, las variables se muestran en
                   cursiva, pero mantienen las demás características de la fuente
@@ -4261,274 +4464,261 @@
               <!-- Ejemplos de código <var> -->
               <div>
                 <h3>Ejemplos de código &lt;var></h3>
-                <!-- Ejemplo -->
-                <div class="ej-ejemplo">
-                  <div class="row ej-ejecutado mt-3">
-                    <!-- código ejecutado -->
-                    <div>
-                      <h3>Variables Matemáticas</h3>
-                      <p>
-                        En la ecuación cuadrática
-                        <var class="ej-math-var">ax²</var> +
-                        <var class="ej-math-var">bx</var> +
-                        <var class="ej-math-var">c</var> = 0, las variables
-                        <var class="ej-math-var">a</var>,
-                        <var class="ej-math-var">b</var>, y
-                        <var class="ej-math-var">c</var> son coeficientes.
-                      </p>
+                <!-- Ejemplos de código -->
+                <div class="code border border-1 border-light p-3 rounded-2">
+                  <div class="row">
+                    <!-- Contenedor de código: ocupa toda la fila en móvil, mitad en lg -->
+                    <div class="col-12 col-lg-6">
+                      <div class="codes">
+                        <div class="code-html code-html-letrero mb-3">
+                          <!-- Aquí va el código HTML -->
+                          &lt;div class="example"><br />
+                          &nbsp;&lt;div class="formula"><br />
+                          &nbsp;&nbsp;&lt;var>x&lt;/var> = (-&lt;var>b&lt;/var>
+                          ± √(&lt;var>b&lt;/var>² - 4&lt;var>ac&lt;/var>)) /
+                          (2&lt;var>a&lt;/var>)<br />
+                          &nbsp;&lt;/div><br />
+                          &lt;/div><br />
+                          <br />
+                          &lt;div class="example"> <br />
+                          &nbsp;&lt;h3>Variables de Programación&lt;/h3> <br />
+                          &nbsp;&lt;p>Para declarar una variable en
+                          JavaScript:&lt;/p> <br />
+                          &nbsp;&lt;code>let &lt;var
+                          class="code-var">nombreUsuario&lt;/var> =
+                          prompt("Ingresa tu nombre"); console.log("Hola, " +
+                          &lt;var
+                          class="code-var">nombreUsuario&lt;/var>);&lt;/code>
+                          <br />
+                          &nbsp;&lt;p>La función recibe el parámetro &lt;var
+                          class="code-var">edad&lt;/var> y retorna un valor
+                          booleano.&lt;/p> <br />
+                          &lt;/div> <br />
+                          <br />
+                          &lt;div class="example"> <br />
+                          &nbsp;&lt;h3>Constantes Físicas&lt;/h3> <br />
+                          &nbsp;&lt;p>La velocidad de la luz &lt;var
+                          class="physics-var">c&lt;/var> = 3 × 10⁸ m/s es
+                          fundamental en la ecuación &lt;var
+                          class="physics-var">E&lt;/var> = &lt;var
+                          class="physics-var">mc²&lt;/var>.&lt;/p>
+                          &nbsp;&lt;p>En la ley de Ohm: &lt;var
+                          class="physics-var">V&lt;/var> = &lt;var
+                          class="physics-var">I&lt;/var> × &lt;var
+                          class="physics-var">R&lt;/var>, donde:&lt;/p> <br />
+                          &nbsp;&lt;ul> <br />
+                          &nbsp;&nbsp;&lt;li>&lt;var
+                          class="physics-var">V&lt;/var> es el voltaje&lt;/li>
+                          <br />
+                          &nbsp;&nbsp;&lt;li>&lt;var
+                          class="physics-var">I&lt;/var> es la corriente&lt;/li>
+                          <br />
+                          &nbsp;&nbsp;&lt;li>&lt;var
+                          class="physics-var">R&lt;/var> es la
+                          resistencia&lt;/li> <br />
+                          &nbsp;&lt;/ul> <br />
+                          &lt;/div> <br />
+                          <br />
+                          &lt;div class="example"> <br />
+                          &nbsp;&lt;h3>Variables en Documentación de API&lt;/h3>
+                          <br />
+                          &nbsp;&lt;p>Endpoint: &lt;code>GET
+                          /users/&lt;var>{userId}&lt;/var>/posts/&lt;var>{postId}&lt;/var>&lt;/code>&lt;/p>
+                          <br />
+                          &nbsp;&lt;p>Donde &lt;var>userId&lt;/var> es el
+                          identificador único del usuario y
+                          &lt;var>postId&lt;/var> es el identificador de la
+                          publicación.&lt;/p> <br />
+                          &lt;/div> <br />
+                          <br />
+                          &lt;div class="example"><br />
+                          &nbsp;&lt;h3>Variables de Configuración&lt;/h3><br />
+                          &nbsp;&lt;p>Edita el archivo
+                          &lt;var>config.env&lt;/var> y modifica la variable
+                          &nbsp;&lt;var>DATABASE_URL&lt;/var> con tu cadena de
+                          conexión.&lt;/p><br />
+                          &nbsp;&lt;code>export &lt;var>PORT&lt;/var>=3000
+                          export
+                          &lt;var>NODE_ENV&lt;/var>=production&lt;/code><br />
+                          &lt;/div><br />
+                          <br />
+                          &lt;div class="example"> <br />
+                          &nbsp;&lt;h3>Ejemplo con Accesibilidad&lt;/h3> <br />
+                          &nbsp;&lt;p>Para mejorar la accesibilidad, puedes
+                          usar:&lt;/p> <br />
+                          &nbsp;&lt;code>&lt;var aria-label="variable
+                          equis"&gt;x&lt;/var&gt; = &lt;var aria-label="variable
+                          ye"&gt;y&lt;/var&gt; +5&lt;/code> &lt;p>Resultado:
+                          &lt;var aria-label="variable equis">x&lt;/var> =
+                          &lt;var aria-label="variable ye">y&lt;/var> + 5&lt;/p>
+                          <br />
+                          &lt;/div> <br />
+                          <!-- Aquí va el código HTML fin-->
+                        </div>
+                        <div class="code-css code-css-letrero">
+                          <!-- Aquí va el código CSS -->
+                          .math-var { <br />
+                          &nbsp;color: #d63384; <br />
+                          &nbsp;font-weight: 500; <br />
+                          } <br />
+                          <br />
+                          .code-var { <br />
+                          &nbsp;background: #fff3cd; <br />
+                          &nbsp;padding: 2px 4px; <br />
+                          &nbsp;border-radius: 3px; <br />
+                          &nbsp;font-family: "Consolas", "Monaco", monospace;
+                          <br />
+                          } <br />
+                          <br />
+                          .physics-var { <br />
+                          &nbsp;color: #198754; <br />
+                          &nbsp;font-size: 1.1em; <br />
+                          } <br />
+                          <br />
+                          .code { <br />
+                          &nbsp;background: #f1f3f4; <br />
+                          &nbsp;padding: 12px; <br />
+                          &nbsp;border-radius: 4px; <br />
+                          &nbsp;display: block; <br />
+                          &nbsp;margin: 10px 0; <br />
+                          &nbsp;font-family: "Consolas", "Monaco", monospace;
+                          <br />
+                          } <br />
 
-                      <div class="ej-formula">
-                        <var>x</var> = (-<var>b</var> ± √(<var>b</var>² -
-                        4<var>ac</var>)) / (2<var>a</var>)
+                          .formula { <br />
+                          &nbsp;background: #e3f2fd; <br />
+                          &nbsp;padding: 15px; <br />
+                          &nbsp;border-left: 4px <br />solid #2196f3; <br />
+                          &nbsp;margin: 15px 0; font-size: 1.1em; <br />
+                          }
+                          <!-- Aquí va el código CSS fin-->
+                        </div>
                       </div>
                     </div>
+                    <!-- Contenedor de resultado: ocupa toda la fila en móvil, mitad en lg -->
+                    <div class="col-12 col-lg-6 mt-3 mt-lg-0">
+                      <div class="code-result results">
+                        <!-- Aquí va el resultado -->
+                        <div class="ej-example">
+                          <h3>Variables Matemáticas</h3>
+                          <p>
+                            En la ecuación cuadrática
+                            <var class="ej-math-var">ax²</var> +
+                            <var class="ej-math-var">bx</var> +
+                            <var class="ej-math-var">c</var> = 0, las variables
+                            <var class="ej-math-var">a</var>,
+                            <var class="ej-math-var">b</var>, y
+                            <var class="ej-math-var">c</var> son coeficientes.
+                          </p>
 
-                    <div>
-                      <h3>Variables de Programación</h3>
-                      <p>Para declarar una variable en JavaScript:</p>
+                          <div class="ej-formula">
+                            <var>x</var> = (-<var>b</var> ± √(<var>b</var>² -
+                            4<var>ac</var>)) / (2<var>a</var>)
+                          </div>
+                        </div>
 
-                      <code
-                        >let <var class="ej-code-var">nombreUsuario</var> =
-                        prompt("Ingresa tu nombre"); console.log("Hola, " +
-                        <var class="ej-code-var">nombreUsuario</var>);</code
-                      >
+                        <div class="ej-example">
+                          <h3>Variables de Programación</h3>
+                          <p>Para declarar una variable en JavaScript:</p>
 
-                      <p>
-                        La función recibe el parámetro
-                        <var class="ej-code-var">edad</var> y retorna un valor
-                        booleano.
-                      </p>
-                    </div>
+                          <code class="ej-code"
+                            >let <var class="ej-code-var">nombreUsuario</var> =
+                            prompt("Ingresa tu nombre"); console.log("Hola, " +
+                            <var class="ej-code-var">nombreUsuario</var>);</code
+                          >
 
-                    <div>
-                      <h3>Constantes Físicas</h3>
-                      <p>
-                        La velocidad de la luz
-                        <var class="ej-physics-var">c</var> = 3 × 10⁸ m/s es
-                        fundamental en la ecuación
-                        <var class="ej-physics-var">E</var> =
-                        <var class="ej-physics-var">mc²</var>.
-                      </p>
+                          <p>
+                            La función recibe el parámetro
+                            <var class="ej-code-var">edad</var> y retorna un
+                            valor booleano.
+                          </p>
+                        </div>
 
-                      <p>
-                        En la ley de Ohm:
-                        <var class="ej-physics-var">V</var> =
-                        <var class="ej-physics-var">I</var> ×
-                        <var class="ej-physics-var">R</var>, donde:
-                      </p>
-                      <ul>
-                        <li>
-                          <var class="ej-physics-var">V</var> es el voltaje
-                        </li>
-                        <li>
-                          <var class="ej-physics-var">I</var> es la corriente
-                        </li>
-                        <li>
-                          <var class="ej-physics-var">R</var> es la resistencia
-                        </li>
-                      </ul>
-                    </div>
+                        <div class="ej-example">
+                          <h3>Constantes Físicas</h3>
+                          <p>
+                            La velocidad de la luz
+                            <var class="ej-physics-var">c</var> = 3 × 10⁸ m/s es
+                            fundamental en la ecuación
+                            <var class="ej-physics-var">E</var> =
+                            <var class="ej-physics-var">mc²</var>.
+                          </p>
 
-                    <div>
-                      <h3>Variables en Documentación de API</h3>
-                      <p>
-                        Endpoint:
-                        <code
-                          >GET /users/<var>{userId}</var>/posts/<var
-                            >{postId}</var
-                          ></code
-                        >
-                      </p>
+                          <p>
+                            En la ley de Ohm:
+                            <var class="ej-physics-var">V</var> =
+                            <var class="ej-physics-var">I</var> ×
+                            <var class="ej-physics-var">R</var>, donde:
+                          </p>
+                          <ul>
+                            <li>
+                              <var class="ej-physics-var">V</var> es el voltaje
+                            </li>
+                            <li>
+                              <var class="ej-physics-var">I</var> es la
+                              corriente
+                            </li>
+                            <li>
+                              <var class="ej-physics-var">R</var> es la
+                              resistencia
+                            </li>
+                          </ul>
+                        </div>
 
-                      <p>
-                        Donde <var>userId</var> es el identificador único del
-                        usuario y <var>postId</var> es el identificador de la
-                        publicación.
-                      </p>
-                    </div>
+                        <div class="ej-example">
+                          <h3>Variables en Documentación de API</h3>
+                          <p>
+                            Endpoint:
+                            <code
+                              >GET /users/<var>{userId}</var>/posts/<var
+                                >{postId}</var
+                              ></code
+                            >
+                          </p>
 
-                    <div>
-                      <h3>Variables de Configuración</h3>
-                      <p>
-                        Edita el archivo <var>config.env</var> y modifica la
-                        variable <var>DATABASE_URL</var> con tu cadena de
-                        conexión.
-                      </p>
+                          <p>
+                            Donde <var>userId</var> es el identificador único
+                            del usuario y <var>postId</var> es el identificador
+                            de la publicación.
+                          </p>
+                        </div>
 
-                      <code
-                        >export <var>PORT</var>=3000 export
-                        <var>NODE_ENV</var>=production</code
-                      >
-                    </div>
+                        <div class="ej-example">
+                          <h3>Variables de Configuración</h3>
+                          <p>
+                            Edita el archivo <var>config.env</var> y modifica la
+                            variable <var>DATABASE_URL</var> con tu cadena de
+                            conexión.
+                          </p>
 
-                    <div>
-                      <h3>Ejemplo con Accesibilidad</h3>
-                      <p>Para mejorar la accesibilidad, puedes usar:</p>
+                          <code
+                            >export <var>PORT</var>=3000 export
+                            <var>NODE_ENV</var>=production</code
+                          >
+                        </div>
 
-                      <code
-                        >&lt;var aria-label="variable equis"&gt;x&lt;/var&gt; =
-                        &lt;var aria-label="variable ye"&gt;y&lt;/var&gt; +
-                        5</code
-                      >
+                        <div class="ej-example">
+                          <h3>Ejemplo con Accesibilidad</h3>
+                          <p>Para mejorar la accesibilidad, puedes usar:</p>
 
-                      <p>
-                        Resultado:
-                        <var aria-label="variable equis">x</var> =
-                        <var aria-label="variable ye">y</var> + 5
-                      </p>
-                    </div>
-                    <!-- código ejecutado fin -->
-                  </div>
-                  <div class="row">
-                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
-                      <!-- código HTML -->
-                      <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-html" data-prismjs-copy="Copy">
-                            <div>
-                              &lt;h3>Variables Matemáticas&lt;/h3>
-                                &lt;p>
-                                  En la ecuación cuadrática
-                                  &lt;var class="math-var">ax²&lt;/var> +
-                                  &lt;var class="math-var">bx&lt;/var> +
-                                  &lt;var class="math-var">c&lt;/var> = 0, las variables
-                                  &lt;var class="math-var">a&lt;/var>,
-                                  &lt;var class="math-var">b&lt;/var>, y
-                                  &lt;var class="math-var">c&lt;/var> son coeficientes.
-                                &lt;/p>
+                          <code
+                            >&lt;var aria-label="variable
+                            equis"&gt;x&lt;/var&gt; = &lt;var
+                            aria-label="variable ye"&gt;y&lt;/var&gt; + 5</code
+                          >
 
-                                &lt;div class="formula">
-                                  &lt;var>x&lt;/var> = (-&lt;var>b&lt;/var> ± √(&lt;var>b&lt;/var>² -
-                                  4&lt;var>ac&lt;/var>)) / (2&lt;var>a&lt;/var>)
-                                &lt;/div>
-                              &lt;/div>
-
-                              &lt;div>
-                                &lt;h3>Variables de Programación&lt;/h3>
-                                &lt;p>Para declarar una variable en JavaScript:&lt;/p>
-
-                                &lt;code >let &lt;var class="code-var">nombreUsuario&lt;/var> =
-                                  prompt("Ingresa tu nombre"); console.log("Hola, " +
-                                  &lt;var class="code-var">nombreUsuario&lt;/var>);&lt;/code>
-
-                                &lt;p>
-                                  La función recibe el parámetro
-                                  &lt;var class="code-var">edad&lt;/var> y retorna un valor
-                                  booleano.
-                                &lt;/p>
-                              &lt;/div>
-
-                              &lt;div>
-                                &lt;h3>Constantes Físicas&lt;/h3>
-                                &lt;p>
-                                  La velocidad de la luz
-                                  &lt;var class="physics-var">c&lt;/var> = 3 × 10⁸ m/s es
-                                  fundamental en la ecuación
-                                  &lt;var class="physics-var">E&lt;/var> =
-                                  &lt;var class="physics-var">mc²&lt;/var>.
-                                &lt;/p>
-
-                                &lt;p>
-                                  En la ley de Ohm:
-                                  &lt;var class="physics-var">V&lt;/var> =
-                                  &lt;var class="physics-var">I&lt;/var> ×
-                                  &lt;var class="physics-var">R&lt;/var>, donde:
-                                &lt;/p>
-                                &lt;ul>
-                                  &lt;li>
-                                    &lt;var class="physics-var">V&lt;/var> es el voltaje
-                                  &lt;/li>
-                                  &lt;li>
-                                    &lt;var class="physics-var">I&lt;/var> es la corriente
-                                  &lt;/li>
-                                  &lt;li>
-                                    &lt;var class="physics-var">R&lt;/var> es la resistencia
-                                  &lt;/li>
-                                &lt;/ul>
-                              &lt;/div>
-
-                              &lt;div>
-                                &lt;h3>Variables en Documentación de API&lt;/h3>
-                                &lt;p>
-                                  Endpoint:
-                                  &lt;code>GET /users/&lt;var>{userId}&lt;/var>/posts/&lt;var>{postId}&lt;/var>&lt;/code>
-                                &lt;/p>
-
-                                &lt;p>
-                                  Donde &lt;var>userId&lt;/var> es el identificador único del
-                                  usuario y &lt;var>postId&lt;/var> es el identificador de la
-                                  publicación.
-                                &lt;/p>
-                              &lt;/div>
-
-                              &lt;div>
-                                &lt;h3>Variables de Configuración&lt;/h3>
-                                &lt;p>
-                                  Edita el archivo &lt;var>config.env&lt;/var> y modifica la
-                                  variable &lt;var>DATABASE_URL&lt;/var> con tu cadena de
-                                  conexión.
-                                &lt;/p>
-
-                                &lt;code>export &lt;var>PORT&lt;/var>=3000 export
-                                  &lt;var>NODE_ENV&lt;/var>=production&lt;/code>
-                              &lt;/div>
-
-                              &lt;div>
-                                &lt;h3>Ejemplo con Accesibilidad&lt;/h3>
-                                &lt;p>Para mejorar la accesibilidad, puedes usar:&lt;/p>
-
-                                &lt;code>&lt;var aria-label="variable equis"&gt;x&lt;/var&gt; =
-                                  &lt;var aria-label="variable ye"&gt;y&lt;/var&gt; +
-                                  5&lt;/code>
-
-                                &lt;p>
-                                  Resultado:
-                                  &lt;var aria-label="variable equis">x&lt;/var> =
-                                  &lt;var aria-label="variable ye">y&lt;/var> + 5
-                                &lt;/p> 
-                              &lt;div>                              
-                            </div>    
-                          </code>
-                        </pre>
-                      <!-- código HTML -->
-                    </div>
-                    <div class="ej-code-css col-lg-6 mb-3">
-                      <!-- código CSS -->
-                      <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-css" data-prismjs-copy="Copy">
-                            <div>
-                              .math-var {
-                                color: #d63384;
-                                font-weight: 500;
-                              }
-
-                              .code-var {
-                                background: #fff3cd;
-                                padding: 2px 4px;
-                                border-radius: 3px;
-                                font-family: "Consolas", "Monaco", monospace;
-                              }
-
-                              .physics-var {
-                                color: #198754;
-                                font-size: 1.1em;
-                              }                
-
-                              .formula {
-                                background: #e3f2fd;
-                                padding: 15px;
-                                border-left: 4px solid #2196f3;
-                                margin: 15px 0;
-                                font-size: 1.1em;
-                                color: var(--color-fondo);
-                              }
-                            </div>        
-                          </code>
-                         </pre>
-                      <!-- código HTML -->
+                          <p>
+                            Resultado:
+                            <var aria-label="variable equis">x</var> =
+                            <var aria-label="variable ye">y</var> + 5
+                          </p>
+                        </div>
+                        <!-- Aquí va el resultado fin -->
+                      </div>
                     </div>
                   </div>
                 </div>
-                <!-- Ejemplo fin -->
+                <!-- Ejemplos de código fin -->
               </div>
               <!-- Ejemplos de código <var> fin -->
 
@@ -4588,44 +4778,38 @@
                   para estilo, considera estas alternativas:
                 </p>
                 <p>Para énfasis semántico:</p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-css" data-prismjs-copy="Copy">
-                      .emphasis { font-style: italic; }
-                      .highlight { background: yellow; }
-                    </code>
-                  </pre>
-                </div>
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-css" data-prismjs-copy="Copy">
+                    .emphasis { font-style: italic; }
+                    .highlight { background: yellow; }
+                  </code>
+                </pre>
                 <p>Para variables en documentación técnica:</p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-css" data-prismjs-copy="Copy">
-                      .api-param {
-                          font-style: italic;
-                          color: #e83e8c;
-                          font-weight: 500;
-                      }
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-css" data-prismjs-copy="Copy">
+                    .api-param {
+                        font-style: italic;
+                        color: #e83e8c;
+                        font-weight: 500;
+                    }
 
-                      .code-snippet var {
-                          background: rgba(255, 193, 7, 0.2);
-                          padding: 2px 4px;
-                          border-radius: 3px;
-                      }
-                    </code>
-                  </pre>
-                </div>
+                    .code-snippet var {
+                        background: rgba(255, 193, 7, 0.2);
+                        padding: 2px 4px;
+                        border-radius: 3px;
+                    }
+                  </code>
+                </pre>
                 <p>Para fórmulas matemáticas:</p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-css" data-prismjs-copy="Copy">
-                      .math-expression var {
-                          color: #dc3545;
-                          font-family: 'Times New Roman', serif;
-                          font-size: 1.1em;
-                      }
-                    </code>
-                  </pre>
-                </div>
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-css" data-prismjs-copy="Copy">
+                    .math-expression var {
+                        color: #dc3545;
+                        font-family: 'Times New Roman', serif;
+                        font-size: 1.1em;
+                    }
+                  </code>
+                </pre>
                 <p>
                   El elemento <code class="language-html">&lt;var></code> es una
                   herramienta semántica poderosa cuando se usa correctamente,
@@ -4636,7 +4820,6 @@
               <!-- Alternativas CSS recomendadas <var> fin -->
             </div>
             <!-- Etiquetas HTML <var> Variable Fin -->
-            <hr class="subtle-divider" />
 
             <!-- Etiquetas HTML <pre> Texto Preformateado -->
             <div id="etiquetas-html-pre-texto-preformateado" class="mt-5">
@@ -4710,32 +4893,28 @@
                     espacios; por ello, se recomienda incluir una opción para
                     copiar el contenido o proporcionar un resumen y para código
                     es recomendable:
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-html" data-prismjs-copy="Copy">
-                          &lt;pre role="img" aria-label="Ejemplo de código JavaScript">
-                          function saludo() {
-                              console.log("Hola mundo");
-                          }
-                          &lt;/pre>
-                        </code>
-                      </pre>
-                    </div>
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-html" data-prismjs-copy="Copy">
+                        &lt;pre role="img" aria-label="Ejemplo de código JavaScript">
+                        function saludo() {
+                            console.log("Hola mundo");
+                        }
+                        &lt;/pre>
+                      </code>
+                    </pre>
                     O mejor aún, usar la combinación semántica:
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-css" data-prismjs-copy="Copy">
-                          &lt;pre data-src-status="loaded" tabindex="0">
-                            &lt;code class="language-css" data-prismjs-copy="Copy">
-                              h2 {
-                                font-size: 24px;
-                                color: navy;
-                              }
-                            &lt;/code>
-                          &lt;/pre>
-                        </code>
-                      </pre>
-                    </div>
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-css" data-prismjs-copy="Copy">
+                        &lt;pre data-src-status="loaded" tabindex="0">
+                          &lt;code class="language-css" data-prismjs-copy="Copy">
+                            h2 {
+                              font-size: 24px;
+                              color: navy;
+                            }
+                          &lt;/code>
+                        &lt;/pre>
+                      </code>
+                    </pre>
                   </li>
                   <li>
                     Siempre es una buena práctica proporcionar un contexto claro
@@ -4744,8 +4923,7 @@
                     usuario sepa qué tipo de información se presentará.
                   </li>
                   <li>
-                    Usar etiquetas
-                    <code class="language-html">&lt;code></code>,
+                    Usar etiquetas <code class="language-html">&lt;code></code>,
                     <code class="language-html">&lt;samp></code> o
                     <code class="language-html">&lt;kbd></code> dentro de
                     <code class="language-html">&lt;pre></code> para mejorar la
@@ -4763,274 +4941,157 @@
                   <code class="language-html">&lt;pre></code> en la mayoría de
                   los navegadores aplica:
                 </p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-css" data-prismjs-copy="Copy">
-                      pre {
-                          display: block;
-                          font-family: monospace;
-                          white-space: pre;
-                          margin: 1em 0;
-                      }
-                    </code>
-                  </pre>
-                </div>
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-css" data-prismjs-copy="Copy">
+                    pre {
+                        display: block;
+                        font-family: monospace;
+                        white-space: pre;
+                        margin: 1em 0;
+                    }
+                  </code>
+                </pre>
               </div>
               <!-- Configuración CSS por Defecto <pre> fin -->
 
               <!-- Ejemplos de código <pre> -->
               <div>
                 <h3>Ejemplos de código &lt;pre></h3>
-                <!-- Ejemplo -->
-                <div class="ej-ejemplo">
-                  <div class="row ej-ejecutado mt-3">
-                    <!-- código ejecutado -->
-                    <div>
-                      <p class="h3">Ejemplo básico</p>
-                      <pre data-src-status="loaded" tabindex="0">
+                <!-- Ejemplos de código -->
+                <div class="code border border-1 border-light p-3 rounded-2">
+                  <div class="row">
+                    <!-- Contenedor de código: ocupa toda la fila en móvil, mitad en lg -->
+                    <div class="col-12 col-lg-6">
+                      <div class="codes">
+                        <div class="code-html code-html-letrero mb-3">
+                          <!-- Aquí va el código HTML -->
+                          &lt;div class="example"> <br />
+                          &nbsp;&lt;h3>Ejemplo básico&lt;/h3> <br />
+                          &nbsp;&lt;pre> <br />
+                          Línea 1 <br />
+                          &nbsp;&nbsp;&nbsp;&nbsp;Línea con sangría <br />
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Línea
+                          con más sangría <br />
+                          Línea final <br />
+                          &nbsp;&lt;/pre> <br />
+                          &lt;/div>
+                          <br /><br />
+                          &lt;div class="example"> <br />
+                          &nbsp;&lt;h3>Para código con sintaxis&lt;/h3> <br />
+                          &nbsp;&lt;pre>&lt;code class="language-javascript">
+                          <br />
+                          const usuarios = [ <br />
+                          { nombre: "Ana", edad: 25 }, <br />
+                          { nombre: "Luis", edad: 30 } <br />
+                          ]; <br />
+                          usuarios.forEach(user => { <br />
+                          console.log(`${user.nombre}: ${user.edad} años`);
+                          <br />
+                          }); <br />
+                          &nbsp;&lt;/code>&lt;/pre> <br />
+                          &lt;/div>
+                          <br />
+                          <br />
+                          &lt;div class="example"> <br />
+                          &nbsp;&lt;h3>Ejemplo de ASCII Art&lt;/h3> <br />
+                          &nbsp;&lt;pre> <br />
+                          |\_|\ <br />
+                          | o.o | <br />
+                          > ^ &lt; <br />
+                          &nbsp;&lt;/pre> <br />
+                          &lt;/div>
+                          <!-- Aquí va el código HTML fin-->
+                        </div>
+
+                        <div class="code-css code-css-letrero">
+                          <!-- Aquí va el código CSS -->
+                          .example { <br />
+                          &nbsp;background: white; <br />
+                          &nbsp;padding: 20px; <br />
+                          &nbsp;margin: 20px 0; <br />
+                          &nbsp;border-radius: 8px; <br />
+                          &nbsp;box-shadow: 0 2px 4px rgba(0,0,0,0.1); <br />
+                          } <br />
+                          <br />
+                          .example h3 { <br />
+                          &nbsp;color: #2563eb; <br />
+                          &nbsp;margin-top: 0; <br />
+                          &nbsp;border-bottom: 2px solid #e5e7eb; <br />
+                          &nbsp;padding-bottom: 10px; <br />
+                          }
+                          <!-- Aquí va el código CSS fin-->
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Contenedor de resultado: ocupa toda la fila en móvil, mitad en lg -->
+                    <div class="col-12 col-lg-6 mt-3 mt-lg-0">
+                      <div class="code-result results">
+                        <!-- Aquí va el resultado -->
+                        <div class="ej-example">
+                          <h3>Ejemplo básico</h3>
+                          <pre data-src-status="loaded" tabindex="0">
 Línea 1
     Línea con sangría
         Línea con más sangría
 Línea final
-                          </pre
-                      >
-                    </div>
-                    <div>
-                      <p class="h3">Para código con sintaxis</p>
-                      <div class="ej-code-toolbar">
-                        <pre
-                          class="language-javascript"
-                          tabindex="0"
-                        ><code class="language-javascript"><span class="token ej-keyword">const</span> usuarios <span class="token ej-operator">=</span> <span class="token ">[</span>
-    <span class="token ej-punctuation">{</span> <span class="token literal-property ej-property">nombre</span><span class="token ej-operator">:</span> <span class="token string">"Ana"</span><span class="token ej-punctuation">,</span> <span class="token literal-property ej-property">edad</span><span class="token ej-operator">:</span> <span class="token number">25</span> <span class="token ej-punctuation">}</span><span class="token ej-punctuation">,</span>
-    <span class="token ej-punctuation">{</span> <span class="token literal-property ej-property">nombre</span><span class="token ej-operator">:</span> <span class="token string">"Luis"</span><span class="token ej-punctuation">,</span> <span class="token literal-property property">edad</span><span class="token ej-operator">:</span> <span class="token number">30</span> <span class="token ej-punctuation">}</span>
-<span class="token ej-punctuation">]</span><span class="token ej-punctuation">;</span>
-
-usuarios<span class="token ej-punctuation">.</span><span class="token function">forEach</span><span class="token ej-punctuation">(</span><span class="token parameter">user</span> <span class="token ej-operator">=&gt;</span> <span class="token ej-punctuation">{</span>
-    console<span class="token ej-punctuation">.</span><span class="token function">log</span><span class="token ej-punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation ej-punctuation">${</span>user<span class="token ej-punctuation">.</span>nombre<span class="token interpolation-punctuation ej-punctuation">}</span></span><span class="token string">: </span><span class="token interpolation"><span class="token interpolation-punctuation ej-punctuation">${</span>user<span class="token ej-punctuation">.</span>edad<span class="token interpolation-punctuation ej-punctuation">}</span></span><span class="token string"> años</span><span class="token template-punctuation string">`</span></span><span class="token ej-punctuation">)</span><span class="token ej-punctuation">;</span>
-<span class="token ej-punctuation">}</span><span class="token ej-punctuation">)</span><span class="token ej-punctuation">;</span></code></pre>
-                        <div class="toolbar">
-                          <div class="toolbar-item">
-                            <button
-                              class="copy-to-clipboard-button"
-                              type="button"
-                              data-copy-state="copy"
-                            >
-                              <span>Copy</span>
-                            </button>
-                          </div>
-                          <div class="toolbar-item">
-                            <span>JavaScript</span>
-                          </div>
+                          </pre>
                         </div>
-                      </div>
-                    </div>
-                    <div>
-                      <p class="h3">Ejemplo de ASCII Art</p>
-                      <pre data-src-status="loaded" tabindex="0">
+                        <div class="ej-example">
+                          <h3>Para código con sintaxis</h3>
+                          <pre data-src-status="loaded" tabindex="0"><code class="language-javascript">
+const usuarios = [
+    { nombre: "Ana", edad: 25 },
+    { nombre: "Luis", edad: 30 }
+];
+
+usuarios.forEach(user => {
+    console.log(`${user.nombre}: ${user.edad} años`);
+});
+</code></pre>
+                        </div>
+                        <div class="ej-example">
+                          <h3>Ejemplo de ASCII Art</h3>
+                          <pre data-src-status="loaded" tabindex="0">
   |\_|\
   | o.o |
-   &gt; ^ &lt;
+   > ^ &lt;
     </pre
-                      >
-                    </div>
-                    <!-- código ejecutado fin -->
-                  </div>
-                  <div class="row">
-                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
-                      <!-- código HTML -->
-                      <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-html" data-prismjs-copy="Copy">
-                            <div>
-&lt;p class="h3">Ejemplo básico&lt;/p>
-  &lt;pre data-src-status="loaded" tabindex="0">Línea 1
-    Línea con sangría
-        Línea con más sangría
-Línea final
-  &lt;/pre>
-&lt;/div>
-&lt;div>
-  &lt;p class="h3">Para código con sintaxis&lt;/p>
-  &lt;div class="ej-code-toolbar">
-    &lt;div class="code-toolbar">&lt;pre class="language-javascript" tabindex="0">&lt;code class="language-javascript">&lt;span class="token keyword">const&lt;/span> usuarios &lt;span class="token operator">=&lt;/span> &lt;span class="token punctuation">[&lt;/span>
-    &lt;span class="token punctuation">{&lt;/span> &lt;span class="token literal-property property">nombre&lt;/span>&lt;span class="token operator">:&lt;/span> &lt;span class="token string">"Ana"&lt;/span>&lt;span class="token punctuation">,&lt;/span> &lt;span class="token literal-property property">edad&lt;/span>&lt;span class="token operator">:&lt;/span> &lt;span class="token number">25&lt;/span> &lt;span class="token punctuation">}&lt;/span>&lt;span class="token punctuation">,&lt;/span>
-    &lt;span class="token punctuation">{&lt;/span> &lt;span class="token literal-property property">nombre&lt;/span>&lt;span class="token operator">:&lt;/span> &lt;span class="token string">"Luis"&lt;/span>&lt;span class="token punctuation">,&lt;/span> &lt;span class="token literal-property property">edad&lt;/span>&lt;span class="token operator">:&lt;/span> &lt;span class="token number">30&lt;/span> &lt;span class="token punctuation">}&lt;/span>
-&lt;span class="token punctuation">]&lt;/span>&lt;span class="token punctuation">;&lt;/span>
-
-usuarios&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">forEach&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token parameter">user&lt;/span> &lt;span class="token operator">=&gt;&lt;/span> &lt;span class="token punctuation">{&lt;/span>
-    console&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">log&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token template-string">&lt;span class="token template-punctuation string">`&lt;/span>&lt;span class="token interpolation">&lt;span class="token interpolation-punctuation punctuation">${&lt;/span>user&lt;span class="token punctuation">.&lt;/span>nombre&lt;span class="token interpolation-punctuation punctuation">}&lt;/span>&lt;/span>&lt;span class="token string">: &lt;/span>&lt;span class="token interpolation">&lt;span class="token interpolation-punctuation punctuation">${&lt;/span>user&lt;span class="token punctuation">.&lt;/span>edad&lt;span class="token interpolation-punctuation punctuation">}&lt;/span>&lt;/span>&lt;span class="token string"> años&lt;/span>&lt;span class="token template-punctuation string">`&lt;/span>&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>
-&lt;span class="token punctuation">}&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>&lt;/code>&lt;/pre>&lt;div class="toolbar">&lt;div class="toolbar-item">&lt;button class="copy-to-clipboard-button" type="button" data-copy-state="copy">&lt;span>Copy&lt;/span>&lt;/button>&lt;/div>&lt;div class="toolbar-item">&lt;span>JavaScript&lt;/span>&lt;/div>&lt;/div>&lt;/div>
-  &lt;div class="toolbar">
-    &lt;div class="toolbar-item">
-      &lt;button class="copy-to-clipboard-button" type="button" data-copy-state="copy">
-        &lt;span>Copy&lt;/span>
-      &lt;/button>
-    &lt;/div>
-    &lt;div class="toolbar-item">
-      &lt;span>JavaScript&lt;/span>
-    &lt;/div>
-  &lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;div>
-&lt;p class="h3">Ejemplo de ASCII Art&lt;/p>
-&lt;pre>  |\_|\
-  | o.o |
-&gt; ^ &lt;
-&lt;/pre>                              
-                              
-                            </div>        
-                          </code>
-                        </pre>
-                      <!-- código HTML -->
-                    </div>
-                    <div class="ej-code-css col-lg-6 mb-3">
-                      <!-- código CSS -->
-                      <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-css" data-prismjs-copy="Copy">
-                            <div>
-                              .keyword {
-                                color: #0066cc;
-                                font-weight: bold;
-                              }
-                              .operator {
-                                color: #666;
-                              }
-                              .punctuation {
-                                color: #999;
-                              }
-                              .literal-property {
-                                color: #0088aa;
-                              }
-                              .property {
-                                color: #0088aa;
-                              }
-                              .number {
-                                color: #009900;
-                              }
-                              .string {
-                                color: #cc0000;
-                              }
-
-                              .code-toolbar {
-                                position: relative;
-                                margin: 15px 0;
-                              }
-                            </div>        
-                          </code>
-                         </pre>
-                      <!-- código HTML -->
+                          >
+                        </div>
+                        <!-- Aquí va el resultado fin -->
+                      </div>
                     </div>
                   </div>
                 </div>
-                <!-- Ejemplo fin -->
+                <!-- Ejemplos de código fin -->
               </div>
               <!-- Ejemplos de código <pre> fin -->
 
               <!-- Buenas prácticas modernas <pre> -->
               <div>
                 <h3>Buenas prácticas modernas &lt;pre></h3>
-                <p>
-                  Según las especificaciones HTML5 y las guías de accesibilidad,
-                  se recomiendan las siguientes prácticas:
-                </p>
-                <ul>
-                  <li>
-                    Usar <code class="lenguage-html">&lt;pre></code> sólo cuando
-                    el formato exacto del texto es esencial.
-                  </li>
-                  <li>
-                    Acompañar <code class="lenguage-html">&lt;pre></code> con
-                    <code class="lenguage-html">&lt;code></code> si es código:
-                    Esto mejora la semántica y la accesibilidad, especialmente
-                    para lectores de pantalla.
-                  </li>
-                  <li>
-                    Agregar atributo
-                    <code class="lenguage-html">lang</code> cuando sea posible.
-                  </li>
-                  <li>
-                    Evitar <code class="lenguage-html">&lt;pre></code> sin
-                    estilos: controlar el desbordamiento: Por defecto,
-                    <code class="lenguage-html">&lt;pre></code> no hace scroll y
-                    puede romper el diseño. Se recomienda limitar el ancho y
-                    permitir desplazamiento horizontal.
-                  </li>
-                  <li>
-                    Usar contrastes adecuados y fuentes monoespaciadas: Facilita
-                    la lectura de bloques de texto alineado o código.
-                    Recomendado: <code class="language-css"></code>font-family:
-                    monospace, "Courier New", Courier.
-                  </li>
-                </ul>
+<!-- Usar <pre> en conjunto con <code>  -->
+<a href="#usar-pre-en-conjunto-con-code" class="simple-link">
+usar-pre-en-conjunto-con-code
+<h3>Usar &lt;pre> en conjunto con &lt;code> </h3>
+<a href="#usar-pre-en-conjunto-con-code" class="submenu-item">
+</div>
+<!-- Usar <pre> en conjunto con <code>  fin -->
+
+
+
+                
+                
               </div>
               <!-- Buenas prácticas modernas <pre> fin -->
 
               <!-- Alternativas CSS recomendadas <pre> -->
               <div>
                 <h3>Alternativas CSS recomendadas &lt;pre></h3>
-                <p class="fw-bold">
-                  Simular formato de texto preformateado con
-                  <code class="language-css">white-space</code>:
-                </p>
-                <div class="ej-sintaxis">
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-html" data-prismjs-copy="Copy">
-                      &lt;div class="texto-formateado">
-                        Línea 1  
-                        Línea 2    con espacio
-                      &lt;/div>
-                    </code>
-                  </pre>
-                  </div>
-                </div>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-css" data-prismjs-copy="Copy">
-                      .texto-formateado {
-                        white-space: pre-wrap; /* Conserva saltos de línea y múltiples espacios */
-                        font-family: monospace; /* Apariencia similar a <code class="lenguage-html">&lt;pre></code>  */
-                      }
-                    </code>
-                  </pre>
-                </div>
-                <p>
-                  Útil para mostrar texto que proviene de una base de datos o
-                  API.
-                </p>
-                <p class="fw-bold">
-                  Código corto en línea: usar
-                  <code class="lenguage-html">&lt;code></code> con estilo:
-                </p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-html" data-prismjs-copy="Copy">
-                      &lt;p>Use la función &lt;code>console.log()&lt;/code> para depurar.&lt;/p>
-                    </code>
-                  </pre>
-                </div>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-css" data-prismjs-copy="Copy">
-                      code {
-                        background-color: #f4f4f4;
-                        padding: 0.2em 0.4em;
-                        border-radius: 4px;
-                        font-family: monospace;
-                        font-size: 0.95em;
-                      }
-                    </code>
-                  </pre>
-                </div>
-                <p>
-                  Evitar <code class="lenguage-html">&lt;pre></code> si no se
-                  necesita conservar el formato exacto.
-                </p>
               </div>
               <!-- Alternativas CSS recomendadas <pre> fin -->
             </div>
-            <!-- Etiquetas HTML <code> Código de Programación Fin -->
+            <!-- Etiquetas HTML <pre> Texto Preformateado Fin -->
           </article>
           <!--  Formato de Texto HTML  fin -->
           <!-- Comentarios -->
