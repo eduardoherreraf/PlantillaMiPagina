@@ -855,25 +855,6 @@ hr.subtle-divider {
   width: 70%;
 }
 
-// tabla
-.ej-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-}
-
-.ej-caption {
-  font-size: 1.3em;
-  font-weight: bold;
-  margin-bottom: 12px;
-  color: #34495e;
-  background-color: #ecf0f1;
-  padding: 12px;
-  border-radius: 5px;
-  text-align: center;
-  caption-side: top;
-}
-
 .ej-th,
 .ej-td {
   padding: 10px;
@@ -887,35 +868,6 @@ hr.subtle-divider {
   font-weight: bold;
 }
 
-/* Columna del nombre */
-.ej-col-nombre {
-  background-color: #e8f4fd;
-  width: 25%;
-}
-
-/* Las dos columnas de notas (span="2") */
-.ej-col-notas {
-  background-color: #fff3cd;
-  width: 20%;
-  text-align: center;
-}
-
-/* La columna de promedio */
-.ej-col-promedio {
-  background-color: #d4edda;
-  width: 15%;
-  text-align: center;
-  font-weight: bold;
-}
-
-.ej-tfoot {
-  background-color: #e6e6e6;
-  font-weight: bold;
-}
-
-.tfoot .td {
-  border-top: 2px solid #212529;
-}
 
 .ej-centrar-imagen {
   /*   display: block;
@@ -1397,11 +1349,6 @@ sub {
   color: #444;
 }
 
-/* Viñeta personalizada con imagen */
-.ej-list-style-image {
-  ej-list-style-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjYiIGZpbGw9IiMwMDdiZmYiLz4KPHN2Zz4K");
-}
-
 /* Espaciado general para todas las listas */
 .ej-ul-ul2 {
   padding-left: 30px;
@@ -1702,10 +1649,100 @@ dd {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  color:var(--color-fondo)
+  color: var(--color-fondo);
 }
 
 .ej-example-box:hover {
   transform: translateY(-5px);
   transition: transform 0.3s ease;
+}
+
+//html-09_tablas.html - Tabla Simple
+.ej-table {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: var(--color-texto);
+  color: var(--color-fondo);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ej-table th {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.ej-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.ej-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.ej-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.ej-table tfoot td {
+  background-color: #f8f8f8;
+  font-style: italic;
+  text-align: center;
+  padding: 15px;
+  color: #666;
+  border-top: 2px solid #ddd;
+}
+
+.ej-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+// html-09_tablas.html - Elementos Opcionales y Atributos Adicionales
+.ej-caption {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #34495e;
+  background-color: #ecf0f1;
+  padding: 12px;
+  border-radius: 5px;
+  text-align: center;
+  caption-side: top;
+}
+
+/* Columna del nombre */
+.ej-col-nombre {
+  background-color: #e8f4fd;
+  width: 25%;
+}
+
+/* Las dos columnas de notas (span="2") */
+.ej-col-notas {
+  background-color: #fff3cd;
+  width: 20%;
+  text-align: center;
+}
+
+/* La columna de promedio */
+.ej-col-promedio {
+  background-color: #d4edda;
+  width: 15%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.ej-tfoot {
+  background-color: #e6e6e6;
+  font-weight: bold;
+}
+
+.tfoot .td {
+  border-top: 2px solid #212529;
 }
