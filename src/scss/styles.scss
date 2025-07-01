@@ -868,7 +868,6 @@ hr.subtle-divider {
   font-weight: bold;
 }
 
-
 .ej-centrar-imagen {
   /*   display: block;
   margin-left: auto;
@@ -877,7 +876,8 @@ hr.subtle-divider {
 }
 
 // multimedia
-.video-container {
+.video-container,
+.ej-video-centrar {
   display: flex;
   justify-content: center; /* Centra horizontalmente */
   align-items: center; /* Centra verticalmente */
@@ -1745,4 +1745,704 @@ dd {
 
 .tfoot .td {
   border-top: 2px solid #212529;
+}
+
+// html-10_imagenes_y_multimedia.html
+.ej-centrar-imagen {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  // border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  overflow: hidden; /* Fuerza el recorte de las esquinas */
+}
+
+.ej-centrar-imagen:hover {
+  transform: scale(1.02);
+}
+
+.ej-contenedor {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.ej-h3-img {
+  color: var(--color-texto);
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+// html-10_imágenes_y_multimedia.html - Video Básico, Video Autor-reproducción
+.ej-video-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.ej-h3-videos {
+  font-size: 1.8rem;
+  color: var(--color-texto);
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.ej-video-element {
+  width: 80%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .ej-video-container {
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  .ej-h3-videos {
+    font-size: 1.5rem;
+  }
+
+  .ej-video-element {
+    width: 95%;
+  }
+}
+
+// html-10_imágenes_y_multimedia.html - Video Básico, Video Autor-reproducción
+.ej-video-container2 {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #1e1e2f;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  padding: 24px;
+  text-align: center; /* Centra contenido inline y video */
+  font-family: "Segoe UI", Roboto, sans-serif;
+  color: #f4f4f4;
+}
+
+.ej-video-container2 video {
+  width: 80%;
+  margin: 0 auto; /* Centra el video como bloque */
+  display: block; /* Necesario para que margin funcione */
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  outline: none;
+  background-color: #000;
+}
+
+// html-10_imágenes_y_multimedia.html - Audio
+.ej-audio-container {
+  max-width: 400px;
+  margin: 40px auto;
+  background: linear-gradient(145deg, #1f1f2e, #2c2c3d);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.ej-audio-container audio {
+  width: 100%;
+  filter: grayscale(30%) brightness(1.1) contrast(1.1);
+  border-radius: 8px;
+  outline: none;
+}
+
+// html-10_imágenes_y_multimedia.html - Figure
+.ej-figura-estilizada2 {
+  background: var(--color-texto);
+  border: 1px solid #3d3d50;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  padding: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--color-fondo);
+}
+
+.ej-figura-estilizada2 img {
+  width: 80%;
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: brightness(1.1) contrast(1.05);
+}
+
+.ej-figura-estilizada2 img:hover {
+  transform: scale(1.03);
+  filter: brightness(1.2) contrast(1.1);
+}
+
+.ej-figura-estilizada2 figcaption {
+  margin-top: 12px;
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--color-fondo);
+  opacity: 0.9;
+}
+
+.ej-h3-figure {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  letter-spacing: 0.5px;
+  background: linear-gradient(90deg, #7f5af0, #2cb67d);
+
+  /* Compatibilidad WebKit y estándar */
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+
+  /* Sombra opcional para dar profundidad */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.ej-figura-estilizada2 {
+  background: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  padding: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ej-figura-estilizada2 figcaption {
+  margin-top: 12px;
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--color-fondo) !important;
+  opacity: 1;
+}
+
+// html-10_imágenes_y_multimedia.html - Figure 2
+.ej-wrapper {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  width: fit-content;
+  margin: 0 auto;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.ej-code-container {
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.ej-code-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.ej-code-header {
+  background: linear-gradient(90deg, #1a1a1a, #2a2a2a);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #e0e0e0;
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ej-code-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.ej-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.ej-dot.red {
+  background: linear-gradient(135deg, #ff6b6b, #ff5252);
+}
+
+.ej-dot.yellow {
+  background: linear-gradient(135deg, #ffd93d, #ffb300);
+}
+
+.ej-dot.green {
+  background: linear-gradient(135deg, #6bcf7f, #4caf50);
+}
+
+.ej-pre-code {
+  background: linear-gradient(135deg, #0d1117 0%, #161b22 50%, #21262d 100%);
+  color: #f0f6fc;
+  padding: 30px;
+  margin: 0;
+  font-family: "JetBrains Mono", "Fira Code", "Consolas", "Monaco",
+    "Courier New", monospace;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  overflow-x: auto;
+  position: relative;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.ej-pre-code::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    #ff6b6b 0%,
+    #4ecdc4 25%,
+    #45b7d1 50%,
+    #96ceb4 75%,
+    #ffeaa7 100%
+  );
+  background-size: 400% 100%;
+  animation: gradient 4s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.ej-code-code {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-family: "JetBrains Mono", "Fira Code", "Consolas", "Monaco",
+    "Courier New", monospace;
+  font-size: 0.9rem;
+  display: inline-block;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ej-code-code:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Sintaxis highlighting mejorado para fondo oscuro */
+.token.function {
+  color: #79c0ff;
+  font-weight: 600;
+  text-shadow: 0 0 10px rgba(121, 192, 255, 0.3);
+}
+
+.token.string {
+  color: #a5d6ff;
+  text-shadow: 0 0 8px rgba(165, 214, 255, 0.2);
+}
+
+.token.punctuation {
+  color: #8b949e;
+}
+
+.token.keyword {
+  color: #ff7b72;
+  font-weight: 600;
+  text-shadow: 0 0 10px rgba(255, 123, 114, 0.3);
+}
+
+/* Efectos adicionales */
+.ej-code-container::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  border-radius: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.ej-code-container:hover::after {
+  opacity: 1;
+}
+
+/* Glow effect en hover */
+.ej-code-container:hover .ej-pre-code::before {
+  box-shadow: 0 0 20px rgba(255, 107, 107, 0.3);
+}
+
+// html-10_imágenes_y_multimedia.html - Figure 2
+.ej-main-figure {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ej-title {
+  text-align: center;
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.ej-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.ej-step-card {
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  padding: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+.ej-step-number {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: #007bff;
+  color: white;
+  border-radius: 50%;
+  line-height: 32px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.ej-step-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.ej-step-title {
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.ej-step-description {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.ej-step-caption {
+  margin: 0;
+}
+
+.ej-main-caption {
+  text-align: center;
+  color: #495057;
+  font-style: italic;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 4px;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ej-main-figure {
+    padding: 20px;
+    margin: 0 10px;
+  }
+
+  .ej-title {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  .ej-steps-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+// html-10_imágenes_y_multimedia.html - diferentes imágenes
+/* Estilos para el contenedor del ejemplo picture */
+.ej-example-pic {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Centrar imagen y contenido */
+.ej-centrar-imagen-pic {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Estilo para el título usando párrafo */
+.ej-h3-tipos-pic {
+  color: #2c3e50;
+  font-family: "Arial", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+/* Contenedor del elemento picture */
+.ej-picture-container-pic {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ej-picture-container-pic:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para las fuentes de imagen */
+.ej-source-pic {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Estilo para la imagen principal */
+.ej-image-pic {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+/* Estilo para la leyenda */
+.ej-caption-pic {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #6c757d;
+  font-style: italic;
+  line-height: 1.4;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 991px) {
+  .ej-example-pic {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .ej-h3-tipos-pic {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .ej-example-pic {
+    padding: 0.75rem;
+    margin: 0.5rem;
+  }
+
+  .ej-h3-tipos-pic {
+    font-size: 1.1rem;
+  }
+
+  .ej-caption-pic {
+    font-size: 0.8rem;
+  }
+}
+
+// html-10_imágenes_y_multimedia.html - diferentes imágenes por tipo
+.ej-wrapper-ext {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.ej-example-ext {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ej-example-ext:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+}
+
+.ej-h3-ext {
+  font-size: 2.2rem;
+  color: #4a5568;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+}
+
+.ej-h3-ext::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border-radius: 2px;
+}
+
+.ej-centrar-imagen-ext {
+  width: 80%;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+}
+
+.ej-centrar-imagen-ext:hover {
+  transform: scale(1.05) rotate(2deg);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+  border-color: #667eea;
+}
+
+.ej-picture-ext {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  background: linear-gradient(45deg, #f0f2f5, #e2e8f0);
+  padding: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  transition: all 0.3s ease;
+}
+
+.ej-picture-ext::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: left 0.6s ease;
+}
+
+.ej-picture-ext:hover::before {
+  left: 100%;
+}
+
+.ej-picture-ext:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 768px) {
+  .ej-example-ext {
+    padding: 30px 20px;
+    margin: 10px;
+  }
+
+  .ej-h3-ext {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+
+  .ej-centrar-imagen-ext {
+    width: 90%;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.ej-example-ext {
+  animation: float 6s ease-in-out infinite;
 }

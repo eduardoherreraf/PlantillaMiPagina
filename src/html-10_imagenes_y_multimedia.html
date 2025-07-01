@@ -339,54 +339,14 @@
                     pantalla, cuando no hay otro texto descriptivo disponible.
                   </li>
                 </ul>
-                <!-- Ejemplos de código -->
-                <div class="code border border-1 border-light p-3 rounded-2">
-                  <div class="row">
-                    <!-- Contenedor de código: ocupa toda la fila en móvil, mitad en lg -->
-                    <div class="col-12 col-lg-6">
-                      <div class="codes">
-                        <div class="code-html code-html-letrero mb-3">
-                          <!-- Aquí va el código HTML -->
-                          &lt;img <br />
-                          &nbsp;&nbsp;src="https://cdn.pixabay.com/photo/2016/12/28/09/36/web-1935737_1280.png"
-                          <br />
-                          &nbsp;&nbsp;alt="Diseño web" <br />
-                          &nbsp;&nbsp;width="80%" <br />
-                          &nbsp;&nbsp;class="centrar-imagen" <br />
-                          &nbsp;&nbsp;title="Algunas tecnologías para la
-                          realización de páginas web" <br />
-                          &nbsp;&nbsp;loading="lazy" <br />
-                          &nbsp;&nbsp;aria-label="Algunas tecnologías para la
-                          realización de páginas web, p. ej. CSS, JS, HTML,
-                          angular, vue.js, ruby, python..." <br />
-                          />
-                          <!-- Aquí va el código HTML fin-->
-                        </div>
-                        <div class="code-css code-css-letrero">
-                          <!-- Aquí va el código CSS -->
-                          .example { <br />
-                          &nbsp;&nbsp;background: #f8f9fa; <br />
-                          &nbsp;&nbsp;border: 1px solid #e9ecef; <br />
-                          &nbsp;&nbsp;border-radius: 8px; <br />
-                          &nbsp;&nbsp;padding: 20px; <br />
-                          &nbsp;&nbsp;margin: 20px 0; <br />
-                          } <br /><br />
-                          .centrar-imagen { <br />
-                          &nbsp;&nbsp;display: block; <br />
-                          &nbsp;&nbsp;margin-left: auto; <br />
-                          &nbsp;&nbsp;margin-right: auto; <br />
-                          &nbsp;&nbsp;width: 80%; <br />
-                          }
-                          <!-- Aquí va el código CSS fin-->
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Contenedor de resultado: ocupa toda la fila en móvil, mitad en lg -->
-                    <div class="col-12 col-lg-6 mt-3 mt-lg-0">
-                      <div class="code-result results">
-                        <!-- Aquí va el resultado -->
-                        <div class="ej-example">
-                          <h3>Imagen con &lt;img></h3>
+                <div class="row">
+                  <!-- Ejemplo -->
+                  <div class="ej-ejemplo">
+                    <div class="row ej-ejecutado mt-3">
+                      <!-- código ejecutado -->
+                      <div>
+                        <div class="ej-contenedor">
+                          <p class="ej-h3-img">Tecnologías Web</p>
                           <img
                             src="https://cdn.pixabay.com/photo/2016/12/28/09/36/web-1935737_1280.png"
                             alt="Diseño web"
@@ -397,12 +357,76 @@
                             aria-label="Algunas tecnologías para la realización de páginas web, p. ej. CSS, JS, HTML, angular, vue.js, ruby, python..."
                           />
                         </div>
-                        <!-- Aquí va el resultado fin -->
+                      </div>
+                      <!-- código ejecutado fin -->
+                    </div>
+                    <div class="row">
+                      <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                        <!-- código HTML -->
+                        <pre data-src-status="loaded" tabindex="0">
+                            <code class="language-html" data-prismjs-copy="Copy">
+                              <div>
+                                &lt;div class="contenedor">
+                                    &lt;p class="h3-img">Tecnologías Web&lt;/p>
+                                    &lt;img
+                                        src="https://cdn.pixabay.com/photo/2016/12/28/09/36/web-1935737_1280.png"
+                                        alt="Diseño web"
+                                        width="80%"
+                                        class="centrar-imagen"
+                                        title="Algunas tecnologías para la realización de páginas web"
+                                        loading="lazy"
+                                        aria-label="Algunas tecnologías para la realización de páginas web, p. ej. CSS, JS, HTML, angular, vue.js, ruby, python..."
+                                                          />
+                                &lt;/div>                                
+                              </div>        
+                            </code>
+                          </pre>
+                        <!-- código HTML -->
+                      </div>
+                      <div class="ej-code-css col-lg-6 mb-3">
+                        <!-- código CSS -->
+                        <pre data-src-status="loaded" tabindex="0">
+                              <code class="language-css" data-prismjs-copy="Copy">
+                                <div>
+                                  .centrar-imagen {
+                                      display: block;
+                                      margin: 0 auto;
+                                      max-width: 100%;
+                                      height: auto;
+                                      // border-radius: 12px;
+                                      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                                      transition: transform 0.3s ease;
+                                      overflow: hidden;
+                                  }
+
+                                  .centrar-imagen:hover {
+                                      transform: scale(1.02);
+                                  }
+
+                                  .contenedor {
+                                      max-width: 100%;
+                                      margin: 0 auto;
+                                      padding: 20px;
+                                      text-align: center;
+                                  }
+
+                                  .h3-img {
+                                      color: var(--color-texto);
+                                      margin-bottom: 20px;
+                                      text-align: center;
+                                      font-size: 2rem;
+                                      font-weight: bold;
+                                      ;
+                                  }                                  
+                                </div>        
+                              </code>
+                            </pre>
+                        <!-- código HTML -->
                       </div>
                     </div>
                   </div>
+                  <!-- Ejemplo fin -->
                 </div>
-                <!-- Ejemplos de código fin -->
               </div>
               <!-- Imágenes HTML Fin -->
               <hr class="subtle-divider" />
@@ -489,171 +513,290 @@
                   atributo <code>muted</code> para que funcione, tal como en
                   este caso.
                 </p>
-                <!-- Ejemplos de código -->
-                <div class="code border border-1 border-light p-3 rounded-2">
-                  <div class="row">
-                    <!-- Contenedor de código: ocupa toda la fila en móvil, mitad en lg -->
-                    <div class="col-12 col-lg-6">
-                      <div class="codes">
-                        <div class="code-html code-html-letrero mb-3">
-                          <!-- Aquí va el código HTML -->
-                          &lt;video <br />
-                          &nbsp;&nbsp;src="./multimedia/202368-918049003_small.mp4"
-                          <br />
-                          &nbsp;&nbsp;width="80%" <br />
-                          &nbsp;&nbsp;autoplay <br />
-                          &nbsp;&nbsp;muted <br />
-                          &nbsp;&nbsp;loop <br />
-                          >&lt;/video> <br />
-                          <!-- Aquí va el código HTML fin-->
-                        </div>
-                        <div class="code-css code-css-letrero">
-                          <!-- Aquí va el código CSS -->
-                          .example { <br />
-                          &nbsp;&nbsp;background: #f8f9fa; <br />
-                          &nbsp;&nbsp;border: 1px solid #e9ecef; <br />
-                          &nbsp;&nbsp;border-radius: 8px; <br />
-                          &nbsp;&nbsp;padding: 20px; <br />
-                          &nbsp;&nbsp;margin: 20px 0; <br />
-                          } <br /><br />
-                          <!-- Aquí va el código CSS fin-->
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Contenedor de resultado: ocupa toda la fila en móvil, mitad en lg -->
-                    <div class="col-12 col-lg-6 mt-3 mt-lg-0">
-                      <div class="code-result results text-center">
-                        <!-- Aquí va el resultado -->
-                        <div class="ej-example">
-                          <h3>Reproducción Automática de un Vídeo</h3>
+
+                <div class="row">
+                  <!-- Ejemplo -->
+                  <div class="ej-ejemplo">
+                    <div class="row ej-ejecutado mt-3">
+                      <!-- código ejecutado -->
+                      <div>
+                        <div class="ej-video-container">
+                          <p class="ej-h3-videos">
+                            Reproducción Automática de un Vídeo
+                          </p>
+
                           <video
+                            class="ej-video-element"
                             src="./multimedia/202368-918049003_small.mp4"
                             width="80%"
                             autoplay
                             muted
                             loop
-                          ></video>
+                          >
+                            Tu navegador no soporta la reproducción de video.
+                          </video>
                         </div>
-                        <!-- Aquí va el resultado fin -->
+                      </div>
+                      <!-- código ejecutado fin -->
+                    </div>
+                    <div class="row">
+                      <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                        <!-- código HTML -->
+                        <pre data-src-status="loaded" tabindex="0">
+                            <code class="language-html" data-prismjs-copy="Copy">
+                              <div>
+                                &lt;div class="video-container">
+                                    &lt;p class="h3-videos">Reproducción Automática de un Vídeo&lt;/p>
+                                    
+                                    &lt;video 
+                                        class="video-element"
+                                        src="/202368-918049003_small.05929545.mp4" 
+                                        width="80%"
+                                        autoplay 
+                                        muted 
+                                        loop>
+                                        Tu navegador no soporta la reproducción de video.
+                                    &lt;/video>
+                                &lt;/div>                                
+                              </div>        
+                            </code>
+                          </pre>
+                        <!-- código HTML -->
+                      </div>
+                      <div class="ej-code-css col-lg-6 mb-3">
+                        <!-- código CSS -->
+                        <pre data-src-status="loaded" tabindex="0">
+                              <code class="language-css" data-prismjs-copy="Copy">
+                                <div>
+                                  .video-container {
+                                    max-width: 800px;
+                                    margin: 40px auto;
+                                    padding: 20px;
+                                    text-align: center;
+                                  }
+
+                                  .h3-videos {
+                                    font-size: 1.8rem;
+                                    color: var(--color-texto);
+                                    margin-bottom: 20px;
+                                    font-weight: 600;
+                                    text-align: center;
+                                  }
+
+                                  .video-element {
+                                    width: 80%;
+                                    border-radius: 12px;
+                                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                                  }
+
+                                  @media (max-width: 768px) {
+                                    .video-container {
+                                      padding: 15px;
+                                      margin: 20px auto;
+                                    }
+
+                                    .h3-videos {
+                                      font-size: 1.5rem;
+                                    }
+
+                                    .video-element {
+                                      width: 95%;
+                                    }
+                                  }                                  
+                                </div>        
+                              </code>
+                            </pre>
+                        <!-- código HTML -->
                       </div>
                     </div>
                   </div>
+                  <!-- Ejemplo fin -->
                 </div>
-                <!-- Ejemplos de código fin -->
                 <p>
                   En el siguiente ejemplo se muestra la configuración más usada:
                 </p>
-                <!-- Ejemplos de código -->
-                <div class="code border border-1 border-light p-3 rounded-2">
-                  <div class="row">
-                    <!-- Contenedor de código: ocupa toda la fila en móvil, mitad en lg -->
-                    <div class="col-12 col-lg-6">
-                      <div class="codes">
-                        <div class="code-html code-html-letrero mb-3">
-                          <!-- Aquí va el código HTML -->
-                          &lt;video <br />
-                          &nbsp;&nbsp;src="./multimedia/202368-918049003_small.mp4"
-                          <br />
-                          &nbsp;&nbsp;poster="https://i.postimg.cc/3xWF9xR2/poster.png"
-                          <br />
-                          &nbsp;&nbsp;width="80%" <br />
-                          &nbsp;&nbsp;controls <br />
-                          &nbsp;&nbsp;width="80%" <br />
-                          &nbsp;&nbsp;preload="auto" <br />
-                          &nbsp;&nbsp;loop <br />
-                          &nbsp;&nbsp;aria-label="Video que muestra la
-                          panorámica de un parque de diversiones y al fondo hay
-                          una rueda de Chicago." <br />
-                          >&lt;/video> <br />
-                          <!-- Aquí va el código HTML fin-->
-                        </div>
-                        <div class="code-css code-css-letrero">
-                          <!-- Aquí va el código CSS -->
-                          .example { <br />
-                          &nbsp;&nbsp;background: #f8f9fa; <br />
-                          &nbsp;&nbsp;border: 1px solid #e9ecef; <br />
-                          &nbsp;&nbsp;border-radius: 8px; <br />
-                          &nbsp;&nbsp;padding: 20px; <br />
-                          &nbsp;&nbsp;margin: 20px 0; <br />
-                          } <br /><br />
-                          <!-- Aquí va el código CSS fin-->
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Contenedor de resultado: ocupa toda la fila en móvil, mitad en lg -->
-                    <div class="col-12 col-lg-6 mt-3 mt-lg-0">
-                      <div class="code-result results text-center">
-                        <!-- Aquí va el resultado -->
-                        <div class="ej-example">
-                          <h3>Reproducción un Vídeo</h3>
+                <div class="row">
+                  <!-- Ejemplo -->
+                  <div class="ej-ejemplo">
+                    <div class="row ej-ejecutado mt-3">
+                      <!-- código ejecutado -->
+                      <div>
+                        <div class="ej-video-container">
+                          <p class="ej-h3-videos">
+                            Reproducción un Vídeo con Imagen Previa
+                          </p>
                           <video
+                            class="ej-video-element"
                             src="./multimedia/202368-918049003_small.mp4"
                             poster="https://i.postimg.cc/3xWF9xR2/poster.png"
-                            width="80%"
                             controls
-                            width="80%"
                             preload="auto"
                             loop
                             aria-label="Video que muestra la panorámica de un parque de diversiones y al fondo hay una rueda de Chicago."
-                            loop
-                          ></video>
+                          >
+                            Tu navegador no soporta la reproducción de video.
+                          </video>
                         </div>
-                        <!-- Aquí va el resultado fin -->
+                      </div>
+                      <!-- código ejecutado fin -->
+                    </div>
+                    <div class="row">
+                      <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                        <!-- código HTML -->
+                        <pre data-src-status="loaded" tabindex="0">
+                            <code class="language-html" data-prismjs-copy="Copy">
+                              <div>
+                                &lt;div class="video-container">
+                                    &lt;p class="h3-videos">Reproducción Automática de un Vídeo&lt;/p>
+                                    
+                                    &lt;video 
+                                        class="video-element"
+                                        src="/202368-918049003_small.05929545.mp4" 
+                                        width="80%"
+                                        autoplay 
+                                        muted 
+                                        loop>
+                                        Tu navegador no soporta la reproducción de video.
+                                    &lt;/video>
+                                &lt;/div>                                
+                              </div>        
+                            </code>
+                          </pre>
+                        <!-- código HTML -->
+                      </div>
+                      <div class="ej-code-css col-lg-6 mb-3">
+                        <!-- código CSS -->
+                        <pre data-src-status="loaded" tabindex="0">
+                              <code class="language-css" data-prismjs-copy="Copy">
+                                <div>
+                                  .video-container {
+                                    max-width: 800px;
+                                    margin: 40px auto;
+                                    padding: 20px;
+                                    text-align: center;
+                                  }
+
+                                  .h3-videos {
+                                    font-size: 1.8rem;
+                                    color: var(--color-texto);
+                                    margin-bottom: 20px;
+                                    font-weight: 600;
+                                    text-align: center;
+                                  }
+
+                                  .video-element {
+                                    width: 80%;
+                                    border-radius: 12px;
+                                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                                  }
+
+                                  @media (max-width: 768px) {
+                                    .video-container {
+                                      padding: 15px;
+                                      margin: 20px auto;
+                                    }
+
+                                    .h3-videos {
+                                      font-size: 1.5rem;
+                                    }
+
+                                    .video-element {
+                                      width: 95%;
+                                    }
+                                  }                                  
+                                </div>        
+                              </code>
+                            </pre>
+                        <!-- código HTML -->
                       </div>
                     </div>
                   </div>
+                  <!-- Ejemplo fin -->
                 </div>
-                <!-- Ejemplos de código fin -->
                 <p>
                   <span class="fw-bold"
                     >Otra Forma de usar <code>&lt;video></code></span
                   >:
                 </p>
-                <!-- Ejemplos de código -->
-                <div class="code border border-1 border-light p-3 rounded-2">
-                  <div class="row">
-                    <!-- Contenedor de código: ocupa toda la fila en móvil, mitad en lg -->
-                    <div class="col-12 col-lg-6">
-                      <div class="codes">
-                        <div class="code-html code-html-letrero mb-3">
-                          <!-- Aquí va el código HTML -->
-                          &lt;video controls width="80%"> <br />
-                          &nbsp;&nbsp;&lt;source <br />
-                          &nbsp;&nbsp;&nbsp;&nbsp;src="./multimedia/202368-918049003_small.mp4"
-                          <br />
-                          &nbsp;&nbsp;&nbsp;&nbsp;type="video/mp4" <br />
-                          &nbsp;&nbsp;/> <br />
-                          &nbsp;&nbsp;Your browser does not support the video
-                          tag. <br />
-                          &lt;/video> <br />
-                          <!-- Aquí va el código HTML fin-->
-                        </div>
-                        <div class="code-css code-css-letrero">
-                          <!-- Aquí va el código CSS -->
-                          <!-- Aquí va el código CSS fin-->
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Contenedor de resultado: ocupa toda la fila en móvil, mitad en lg -->
-                    <div class="col-12 col-lg-6 mt-3 mt-lg-0">
-                      <div class="code-result results">
-                        <!-- Aquí va el resultado -->
-                        <div class="ej-example text-center">
-                          <h3>Reproducción Moderna de un Vídeo</h3>
+                <div class="row">
+                  <!-- Ejemplo -->
+                  <div class="ej-ejemplo">
+                    <div class="row ej-ejecutado mt-3">
+                      <!-- código ejecutado -->
+                      <div>
+                        <div class="ej-video-container2">
+                          <p class="ej-h3-videos">
+                            Reproducción Moderna de un Vídeo
+                          </p>
                           <video controls width="80%">
                             <source
                               src="./multimedia/202368-918049003_small.webm"
-                              type="video/webm"
+                              type="video/mp4"
                             />
                             Your browser does not support the video tag.
                           </video>
                         </div>
-                        <!-- Aquí va el resultado fin -->
+                      </div>
+                      <!-- código ejecutado fin -->
+                    </div>
+                    <div class="row">
+                      <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                        <!-- código HTML -->
+                        <pre data-src-status="loaded" tabindex="0">
+                            <code class="language-html" data-prismjs-copy="Copy">
+                              <div>
+                                &lt;div class="video-container2">
+                                  &lt;p class="h3-videos">
+                                    Reproducción Moderna de un Vídeo
+                                  &lt;/p>
+                                  &lt;video controls width="80%">
+                                    &lt;source
+                                      src="./multimedia/202368-918049003_small.webm"
+                                      type="video/mp4"
+                                    />
+                                    Your browser does not support the video tag.
+                                  &lt;/video>
+                                &lt;/div>
+                              </div>        
+                            </code>
+                          </pre>
+                        <!-- código HTML -->
+                      </div>
+                      <div class="ej-code-css col-lg-6 mb-3">
+                        <!-- código CSS -->
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-css" data-prismjs-copy="Copy">
+                          <div>
+                            .video-container2 {
+                              max-width: 800px;
+                              margin: 40px auto;
+                              background-color: #1e1e2f;
+                              border-radius: 16px;
+                              box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+                              padding: 24px;
+                              text-align: center; /* Centra contenido inline y video */
+                              font-family: "Segoe UI", Roboto, sans-serif;
+                              color: #f4f4f4;
+                            }
+
+                            .video-container2 video {
+                              width: 80%;
+                              margin: 0 auto; /* Centra el video como bloque */
+                              display: block; /* Necesario para que margin funcione */
+                              border-radius: 12px;
+                              box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+                              outline: none;
+                              background-color: #000;
+                            }
+                          </div>      
+                          </code>
+                        </pre>
+                        <!-- código HTML -->
                       </div>
                     </div>
                   </div>
+                  <!-- Ejemplo fin -->
                 </div>
-                <!-- Ejemplos de código fin -->
                 <p>
                   Este ejemplo presenta un reproductor de video HTML5 estándar
                   que reproduce un archivo WEBM con los controles nativos del
@@ -709,61 +852,79 @@
                     pero operable mediante botones personalizados.
                   </li>
                 </ul>
-                <!-- Ejemplos de código -->
-                <div class="code border border-1 border-light p-3 rounded-2">
-                  <div class="row">
-                    <!-- Contenedor de código: ocupa toda la fila en móvil, mitad en lg -->
-                    <div class="col-12 col-lg-6">
-                      <div class="codes">
-                        <div class="code-html code-html-letrero mb-3">
-                          <!-- Aquí va el código HTML -->
-                          &lt;audio <br />
-                          &nbsp;&nbsp;src="./multimedia/commercial-upbeat-energetic-rock-354637.mp3"
-                          <br />
-                          &nbsp;&nbsp;preload="auto" <br />
-                          &nbsp;&nbsp;loop <br />
-                          &nbsp;&nbsp;controls <br />
-                          &nbsp;&nbsp;autoplay <br />
-                          &nbsp;&nbsp;aria-label="Reproductor de audio para una
-                          pista musical de rock" <br />
-                          >&lt;/audio>
-                          <!-- Aquí va el código HTML fin-->
-                        </div>
-                        <div class="code-css code-css-letrero">
-                          <!-- Aquí va el código CSS -->
-                          .example { <br />
-                          &nbsp;&nbsp;background: #f8f9fa; <br />
-                          &nbsp;&nbsp;border: 1px solid #e9ecef; <br />
-                          &nbsp;&nbsp;border-radius: 8px; <br />
-                          &nbsp;&nbsp;padding: 20px; <br />
-                          &nbsp;&nbsp;margin: 20px 0; <br />
-                          }
-                          <!-- Aquí va el código CSS fin-->
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Contenedor de resultado: ocupa toda la fila en móvil, mitad en lg -->
-                    <div class="col-12 col-lg-6 mt-3 mt-lg-0">
-                      <div class="code-result results">
-                        <!-- Aquí va el resultado -->
-                        <div class="ej-example">
-                          <h3>Reproducción de un Archivo mp3</h3>
+                <div class="row">
+                  <!-- Ejemplo -->
+                  <div class="ej-ejemplo">
+                    <div class="row ej-ejecutado mt-3">
+                      <!-- código ejecutado -->
+                      <div>
+                        <div class="ej-audio-container">
                           <audio
                             src="./multimedia/commercial-upbeat-energetic-rock-354637.mp3"
                             preload="auto"
                             loop
                             controls
                             autoplay
-                            class="ej-centrar-imagen"
+                            class="audio-personalizado"
                             aria-label="Reproductor de audio para una pista musical de rock"
                           ></audio>
                         </div>
-                        <!-- Aquí va el resultado fin -->
+                      </div>
+                      <!-- código ejecutado fin -->
+                    </div>
+                    <div class="row">
+                      <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                        <!-- código HTML -->
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-html" data-prismjs-copy="Copy">
+                            <div>
+                              &lt;div class="audio-container">
+                                &lt;audio 
+                                  src="/commercial-upbeat-energetic-rock-354637.01e7c64f.mp3" 
+                                  preload="auto" 
+                                  loop 
+                                  controls 
+                                  autoplay 
+                                  class="audio-personalizado" 
+                                  aria-label="Reproductor de audio para una pista musical de rock">
+                                &lt;/audio>
+                              &lt;/div>                              
+                            </div>        
+                          </code>
+                        </pre>
+                        <!-- código HTML -->
+                      </div>
+                      <div class="ej-code-css col-lg-6 mb-3">
+                        <!-- código CSS -->
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-css" data-prismjs-copy="Copy">
+                            <div>
+                              .audio-container {
+                                max-width: 400px;
+                                margin: 40px auto;
+                                background: linear-gradient(145deg, #1f1f2e, #2c2c3d);
+                                border-radius: 16px;
+                                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+                                padding: 20px;
+                                text-align: center;
+                                font-family: 'Segoe UI', sans-serif;
+                              }
+
+                              .audio-container audio {
+                                width: 100%;
+                                filter: grayscale(30%) brightness(1.1) contrast(1.1);
+                                border-radius: 8px;
+                                outline: none;
+                              }                              
+                            </div>        
+                          </code>
+                        </pre>
+                        <!-- código HTML -->
                       </div>
                     </div>
                   </div>
+                  <!-- Ejemplo fin -->
                 </div>
-                <!-- Ejemplos de código fin -->
               </div>
               <!-- Audio HTML <audio> Fin -->
               <hr class="subtle-divider" />
@@ -814,61 +975,138 @@
                   </li>
                 </ul>
                 <p><span class="fw-bold">Sintaxis básica</span>:</p>
-                <!-- Ejemplos de código -->
-                <div class="code border border-1 border-light p-3 rounded-2">
-                  <div class="row">
-                    <!-- Contenedor de código: ocupa toda la fila en móvil, mitad en lg -->
-                    <div class="col-12 col-lg-6">
-                      <div class="codes">
-                        <div class="code-html code-html-letrero mb-3">
-                          <!-- Aquí va el código HTML -->
-                          &lt;figure class="text-center"> <br />
-                          &nbsp;&nbsp;&lt;img <br />
-                          &nbsp;&nbsp;&nbsp;&nbsp;src="https://cdn.pixabay.com/photo/2016/12/28/09/36/web-1935737_1280.png"
-                          <br />
-                          &nbsp;&nbsp;&nbsp;&nbsp;alt="Diseño web" <br />
-                          &nbsp;&nbsp;&nbsp;&nbsp;width="80%" /> <br />
-                          &nbsp;&nbsp;&lt;figcaption> <br />
-                          Mi primera imagen con una leyenda.
-                          &nbsp;&nbsp;&lt;/figcaption> <br />
-                          &lt;/figure>
-                          <!-- Aquí va el código HTML fin-->
-                        </div>
-                        <div class="code-css code-css-letrero">
-                          <!-- Aquí va el código CSS -->
-                          .centrar-imagen { <br />
-                          &nbsp;&nbsp;display: block; <br />
-                          &nbsp;&nbsp;margin-left: auto; <br />
-                          &nbsp;&nbsp;margin-right: auto; <br />
-                          &nbsp;&nbsp;width: 80%; <br />
-                          }
-                          <!-- Aquí va el código CSS fin-->
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Contenedor de resultado: ocupa toda la fila en móvil, mitad en lg -->
-                    <div class="col-12 col-lg-6 mt-3 mt-lg-0">
-                      <div class="code-result results">
-                        <!-- Aquí va el resultado -->
-                        <div class="ej-example">
-                          <h3>Uso &lt;img> con &lt;figure></h3>
-                          <figure class="text-center">
+                qwe
+                <div class="row">
+                  <!-- Ejemplo -->
+                  <div class="ej-ejemplo">
+                    <div class="row ej-ejecutado mt-3">
+                      <!-- código ejecutado -->
+                      <div>
+                        <div class="ej-example-figure">
+                          <p class="ej-h3-figure">
+                            Uso &lt;img> con &lt;figure>
+                          </p>
+                          <figure class="ej-figura-estilizada2">
                             <img
                               src="https://cdn.pixabay.com/photo/2016/12/28/09/36/web-1935737_1280.png"
                               alt="Diseño web"
-                              width="80%"
                             />
-                            <figcaption>
+                            <figcaption class="ej-figcaption">
                               Mi primera imagen con una leyenda.
                             </figcaption>
                           </figure>
                         </div>
-                        <!-- Aquí va el resultado fin -->
+                      </div>
+                      <!-- código ejecutado fin -->
+                    </div>
+                    <div class="row">
+                      <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                        <!-- código HTML -->
+                        <pre>
+                            <code class="language-html" data-prismjs-copy="Copy">
+                              <div>
+                                &lt;div class="example-figure">
+                                  &lt;p class="h3-figure">
+                                    Uso &lt;img> con &lt;figure>
+                                  &lt;/p>
+                                  &lt;figure class="figura-estilizada2">
+                                    &lt;img
+                                      src="https://cdn.pixabay.com/photo/2016/12/28/09/36/web-1935737_1280.png"
+                                      alt="Diseño web"
+                                    />
+                                    &lt;figcaption class="figcaption">
+                                      Mi primera imagen con una leyenda.
+                                    &lt;/figcaption>
+                                  &lt;/figure>
+                                &lt;/div>                                
+                              </div>        
+                            </code>
+                          </pre>
+                        <!-- código HTML -->
+                      </div>
+                      <div class="ej-code-css col-lg-6 mb-3">
+                        <!-- código CSS -->
+                        <pre>
+                              <code class="language-css" data-prismjs-copy="Copy">
+                                <div>
+                                  .figura-estilizada2 {
+                                    background: var(--color-texto);
+                                    border: 1px solid #3d3d50;
+                                    border-radius: 16px;
+                                    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+                                    padding: 16px;
+                                    max-width: 600px;
+                                    margin: 0 auto;
+                                    text-align: center;
+                                    color: var(--color-fondo);
+                                  }
+
+                                  .figura-estilizada2 img {
+                                    width: 80%;
+                                    height: auto;
+                                    border-radius: 12px;
+                                    transition: transform 0.3s ease, filter 0.3s ease;
+                                    filter: brightness(1.1) contrast(1.05);
+                                  }
+
+                                  .figura-estilizada2 img:hover {
+                                    transform: scale(1.03);
+                                    filter: brightness(1.2) contrast(1.1);
+                                  }
+
+                                  .figura-estilizada2 figcaption {
+                                    margin-top: 12px;
+                                    font-size: 1rem;
+                                    font-style: italic;
+                                    color: var(--color-fondo)
+                                    opacity: 0.9;
+                                  }
+
+                                  .h3-figure {
+                                    text-align: center;
+                                    font-size: 1.8rem;
+                                    font-weight: 600;
+                                    margin-bottom: 24px;
+                                    letter-spacing: 0.5px;
+                                    background: linear-gradient(90deg, #7f5af0, #2cb67d);
+
+                                    /* Compatibilidad WebKit y estándar */
+                                    -webkit-background-clip: text;
+                                    background-clip: text;
+
+                                    -webkit-text-fill-color: transparent;
+                                    color: transparent;
+
+                                    /* Sombra opcional para dar profundidad */
+                                    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+                                  }
+
+                                  .figura-estilizada2 {
+                                    background: #f5f5f5;
+                                    border: 1px solid #ccc;
+                                    border-radius: 16px;
+                                    padding: 16px;
+                                    max-width: 600px;
+                                    margin: 0 auto;
+                                    text-align: center;
+                                  }
+
+                                  .figura-estilizada2 figcaption {
+                                    margin-top: 12px;
+                                    font-size: 1rem;
+                                    font-style: italic;
+                                    color: var(--color-fondo) !important;
+                                    opacity: 1;
+                                  }                                  
+                                </div>        
+                              </code>
+                            </pre>
+                        <!-- código HTML -->
                       </div>
                     </div>
                   </div>
+                  <!-- Ejemplo fin -->
                 </div>
-                <!-- Ejemplos de código fin -->
                 <p>
                   <span class="fw-bold"
                     >Cuándo usar <code>&lt;figure></code></span
@@ -883,132 +1121,503 @@
                   </li>
                   <li>
                     Para códigos fuente con explicación:
-                    <!-- Ejemplos de código -->
-                    <div
-                      class="code border border-1 border-light p-3 rounded-2"
-                    >
-                      <div class="row">
-                        <!-- Contenedor de código: ocupa toda la fila en móvil, mitad en lg -->
-                        <div class="col-12 col-lg-6">
-                          <div class="codes">
-                            <div class="code-html code-html-letrero mb-3">
-                              <!-- Aquí va el código HTML -->
-                              &lt;figure> <br />
-                              &nbsp;&nbsp;&lt;pre
-                              class="language-js">&lt;code>console.log("Hola
-                              mundo");&lt;/code>&lt;/pre> <br />
-                              &nbsp;&nbsp;&lt;figcaption> <br />
-                              &nbsp;&nbsp;&nbsp;&nbsp;Ejemplo de salida en la
-                              consola con JavaScript. &nbsp;&nbsp; <br />
-                              &lt;/figcaption>
-                              <br />
-                              &lt;/figure>
-                              <!-- Aquí va el código HTML fin-->
+                    <div class="row">
+                      <!-- Ejemplo -->
+                      <div class="ej-ejemplo">
+                        <div class="row ej-ejecutado mt-3">
+                          <!-- código ejecutado -->
+                          <div>
+                            <div class="ej-wrapper">
+                              <div class="ej-code-container">
+                                <div class="ej-code-header">
+                                  <div class="ej-code-dots">
+                                    <div class="ej-dot red"></div>
+                                    <div class="ej-dot yellow"></div>
+                                    <div class="ej-dot green"></div>
+                                  </div>
+                                  <span>script.js</span>
+                                </div>
+                                <pre
+                                  class="ej-pre-code"
+                                ><code class="ej-code-syntax">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Hola mundo"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+                              </div>
                             </div>
                           </div>
+                          <!-- código ejecutado fin -->
                         </div>
-                        <!-- Contenedor de resultado: ocupa toda la fila en móvil, mitad en lg -->
-                        <div class="col-12 col-lg-6 mt-3 mt-lg-0">
-                          <div class="code-result results">
-                            <!-- Aquí va el resultado -->
-                            <div class="ej-example">
-                              <h3>Código fuente con explicación</h3>
-                              <figure>
-                                <pre
-                                  class="language-js"
-                                ><code>console.log("Hola mundo");</code></pre>
-                                <figcaption>
-                                  Ejemplo de salida en la consola con
-                                  JavaScript.
-                                </figcaption>
-                              </figure>
-                            </div>
-                            <!-- Aquí va el resultado fin -->
+                        <div class="row">
+                          <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                            <!-- código HTML -->
+                            <pre>
+                            <code class="language-html" data-prismjs-copy="Copy">
+                              <div>
+                                &lt;div class="wrapper">
+                                    &lt;div class="code-container">
+                                        &lt;div class="code-header">
+                                            &lt;div class="code-dots">
+                                                &lt;div class="dot red">&lt;/div>
+                                                &lt;div class="dot yellow">&lt;/div>
+                                                &lt;div class="dot green">&lt;/div>
+                                            &lt;/div>
+                                            &lt;span>script.js&lt;/span>
+                                        &lt;/div>
+                                        &lt;pre class="pre-code">&lt;code class="code-syntax">console&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">log&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token string">"Hola mundo"&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>&lt;/code>&lt;/pre>
+                                    &lt;/div>
+                                &lt;/div>                               
+                              </div>        
+                            </code>
+                          </pre>
+                            <!-- código HTML -->
+                          </div>
+                          <div class="ej-code-css col-lg-6 mb-3">
+                            <!-- código CSS -->
+                            <pre>
+                              <code class="language-css" data-prismjs-copy="Copy">
+                                <div>
+                                  .wrapper {
+                                      background: rgba(255, 255, 255, 0.03);
+                                      backdrop-filter: blur(10px);
+                                      border: 1px solid rgba(255, 255, 255, 0.1);
+                                      border-radius: 20px;
+                                      padding: 30px;
+                                      width: fit-content;
+                                      margin:0 auto;
+                                      box-shadow:
+                                          0 8px 32px rgba(0, 0, 0, 0.3),
+                                          inset 0 1px 0 rgba(255, 255, 255, 0.1);
+                                  }
+
+                                  .code-container {
+                                      position: relative;
+                                      max-width: 600px;
+                                      width: 100%;
+                                      border-radius: 12px;
+                                      overflow: hidden;
+                                      box-shadow:
+                                          0 20px 40px rgba(0, 0, 0, 0.4),
+                                          0 0 0 1px rgba(255, 255, 255, 0.05);
+                                      transition: all 0.3s ease;
+                                  }
+
+                                  .code-container:hover {
+                                      transform: translateY(-3px);
+                                      box-shadow:
+                                          0 25px 50px rgba(0, 0, 0, 0.5),
+                                          0 0 0 1px rgba(255, 255, 255, 0.1);
+                                  }
+
+                                  .code-header {
+                                      background: linear-gradient(90deg, #1a1a1a, #2a2a2a);
+                                      padding: 12px 20px;
+                                      display: flex;
+                                      align-items: center;
+                                      justify-content: space-between;
+                                      color: #e0e0e0;
+                                      font-size: 0.9rem;
+                                      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                                  }
+
+                                  .code-dots {
+                                      display: flex;
+                                      gap: 8px;
+                                  }
+
+                                  .dot {
+                                      width: 12px;
+                                      height: 12px;
+                                      border-radius: 50%;
+                                      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+                                  }
+
+                                  .dot.red {
+                                      background: linear-gradient(135deg, #ff6b6b, #ff5252);
+                                  }
+
+                                  .dot.yellow {
+                                      background: linear-gradient(135deg, #ffd93d, #ffb300);
+                                  }
+
+                                  .dot.green {
+                                      background: linear-gradient(135deg, #6bcf7f, #4caf50);
+                                  }
+
+                                  .pre-code {
+                                      background: linear-gradient(135deg, #0d1117 0%, #161b22 50%, #21262d 100%);
+                                      color: #f0f6fc;
+                                      padding: 30px;
+                                      margin: 0;
+                                      font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace;
+                                      font-size: 1.1rem;
+                                      line-height: 1.6;
+                                      overflow-x: auto;
+                                      position: relative;
+                                      border-top: 1px solid rgba(255, 255, 255, 0.05);
+                                  }
+
+                                  .pre-code::before {
+                                      content: '';
+                                      position: absolute;
+                                      top: 0;
+                                      left: 0;
+                                      right: 0;
+                                      height: 2px;
+                                      background: linear-gradient(90deg,
+                                              #ff6b6b 0%,
+                                              #4ecdc4 25%,
+                                              #45b7d1 50%,
+                                              #96ceb4 75%,
+                                              #ffeaa7 100%);
+                                      background-size: 400% 100%;
+                                      animation: gradient 4s ease infinite;
+                                  }
+
+                                  @keyframes gradient {
+                                      0% {
+                                          background-position: 0% 50%;
+                                      }
+
+                                      50% {
+                                          background-position: 100% 50%;
+                                      }
+
+                                      100% {
+                                          background-position: 0% 50%;
+                                      }
+                                  }
+
+                                  .code-code {
+                                      background: linear-gradient(135deg, #667eea, #764ba2);
+                                      color: white;
+                                      padding: 4px 8px;
+                                      border-radius: 6px;
+                                      font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace;
+                                      font-size: 0.9rem;
+                                      display: inline-block;
+                                      box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+                                      transition: all 0.3s ease;
+                                      border: 1px solid rgba(255, 255, 255, 0.1);
+                                  }
+
+                                  .code-code:hover {
+                                      transform: translateY(-2px);
+                                      box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+                                      border-color: rgba(255, 255, 255, 0.2);
+                                  }
+
+                                  /* Sintaxis highlighting mejorado para fondo oscuro */
+                                  .token.function {
+                                      color: #79c0ff;
+                                      font-weight: 600;
+                                      text-shadow: 0 0 10px rgba(121, 192, 255, 0.3);
+                                  }
+
+                                  .token.string {
+                                      color: #a5d6ff;
+                                      text-shadow: 0 0 8px rgba(165, 214, 255, 0.2);
+                                  }
+
+                                  .token.punctuation {
+                                      color: #8b949e;
+                                  }
+
+                                  .token.keyword {
+                                      color: #ff7b72;
+                                      font-weight: 600;
+                                      text-shadow: 0 0 10px rgba(255, 123, 114, 0.3);
+                                  }
+
+                                  /* Efectos adicionales */
+                                  .code-container::after {
+                                      content: '';
+                                      position: absolute;
+                                      top: -2px;
+                                      left: -2px;
+                                      right: -2px;
+                                      bottom: -2px;
+                                      background: linear-gradient(45deg,
+                                              transparent,
+                                              rgba(255, 255, 255, 0.1),
+                                              transparent);
+                                      border-radius: 14px;
+                                      opacity: 0;
+                                      transition: opacity 0.3s ease;
+                                      pointer-events: none;
+                                      z-index: -1;
+                                  }
+
+                                  .code-container:hover::after {
+                                      opacity: 1;
+                                  }
+
+                                  /* Glow effect en hover */
+                                  .code-container:hover .pre-code::before {
+                                      box-shadow: 0 0 20px rgba(255, 107, 107, 0.3);
+                                  }                                 
+                                </div>        
+                              </code>
+                            </pre>
+                            <!-- código HTML -->
                           </div>
                         </div>
                       </div>
+                      <!-- Ejemplo fin -->
                     </div>
-                    <!-- Ejemplos de código fin -->
+
+                    adsss
                   </li>
                 </ul>
                 <p>
                   <span class="fw-bold">Ejemplo</span>: Uso de
                   <code>&lt;figure></code> con varias imágenes
                 </p>
-                <!-- Ejemplos de código -->
-                <div class="code border border-1 border-light p-3 rounded-2">
-                  <div class="row">
-                    <!-- Contenedor de código: ocupa toda la fila en móvil, mitad en lg -->
-                    <div class="col-12 col-lg-6">
-                      <div class="codes">
-                        <div class="code-html code-html-letrero mb-3">
-                          <!-- Aquí va el código HTML -->
-                          &lt;figure> <br />
-                          &nbsp;&nbsp;&lt;img <br />
-                          &nbsp;&nbsp;&nbsp;&nbsp;src="https://i.ibb.co/cSbZB8mf/figure-0101.png"
-                          <br />
-                          &nbsp;&nbsp;&nbsp;&nbsp;width="32%" <br />
-                          &nbsp;&nbsp;&nbsp;&nbsp;alt="Paso 1: Fijar el brazo am
-                          la base." /> <br />
-                          &nbsp;&nbsp;&lt;img <br />
-                          &nbsp;&nbsp;&nbsp;&nbsp;src="https://i.ibb.co/DfvjRzqy/figure-0102.png"
-                          <br />
-                          &nbsp;&nbsp;&nbsp;&nbsp;width="32%" <br />
-                          &nbsp;&nbsp;&nbsp;&nbsp;alt="Paso 2: Instalar la
-                          bombilla." /> <br />
-                          &nbsp;&nbsp;&lt;img <br />
-                          &nbsp;&nbsp;&nbsp;&nbsp;src="https://i.ibb.co/Gv0PwQHr/figure-0103.png"
-                          <br />
-                          &nbsp;&nbsp;&nbsp;&nbsp;width="32%" <br />
-                          &nbsp;&nbsp;&nbsp;&nbsp;alt="Paso 3: Colocar la
-                          pantalla" /> <br />
-                          &nbsp;&nbsp;&lt;figcaption> <br />
-                          Pasos la instalación de una lámpara de escritorio
-                          básica. <br />
-                          &nbsp;&nbsp;&lt;/figcaption> <br />
-                          &lt;/figure>
-                          <!-- Aquí va el código HTML fin-->
-                        </div>
-                        <div class="code-css code-css-letrero">
-                          <!-- Aquí va el código CSS -->
-                          <!-- Aquí va el código CSS fin-->
-                        </div>
+                <div class="row">
+                  <!-- Ejemplo -->
+                  <div class="ej-ejemplo">
+                    <div class="row ej-ejecutado mt-3">
+                      <!-- código ejecutado -->
+                      <div>
+                        <figure class="ej-main-figure">
+                          <p class="ej-title">
+                            Instalación de Lámpara de Escritorio
+                          </p>
+
+                          <div class="ej-steps-grid">
+                            <figure class="ej-step-card">
+                              <div class="ej-step-number">1</div>
+                              <img
+                                src="https://i.ibb.co/cSbZB8mf/figure-0101.png"
+                                alt="Paso 1: Fijar el brazo a la base"
+                                class="ej-step-image"
+                              />
+                              <figcaption class="ej-step-caption">
+                                <h3 class="ej-step-title">
+                                  Fijar el brazo a la base
+                                </h3>
+                                <p class="ej-step-description">
+                                  Conecta el brazo articulado a la base de la
+                                  lámpara.
+                                </p>
+                              </figcaption>
+                            </figure>
+
+                            <figure class="ej-step-card">
+                              <div class="ej-step-number">2</div>
+                              <img
+                                src="https://i.ibb.co/DfvjRzqy/figure-0102.png"
+                                alt="Paso 2: Instalar la bombilla"
+                                class="ej-step-image"
+                              />
+                              <figcaption class="ej-step-caption">
+                                <h3 class="ej-step-title">
+                                  Instalar la bombilla
+                                </h3>
+                                <p class="ej-step-description">
+                                  Coloca la bombilla en el socket y enrosca
+                                  firmemente.
+                                </p>
+                              </figcaption>
+                            </figure>
+
+                            <figure class="ej-step-card">
+                              <div class="ej-step-number">3</div>
+                              <img
+                                src="https://i.ibb.co/Gv0PwQHr/figure-0103.png"
+                                alt="Paso 3: Colocar la pantalla"
+                                class="ej-step-image"
+                              />
+                              <figcaption class="ej-step-caption">
+                                <h3 class="ej-step-title">
+                                  Colocar la pantalla
+                                </h3>
+                                <p class="ej-step-description">
+                                  Instala la pantalla sobre la bombilla para
+                                  completar el montaje.
+                                </p>
+                              </figcaption>
+                            </figure>
+                          </div>
+
+                          <figcaption class="ej-main-caption">
+                            Pasos para la instalación de una lámpara de
+                            escritorio básica
+                          </figcaption>
+                        </figure>
                       </div>
+                      <!-- código ejecutado fin -->
                     </div>
-                    <!-- Contenedor de resultado: ocupa toda la fila en móvil, mitad en lg -->
-                    <div class="col-12 col-lg-6 mt-3 mt-lg-0">
-                      <div class="code-result results">
-                        <!-- Aquí va el resultado -->
-                        <div class="ej-example centrar-imagen">
-                          <h3>&lt;figure> con varias imágenes</h3>
-                          <figure>
-                            <img
-                              src="https://i.ibb.co/cSbZB8mf/figure-0101.png"
-                              width="32%"
-                              alt="Paso 1: Fijar el brazo am la base."
-                            />
-                            <img
-                              src="https://i.ibb.co/DfvjRzqy/figure-0102.png"
-                              width="32%"
-                              alt="Paso 2: Instalar la bombilla."
-                            />
-                            <img
-                              src="https://i.ibb.co/Gv0PwQHr/figure-0103.png"
-                              width="32%"
-                              alt="Paso 3: Colocar la pantalla"
-                            />
-                            <figcaption>
-                              Pasos la instalación de una lámpara de escritorio
-                              básica.
-                            </figcaption>
-                          </figure>
-                        </div>
-                        <!-- Aquí va el resultado fin -->
+                    <div class="row">
+                      <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                        <!-- código HTML -->
+                        <pre>
+                            <code class="language-html" data-prismjs-copy="Copy">
+                              <div>
+                                &lt;figure class="main-figure">
+                                  &lt;p class="title">Instalación de Lámpara de Escritorio&lt;/p>
+
+                                    &lt;div class="steps-grid">
+                                      &lt;figure class="step-card">
+                                        &lt;div class="step-number">1&lt;/div>
+                                        &lt;img
+                                                    src="https://i.ibb.co/cSbZB8mf/figure-0101.png"
+                                                    alt="Paso 1: Fijar el brazo a la base"
+                                                    class="step-image"
+                                                />
+                                        &lt;figcaption class="step-caption">
+                                          &lt;h3 class="step-title">Fijar el brazo a la base&lt;/h3>
+                                          &lt;p class="step-description">
+                                            Conecta el brazo articulado a la base de la lámpara.
+                                          &lt;/p>
+                                        &lt;/figcaption>
+                                      &lt;/figure>
+
+                                      &lt;figure class="step-card">
+                                        &lt;div class="step-number">2&lt;/div>
+                                        &lt;img
+                                                    src="https://i.ibb.co/DfvjRzqy/figure-0102.png"
+                                                    alt="Paso 2: Instalar la bombilla"
+                                                    class="step-image"
+                                                />
+                                        &lt;figcaption class="step-caption">
+                                          &lt;h3 class="step-title">Instalar la bombilla&lt;/h3>
+                                          &lt;p class="step-description">
+                                            Coloca la bombilla en el socket y enrosca firmemente.
+                                          &lt;/p>
+                                        &lt;/figcaption>
+                                      &lt;/figure>
+
+                                      &lt;figure class="step-card">
+                                        &lt;div class="step-number">3&lt;/div>
+                                        &lt;img
+                                                    src="https://i.ibb.co/Gv0PwQHr/figure-0103.png"
+                                                    alt="Paso 3: Colocar la pantalla"
+                                                    class="step-image"
+                                                />
+                                        &lt;figcaption class="step-caption">
+                                          &lt;h3 class="step-title">Colocar la pantalla&lt;/h3>
+                                          &lt;p class="step-description">
+                                            Instala la pantalla sobre la bombilla para completar el montaje.
+                                          &lt;/p>
+                                        &lt;/figcaption>
+                                      &lt;/figure>
+                                    &lt;/div>
+
+                                    &lt;figcaption class="main-caption">
+                                      Pasos para la instalación de una lámpara de escritorio básica
+                                    &lt;/figcaption>
+                                &lt;/figure>                                
+                              </div>        
+                            </code>
+                          </pre>
+                        <!-- código HTML -->
+                      </div>
+                      <div class="ej-code-css col-lg-6 mb-3">
+                        <!-- código CSS -->
+                        <pre>
+                          <code class="language-css" data-prismjs-copy="Copy">
+                            <div>
+                              .main-figure {
+                                  max-width: 900px;
+                                  margin: 0 auto;
+                                  background: white;
+                                  border-radius: 8px;
+                                  padding: 40px;
+                                  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                              }
+
+                              .title {
+                                  text-align: center;
+                                  color: #333;
+                                  font-size: 1.8rem;
+                                  font-weight: 600;
+                                  margin-bottom: 40px;
+                              }
+
+                              .steps-grid {
+                                  display: grid;
+                                  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                                  gap: 30px;
+                                  margin-bottom: 30px;
+                              }
+
+                              .step-card {
+                                  border: 1px solid #e9ecef;
+                                  border-radius: 6px;
+                                  padding: 20px;
+                                  text-align: center;
+                                  margin: 0;
+                              }
+
+                              .step-number {
+                                  display: inline-block;
+                                  width: 32px;
+                                  height: 32px;
+                                  background: #007bff;
+                                  color: white;
+                                  border-radius: 50%;
+                                  line-height: 32px;
+                                  font-weight: 600;
+                                  margin-bottom: 15px;
+                              }
+
+                              .step-image {
+                                  width: 100%;
+                                  height: auto;
+                                  border-radius: 4px;
+                                  margin-bottom: 15px;
+                              }
+
+                              .step-title {
+                                  color: #333;
+                                  font-size: 1.1rem;
+                                  font-weight: 600;
+                                  margin-bottom: 8px;
+                              }
+
+                              .step-description {
+                                  color: #6c757d;
+                                  font-size: 0.9rem;
+                              }
+
+                              .step-caption {
+                                  margin: 0;
+                              }
+
+                              .main-caption {
+                                  text-align: center;
+                                  color: #495057;
+                                  font-style: italic;
+                                  padding: 20px;
+                                  background: #f8f9fa;
+                                  border-radius: 4px;
+                                  margin: 0;
+                              }
+
+                              /* Responsive */
+                              @media (max-width: 768px) {
+                                  .main-figure {
+                                      padding: 20px;
+                                      margin: 0 10px;
+                                  }
+
+                                  .title {
+                                      font-size: 1.5rem;
+                                      margin-bottom: 30px;
+                                  }
+
+                                  .steps-grid {
+                                      grid-template-columns: 1fr;
+                                      gap: 20px;
+                                  }
+                              }                                  
+                            </div>        
+                          </code>
+                        </pre>
+                        <!-- código HTML -->
                       </div>
                     </div>
                   </div>
+                  <!-- Ejemplo fin -->
                 </div>
-                <!-- Ejemplos de código fin -->
                 <p><span class="fw-bold">Características importantes</span>:</p>
                 <ul>
                   <li>Todas las imágenes están agrupadas semánticamente.</li>
@@ -1069,104 +1678,191 @@
                 <code>&lt;audio></code>. Se configuran distintas fuentes, y se
                 utiliza la primera que cumpla con las condiciones establecidas.
               </p>
-              <!-- Ejemplos de código -->
-              <div class="code border border-1 border-light p-3 rounded-2">
-                <div class="row">
-                  <!-- Contenedor de código: ocupa toda la fila en móvil, mitad en lg -->
-                  <div class="col-12 col-lg-6">
-                    <div class="codes">
-                      <div class="code-html code-html-letrero mb-3">
-                        <!-- Aquí va el código HTML -->
-                        &lt;div class="centrar-imagen"> <br />
-                        &nbsp;&nbsp;&lt;h3> <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;picture> Diferentes imágenes
-                        dependientes el ancho del viewport <br />
-                        &nbsp;&nbsp;&lt;/h3> <br />
-                        &nbsp;&nbsp;&lt;picture> <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;source <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;style="width: 100%;
-                        height: auto" <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;media="(width >=
-                        992px)" <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;srcset="https://i.postimg.cc/tC9VfH0g/pexels-gasparzaldo-6779117-lg.jpg"
-                        <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;/> <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;source <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;style="width: 100%;
-                        height: auto" <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;media="(width >=
-                        576px)" <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;srcset="https://i.postimg.cc/G3Fyqm5N/pexels-optical-chemist-340351297-31284696-md.jpg"<br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;/> <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;img <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;style="width: 100%;
-                        height: auto" <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;src="https://i.postimg.cc/fyfSL8dZ/pexels-rachel-claire-5864618-sm.jpg"
-                        <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;style="width: auto"
-                        &nbsp;&nbsp;&nbsp;&nbsp;/> <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Leyenda --&gt; <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;figcaption> <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Figura 2: Ejemplo
-                        que muestra una imagen que depende del ancho del
-                        viewport. &nbsp;&nbsp;&nbsp;&nbsp;&lt;/figcaption>
-                        <br />
-                        &nbsp;&nbsp;&lt;/picture><br />
-                        &lt;/div> <br />
-                        <!-- Aquí va el código HTML fin-->
-                      </div>
-                      <div class="code-css code-css-letrero">
-                        <!-- Aquí va el código CSS -->
-                        .centrar-imagen { <br />
-                        &nbsp;&nbsp;display: block; <br />
-                        &nbsp;&nbsp;margin-left: auto; <br />
-                        &nbsp;&nbsp;margin-right: auto; <br />
-                        }
-                        <!-- Aquí va el código CSS fin-->
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Contenedor de resultado: ocupa toda la fila en móvil, mitad en lg -->
-                  <div class="col-12 col-lg-6 mt-3 mt-lg-0">
-                    <div class="code-result results">
-                      <!-- Aquí va el resultado -->
-                      <div class="ej-example ej-centrar-imagen">
-                        <h3>
-                          &lt;picture> Diferentes imágenes dependientes el ancho
-                          del viewport
-                        </h3>
-                        <picture>
-                          <source
-                            style="width: 100%; height: auto"
-                            media="(width >= 992px)"
-                            srcset="
-                              https://i.postimg.cc/tC9VfH0g/pexels-gasparzaldo-6779117-lg.jpg
-                            "
-                          />
-                          <source
-                            style="width: 100%; height: auto"
-                            media="(width >= 576px)"
-                            srcset="
-                              https://i.postimg.cc/G3Fyqm5N/pexels-optical-chemist-340351297-31284696-md.jpg
-                            "
-                          />
-                          <img
-                            style="width: 100%; height: auto"
-                            src="https://i.postimg.cc/fyfSL8dZ/pexels-rachel-claire-5864618-sm.jpg"
-                          />
-                          <!-- Leyenda -->
-                          <figcaption>
+              <div class="row">
+                <!-- Ejemplo -->
+                <div class="ej-ejemplo">
+                  <div class="row ej-ejecutado mt-3">
+                    <!-- código ejecutado -->
+                    <div>
+                      <div class="ej-example-pic ej-centrar-imagen-pic">
+                        <p class="ej-h3-tipos-pic">
+                          &lt;picture&gt; Diferentes imágenes dependientes el
+                          ancho del viewport
+                        </p>
+                        <div class="ej-picture-container-pic">
+                          <picture>
+                            <source
+                              class="ej-source-pic"
+                              media="(width >= 992px)"
+                              srcset="
+                                https://i.postimg.cc/tC9VfH0g/pexels-gasparzaldo-6779117-lg.jpg
+                              "
+                            />
+                            <source
+                              class="ej-source-pic"
+                              media="(width >= 576px)"
+                              srcset="
+                                https://i.postimg.cc/G3Fyqm5N/pexels-optical-chemist-340351297-31284696-md.jpg
+                              "
+                            />
+                            <img
+                              class="ej-image-pic"
+                              src="https://i.postimg.cc/fyfSL8dZ/pexels-rachel-claire-5864618-sm.jpg"
+                              alt="Imagen responsiva que cambia según el ancho del viewport"
+                            />
+                          </picture>
+                          <figcaption class="ej-caption-pic">
                             Figura 2: Ejemplo que muestra una imagen que depende
                             del ancho del viewport.
                           </figcaption>
-                        </picture>
+                        </div>
                       </div>
-                      <!-- Aquí va el resultado fin -->
+                    </div>
+                    <!-- código ejecutado fin -->
+                  </div>
+                  <div class="row">
+                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                      <!-- código HTML -->
+                      <pre>
+                        <code class="language-html" data-prismjs-copy="Copy">
+                          <div>
+                            &lt;div class="&lt;example-pic &lt;centrar-imagen-pic">
+                              &lt;p class="h3-tipos-pic">&lt;picture&gt; Diferentes imágenes dependientes el ancho del viewport&lt;/p>
+                              &lt;div class="&lt;picture-container-pic">
+                                &lt;picture>
+                                  &lt;source class="&lt;source-pic" media="(width >= 992px)"
+                                    srcset="https://i.postimg.cc/tC9VfH0g/pexels-gasparzaldo-6779117-lg.jpg">
+                                  &lt;source class="&lt;source-pic" media="(width >= 576px)"
+                                    srcset="https://i.postimg.cc/G3Fyqm5N/pexels-optical-chemist-340351297-31284696-md.jpg">
+                                  &lt;img class="&lt;image-pic"
+                                                src="https://i.postimg.cc/fyfSL8dZ/pexels-rachel-claire-5864618-sm.jpg"
+                                                alt="Imagen responsiva que cambia según el ancho del viewport">
+                                &lt;/picture>
+                                &lt;figcaption class="&lt;caption-pic">
+                                  Figura 2: Ejemplo que muestra una imagen que depende del ancho del viewport.
+                                &lt;/figcaption>
+                              &lt;/div>
+                            &lt;/div>                            
+                          </div>        
+                        </code>
+                      </pre>
+                      <!-- código HTML -->
+                    </div>
+                    <div class="ej-code-css col-lg-6 mb-3">
+                      <!-- código CSS -->
+                      <pre>
+                        <code class="language-css" data-prismjs-copy="Copy">
+                          <div>
+                            /* Estilos para el contenedor del ejemplo picture */
+                            .example-pic {
+                                max-width: 1200px;
+                                margin: 2rem auto;
+                                padding: 1.5rem;
+                                background-color: #f8f9fa;
+                                border-radius: 12px;
+                                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                            }
+
+                            /* Centrar imagen y contenido */
+                            .centrar-imagen-pic {
+                                text-align: center;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                gap: 1rem;
+                            }
+
+                            /* Estilo para el título usando párrafo */
+                            .h3-tipos-pic {
+                                color: #2c3e50;
+                                font-family: 'Arial', sans-serif;
+                                font-size: 1.5rem;
+                                font-weight: 600;
+                                margin: 0 0 1.5rem 0;
+                                text-align: center;
+                                border-bottom: 2px solid #3498db;
+                                padding-bottom: 0.5rem;
+                                display: inline-block;
+                            }
+
+                            /* Contenedor del elemento picture */
+                            .picture-container-pic {
+                                position: relative;
+                                width: 100%;
+                                max-width: 800px;
+                                border-radius: 8px;
+                                overflow: hidden;
+                                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+                                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                            }
+
+                            .picture-container-pic:hover {
+                                transform: translateY(-5px);
+                                box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+                            }
+
+                            /* Estilos para las fuentes de imagen */
+                            .source-pic {
+                                width: 100%;
+                                height: auto;
+                                display: block;
+                            }
+
+                            /* Estilo para la imagen principal */
+                            .image-pic {
+                                width: 100%;
+                                height: auto;
+                                display: block;
+                                object-fit: cover;
+                                transition: opacity 0.3s ease;
+                            }
+
+                            /* Estilo para la leyenda */
+                            .caption-pic {
+                                margin-top: 1rem;
+                                font-size: 0.9rem;
+                                color: #6c757d;
+                                font-style: italic;
+                                line-height: 1.4;
+                                max-width: 600px;
+                                text-align: center;
+                            }
+
+                            /* Responsive design */
+                            @media (max-width: 991px) {
+                                .example-pic {
+                                    padding: 1rem;
+                                    margin: 1rem;
+                                }
+
+                                .h3-tipos-pic {
+                                    font-size: 1.3rem;
+                                }
+                            }
+
+                            @media (max-width: 575px) {
+                                .example-pic {
+                                    padding: 0.75rem;
+                                    margin: 0.5rem;
+                                }
+
+                                .h3-tipos-pic {
+                                    font-size: 1.1rem;
+                                }
+
+                                .caption-pic {
+                                    font-size: 0.8rem;
+                                }
+                            }                            
+                          </div>        
+                        </code>
+                      </pre>
+                      <!-- código HTML -->
                     </div>
                   </div>
                 </div>
+                <!-- Ejemplo fin -->
               </div>
-              <!-- Ejemplos de código fin -->
               <p><span class="fw-bold">Funcionamiento</span>:</p>
               <p>El navegador evalúa las condiciones de arriba hacia abajo:</p>
               <ul>
@@ -1227,22 +1923,20 @@
                   <span class="fw-bold">Evaluación en orden</span>: El navegador
                   lee los elementos <code>&lt;source></code> de arriba hacia
                   abajo y evalúa cada condición <code>media</code>:
-                  <pre
-                    class="line-numbers"
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
-                    <code class="language-html" data-prismjs-copy="Copy">
-                      &lt;!-- PASO 1: ¿La pantalla tiene un ancho mayor o igual a 992px? --&gt;
-                      &lt;source media="(width >= 992px)" srcset="imagen-grande.jpg" /&gt;
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-html" data-prismjs-copy="Copy">
+                        &lt;!-- PASO 1: ¿La pantalla tiene un ancho mayor o igual a 992px? --&gt;
+                        &lt;source media="(width >= 992px)" srcset="imagen-grande.jpg" /&gt;
 
-                      &lt;!-- PASO 2: Si no, ¿tiene ancho de 576px pero menor que 992px? --&gt;
-                      &lt;source media="(width >= 576px)" srcset="imagen-mediana.jpg" /&gt;
+                        &lt;!-- PASO 2: Si no, ¿tiene ancho de 576px pero menor que 992px? --&gt;
+                        &lt;source media="(width >= 576px)" srcset="imagen-mediana.jpg" /&gt;
 
-                      &lt;!-- PASO 3: Si ninguna coincide, usa esta por defecto --&gt;
-                      &lt;img src="imagen-pequeña.jpg" /&gt;
-                    </code>
-                  </pre>
+                        &lt;!-- PASO 3: Si ninguna coincide, usa esta por defecto --&gt;
+                        &lt;img src="imagen-pequeña.jpg" /&gt;
+                      </code>
+                    </pre>
+                  </div>
                 </li>
                 <li>
                   <span class="fw-bold">Primera coincidencia gana</span>: En
@@ -1328,69 +2022,208 @@
                 primer formato que reconozca e ignore las demás imágenes.
               </p>
               <p>Ejemplo:</p>
-              <!-- Ejemplos de código -->
-              <div class="code border border-1 border-light p-3 rounded-2">
-                <div class="row">
-                  <!-- Contenedor de código: ocupa toda la fila en móvil, mitad en lg -->
-                  <div class="col-12 col-lg-6">
-                    <div class="codes">
-                      <div class="code-html code-html-letrero mb-3">
-                        <!-- Aquí va el código HTML -->
-                        &lt;picture> <br />
-                        &nbsp;&nbsp;&lt;source <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;srcset="https://i.ibb.co/Z6fqJW75/img-reddit.webp"
-                        <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;type="image/webp" <br />
-                        &nbsp;&nbsp;/> <br />
-                        &nbsp;&nbsp;&lt;source <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;srcset="https://i.ibb.co/B5ks8yDZ/img-retriver.jpg"
-                        <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;type="image/jpeg" <br />
-                        &nbsp;&nbsp;/> <br />
-                        &nbsp;&nbsp;&lt;img <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;src="https://i.ibb.co/nNDDmN0R/img-avatar.png"
-                        <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;alt="Avatar" <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;style="width: 80%" <br />
-                        &nbsp;&nbsp;/> <br />
-                        &lt;/picture> <br />
-                        <!-- Aquí va el código HTML fin-->
-                      </div>
-                      <div class="code-css code-css-letrero">
-                        <!-- Aquí va el código CSS -->
-                        <!-- Aquí va el código CSS fin-->
+              <div class="row">
+                <!-- Ejemplo -->
+                <div class="ej-ejemplo">
+                  <div class="row ej-ejecutado mt-3">
+                    <!-- código ejecutado -->
+                    <div>
+                      <div class="ej-wrapper-ext">
+                        <div class="ej-example-ext">
+                          <p class="ej-h3-ext">Diferentes Formatos de Imagen</p>
+                          <picture class="ej-picture-ext">
+                            <source
+                              srcset="https://i.ibb.co/Z6fqJW75/img-reddit.webp"
+                              type="image/webp"
+                            />
+                            <source
+                              srcset="
+                                https://i.ibb.co/B5ks8yDZ/img-retriver.jpg
+                              "
+                              type="image/jpeg"
+                            />
+                            <img
+                              src="https://i.ibb.co/nNDDmN0R/img-avatar.png"
+                              alt="Avatar"
+                              class="ej-centrar-imagen-ext"
+                            />
+                          </picture>
+                        </div>
                       </div>
                     </div>
+                    <!-- código ejecutado fin -->
                   </div>
-                  <!-- Contenedor de resultado: ocupa toda la fila en móvil, mitad en lg -->
-                  <div class="col-12 col-lg-6 mt-3 mt-lg-0">
-                    <div class="code-result results">
-                      <!-- Aquí va el resultado -->
-                      <div class="ej-example">
-                        <h3>Diferentes Formatos de Imagen</h3>
-                        <picture>
-                          <source
-                            srcset="https://i.ibb.co/Z6fqJW75/img-reddit.webp"
-                            type="image/webp"
-                          />
-                          <source
-                            srcset="https://i.ibb.co/B5ks8yDZ/img-retriver.jpg"
-                            type="image/jpeg"
-                          />
-                          <img
-                            src="https://i.ibb.co/nNDDmN0R/img-avatar.png"
-                            alt="Avatar"
-                            style="width: 80%"
-                            class="ej-centrar-imagen"
-                          />
-                        </picture>
-                      </div>
-                      <!-- Aquí va el resultado fin -->
+                  <div class="row">
+                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                      <!-- código HTML -->
+                      <pre>
+                            <code class="language-html" data-prismjs-copy="Copy">
+                              <div>
+                                &lt;div class="wrapper-ext">
+                                  &lt;div class="example-ext">
+                                  &lt;p class="h3-ext">Diferentes Formatos de Imagen&lt;/p>
+                                  &lt;picture class="picture-ext">
+                                      &lt;source srcset="https://i.ibb.co/Z6fqJW75/img-reddit.webp" type="image/webp">
+                                      &lt;source srcset="https://i.ibb.co/B5ks8yDZ/img-retriver.jpg" type="image/jpeg">
+                                      &lt;img src="https://i.ibb.co/nNDDmN0R/img-avatar.png" alt="Avatar" class="centrar-imagen-ext">
+                                  &lt;/picture>
+                                  &lt;/div>
+                              &lt;/div>                                
+                              </div>        
+                            </code>
+                          </pre>
+                      <!-- código HTML -->
+                    </div>
+                    <div class="ej-code-css col-lg-6 mb-3">
+                      <!-- código CSS -->
+                      <pre>
+                        <code class="language-css" data-prismjs-copy="Copy">
+                          <div>
+                            .wrapper-ext {
+                                font-family: 'Arial', sans-serif;
+                                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                                min-height: 100vh;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                padding: 20px;
+                            }
+
+                            .example-ext {
+                                background: rgba(255, 255, 255, 0.95);
+                                backdrop-filter: blur(10px);
+                                border-radius: 20px;
+                                padding: 40px;
+                                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+                                max-width: 600px;
+                                width: 100%;
+                                text-align: center;
+                                border: 2px solid rgba(255, 255, 255, 0.3);
+                                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                            }
+
+                            .example-ext:hover {
+                                transform: translateY(-5px);
+                                box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+                            }
+
+                            .h3-ext {
+                                font-size: 2.2rem;
+                                color: #4a5568;
+                                margin-bottom: 30px;
+                                font-weight: 700;
+                                text-transform: uppercase;
+                                letter-spacing: 2px;
+                                position: relative;
+                                display: inline-block;
+                            }
+
+                            .h3-ext::after {
+                                content: '';
+                                position: absolute;
+                                bottom: -10px;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                width: 80px;
+                                height: 4px;
+                                background: linear-gradient(90deg, #667eea, #764ba2);
+                                border-radius: 2px;
+                            }
+
+                            .centrar-imagen-ext {
+                                width: 80%;
+                                max-width: 400px;
+                                border-radius: 15px;
+                                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+                                transition: all 0.4s ease;
+                                border: 3px solid rgba(255, 255, 255, 0.8);
+                            }
+
+                            .centrar-imagen-ext:hover {
+                                transform: scale(1.05) rotate(2deg);
+                                box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+                                border-color: #667eea;
+                            }
+
+                            .picture-ext {
+                                display: block;
+                                margin: 0 auto;
+                                position: relative;
+                                overflow: hidden;
+                                border-radius: 20px;
+                                background: linear-gradient(45deg, #f0f2f5, #e2e8f0);
+                                padding: 15px;
+                                box-shadow:
+                                    0 10px 25px rgba(0, 0, 0, 0.1),
+                                    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+                                transition: all 0.3s ease;
+                            }
+
+                            .picture-ext::before {
+                                content: '';
+                                position: absolute;
+                                top: 0;
+                                left: -100%;
+                                width: 100%;
+                                height: 100%;
+                                background: linear-gradient(90deg,
+                                        transparent,
+                                        rgba(255, 255, 255, 0.4),
+                                        transparent);
+                                transition: left 0.6s ease;
+                            }
+
+                            .picture-ext:hover::before {
+                                left: 100%;
+                            }
+
+                            .picture-ext:hover {
+                                transform: translateY(-3px);
+                                box-shadow:
+                                    0 20px 40px rgba(0, 0, 0, 0.15),
+                                    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+                            }
+
+                            @media (max-width: 768px) {
+                                .example-ext {
+                                    padding: 30px 20px;
+                                    margin: 10px;
+                                }
+
+                                .h3-ext {
+                                    font-size: 1.8rem;
+                                    letter-spacing: 1px;
+                                }
+
+                                .centrar-imagen-ext {
+                                    width: 90%;
+                                }
+                            }
+
+                            @keyframes float {
+
+                                0%,
+                                100% {
+                                    transform: translateY(0px);
+                                }
+
+                                50% {
+                                    transform: translateY(-10px);
+                                }
+                            }
+
+                            .example-ext {
+                                animation: float 6s ease-in-out infinite;
+                            }                            
+                          </div>        
+                        </code>
+                      </pre>
+                      <!-- código HTML -->
                     </div>
                   </div>
                 </div>
+                <!-- Ejemplo fin -->
               </div>
-              <!-- Ejemplos de código fin -->
               <p>
                 El navegador evalúa las opciones en orden: primero intenta
                 cargar la imagen WebP (formato más moderno y eficiente), si no
