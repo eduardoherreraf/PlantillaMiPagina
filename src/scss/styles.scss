@@ -2674,3 +2674,255 @@ dd {
   font-weight: bold;
   color: #d63384;
 }
+
+// html-06_Etiquetas_de_texto.html - header
+.ej-container-header {
+    font-family: Arial, sans-serif;
+    padding: 2rem;
+    line-height: 1.6;
+}
+
+.ej-h1-header {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.ej-h2-header {
+    font-size: 2rem;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+.ej-h3-header {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    font-weight: bold;
+}
+
+// html-06_Etiquetas_de_texto.html - párrafo <p>
+ .ej-body-wrapper-p {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+.ej-container-p {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.ej-titulo-p {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+/* Párrafo con efecto neón */
+.ej-neon-p {
+    background: #000;
+    color: #00ff88;
+    padding: 20px;
+    border-radius: 10px;
+    text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88, 0 0 40px #00ff88;
+    border: 2px solid #00ff88;
+    margin: 20px 0;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #00ff88, 0 0 10px #00ff88, 0 0 15px #00ff88;
+    }
+
+    to {
+        text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88, 0 0 40px #00ff88;
+    }
+}
+
+/* Párrafo con efecto máquina de escribir */
+.ej-typewriter-p {
+    font-family: 'Courier New', monospace;
+    background: #1e1e1e;
+    color: #00ff00;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #00ff00;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+    margin: 20px 0;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #00ff00;
+    }
+}
+
+/* Párrafo con gradiente y sombra */
+.ej-gradient-text-p {
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    animation: gradient-shift 3s ease infinite;
+    margin: 20px 0;
+}
+
+@keyframes gradient-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Párrafo con efecto flotante */
+.ej-floating-p {
+    background: rgba(255, 255, 255, 0.9);
+    color:var(--color-fondo);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
+    animation: float 3s ease-in-out infinite;
+    margin: 20px 0;
+    border: 3px solid #ff6b6b;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Párrafo con efecto de desvanecimiento */
+.ej-fade-in-p {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+    margin: 20px 0;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Párrafo con hover interactivo */
+.ej-interactive-p {
+    background: #f8f9fa;
+    color: var(--color-fondo);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #dee2e6;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.ej-interactive-p:hover {
+    background: #343a40;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* Párrafo con estilo retro */
+.ej-retro-p {
+    background: #ff6b35;
+    color: #fff;
+    padding: 20px;
+    font-family: 'Courier New', monospace;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 5px solid #fff;
+    box-shadow: 10px 10px 0 #333;
+    margin: 20px 0;
+}
+
+// html-06_Etiquetas_de_texto.html - salto de línea <br>
+.ej-container-br {
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.ej-address-br {
+    background-color: #ffffff;
+    border-left: 5px solid #3e8ed0;
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    line-height: 1.6;
+}
+
+.ej-address-br a {
+    color: #3e8ed0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ej-address-br a:hover {
+    text-decoration: underline;
+}
+
+.ej-poem-br {
+    background-color: #fffdf7;
+    border-left: 4px dashed #e0a96d;
+    padding: 1.5rem;
+    font-style: italic;
+    font-family: 'Georgia', serif;
+    white-space: pre-line;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
