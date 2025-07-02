@@ -392,13 +392,12 @@
                   <p>Se emplea para:</p>
                   <ul>
                     <li>
-                      <b>Estructuración de Layout</b>: Organiza
-                      elementos HTML (texto, imágenes, etc.) en secciones o
-                      bloques.
+                      <b>Estructuración de Layout</b>: Organiza elementos HTML
+                      (texto, imágenes, etc.) en secciones o bloques.
                     </li>
                     <li>
-                      <b>Agrupamiento Lógico</b>: Organizar secciones
-                      de la página web que no tienen una etiqueta semántica
+                      <b>Agrupamiento Lógico</b>: Organizar secciones de la
+                      página web que no tienen una etiqueta semántica
                       específica. Por ejemplo, una sección de un formulario:
                       <div class="ej-sintaxis">
                         <pre data-src-status="loaded" tabindex="0">
@@ -424,10 +423,10 @@
                       </div>
                     </li>
                     <li>
-                      <b>Aplicar Estilos (CSS)</b>: Es el contenedor
-                      ideal para aplicar estilos a un grupo de elementos de una
-                      sola vez. En lugar de darle un color de fondo a cada
-                      párrafo, se puede darle ese color de fondo al
+                      <b>Aplicar Estilos (CSS)</b>: Es el contenedor ideal para
+                      aplicar estilos a un grupo de elementos de una sola vez.
+                      En lugar de darle un color de fondo a cada párrafo, se
+                      puede darle ese color de fondo al
                       <code class="language-html">&lt;div></code> que los
                       contiene. Para ello, se suelen usar los atributos:
                       <code class="language-html">class</code> o
@@ -446,12 +445,11 @@
                       </div>
                     </li>
                     <li>
-                      <b>Manipulación con JavaScript</b>: Cuando se
-                      necesita interactuar con un grupo de elementos (por
-                      ejemplo, ocultarlos, mostrarlos, cambiar su contenido), se
-                      puede apuntar al
-                      <code class="language-html">&lt;div></code> que los
-                      contiene usando JavaScript:
+                      <b>Manipulación con JavaScript</b>: Cuando se necesita
+                      interactuar con un grupo de elementos (por ejemplo,
+                      ocultarlos, mostrarlos, cambiar su contenido), se puede
+                      apuntar al <code class="language-html">&lt;div></code> que
+                      los contiene usando JavaScript:
                       <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                         &lt;div id="contador">Clics: 0&lt;/div>
@@ -467,10 +465,10 @@
                   <h3>Relación con Otras Etiquetas División &lt;div></h3>
                   <ul>
                     <li>
-                      <b>Contiene a Casi Todas Las Etiquetas</b>:
-                      Puede contener prácticamente cualquier otra etiqueta HTML
-                      dentro de ella (párrafos, imágenes, listas, formularios,
-                      otras <code class="language-html">&lt;div></code>s, etc.).
+                      <b>Contiene a Casi Todas Las Etiquetas</b>: Puede contener
+                      prácticamente cualquier otra etiqueta HTML dentro de ella
+                      (párrafos, imágenes, listas, formularios, otras
+                      <code class="language-html">&lt;div></code>s, etc.).
                     </li>
                     <li>
                       <b>Anidamiento</b>: Es muy común anidar
@@ -480,8 +478,8 @@
                       cajas.
                     </li>
                     <li>
-                      <b>Relación con Etiquetas Semánticas</b>: Es
-                      crucial entender que, si bien
+                      <b>Relación con Etiquetas Semánticas</b>: Es crucial
+                      entender que, si bien
                       <code class="language-html">&lt;div></code> es genérica,
                       HTML5 introdujo muchas etiquetas semánticas (<code
                         class="language-html"
@@ -606,17 +604,19 @@
                 <div>
                   <h3>Configuración CSS por Defecto División &lt;div></h3>
                   <p>CSS por defecto del navegador (estilos user-agent):</p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-css" data-prismjs-copy="Copy">
-                    div {
-                      display: block;
-                      margin: 0;
-                      padding: 0;
-                      width: auto;
-                      height: auto;
-                    }
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-css" data-prismjs-copy="Copy">
+                        div {
+                          display: block;
+                          margin: 0;
+                          padding: 0;
+                          width: auto;
+                          height: auto;
+                        }
+                      </code>
+                    </pre>
+                  </div>
                   <p>Donde:</p>
                   <ul>
                     <li>
@@ -643,7 +643,7 @@
                 </div>
                 <!-- Configuración CSS por Defecto fin -->
 
-                <!-- Ejemplo Aplicado en un Proyecto Real <div> -->
+                <!-- Ejemplo Aplicado en un Proyecto Real división <div> -->
                 <div>
                   <h3>
                     Ejemplo Aplicado en un Proyecto Real División &lt;div>
@@ -657,40 +657,296 @@
                     el contenido de manera efectiva. Este ejemplo muestra un
                     panel de productos con tarjetas individuales:
                   </p>
-                  <p
-                    class="codepen"
-                    data-height="300"
-                    data-default-tab="html,result"
-                    data-slug-hash="LEEwQZw"
-                    data-pen-title="División &amp;lt;div&amp;gt;"
-                    data-editable="true"
-                    data-user="eduardoherreraf"
-                    style="
-                      height: 300px;
-                      box-sizing: border-box;
-                      display: flex;
-                      align-items: center;
-                      justify-content: center;
-                      border: 2px solid;
-                      margin: 1em 0;
-                      padding: 1em;
-                    "
-                  >
-                    <span
-                      >See the Pen
-                      <a href="https://codepen.io/eduardoherreraf/pen/LEEwQZw">
-                        División &lt;div&gt;</a
-                      >
-                      by Eduardo Herrera Forero (<a
-                        href="https://codepen.io/eduardoherreraf"
-                        >@eduardoherreraf</a
-                      >) on <a href="https://codepen.io">CodePen</a>.</span
-                    >
-                  </p>
-                  <script
-                    async
-                    src="https://public.codepenassets.com/embed/index.js"
-                  ></script>
+                  <div class="row">
+                    <!-- Ejemplo -->
+                    <div class="ej-ejemplo">
+                      <div class="row ej-ejecutado mt-3">
+                        <!-- código ejecutado -->
+                        <div>
+                          <div class="ej-productos-grid-div">
+                            <!-- Producto 1 -->
+                            <div class="ej-producto-tarjeta-div">
+                              <div class="ej-producto-imagen-div">
+                                Imagen del Producto 1
+                              </div>
+                              <div class="ej-producto-info-div">
+                                <h3 class="ej-producto-titulo-div">
+                                  Auriculares Bluetooth Premium
+                                </h3>
+                                <p class="ej-producto-descripcion-div">
+                                  Auriculares inalámbricos con cancelación de
+                                  ruido activa y 30 horas de batería para una
+                                  experiencia de audio excepcional.
+                                </p>
+                                <div class="ej-producto-precio-div">€29.99</div>
+                              </div>
+                              <div class="ej-producto-acciones-div">
+                                <button class="ej-btn-div ej-btn-primario-div">
+                                  Comprar
+                                </button>
+                                <button
+                                  class="ej-btn-div ej-btn-secundario-div"
+                                >
+                                  Ver detalles
+                                </button>
+                              </div>
+                            </div>
+
+                            <!-- Producto 2 -->
+                            <div class="ej-producto-tarjeta-div">
+                              <div class="ej-producto-imagen-div">
+                                Imagen del Producto 2
+                              </div>
+                              <div class="ej-producto-info-div">
+                                <h3 class="ej-producto-titulo-div">
+                                  Smartwatch Deportivo
+                                </h3>
+                                <p class="ej-producto-descripcion-div">
+                                  Reloj inteligente resistente al agua con
+                                  monitor de frecuencia cardíaca y GPS integrado
+                                  para deportistas.
+                                </p>
+                                <div class="ej-producto-precio-div">€34.99</div>
+                              </div>
+                              <div class="ej-producto-acciones-div">
+                                <button class="ej-btn-div ej-btn-primario-div">
+                                  Comprar
+                                </button>
+                                <button
+                                  class="ej-btn-div ej-btn-secundario-div"
+                                >
+                                  Ver detalles
+                                </button>
+                              </div>
+                            </div>
+
+                            <!-- Producto 3 -->
+                            <div class="ej-producto-tarjeta-div">
+                              <div class="ej-producto-imagen-div">
+                                Imagen del Producto 3
+                              </div>
+                              <div class="ej-producto-info-div">
+                                <h3 class="ej-producto-titulo-div">
+                                  Cargador Inalámbrico Rápido
+                                </h3>
+                                <p class="ej-producto-descripcion-div">
+                                  Base de carga inalámbrica compatible con todos
+                                  los dispositivos Qi, diseño elegante y carga
+                                  ultrarrápida.
+                                </p>
+                                <div class="ej-producto-precio-div">€24.99</div>
+                              </div>
+                              <div class="ej-producto-acciones-div">
+                                <button class="ej-btn-div ej-btn-primario-div">
+                                  Comprar
+                                </button>
+                                <button
+                                  class="ej-btn-div ej-btn-secundario-div"
+                                >
+                                  Ver detalles
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- código ejecutado fin -->
+                      </div>
+                      <div class="row">
+                        <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                          <!-- código HTML -->
+                          <pre>
+                            <code class="language-html" data-prismjs-copy="Copy">
+                              <div>
+                                &lt;div class="productos-grid">
+                                  &lt;!-- Producto 1 -->
+                                  &lt;div class="producto-tarjeta">
+                                    &lt;div class="producto-imagen">Imagen del Producto 1&lt;/div>
+                                    &lt;div class="producto-info">
+                                      &lt;h3 class="producto-titulo">Auriculares Bluetooth Premium&lt;/h3>
+                                      &lt;p class="producto-descripcion">Auriculares inalámbricos con cancelación de ruido activa y 30 horas de
+                                        batería para una experiencia de audio excepcional.&lt;/p>
+                                      &lt;div class="producto-precio">€29.99&lt;/div>
+                                    &lt;/div>
+                                    &lt;div class="producto-acciones">
+                                      &lt;button class="btn btn-primario">Comprar&lt;/button>
+                                      &lt;button class="btn btn-secundario">Ver detalles&lt;/button>
+                                    &lt;/div>
+                                  &lt;/div>
+
+                                  &lt;!-- Producto 2 -->
+                                  &lt;div class="producto-tarjeta">
+                                    &lt;div class="producto-imagen">Imagen del Producto 2&lt;/div>
+                                    &lt;div class="producto-info">
+                                      &lt;h3 class="producto-titulo">Smartwatch Deportivo&lt;/h3>
+                                      &lt;p class="producto-descripcion">Reloj inteligente resistente al agua con monitor de frecuencia cardíaca y
+                                        GPS integrado para deportistas.&lt;/p>
+                                      &lt;div class="producto-precio">€34.99&lt;/div>
+                                    &lt;/div>
+                                    &lt;div class="producto-acciones">
+                                      &lt;button class="btn btn-primario">Comprar&lt;/button>
+                                      &lt;button class="btn btn-secundario">Ver detalles&lt;/button>
+                                    &lt;/div>
+                                  &lt;/div>
+
+                                  &lt;!-- Producto 3 -->
+                                  &lt;div class="producto-tarjeta">
+                                    &lt;div class="producto-imagen">Imagen del Producto 3&lt;/div>
+                                    &lt;div class="producto-info">
+                                      &lt;h3 class="producto-titulo">Cargador Inalámbrico Rápido&lt;/h3>
+                                      &lt;p class="producto-descripcion">Base de carga inalámbrica compatible con todos los dispositivos Qi, diseño
+                                        elegante y carga ultrarrápida.&lt;/p>
+                                      &lt;div class="producto-precio">€24.99&lt;/div>
+                                    &lt;/div>
+                                    &lt;div class="producto-acciones">
+                                      &lt;button class="btn btn-primario">Comprar&lt;/button>
+                                      &lt;button class="btn btn-secundario">Ver detalles&lt;/button>
+                                    &lt;/div>
+                                  &lt;/div>
+                                &lt;/div>                                
+                              </div>        
+                            </code>
+                          </pre>
+                          <!-- código HTML -->
+                        </div>
+                        <div class="ej-code-css col-lg-6 mb-3">
+                          <!-- código CSS -->
+                          <pre>
+                            <code class="language-css" data-prismjs-copy="Copy">
+                              <div>
+                                .productos-container {
+                                    max-width: 1200px;
+                                    margin: 0 auto;
+                                    padding: 20px;
+                                }
+
+                                .productos-titulo {
+                                    text-align: center;
+                                    margin-bottom: 30px;
+                                }
+
+                                .productos-titulo h2 {
+                                    color: #333;
+                                    margin-bottom: 10px;
+                                    font-size: 2.5em;
+                                }
+
+                                .productos-titulo p {
+                                    color: #666;
+                                    font-size: 1.1em;
+                                }
+
+                                .productos-grid {
+                                    display: grid;
+                                    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                                    gap: 20px;
+                                }
+
+                                .producto-tarjeta {
+                                    border: 1px solid #e0e0e0;
+                                    border-radius: 8px;
+                                    padding: 15px;
+                                    background-color: #fff;
+                                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                                }
+
+                                .producto-tarjeta:hover {
+                                    transform: translateY(-5px);
+                                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+                                }
+
+                                .producto-imagen {
+                                    width: 100%;
+                                    height: 200px;
+                                    object-fit: cover;
+                                    border-radius: 4px;
+                                    background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    color: #999;
+                                    font-size: 1.2em;
+                                    margin-bottom: 10px;
+                                }
+
+                                .producto-info {
+                                    padding: 10px 0;
+                                }
+
+                                .producto-titulo {
+                                    color: #333;
+                                    margin-bottom: 8px;
+                                    font-size: 1.3em;
+                                }
+
+                                .producto-descripcion {
+                                    color: #666;
+                                    margin-bottom: 10px;
+                                    line-height: 1.4;
+                                }
+
+                                .producto-precio {
+                                    font-weight: bold;
+                                    color: #e63946;
+                                    font-size: 1.2em;
+                                }
+
+                                .producto-acciones {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    margin-top: 15px;
+                                    gap: 10px;
+                                }
+
+                                .btn {
+                                    padding: 8px 15px;
+                                    border-radius: 4px;
+                                    border: none;
+                                    cursor: pointer;
+                                    font-weight: bold;
+                                    transition: all 0.3s ease;
+                                    flex: 1;
+                                }
+
+                                .btn-primario {
+                                    background-color: #457b9d;
+                                    color: white;
+                                }
+
+                                .btn-primario:hover {
+                                    background-color: #3a6a8a;
+                                    transform: translateY(-2px);
+                                }
+
+                                .btn-secundario {
+                                    background-color: transparent;
+                                    border: 1px solid #457b9d;
+                                    color: #457b9d;
+                                }
+
+                                .btn-secundario:hover {
+                                    background-color: #457b9d;
+                                    color: white;
+                                    transform: translateY(-2px);
+                                }
+
+                                .main {
+                                    min-height: 100vh;
+                                    padding: 20px 0;
+                                }
+
+                                .section {
+                                    width: 100%;
+                                }                                  
+                              </div>        
+                            </code>
+                          </pre>
+                          <!-- código HTML -->
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Ejemplo fin -->
+                  </div>
                   <p>
                     Este ejemplo ilustra varios usos efectivos de
                     <code class="language-html">&lt;div></code>:
@@ -1015,8 +1271,8 @@
                   </p>
                   <ul>
                     <li>
-                      <b>Aplicación de estilos</b>: Cambiar el color,
-                      tamaño, fuente, o añadir efectos como subrayados a partes
+                      <b>Aplicación de estilos</b>: Cambiar el color, tamaño,
+                      fuente, o añadir efectos como subrayados a partes
                       específicas del texto. Por ejemplo:
                       <div class="ej-sintaxis">
                         <pre data-src-status="loaded" tabindex="0">
@@ -1035,9 +1291,9 @@
                       </div>
                     </li>
                     <li>
-                      <b>Manipulación con JavaScript</b>: Agrupar
-                      contenido para seleccionarlo y modificarlo dinámicamente,
-                      como cambiar texto o añadir eventos:
+                      <b>Manipulación con JavaScript</b>: Agrupar contenido para
+                      seleccionarlo y modificarlo dinámicamente, como cambiar
+                      texto o añadir eventos:
                       <div class="ej-sintaxis">
                         <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
@@ -1050,10 +1306,10 @@
                       </div>
                     </li>
                     <li>
-                      <b>Agrupación semántica</b>: Aunque no es
-                      semántico, puede usarse para agrupar contenido relacionado
-                      cuando no hay otra etiqueta más adecuada, como en
-                      accesibilidad con <code class="language-html">ARIA</code>.
+                      <b>Agrupación semántica</b>: Aunque no es semántico, puede
+                      usarse para agrupar contenido relacionado cuando no hay
+                      otra etiqueta más adecuada, como en accesibilidad con
+                      <code class="language-html">ARIA</code>.
                       <div class="ej-sintaxis">
                         <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
@@ -1093,9 +1349,9 @@
                       comportamiento.
                     </li>
                     <li>
-                      <b>Relación con Otros Elementos en Línea:</b>:
-                      Puede contener otros elementos en línea o "phrasing
-                      content", pero no debe contener elementos de bloque (como
+                      <b>Relación con Otros Elementos en Línea:</b>: Puede
+                      contener otros elementos en línea o "phrasing content",
+                      pero no debe contener elementos de bloque (como
                       <code class="language-html">&lt;div></code>,
                       <code class="language-html">&lt;p></code> o "flow
                       content").
@@ -1269,40 +1525,262 @@
                     &lt;span>
                   </h3>
                   <p>Sistema de Notificaciones:</p>
-                  <p
-                    class="codepen"
-                    data-height="300"
-                    data-default-tab="html,result"
-                    data-slug-hash="XJbrmXr"
-                    data-pen-title="Fragmento en Línea &amp;lt;span&amp;gt;"
-                    data-editable="true"
-                    data-user="eduardoherreraf"
-                    style="
-                      height: 300px;
-                      box-sizing: border-box;
-                      display: flex;
-                      align-items: center;
-                      justify-content: center;
-                      border: 2px solid;
-                      margin: 1em 0;
-                      padding: 1em;
-                    "
-                  >
-                    <span
-                      >See the Pen
-                      <a href="https://codepen.io/eduardoherreraf/pen/XJbrmXr">
-                        Fragmento en Línea &lt;span&gt;</a
-                      >
-                      by Eduardo Herrera Forero (<a
-                        href="https://codepen.io/eduardoherreraf"
-                        >@eduardoherreraf</a
-                      >) on <a href="https://codepen.io">CodePen</a>.</span
-                    >
-                  </p>
-                  <script
-                    async
-                    src="https://public.codepenassets.com/embed/index.js"
-                  ></script>
+                  <div class="row">
+                    <!-- Ejemplo -->
+                    <div class="ej-ejemplo">
+                      <div class="row ej-ejecutado mt-3">
+                        <!-- código ejecutado -->
+                        <div>
+                          <div class="ej-contenedor-notificaciones-span">
+                            <!-- Notificación de éxito -->
+                            <div
+                              class="ej-notificacion-span ej-notificacion--exito-span"
+                            >
+                              <span class="ej-notificacion__icono-span"
+                                >✅</span
+                              >
+                              <div class="ej-notificacion__contenido-span">
+                                <span class="ej-notificacion__titulo-span"
+                                  >Operación completada</span
+                                >
+                                <div class="ej-notificacion__mensaje-span">
+                                  El archivo se ha guardado correctamente en
+                                  <span class="ej-codigo-span"
+                                    >/documentos/archivo.pdf</span
+                                  >
+                                </div>
+                                <span class="ej-notificacion__tiempo-span"
+                                  >hace 2 minutos</span
+                                >
+                              </div>
+                              <div class="ej-notificacion__acciones-span">
+                                <button class="ej-btn-accion-span">
+                                  Abrir
+                                </button>
+                                <button class="ej-btn-accion-span">✕</button>
+                              </div>
+                            </div>
+
+                            <!-- Notificación de advertencia -->
+                            <div
+                              class="ej-notificacion-span ej-notificacion--advertencia-span"
+                            >
+                              <span class="ej-notificacion__icono-span"
+                                >⚠️</span
+                              >
+                              <div class="ej-notificacion__contenido-span">
+                                <span class="ej-notificacion__titulo-span"
+                                  >Espacio de almacenamiento bajo</span
+                                >
+                                <div class="ej-notificacion__mensaje-span">
+                                  Quedan
+                                  <span class="ej-texto-error-span"
+                                    >150 MB</span
+                                  >
+                                  de
+                                  <span class="ej-texto-destacado-span"
+                                    >2 GB</span
+                                  >
+                                  disponibles
+                                </div>
+                                <span class="ej-notificacion__tiempo-span"
+                                  >hace 5 minutos</span
+                                >
+                              </div>
+                              <div class="ej-notificacion__acciones-span">
+                                <button class="ej-btn-accion-span">
+                                  Limpiar
+                                </button>
+                                <button class="ej-btn-accion-span">✕</button>
+                              </div>
+                            </div>
+
+                            <!-- Notificación de error -->
+                            <div
+                              class="ej-notificacion-span ej-notificacion--error-span"
+                            >
+                              <span class="ej-notificacion__icono-span"
+                                >❌</span
+                              >
+                              <div class="ej-notificacion__contenido-span">
+                                <span class="ej-notificacion__titulo-span"
+                                  >Error de conexión</span
+                                >
+                                <div class="ej-notificacion__mensaje-span">
+                                  No se pudo conectar al servidor
+                                  <span class="ej-codigo-error-span"
+                                    >api.ejemplo.com</span
+                                  >
+                                  <br />
+                                  <small
+                                    >Código de error:
+                                    <span class="ej-texto-destacado-span"
+                                      >ERR_CONNECTION_TIMEOUT</span
+                                    ></small
+                                  >
+                                </div>
+                                <span class="ej-notificacion__tiempo-span"
+                                  >hace 1 minuto</span
+                                >
+                              </div>
+                              <div class="ej-notificacion__acciones-span">
+                                <button class="ej-btn-accion-span">
+                                  Reintentar
+                                </button>
+                                <button class="ej-btn-accion-span">✕</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- código ejecutado fin -->
+                      </div>
+                      <div class="row">
+                        <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                          <!-- código HTML -->
+                          <pre>
+                            <code class="language-html" data-prismjs-copy="Copy">
+                              <div>
+                                &lt;div class="contenedor-notificaciones">
+                                  &lt;!-- Notificación de éxito -->
+                                  &lt;div class="notificacion notificacion--exito">
+                                    &lt;span class="notificacion__icono">✅&lt;/span>
+                                    &lt;div class="notificacion__contenido">
+                                      &lt;span class="notificacion__titulo">Operación completada&lt;/span>
+                                      &lt;div class="notificacion__mensaje">
+                                        El archivo se ha guardado correctamente en
+                                        &lt;span style="font-family: monospace; background-color: #e9ecef; padding: 0.1em 0.3em; border-radius: 0.2em;">/documentos/archivo.pdf&lt;/span>
+                                      &lt;/div>
+                                      &lt;span class="notificacion__tiempo">hace 2 minutos&lt;/span>
+                                    &lt;/div>
+                                    &lt;div class="notificacion__acciones">
+                                      &lt;button class="btn-accion">Abrir&lt;/button>
+                                      &lt;button class="btn-accion">✕&lt;/button>
+                                    &lt;/div>
+                                  &lt;/div>
+
+                                  &lt;!-- Notificación de advertencia -->
+                                  &lt;div class="notificacion notificacion--advertencia">
+                                    &lt;span class="notificacion__icono">⚠️&lt;/span>
+                                    &lt;div class="notificacion__contenido">
+                                      &lt;span class="notificacion__titulo">Espacio de almacenamiento bajo&lt;/span>
+                                      &lt;div class="notificacion__mensaje">
+                                        Quedan &lt;span style="font-weight: bold; color: #d63384;">150 MB&lt;/span>
+                                        de &lt;span style="font-weight: bold;">2 GB&lt;/span> disponibles
+                                      &lt;/div>
+                                      &lt;span class="notificacion__tiempo">hace 5 minutos&lt;/span>
+                                    &lt;/div>
+                                    &lt;div class="notificacion__acciones">
+                                      &lt;button class="btn-accion">Limpiar&lt;/button>
+                                      &lt;button class="btn-accion">✕&lt;/button>
+                                    &lt;/div>
+                                  &lt;/div>
+
+                                  &lt;!-- Notificación de error -->
+                                  &lt;div class="notificacion notificacion--error">
+                                    &lt;span class="notificacion__icono">❌&lt;/span>
+                                    &lt;div class="notificacion__contenido">
+                                      &lt;span class="notificacion__titulo">Error de conexión&lt;/span>
+                                      &lt;div class="notificacion__mensaje">
+                                        No se pudo conectar al servidor
+                                        &lt;span style="font-family: monospace; background-color: #f8d7da; padding: 0.1em 0.3em; border-radius: 0.2em;">api.ejemplo.com&lt;/span>
+                                        &lt;br>
+                                        &lt;small>Código de error: &lt;span style="font-weight: bold;">ERR_CONNECTION_TIMEOUT&lt;/span>&lt;/small>
+                                      &lt;/div>
+                                      &lt;span class="notificacion__tiempo">hace 1 minuto&lt;/span>
+                                    &lt;/div>
+                                    &lt;div class="notificacion__acciones">
+                                      &lt;button class="btn-accion">Reintentar&lt;/button>
+                                      &lt;button class="btn-accion">✕&lt;/button>
+                                    &lt;/div>
+                                  &lt;/div>
+                                &lt;/div>                                
+                              </div>        
+                            </code>
+                          </pre>
+                          <!-- código HTML -->
+                        </div>
+                        <div class="ej-code-css col-lg-6 mb-3">
+                          <!-- código CSS -->
+                          <pre>
+                              <code class="language-css" data-prismjs-copy="Copy">
+                                <div>
+                                  .notificacion {
+                                    display: flex;
+                                    align-items: center;
+                                    padding: 1rem;
+                                    margin: 0.5rem 0;
+                                    border-radius: 0.5rem;
+                                    background-color: #f8f9fa;
+                                    border-left: 4px solid #007bff;
+                                  }
+
+                                  .notificacion__icono {
+                                    margin-right: 0.75rem;
+                                    font-size: 1.25em;
+                                  }
+
+                                  .notificacion__contenido {
+                                    flex: 1;
+                                  }
+
+                                  .notificacion__titulo {
+                                    font-weight: 600;
+                                    color: #333;
+                                    margin-bottom: 0.25rem;
+                                  }
+
+                                  .notificacion__mensaje {
+                                    color: #666;
+                                    font-size: 0.9em;
+                                  }
+
+                                  .notificacion__tiempo {
+                                    font-size: 0.8em;
+                                    color: #999;
+                                    font-style: italic;
+                                  }
+
+                                  .notificacion__acciones {
+                                    margin-left: 1rem;
+                                  }
+
+                                  .btn-accion {
+                                    background: none;
+                                    border: 1px solid #ddd;
+                                    padding: 0.25rem 0.5rem;
+                                    border-radius: 0.25rem;
+                                    cursor: pointer;
+                                    margin-left: 0.25rem;
+                                  }
+
+                                  .btn-accion:hover {
+                                    background-color: #e9ecef;
+                                  }
+
+                                  /* Estados de notificación */
+                                  .notificacion--exito {
+                                    border-left-color: #28a745;
+                                  }
+
+                                  .notificacion--advertencia {
+                                    border-left-color: #ffc107;
+                                    background-color: #fff8e1;
+                                  }
+
+                                  .notificacion--error {
+                                    border-left-color: #dc3545;
+                                    background-color: #fdf2f2;
+                                  }
+                                  
+                                </div>        
+                              </code>
+                            </pre>
+                          <!-- código HTML -->
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Ejemplo fin -->
+                  </div>
                 </div>
                 <!-- Ejemplo Aplicado en un Proyecto Real fin -->
 
