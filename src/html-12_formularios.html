@@ -1,0 +1,3219 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <!-- Metaetiquetas -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Ejemplo práctico de formulario HTML - Aprende a crear formularios web básicos."
+    />
+    <meta
+      name="title"
+      content="Formularios HTML - Ing. Eduardo Herrera Forero."
+    />
+    <meta name="keywords" content="formularios, HTML, desarrollo web" />
+    <meta name="author" content="Ing. Eduardo Herrera Forero" />
+    <meta name="application-name" content="EHF" />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="canonical"
+      href="https://eduardoherreraf.github.io/html-12_formularios.html"
+    />
+    <!-- Fin Metaetiquetas -->
+
+    <!-- Open Graph data -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Formularios HTML - Ing. Eduardo Herrera Forero."
+    />
+    <meta
+      property="og:description"
+      content="Ejemplo práctico de formulario HTML - Aprende a crear formularios web básicos."
+    />
+    <meta
+      property="og:image"
+      content="https://i.postimg.cc/fLX10Y3w/form-html.png"
+    />
+    <meta
+      property="og:image:alt"
+      content="Interfaz de formulario web con tres campos de entrada etiquetados como Nombre, Apellido y Email, junto con un botón de envío."
+    />
+    <meta
+      property="og:url"
+      content="https://eduardoherreraf.github.io/html-12_formularios.html"
+    />
+    <meta property="og:locale" content="es_CO" />
+    <!-- fin Open Graph data -->
+
+    <!-- Twitter cards -->
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="Formularios HTML - Ing. Eduardo Herrera Forero."
+    />
+    <meta
+      name="twitter:description"
+      content="Ejemplo práctico de formulario HTML - Aprende a crear formularios web básicos."
+    />
+    <meta
+      name="twitter:image"
+      content="https://i.postimg.cc/fLX10Y3w/form-html.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Interfaz de formulario web con tres campos de entrada etiquetados como Nombre, Apellido y Email, junto con un botón de envío."
+    />
+    <meta
+      name="twitter:url"
+      content="https://eduardoherreraf.github.io/html-12_formularios.html"
+    />
+    <meta name="twitter:site" content="@ehfeduardo" />
+    <!-- Fin Twitter cards -->
+
+    <!-- iconos -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="android-chrome-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- fin iconos -->
+
+    <title>Formularios HTML - Ing. Eduardo Herrera Forero.</title>
+
+    <script type="module" defer src="./js/main.js"></script>
+
+    <meta
+      name="google-site-verification"
+      content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc"
+    />
+  </head>
+
+  <body>
+    <!-- Barra deNavegación -->
+    <nav
+      class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
+    >
+      <div class="container-fluid">
+        <!-- Enlace a la página principal con el logo y nombre -->
+        <a
+          class="navbar-brand d-flex align-items-center ms-2 text-decoration-none"
+          href="index.html"
+        >
+          <img
+            src="./images/logo.png"
+            alt="Logo de Ing. Eduardo Herrera Forero"
+            width="30"
+            height="30"
+            class="d-inline-block align-text-top me-1"
+          />
+          <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
+        </a>
+        <!-- Botón para activar el menú en dispositivos pequeños -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Menú de navegación -->
+        <div
+          class="collapse navbar-collapse ms-auto text-center"
+          id="navbarSupportedContent"
+        >
+          <ul
+            class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100"
+          >
+            <li class="nav-item">
+              <a class="nav-link mx-1 text-decoration-none" href="index.html"
+                >SOBRE MÍ</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link mx-1 text-decoration-none"
+                href="index.html#resume"
+                >EXPERIENCIA</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link mx-1 text-decoration-none"
+                href="index.html#portfolio"
+                >PORTAFOLIO</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link mx-1 text-decoration-none"
+                href="index.html#studies"
+                >ESTUDIOS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link mx-1 active text-decoration-none"
+                href="index.html#blog"
+                >PUBLICACIONES</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link mx-1 text-decoration-none"
+                href="index.html#contact"
+                >CONTACTO</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Barra deNavegación -->
+
+    <!--  Principal  -->
+    <div class="row col mx-1" id="introduccion">
+      <main class="pt-5 col-lg-9">
+        <section class="pb-3">
+          <!--  Formularios HTML-->
+          <article
+            class="row pb-3 border-bottom border-1"
+            data-bs-spy="scroll"
+            data-bs-target="#list-example"
+            data-bs-smooth-scroll="true"
+          >
+            <div>
+              <header><h1>Formularios HTML</h1></header>
+              <!-- Introducción -->
+              <div class="mt-5">
+                <h2 class="mt-1">Introducción</h2>
+
+                <div class="centrar-imagen">
+                  <figure class="img-container">
+                    <img
+                      src="https://i.postimg.cc/fLX10Y3w/form-html.png"
+                      class="img-fluid"
+                      width="50%"
+                      alt="Interfaz de formulario web con tres campos de entrada etiquetados como Nombre, Apellido y Email, junto con un botón de envío."
+                      title="Ejemplo práctico de formulario HTML - Aprende a crear formularios web básicos."
+                      loading="lazy"
+                    />
+                    <figcaption class="img-caption">
+                      Interfaz de formulario web con tres campos de entrada
+                      etiquetados como Nombre, Apellido y Email, junto con un
+                      botón de envío.
+                    </figcaption>
+                  </figure>
+                </div>
+                <!-- ¿Qué Es un Formulario en HTML?  -->
+                <div id="que-es-un-formulario-en-html">
+                  <h3>¿Qué Es un Formulario en HTML?</h3>
+                  <p>
+                    Un formulario en HTML es una estructura definida con la
+                    etiqueta <code class="language-html">&lt;form></code> que
+                    permite a los usuarios ingresar y enviar datos a un servidor
+                    para su procesamiento. Incluye elementos interactivos como
+                    campos de texto, menús desplegables, casillas de
+                    verificación y botones. Los formularios son esenciales para
+                    la interacción entre usuarios y páginas web, ya que
+                    facilitan la recolección de información y otras funciones
+                    interactivas.
+                  </p>
+                </div>
+                <!-- ¿Qué Es un Formulario en HTML?  fin -->
+
+                <!-- ¿Por Qué Son Importantes en Desarrollo Web?  -->
+                <div id="por-que-son-importantes-en-desarrollo-web">
+                  <h3>¿Por Qué Son Importantes en Desarrollo Web?</h3>
+                  <p>
+                    Los formularios son esenciales en el desarrollo web porque
+                    permiten la interacción entre el usuario y el sitio web. Sin
+                    formularios, una página web sería simplemente informativa y
+                    estática. Son la base para:
+                  </p>
+                  <ul>
+                    <li>Recoger datos del usuario.</li>
+                    <li>Iniciar sesiones (login).</li>
+                    <li>Enviar mensajes o solicitudes.</li>
+                    <li>Procesar pagos en línea.</li>
+                    <li>Realizar búsquedas internas.</li>
+                    <li>Registrar usuarios.</li>
+                  </ul>
+                  <p>
+                    Además, los formularios permiten aplicar validaciones,
+                    control de seguridad (como tokens CSRF), y mejoras de
+                    accesibilidad.
+                  </p>
+                </div>
+                <!-- ¿Por Qué Son Importantes en Desarrollo Web?  fin -->
+              </div>
+              <!-- Introducción Fin -->
+
+              <!-- Estructura Básica de un Formulario -->
+              <div id="estructura-basica-de-un-formulario" class="mt-5">
+                <h2 class="mt-1">Estructura Básica de un Formulario</h2>
+                <!-- El Elemento <form> -->
+                <div id="el-elemento-form">
+                  <h3>El Elemento <code class="h3-code">&lt;form></code></h3>
+                  <p>
+                    El elemento principal de un formulario es la etiqueta
+                    <code class="language-html">&lt;form></code>. Todo lo que
+                    esté dentro de esta etiqueta se considera parte del
+                    formulario.
+                  </p>
+                  <!-- Sintaxis -->
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-html" data-prismjs-copy="Copy">
+                     &lt;form action="/procesar-formulario" method="POST">
+                        &lt;!-- Elementos del formulario --&gt;
+                      &lt;/form>
+                    </code>
+                  </pre>
+                  </div>
+                  <!-- Sintaxis fin -->
+                </div>
+                <!-- El Elemento <form> fin -->
+                <!-- Anatomía Completa del Elemento <form> -->
+                <div id="anatomía-completa-del-elemento-form">
+                  <h3>
+                    Anatomía Completa del Elemento
+                    <code class="h3-code">&lt;form></code>
+                  </h3>
+                  <!-- Sintaxis -->
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-html" data-prismjs-copy="Copy">
+                     
+                      &lt;form
+                        &lt;!-- Atributos de la etiqueta &lt;form> --&gt;
+                        action="/procesar-datos.php"
+                        method="POST"
+                        enctype="multipart/form-data"
+                        name="formulario-contacto"
+                        id="form-contacto"
+                        target="_self"
+                        autocomplete="on"
+                        novalidate="false"
+                        accept-charset="UTF-8">
+                        
+                        &lt;!-- Entradas del Formulario --&gt;
+                        &lt;label for="nombre">Nombre:&lt;/label>
+                        &lt;input type="text" id="nombre" name="nombre">
+                        
+                        &lt;!-- Lista Desplegable --&gt;
+                        &lt;label for="cars">Choose a car:&lt;/label>
+                        &lt;select id="cars" name="cars">
+                          &lt;option value="volvo">Volvo&lt;/option>
+                          &lt;option value="saab">Saab&lt;/option>
+                          &lt;option value="fiat">Fiat&lt;/option>
+                          &lt;option value="audi">Audi&lt;/option>
+                        &lt;/select>                         
+
+                        &lt;!-- Entrada Multilínea --&gt;
+                        &lt;textarea name="message" rows="10" cols="30">
+                          The cat was playing in the garden.
+                        &lt;/textarea> 
+                        
+                        &lt;!-- Botón de Envío --&gt;
+                        &lt;button type="button" onclick="alert('Hello World!')">Click Me!&lt;/button> 
+                        
+                      &lt;/form>
+                    </code>
+                  </pre>
+                  </div>
+                  <!-- Sintaxis fin -->
+                </div>
+                <!-- Anatomía Completa del Elemento <form> fin -->
+              </div>
+              <!-- Estructura Básica de un Formulario Fin -->
+              <hr class="subtle-divider" />
+
+              <!-- Atributos del Formulario <form> -->
+              <div id="atributos-del-formulario-form" class="mt-5">
+                <h2 class="mt-1">
+                  Atributos del Formulario
+                  <code class="h2-code">&lt;form></code>
+                </h2>
+                <!-- Qué Son los Atributos del Formulario <form> -->
+                <div id="que-son-los-atributos-del-formulario-form">
+                  <h3>
+                    Qué Son los Atributos del Formulario
+                    <code class="h3-code">&lt;form></code>
+                  </h3>
+                  <p>
+                    Los atributos del elemento
+                    <code class="language-html">&lt;form></code> en HTML son
+                    características que se incluyen en esta etiqueta para
+                    especificar el comportamiento del formulario en una página
+                    web. Estos atributos guían al navegador sobre cómo manejar
+                    los datos ingresados por el usuario y cómo enviarlos al
+                    servidor o procesarlos.
+                  </p>
+                  <p>
+                    A continuación, se presenta una explicación completa y clara
+                    de los principales atributos del elemento
+                    <code class="language-html">&lt;form></code> en HTML
+                  </p>
+                </div>
+                <!-- Qué Son los Atributos del Formulario <form> fin -->
+
+                <!-- action  -->
+                <div id="action">
+                  <h3><code class="h3-code">action</code></h3>
+                  <p>
+                    El atributo <code class="language-html">action</code> en los
+                    formularios HTML especifica la URL o el destino al que se
+                    enviarán los datos del formulario al ser enviado por el
+                    usuario. Es uno de los atributos clave del elemento
+                    <code class="language-html">&lt;form></code>.
+                  </p>
+
+                  <!-- Sintaxis Básica de action  -->
+                  <div>
+                    <h4>
+                      Sintaxis Básica de <code class="h4-code">action</code>
+                    </h4>
+                    <!-- Sintaxis -->
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-html" data-prismjs-copy="Copy">
+                         &lt;form action="URL_destino" method="POST">
+                            &lt;!-- campos del formulario --&gt;
+                          &lt;/form>
+                        </code>
+                      </pre>
+                    </div>
+                    <!-- Sintaxis fin -->
+                    <!-- Valores que Puede Tomar action -->
+                    <div>
+                      <h4>
+                        Valores que Puede Tomar
+                        <code class="h4-code">action</code>
+                      </h4>
+                      <p>URL absoluta:</p>
+                      <!-- Sintaxis -->
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-html" data-prismjs-copy="Copy">
+                           &lt;form action="https://ejemplo.com/procesar.php">
+                              &lt;!-- campos del formulario --&gt;
+                            &lt;/form>
+                          </code>
+                        </pre>
+                      </div>
+                      <!-- Sintaxis fin -->
+                      <p>URL relativa:</p>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-html" data-prismjs-copy="Copy">
+                           &lt;form action="/procesar-formulario">
+                            &lt;form action="procesar.php">
+                            &lt;form action="../handlers/contact.php">
+                          </code>
+                        </pre>
+                      </div>
+                      <ul>
+                        <li>
+                          La <code>ruta /procesar-formulario</code> representa
+                          una dirección absoluta desde la raíz del dominio,
+                          asegurando que, independientemente de la ubicación del
+                          formulario dentro de las subcarpetas del sitio web,
+                          los datos siempre se envíen a la URL
+                          <code>https://ejemplo.com/procesar-formulario</code>.
+                        </li>
+                        <li>
+                          <code>procesar.php</code> es una ruta relativa que
+                          apunta a un archivo del mismo nombre ubicado en el
+                          mismo directorio que el archivo HTML del formulario,
+                          al cual se enviarán los datos para su procesamiento.
+                        </li>
+                        <li>
+                          La ruta relativa
+                          <code>../handlers/contact.php</code> señala que, desde
+                          la ubicación del archivo HTML del formulario, se debe
+                          retroceder un nivel en la estructura de directorios,
+                          indicado por <code>..</code>, a continuación, se
+                          ingresa a la carpeta <code>handlers/</code> y se
+                          accede al archivo <code>contact.php</code> ubicado
+                          dentro de ella.
+                        </li>
+                      </ul>
+                      <p>Página actual:</p>
+                      <!-- Sintaxis -->
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-html" data-prismjs-copy="Copy">
+                           &lt;form action="">
+                              &lt;!-- Se envía a la misma página actual --&gt;
+                            &lt;/form>
+                          </code>
+                        </pre>
+                      </div>
+                      <!-- Sintaxis fin -->
+                      <p>
+                        Cuando un formulario con el atributo
+                        <code class="language-html">action=""</code> (o si el
+                        atributo
+                        <code class="language-html">action</code> simplemente se
+                        omite), significa que el formulario, al ser enviado,
+                        enviará sus datos a la misma URL de la página donde se
+                        encuentra el formulario.
+                      </p>
+                    </div>
+                    <!-- Valores que Puede Tomar action fin -->
+                  </div>
+                  <!-- Sintaxis Básica de action  fin -->
+                </div>
+                <!-- action  fin -->
+
+                <!-- method  -->
+                <div id="method">
+                  <h3><code class="h3-code">method</code></h3>
+                  <p>
+                    La propiedad <code class="language-html">method</code> en
+                    los formularios HTML especifica cómo se enviarán los datos
+                    del formulario al servidor. Es uno de los atributos más
+                    importantes del elemento en conjunto con
+                    <code class="language-html">action</code>.
+                  </p>
+                  <!-- Valores principales de method  -->
+                  <div>
+                    <h4>
+                      Valores principales de <code class="h4-code">method</code>
+                    </h4>
+                    <p>
+                      El atributo method en la etiqueta
+                      <code class="language-html">&lt;form></code> es crucial
+                      porque le dice al navegador cómo debe enviar los datos del
+                      formulario al servidor. Los dos valores principales y más
+                      usados son <code class="language-html">get</code> y
+                      <code class="language-html">post</code>.
+                    </p>
+                    <!-- get -->
+                    <div>
+                      <h5><code class="h5-code">get</code></h5>
+                      <p>Características:</p>
+                      <ul>
+                        <li>Los datos se envían como parámetros en la URL.</li>
+                        <li>
+                          Visible en la barra de direcciones del navegador.
+                        </li>
+                        <li>Limitado a aproximadamente 2048 caracteres.</li>
+                        <li>Los datos quedan en el historial del navegador.</li>
+                        <li>Puede ser marcado como favorito.</li>
+                        <li>Idempotente (no modifica datos en el servidor).</li>
+                        <li>
+                          Si no se especifica el atributo
+                          <code class="language-html">method</code>, el
+                          formulario usará
+                          <code class="language-html">get</code> por defecto.
+                        </li>
+                      </ul>
+                      <p>
+                        Sintaxis básica de
+                        <code class="language-html">get</code>:
+                      </p>
+                      <!-- Sintaxis -->
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-html" data-prismjs-copy="Copy">
+                           &lt;form method="GET" action="procesar.php">
+                              &lt;input type="text" name="nombre">
+                              &lt;input type="submit" value="Enviar">
+                            &lt;/form>                            
+                          </code>
+                        </pre>
+                      </div>
+                      <!-- Sintaxis fin -->
+                      <p>Ejemplo de una URL resultante:</p>
+                      <code
+                        >https://ejemplo.com/procesar.php?nombre=Juan&apellido=Pérez</code
+                      >
+                      <p>Usar <code class="language-html">get</code> cuando:</p>
+                      <ul>
+                        <li>Se solicita información del servidor.</li>
+                        <li>Los datos no son sensibles.</li>
+                        <li>Se quiere que la URL sea compartible.</li>
+                        <li>Se realiza búsquedas.</li>
+                        <li>Los datos son pequeños.</li>
+                      </ul>
+                    </div>
+                    <!-- get fin -->
+
+                    <!-- post -->
+                    <div>
+                      <h5><code class="h5-code">post</code></h5>
+                      <p>Características:</p>
+                      <ul>
+                        <li>
+                          Los datos se envían en el cuerpo de la petición HTTP.
+                        </li>
+                        <li>No son visibles en la URL.</li>
+                        <li>Sin límite práctico de tamaño.</li>
+                        <li>Más seguro para datos sensibles.</li>
+                        <li>No queda en el historial del navegador.</li>
+                        <li>No puede ser marcado como favorito.</li>
+                        <li>Puede modificar datos en el servidor.</li>
+                      </ul>
+                      <!-- Sintaxis -->
+                      <p>
+                        Sintaxis básica de
+                        <code class="language-html">post</code>:
+                      </p>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-html" data-prismjs-copy="Copy">
+                           &lt;form method="POST" action="procesar.php">
+                              &lt;input type="text" name="nombre">
+                              &lt;input type="password" name="contraseña">
+                              &lt;input type="submit" value="Enviar">
+                            &lt;/form>                                                  
+                          </code>
+                        </pre>
+                      </div>
+                      <!-- Sintaxis fin -->
+                      <p>
+                        Utilizar <code class="language-html">post</code> cuando:
+                      </p>
+                      <ul>
+                        <li>
+                          Envío de datos sensibles (contraseñas, información
+                          personal).
+                        </li>
+                        <li>Modificación datos en el servidor.</li>
+                        <li>Subir archivos.</li>
+                        <li>Los datos son extensos.</li>
+                        <li>Realización de transacciones.</li>
+                      </ul>
+                    </div>
+                    <!-- post fin -->
+                  </div>
+                  <!-- Valores principales de method  fin -->
+                  <!-- Ejemplo con get y post  -->
+                  <div>
+                    <h4>
+                      Ejemplo con <code class="h4-code">get</code> y
+                      <code class="h4-code">post</code>
+                    </h4>
+                    <div class="row">
+                      <!-- Ejemplo -->
+                      <div class="ej-ejemplo">
+                        <div class="row ej-ejecutado mt-3">
+                          <!-- código ejecutado -->
+                          <div>
+                            <div class="ej-form-method">
+                              <div class="ej-container-method">
+                                <!-- Formulario GET -->
+                                <div class="ej-section-method ej-get-method">
+                                  <span
+                                    class="ej-indicator-method ej-get-indicator-method"
+                                    >GET</span
+                                  >
+                                  <p class="ej-h2-method">
+                                    Formulario con método GET
+                                  </p>
+
+                                  <form
+                                    method="GET"
+                                    action="#"
+                                    onsubmit="return handleGetSubmit(event)"
+                                  >
+                                    <div class="ej-group-method">
+                                      <label for="search"
+                                        >Término de búsqueda:</label
+                                      >
+                                      <input
+                                        type="text"
+                                        id="search"
+                                        name="search"
+                                        placeholder="Buscar productos..."
+                                      />
+                                    </div>
+
+                                    <div class="ej-group-method">
+                                      <label for="category">Categoría:</label>
+                                      <select id="category" name="category">
+                                        <option value="">Todas</option>
+                                        <option value="electronics">
+                                          Electrónicos
+                                        </option>
+                                        <option value="clothing">Ropa</option>
+                                        <option value="books">Libros</option>
+                                      </select>
+                                    </div>
+
+                                    <div class="ej-group-method">
+                                      <label for="price_min"
+                                        >Precio mínimo:</label
+                                      >
+                                      <input
+                                        type="text"
+                                        id="price_min"
+                                        name="price_min"
+                                        placeholder="0"
+                                      />
+                                    </div>
+
+                                    <input type="submit" value="Buscar" />
+                                  </form>
+                                </div>
+
+                                <!-- Formulario POST -->
+                                <div class="ej-section-method ej-post-method">
+                                  <span
+                                    class="ej-indicator-method ej-post-indicator-method"
+                                    >POST</span
+                                  >
+                                  <p class="ej-h2-method">
+                                    Formulario con método POST
+                                  </p>
+
+                                  <form
+                                    method="POST"
+                                    action="#"
+                                    onsubmit="return handlePostSubmit(event)"
+                                  >
+                                    <div class="ej-group-method">
+                                      <label for="username"
+                                        >Nombre de usuario:</label
+                                      >
+                                      <input
+                                        type="text"
+                                        id="username"
+                                        name="username"
+                                        required
+                                      />
+                                    </div>
+
+                                    <div class="ej-group-method">
+                                      <label for="email">Email:</label>
+                                      <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        required
+                                      />
+                                    </div>
+
+                                    <div class="ej-group-method">
+                                      <label for="password">Contraseña:</label>
+                                      <input
+                                        type="password"
+                                        id="password"
+                                        name="password"
+                                        required
+                                      />
+                                    </div>
+
+                                    <div class="ej-group-method">
+                                      <label for="bio">Biografía:</label>
+                                      <textarea
+                                        id="bio"
+                                        name="bio"
+                                        rows="4"
+                                        placeholder="Cuéntanos sobre ti..."
+                                      ></textarea>
+                                    </div>
+
+                                    <input type="submit" value="Registrarse" />
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- código ejecutado fin -->
+                        </div>
+                        <div class="row">
+                          <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                            <!-- código HTML -->
+                            <pre>
+                              <code class="language-html" data-prismjs-copy="Copy">
+                                <div>
+                                  &lt;div class="form-method">
+                                      &lt;div class="container-method">
+                                          &lt;!-- Formulario GET --&gt;
+                                          &lt;div class="section-method get-method">
+                                              &lt;span class="indicator-method get-indicator-method">GET&lt;/span>
+                                              &lt;p class="h2-method">Formulario con método GET&lt;/p>
+
+                                              &lt;form method="GET" action="#" onsubmit="return handleGetSubmit(event)">
+                                                  &lt;div class="group-method">
+                                                      &lt;label for="search">Término de búsqueda:&lt;/label>
+                                                      &lt;input type="text" id="search" name="search" placeholder="Buscar productos...">
+                                                  &lt;/div>
+
+                                                  &lt;div class="group-method">
+                                                      &lt;label for="category">Categoría:&lt;/label>
+                                                      &lt;select id="category" name="category">
+                                                              &lt;option value="">Todas&lt;/option>
+                                                              &lt;option value="electronics">Electrónicos&lt;/option>
+                                                              &lt;option value="clothing">Ropa&lt;/option>
+                                                              &lt;option value="books">Libros&lt;/option>
+                                                          &lt;/select>
+                                                  &lt;/div>
+
+                                                  &lt;div class="group-method">
+                                                      &lt;label for="price_min">Precio mínimo:&lt;/label>
+                                                      &lt;input type="text" id="price_min" name="price_min" placeholder="0">
+                                                  &lt;/div>
+
+                                                  &lt;input type="submit" value="Buscar">
+                                              &lt;/form>
+                                          &lt;/div>
+
+                                          &lt;!-- Formulario POST --&gt;
+                                          &lt;div class="section-method post-method">
+                                              &lt;span class="indicator-method post-indicator-method">POST&lt;/span>
+                                              &lt;p class="h2-method">Formulario con método POST&lt;/p>
+
+                                              &lt;form method="POST" action="#" onsubmit="return handlePostSubmit(event)">
+                                                  &lt;div class="group-method">
+                                                      &lt;label for="username">Nombre de usuario:&lt;/label>
+                                                      &lt;input type="text" id="username" name="username" required>
+                                                  &lt;/div>
+
+                                                  &lt;div class="group-method">
+                                                      &lt;label for="email">Email:&lt;/label>
+                                                      &lt;input type="email" id="email" name="email" required>
+                                                  &lt;/div>
+
+                                                  &lt;div class="group-method">
+                                                      &lt;label for="password">Contraseña:&lt;/label>
+                                                      &lt;input type="password" id="password" name="password" required>
+                                                  &lt;/div>
+
+                                                  &lt;div class="group-method">
+                                                      &lt;label for="bio">Biografía:&lt;/label>
+                                                      &lt;textarea id="bio" name="bio" rows="4" placeholder="Cuéntanos sobre ti...">&lt;/textarea>
+                                                  &lt;/div>
+
+                                                  &lt;input type="submit" value="Registrarse">
+                                              &lt;/form>
+                                          &lt;/div>
+                                      &lt;/div>
+                                  &lt;/div>                                  
+                                </div>        
+                              </code>
+                            </pre>
+                            <!-- código HTML -->
+                          </div>
+                          <div class="ej-code-css col-lg-6 mb-3">
+                            <!-- código CSS -->
+                            <pre>
+                              <code class="language-css" data-prismjs-copy="Copy">
+                                <div>
+                                  .form-method {
+                                      font-family: Arial, sans-serif;
+                                      padding: 20px;
+                                      background-color: #f5f5f5;
+                                      min-height: 100vh;
+                                  }
+
+                                  .form-method .container-method {
+                                      max-width: 1200px;
+                                      margin: 0 auto;
+                                      display: grid;
+                                      grid-template-columns: 1fr;
+                                      gap: 30px;
+                                  }
+
+                                  .form-method .section-method {
+                                      background: white;
+                                      padding: 30px;
+                                      border-radius: 10px;
+                                      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                                      border: 2px solid #e0e0e0;
+                                  }
+
+                                  .form-method .h1-method {
+                                      font-size: 2em;
+                                      font-weight: bold;
+                                      color: #333;
+                                      margin: 0.67em 0;
+                                      text-align: center;
+                                  }
+
+                                  .form-method .h2-method {
+                                      font-size: 1.5em;
+                                      font-weight: bold;
+                                      color: #333;
+                                      margin-top: 0;
+                                      padding-bottom: 10px;
+                                      border-bottom: 2px solid #4CAF50;
+                                  }
+
+                                  .form-method .h4-method {
+                                      font-size: 1.17em;
+                                      font-weight: bold;
+                                      color: #333;
+                                      margin: 1.33em 0;
+                                  }
+
+                                  .form-method .section-method h2 {
+                                      color: #333;
+                                      margin-top: 0;
+                                      padding-bottom: 10px;
+                                      border-bottom: 2px solid #4CAF50;
+                                  }
+
+                                  .form-method .get-method {
+                                      border-left: 4px solid #2196F3;
+                                      background-color: #f3f9ff;
+                                  }
+
+                                  .form-method .post-method {
+                                      border-left: 4px solid #FF9800;
+                                      background-color: #fff8f0;
+                                  }
+
+                                  .form-method .group-method {
+                                      margin-bottom: 15px;
+                                  }
+
+                                  .form-method label {
+                                      display: block;
+                                      margin-bottom: 5px;
+                                      font-weight: bold;
+                                      color: #555;
+                                  }
+
+                                  .form-method input[type="text"],
+                                  .form-method input[type="email"],
+                                  .form-method input[type="password"],
+                                  .form-method textarea,
+                                  .form-method select {
+                                      width: 100%;
+                                      padding: 10px;
+                                      border: 1px solid #ddd;
+                                      border-radius: 5px;
+                                      font-size: 14px;
+                                      box-sizing: border-box;
+                                  }
+
+                                  .form-method input[type="submit"] {
+                                      background-color: #4CAF50;
+                                      color: white;
+                                      padding: 12px 30px;
+                                      border: none;
+                                      border-radius: 5px;
+                                      cursor: pointer;
+                                      font-size: 16px;
+                                      transition: background-color 0.3s;
+                                  }
+
+                                  .form-method input[type="submit"]:hover {
+                                      background-color: #45a049;
+                                  }
+
+                                  .form-method .indicator-method {
+                                      display: inline-block;
+                                      padding: 5px 10px;
+                                      border-radius: 20px;
+                                      font-size: 12px;
+                                      font-weight: bold;
+                                      color: white;
+                                      margin-bottom: 15px;
+                                  }
+
+                                  .form-method .get-indicator-method {
+                                      background-color: #2196F3;
+                                  }
+
+                                  .form-method .post-indicator-method {
+                                      background-color: #FF9800;
+                                  }
+
+                                  .form-method .result-method {
+                                      background-color: #f0f8ff;
+                                      border: 1px solid #b0d4f1;
+                                      border-radius: 5px;
+                                      padding: 15px;
+                                      margin-top: 15px;
+                                      min-height: 50px;
+                                  }
+
+                                  .form-method .table-method {
+                                      width: 100%;
+                                      border-collapse: collapse;
+                                      margin-top: 15px;
+                                  }
+
+                                  .form-method .table-method th,
+                                  .form-method .table-method td {
+                                      border: 1px solid #ddd;
+                                      padding: 12px;
+                                      text-align: left;
+                                  }
+
+                                  .form-method .table-method th {
+                                      background-color: #f2f2f2;
+                                      font-weight: bold;
+                                  }
+
+                                  .form-method .table-method tr:nth-child(even) {
+                                      background-color: #f9f9f9;
+                                  }
+
+                                  .form-method .info-method {
+                                      background-color: #e8f5e8;
+                                      padding: 15px;
+                                      border-radius: 5px;
+                                      margin-top: 15px;
+                                      border-left: 4px solid #4CAF50;
+                                  }
+
+                                  .form-method .warning-method {
+                                      background-color: #fff3cd;
+                                      padding: 15px;
+                                      border-radius: 5px;
+                                      margin-top: 15px;
+                                      border-left: 4px solid #ffc107;
+                                  }
+
+                                  .form-method .code-method {
+                                      background-color: #f4f4f4;
+                                      padding: 15px;
+                                      border-radius: 5px;
+                                      margin-top: 15px;
+                                      font-family: monospace;
+                                      white-space: pre-wrap;
+                                      overflow-x: auto;
+                                      border: 1px solid #ddd;
+                                  }
+
+                                  /* Responsive - Bootstrap lg breakpoint: 992px */
+                                  @media (min-width: 992px) {
+                                      .form-method .container-method {
+                                          grid-template-columns: 1fr 1fr;
+                                          gap: 40px;
+                                      }
+
+                                      .form-method .section-method {
+                                          padding: 40px;
+                                      }
+                                  }
+
+                                  /* Responsive para tablets */
+                                  @media (max-width: 768px) {
+                                      .form-method {
+                                          padding: 10px;
+                                      }
+
+                                      .form-method .section-method {
+                                          padding: 20px;
+                                      }
+                                  }
+
+                                  /* Responsive para móviles */
+                                  @media (max-width: 576px) {
+                                      .form-method .section-method {
+                                          padding: 15px;
+                                      }
+
+                                      .form-method input[type="submit"] {
+                                          width: 100%;
+                                      }
+                                  }                                  
+                                </div>        
+                              </code>
+                            </pre>
+                            <!-- código HTML -->
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Ejemplo fin -->
+                    </div>
+                  </div>
+                  <!-- Ejemplo con get y post  fin -->
+                  <!-- Consejos Adicionales de Buenas Prácticas  -->
+                  <div>
+                    <h4>Consejos Adicionales de Buenas Prácticas</h4>
+                    <ul>
+                      <li>
+                        <span class="fw-bold"
+                          >No depende<code class="language-html">get</code
+                          >nicamente del método para garantizar la
+                          seguridad</span
+                        >: Aunque el método
+                        <code class="language-html"
+                          ><code class="language-html">post</code></code
+                        >
+                        oculta los datos en la URL, no los cifra por sí mismo.
+                        Para proteger datos sensibles de manera efectiva, es
+                        fundamental implementar HTTPS en todo el sitio web,
+                        identificable por el ícono de candado en la barra de
+                        direcciones. HTTPS asegura la encriptación de toda la
+                        comunicación entre el navegador y el servidor.
+                      </li>
+                      <li>
+                        <span class="fw-bold"
+                          >Validación en el cliente y en el servidor</span
+                        >: Es recomendable emplear la validación HTML5
+                        (atributos como
+                        <code class="language-html">required</code>,
+                        <code class="language-html">type="email"</code>,
+                        <code class="language-html">pattern</code>, entre otros)
+                        para mejorar la experiencia del usuario. Sin embargo,
+                        siempre debe complementarse con una validación en el
+                        servidor, ya que usuarios malintencionados pueden omitir
+                        las restricciones del navegador.
+                      </li>
+                      <li>
+                        <span class="fw-bold"
+                          >Evitar la confusión de conceptos</span
+                        >: No se debe utilizar el método
+                        <code class="language-html">get</code> para enviar datos
+                        sensibles bajo la suposición de que un formulario es
+                        suficiente. Asimismo, no es apropiado usar
+                        <code class="language-html">post</code> para búsquedas
+                        simples que podrían ser compartibles. La selección del
+                        método debe reflejar claramente la intención del
+                        formulario.
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Consejos Adicionales de Buenas Prácticas  fin -->
+                </div>
+                <!-- method  fin -->
+
+                <!-- enctype  -->
+                <div id="enctype">
+                  <h3><code class="h3-code">enctype</code></h3>
+                  <!-- Introducción a enctype  -->
+                  <div>
+                    <h4>Introducción a <code class="h4-code">enctype</code></h4>
+                    <p>
+                      <code class="language-html">enctype</code>es uno de los
+                      atributos más relevantes, aunque a menudo poco
+                      comprendido, de los formularios HTML, significa
+                      <span class="fst-italic">encoding type</span> o tipo de
+                      codificación. Este atributo especifica cómo se codifican
+                      los datos del formulario antes de enviarlos al servidor.
+                      Su comprensión es esencial, especialmente para gestionar
+                      archivos, datos binarios o formularios complejos.
+                    </p>
+                  </div>
+                  <!-- Introducción a enctype  fin -->
+                  <!-- Tipos de Codificación Soportados  -->
+                  <div>
+                    <h4>Tipos de Codificación Soportados</h4>
+                    <p>
+                      Existen tres valores principales para el atributo
+                      <code class="language-html">enctype</code>:
+                      <code class="language-html"
+                        >application/x-www-form-urlencoded</code
+                      >,
+                      <code class="language-html">multipart/form-data</code> y
+                      <code class="language-html">text/plain</code>:
+                    </p>
+                    <!-- application/x-www-form-urlencoded (Predeterminado) -->
+                    <div>
+                      <h5>
+                        <code class="h5-code">
+                          application/x-www-form-urlencoded</code
+                        >
+                      </h5>
+                      <p>
+                        Este es el tipo de codificación predeterminado que se
+                        aplica automáticamente si no se especifica un
+                        <code class="language-html">enctype</code> explícito.
+                      </p>
+                      <p>Características:</p>
+                      <ul>
+                        <li>
+                          Codifica los datos del formulario como pares
+                          clave-valor unidos por
+                          <code class="language-html">&</code>.
+                        </li>
+                        <li>
+                          Los espacios se convierten en signos
+                          <code class="language-html">+</code>.
+                        </li>
+                        <li>
+                          Los caracteres especiales se codifican usando el
+                          formato de porcentaje (URL encoding), es decir,
+                          secuencias escapadas (<code class="language-html"
+                            >%20</code
+                          >
+                          para espacios, etc).
+                        </li>
+                        <li>Los datos se envían en una sola línea .</li>
+                      </ul>
+                      <p><span class="fw-bold">Ejemplo de uso</span>:</p>
+                      <!-- Sintaxis -->
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-html" data-prismjs-copy="Copy">
+                           &lt;form action="/procesar" method="POST" enctype="application/x-www-form-urlencoded">
+                              &lt;input type="text" name="nombre" value="Juan Pérez">
+                              &lt;input type="email" name="email" value="juan@ejemplo.com">
+                              &lt;button type="submit">Enviar&lt;/button>
+                            &lt;/form>                            
+                          </code>
+                        </pre>
+                      </div>
+                      <!-- Sintaxis fin -->
+                      <p><span class="fw-bold">Datos enviados</span>:</p>
+                      <code class="language-html">
+                        nombre=Juan+P%C3%A9rez&email=juan%40ejemplo.com
+                      </code>
+                      <p>
+                        Este formato es el más eficiente para datos puramente de
+                        texto.
+                      </p>
+                    </div>
+                    <!-- application/x-www-form-urlencoded (Predeterminado) fin -->
+                    <!-- multipart/form-data -->
+                    <div>
+                      <h5><code class="h5-code">multipart/form-data</code></h5>
+                      <p>
+                        Este tipo de codificación es esencial cuando el
+                        formulario incluye archivos o grandes cantidades de
+                        datos binarios.
+                      </p>
+                      <p>Características:</p>
+                      <ul>
+                        <li>
+                          Divide los datos en múltiples partes separadas por
+                          delimitadores únicos.
+                        </li>
+                        <li>
+                          Cada campo del formulario se envía como una parte
+                          separada.
+                        </li>
+                        <li>
+                          Conserva el formato original de los archivos y
+                          previene su codificación, garantizando que se
+                          transmitan al servidor sin alteraciones.
+                        </li>
+                        <li>
+                          Es la única opción viable para subir archivos (<code
+                            class="language-html"
+                            >&lt;input type="file" /></code
+                          >).
+                        </li>
+                        <li>
+                          Cada parte puede contener texto o datos binarios (como
+                          imágenes, PDF, etc).
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- multipart/form-data fin -->
+                    <!-- text/plain -->
+                    <div>
+                      <h5><code class="h5-code">text/plain</code></h5>
+                      <p>
+                        Esta codificación envía los datos como texto plano sin
+                        codificación especial.
+                      </p>
+                      <p>Características:</p>
+                      <ul>
+                        <li>No codifica caracteres especiales.</li>
+                        <li>
+                          Cada par clave-valor aparece en una línea separada.
+                        </li>
+                        <li>
+                          Principalmente usado para depuración o casos muy
+                          específicos.
+                        </li>
+                        <li>
+                          No es adecuado para datos que contienen caracteres
+                          especiales.
+                        </li>
+                      </ul>
+                      <p><span class="fw-bold">Ejemplo de uso</span>:</p>
+                      <!-- Sintaxis -->
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-html" data-prismjs-copy="Copy">
+                           &lt;form action="/debug" method="POST" enctype="text/plain">
+                              &lt;input type="text" name="mensaje" value="Hola mundo">
+                              &lt;input type="text" name="autor" value="Desarrollador">
+                              &lt;button type="submit">Enviar&lt;/button>
+                            &lt;/form>
+                          </code>
+                        </pre>
+                      </div>
+                      <!-- Sintaxis fin -->
+                      <p><span class="fw-bold">Datos enviados</span>:</p>
+                      <code
+                        >mensaje=Hola mundo<br />
+                        autor=Desarrollador
+                      </code>
+                    </div>
+                    <!-- text/plain fin -->
+                  </div>
+                  <!-- Tipos de Codificación Soportados  fin -->
+                  <!-- Consideraciones Técnicas  para enctype -->
+                  <div>
+                    <h4>
+                      Consideraciones Técnicas para
+                      <code class="h4-code">enctype</code>
+                    </h4>
+                    <p><span class="fw-bold">Rendimiento</span>:</p>
+                    <ul>
+                      <li>
+                        <code class="language-html"
+                          >application/x-www-form-urlencoded</code
+                        >
+                        es más eficiente para datos pequeños.
+                      </li>
+                      <li>
+                        <code class="language-html">multipart/form-data</code>
+                        tiene overhead adicional, es necesario para archivos.
+                      </li>
+                      <li>
+                        <code class="language-html">text/plain</code> es el más
+                        simple pero menos flexible.
+                      </li>
+                    </ul>
+                    <p><span class="fw-bold">Seguridad</span>:</p>
+                    <ul>
+                      <li>
+                        Todos los tipos de
+                        <code class="language-html">enctype</code> deben
+                        validarse en el servidor.
+                      </li>
+                      <li>
+                        <code class="language-html">multipart/form-data</code>
+                        requiere validación especial de tipos de archivo.
+                      </li>
+                      <li>
+                        La codificación no proporciona seguridad por sí misma.
+                      </li>
+                    </ul>
+                    <p><span class="fw-bold">Compatibilidad</span>:</p>
+                    <ul>
+                      <li>
+                        <code class="language-html"
+                          >application/x-www-form-urlencoded</code
+                        >
+                        tiene soporte universal.
+                      </li>
+                      <li>
+                        <code class="language-html">multipart/form-data</code>
+                        está ampliamente soportado en navegadores modernos.
+                      </li>
+                      <li>
+                        <code class="language-html">text/plain</code> es menos
+                        común en aplicaciones de producción.
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Consideraciones Técnicas  para enctype fin -->
+                  <!-- Mejores Prácticas enctype  -->
+                  <div>
+                    <h4>
+                      Mejores Prácticas <code class="h4-code">enctype</code>
+                    </h4>
+                    <ul>
+                      <li>
+                        Especificar siempre el
+                        <code class="language-html">enctype</code>
+                        explícitamente cuando uses
+                        <code class="language-html">multipart/form-data</code>.
+                      </li>
+                      <li>
+                        Validar el tipo de contenido en el servidor
+                        independientemente del
+                        <code class="language-html">enctype</code>.
+                      </li>
+                      <li>
+                        Usa
+                        <code class="language-html">multipart/form-data</code>
+                        solo cuando sea necesario debido a su overhead.
+                      </li>
+                      <li>
+                        Implementa validación tanto en cliente como en servidor.
+                      </li>
+                      <li>
+                        Considera el tamaño máximo de datos que tu servidor
+                        puede manejar.
+                      </li>
+                      <li>
+                        Documenta qué tipo de
+                        <code class="language-html">enctype</code> espera cada
+                        endpoint.
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Mejores Prácticas enctype  fin -->
+                </div>
+                <!-- enctype  fin -->
+
+                <!-- name  -->
+                <div id="name">
+                  <h3 class="h3-code">name</h3>
+                  <p>
+                    Dentro de las diversas propiedades que definen el
+                    comportamiento de un formulario
+                    <code class="language-html">&lt;form></code>, el atributo
+                    <code class="language-html">name</code> emerge como un
+                    identificador crucial, aunque a menudo subestimado o
+                    malentendido por los desarrolladores menos experimentados.
+                  </p>
+                  <!-- Definición y Propósito name  -->
+                  <div>
+                    <h4>
+                      Definición y Propósito
+                      <code class="h4-code">name</code>
+                    </h4>
+                    <p>
+                      El atributo name de la etiqueta
+                      <code class="language-html">&lt;form></code> establece un
+                      identificador único para el formulario dentro del
+                      documento HTML. Este identificador permite referenciar el
+                      formulario específico desde JavaScript, CSS (en casos
+                      limitados) y otras tecnologías del lado del cliente.
+                    </p>
+                    <!-- Sintaxis -->
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-html" data-prismjs-copy="Copy">
+                          &lt;form name="loginForm" method="post" action="/login">
+                            &lt;!-- contenido del formulario -->
+                          &lt;/form>                          
+                        </code>
+                      </pre>
+                    </div>
+                    <!-- Sintaxis fin -->
+                  </div>
+                  <!-- Definición y Propósito name  fin -->
+                  <!-- Especificaciones y Estándares  name  -->
+                  <div>
+                    <h4>
+                      Especificaciones y Estándares
+                      <code class="h4-code">name</code>
+                    </h4>
+                    <!-- HTML 4.01 y Versiones Anteriores para name -->
+                    <div>
+                      <h5>HTML 4.01 y Versiones Anteriores para name</h5>
+                      <p>
+                        En HTML 4.01, el atributo
+                        <code class="language-html">name</code> era ampliamente
+                        utilizado y formaba parte integral de la especificación.
+                        Los formularios se identificaban principalmente a través
+                        de este atributo, y era común encontrar código
+                        JavaScript que hacía referencia a formularios usando
+                        <code class="language-html"
+                          >document.forms["nombreFormulario"]</code
+                        >
+                        o
+                        <code class="language-html"
+                          >document.forms.nombreFormulario</code
+                        >.
+                      </p>
+                    </div>
+                    <!-- HTML 4.01 y Versiones Anteriores para name fin -->
+
+                    <!-- HTML5 y Estándares Modernos para name -->
+                    <div>
+                      <h5>HTML5 y Estándares Modernos para name</h5>
+                      <p>
+                        Con la introducción de HTML5, el atributo
+                        <code class="language-html">name</code> para formularios
+                        se considera obsoleto. La especificación HTML5 del W3C
+                        recomienda el uso del atributo
+                        <code class="language-html">id</code> en su lugar para
+                        identificar elementos únicos en el documento. Sin
+                        embargo, por razones de compatibilidad hacia atrás, la
+                        mayoría de los navegadores modernos aún soportan el
+                        atributo <code class="language-html">name</code> en
+                        formularios.
+                      </p>
+                    </div>
+                    <!-- HTML5 y Estándares Modernos para name fin -->
+                  </div>
+                  <!-- Especificaciones y Estándares  name  fin -->
+                  <!-- Diferencias entre name e id  -->
+                  <div>
+                    <h4>
+                      Diferencias entre <code class="h4-code">name</code> e
+                      <code class="h4-code">id</code>
+                    </h4>
+                    <!-- Propósito y Alcance de name e id -->
+                    <div>
+                      <h5>Propósito y Alcance de name e id</h5>
+                      <ul>
+                        <li>
+                          <code class="language-html">name</code>:
+                          Tradicionalmente usado para identificar formularios en
+                          el contexto del DOM y para el envío de datos.
+                        </li>
+                        <li>
+                          <code class="language-html">id</code>: Identificador
+                          único universal que puede ser usado por CSS,
+                          JavaScript y enlaces de anclaje.
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- Propósito y Alcance de name e id fin -->
+                    <!-- Restricciones del Nombre -->
+                    <div>
+                      <h5>Restricciones del Nombre</h5>
+                      <ul>
+                        <li>
+                          <code class="language-html">name</code>: Permite
+                          algunos caracteres especiales y puede no ser único en
+                          el documento.
+                        </li>
+                        <li>
+                          <code class="language-html">id</code>: Debe ser único
+                          en todo el documento y sigue reglas más estrictas de
+                          nomenclatura.
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- Restricciones del Nombre fin -->
+
+                    <!-- Ejemplo Comparativo -->
+                    <div>
+                      <h5>Ejemplo Comparativo</h5>
+                      <!-- Sintaxis -->
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-html" data-prismjs-copy="Copy">
+                           &lt;!-- Enfoque tradicional (HTML 4.01) --&gt;
+                            &lt;form name="loginForm" method="post" action="/register">
+                              &lt;input type="text" name="username" placeholder="Usuario">
+                              &lt;input type="email" name="email" placeholder="Email">
+                              &lt;input type="submit" value="Registrar">
+                            &lt;/form>
+
+                            &lt;!-- Enfoque moderno (HTML5) --&gt;
+                            &lt;form id="loginForm" method="post" action="/register">
+                              &lt;input type="text" name="username" placeholder="Usuario">
+                              &lt;input type="email" name="email" placeholder="Email">
+                              &lt;input type="submit" value="Registrar">
+                            &lt;/form>          
+                          </code>
+                        </pre>
+                      </div>
+                      <!-- Sintaxis fin -->
+                    </div>
+                    <!-- Ejemplo Comparativo fin -->
+                    <!-- Acceso desde JavaScript -->
+                    <div>
+                      <h5>Acceso desde JavaScript</h5>
+                      <ul>
+                        <li>
+                          Métodos de Acceso con
+                          <code class="language-html">name</code>:
+                          <!-- Sintaxis -->
+                          <div class="ej-sintaxis">
+                            <pre data-src-status="loaded" tabindex="0">
+                              <code class="language-js" data-prismjs-copy="Copy">
+                              // Acceso directo por nombre
+                                var formulario = document.forms['loginForm'];
+
+                                // Acceso a través de la propiedad forms
+                                var formulario = document.forms.loginForm;
+
+                                // Método más explícito
+                                var formulario = document.forms.namedItem('loginForm');
+                              </code>
+                            </pre>
+                          </div>
+                          <!-- Sintaxis fin -->
+                        </li>
+                        <li>
+                          Métodos de Acceso con
+                          <code class="language-html">id</code>:
+                          <!-- Sintaxis -->
+                          <div class="ej-sintaxis">
+                            <pre data-src-status="loaded" tabindex="0">
+                              <code class="language-js" data-prismjs-copy="Copy">
+                               // Usando id (método recomendado)
+                                var formulario = document.getElementById('loginForm');
+                                var formulario = document.querySelector('#loginForm');
+
+                                // Usando name (método legacy)
+                                var formulario = document.forms['loginForm'];
+                              </code>
+                            </pre>
+                          </div>
+                          <!-- Sintaxis fin -->
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- Acceso desde JavaScript fin -->
+                  </div>
+                  <!-- Diferencias entre name e id  fin -->
+                </div>
+                <!-- name  fin -->
+
+                <!-- id  -->
+                <div id="id">
+                  <h3>id</h3>
+                  <!-- ¿Qué Es el Atributo id?  -->
+                  <div>
+                    <h4>
+                      ¿Qué Es el Atributo <code class="h4-code">id</code>?
+                    </h4>
+                    <p>
+                      En HTML, el atributo
+                      <code class="language-html">id</code> es un identificador
+                      único que puede aplicarse a prácticamente cualquier
+                      elemento, incluido
+                      <code class="language-html">&lt;form></code>. Este
+                      identificador:
+                    </p>
+                    <ul>
+                      <li>
+                        Sirve para diferenciar de forma única a ese elemento
+                        respecto a los demás en la misma página.
+                      </li>
+                      <li>
+                        Permite referenciarlo fácilmente desde CSS, JavaScript o
+                        incluso otras etiquetas HTML que necesiten hacer
+                        referencia directa a ese formulario.
+                      </li>
+                    </ul>
+                    <!-- Sintaxis -->
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-js" data-prismjs-copy="Copy">
+                         var formulario = document.getElementById('loginForm');
+                          var formulario = document.querySelector('#loginForm');
+                        </code>
+                      </pre>
+                    </div>
+                    <!-- Sintaxis fin -->
+                    <p>
+                      En este caso,
+                      <code class="language-html">loginForm</code> es el valor
+                      del <code class="language-html">id</code>, y debe ser
+                      único dentro de todo el documento HTML.
+                    </p>
+                  </div>
+                  <!-- ¿Qué Es el Atributo id?  fin -->
+                  <!-- ¿Por Qué Es Importante el id en un <form>?  -->
+                  <div>
+                    <h4>¿Por Qué Es Importante el id en un &lt;form>?</h4>
+                    <ol>
+                      <li>
+                        <span class="fw-bold">Manipulación con JavaScript</span
+                        >: Con un <code class="language-html">id</code>, se
+                        puede acceder rápidamente al formulario desde JavaScript
+                        utilizando métodos como:
+                        <!-- Sintaxis -->
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
+                            <code class="language-js" data-prismjs-copy="Copy">
+                              const formulario = document.getElementById('registroUsuario');
+                            </code>
+                          </pre>
+                        </div>
+                        <!-- Sintaxis fin -->
+                        Esto permite, por ejemplo:
+                        <ul>
+                          <li>Validar campos antes de enviar.</li>
+                          <li>Modificar dinámicamente el contenido.</li>
+                          <li>
+                            Escuchar eventos como
+                            <code class="language-html">submit</code>.
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <span class="fw-bold"
+                          >Asociación con otras etiquetas</span
+                        >: Algunas etiquetas de HTML pueden asociarse a un
+                        formulario aunque estén fuera de la estructura interna
+                        del <code class="language-html">&lt;form></code>, usando
+                        el atributo <code class="language-html">id</code> del
+                        formulario:
+                        <!-- Sintaxis -->
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
+                            <code class="language-html" data-prismjs-copy="Copy">
+                              &lt;form id="loginForm">
+                                &lt;!-- campos del formulario --&gt;
+                              &lt;/form>
+
+                              &lt;button type="submit" form="loginForm">Enviar&lt;/button>
+                            </code>
+                          </pre>
+                        </div>
+                        <!-- Sintaxis fin -->
+                        En este caso, aunque el botón esté fuera del
+                        <code class="language-html">&lt;form></code>, gracias al
+                        atributo
+                        <code class="language-html">form="loginForm"</code>, el
+                        botón funciona como si estuviera dentro.
+                      </li>
+                      <li>
+                        <span class="fw-bold">Aplicación de estilos CSS</span>:
+                        Al usar el <code class="language-html">id</code> en CSS
+                        se pueden definir estilos específicos para un
+                        formulario:
+                        <!-- Sintaxis -->
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
+                            <code class="language-css" data-prismjs-copy="Copy">
+                              #registroUsuario {
+                                background-color: #f9f9f9;
+                                padding: 20px;
+                              }
+                            </code>
+                          </pre>
+                        </div>
+                        <!-- Sintaxis fin -->
+                        Aunque desde el punto de vista de buenas prácticas, se
+                        suele preferir el uso de clases para estilos generales,
+                        el <code class="language-html">id</code> es útil cuando
+                        se quiere afectar solo a un formulario concreto.
+                      </li>
+                    </ol>
+                  </div>
+                  <!-- ¿Por Qué Es Importante el id en un <form>?  fin -->
+                  <!-- Buenas Prácticas de Uso del Atributo id  -->
+                  <div>
+                    <h4>
+                      Buenas Prácticas de Uso del Atributo
+                      <code class="h4-code">id</code>
+                    </h4>
+                    <ul>
+                      <li>
+                        <span class="fw-bold">Unicidad</span>: cada
+                        <code class="language-html">id</code> debe ser único en
+                        todo el documento.
+                      </li>
+                      <li>
+                        <span class="fw-bold">Nombres descriptivos</span>: usar
+                        nombres que describan la función del formulario, como
+                        registroUsuario, contactoForm, etc.
+                      </li>
+                      <li>
+                        <span class="fw-bold"
+                          >Evitar caracteres especiales y espacios</span
+                        >: deben usarse letras, números, guiones o guiones
+                        bajos, y empezar por una letra.
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Buenas Prácticas de Uso del Atributo id  fin -->
+                </div>
+                <!-- id  fin -->
+
+                <!-- target  -->
+                <div id="target">
+                  <h3><code class="h3-code">target</code></h3>
+                  <!-- Qué Es el Atributo target  -->
+                  <div>
+                    <h4>
+                      Qué Es el Atributo <code class="h4-code">target</code>
+                    </h4>
+                    <p>
+                      El atributo <code class="language-html">target</code> es
+                      un atributo global que se puede usar en formularios HTML.
+                      Su función principal es indicar el destino donde se debe
+                      mostrar la respuesta después de que el formulario es
+                      enviado.
+                    </p>
+                    <p>
+                      En términos más técnicos: Cuando se envía un formulario
+                      HTML, el navegador realiza una solicitud HTTP (usualmente
+                      <code class="language-html">get</code> o
+                      <code class="language-html">post</code>) al recurso
+                      especificado en el atributo
+                      <code class="language-html">action</code> del formulario.
+                      El atributo <code class="language-html">target</code> le
+                      dice al navegador en qué ventana o marco (<code
+                        class="language-html"
+                        >frame</code
+                      >) debe cargar la respuesta del servidor.
+                    </p>
+                  </div>
+                  <!-- Qué Es el Atributo target  fin -->
+
+                  <!-- Valores Posibles del Atributo target  -->
+                  <div>
+                    <h4>
+                      Valores Posibles del Atributo
+                      <code class="h4-code">target</code>
+                    </h4>
+                    <ul>
+                      <li>
+                        <code class="language-html">_blank</code>: Abre en nueva
+                        ventana o pestaña.
+                      </li>
+                      <li>
+                        <code class="language-html">_self</code>: Abre en el
+                        mismo frame (valor por defecto).
+                      </li>
+                      <li>
+                        <code class="language-html">_parent</code>: Abre en el
+                        frame padre.
+                      </li>
+                      <li>
+                        <code class="language-html">_top</code>: Abre en la
+                        ventana completa, cancelando todos los frames.
+                      </li>
+                      <li>
+                        <code class="language-html">nombre_de_frame</code>: Si
+                        existe un <code class="language-html">frame</code> o
+                        <code class="language-html">iframe</code> con el
+                        atributo
+                        <code class="language-html">name="nombre_de_frame"</code
+                        >, la respuesta se mostrará en ese frame específico.
+                      </li>
+                    </ul>
+                    <p>
+                      <span class="fw-bold">Nota</span>: si se especifica un
+                      nombre de frame que no existe, el navegador puede abrir
+                      una nueva ventana con ese nombre y mostrar allí la
+                      respuesta.
+                    </p>
+                  </div>
+                  <!-- Valores Posibles del Atributo target  fin -->
+                  <!-- Ejemplo Práctico target  -->
+                  <div>
+                    <h4>
+                      Ejemplo Práctico <code class="h4-code">target</code>
+                    </h4>
+                    <p>Se tiene un formulario para buscar productos:</p>
+                    <!-- Sintaxis -->
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-html" data-prismjs-copy="Copy">
+                         &lt;form action="/buscar" method="get" target="_blank">
+                            &lt;input type="text" name="q" placeholder="Buscar producto">
+                            &lt;button type="submit">Buscar&lt;/button>
+                          &lt;/form>
+                        </code>
+                      </pre>
+                    </div>
+                    <!-- Sintaxis fin -->
+                    <p>
+                      En este ejemplo, cuando el usuario hace clic en Buscar, la
+                      solicitud se enviará al servidor y el resultado se abrirá
+                      en una nueva pestaña (<code class="language-html"
+                        >_blank</code
+                      >).
+                    </p>
+                  </div>
+                  <!-- Ejemplo Práctico target  fin -->
+                  <!-- Integración con iframes  -->
+                  <div>
+                    <h4>Integración con <code class="h4-code">iframe</code></h4>
+                    <!-- Sintaxis -->
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-html" data-prismjs-copy="Copy">
+                         &lt;iframe name="resultado" width="600" height="300">&lt;/iframe>
+
+                          &lt;form action="/procesar" method="post" target="resultado">
+                            &lt;input type="text" name="dato">
+                            &lt;button type="submit">Enviar&lt;/button>
+                          &lt;/form>
+                        </code>
+                      </pre>
+                    </div>
+                    <!-- Sintaxis fin -->
+                    <p>
+                      Aquí, el formulario tiene
+                      <code class="language-html">target="resultado"</code>, por
+                      lo que la respuesta del servidor se mostrará dentro del
+                      iframe que tiene
+                      <code class="language-html">name="resultado"</code>.
+                    </p>
+                  </div>
+                  <!-- Integración con iframes  fin -->
+                  <!-- Consideraciones y Buenas Prácticas target  -->
+                  <div>
+                    <h4>
+                      Consideraciones y Buenas Prácticas
+                      <code class="h4-code">target</code>
+                    </h4>
+                    <ul>
+                      <li>
+                        Si no se indica el atributo
+                        <code class="language-html">target</code>, se asume por
+                        defecto <code class="language-html">_self</code>.
+                      </li>
+                      <li>
+                        Usar <code class="language-html">_blank</code> puede
+                        mejorar la experiencia del usuario al mantener la página
+                        original abierta, pero se debe hacer con cuidado para
+                        evitar problemas de usabilidad.
+                      </li>
+                      <li>
+                        El uso de nombres de frames depende de que estos frames
+                        o iframes existan en la estructura HTML y tengan
+                        correctamente configurado el atributo
+                        <code class="language-html">name</code>.
+                      </li>
+                      <li>
+                        Actualmente, en sitios modernos se tiende a controlar
+                        esto con JavaScript y AJAX para una mejor experiencia
+                        sin recargar la página, aunque
+                        <code class="language-html">target</code> sigue siendo
+                        útil en algunos escenarios.
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Consideraciones y Buenas Prácticas target  fin -->
+                  <!-- Consideraciones de Seguridad target  -->
+                  <div>
+                    <h4>
+                      Consideraciones de Seguridad
+                      <code class="h4-code">target</code>
+                    </h4>
+                    <!-- Riesgo de Ataques de Tabnabbing -->
+                    <div>
+                      <h5>Riesgo de Ataques de Tabnabbing</h5>
+                      <p>
+                        Cuando se usa
+                        <code class="language-html">target="_blank"</code> para
+                        abrir la respuesta de un formulario en una nueva
+                        pestaña, el navegador por defecto mantiene una
+                        referencia desde la nueva página a la página original (a
+                        través de
+                        <code class="language-js">window.opener</code> en
+                        JavaScript).
+                      </p>
+                      <p>
+                        Un sitio malicioso cargado en esa nueva pestaña podría
+                        aprovechar esa referencia para cambiar la ubicación de
+                        la página original y redirigirla a otro sitio falso,
+                        intentando engañar al usuario.
+                      </p>
+                      <!-- Cómo Mitigar el TTbnabbing -->
+                      <div>
+                        <h6>Cómo Mitigar el Tabnabbing</h6>
+                        <!-- Sintaxis -->
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
+                            <code class="language-html" data-prismjs-copy="Copy">
+                              &lt;!-- Problemático --&gt;
+                              &lt;form action="external-site.com" target="_blank">
+                                &lt;!-- contenido --&gt;
+                              &lt;/form>
+
+                              &lt;!-- Seguro --&gt;
+                              &lt;form action="external-site.com" target="_blank" rel="noopener noreferrer">
+                                &lt;!-- contenido --&gt;
+                              &lt;/form>
+                            </code>
+                          </pre>
+                        </div>
+                        <!-- Sintaxis fin -->
+                        <p>
+                          <span class="fw-bold">Nota</span>: En un
+                          <code class="language-html">&lt;form></code>, el
+                          atributo <code class="language-html">rel</code> no es
+                          formal. Así que, cuando se necesita seguridad total,
+                          se recomienda:
+                        </p>
+                        <ul>
+                          <li>
+                            Preferir abrir la respuesta en la misma ventana
+                            <code class="language-html">(target="_self")</code>.
+                          </li>
+                          <li>
+                            Si se necesita abrir en una nueva ventana, evaluar
+                            si es posible hacerlo con JavaScript controlado,
+                            evitando referencias a
+                            <code class="language-js">window.opener</code>.
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- Cómo Mitigar el Tabnabbing fin -->
+                    </div>
+                    <!-- Riesgo de Ataques de Tabnabbing fin -->
+
+                    <!-- Dependencia de Nombres de frames -->
+                    <div>
+                      <h5>Dependencia de Nombres de frames</h5>
+                      <p>
+                        Cuando se usa un nombre de frame como valor de target
+                        (por ejemplo target="resultado"), se debe asegurar que:
+                      </p>
+                      <ul>
+                        <li>
+                          El <code class="language-html">&lt;iframe></code> o
+                          <code class="language-html">&lt;frame></code> tiene
+                          definido correctamente
+                          <code class="language-html">name="resultado"</code>.
+                        </li>
+                        <li>El frame "resultado" exista.</li>
+                        <li>
+                          El contenido cargado en ese frame sea confiable.
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- Dependencia de Nombres de frames fin -->
+
+                    <!-- Integridad del Contenido Cargado -->
+                    <div>
+                      <h5>Integridad del Contenido Cargado</h5>
+                      <p>
+                        Al cargar respuestas de formularios en frames o ventanas
+                        nuevas:
+                      </p>
+                      <ul>
+                        <li>
+                          Verificar siempre que el servidor responda contenido
+                          seguro (por ejemplo, usando HTTPS).
+                        </li>
+                        <li>
+                          Asegurarse de que las páginas no permitan ser cargadas
+                          en frames externos si no es necesario, para evitar
+                          ataques como
+                          <span class="fst-italic">clickjacking</span>. <br />
+                          Esto puede configurarse en el servidor usando
+                          cabeceras HTTP como:
+                          <!-- Sintaxis -->
+                          <div class="ej-sintaxis">
+                            <pre data-src-status="loaded" tabindex="0">
+                              <code class="language-mattematica" data-prismjs-copy="Copy">
+                                X-Frame-Options: SAMEORIGIN
+                              </code>
+                            </pre>
+                          </div>
+                          <!-- Sintaxis fin -->
+                          o con la política CSS más moderna:
+                          <!-- Sintaxis -->
+                          <div class="ej-sintaxis">
+                            <pre data-src-status="loaded" tabindex="0">
+                              <code class="language-css" data-prismjs-copy="Copy">
+                                Content-Security-Policy: frame-ancestors 'self';
+                              </code>
+                            </pre>
+                          </div>
+                          <!-- Sintaxis fin -->
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- Integridad del Contenido Cargado fin -->
+
+                    <!-- Control del Flujo y la Lógica del Formulario -->
+                    <div>
+                      <h5>Control del Flujo y la Lógica del Formulario</h5>
+                      <p>
+                        Aunque <code class="language-html">target</code> solo
+                        define dónde mostrar la respuesta, se debe evitar
+                        confiar únicamente en el cliente para validar datos.
+                        Toda validación crítica (autenticación, autorización,
+                        reglas de negocio) debe hacerse siempre en el servidor,
+                        porque el cliente puede modificar el HTML o los valores
+                        enviados.
+                      </p>
+                    </div>
+                    <!-- Control del Flujo y la Lógica del Formulario fin -->
+
+                    <!-- Inyección de Contexto y el Atributo target en <form> -->
+                    <div>
+                      <h5>
+                        Inyección de Contexto y el Atributo
+                        <code class="h5-code">target</code> en
+                        <code class="h5-code">&lt;form></code>
+                      </h5>
+                      <p>
+                        La inyección de contexto ocurre cuando un atacante logra
+                        incluir contenido malicioso en una parte de la página
+                        web o en la respuesta del servidor, aprovechando que el
+                        navegador interpreta ese contenido en un contexto
+                        distinto al esperado.
+                      </p>
+                      <p>
+                        En el caso de formularios HTML, aunque el atributo
+                        <code class="language-html">target</code> por sí mismo
+                        no es directamente vulnerable a inyección de contexto,
+                        puede facilitar ataques cuando:
+                      </p>
+                      <ul>
+                        <li>
+                          Se usa<code class="language-html">target</code>para
+                          cargar la respuesta del formulario dentro de un
+                          <code class="language-html">&lt;iframe></code> o
+                          <code class="language-html">&lt;frame></code> cuyo
+                          contenido proviene de datos no validados.
+                        </li>
+                        <li>
+                          El servidor devuelve HTML o scripts que incluyen
+                          valores enviados por el usuario sin escaparlos
+                          correctamente.
+                        </li>
+                      </ul>
+                      <p>
+                        Así, un atacante podría inyectar código que se ejecuta
+                        en el navegador del usuario (como JavaScript malicioso),
+                        alterando la funcionalidad de la página o robando datos
+                      </p>
+                    </div>
+                    <!-- Cómo Prevenir la Inyección de Contexto -->
+                    <div>
+                      <h6>Cómo Prevenir la Inyección de Contexto</h6>
+                      <ul>
+                        <li>
+                          <span class="fw-bold"
+                            >Sanitizar entradas de usuario</span
+                          >: Escapar y validar todos los datos de entrada en el
+                          servidor antes de devolverlos al cliente.
+                          <!-- Sintaxis -->
+                          <div class="ej-sintaxis">
+                            <pre data-src-status="loaded" tabindex="0">
+                              <code class="language-js" data-prismjs-copy="Copy">
+                                // Vulnerable
+                                const targetName = userInput; // Sin validación
+                                form.target = targetName;
+
+                                // Seguro
+                                const targetName = userInput.replace(/[^a-zA-Z0-9_]/g, '');
+                                form.target = targetName;                                
+                              </code>
+                            </pre>
+                          </div>
+                          <!-- Sintaxis fin -->
+                        </li>
+                        <li>
+                          Evitar construir respuestas HTML dinámicamente con
+                          datos de usuarios sin filtrado.
+                        </li>
+                        <li>
+                          Usar cabeceras de seguridad como:
+                          <!-- Sintaxis -->
+                          <div class="ej-sintaxis">
+                            <pre data-src-status="loaded" tabindex="0">
+                            <code class="language-pgsql" data-prismjs-copy="Copy">
+                             Content-Security-Policy
+                              X-Content-Type-Options
+                            </code>
+                          </pre>
+                          </div>
+                          <!-- Sintaxis fin -->
+                        </li>
+                        <li>
+                          Controlar en qué
+                          <code class="language-html">target</code> se carga la
+                          respuesta para no exponer el sitio a marcos externos.
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- Cómo Prevenir la Inyección de Contexto fin -->
+
+                    <!-- Inyección de Contexto y el Atributo target en <form> fin -->
+                  </div>
+                  <!-- Consideraciones de Seguridad target  fin -->
+                </div>
+                <!-- target  fin -->
+
+                <!-- autocomplete  -->
+                <div id="autocomplete">
+                  <h3><code class="h3-code">autocomplete</code></h3>
+                  <p>
+                    El atributo
+                    <code class="language-html">autocomplete</code> es una
+                    característica fundamental de HTML que permite a los
+                    desarrolladores controlar cómo los navegadores web manejan
+                    el autocompletado de campos en formularios. Esta
+                    funcionalidad mejora significativamente la experiencia del
+                    usuario al reducir la cantidad de texto que debe escribir
+                    manualmente, especialmente en formularios recurrentes como
+                    registros, inicios de sesión y procesos de compra.
+                  </p>
+                  <!-- ¿Qué es el Autocompletado?  -->
+                  <div>
+                    <h4>¿Qué es el Autocompletado?</h4>
+                    <p>
+                      El atributo
+                      <code class="language-html">autocomplete</code> es una
+                      característica de los formularios HTML que permite a los
+                      navegadores guardar y rellenar automáticamente los valores
+                      de los campos de entrada que un usuario ya ha utilizado
+                      antes.
+                    </p>
+                    <p>
+                      Esto significa que si un usuario ya llenó su nombre,
+                      correo electrónico o dirección en un formulario anterior,
+                      el navegador puede sugerir y completar esos mismos datos
+                      en formularios futuros, mejorando la experiencia de
+                      usuario y reduciendo el tiempo de escritura.
+                    </p>
+                  </div>
+                  <!-- ¿Qué es el Autocompletado?  fin -->
+                  <!-- Sintaxis Básica de autocomplete  -->
+                  <div>
+                    <h4>
+                      Sintaxis Básica de
+                      <code class="h4-code">autocomplete</code>
+                    </h4>
+                    <ul>
+                      <li>
+                        Se puede usar en la etiqueta
+                        <code class="language-html">&lt;form></code>: Esto
+                        define si todos los campos del formulario permitirán
+                        autocompletado o no.
+                      </li>
+                      <li>
+                        Se puede usar en campos individuales
+                        <code class="language-html">&lt;input></code>,
+                        <code class="language-html">&lt;textarea></code> o
+                        <code class="language-html">&lt;select></code>: En este
+                        caso, se controla de forma más específica.
+                      </li>
+                    </ul>
+                    <p><span class="fw-bold">Ejemplo</span>:</p>
+                    <!-- Sintaxis -->
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-html" data-prismjs-copy="Copy">
+                          &lt;!-- En el formulario completo --&gt;
+                          &lt;form autocomplete="on">
+                            &lt;!-- contenido del formulario --&gt;
+                          &lt;/form>
+
+                          &lt;!-- En campos específicos --&gt;
+                          &lt;input type="text" name="username" autocomplete="username">
+                          &lt;input type="email" name="email" autocomplete="email">                          
+                        </code>
+                      </pre>
+                    </div>
+                    <!-- Sintaxis fin -->
+                  </div>
+                  <!-- Sintaxis Básica de autocomplete  fin -->
+                  <!-- Valores Principales de autocomplete  -->
+                  <div>
+                    <h4>
+                      Valores Principales de
+                      <code class="h4-code">autocomplete</code>
+                    </h4>
+                    <!-- Valores Básicos -->
+                    <div>
+                      <h5>Valores Básicos</h5>
+                      <ul>
+                        <li>
+                          <code class="language-html">on</code>: Habilita el
+                          autocompletado para el formulario o campo específico.
+                          Es el valor por defecto en la mayoría de los
+                          navegadores.
+                        </li>
+                        <li>
+                          <code class="language-html">off</code>: Desactiva
+                          completamente el autocompletado. Útil para campos
+                          sensibles como códigos de seguridad o información
+                          confidencial. <br />
+                          Se usa, por ejemplo, en formularios sensibles:
+                          <ul>
+                            <li>Formularios de inicio de sesión.</li>
+                            <li>Formularios de pago.</li>
+                            <li>Formularios de datos personales delicados.</li>
+                          </ul>
+                          <!-- Sintaxis -->
+                          <div class="ej-sintaxis">
+                            <pre data-src-status="loaded" tabindex="0">
+                              <code class="language-html" data-prismjs-copy="Copy">
+                                &lt;form autocomplete="off">
+                                  &lt;input type="text" name="usuario">
+                                  &lt;input type="password" name="contrasena">
+                                &lt;/form>
+                              </code>
+                            </pre>
+                          </div>
+                          <!-- Sintaxis fin -->
+                        </li>
+                      </ul>
+                      <p><span class="fw-bold">Ejemplo Combinado</span>:</p>
+                      <!-- Sintaxis -->
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-html" data-prismjs-copy="Copy">
+                            &lt;form autocomplete="on">
+                              &lt;input type="text" name="nombre">
+                              &lt;input type="email" name="correo" autocomplete="off">
+                            &lt;/form>
+                          </code>
+                        </pre>
+                      </div>
+                      <!-- Sintaxis fin -->
+                      <p>En este ejemplo:</p>
+                      <ul>
+                        <li>
+                          El formulario permite autocompletado en general.
+                        </li>
+                        <li>
+                          El campo de correo lo desactiva específicamente.
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- Valores Básicos fin -->
+                    <!-- Valores Específicos (Tokens) -->
+                    <div>
+                      <h5>Valores Específicos (Tokens)</h5>
+                      <p>
+                        HTML5 introduce tokens específicos que indican
+                        exactamente qué tipo de información espera cada campo.
+                        Estos tokens ayudan a los navegadores a hacer
+                        sugerencias más precisas.
+                      </p>
+                      <p>
+                        Además de <code class="language-html">on</code> y
+                        <code class="language-html">off</code>, en campos
+                        individuales se pueden usar valores específicos para
+                        indicar el tipo de dato:
+                      </p>
+                      <ul>
+                        <li>
+                          <code class="language-html">autocomplete="name"</code>
+                        </li>
+                        <li>
+                          <code class="language-html"
+                            >autocomplete="email"</code
+                          >
+                        </li>
+                        <li>
+                          <code class="language-html"
+                            >autocomplete="username"</code
+                          >
+                        </li>
+                        <li>
+                          <code class="language-html"
+                            >autocomplete="new-password"</code
+                          >
+                        </li>
+                        <li>
+                          <code class="language-html"
+                            >autocomplete="current-password"</code
+                          >
+                        </li>
+                        <li>
+                          <code class="language-html"
+                            >autocomplete="street-address"</code
+                          >
+                        </li>
+                        <li>
+                          <code class="language-html"
+                            >autocomplete="postal-code"</code
+                          >
+                        </li>
+                        <li>
+                          <code class="language-html">autocomplete="tel"</code>
+                        </li>
+                        <li>
+                          <code class="language-html"
+                            >autocomplete="cc-number"</code
+                          >
+                          (tarjeta de crédito)
+                        </li>
+                        <li>Entre otros.</li>
+                      </ul>
+
+                      <p>
+                        Esto ayuda al navegador a entender qué datos ofrecer en
+                        sus sugerencias.
+                      </p>
+                      <p><span class="fw-bold">Ejemplo</span>:</p>
+                      <!-- Sintaxis -->
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-html" data-prismjs-copy="Copy">
+                        &lt;form autocomplete="on">
+                          &lt;input type="text" name="nombre" autocomplete="name">
+                          &lt;input type="email" name="correo" autocomplete="email">
+                          &lt;input type="password" name="contrasena" autocomplete="new-password">
+                        &lt;/form>
+                      </code>
+                    </pre>
+                      </div>
+                      <!-- Sintaxis fin -->
+                      <p>Otros valores:</p>
+                      <ul>
+                        <li>
+                          Información Personal
+                          <!-- Sintaxis -->
+                          <div class="ej-sintaxis">
+                            <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-html" data-prismjs-copy="Copy">
+                           &lt;input type="text" name="nombre" autocomplete="given-name">
+                            &lt;input type="text" name="apellido" autocomplete="family-name">
+                            &lt;input type="text" name="nombre-completo" autocomplete="name">
+                            &lt;input type="email" name="email" autocomplete="email">
+                            &lt;input type="tel" name="telefono" autocomplete="tel">                            
+                          </code>
+                        </pre>
+                          </div>
+                          <!-- Sintaxis fin -->
+                        </li>
+                        <li>
+                          Información de Dirección
+                          <!-- Sintaxis -->
+                          <div class="ej-sintaxis">
+                            <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-html" data-prismjs-copy="Copy">
+                           &lt;input type="text" name="calle" autocomplete="street-address">
+                            &lt;input type="text" name="ciudad" autocomplete="address-level2">
+                            &lt;input type="text" name="estado" autocomplete="address-level1">
+                            &lt;input type="text" name="codigo-postal" autocomplete="postal-code">
+                            &lt;input type="text" name="pais" autocomplete="country">                            
+                          </code>
+                        </pre>
+                          </div>
+                          <!-- Sintaxis fin -->
+                        </li>
+                        <li>
+                          Información de Pago
+                          <!-- Sintaxis -->
+                          <div class="ej-sintaxis">
+                            <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-html" data-prismjs-copy="Copy">
+                           &lt;input type="text" name="numero-tarjeta" autocomplete="cc-number">
+                            &lt;input type="text" name="nombre-tarjeta" autocomplete="cc-name">
+                            &lt;input type="text" name="expiracion" autocomplete="cc-exp">
+                            &lt;input type="text" name="cvv" autocomplete="cc-csc">                            
+                          </code>
+                        </pre>
+                          </div>
+                          <!-- Sintaxis fin -->
+                        </li>
+                        <li>
+                          Credenciales de Acceso
+                          <!-- Sintaxis -->
+                          <div class="ej-sintaxis">
+                            <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-html" data-prismjs-copy="Copy">
+                           &lt;input type="text" name="usuario" autocomplete="username">
+                            &lt;input type="password" name="clave" autocomplete="current-password">
+                            &lt;input type="password" name="nueva-clave" autocomplete="new-password">                            
+                          </code>
+                        </pre>
+                          </div>
+                          <!-- Sintaxis fin -->
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- Valores Específicos (Tokens) fin -->
+                    <!-- Modificadores Avanzados -->
+                    <div>
+                      <h5>Modificadores Avanzados</h5>
+                      <ul>
+                        <li>
+                          <span class="fw-bold">Secciones</span>: El modificador
+                          <span class="fw-bold">section-</span> permite agrupar
+                          campos relacionados, especialmente útil cuando un
+                          formulario maneja múltiples conjuntos de la misma
+                          información.
+                          <!-- Sintaxis -->
+                          <div class="ej-sintaxis">
+                            <pre data-src-status="loaded" tabindex="0">
+                              <code class="language-html" data-prismjs-copy="Copy">
+                                &lt;!-- Dirección de envío --&gt;
+                                &lt;input type="text" name="envio-calle" autocomplete="section-shipping street-address">
+                                &lt;input type="text" name="envio-ciudad" autocomplete="section-shipping address-level2">
+
+                                &lt;!-- Dirección de facturación --&gt;
+                                &lt;input type="text" name="factura-calle" autocomplete="section-billing street-address">
+                                &lt;input type="text" name="factura-ciudad" autocomplete="section-billing address-level2">                                
+                              </code>
+                            </pre>
+                          </div>
+                          <!-- Sintaxis fin -->
+                        </li>
+                        <li>
+                          <span class="fw-bold">Contactos Específicos</span>:
+                          Los modificadores
+                          <code class="language-html">home</code>,
+                          <code class="language-html">work</code>,
+                          <code class="language-html">mobile</code> y
+                          <code class="language-html">fax</code> especifican el
+                          contexto de la información de contacto.
+                          <!-- Sintaxis -->
+                          <div class="ej-sintaxis">
+                            <pre data-src-status="loaded" tabindex="0">
+                              <code class="language-html" data-prismjs-copy="Copy">
+                               &lt;input type="tel" name="tel-casa" autocomplete="home tel">
+                                &lt;input type="tel" name="tel-trabajo" autocomplete="work tel">
+                                &lt;input type="tel" name="tel-movil" autocomplete="mobile tel">
+                                &lt;input type="email" name="email-trabajo" autocomplete="work email">                                
+                              </code>
+                            </pre>
+                          </div>
+                          <!-- Sintaxis fin -->
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- Modificadores Avanzados fin -->
+                  </div>
+                  <!-- Valores Principales de autocomplete  fin -->
+                  <!-- Casos de Uso Prácticos autocomplete  -->
+                  <div>
+                    <h4>
+                      Casos de Uso Prácticos
+                      <code class="h4-code">autocomplete</code>
+                    </h4>
+                    <!-- Formulario de Registro Completo autocomplete -->
+                    <div>
+                      <h5>
+                        Formulario de Registro Completo
+                        <code class="h5-code">autocomplete</code>
+                      </h5>
+                      <!-- Sintaxis -->
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                            <code class="language-html" data-prismjs-copy="Copy">
+                              &lt;form autocomplete="on">
+                                &lt;h2>Información Personal&lt;/h2>
+                                &lt;input type="text" name="nombre" autocomplete="given-name" placeholder="Nombre">
+                                &lt;input type="text" name="apellido" autocomplete="family-name" placeholder="Apellido">
+                                &lt;input type="email" name="email" autocomplete="email" placeholder="Email">
+                                &lt;input type="tel" name="telefono" autocomplete="tel" placeholder="Teléfono">
+  
+                                &lt;h2>Dirección&lt;/h2>
+                                &lt;input type="text" name="direccion" autocomplete="street-address" placeholder="Dirección">
+                                &lt;input type="text" name="ciudad" autocomplete="address-level2" placeholder="Ciudad">
+                                &lt;input type="text" name="codigo-postal" autocomplete="postal-code" placeholder="Código Postal">
+  
+                                &lt;h2>Credenciales&lt;/h2>
+                                &lt;input type="text" name="usuario" autocomplete="username" placeholder="Usuario">
+                                &lt;input type="password" name="clave" autocomplete="new-password" placeholder="Contraseña">
+                              &lt;/form>                              
+                            </code>
+                          </pre>
+                      </div>
+                      <!-- Sintaxis fin -->
+                    </div>
+                    <!-- Formulario de Registro Completo autocomplete fin -->
+
+                    <!-- Formulario de Pago autocomplete -->
+                    <div>
+                      <h5>
+                        Formulario de Pago
+                        <code class="h5-code">autocomplete</code>
+                      </h5>
+                      <!-- Sintaxis -->
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                            <code class="language-html" data-prismjs-copy="Copy">
+                              &lt;form autocomplete="on">
+                                &lt;h2>Información de Pago&lt;/h2>
+                                &lt;input type="text" name="numero-tarjeta" autocomplete="cc-number" placeholder="Número de Tarjeta">
+                                &lt;input type="text" name="nombre-tarjeta" autocomplete="cc-name" placeholder="Nombre en la Tarjeta">
+                                &lt;input type="text" name="expiracion" autocomplete="cc-exp" placeholder="MM/AA">
+                                &lt;input type="text" name="cvv" autocomplete="cc-csc" placeholder="CVV">
+  
+                                &lt;h2>Dirección de Facturación&lt;/h2>
+                                &lt;input type="text" name="direccion-factura" autocomplete="billing street-address" placeholder="Dirección">
+                                &lt;input type="text" name="ciudad-factura" autocomplete="billing address-level2" placeholder="Ciudad">
+                              &lt;/form>                              
+                            </code>
+                          </pre>
+                      </div>
+                      <!-- Sintaxis fin -->
+                      <p>
+                        Este formulario es una muestra y debe considerarse que
+                        ciertos datos no deben tener habilitada la función de
+                        autocompletado.
+                      </p>
+                    </div>
+                    <!-- Formulario de Pago autocomplete fin -->
+                  </div>
+                  <!-- Casos de Uso Prácticos autocomplete  fin -->
+                  <!-- Mejores Prácticas autocomplete  -->
+                  <div>
+                    <h4>
+                      Mejores Prácticas
+                      <code class="h4-code">autocomplete</code>
+                    </h4>
+                    <ul>
+                      <li>
+                        Utilizar siempre los tokens estándar para garantizar la
+                        mejor experiencia de usuario:
+                        <!-- Sintaxis -->
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
+                            <code class="language-html" data-prismjs-copy="Copy">
+                             &lt;!-- Correcto --&gt;
+                              &lt;input type="email" name="email" autocomplete="email">
+
+                              &lt;!-- Incorrecto --&gt;
+                              &lt;input type="email" name="email" autocomplete="email-address">                           
+                            </code>
+                          </pre>
+                        </div>
+                        <!-- Sintaxis fin -->
+                      </li>
+                      <li>
+                        El autocompletado funciona bien junto con la validación
+                        HTML5:
+                        <!-- Sintaxis -->
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
+                            <code class="language-html" data-prismjs-copy="Copy">
+                             &lt;input type="email" name="email" autocomplete="email" required>
+                              &lt;input type="tel" name="telefono" autocomplete="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">                              
+                            </code>
+                          </pre>
+                        </div>
+                        <!-- Sintaxis fin -->
+                      </li>
+                      <li>
+                        Asegurarse de que los campos tengan etiquetas
+                        apropiadas:
+                        <!-- Sintaxis -->
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
+                            <code class="language-html" data-prismjs-copy="Copy">
+                             &lt;label for="email">Correo Electrónico:&lt;/label>
+                              &lt;input type="email" id="email" name="email" autocomplete="email">                              
+                            </code>
+                          </pre>
+                        </div>
+                        <!-- Sintaxis fin -->
+                      </li>
+                      <li>
+                        Desactivar (off) solo cuando realmente se requiere por
+                        seguridad o privacidad.
+                      </li>
+                      <li>
+                        No confiar en que siempre funcionará igual en todos los
+                        navegadores: algunos pueden ignorar
+                        <code class="language-html">autocomplete="off"</code>
+                        por decisión del usuario o del navegador.
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Mejores Prácticas autocomplete  fin -->
+                </div>
+                <!-- autocomplete  fin -->
+
+                <!-- novalidate  -->
+                <div id="novalidate">
+                  <h3>novalidate</h3>
+                  <p>
+                    El navegador, de forma predeterminada, intenta ser útil y
+                    verifica que los campos obligatorios se llenen o que los
+                    formatos (como los de correo electrónico o URL) sean
+                    correctos antes de enviar la información a un servidor. Esta
+                    validación automática es muy útil, ¡pero no siempre es lo
+                    que se necesita!
+                  </p>
+                  <p>
+                    Aquí es donde entra en juego la etiqueta (o más
+                    precisamente, el atributo)
+                    <code class="language-html">novalidate</code> en la etiqueta
+                    <code class="language-html">&lt;form></code>.
+                  </p>
+                  <!-- ¿Qué es la Validación en Formularios Web?  -->
+                  <div>
+                    <h4>¿Qué es la Validación en Formularios Web?</h4>
+                    <p>
+                      Cuando se llena un formulario en una página web y se
+                      presiona el botón de "Enviar", el navegador web realiza
+                      una serie de verificaciones para asegurarse de que los
+                      datos ingresados sean válidos. Por ejemplo:
+                    </p>
+                    <ul>
+                      <li>
+                        <span class="fw-bold">Campos Obligatorios</span>: Si un
+                        campo está marcado con el atributo
+                        <code class="language-html">required</code>, el
+                        navegador se asegura de que no esté vacío.
+                      </li>
+                      <li>
+                        <span class="fw-bold">Formatos Específicos</span>: Si un
+                        campo es de tipo
+                        <code class="language-html">email</code>,
+                        <code class="language-html">url</code>,
+                        <code class="language-html">number</code>, etc., el
+                        navegador verifica que el texto ingresado cumpla con el
+                        formato esperado.
+                      </li>
+                      <li>
+                        <span class="fw-bold">Longitud Mínima/Máxima</span>: Se
+                        puede validar que el texto tenga una longitud mínima
+                        (<code class="language-html">minlength</code>) o máxima
+                        (<code class="language-html">maxlength</code>).
+                      </li>
+                      <li>
+                        <span class="fw-bold">Rangos Numéricos</span>: Para
+                        campos numéricos, se pueden establecer rangos (<code
+                          class="language-html"
+                          >min</code
+                        >, <code class="language-html">max</code>).
+                      </li>
+                    </ul>
+                    <p>
+                      Si alguna de estas validaciones falla, el navegador impide
+                      que el formulario se envíe y muestra un mensaje de error
+                      al usuario, indicando qué necesita corregir. Esto se
+                      conoce como validación del lado del cliente (o
+                      "client-side validation"), ya que ocurre directamente en
+                      el navegador del usuario.
+                    </p>
+                  </div>
+                  <!-- ¿Qué es la Validación en Formularios Web?  fin -->
+                  <!-- Qué Es novalidate -->
+                  <div>
+                    <h4>Qué Es <code class="h4-code">novalidate</code></h4>
+                    <p>
+                      El atributo <code class="language-html">novalidate</code>,
+                      aplicable a la etiqueta
+                      <code class="language-html">&lt;form></code> en HTML,, es
+                      un atributo booleano que no requiere un valor. Su función
+                      es deshabilitar la validación automática del navegador
+                      para los campos de un formulario al momento de enviarlo,
+                      permitiendo que el formulario se envíe sin verificar
+                      restricciones como
+
+                      <code class="language-html">required</code>,
+                      <code class="language-html">pattern</code> o
+                      <code class="language-html">type="email"</code>, entre
+                      otras, antes del envío.
+                    </p>
+                  </div>
+                  <!-- Qué Es novalidate fin -->
+                  <!-- Cómo se Usa novalidate  -->
+                  <div>
+                    <h4>Cómo se Usa <code class="h4-code">novalidate</code></h4>
+                    <p>
+                      El uso es muy simple: se coloca el atributo novalidate
+                      dentro de la etiqueta
+                      <code class="language-html">&lt;form></code>.
+                    </p>
+                    <p><span class="fw-bod">Ejemplo Básico</span>:</p>
+                    <!-- Sintaxis -->
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-html" data-prismjs-copy="Copy">
+                           &lt;form action="/procesar-datos" method="post" novalidate>
+                            &lt;label for="correo">Correo electrónico:&lt;/label>
+                            &lt;input type="email" id="correo" name="correo" required>
+                            &lt;button type="submit">Enviar&lt;/button>
+                          &lt;/form>
+                        </code>
+                      </pre>
+                    </div>
+                    <!-- Sintaxis fin -->
+                    <p>
+                      En este caso, aunque el campo correo es de tipo
+                      <code class="language-html">email</code> y es
+                      <code class="language-html">required</code>, el navegador
+                      no realizará ninguna comprobación automática al presionar
+                      el botón de enviar. El formulario se enviará tal cual
+                      esté.
+                    </p>
+                  </div>
+                  <!-- Cómo se Usa novalidate  fin -->
+                  <!-- Características importantes novalidate  -->
+                  <div>
+                    <h4>
+                      Características importantes
+                      <code class="h4-code">novalidate</code>
+                    </h4>
+                    <ul>
+                      <li>
+                        Es un atributo booleano, es decir, no necesita valor:
+                        <!-- Sintaxis -->
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
+                              <code class="language-html" data-prismjs-copy="Copy">
+                               &lt;form novalidate>...&lt;/form>
+
+                                &lt;!-- Otra forma de configuración --&gt;
+                                &lt;form novalidate="novalidate">...&lt;/form>
+                              </code>
+                            </pre>
+                        </div>
+                        <!-- Sintaxis fin -->
+                      </li>
+                      <li>
+                        Solo afecta a la validación en el lado del cliente
+                        (navegador). No sustituye ni elimina la necesidad de
+                        validar los datos en el servidor.
+                      </li>
+                      <li>
+                        Es especialmente útil si se desea crear una experiencia
+                        de usuario personalizada, mostrando mensajes de error
+                        hechos a medida en lugar de los mensajes por defecto del
+                        navegador.
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Características importantes novalidate  fin -->
+                  <!-- Comparación Práctica novalidate -->
+                  <div>
+                    <h4>
+                      Comparación Práctica
+                      <code class="h4-code">novalidate</code>
+                    </h4>
+                    <!-- Sintaxis -->
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-html" data-prismjs-copy="Copy">
+                         &lt;!-- SIN novalidate - El navegador valida automáticamente --&gt;
+                          &lt;form>
+                            &lt;input type="email" required placeholder="Tu email">
+                            &lt;input type="number" min="18" max="100" required placeholder="Tu edad">
+                            &lt;button type="submit">Enviar&lt;/button>
+                          &lt;/form>                          
+                        </code>
+                      </pre>
+                    </div>
+                    <!-- Sintaxis fin -->
+                    <p>En este ejemplo, si se intenta enviar el formulario:</p>
+                    <ul>
+                      <li>
+                        El navegador verificará que el email tenga formato
+                        válido.
+                      </li>
+                      <li>Verificará que la edad esté entre 18 y 100.</li>
+                      <li>Mostrará mensajes de error si algo está mal.</li>
+                    </ul>
+                    <p>
+                      Al agregar
+                      <code class="language-html">novalidate</code> al
+                      formulario, se le indica al navegador: "No valide este
+                      formulario automáticamente".
+                    </p>
+                    <!-- Sintaxis -->
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-html" data-prismjs-copy="Copy">
+                         &lt;!-- CON novalidate - El navegador NO valida --&gt;
+                          &lt;form novalidate>
+                            &lt;input type="email" required placeholder="Tu email">
+                            &lt;input type="number" min="18" max="100" required placeholder="Tu edad">
+                            &lt;button type="submit">Enviar&lt;/button>
+                          &lt;/form>                          
+                        </code>
+                      </pre>
+                    </div>
+                    <!-- Sintaxis fin -->
+                  </div>
+                  <!-- Comparación Práctica  novalidate fin -->
+                </div>
+                <!-- novalidate  fin -->
+
+                <!-- accept-charset  -->
+                <div id="accept-charset">
+                  <h3><code class="h3-code">accept-charset</code></h3>
+                  <!-- Qué es accept-charset  -->
+                  <div>
+                    <h4>Qué es <code class="h4-code">accept-charset</code></h4>
+                    <p>
+                      accept-charset es un atributo opcional que puede incluirse
+                      dentro de la etiqueta
+                      <code class="language-html">&lt;form></code> para indicar
+                      al navegador qué conjuntos de caracteres (charsets) se
+                      deben utilizar al enviar los datos del formulario al
+                      servidor.
+                    </p>
+                    <p>
+                      Un conjunto de caracteres define cómo los caracteres
+                      (letras, números, símbolos, etc.) se representan como
+                      bytes.
+                    </p>
+                    <p>Los más comunes son:</p>
+                    <ul>
+                      <li>
+                        <span class="fw-bold">UTF-8</span>: El estándar moderno
+                        que puede representar cualquier carácter Unicode.
+                      </li>
+                      <li>
+                        <span class="fw-bold">ISO-8859-1</span>: Un conjunto más
+                        limitado que cubre caracteres latinos básicos.
+                      </li>
+                      <li>
+                        <span class="fw-bold">Windows-1252</span>: Una extensión
+                        de ISO-8859-1 usado en Windows.
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Qué es accept-charset  fin -->
+                  <!-- Por Qué Es Importante accept-charset  -->
+                  <div>
+                    <h4>
+                      Por Qué Es Importante
+                      <code class="h4-code">accept-charset</code>
+                    </h4>
+                    <p>
+                      Cuando un usuario escribe caracteres especiales como
+                      acentos (á, é, í), eñes (ñ), o símbolos de otras lenguas
+                      (ç, ü, ø), el navegador necesita saber cómo codificar
+                      estos caracteres antes de enviarlos al servidor. Una
+                      codificación incorrecta puede resultar en caracteres
+                      distorsionados o "cuadraditos" en lugar del texto
+                      original, o también llamados
+                      <span class="fst-italic">mojibake</span>.
+                    </p>
+                  </div>
+                  <!-- Por Qué Es Importante accept-charset  fin -->
+                  <!-- Sintaxis accept-charset  -->
+                  <div>
+                    <h4>
+                      Sintaxis <code class="h4-code">accept-charset</code>
+                    </h4>
+                    <!-- Sintaxis -->
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-html" data-prismjs-copy="Copy">
+                         &lt;form accept-charset="utf-8">
+                            ...
+                          &lt;/form>
+                        </code>
+                      </pre>
+                    </div>
+                    <!-- Sintaxis fin -->
+                    <p>Ejemplo con varios charsets:</p>
+                    <!-- Sintaxis -->
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-html" data-prismjs-copy="Copy">
+                          &lt;form accept-charset="UTF-8 ISO-8859-1">
+                            ...
+                          &lt;/form>
+                        </code>
+                      </pre>
+                    </div>
+                    <!-- Sintaxis fin -->
+                    <p>Donde:</p>
+                    <ul>
+                      <li>
+                        Se puede especificar uno o varios conjuntos de
+                        caracteres, separados por espacios.
+                      </li>
+                      <li>
+                        El navegador usará el primer conjunto que sea
+                        compatible.
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Sintaxis accept-charset  fin -->
+                  <!-- Valor por defecto accept-charset  -->
+                  <div>
+                    <h4>
+                      Valor por defecto
+                      <code class="h4-code">accept-charset</code>
+                    </h4>
+                    <p>
+                      Si no se especifica
+                      <code class="language-html">accept-charset</code>, el
+                      navegador usará:
+                    </p>
+                    <ul>
+                      <li>
+                        El conjunto de caracteres del documento HTML actual (por
+                        ejemplo, el que está definido en
+                        <code class="language-html"
+                          >&lt;meta charset="utf-8"></code
+                        >), o
+                      </li>
+                      <li>
+                        El valor por defecto del servidor, si el documento no
+                        define uno.
+                      </li>
+                    </ul>
+                    <p>
+                      Por eso es muy común que en la práctica se vea poco el uso
+                      explícito de
+                      <code class="language-html">accept-charset</code>, porque
+                      muchos sitios ya definen
+                      <code class="language-html"
+                        >&lt;meta charset="utf-8"></code
+                      >
+                      en la cabecera del HTML.
+                    </p>
+                  </div>
+                  <!-- Valor por defecto accept-charset  fin -->
+                  <!-- Cuando Usar accept-charset  -->
+                  <div>
+                    <h4>
+                      Cuando Usar <code class="h4-code">accept-charset</code>
+                    </h4>
+                    <p>
+                      Aunque no siempre es obligatorio, es muy recomendable
+                      usarlo:
+                    </p>
+                    <ul>
+                      <li>
+                        Si el servidor requiere una codificación específica.
+                      </li>
+                      <li>Cuando se envían datos en varios idiomas.</li>
+                      <li>
+                        Para asegurar la correcta transmisión de caracteres
+                        especiales.
+                      </li>
+                    </ul>
+                    <p>Ejemplo recomendado:</p>
+                    <!-- Sintaxis -->
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-html" data-prismjs-copy="Copy">
+                          &lt;form action="/procesar.php" method="post" accept-charset="UTF-8">
+                            &lt;label for="nombre">Nombre:&lt;/label>
+                            &lt;input type="text" id="nombre" name="nombre">
+                            &lt;input type="submit" value="Enviar">
+                          &lt;/form>
+                        </code>
+                      </pre>
+                    </div>
+                    <!-- Sintaxis fin -->
+                  </div>
+                  <!-- Cuando Usar accept-charset  fin -->
+                  <!-- Mejores Prácticas accept-charset  -->
+                  <div>
+                    <h4>
+                      Mejores Prácticas
+                      <code class="h4-code">accept-charset</code>
+                    </h4>
+                    <!-- Siempre Usar UTF-8 -->
+                    <div>
+                      <h5>Siempre Usar UTF-8</h5>
+                      <!-- Sintaxis -->
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-html" data-prismjs-copy="Copy">
+                            &lt;form accept-charset="UTF-8">
+                            ...
+                            &lt;/form>
+                          </code>
+                        </pre>
+                      </div>
+                      <!-- Sintaxis fin -->
+                      <p>
+                        Esta es la práctica más segura y compatible con el
+                        desarrollo web moderno.
+                      </p>
+                    </div>
+                    <!-- Siempre Usar UTF-8 fin -->
+
+                    <!-- Mantener la Consistencia -->
+                    <div>
+                      <h5>Mantener la Consistencia</h5>
+                      <p>
+                        Asegurarse que toda la aplicación use la misma
+                        codificación:
+                      </p>
+                      <ul>
+                        <li>Meta charset del HTML</li>
+                        <li>accept-charset del formulario</li>
+                        <li>Configuración del servidor</li>
+                        <li>Base de datos</li>
+                      </ul>
+                    </div>
+                    <!-- Mantener la Consistencia fin -->
+                    <!-- Probar con Caracteres Especiales -->
+                    <div>
+                      <h5>Probar con Caracteres Especiales</h5>
+                      <p>Siempre probar los formularios con:</p>
+                      <ul>
+                        <li>
+                          <span class="fw-bold">Acentos</span>: á, é, í, ó, ú
+                        </li>
+                        <li>
+                          <span class="fw-bold">Caracteres especiales</span>: ñ,
+                          ç, ü
+                        </li>
+                        <li><span class="fw-bold">Símbolos</span>: €, £, ¥</li>
+                        <li><span class="fw-bold">Emojis</span>: 😀, 🎉, ❤️</li>
+                      </ul>
+                    </div>
+                    <!-- Probar con Caracteres Especiales fin -->
+                  </div>
+                  <!-- Mejores Prácticas accept-charset  fin -->
+                </div>
+                <!-- accept-charset  fin -->
+              </div>
+              <!-- Atributos del Formulario <form> Fin -->
+              <hr class="subtle-divider" />
+            </div>
+          </article>
+          <!--  Formularios HTML fin -->
+          <!-- Comentarios -->
+          <article class="row pt-5" id="comment">
+            <h2>COMENTARIOS</h2>
+            <p>
+              Si tiene alguna inquietud, duda o ha encontrado algún error, por
+              favor infórmelo a través del formulario disponible para este
+              propósito.
+            </p>
+            <div class="d-flex justify-content-center">
+              <form
+                action="https://formsubmit.co/herreraforeroeduardo@gmail.com"
+                method="POST"
+                id="myForm"
+              >
+                <div
+                  class="input-group d-flex justify-content-center flex-column"
+                >
+                  <label for="name" class="pe-2">Nombre:</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Eduardo Herrera Forero"
+                    class="rounded"
+                    required="required"
+                  />
+                  <label for="email" class="pe-2">Email:</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="herreraforeroeduardo@gmail.com"
+                    class="rounded"
+                    required="required"
+                  />
+                  <label for="message" class="pe-2">Mensaje:</label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="5"
+                    placeholder="Su comentario..."
+                    class="rounded rounded-3"
+                  ></textarea>
+                  <input
+                    class="btn btn-outline-light my-3 border rounded-pill border-2"
+                    type="submit"
+                    value="Enviar..."
+                  />
+                </div>
+                <p>
+                  La política de privacidad, y los términos y condiciones están
+                  disponibles en el formulario de contacto.
+                </p>
+              </form>
+            </div>
+          </article>
+          <!-- Comentarios fin -->
+        </section>
+        <!--  Formularios HTML-->
+      </main>
+      <!-- -------------------------------- fin principal -------------------------------- -->
+      <!-- -------------------------------- barra lateral -------------------------------- -->
+      <aside class="col-lg-3 d-none d-lg-block pt-5">
+        <h1 class="h3">En Este Artículo</h1>
+
+        <div class="menu-container">
+          <div class="menu-item">
+            <details>
+              <summary>Introducción</summary>
+              <div class="submenu">
+                <a href="#introduccion" class="submenu-item">Introducción</a>
+                <a href="#que-es-un-formulario-en-html" class="submenu-item"
+                  >¿Qué Es un Formulario en HTML?</a
+                >
+                <a
+                  href="#por-que-son-importantes-en-desarrollo-web"
+                  class="submenu-item"
+                  >¿Por Qué Son Importantes en Desarrollo Web?</a
+                >
+              </div>
+            </details>
+          </div>
+
+          <div class="menu-item">
+            <details>
+              <summary>Estructura Básica de un Formulario</summary>
+              <div class="submenu">
+                <a href="#el-elemento-form" class="submenu-item"
+                  >El Elemento &lt;form></a
+                >
+
+                <a
+                  href="#anatomía-completa-del-elemento-form"
+                  class="submenu-item"
+                  >Anatomía Completa del Elemento &lt;form></a
+                >
+              </div>
+            </details>
+          </div>
+
+          <div class="menu-item">
+            <details>
+              <summary>Atributos del Formulario &lt;form></summary>
+              <div class="submenu">
+                <div class="menu-item">
+                  <a
+                    href="#que-son-los-atributos-del-formulario-form"
+                    class="submenu-item"
+                    >Qué Son los Atributos del Formulario</a
+                  >
+                </div>
+
+                <div class="menu-item">
+                  <a href="#action" class="submenu-item">action</a>
+                </div>
+
+                <div class="menu-item">
+                  <a href="#method" class="submenu-item">method</a>
+                </div>
+
+                <div class="menu-item">
+                  <a href="#enctype" class="submenu-item">enctype</a>
+                </div>
+
+                <div class="menu-item">
+                  <a href="#name" class="submenu-item">name</a>
+                </div>
+
+                <div class="menu-item">
+                  <a href="#id" class="submenu-item">id</a>
+                </div>
+
+                <div class="menu-item">
+                  <a href="#target" class="submenu-item">target</a>
+                </div>
+
+                <div class="menu-item">
+                  <a href="#autocomplete" class="submenu-item">autocomplete</a>
+                </div>
+
+                <div class="menu-item">
+                  <a href="#novalidate" class="submenu-item">novalidate</a>
+                </div>
+
+                <div class="menu-item">
+                  <a href="#accept-charset" class="submenu-item"
+                    >accept-charset</a
+                  >
+                </div>
+              </div>
+            </details>
+          </div>
+
+          <div class="menu-item">
+            <a href="#comment" class="simple-link">Comentarios</a>
+          </div>
+        </div>
+      </aside>
+      <!-- -------------------------------- fin barra lateral -------------------------------- -->
+    </div>
+    <!--  Principal Fin  -->
+
+    <!-- button to top -->
+    <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        fill="currentColor"
+        class="bi bi-arrow-bar-up"
+        viewBox="0 0 16 16"
+        style="margin-left: -2px"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"
+        ></path>
+      </svg>
+    </button>
+    <!-- Fin button to top -->
+  </body>
+</html>

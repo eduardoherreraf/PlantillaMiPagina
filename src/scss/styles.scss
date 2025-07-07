@@ -36,6 +36,18 @@ body {
   padding-right: 1rem;
 }
 
+img {
+  border-radius: 0.5rem;
+}
+
+.img-container,
+.img-caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Fondo Códigos */
 pre[class*="language-"],
 code[class*="language-"] {
@@ -76,48 +88,77 @@ h3 {
   font-family: "Saira Extra Condensed", sans-serif;
   text-transform: uppercase;
   text-wrap: balance;
-  color: #0d6efd;
   margin-top: 1rem;
 }
 
 h4,
 h5,
 h6 {
-  font-size: 2rem;
   font-family: "Saira Extra Condensed", sans-serif;
   text-transform: uppercase;
   text-wrap: balance;
-  color: #6ea8fe;
-  font-size: 1, 5rem;
 }
 
-h1 {
+h1,
+.h1-code {
   font-size: 3.5rem;
+  color: #0d6efd;
 }
 
-h2 {
+h2,
+.h2-code {
   font-size: 3rem;
+  color: #0d6efd;
 }
 
-h3 {
+h3,
+.h3-code {
   font-size: 2.5rem;
+  color: #0d6efd;
 }
 
-h4 {
+h4,
+.h4-code {
   font-size: 2rem;
+  color: #6ea8fe;
 }
 
-h5 {
+h5,
+.h5-code {
+  font-size: 1.7rem;
+  color: #6ea8fe;
+}
+
+h6,
+.h6-code {
   font-size: 1.5rem;
+  color: #6ea8fe;
 }
 
-h6 {
-  font-size: 1rem;
+.h1-code,
+.h2-code,
+.h3-code,
+.h4-code,
+.h5-code,
+.h6-code {
+  font-weight: normal !important;
+  text-transform: lowercase !important;
 }
 
-picture img {
+.centrar-imagen {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  overflow: hidden; /* Fuerza el recorte de las esquinas */
+  text-align: center;
+}
+
+/* picture img {
   border-radius: 0.5rem;
-}
+} */
 
 .h3-code {
   font-size: 2.5rem;
@@ -230,11 +271,6 @@ li {
   text-align: justify;
 }
 
-.imagen {
-  margin-bottom: 0.5rem;
-  margin-top: 0.5rem;
-}
-
 .ancla {
   color: inherit;
   /* Hereda el color del elemento padre */
@@ -270,7 +306,7 @@ code {
   background: #212529;
   border-radius: 6px;
   font-family: "Courier New", monospace;
-  padding: 2px 4px;
+  // padding: 2px 4px;
 }
 
 /* Barra de navegación */
@@ -874,13 +910,6 @@ hr.subtle-divider {
   background-color: #3498db;
   color: white;
   font-weight: bold;
-}
-
-.ej-centrar-imagen {
-  /*   display: block;
-  margin-left: auto;
-  margin-right: auto; */
-  text-align: center;
 }
 
 // multimedia
@@ -1759,12 +1788,15 @@ dd {
 .ej-centrar-imagen {
   display: block;
   margin: 0 auto;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
   max-width: 100%;
   height: auto;
   // border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   overflow: hidden; /* Fuerza el recorte de las esquinas */
+  text-align: center;
 }
 
 .ej-centrar-imagen:hover {
@@ -4534,6 +4566,7 @@ details summary::marker {
   display: inline-block;
   background: linear-gradient(45deg, #00bcd4, #4fc3f7);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
   animation: glow 2s ease-in-out infinite alternate;
@@ -4836,9 +4869,216 @@ details summary::marker {
   right: 0;
 }
 
-// html-04_cuerpo_html.html
-// html-04_cuerpo_html.html
-// html-04_cuerpo_html.html
-// html-04_cuerpo_html.html
-// html-04_cuerpo_html.html
-// html-04_cuerpo_html.html
+// html-12_formularios.html#anatomía-completa-del-elemento-form - method
+.ej-form-method {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.ej-form-method .ej-container-method {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.ej-form-method .ej-section-method {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid #e0e0e0;
+}
+
+.ej-form-method .ej-h1-method {
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
+  margin: 0.67em 0;
+  text-align: center;
+}
+
+.ej-form-method .ej-h2-method {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+  margin-top: 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #4caf50;
+}
+
+.ej-form-method .ej-h4-method {
+  font-size: 1.17em;
+  font-weight: bold;
+  color: #333;
+  margin: 1.33em 0;
+}
+
+.ej-form-method .ej-section-method h2 {
+  color: #333;
+  margin-top: 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #4caf50;
+}
+
+.ej-form-method .ej-get-method {
+  border-left: 4px solid #2196f3;
+  background-color: #f3f9ff;
+}
+
+.ej-form-method .ej-post-method {
+  border-left: 4px solid #ff9800;
+  background-color: #fff8f0;
+}
+
+.ej-form-method .ej-group-method {
+  margin-bottom: 15px;
+}
+
+.ej-form-method label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.ej-form-method input[type="text"],
+.ej-form-method input[type="email"],
+.ej-form-method input[type="password"],
+.ej-form-method textarea,
+.ej-form-method select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.ej-form-method input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.ej-form-method input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.ej-form-method .ej-indicator-method {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.ej-form-method .ej-get-indicator-method {
+  background-color: #2196f3;
+}
+
+.ej-form-method .ej-post-indicator-method {
+  background-color: #ff9800;
+}
+
+.ej-form-method .ej-result-method {
+  background-color: #f0f8ff;
+  border: 1px solid #b0d4f1;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 15px;
+  min-height: 50px;
+}
+
+.ej-form-method .ej-table-method {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.ej-form-method .ej-table-method th,
+.ej-form-method .ej-table-method td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.ej-form-method .ej-table-method th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.ej-form-method .ej-table-method tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.ej-form-method .ej-info-method {
+  background-color: #e8f5e8;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 15px;
+  border-left: 4px solid #4caf50;
+}
+
+.ej-form-method .ej-warning-method {
+  background-color: #fff3cd;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 15px;
+  border-left: 4px solid #ffc107;
+}
+
+.ej-form-method .ej-code-method {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 15px;
+  font-family: monospace;
+  white-space: pre-wrap;
+  overflow-x: auto;
+  border: 1px solid #ddd;
+}
+
+/* Responsive - Bootstrap lg breakpoint: 992px */
+@media (min-width: 992px) {
+  .ej-form-method .ej-container-method {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .ej-form-method .ej-section-method {
+    padding: 40px;
+  }
+}
+
+/* Responsive para tablets */
+@media (max-width: 768px) {
+  .ej-form-method {
+    padding: 10px;
+  }
+
+  .ej-form-method .ej-section-method {
+    padding: 20px;
+  }
+}
+
+/* Responsive para móviles */
+@media (max-width: 576px) {
+  .ej-form-method .ej-section-method {
+    padding: 15px;
+  }
+
+  .ej-form-method input[type="submit"] {
+    width: 100%;
+  }
+}
