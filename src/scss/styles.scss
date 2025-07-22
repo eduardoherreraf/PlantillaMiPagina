@@ -252,7 +252,6 @@ textarea::placeholder {
 p {
   text-wrap: pretty;
   margin-top: 0;
-  margin-bottom: 0.5rem;
   text-align: justify;
 }
 
@@ -6033,10 +6032,9 @@ details summary::marker {
   }
 }
 
-
 //html-12_formularios.html - optgroup
 .ej-wrapper-optgroup {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   min-height: 100vh;
   // background: linear-gradient(45deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
   display: flex;
@@ -6057,7 +6055,7 @@ details summary::marker {
 }
 
 .ej-container-optgroup::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -6222,4 +6220,324 @@ details summary::marker {
     flex-direction: column;
     gap: 10px;
   }
+}
+
+// html-13_citas_%20y_referencias.html#blockquote:-cita-larga-o-en-bloque
+.ej-container-blockquote {
+  font-family: "Georgia", serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
+
+.ej-blockquote-blockquote {
+  position: relative;
+  background: #fff;
+  margin: 30px 0;
+  padding: 40px 50px 40px 80px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  font-size: 1.3em;
+  line-height: 1.8;
+  color: #2c3e50;
+  font-style: italic;
+  border-left: 6px solid #3498db;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ej-blockquote-blockquote:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.ej-blockquote-blockquote::before {
+  content: '"';
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  font-size: 4em;
+  color: #3498db;
+  font-family: "Times New Roman", serif;
+  opacity: 0.3;
+  line-height: 1;
+}
+
+.ej-blockquote-blockquote::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  width: 30px;
+  height: 30px;
+  background: #3498db;
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.ej-cite-blockquote {
+  display: block;
+  text-align: right;
+  margin-top: 20px;
+  font-style: normal;
+  font-size: 0.9em;
+  color: #7f8c8d;
+  font-weight: bold;
+}
+
+.ej-cite-blockquote::before {
+  content: "— ";
+  color: #3498db;
+}
+
+.ej-blockquote-simple-blockquote {
+  background: #ecf0f1;
+  padding: 25px 35px;
+  margin: 25px 0;
+  border-left: 4px solid #e74c3c;
+  font-size: 1.1em;
+  color: #2c3e50;
+  border-radius: 0 8px 8px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.ej-blockquote-simple-blockquote::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background: linear-gradient(to bottom, #e74c3c, #c0392b);
+}
+
+// html-13_citas_y_referencias.html#ejemplos-de-uso-de-cite
+.ej-body-cite {
+  font-family: "Comic Sans MS", cursive;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ej-container-cite {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.ej-h1-cite {
+  color: #4a4a4a;
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px wavy #ff6b6b;
+}
+
+.ej-example-cite {
+  background: #f8f9ff;
+  border: 2px dashed #9c88ff;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.ej-example-cite::before {
+  content: "✨";
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5em;
+  animation: sparkle 2s infinite;
+}
+
+@keyframes sparkle {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+}
+
+.ej-title-cite {
+  color: #6c5ce7;
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #fd79a8;
+}
+
+.ej-quote-cite {
+  background: linear-gradient(45deg, #ffecd2 0%, #fcb69f 100%);
+  border-left: 5px solid #e17055;
+  padding: 15px 20px;
+  margin: 15px 0;
+  border-radius: 0 15px 15px 0;
+  font-style: italic;
+  font-size: 1.1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+.ej-cite-tag {
+  color: #2d3436;
+  font-weight: bold;
+  background: #fff3cd;
+  padding: 3px 8px;
+  border-radius: 8px;
+  border: 2px solid #ffeeba;
+  display: inline-block;
+  margin-top: 10px;
+  font-style: normal;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.ej-cite-tag:hover {
+  background: #fff3cd;
+  transform: scale(1.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ej-text-cite {
+  color: #2d3436;
+  line-height: 1.6;
+  font-size: 1.05em;
+}
+
+.ej-emoji-cite {
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+
+//html-13_citas_y_referencias.html#citas-en-linea-q
+.ej-body-q {
+  font-family: "Georgia", serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  color: #333;
+}
+
+.ej-container-q {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.ej-h1-q {
+  font-size: 2.5em;
+  text-align: center;
+  color: #4a5568;
+  margin-bottom: 40px;
+  font-weight: 300;
+  position: relative;
+}
+
+.ej-h1-q::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  display: block;
+  margin: 15px auto;
+  border-radius: 2px;
+}
+
+.ej-ejemplo-q {
+  background: #f7fafc;
+  border-left: 5px solid #667eea;
+  padding: 25px;
+  margin: 30px 0;
+  border-radius: 0 15px 15px 0;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.ej-ejemplo-q:hover {
+  transform: translateX(10px);
+}
+
+.ej-h2-q {
+  color: #667eea;
+  font-size: 1.4em;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.ej-parrafo-q {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.ej-cita-q {
+  background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+  padding: 3px 8px;
+  border-radius: 8px;
+  font-style: italic;
+  font-weight: 500;
+  position: relative;
+  display: inline;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ej-autor-q {
+  color: #718096;
+  font-size: 0.9em;
+  font-style: italic;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.ej-codigo-q {
+  background: #2d3748;
+  color: #e2e8f0;
+  padding: 20px;
+  border-radius: 12px;
+  font-family: "Courier New", monospace;
+  font-size: 0.9em;
+  margin: 15px 0;
+  overflow-x: auto;
+  border: 2px solid #4a5568;
+}
+
+.ej-tag-q {
+  color: #38b2ac;
+}
+
+.ej-texto-q {
+  color: #fbb6ce;
+}
+
+.ej-separador-q {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #667eea, transparent);
+  margin: 40px 0;
+  border: none;
 }
