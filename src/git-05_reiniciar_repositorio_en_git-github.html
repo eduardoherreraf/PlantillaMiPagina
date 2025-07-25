@@ -1,217 +1,106 @@
-
 <!DOCTYPE html>
-<html
-  lang="es"
-  data-bs-theme="dark">
-  <head>
-    <!-- Metaetiquetas -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Se explica como se puede reiniciar un repositorio tanto local como su remoto en GITHUB" />
-    <meta
-      name="title"
-      content="Reiniciar Repositorio en GIT / GITHUB - Ing. Eduardo Herrera Forero." />
-    <meta
-      name="author"
-      content="Ing. Eduardo Herrera Forero" />
-    <meta
-      name="application-name"
-      content="EHF" />
-    <meta
-      name="robots"
-      content="index, follow" />
-    <link
-      rel="canonical"
-      href="https://eduardoherreraf.github.io/git-05_reiniciar_repositorio_en_git-github.html" />
-    <!-- Fin Metaetiquetas -->
-    <!-- Open Graph data -->
-    <meta
-      property="og:type"
-      content="website" />
-    <meta
-      property="og:title"
-      content="Reiniciar Repositorio en GIT / GITHUB - Ing. Eduardo Herrera Forero." />
-    <meta
-      property="og:description"
-      content="Se explica como se puede reiniciar un repositorio tanto local como su remoto en GITHUB" />
-    <meta
-      property="og:image"
-      content="https://i.ibb.co/M53d2PQy/Borrando-Repo-11.png" />
-    <meta
-      property="og:image:alt"
-      content="Reiniciar Repositorio en GIT / GITHUB - Ing. Eduardo Herrera Forero." />
-    <meta
-      property="og:url"
-      content="https://eduardoherreraf.github.io/git-05_reiniciar_repositorio_en_git-github.html" />
-    <meta
-      property="og:locale"
-      content="es_CO" />
-    <!-- fin Open Graph data -->
-    <!-- Twitter cards -->
-    <meta
-      name="twitter:card"
-      content="summary" />
-    <meta
-      name="twitter:title"
-      content="Reiniciar Repositorio en GIT / GITHUB - Ing. Eduardo Herrera Forero." />
-    <meta
-      name="twitter:description"
-      content="Se explica como se puede reiniciar un repositorio tanto local como su remoto en GITHUB" />
-    <meta
-      name="twitter:image"
-      content="https://i.ibb.co/M53d2PQy/Borrando-Repo-11.png" />
-    <meta
-      name="twitter:image:alt"
-      content="Reiniciar Repositorio en GIT / GITHUB - Ing. Eduardo Herrera Forero." />
-    <meta
-      name="twitter:url"
-      content="https://eduardoherreraf.github.io/git-05_reiniciar_repositorio_en_git-github.html" />
-    <meta
-      name="twitter:site"
-      content="@ehfeduardo" />
-    <!-- Fin Twitter cards -->
-    <!-- iconos -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="apple-touch-icon.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon-32x32.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="android-chrome-192x192.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon-16x16.png" />
-    <link
-      rel="manifest"
-      href="site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="safari-pinned-tab.svg"
-      color="#5bbad5" />
-    <metaclass
-      ="navbar-brand d-flex align-items-center ms-2 text-decoration-none"
-      name="msapplication-TileColor"
-      content="#da532c" />
-    <meta
-      name="theme-color"
-      content="#ffffff" />
-    <!-- fin iconos -->
-    <title>Reiniciar Repositorio en GIT / GITHUB - Ing. Eduardo Herrera Forero.</title>
-    <script
-      type="module"
-      defer
-      src="./js/main.js"></script>
-    <meta
-      name="google-site-verification"
-      content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
-  </head>
-  <body>
-    <!-- Barra deNavegación -->
-    <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
-      <div class="container-fluid">
-        <!-- Enlace a la página principal con el logo y nombre -->
-        <a
-          class="navbar-brand d-flex align-items-center ms-2 text-decoration-none"
-          href="index.html">
-          <img
-            src="./images/logo.png"
-            alt="Logo de Ing. Eduardo Herrera Forero"
-            width="30"
-            height="30"
-            class="d-inline-block align-text-top me-1" />
-          <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
-        </a>
-        <!-- Botón para activar el menú en dispositivos pequeños -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Menú de navegación -->
-        <div
-          class="collapse navbar-collapse ms-auto text-center"
-          id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100">
-            <li class="nav-item">
-              <a
-                class="nav-link mx-1 text-decoration-none"
-                href="index.html"
-                >SOBRE MÍ</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link mx-1 text-decoration-none"
-                href="index.html#resume"
-                >EXPERIENCIA</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link mx-1 text-decoration-none"
-                href="index.html#portfolio"
-                >PORTAFOLIO</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link mx-1 text-decoration-none"
-                href="index.html#studies"
-                >ESTUDIOS</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link mx-1 active text-decoration-none"
-                href="index.html#blog"
-                >PUBLICACIONES</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link mx-1 text-decoration-none"
-                href="index.html#contact"
-                >CONTACTO</a
-              >
-            </li>
-          </ul>
-        </div>
+<html lang="es" data-bs-theme="dark">
+
+<head>
+  <!-- Metaetiquetas -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Se explica como se puede reiniciar un repositorio tanto local como su remoto en GITHUB" />
+  <meta name="title" content="Reiniciar Repositorio en GIT / GITHUB - Ing. Eduardo Herrera Forero." />
+  <meta name="author" content="Ing. Eduardo Herrera Forero" />
+  <meta name="application-name" content="EHF" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eduardoherreraf.github.io/git-05_reiniciar_repositorio_en_git-github.html" />
+  <!-- Fin Metaetiquetas -->
+  <!-- Open Graph data -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Reiniciar Repositorio en GIT / GITHUB - Ing. Eduardo Herrera Forero." />
+  <meta property="og:description"
+    content="Se explica como se puede reiniciar un repositorio tanto local como su remoto en GITHUB" />
+  <meta property="og:image" content="https://i.ibb.co/M53d2PQy/Borrando-Repo-11.png" />
+  <meta property="og:image:alt" content="Reiniciar Repositorio en GIT / GITHUB - Ing. Eduardo Herrera Forero." />
+  <meta property="og:url" content="https://eduardoherreraf.github.io/git-05_reiniciar_repositorio_en_git-github.html" />
+  <meta property="og:locale" content="es_CO" />
+  <!-- fin Open Graph data -->
+  <!-- Twitter cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Reiniciar Repositorio en GIT / GITHUB - Ing. Eduardo Herrera Forero." />
+  <meta name="twitter:description"
+    content="Se explica como se puede reiniciar un repositorio tanto local como su remoto en GITHUB" />
+  <meta name="twitter:image" content="https://i.ibb.co/M53d2PQy/Borrando-Repo-11.png" />
+  <meta name="twitter:image:alt" content="Reiniciar Repositorio en GIT / GITHUB - Ing. Eduardo Herrera Forero." />
+  <meta name="twitter:url"
+    content="https://eduardoherreraf.github.io/git-05_reiniciar_repositorio_en_git-github.html" />
+  <meta name="twitter:site" content="@ehfeduardo" />
+  <!-- Fin Twitter cards -->
+  <!-- iconos -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+  <metaclass="navbar-brand d-flex align-items-center ms-2 text-decoration-none" name="msapplication-TileColor"
+    content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- fin iconos -->
+  <title>Reiniciar Repositorio en GIT / GITHUB - Ing. Eduardo Herrera Forero.</title>
+  <script type="module" defer src="./js/main.js"></script>
+  <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
+</head>
+
+<body>
+  <!-- Barra deNavegación -->
+  <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
+    <div class="container-fluid">
+      <!-- Enlace a la página principal con el logo y nombre -->
+      <a class="navbar-brand d-flex align-items-center ms-2 text-decoration-none" href="index.html">
+        <img src="./images/logo.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30"
+          class="d-inline-block align-text-top me-1" />
+        <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
+      </a>
+      <!-- Botón para activar el menú en dispositivos pequeños -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100">
+          <li class="nav-item">
+            <a class="nav-link mx-1 text-decoration-none" href="index.html">SOBRE MÍ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 text-decoration-none" href="index.html#resume">EXPERIENCIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 text-decoration-none" href="index.html#portfolio">PORTAFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 text-decoration-none" href="index.html#studies">ESTUDIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 active text-decoration-none" href="index.html#blog">PUBLICACIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 text-decoration-none" href="index.html#contact">CONTACTO</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- Barra deNavegación -->
-    <!-- -------------------------------- principal -------------------------------- -->
-    <div class="row col mx-1">
-      <main class="pt-5 col-lg-9">
-        <section class="pb-3">
-          <!--  Reiniciar Repositorio en GIT / GITHUB -->
-          <article
-            class="row border-1 border-bottom pb-3"
-            data-bs-spy="scroll"
-            data-bs-target="#list-example"
-            data-bs-smooth-scroll="true">
-            <header><h1>Reiniciar Repositorio en GIT / GITHUB</h1></header>
-            <!-- Introducción -->
-            <div
-              id="introduccion"
-              class="mt-5">
+    </div>
+  </nav>
+  <!-- Barra deNavegación -->
+  <!-- -------------------------------- principal -------------------------------- -->
+  <div class="row col mx-1">
+    <main class="pt-5 col-lg-9">
+      <section class="pb-3">
+        <!-- Borrar Ultimo Commit -->
+        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
+          data-bs-smooth-scroll="true">
+          <h1 id="introduccion">Como Eliminar el Último Commit de GIT</h1>
+          <div>
+            <div class="mt-5">
               <h2 class="mt-1">Introducción</h2>
               <p>
                 Este documento proporciona una guía paso a paso sobre cómo reiniciar un repositorio en GIT y
@@ -234,7 +123,7 @@
               <div class="text-center imagen">
                 <figure>
                   <img src="https://i.ibb.co/M53d2PQy/Borrando-Repo-11.png" class="img-fluid" width="50%"
-                  alt="Reiniciar Repositorio en GIT / GITHUB " title="Comparación entre reinicio local y
+                    alt="Reiniciar Repositorio en GIT / GITHUB " title="Comparación entre reinicio local y
                   reinicio en GitHub: impacto en los cambios y visibilidad del repositorio"" />
                   <figcaption>Reiniciar Repositorio en GIT / GITHUB</figcaption>
                 </figure>
@@ -243,121 +132,102 @@
 
             <!-- Reiniciar Eliminando Todo el Historial Manteniendo los Archivos -->
             <div
-              id="ReiniciarEliminandoTodoElHistorialManteniendoLosArchivos"
-              class="mt-5">
-              <h2 class="mt-1">Reiniciar Eliminando Todo el Historial Manteniendo los Archivos</h2>
-              <p>
-                Para reiniciar un repositorio de Git y GitHub desde cero, es necesario eliminar el historial
-                de commits y volver a subir los archivos, asegurando que estos permanezcan sin ningún cambio.
-                A continuación, se detallan los pasos para hacerlo de manera segura.
-              </p>
-              <!-- Eliminar el Historial de Git Localmente -->
-              <div>
-                <h3>Eliminar el Historial de Git Localmente</h3>
-                <p>
-                  Si se desea eliminar todo el historial de commits y comenzar desde cero manteniendo los
-                  archivos, se deben seguir estos pasos en la terminal dentro del directorio del repositorio:
-                </p>
-                <ul>
-                  <li>Abrir el terminal o línea de comandos.</li>
-                  <li>Navegar hasta el directorio del repositorio local.</li>
-                  <li>Ejecutar el siguiente comando:</li>
-                </ul>
-                <pre
-                  class="line-numbers"
-                  data-src-status="loaded"
-                  tabindex="0">
+              id="ReiniciarEliminandoTodoElHistorialManteniendoLosArchivos" class="mt-5">
+                  <h2 class="mt-1">Reiniciar Eliminando Todo el Historial Manteniendo los Archivos</h2>
+                  <p>
+                    Para reiniciar un repositorio de Git y GitHub desde cero, es necesario eliminar el historial
+                    de commits y volver a subir los archivos, asegurando que estos permanezcan sin ningún cambio.
+                    A continuación, se detallan los pasos para hacerlo de manera segura.
+                  </p>
+                  <!-- Eliminar el Historial de Git Localmente -->
+                  <div>
+                    <h3>Eliminar el Historial de Git Localmente</h3>
+                    <p>
+                      Si se desea eliminar todo el historial de commits y comenzar desde cero manteniendo los
+                      archivos, se deben seguir estos pasos en la terminal dentro del directorio del repositorio:
+                    </p>
+                    <ul>
+                      <li>Abrir el terminal o línea de comandos.</li>
+                      <li>Navegar hasta el directorio del repositorio local.</li>
+                      <li>Ejecutar el siguiente comando:</li>
+                    </ul>
+                    <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                   <code
                     class="language-bash"
                     data-prismjs-copy="Copy"
                   >rm -rf .git
                   </code>
                 </pre>
-              </div>
-              <!-- Eliminar el Historial de Git Localmente fin -->
-              <!-- Volver a Inicializar Git -->
-              <div>
-                <h3>Volver a Inicializar Git</h3>
-                <p>Con el siguiente comando se inicializa de cero el repositorio.</p>
-                <pre
-                  class="line-numbers"
-                  data-src-status="loaded"
-                  tabindex="0">
+                  </div>
+                  <!-- Eliminar el Historial de Git Localmente fin -->
+                  <!-- Volver a Inicializar Git -->
+                  <div>
+                    <h3>Volver a Inicializar Git</h3>
+                    <p>Con el siguiente comando se inicializa de cero el repositorio.</p>
+                    <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                 <code
                   class="language-bash"
                   data-prismjs-copy="Copy"
                 >git init
                 </code>
               </pre>
-              </div>
-              <!-- Volver a Inicializar Git fin -->
-              <!-- Volver a Conectar con GitHub -->
-              <div>
-                <h3>Volver a Conectar con GitHub</h3>
-                <p>Si el repositorio está vinculado con GitHub, se debe volver a agregar la URL remota:</p>
-                <pre
-                  class="line-numbers"
-                  data-src-status="loaded"
-                  tabindex="0">
+                  </div>
+                  <!-- Volver a Inicializar Git fin -->
+                  <!-- Volver a Conectar con GitHub -->
+                  <div>
+                    <h3>Volver a Conectar con GitHub</h3>
+                    <p>Si el repositorio está vinculado con GitHub, se debe volver a agregar la URL remota:</p>
+                    <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     git remote add origin https://github.com/usuario/nombre-del-repo.git
                   </code>
                 </pre>
-                <p>
-                  La dirección del repositorio está disponible en GitHub y se puede encontrar como se muestra
-                  en la siguiente imagen.
-                </p>
-                <div class="text-center imagen">
-                  <figure>
-                    <img
-                      src="https://i.ibb.co/nNjgvC6W/URL-del-repositorio-remoto-en-Git-Hub.jpg"
-                      class="img-fluid"
-                      width="50%"
-                      alt="URL del repositorio remoto en GitHub"
-                      title="URL del repositorio remoto en GitHub donde se almacenará el código." />
-                    <figcaption>URL del repositorio remoto en GitHub</figcaption>
-                  </figure>
-                </div>
-              </div>
-              <!-- Volver a Conectar con GitHub fin -->
-              <!-- Crear un Commit Vacío -->
-              <div>
-                <h3>Crear un Commit Vacío (Opcional)</h3>
-                <p>
-                  Este paso es opcional. Si se desea crear un commit vacío, es decir, sin incluir ningún
-                  archivo, usar el siguiente código:
-                </p>
-                <pre
-                  class="line-numbers"
-                  data-src-status="loaded"
-                  tabindex="0">
+                    <p>
+                      La dirección del repositorio está disponible en GitHub y se puede encontrar como se muestra
+                      en la siguiente imagen.
+                    </p>
+                    <div class="text-center imagen">
+                      <figure>
+                        <img src="https://i.ibb.co/nNjgvC6W/URL-del-repositorio-remoto-en-Git-Hub.jpg" class="img-fluid"
+                          width="50%" alt="URL del repositorio remoto en GitHub"
+                          title="URL del repositorio remoto en GitHub donde se almacenará el código." />
+                        <figcaption>URL del repositorio remoto en GitHub</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                  <!-- Volver a Conectar con GitHub fin -->
+                  <!-- Crear un Commit Vacío -->
+                  <div>
+                    <h3>Crear un Commit Vacío (Opcional)</h3>
+                    <p>
+                      Este paso es opcional. Si se desea crear un commit vacío, es decir, sin incluir ningún
+                      archivo, usar el siguiente código:
+                    </p>
+                    <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                     <code
                       class="language-bash"
                       data-prismjs-copy="Copy"
                     >git commit --allow-empty -m "Commit vacío inicial"
                     </code>
                   </pre>
-                <p>Este paso se usa para definir un punto de inicio y se puede usar para:</p>
-                <ul>
-                  <li>
-                    Permite establecer una referencia en el historial del proyecto antes de realizar cambios.
-                  </li>
-                  <li>Puede utilizarse para señalar el comienzo de una nueva fase del proyecto.</li>
-                </ul>
-                <p>En este punto hacer los cambios necesarios en archivo(s) necesario(s)</p>
-              </div>
-              <!-- Crear un Commit Vacío fin -->
-              <!-- Agregar los Archivos y Hacer un Nuevo Commit -->
-              <div>
-                <h3>Agregar los Archivos y Hacer un Nuevo Commit</h3>
-                <p>
-                  Después de reiniciar Git, hay que añadir los archivos nuevamente al nuevo historial y hacer
-                  un primer commit:
-                </p>
-                <pre
-                  class="line-numbers"
-                  data-src-status="loaded"
-                  tabindex="0">
+                    <p>Este paso se usa para definir un punto de inicio y se puede usar para:</p>
+                    <ul>
+                      <li>
+                        Permite establecer una referencia en el historial del proyecto antes de realizar cambios.
+                      </li>
+                      <li>Puede utilizarse para señalar el comienzo de una nueva fase del proyecto.</li>
+                    </ul>
+                    <p>En este punto hacer los cambios necesarios en archivo(s) necesario(s)</p>
+                  </div>
+                  <!-- Crear un Commit Vacío fin -->
+                  <!-- Agregar los Archivos y Hacer un Nuevo Commit -->
+                  <div>
+                    <h3>Agregar los Archivos y Hacer un Nuevo Commit</h3>
+                    <p>
+                      Después de reiniciar Git, hay que añadir los archivos nuevamente al nuevo historial y hacer
+                      un primer commit:
+                    </p>
+                    <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                     <code
                       class="language-bash"
                       data-prismjs-copy="Copy"
@@ -365,51 +235,45 @@
                     git commit -m "1ro del repositorio
                     </code>
                   </pre>
-              </div>
-              <!-- Agregar los Archivos y Hacer un Nuevo Commit fin -->
-              <!-- Forzar la Subida del Nuevo Historial a GitHub -->
-              <div>
-                <h3>Forzar la Subida del Nuevo Historial a GitHub</h3>
-                <p>
-                  Para reemplazar completamente el historial anterior en GitHub, se debe forzar el push con la
-                  opción
-                  <code>--force</code>:
-                </p>
-                <pre
-                  class="line-numbers"
-                  data-src-status="loaded"
-                  tabindex="0">
+                  </div>
+                  <!-- Agregar los Archivos y Hacer un Nuevo Commit fin -->
+                  <!-- Forzar la Subida del Nuevo Historial a GitHub -->
+                  <div>
+                    <h3>Forzar la Subida del Nuevo Historial a GitHub</h3>
+                    <p>
+                      Para reemplazar completamente el historial anterior en GitHub, se debe forzar el push con la
+                      opción
+                      <code>--force</code>:
+                    </p>
+                    <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   git push --force origin main
                 </code>
               </pre>
-                <p>
-                  Si el repositorio usa otra rama predeterminada, como
-                  <code>master</code>, reemplazar <code>main</code> por <code>master</code>.
-                </p>
-              </div>
-              <!-- Forzar la Subida del Nuevo Historial a GitHub fin -->
-              <!-- Verificar que el Repositorio ha Sido Reiniciado -->
-              <div>
-                <h3>Verificar que el Repositorio ha Sido Reiniciado</h3>
-                <p>
-                  Ir a GitHub y comprobar que el historial de commits se ha reiniciado y solo aparece el nuevo
-                  commit.
-                </p>
-              </div>
-              <!-- Verificar que el Repositorio ha Sido Reiniciado fin -->
-              <!-- Recopilación de comandos utilizados -->
-              <div>
-                <h3>Recopilación de comandos utilizados</h3>
-                <p>
-                  Esta es una recopilación de los comandos para eliminar todo el historial de un repositorio
-                  GIT, manteniendo los archivos y creando un commit que marque el nuevo inicio antes de volver
-                  a subirlos a GitHub.
-                </p>
-                <pre
-                  class="line-numbers"
-                  data-src-status="loaded"
-                  tabindex="0">
+                    <p>
+                      Si el repositorio usa otra rama predeterminada, como
+                      <code>master</code>, reemplazar <code>main</code> por <code>master</code>.
+                    </p>
+                  </div>
+                  <!-- Forzar la Subida del Nuevo Historial a GitHub fin -->
+                  <!-- Verificar que el Repositorio ha Sido Reiniciado -->
+                  <div>
+                    <h3>Verificar que el Repositorio ha Sido Reiniciado</h3>
+                    <p>
+                      Ir a GitHub y comprobar que el historial de commits se ha reiniciado y solo aparece el nuevo
+                      commit.
+                    </p>
+                  </div>
+                  <!-- Verificar que el Repositorio ha Sido Reiniciado fin -->
+                  <!-- Recopilación de comandos utilizados -->
+                  <div>
+                    <h3>Recopilación de comandos utilizados</h3>
+                    <p>
+                      Esta es una recopilación de los comandos para eliminar todo el historial de un repositorio
+                      GIT, manteniendo los archivos y creando un commit que marque el nuevo inicio antes de volver
+                      a subirlos a GitHub.
+                    </p>
+                    <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       rm -rf .git
                       git init
@@ -421,14 +285,11 @@
                       git push --force origin main
                     </code>
                   </pre>
-                <p>
-                  Recopilación de comandos para eliminar todo el historial de un repositorio Git, conservar
-                  los archivos y subirlos nuevamente a GitHub:
-                </p>
-                <pre
-                  class="line-numbers"
-                  data-src-status="loaded"
-                  tabindex="0">
+                    <p>
+                      Recopilación de comandos para eliminar todo el historial de un repositorio Git, conservar
+                      los archivos y subirlos nuevamente a GitHub:
+                    </p>
+                    <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       rm -rf .git
                       git init
@@ -438,137 +299,93 @@
                       git push --force origin main
                     </code>
                   </pre>
+                  </div>
+                  <!-- Recopilación de comandos utilizados fin -->
+                  <!-- Notas Importantes -->
+                  <div>
+                    <h3>Notas Importantes</h3>
+                    <ul>
+                      <li>
+                        Este proceso elimina permanentemente el historial de cambios anteriores. Si se desea
+                        conservar una copia, es recomendable hacer un backup antes de ejecutar los comandos.
+                      </li>
+                      <li>
+                        Si hay otros colaboradores en el repositorio, ellos tendrán problemas al sincronizarse
+                        después de un
+                        <code>git push --force</code>, por lo que deben clonar nuevamente el repositorio después
+                        del reinicio.
+                      </li>
+                    </ul>
+                    <p>
+                      Este método permite reiniciar un repositorio en Git y GitHub desde cero, eliminando todo el
+                      historial anterior y dejando solo el estado actual del código.
+                    </p>
+                  </div>
+                  <!-- Notas Importantes fin -->
               </div>
-              <!-- Recopilación de comandos utilizados fin -->
-              <!-- Notas Importantes -->
-              <div>
-                <h3>Notas Importantes</h3>
-                <ul>
-                  <li>
-                    Este proceso elimina permanentemente el historial de cambios anteriores. Si se desea
-                    conservar una copia, es recomendable hacer un backup antes de ejecutar los comandos.
-                  </li>
-                  <li>
-                    Si hay otros colaboradores en el repositorio, ellos tendrán problemas al sincronizarse
-                    después de un
-                    <code>git push --force</code>, por lo que deben clonar nuevamente el repositorio después
-                    del reinicio.
-                  </li>
-                </ul>
-                <p>
-                  Este método permite reiniciar un repositorio en Git y GitHub desde cero, eliminando todo el
-                  historial anterior y dejando solo el estado actual del código.
-                </p>
+              <!-- Reiniciar Eliminando Todo el Historial Manteniendo los Archivos fin -->
+        </article>
+        <!--  El módulo <code>calendar</code>, trabajando con funciones relacionadas con el calendario en Python  -->
+        <!-- -------------------------------- comentarios -------------------------------- -->
+        <article class="row pt-5" id="comment">
+          <br />
+          <h2>COMENTARIOS</h2>
+          <p>
+            Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del
+            formulario disponible para este propósito.
+          </p>
+          <div class="d-flex justify-content-center">
+            <form action="https://formspree.io/f/mdkdawkg" method="POST" id="myForm">
+              <div class="input-group d-flex justify-content-center flex-column">
+                <label for="name" class="pe-2">Nombre:</label>
+                <input type="text" name="name" id="name" placeholder="User" class="rounded" required="required" />
+                <label for="email" class="pe-2">Email:</label>
+                <input type="email" name="email" id="email" placeholder="user@mail.com" class="rounded"
+                  required="required" />
+                <label for="message" class="pe-2">Mensaje:</label>
+                <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
+                  class="rounded rounded-3"></textarea>
+                <input class="btn btn-outline-light my-3 border rounded-pill border-2" type="submit"
+                  value="Enviar..." />
               </div>
-              <!-- Notas Importantes fin -->
-            </div>
-            <!-- Reiniciar Eliminando Todo el Historial Manteniendo los Archivos fin -->
-          </article>
-          <!--  El módulo <code>calendar</code>, trabajando con funciones relacionadas con el calendario en Python  -->
-          <!-- -------------------------------- comentarios -------------------------------- -->
-          <article
-            class="row pt-5"
-            id="comment">
-            <br />
-            <h2>COMENTARIOS</h2>
-            <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del
-              formulario disponible para este propósito.
-            </p>
-            <div class="d-flex justify-content-center">
-              <form
-                action="https://formspree.io/f/mdkdawkg"
-                method="POST"
-                id="myForm">
-                <div class="input-group d-flex justify-content-center flex-column">
-                  <label
-                    for="name"
-                    class="pe-2"
-                    >Nombre:</label
-                  >
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="User"
-                    class="rounded"
-                    required="required" />
-                  <label
-                    for="email"
-                    class="pe-2"
-                    >Email:</label
-                  >
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="user@mail.com"
-                    class="rounded"
-                    required="required" />
-                  <label
-                    for="message"
-                    class="pe-2"
-                    >Mensaje:</label
-                  >
-                  <textarea
-                    name="message"
-                    id="message"
-                    cols="30"
-                    rows="5"
-                    placeholder="Su comentario..."
-                    class="rounded rounded-3"></textarea>
-                  <input
-                    class="btn btn-outline-light my-3 border rounded-pill border-2"
-                    type="submit"
-                    value="Enviar..." />
-                </div>
-                <p>
-                  La política de privacidad, y los términos y condiciones están disponibles en el formulario
-                  de contacto.
-                </p>
-              </form>
-            </div>
-          </article>
-          <!-- -------------------------------- fin comentarios -------------------------------- -->
-        </section>
-      </main>
-      <!-- -------------------------------- fin principal -------------------------------- -->
-      <!-- -------------------------------- barra lateral -------------------------------- -->
-      <aside class="col-lg-3 d-none d-lg-block pt-5">
-        <h2 class="h3">En Este Artículo</h2>
-        <ul class="list-group">
-          <li class="list-group-item">
-            <a href="#introduccion">Introducción</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#ReiniciarEliminandoTodoElHistorialManteniendoLosArchivos"
-              >Reiniciar Eliminando Todo el Historial Manteniendo los Archivos</a
-            >
-          </li>
-        </ul>
-      </aside>
-      <!-- -------------------------------- fin barra lateral -------------------------------- -->
-    </div>
-    <!--  Principal Fin  -->
+              <p>
+                La política de privacidad, y los términos y condiciones están disponibles en el formulario
+                de contacto.
+              </p>
+            </form>
+          </div>
+        </article>
+        <!-- -------------------------------- fin comentarios -------------------------------- -->
+      </section>
+    </main>
+    <!-- -------------------------------- fin principal -------------------------------- -->
+    <!-- -------------------------------- barra lateral -------------------------------- -->
+    <aside class="col-lg-3 d-none d-lg-block pt-4">
+      <h2 class="h1">En Este Artículo</h2>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <a href="#introduccion">Introducción</a>
+        </li>
+        <li class="list-group-item">
+          <a href="#ReiniciarEliminandoTodoElHistorialManteniendoLosArchivos">Reiniciar Eliminando Todo el Historial
+            Manteniendo los Archivos</a>
+        </li>
+      </ul>
+    </aside>
+    <!-- -------------------------------- fin barra lateral -------------------------------- -->
+  </div>
+  <!--  Principal Fin  -->
 
-    <!-- button to top -->
-    <button
-      onclick="topFunction()"
-      id="myBtnScroll"
-      title="Go to top">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        fill="currentColor"
-        class="bi bi-arrow-bar-up"
-        viewBox="0 0 16 16"
-        style="margin-left: -2px">
-        <path
-          fill-rule="evenodd"
-          d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"></path>
-      </svg>
-    </button>
-    <!-- Fin button to top -->
-  </body>
+  <!-- button to top -->
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
+      viewBox="0 0 16 16" style="margin-left: -2px">
+      <path fill-rule="evenodd"
+        d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5">
+      </path>
+    </svg>
+  </button>
+  <!-- Fin button to top -->
+</body>
+
 </html>

@@ -144,7 +144,12 @@ h5 code,
 h6 code {
   font-family: "Saira Extra Condensed", sans-serif !important;
   text-transform: lowercase !important;
-  background: --color-fondo !important;
+  background: var(--color-fondo);
+}
+
+header {
+  margin: 0;
+  padding: 0;
 }
 
 .centrar-imagen {
@@ -966,6 +971,14 @@ hr.subtle-divider {
   border-bottom: 1px solid var(--color-borde);
 }
 
+.menu-item {
+  border-bottom: 1px solid var(--color-borde);
+}
+
+.menu-item:last-child {
+  border-bottom: 1px solid var(--color-borde);
+}
+
 /* Estilos para enlaces simples */
 .simple-link {
   display: block;
@@ -982,13 +995,34 @@ hr.subtle-divider {
   color: var(--color-texto);
 }
 
-/* Estilos para details y summary */
-details {
-  border: none;
+/* ============================================
+   MENÚ DESPLEGABLE MEJORADO
+   ============================================ */
+
+/* Variables CSS personalizadas para mejor mantenimiento */
+:root {
+  --dropdown-transition-duration: 0.3s;
+  --dropdown-transition-easing: cubic-bezier(0.4, 0, 0.2, 1);
+  --dropdown-hover-alpha: 0.1;
+  --dropdown-padding-horizontal: 10px;
+  --dropdown-padding-vertical: 6px;
+  --dropdown-submenu-indent: 40px;
+  --dropdown-arrow-size: 0.8em;
 }
 
+/* ============================================
+   ESTRUCTURA PRINCIPAL
+   ============================================ */
+
+/* Contenedor principal del details */
+details {
+  border: none;
+  overflow: hidden; /* Previene desbordamientos durante animaciones */
+}
+
+/* Encabezado clickeable del menú */
 summary {
-  padding: 6px 10px;
+  padding: var(--dropdown-padding-vertical) var(--dropdown-padding-horizontal);
   cursor: pointer;
   list-style: none;
   background-color: var(--color-fondo);
@@ -996,44 +1030,61 @@ summary {
   user-select: none;
   color: var(--color-texto);
   border-top: 1px solid var(--color-borde);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: all var(--dropdown-transition-duration) var(--dropdown-transition-easing);
+  outline: none; /* Remover outline por defecto */
+  font-weight: 500; /* Mejorar legibilidad */
 }
+
+/* Accesibilidad: focus visible */
+summary:focus-visible {
+  outline: 2px solid var(--color-texto);
+  outline-offset: -2px;
+}
+
+/* ============================================
+   ELEMENTOS CODE DENTRO DEL SUMMARY
+   ============================================ */
 
 summary code {
   background-color: transparent !important;
-  /* Siempre transparente para heredar el fondo */
   color: inherit !important;
-  transition: background-color 0.3s ease, color 0.3s ease !important;
-  /* Misma transición que summary */
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: 0.9em;
+  transition: all var(--dropdown-transition-duration) var(--dropdown-transition-easing) !important;
 }
 
+/* ============================================
+   ESTADOS INTERACTIVOS DEL SUMMARY
+   ============================================ */
+
+/* Estado hover */
 summary:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, var(--dropdown-hover-alpha));
   color: var(--color-texto);
+  transform: translateX(2px); /* Sutil efecto de movimiento */
 }
 
 summary:hover code {
-  background-color: transparent !important;
+  background-color: rgba(255, 255, 255, 0.05) !important;
   color: inherit !important;
 }
 
+/* Estado activo/abierto */
 details[open] summary {
   background-color: var(--color-texto) !important;
   color: var(--color-fondo) !important;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 details[open] summary code {
-  background-color: transparent !important;
-  /* Transparente para heredar el fondo del summary */
+  background-color: rgba(0, 0, 0, 0.1) !important;
   color: inherit !important;
-  /* Heredar el color del summary */
 }
 
-/* Color del marker cuando está abierto */
-details[open] summary::after {
-  transform: translateY(-50%) rotate(90deg);
-  color: var(--color-fondo);
-}
+/* ============================================
+   FLECHA INDICADORA
+   ============================================ */
 
 /* Flecha personalizada */
 summary::after {
@@ -1042,64 +1093,122 @@ summary::after {
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
-  transition: transform 0.2s;
+  transition: transform var(--dropdown-transition-duration) var(--dropdown-transition-easing);
   color: var(--color-texto);
+  font-size: var(--dropdown-arrow-size);
+  opacity: 0.7;
 }
 
+/* Flecha en estado abierto */
 details[open] summary::after {
   transform: translateY(-50%) rotate(90deg);
+  color: var(--color-fondo);
+  opacity: 1;
 }
 
-/* Remover el marcador por defecto */
+/* Remover marcador por defecto del navegador */
 summary::-webkit-details-marker {
   display: none;
 }
 
-/* Contenido desplegable */
+summary::-moz-list-bullet {
+  display: none;
+}
+
+/* ============================================
+   CONTENIDO DESPLEGABLE
+   ============================================ */
+
+/* Contenedor del submenú */
 .submenu {
   background-color: var(--color-fondo);
   border-top: 1px solid var(--color-borde);
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-out;
+  transition: max-height var(--dropdown-transition-duration) var(--dropdown-transition-easing);
+  position: relative;
 }
 
+/* Submenú abierto */
 details[open] .submenu {
-  max-height: 500px;
+  max-height: 500px; /* Ajustar según necesidades */
 }
 
+/* Efecto de fade-in para el contenido */
+details[open] .submenu::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-borde), transparent);
+  animation: fadeInLine var(--dropdown-transition-duration) ease-out;
+}
+
+/* ============================================
+   ELEMENTOS DEL SUBMENÚ
+   ============================================ */
+
+/* Items individuales del submenú */
 .submenu-item {
   display: block;
-  padding: 5px 40px;
+  padding: 5px var(--dropdown-submenu-indent);
   text-decoration: none;
   color: var(--color-texto);
   border-bottom: 1px solid var(--color-borde);
-  transition: all 0.2s;
+  transition: all 0.2s var(--dropdown-transition-easing);
+  position: relative;
+  overflow: hidden;
 }
 
+/* CORRECCIÓN APLICADA: Code dentro de items del submenú */
 .submenu-item code {
-  background-color: transparent;
-  /* Transparente para heredar */
+  background-color: transparent !important; /* Cambiado de rgba(255, 255, 255, 0.05) a transparent */
   color: inherit;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  padding: 1px 3px;
+  border-radius: 2px;
+  font-size: 0.85em;
+  transition: all 0.2s var(--dropdown-transition-easing);
 }
 
+/* Code dentro de simple-link con el mismo fondo que el texto */
+.simple-link code {
+  background-color: transparent !important;
+  color: inherit;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: 0.9em;
+  transition: all 0.2s ease;
+}
+
+.simple-link:hover code {
+  background-color: transparent !important;
+  color: inherit;
+}
+
+/* Remover borde del último item */
 .submenu-item:last-child {
   border-bottom: none;
 }
 
+/* Estado hover de items del submenú */
 .submenu-item:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, var(--dropdown-hover-alpha));
   color: var(--color-texto);
-  padding-left: 45px;
+  padding-left: calc(var(--dropdown-submenu-indent) + 5px);
+  box-shadow: inset 3px 0 0 var(--color-texto);
 }
 
 .submenu-item:hover code {
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.1);
   color: inherit;
 }
 
-/* Título del menú */
+/* ============================================
+   TÍTULO DEL MENÚ
+   ============================================ */
+
 .menu-title {
   background: var(--color-fondo);
   color: var(--color-texto);
@@ -1107,8 +1216,128 @@ details[open] .submenu {
   margin: 0;
   text-align: center;
   font-size: 1.5em;
-  border-bottom: 1px solid var(--color-borde);
+  font-weight: 600;
+  border-bottom: 2px solid var(--color-borde);
+  position: relative;
+  overflow: hidden;
 }
+
+/* Efecto decorativo para el título */
+.menu-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 50px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-texto), transparent);
+  transform: translateX(-50%);
+}
+
+/* ============================================
+   ANIMACIONES
+   ============================================ */
+
+@keyframes fadeInLine {
+  from {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+/* Animación suave para items del submenú */
+.submenu-item {
+  animation: slideInFromLeft 0.3s ease-out;
+  animation-fill-mode: both;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ============================================
+   MEDIA QUERIES RESPONSIVAS
+   ============================================ */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 768px) {
+  :root {
+    --dropdown-submenu-indent: 30px;
+    --dropdown-padding-horizontal: 15px;
+  }
+  
+  .menu-title {
+    font-size: 1.3em;
+    padding: 15px;
+  }
+  
+  summary::after {
+    right: 15px;
+  }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+  :root {
+    --dropdown-submenu-indent: 20px;
+    --dropdown-padding-horizontal: 12px;
+  }
+  
+  .menu-title {
+    font-size: 1.2em;
+    padding: 12px;
+  }
+  
+  summary {
+    font-size: 0.9em;
+  }
+  
+  .submenu-item {
+    font-size: 0.85em;
+  }
+}
+
+/* ============================================
+   MODO OSCURO MEJORADO
+   ============================================ */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --dropdown-hover-alpha: 0.15;
+  }
+  
+  summary:hover {
+    background-color: rgba(255, 255, 255, var(--dropdown-hover-alpha));
+  }
+  
+  .submenu-item:hover {
+    background-color: rgba(255, 255, 255, var(--dropdown-hover-alpha));
+  }
+}
+
+/* ============================================
+   UTILIDADES ADICIONALES
+   ============================================ */
+
+/* Clase para desactivar animaciones si el usuario lo prefiere */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
 
 // html-07_formato_de_texto.html
 .ej-em {
