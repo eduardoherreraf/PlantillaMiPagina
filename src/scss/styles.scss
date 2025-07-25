@@ -136,15 +136,15 @@ h6 {
 }
 
 /* Estilo para la etiqueta <code> dentro de cualquier título (h1, h2, h3, h4, h5, h6) */
-h1 code,
-h2 code,
-h3 code,
-h4 code,
-h5 code,
-h6 code {
+body h1>code,
+body h2>code,
+body h3>code,
+body h4>code,
+body h5>code,
+body h6>code {
   font-family: "Saira Extra Condensed", sans-serif !important;
   text-transform: lowercase !important;
-  background: var(--color-fondo);
+  background: transparent !important;
 }
 
 header {
@@ -1017,7 +1017,8 @@ hr.subtle-divider {
 /* Contenedor principal del details */
 details {
   border: none;
-  overflow: hidden; /* Previene desbordamientos durante animaciones */
+  overflow: hidden;
+  /* Previene desbordamientos durante animaciones */
 }
 
 /* Encabezado clickeable del menú */
@@ -1031,8 +1032,10 @@ summary {
   color: var(--color-texto);
   border-top: 1px solid var(--color-borde);
   transition: all var(--dropdown-transition-duration) var(--dropdown-transition-easing);
-  outline: none; /* Remover outline por defecto */
-  font-weight: 500; /* Mejorar legibilidad */
+  outline: none;
+  /* Remover outline por defecto */
+  font-weight: 500;
+  /* Mejorar legibilidad */
 }
 
 /* Accesibilidad: focus visible */
@@ -1062,7 +1065,8 @@ summary code {
 summary:hover {
   background-color: rgba(255, 255, 255, var(--dropdown-hover-alpha));
   color: var(--color-texto);
-  transform: translateX(2px); /* Sutil efecto de movimiento */
+  transform: translateX(2px);
+  /* Sutil efecto de movimiento */
 }
 
 summary:hover code {
@@ -1078,7 +1082,7 @@ details[open] summary {
 }
 
 details[open] summary code {
-  background-color: rgba(0, 0, 0, 0.1) !important;
+  background-color: transparent !important;
   color: inherit !important;
 }
 
@@ -1131,7 +1135,8 @@ summary::-moz-list-bullet {
 
 /* Submenú abierto */
 details[open] .submenu {
-  max-height: 500px; /* Ajustar según necesidades */
+  max-height: 500px;
+  /* Ajustar según necesidades */
 }
 
 /* Efecto de fade-in para el contenido */
@@ -1164,7 +1169,8 @@ details[open] .submenu::before {
 
 /* CORRECCIÓN APLICADA: Code dentro de items del submenú */
 .submenu-item code {
-  background-color: transparent !important; /* Cambiado de rgba(255, 255, 255, 0.05) a transparent */
+  background-color: transparent !important;
+  /* Cambiado de rgba(255, 255, 255, 0.05) a transparent */
   color: inherit;
   padding: 1px 3px;
   border-radius: 2px;
@@ -1243,6 +1249,7 @@ details[open] .submenu::before {
     opacity: 0;
     transform: scaleX(0);
   }
+
   to {
     opacity: 1;
     transform: scaleX(1);
@@ -1260,6 +1267,7 @@ details[open] .submenu::before {
     opacity: 0;
     transform: translateX(-10px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -1276,12 +1284,12 @@ details[open] .submenu::before {
     --dropdown-submenu-indent: 30px;
     --dropdown-padding-horizontal: 15px;
   }
-  
+
   .menu-title {
     font-size: 1.3em;
     padding: 15px;
   }
-  
+
   summary::after {
     right: 15px;
   }
@@ -1293,16 +1301,16 @@ details[open] .submenu::before {
     --dropdown-submenu-indent: 20px;
     --dropdown-padding-horizontal: 12px;
   }
-  
+
   .menu-title {
     font-size: 1.2em;
     padding: 12px;
   }
-  
+
   summary {
     font-size: 0.9em;
   }
-  
+
   .submenu-item {
     font-size: 0.85em;
   }
@@ -1316,11 +1324,11 @@ details[open] .submenu::before {
   :root {
     --dropdown-hover-alpha: 0.15;
   }
-  
+
   summary:hover {
     background-color: rgba(255, 255, 255, var(--dropdown-hover-alpha));
   }
-  
+
   .submenu-item:hover {
     background-color: rgba(255, 255, 255, var(--dropdown-hover-alpha));
   }
