@@ -92,7 +92,7 @@
   </nav>
   <!-- Barra deNavegación -->
   <!-- -------------------------------- principal -------------------------------- -->
-  <div class="row col mx-1">
+  <div class="container-fluid">
     <main class="pt-5 col-lg-9">
       <section class="pb-3">
         <!-- Borrar Ultimo Commit -->
@@ -101,7 +101,9 @@
           <h1 id="introduccion">Como Eliminar el Último Commit de GIT</h1>
           <div>
             <div class="mt-5">
-              <h2 class="mt-1">Introducción</h2>
+              <header>
+                <h2 class="mt-1">Introducción</h2>
+              </header>
               <p>
                 Este documento proporciona una guía paso a paso sobre cómo reiniciar un repositorio en GIT y
                 GITHUB. Reiniciar un repositorio puede ser útil en diversas situaciones, como cuando se desea
@@ -131,8 +133,7 @@
             </div>
 
             <!-- Reiniciar Eliminando Todo el Historial Manteniendo los Archivos -->
-            <div
-              id="ReiniciarEliminandoTodoElHistorialManteniendoLosArchivos" class="mt-5">
+            <div id=" ReiniciarEliminandoTodoElHistorialManteniendoLosArchivos" class="mt-5">
                   <h2 class="mt-1">Reiniciar Eliminando Todo el Historial Manteniendo los Archivos</h2>
                   <p>
                     Para reiniciar un repositorio de Git y GitHub desde cero, es necesario eliminar el historial
@@ -152,12 +153,12 @@
                       <li>Ejecutar el siguiente comando:</li>
                     </ul>
                     <pre class="line-numbers" data-src-status="loaded" tabindex="0">
-                  <code
-                    class="language-bash"
-                    data-prismjs-copy="Copy"
-                  >rm -rf .git
-                  </code>
-                </pre>
+                    <code
+                      class="language-bash"
+                      data-prismjs-copy="Copy"
+                    >rm -rf .git
+                    </code>
+                  </pre>
                   </div>
                   <!-- Eliminar el Historial de Git Localmente fin -->
                   <!-- Volver a Inicializar Git -->
@@ -172,62 +173,63 @@
                 </code>
               </pre>
                   </div>
-                  <!-- Volver a Inicializar Git fin -->
-                  <!-- Volver a Conectar con GitHub -->
-                  <div>
-                    <h3>Volver a Conectar con GitHub</h3>
-                    <p>Si el repositorio está vinculado con GitHub, se debe volver a agregar la URL remota:</p>
-                    <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Volver a Inicializar Git fin -->
+              <!-- Volver a Conectar con GitHub -->
+              <div>
+                <h3>Volver a Conectar con GitHub</h3>
+                <p>Si el repositorio está vinculado con GitHub, se debe volver a agregar la URL remota:</p>
+                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     git remote add origin https://github.com/usuario/nombre-del-repo.git
                   </code>
                 </pre>
-                    <p>
-                      La dirección del repositorio está disponible en GitHub y se puede encontrar como se muestra
-                      en la siguiente imagen.
-                    </p>
-                    <div class="text-center imagen">
-                      <figure>
-                        <img src="https://i.ibb.co/nNjgvC6W/URL-del-repositorio-remoto-en-Git-Hub.jpg" class="img-fluid"
-                          width="50%" alt="URL del repositorio remoto en GitHub"
-                          title="URL del repositorio remoto en GitHub donde se almacenará el código." />
-                        <figcaption>URL del repositorio remoto en GitHub</figcaption>
-                      </figure>
-                    </div>
-                  </div>
-                  <!-- Volver a Conectar con GitHub fin -->
-                  <!-- Crear un Commit Vacío -->
-                  <div>
-                    <h3>Crear un Commit Vacío (Opcional)</h3>
-                    <p>
-                      Este paso es opcional. Si se desea crear un commit vacío, es decir, sin incluir ningún
-                      archivo, usar el siguiente código:
-                    </p>
-                    <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <p>
+                  La dirección del repositorio está disponible en GitHub y se puede encontrar como se muestra
+                  en la siguiente imagen.
+                </p>
+                <div class="text-center imagen">
+                  <figure>
+                    <img src="https://i.ibb.co/nNjgvC6W/URL-del-repositorio-remoto-en-Git-Hub.jpg" class="img-fluid"
+                      width="50%" alt="URL del repositorio remoto en GitHub"
+                      title="URL del repositorio remoto en GitHub donde se almacenará el código." />
+                    <figcaption>URL del repositorio remoto en GitHub</figcaption>
+                  </figure>
+                </div>
+              </div>
+              <!-- Volver a Conectar con GitHub fin -->
+              <!-- Crear un Commit Vacío -->
+              <div>
+                <h3>Crear un Commit Vacío (Opcional)</h3>
+                <p>
+                  Este paso es opcional. Si se desea crear un commit vacío, es decir, sin incluir ningún
+                  archivo, usar el siguiente código:
+                </p>
+                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                     <code
                       class="language-bash"
                       data-prismjs-copy="Copy"
                     >git commit --allow-empty -m "Commit vacío inicial"
                     </code>
                   </pre>
-                    <p>Este paso se usa para definir un punto de inicio y se puede usar para:</p>
-                    <ul>
-                      <li>
-                        Permite establecer una referencia en el historial del proyecto antes de realizar cambios.
-                      </li>
-                      <li>Puede utilizarse para señalar el comienzo de una nueva fase del proyecto.</li>
-                    </ul>
-                    <p>En este punto hacer los cambios necesarios en archivo(s) necesario(s)</p>
-                  </div>
-                  <!-- Crear un Commit Vacío fin -->
-                  <!-- Agregar los Archivos y Hacer un Nuevo Commit -->
-                  <div>
-                    <h3>Agregar los Archivos y Hacer un Nuevo Commit</h3>
-                    <p>
-                      Después de reiniciar Git, hay que añadir los archivos nuevamente al nuevo historial y hacer
-                      un primer commit:
-                    </p>
-                    <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <p>Este paso se usa para definir un punto de inicio y se puede usar para:</p>
+                <ul>
+                  <li>
+                    Permite establecer una referencia en el historial del proyecto antes de realizar cambios.
+                  </li>
+                  <li>Puede utilizarse para señalar el comienzo de una nueva fase del proyecto.</li>
+                </ul>
+                <p>En este punto hacer los cambios necesarios en archivo(s) necesario(s)</p>
+              </div>
+              <!-- Crear un Commit Vacío fin -->
+              <!-- Agregar los Archivos y Hacer un Nuevo Commit -->
+              <div>
+                <h3>Agregar los Archivos y Hacer un Nuevo Commit</h3>
+                <p>
+                  Después de reiniciar Git, hay que añadir los archivos nuevamente al nuevo historial y hacer
+                  un primer commit:
+                </p>
+                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                     <code
                       class="language-bash"
                       data-prismjs-copy="Copy"
@@ -235,45 +237,45 @@
                     git commit -m "1ro del repositorio
                     </code>
                   </pre>
-                  </div>
-                  <!-- Agregar los Archivos y Hacer un Nuevo Commit fin -->
-                  <!-- Forzar la Subida del Nuevo Historial a GitHub -->
-                  <div>
-                    <h3>Forzar la Subida del Nuevo Historial a GitHub</h3>
-                    <p>
-                      Para reemplazar completamente el historial anterior en GitHub, se debe forzar el push con la
-                      opción
-                      <code>--force</code>:
-                    </p>
-                    <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Agregar los Archivos y Hacer un Nuevo Commit fin -->
+              <!-- Forzar la Subida del Nuevo Historial a GitHub -->
+              <div>
+                <h3>Forzar la Subida del Nuevo Historial a GitHub</h3>
+                <p>
+                  Para reemplazar completamente el historial anterior en GitHub, se debe forzar el push con la
+                  opción
+                  <code>--force</code>:
+                </p>
+                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   git push --force origin main
                 </code>
               </pre>
-                    <p>
-                      Si el repositorio usa otra rama predeterminada, como
-                      <code>master</code>, reemplazar <code>main</code> por <code>master</code>.
-                    </p>
-                  </div>
-                  <!-- Forzar la Subida del Nuevo Historial a GitHub fin -->
-                  <!-- Verificar que el Repositorio ha Sido Reiniciado -->
-                  <div>
-                    <h3>Verificar que el Repositorio ha Sido Reiniciado</h3>
-                    <p>
-                      Ir a GitHub y comprobar que el historial de commits se ha reiniciado y solo aparece el nuevo
-                      commit.
-                    </p>
-                  </div>
-                  <!-- Verificar que el Repositorio ha Sido Reiniciado fin -->
-                  <!-- Recopilación de comandos utilizados -->
-                  <div>
-                    <h3>Recopilación de comandos utilizados</h3>
-                    <p>
-                      Esta es una recopilación de los comandos para eliminar todo el historial de un repositorio
-                      GIT, manteniendo los archivos y creando un commit que marque el nuevo inicio antes de volver
-                      a subirlos a GitHub.
-                    </p>
-                    <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <p>
+                  Si el repositorio usa otra rama predeterminada, como
+                  <code>master</code>, reemplazar <code>main</code> por <code>master</code>.
+                </p>
+              </div>
+              <!-- Forzar la Subida del Nuevo Historial a GitHub fin -->
+              <!-- Verificar que el Repositorio ha Sido Reiniciado -->
+              <div>
+                <h3>Verificar que el Repositorio ha Sido Reiniciado</h3>
+                <p>
+                  Ir a GitHub y comprobar que el historial de commits se ha reiniciado y solo aparece el nuevo
+                  commit.
+                </p>
+              </div>
+              <!-- Verificar que el Repositorio ha Sido Reiniciado fin -->
+              <!-- Recopilación de comandos utilizados -->
+              <div>
+                <h3>Recopilación de comandos utilizados</h3>
+                <p>
+                  Esta es una recopilación de los comandos para eliminar todo el historial de un repositorio
+                  GIT, manteniendo los archivos y creando un commit que marque el nuevo inicio antes de volver
+                  a subirlos a GitHub.
+                </p>
+                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       rm -rf .git
                       git init
@@ -285,11 +287,11 @@
                       git push --force origin main
                     </code>
                   </pre>
-                    <p>
-                      Recopilación de comandos para eliminar todo el historial de un repositorio Git, conservar
-                      los archivos y subirlos nuevamente a GitHub:
-                    </p>
-                    <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <p>
+                  Recopilación de comandos para eliminar todo el historial de un repositorio Git, conservar
+                  los archivos y subirlos nuevamente a GitHub:
+                </p>
+                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       rm -rf .git
                       git init
@@ -299,31 +301,32 @@
                       git push --force origin main
                     </code>
                   </pre>
-                  </div>
-                  <!-- Recopilación de comandos utilizados fin -->
-                  <!-- Notas Importantes -->
-                  <div>
-                    <h3>Notas Importantes</h3>
-                    <ul>
-                      <li>
-                        Este proceso elimina permanentemente el historial de cambios anteriores. Si se desea
-                        conservar una copia, es recomendable hacer un backup antes de ejecutar los comandos.
-                      </li>
-                      <li>
-                        Si hay otros colaboradores en el repositorio, ellos tendrán problemas al sincronizarse
-                        después de un
-                        <code>git push --force</code>, por lo que deben clonar nuevamente el repositorio después
-                        del reinicio.
-                      </li>
-                    </ul>
-                    <p>
-                      Este método permite reiniciar un repositorio en Git y GitHub desde cero, eliminando todo el
-                      historial anterior y dejando solo el estado actual del código.
-                    </p>
-                  </div>
-                  <!-- Notas Importantes fin -->
               </div>
-              <!-- Reiniciar Eliminando Todo el Historial Manteniendo los Archivos fin -->
+              <!-- Recopilación de comandos utilizados fin -->
+              <!-- Notas Importantes -->
+              <div>
+                <h3>Notas Importantes</h3>
+                <ul>
+                  <li>
+                    Este proceso elimina permanentemente el historial de cambios anteriores. Si se desea
+                    conservar una copia, es recomendable hacer un backup antes de ejecutar los comandos.
+                  </li>
+                  <li>
+                    Si hay otros colaboradores en el repositorio, ellos tendrán problemas al sincronizarse
+                    después de un
+                    <code>git push --force</code>, por lo que deben clonar nuevamente el repositorio después
+                    del reinicio.
+                  </li>
+                </ul>
+                <p>
+                  Este método permite reiniciar un repositorio en Git y GitHub desde cero, eliminando todo el
+                  historial anterior y dejando solo el estado actual del código.
+                </p>
+              </div>
+              <!-- Notas Importantes fin -->
+            </div>
+          </div>
+          <!-- Reiniciar Eliminando Todo el Historial Manteniendo los Archivos fin -->
         </article>
         <!--  El módulo <code>calendar</code>, trabajando con funciones relacionadas con el calendario en Python  -->
         <!-- -------------------------------- comentarios -------------------------------- -->
@@ -361,7 +364,7 @@
     <!-- -------------------------------- fin principal -------------------------------- -->
     <!-- -------------------------------- barra lateral -------------------------------- -->
     <aside class="col-lg-3 d-none d-lg-block pt-4">
-      <h2 class="h1">En Este Artículo</h2>
+      <h1>En Este Artículo</h1>
       <ul class="list-group">
         <li class="list-group-item">
           <a href="#introduccion">Introducción</a>

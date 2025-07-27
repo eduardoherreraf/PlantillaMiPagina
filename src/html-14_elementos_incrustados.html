@@ -95,7 +95,7 @@
   </nav>
   <!-- Barra deNavegación -->
   <!--  Principal  -->
-  <div class="row col mx-1" id="introduccion">
+  <div class="container-fluid">
     <main class="pt-5 col-lg-9">
       <section class="pb-3">
         <!--  Elementos Incrustados HTM-->
@@ -103,7 +103,7 @@
           data-bs-smooth-scroll="true">
           <div>
             <header>
-              <h1>Elementos Incrustados HTML</h1>
+              <h1 id="introduccion">Elementos Incrustados HTML</h1>
             </header>
             <!-- Introducción -->
             <div class="mt-5">
@@ -727,17 +727,20 @@
         <!--  Elementos Incrustados HTM fin -->
         <!-- Comentarios -->
         <article class="row pt-5" id="comment">
+          <br />
           <h2>COMENTARIOS</h2>
-          <p>Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del formulario
-            disponible para este propósito.</p>
+          <p>
+            Si tiene alguna inquietud, duda o ha encontrado algún error, por
+            favor infórmelo a través del formulario disponible para este
+            propósito.
+          </p>
           <div class="d-flex justify-content-center">
-            <form action="https://formsubmit.co/herreraforeroeduardo@gmail.com" method="POST" id="myForm">
+            <form action="https://formspree.io/f/mdkdawkg" method="POST" id="myForm">
               <div class="input-group d-flex justify-content-center flex-column">
                 <label for="name" class="pe-2">Nombre:</label>
-                <input type="text" name="name" id="name" placeholder="Eduardo Herrera Forero" class="rounded"
-                  required="required" />
+                <input type="text" name="name" id="name" placeholder="User" class="rounded" required="required" />
                 <label for="email" class="pe-2">Email:</label>
-                <input type="email" name="email" id="email" placeholder="herreraforeroeduardo@gmail.com" class="rounded"
+                <input type="email" name="email" id="email" placeholder="user@mail.com" class="rounded"
                   required="required" />
                 <label for="message" class="pe-2">Mensaje:</label>
                 <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
@@ -745,7 +748,9 @@
                 <input class="btn btn-outline-light my-3 border rounded-pill border-2" type="submit"
                   value="Enviar..." />
               </div>
-              <p>La política de privacidad, y los términos y condiciones están disponibles en el formulario de contacto.
+              <p>
+                La política de privacidad, y los términos y condiciones están
+                disponibles en el formulario de contacto.
               </p>
             </form>
           </div>
@@ -757,7 +762,7 @@
     <!-- -------------------------------- fin principal -------------------------------- -->
     <!-- -------------------------------- barra lateral -------------------------------- -->
     <aside class="col-lg-3 d-none d-lg-block pt-4">
-      <h2 class="h1">En Este Artículo</h2>
+      <h1>En Este Artículo</h1>
       <div class="menu-container">
         <div class="menu-item">
           <a href="#introduccion" class="simple-link">Introducción</a>
