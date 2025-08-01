@@ -66,7 +66,7 @@
 
     <title>Ing. Eduardo Herrera Forero.</title>
 
-    <script type="module" defer src="./js/main.js"></script>
+    <script type="module" src="./js/main.js"></script>
 
     <meta
       name="google-site-verification"
@@ -79,7 +79,6 @@
     data-bs-target=".navbar-collapse"
     data-bs-offset="10"
     class="container-fluid"
-    id="about"
   >
     <!-- Barra deNavegación -->
     <nav
@@ -172,11 +171,11 @@
     <!-- Barra deNavegación -->
     <!-- -------------------------------- principal -------------------------------- -->
     <!-- <div class="row col mx-1 position-relative"> -->
-    <div class="container-fluid">
+    <div class="container-fluid" id="about">
       <main class="pt-5 col-lg-9">
         <section class="pb-3">
           <!-- about -->
-          <article class="row border-1 border-bottom pb-3" id="about">
+          <article class="row pb-3">
             <h1 class="text_big">
               EDUARDO
               <span class="text-dark-emphasis">HERRERA FORERO</span>
@@ -257,10 +256,10 @@
             <!-- fin redes sociales -->
           </article>
           <!-- fin About -->
+          <hr class="subtle-divider" />
           <!-- resume -->
-          <article class="row pt-5 border-1 border-bottom pb-3" id="resume">
-            <br />
-            <h1>EXPERIENCIA</h1>
+          <article class="row pt-4 pb-3" id="resume">
+            <h2 class="h1 mt-4">EXPERIENCIA</h2>
             <!-- webmaster -->
             <div>
               <h2>WEBMASTER</h2>
@@ -532,10 +531,10 @@
             <!-- fin trabajo Siemens Ing -->
           </article>
           <!-- fin resume -->
+          <hr class="subtle-divider" />
           <!-- portfolio -->
-          <article class="row pt-5 border-1 border-bottom pb-3" id="portfolio">
-            <br />
-            <h1>PORTAFOLIO</h1>
+          <article class="row pt-4 pb-3" id="portfolio">
+            <h2 class="h1 mt-4">PORTAFOLIO</h2>
             <div class="row text-center">
               <div class="col-lg-6">
                 <h2>AHORCADO</h2>
@@ -549,7 +548,7 @@
                   <img
                     src="./images/Ahorcado.png"
                     alt="Juego del Ahorcado - Ing. Eduardo Herrera Forero"
-                    width="80%"
+                    class="img-80"
                   />
                 </a>
               </div>
@@ -565,7 +564,7 @@
                   <img
                     src="./images/encriptador.png"
                     alt="Encriptador - Ing. Eduardo Herrera Forero"
-                    width="80%"
+                    class="img-80"
                   />
                 </a>
               </div>
@@ -581,17 +580,17 @@
                   <img
                     src="./images/empucol_com_co.jpg"
                     alt="Empucol.com.co - Ing. Eduardo Herrera Forero"
-                    width="80%"
+                    class="img-80"
                   />
                 </a>
               </div>
             </div>
           </article>
           <!-- fin portfolio -->
+          <hr class="subtle-divider" />
           <!-- formación -->
-          <article class="row pt-5" id="studies">
-            <br />
-            <h1>FORMACIóN PROFESIONAL</h1>
+          <article class="row pt-4" id="studies">
+            <h2 class="h1 mt-4">FORMACIóN PROFESIONAL</h2>
             <div>
               <h2>
                 ESPECIALIZACIÓN EN GERENCIA DE PROYECTOS DE TELECOMUNICACIONES
@@ -609,10 +608,7 @@
                 <span class="fw-bold">Universidad Santo Tomás</span>
               </span>
             </div>
-          </article>
-          <article class="row border-1 border-bottom py-3">
-            <br />
-            <h1>FORMACIóN COMPLEMENTARIA</h1>
+            <h2 class="h1 mt-4">FORMACIóN COMPLEMENTARIA</h2>
             <div>
               <h2>DESARROLLO FRONT-END</h2>
               <span>
@@ -634,10 +630,10 @@
             </div>
           </article>
           <!-- fin formación -->
+          <hr class="subtle-divider" />
           <!-- Blog -------------------------------------- -->
-          <article class="row pt-5 border-1 border-bottom pb-3" id="blog">
-            <br />
-            <h1>PUBLICACIONES</h1>
+          <article class="row pt-4 border-1 border-bottom pb-3" id="blog">
+            <h2 class="h1 mt-4">PUBLICACIONES</h2>
             <div class="row mx-auto mt-3 d-flex justify-content-center">
               <!-- HTML -->
               <div class="col-lg-4 card p-0 mb-3">
@@ -970,9 +966,8 @@
           </article>
           <!-- fin Blog -->
           <!-- -------------------------------- contacto -------------------------------- -->
-          <article class="row pt-5" id="contact">
-            <br />
-            <h1>CONTACTO</h1>
+          <article class="row pt-4" id="contact">
+            <h2 class="h1 mt-4">CONTACTO</h2>
             <div class="d-flex justify-content-center">
               <form
                 action="https://formspree.io/f/mdkdawkg"
@@ -1028,14 +1023,18 @@
       </main>
       <!-- -------------------------------- barra lateral -------------------------------- -->
       <aside class="col-lg-3 d-none d-lg-block pt-4 m-0">
-        <h1>ARTÍCULOS</h1>
+        <h2 class="h1">ARTÍCULOS</h2>
         <div class="menu-container">
           <div class="menu-item">
-            <a href="./html-15_etiquetas_de_programacion_y_script.html" class="simple-link">Etiquetas de Programación y Scripts</a>
+            <a
+              href="./html-15_etiquetas_de_programacion_y_script.html"
+              class="simple-link"
+              >Etiquetas de Programación y Scripts</a
+            >
           </div>
           <div class="menu-item">
             <a href="./html-14_elementos_incrustados.html" class="simple-link"
-              >Elementos Incrustados HTML</code></a
+              >Elementos Incrustados HTML</a
             >
           </div>
           <div class="menu-item">
