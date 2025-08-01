@@ -191,22 +191,17 @@
 
     <!--  Principal  -->
     <div class="container-fluid">
-      <main class="pt-5 col-lg-9">
-        <section class="pb-3">
+      <main class="pt-2 col-lg-9">
+        <section class="pb-3 pt-4">
           <!--  Etiquetas de Programación y Scripts-->
-          <article
-            class="row pb-3 border-bottom border-1"
-            data-bs-spy="scroll"
-            data-bs-target="#list-example"
-            data-bs-smooth-scroll="true"
-          >
+          <article class="row border-bottom border-1">
             <div>
               <header>
-                <h1 id="introduccion">Etiquetas de Programación y Scripts</h1>
+                <h1>Etiquetas de Programación y Scripts</h1>
               </header>
               <!-- Introducción -->
-              <div class="mt-5">
-                <h2 class="mt-1">Introducción</h2>
+              <div class="pt-4">
+                <h2 class="pt-2">Introducción</h2>
                 <div class="centrar-imagen">
                   <figure class="img-container">
                     <img
@@ -246,8 +241,8 @@
               <!-- Introducción Fin -->
               <hr class="subtle-divider" />
               <!-- Elemento <script> -->
-              <div id="elemento-script" class="mt-5">
-                <h2 class="mt-1">
+              <div id="elemento-script" class="pt-4">
+                <h2 class="">
                   Elemento <code class="language-html">&lt;script></code>
                 </h2>
                 <p>
@@ -519,10 +514,9 @@
               </div>
               <!-- Elemento <script> Fin -->
               <hr class="subtle-divider" />
-
               <!-- Elemento <noscript> -->
-              <div id="elemento-noscript" class="mt-5">
-                <h2 class="mt-1">
+              <div id="elemento-noscript" class="pt-4">
+                <h2 class="">
                   Elemento <code class="language-html">&lt;noscript></code>
                 </h2>
                 <!-- Definición y Uso <noscript>  -->
@@ -689,7 +683,6 @@
                   </p>
                 </div>
                 <!-- Consideraciones de Accesibilidad  fin -->
-
                 <!-- Limitaciones y Consideraciones  -->
                 <div id="limitaciones-y-consideraciones">
                   <h3>Limitaciones y Consideraciones</h3>
@@ -715,10 +708,9 @@
               </div>
               <!-- Elemento <noscript> Fin -->
               <hr class="subtle-divider" />
-
               <!-- Elemento <template> -->
-              <div id="elemento-template" class="mt-5">
-                <h2 class="mt-1">
+              <div id="elemento-template" class="pt-4">
+                <h2>
                   Elemento <code class="language-html">&lt;template></code>
                 </h2>
                 <p>
@@ -1086,47 +1078,75 @@
           </article>
           <!--Etiquetas de Programación y Scripts fin-->
           <!--Comentarios -->
-        <article class="row pt-5" id="comment">
-          <br />
-          <h2>COMENTARIOS</h2>
-          <p>
-            Si tiene alguna inquietud, duda o ha encontrado algún error, por
-            favor infórmelo a través del formulario disponible para este
-            propósito.
-          </p>
-          <div class="d-flex justify-content-center">
-            <form action="https://formspree.io/f/mdkdawkg" method="POST" id="myForm">
-              <div class="input-group d-flex justify-content-center flex-column">
-                <label for="name" class="pe-2">Nombre:</label>
-                <input type="text" name="name" id="name" placeholder="User" class="rounded" required="required" />
-                <label for="email" class="pe-2">Email:</label>
-                <input type="email" name="email" id="email" placeholder="user@mail.com" class="rounded"
-                  required="required" />
-                <label for="message" class="pe-2">Mensaje:</label>
-                <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
-                  class="rounded rounded-3"></textarea>
-                <input class="btn btn-outline-light my-3 border rounded-pill border-2" type="submit"
-                  value="Enviar..." />
-              </div>
-              <p>
-                La política de privacidad, y los términos y condiciones están
-                disponibles en el formulario de contacto.
-              </p>
-            </form>
-          </div>
-        </article>
+          <article class="row pt-5" id="comment">
+            <br />
+            <h2>COMENTARIOS</h2>
+            <p>
+              Si tiene alguna inquietud, duda o ha encontrado algún error, por
+              favor infórmelo a través del formulario disponible para este
+              propósito.
+            </p>
+            <div class="d-flex justify-content-center">
+              <form
+                action="https://formspree.io/f/mdkdawkg"
+                method="POST"
+                id="myForm"
+              >
+                <div
+                  class="input-group d-flex justify-content-center flex-column"
+                >
+                  <label for="name" class="pe-2">Nombre:</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="User"
+                    class="rounded"
+                    required="required"
+                  />
+                  <label for="email" class="pe-2">Email:</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="user@mail.com"
+                    class="rounded"
+                    required="required"
+                  />
+                  <label for="message" class="pe-2">Mensaje:</label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="5"
+                    placeholder="Su comentario..."
+                    class="rounded rounded-3"
+                  ></textarea>
+                  <input
+                    class="btn btn-outline-light my-3 border rounded-pill border-2"
+                    type="submit"
+                    value="Enviar..."
+                  />
+                </div>
+                <p>
+                  La política de privacidad, y los términos y condiciones están
+                  disponibles en el formulario de contacto.
+                </p>
+              </form>
+            </div>
+          </article>
           <!--Comentarios fin -->
         </section>
         <!-- Etiquetas de Programación y Scripts -->
       </main>
       <!--  --------------------------------fin principal-------------------------------- -->
       <!-- --------------------------------barra lateral-------------------------------- -->
-      <aside class="col-lg-3 d-none d-lg-block pt-5">
+      <aside class="col-lg-3 d-none d-lg-block pt-4">
         <h1>En Este Artículo</h1>
 
         <div class="menu-container">
           <div class="menu-item">
-            <a href="#introduccion" class="simple-link">Introducción</a>
+            <a href="./html-15_etiquetas_de_programacion_y_script.html" class="simple-link">Introducción</a>
           </div>
           <div class="menu-item">
             <a href="#elemento-script" class="simple-link"
