@@ -33,8 +33,12 @@ html {
 body {
   box-sizing: border-box;
   font-size: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+}
+
+main,
+aside {
+  padding: 1rem;
+  background-color: var(--color-fondo);
 }
 
 img {
@@ -46,8 +50,6 @@ img {
   width: 80%;
   height: auto;
 }
-
-
 
 code {
   display: inline;
