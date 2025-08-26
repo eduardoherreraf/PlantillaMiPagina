@@ -1,4 +1,3 @@
-<!-- @format -->
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
   <head>
@@ -10,7 +9,7 @@
       content="La guía oficial sobre cómo incluir y empaquetar el CSS y JavaScript de Bootstrap en un proyecto utilizando Parcel."
     />
     <meta
-      name="tittle"
+      name="title"
       content="Instalación de Bootstrap V5, NPM y PARCEL - Ing. Eduardo Herrera Forero."
     />
     <meta name="author" content="Ing. Eduardo Herrera Forero" />
@@ -81,12 +80,13 @@
     <title>
       Instalación de Bootstrap V5, NPM y PARCEL - Ing. Eduardo Herrera Forero.
     </title>
-    <script type="module" defer src="./js/main.js"></script>
+    <script type="module" src="./js/main.js"></script>
     <meta
       name="google-site-verification"
       content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc"
     />
   </head>
+
   <body>
     <!-- Barra deNavegación -->
     <nav
@@ -95,7 +95,7 @@
       <div class="container-fluid">
         <!-- Enlace a la página principal con el logo y nombre -->
         <a
-          class="navbar-brand d-flex align-items-center ms-2"
+          class="navbar-brand d-flex align-items-center ms-2 text-decoration-none"
           href="index.html"
         >
           <img
@@ -128,26 +128,44 @@
             class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100"
           >
             <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
+              <a class="nav-link mx-1 text-decoration-none" href="index.html"
+                >SOBRE MÍ</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
+              <a
+                class="nav-link mx-1 text-decoration-none"
+                href="index.html#resume"
+                >EXPERIENCIA</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#portfolio"
+              <a
+                class="nav-link mx-1 text-decoration-none"
+                href="index.html#portfolio"
                 >PORTAFOLIO</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
+              <a
+                class="nav-link mx-1 text-decoration-none"
+                href="index.html#studies"
+                >ESTUDIOS</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-1 active" href="index.html#blog"
+              <a
+                class="nav-link mx-1 active text-decoration-none"
+                href="index.html#blog"
                 >PUBLICACIONES</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
+              <a
+                class="nav-link mx-1 text-decoration-none"
+                href="index.html#contact"
+                >CONTACTO</a
+              >
             </li>
           </ul>
         </div>
@@ -155,7 +173,7 @@
     </nav>
     <!-- Barra deNavegación -->
     <!-- -------------------------------- principal -------------------------------- -->
-    <div class="row col mx-1">
+    <div class="container-fluid">
       <main class="pt-5 col-lg-9">
         <section class="pb-3">
           <!-- Parcel NPM -->
@@ -383,13 +401,11 @@
                   <span class="fw-bold text-warning">package.json</span> se debe
                   intercambiar:
                 </p>
-                <pre
-                  class="line-numbers"
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-javascript" data-prismjs-copy="Copy">
-              "main": "index.js",
-      </code></pre>
+                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <code class="language-javascript" data-prismjs-copy="Copy">
+                  "main": "index.js",
+                </code>
+              </pre>
                 <p>por</p>
                 <pre
                   class="line-numbers"
@@ -399,6 +415,29 @@
               "source": "src/index.html",
             </code></pre>
                 <p>Ahora el punto de entrada es el archivo index.html.</p>
+                <p>
+                  <span class="text-blink-yellow">Nuevo</span> Para asegurarse
+                  que Parcel siempre genere archivos con el mismo nombre (como
+                  <code>index.js</code>
+                  en lugar de nombres hash), se debe utilizar la configuración
+                  avanzada del archivo
+                  <code>.parcelrc</code>:, así:
+                </p>
+                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <code class="language-json" data-prismjs-copy="Copy">
+                  {
+                    "extends": "@parcel/config-default",
+                    "transformers": {},
+                    "namers": {
+                      "parcel-namer-static": {}
+                    }
+                  }
+                </code>
+              </pre>
+                <p>
+                  Este archivo debe estar en el directorio del proyecto junto al
+                  archivo <code>package.json</code>
+                </p>
                 <p>
                   Esta plantilla está configurada de forma tal que es
                   innecesario realizar correcciones en las rutas absolutas de
@@ -490,11 +529,11 @@
             </code></pre>
                 <p>
                   Es fundamental tener precaución con el código JavaScript
-                  dentro de la etiqueta <code>&lt;script></code>, ya que debe
-                  tratarse como un módulo. Si no se hace así, las variables que
-                  se actualizan con la compilación del código HTML pueden no
-                  reflejar esos cambios en las instancias correspondientes en el
-                  código JavaScript.
+                  dentro de la etiqueta
+                  <code>&lt;script></code>, ya que debe tratarse como un módulo.
+                  Si no se hace así, las variables que se actualizan con la
+                  compilación del código HTML pueden no reflejar esos cambios en
+                  las instancias correspondientes en el código JavaScript.
                 </p>
               </div>
             </div>
@@ -503,7 +542,7 @@
           <!-- -------------------------------- comentarios -------------------------------- -->
           <article class="row" id="comment">
             <br />
-            <h1>COMENTARIOS</h1>
+            <h2>COMENTARIOS</h2>
             <p>
               Si tiene alguna inquietud, duda o ha encontrado algún error, por
               favor infórmelo a través del formulario disponible para este
@@ -511,7 +550,7 @@
             </p>
             <div class="d-flex justify-content-center">
               <form
-                action="https://formsubmit.co/herreraforeroeduardo@gmail.com"
+                action="https://formspree.io/f/mdkdawkg"
                 method="POST"
                 id="myForm"
               >
@@ -523,7 +562,7 @@
                     type="text"
                     name="name"
                     id="name"
-                    placeholder="Eduardo Herrera Forero"
+                    placeholder="User"
                     class="rounded"
                     required="required"
                   />
@@ -532,7 +571,7 @@
                     type="email"
                     name="email"
                     id="email"
-                    placeholder="herreraforeroeduardo@gmail.com"
+                    placeholder="user@mail.com"
                     class="rounded"
                     required="required"
                   />
@@ -564,7 +603,7 @@
       <!-- -------------------------------- fin principal -------------------------------- -->
       <!-- -------------------------------- barra lateral -------------------------------- -->
       <aside class="col-lg-3 d-none d-lg-block pt-5">
-        <h1>Índice</h1>
+        <h1>En Este Artículo</h1>
         <ul class="list-group">
           <li class="list-group-item">
             <a href="#introduccion">Introducción</a>
@@ -580,6 +619,7 @@
           </li>
           <li class="list-group-item">
             <a href="#configuracionParcel">Configuración de Parcel</a>
+            <span class="text-blink-yellow">Editado</span>
           </li>
           <li class="list-group-item">
             <a href="#importacionBootstrapv5">Importación Bootstrap v5</a>
@@ -593,80 +633,7 @@
       </aside>
       <!-- -------------------------------- fin barra lateral -------------------------------- -->
     </div>
-    <!-- -------------------------------- pie de pagina -------------------------------- -->
-    <footer class="row col border-top border-1 m-1">
-      <div class="row">
-        <!-- contacto -->
-        <div class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Contacto</div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-envelope-at fs-3"></i>
-            <span class="ms-3">
-              <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com"
-                >ehfeduardo@gmail.com</a
-              >
-            </span>
-          </div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-geo-alt fs-3"></i>
-            <span class="ms-3">Bogotá D. C. - Colombia</span>
-          </div>
-        </div>
-        <!-- Derechos de autor -->
-        <div
-          class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100"
-        >
-          <div>
-            <i class="bi bi-c-circle fs-5"></i>
-          </div>
-          <div class="ms-2">All Rights Reserved 2025</div>
-        </div>
-        <!-- redes sociales -->
-        <div class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Redes Sociales</div>
-          <div class="d-flex justify-content-evenly align-items-center gap-5">
-            <div>
-              <a
-                href="https://www.linkedin.com/in/eduardoherreraf/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-linkedin fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://github.com/eduardoherreraf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-github fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.facebook.com/eduardoherreraforero/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-facebook fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://twitter.com/ehfeduardo/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-twitter-x fs-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex align-items-center justify-content-center gap-2"></div>
-    </footer>
-    <!-- -------------------------------- pie de pagina fin -------------------------------- -->
+
     <!-- button to top -->
     <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
       <svg

@@ -253,3 +253,34 @@ aside {
   padding: 2px 4px;
   border-radius: 4px;
 }
+
+
+/* Fonts titilando */
+.text-blink-yellow {
+  display: inline-block;
+  color: yellow;
+  animation: blinkRed 1s infinite;
+  /* Rotar -45 */
+}
+
+.titulo.text-blink-yellow {
+  /* display: inline-block;
+  color: yellow;
+  animation: blinkRed 1s infinite; */
+  transform: translateY(-5px) rotate(-45deg);
+  /* Rotar -45 */
+}
+
+@keyframes blinkRed {
+  0% {
+    color: yellow;
+  }
+
+  50% {
+    color: transparent;
+  }
+
+  100% {
+    color: yellow;
+  }
+}
