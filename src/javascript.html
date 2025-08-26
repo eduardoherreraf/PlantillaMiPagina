@@ -45,7 +45,7 @@
     <!-- fin Open Graph data -->
 
     <!-- Twitter cards -->
-    <meta name="twitter:card" content=content="summary" />
+    <meta name="twitter:card" content="summary" />
     <meta
       name="twitter:title"
       content="Índice de javascript - Ing. Eduardo Herrera Forero."
@@ -92,7 +92,7 @@
     />
   </head>
 
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     <!-- Barra deNavegación -->
     <nav
       class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
@@ -163,8 +163,8 @@
     <!-- Barra deNavegación -->
 
     <!-- -------------------------------- principal -------------------------------- -->
-    <div class="row col mb-3 pt-5">
-      <main class="col">
+    <main class="row mx-1 flex-fill">
+      <div class="pt-5 col">
         <article class="row border-1">
           <h1>Javascript</h1>
           <div id="principal" class="px-5">
@@ -178,16 +178,6 @@
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row">2</th>
-                  <td>
-                    <a
-                      href="./javascript-como_ejecutar_un_codigo_javascript.html"
-                      >Como Ejecutar un Código Javascript</a
-                    >
-                  </td>
-                  <td>16-May/2024</td>
-                </tr>
-                <tr>
                   <th scope="row">1</th>
                   <td>
                     <a
@@ -197,15 +187,26 @@
                   </td>
                   <td>16-May/2024</td>
                 </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>
+                    <a
+                      href="./javascript-como_ejecutar_un_codigo_javascript.html"
+                      >Como Ejecutar un Código Javascript</a
+                    >
+                  </td>
+                  <td>16-May/2024</td>
+                </tr>
               </tbody>
             </table>
           </div>
         </article>
-      </main>
+      </div>
       <!-- -------------------------------- fin principal -------------------------------- -->
-    </div>
+    </main>
+
     <!-- -------------------------------- pie de pagina -------------------------------- -->
-    <footer class="row col border-top border-1 m-1">
+    <footer class="row border-top border-1 m-1 mt-auto">
       <div class="row">
         <!-- contacto -->
         <div class="col-lg-4 d-flex flex-column align-items-center">

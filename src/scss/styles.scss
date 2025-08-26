@@ -218,7 +218,7 @@ code {
 /* Barra de navegación */
 nav {
   background-color: rgb(56, 56, 56);
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 /*  */
@@ -229,7 +229,7 @@ nav {
 /* item del la lateral */
 .list-group-item,
 .list-unstyled {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 /* aside */
@@ -242,7 +242,7 @@ aside {
 }
 
 .barraLateral:hover {
-  background-color: #0D6EFD;
+  background-color: #0d6efd;
   color: #ffffff;
 }
 
@@ -253,7 +253,6 @@ aside {
   padding: 2px 4px;
   border-radius: 4px;
 }
-
 
 /* Fonts titilando */
 .text-blink-yellow {
@@ -284,3 +283,4 @@ aside {
     color: yellow;
   }
 }
+
