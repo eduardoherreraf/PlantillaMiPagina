@@ -45,7 +45,7 @@
     <!-- fin Open Graph data -->
 
     <!-- Twitter cards -->
-    <meta name="twitter:card"  content="summary"/>
+    <meta name="twitter:card" content="summary" />
     <meta
       name="twitter:title"
       content="Instalación de Bootstrap V5, NPM y VITE - Ing. Eduardo Herrera Forero."
@@ -224,7 +224,7 @@
                 señalar que el nombre de la carpeta puede ser cualquier otro
                 según las necesidades del proyecto.
               </p>
-              <pre  data-src-status="loaded" tabindex="0">
+              <pre data-src-status="loaded" tabindex="0">
                 <code class="language-bash" data-prismjs-copy="Copy">
                   mkdir mi-proyecto && cd mi-proyecto
                   npm init -y
@@ -236,7 +236,7 @@
                 <code>--save-dev</code> para indicar que esta dependencia es
                 sólo para uso de desarrollo y no para producción.
               </p>
-              <pre  data-src-status="loaded" tabindex="0">
+              <pre data-src-status="loaded" tabindex="0">
                 <code class="language-bash" data-prismjs-copy="Copy">
                   npm i --save-dev vite
                 </code>
@@ -248,7 +248,7 @@
                 previsto usar esos componentes, se puede omitir la instalación
                 de este último.
               </p>
-              <pre  data-src-status="loaded" tabindex="0">
+              <pre data-src-status="loaded" tabindex="0">
                 <code class="language-bash" data-prismjs-copy="Copy">
                   npm i --save bootstrap @popperjs/core
                 </code>
@@ -258,7 +258,7 @@
                 Bootstrap, es necesario contar con otra dependencia (Sass) para
                 importar y empaquetar correctamente el CSS de Bootstrap.
               </p>
-              <pre  data-src-status="loaded" tabindex="0">
+              <pre data-src-status="loaded" tabindex="0">
                 <code class="language-bash" data-prismjs-copy="Copy">
                   npm i --save-dev sass
                 </code>
@@ -279,7 +279,7 @@
                   para completar la estructura del proyecto. Para llevar a cabo
                   esto, ejecuta el siguiente código dentro de "mi-proyecto".
                 </p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     mkdir {src,src/js,src/scss}
                     touch src/index.html src/js/main.js src/scss/styles.scss vite.config.js
@@ -318,7 +318,6 @@
                   llena con:
                 </p>
                 <pre
-                  
                   data-src-status="loaded"
                   tabindex="0"
                 ><code class="language-javascript" data-prismjs-copy="Copy">
@@ -339,7 +338,6 @@
                   llena con la siguiente plantilla:
                 </p>
                 <pre
-                  
                   data-src-status="loaded"
                   tabindex="0"
                 ><code class="language-html" data-prismjs-copy="Copy">
@@ -365,7 +363,6 @@
                   quedar configurado así:
                 </p>
                 <pre
-                  
                   data-src-status="loaded"
                   tabindex="0"
                 ><code class="language-javascript" data-prismjs-copy="Copy">
@@ -393,7 +390,6 @@
                 se importa los estilos CSS:
               </p>
               <pre
-                
                 data-src-status="loaded"
                 tabindex="0"
               ><code class="language-css" data-prismjs-copy="Copy">
@@ -406,7 +402,7 @@
                 <span class="fw-bold text-warning">src/js/main.js</span> se
                 carga e importa los CSS y JS de Bootstrap agregando.
               </p>
-              <pre  data-src-status="loaded" tabindex="0">
+              <pre data-src-status="loaded" tabindex="0">
                 <code class="language-js" data-prismjs-copy="Copy">
                   // Import our custom CSS
                   import '../scss/styles.scss'
@@ -418,7 +414,7 @@
                 También puede importar plugins JavaScript individualmente según
                 sea necesario para mantener el tamaño de los paquetes bajo:
               </p>
-              <pre  data-src-status="loaded" tabindex="0">
+              <pre data-src-status="loaded" tabindex="0">
                 <code class="language-js" data-prismjs-copy="Copy">
                   import Alert from 'bootstrap/js/dist/alert';
 
@@ -449,7 +445,6 @@
             <div id="instalacionpluginPurgeCSSHTML" class="mt-5">
               <h2 class="mt-1">Instalación Plugin PurgeCSS y Plugin HTML</h2>
               <pre
-                
                 data-src-status="loaded"
                 tabindex="0"
               ><code class="language-bash" data-prismjs-copy="Copy">
@@ -464,7 +459,6 @@
               </p>
               <p>El archivo vite.cfg.js se debe configurar asi:</p>
               <pre
-                
                 data-src-status="loaded"
                 tabindex="0"
               ><code class="language-javascript" data-prismjs-copy="Copy">
@@ -500,7 +494,6 @@
                 finalmente se debe tener asi:
               </p>
               <pre
-                
                 data-src-status="loaded"
                 tabindex="0"
               ><code class="language-javascript" data-prismjs-copy="Copy">
@@ -550,7 +543,7 @@
                   <span class="fw-bold text-warning">&lt;head&gt;</span> del
                   archivo debe quedar de la siguiente manera:
                 </p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                   <code class="language-html" data-prismjs-copy="Copy">
                     &lt;head&gt;
                     ...
@@ -584,8 +577,7 @@
 
           <!-- -------------------------------- comentarios -------------------------------- -->
           <article class="row pt-5" id="comment">
-            <br />
-            <h1>COMENTARIOS</h1>
+            <h2>COMENTARIOS</h2>
             <p>
               Si tiene alguna inquietud, duda o ha encontrado algún error, por
               favor infórmelo a través del formulario disponible para este
@@ -593,7 +585,7 @@
             </p>
             <div class="d-flex justify-content-center">
               <form
-                action="https://formsubmit.co/herreraforeroeduardo@gmail.com"
+                action="https://formspree.io/f/mdkdawkg"
                 method="POST"
                 id="myForm"
               >
@@ -605,7 +597,7 @@
                     type="text"
                     name="name"
                     id="name"
-                    placeholder="Eduardo Herrera Forero"
+                    placeholder="User"
                     class="rounded"
                     required="required"
                   />
@@ -614,7 +606,7 @@
                     type="email"
                     name="email"
                     id="email"
-                    placeholder="herreraforeroeduardo@gmail.com"
+                    placeholder="user@mail.com"
                     class="rounded"
                     required="required"
                   />
