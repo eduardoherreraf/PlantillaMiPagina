@@ -105,6 +105,13 @@ a:hover {
   height: 9rem;
 }
 
+/* Fondo Códigos */
+pre[class*="language-"],
+code[class*="language-"] {
+  background-color: var(--color-fondo);
+  margin: 0.5rem;
+}
+
 // formulario
 form {
   padding: 20px 55px;
@@ -239,19 +246,6 @@ aside {
   overflow-y: auto;
   top: 0;
   right: 0;
-}
-
-.barraLateral:hover {
-  background-color: #0d6efd;
-  color: #ffffff;
-}
-
-.barraLateral:hover code {
-  color: #ffffff;
-  background-color: rgba(255, 255, 255, 0.2);
-  /* Fondo semitransparente para destacar */
-  padding: 2px 4px;
-  border-radius: 4px;
 }
 
 /* Fonts titilando */
