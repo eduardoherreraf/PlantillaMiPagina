@@ -320,7 +320,7 @@
                 .py y se importan en otros programas. Por ejemplo, si se tiene
                 un archivo llamado mi_modulo.py con el siguiente contenido:
               </p>
-              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+              <pre  data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     # mi_modulo.py
                     def saludar():
@@ -328,7 +328,7 @@
                   </code>
                 </pre>
               <p>Puede importarse y usarse en otro archivo:</p>
-              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+              <pre  data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     import mi_modulo
                     print(mi_modulo.saludar())
@@ -345,7 +345,7 @@
                 estructurar los proyectos en submódulos. Por ejemplo:
               </p>
               <p>Estructura de un paquete llamado mi_paquete:</p>
-              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+              <pre  data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     mi_paquete/
                         __init__.py
@@ -354,7 +354,7 @@
                   </code>
                 </pre>
               <p>El paquete puede importarse como:</p>
-              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+              <pre  data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     from mi_paquete import modulo1
                   </code>
@@ -424,7 +424,7 @@
                 funciones, clases y/o
                 variables que serán parte del módulo.
                 <p>Por ejemplo:</p>
-                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <pre  data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Archivo: utilidades.py
                       def sumar(a, b):
@@ -443,7 +443,7 @@
                 <code>if __name__ == "__main__"</code>. Esto permite ejecutar
                 el módulo directamente para pruebas sin afectar su uso en
                 otros contextos. Ejemplo:
-                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <pre  data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       if __name__ == "__main__":
                           print("Prueba de suma:", sumar(5, 3))
@@ -457,7 +457,7 @@
                 Python. Esto se realiza usando la instrucción
                 <code>import</code> o <code>from ... import</code>. Por
                 ejemplo:
-                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <pre  data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import utilidades
                       resultado = utilidades.sumar(10, 15)
@@ -465,7 +465,7 @@
                     </code>
                   </pre>
                 <p>También se pueden importar funciones específicas:</p>
-                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <pre  data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       from utilidades import restar
                       resultado = restar(10, 5)

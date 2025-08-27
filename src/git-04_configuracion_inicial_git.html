@@ -192,7 +192,7 @@
                 los commits, permitiendo identificar quién hizo los cambios en
                 un proyecto.
               </p>
-              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+              <pre  data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git config --global user.name "Nombre del usuario"
                     git config --global user.email "Semail@ejemplo.com"
@@ -205,7 +205,7 @@
                 repositorio en particular, se puede omitir
                 <strong>--global</strong>:
               </p>
-              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+              <pre  data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   git config user.name "Otro Nombre"
                   git config user.email "otro_email@ejemplo.com"
@@ -246,7 +246,7 @@
                 o archivos de configuración. Es útil configurar el editor de
                 texto preferido para estas tareas.
               </p>
-              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+              <pre  data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git config --global core.editor "nombre-del-editor"
                     // para VSCode
@@ -284,7 +284,7 @@
                 Se usa principalmente para mejorar la legibilidad de los
                 mensajes en la terminal.
               </p>
-              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+              <pre  data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git config --global color.ui auto
                   </code>
@@ -297,7 +297,7 @@
                   Además, se pueden personalizar colores para distintas
                   secciones de los mensajes en Git:
                 </p>
-                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <pre  data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     # Colorea la salida de 'git status'
                     git config --global color.status auto
@@ -322,7 +322,7 @@
                   Si se desea personalizar los colores con más detalle, se
                   pueden definir colores específicos. Por ejemplo:
                 </p>
-                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <pre  data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     # Archivos añadidos en verde y negrita
                     git config --global color.status.added "green bold"
@@ -338,7 +338,7 @@
                   Para ver todas las opciones de colores disponibles, se puede
                   consultar la documentación de Git con:
                 </p>
-                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <pre  data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     git help config
                   </code>
@@ -353,7 +353,7 @@
                   Para comprobar la configuración de colores en Git, se puede
                   ejecutar:
                 </p>
-                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <pre  data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     git config --global --list | grep color
                   </code>
@@ -369,7 +369,7 @@
                 Se puedes especificar cómo Git debe manejar las fusiones de
                 archivos.
               </p>
-              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+              <pre  data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git config --global merge.tool "nombre-del-herramienta-de-fusión"
                   </code>
@@ -426,7 +426,7 @@
                 Los alias se utilizan para abreviar comandos largos o
                 complicados, facilitando y agilizando su uso.
               </p>
-              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+              <pre  data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git config --global alias.st status
                     git config --global alias.co checkout
@@ -435,7 +435,7 @@
               <p>
                 En este ejemplo, ambos comandos producen el mismo resultado.
               </p>
-              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+              <pre  data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git st
                     git status
@@ -449,7 +449,7 @@
                 <div>
                   <h4>Alias para comandos básicos</h4>
                   <pre
-                    class="line-numbers"
+                    
                     data-src-status="loaded"
                     tabindex="0"
                   >
@@ -483,7 +483,7 @@
                 <div>
                   <h4>Alias para Agregar y Confirmar Cambios</h4>
                   <pre
-                    class="line-numbers"
+                    
                     data-src-status="loaded"
                     tabindex="0"
                   >
@@ -510,7 +510,7 @@
                 <div>
                   <h4>Alias para Manejar Ramas</h4>
                   <pre
-                    class="line-numbers"
+                    
                     data-src-status="loaded"
                     tabindex="0"
                   >
@@ -538,7 +538,7 @@
                 <div>
                   <h4>Alias para Trabajar con Remotos</h4>
                   <pre
-                    class="line-numbers"
+                    
                     data-src-status="loaded"
                     tabindex="0"
                   >
@@ -564,7 +564,7 @@
                 <div>
                   <h4>Alias para Reiniciar y Limpiar Cambios</h4>
                   <pre
-                    class="line-numbers"
+                    
                     data-src-status="loaded"
                     tabindex="0"
                   >
@@ -587,7 +587,7 @@
                 <div>
                   <h4>Alias Avanzados</h4>
                   <pre
-                    class="line-numbers"
+                    
                     data-src-status="loaded"
                     tabindex="0"
                   >
@@ -614,7 +614,7 @@
                 <p>
                   Para ver la lista completa de alias configurados en Git, usar:
                 </p>
-                <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <pre  data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     git config --global --list | grep alias
                   </code>
@@ -632,7 +632,7 @@
                 correo electrónico, alias y más. Es un comando útil para revisar
                 la configuración de GIT de un vistazo.
               </p>
-              <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+              <pre  data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git config --list
                   </code>

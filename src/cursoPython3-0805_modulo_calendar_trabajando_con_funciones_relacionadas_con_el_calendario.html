@@ -45,7 +45,7 @@
     <!-- fin Open Graph data -->
 
     <!-- Twitter cards -->
-    <meta name="twitter:card"  content="summary"/>
+    <meta name="twitter:card" content="summary" />
     <meta
       name="twitter:title"
       content="El módulo calendar, trabajando con funciones relacionadas con el calendario Python 3 - Ing. Eduardo Herrera Forero."
@@ -228,11 +228,7 @@
                       ><code>calendar.month(year, month)</code></span
                     >: Esta función devuelve el calendario de un mes específico
                     en formato de texto.
-                    <pre
-                      class="line-numbers"
-                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import calendar
                       # Mostrar el calendario de diciembre de 2024
@@ -253,11 +249,7 @@
                       ><code>calendar.calendar(year)</code></span
                     >: Devuelve el calendario completo del año en formato de
                     texto.
-                    <pre
-                      class="line-numbers"
-                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import calendar
                       # Mostrar el calendario completo de 2024
@@ -271,11 +263,7 @@
                     >: Esta función cambia el primer día de la semana. El valor
                     predeterminado es 0 (lunes), pero se puede establecer otro
                     valor (por ejemplo, 6 para domingo).
-                    <pre
-                      class="line-numbers"
-                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import calendar
                       # Cambiar el primer día de la semana a domingo
@@ -307,11 +295,7 @@
                       ><code>calendar.weekheader(n)</code></span
                     >:Este método es útil cuando se necesita un encabezado
                     compacto para los días en un calendario.
-                    <pre
-                      class="line-numbers"
-                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import calendar
                       # Abreviaturas de 3 letras para los días de la semana
@@ -337,11 +321,7 @@
                     <span class="fw-bold"><code>calendar.month_name</code></span
                     >: Devuelve el nombre de un mes dado su número. Es útil para
                     mostrar nombres de meses en lugar de solo los números.
-                    <pre
-                      class="line-numbers"
-                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import calendar
                       # Obtener el nombre del mes para el mes 12
@@ -354,11 +334,7 @@
                       ><code>calendar.weekday(year, month, day)</code></span
                     >: Devuelve el día de la semana para una fecha específica (0
                     = lunes, 1 = martes, ..., 6 = domingo).
-                    <pre
-                      class="line-numbers"
-                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import calendar
                       # Verificar qué día de la semana es el 20 de diciembre de 2024
@@ -370,11 +346,7 @@
                     <span class="fw-bold"><code>calendar.day_name</code></span
                     >: Lista con los nombres completos de los días de la semana,
                     donde el índice 0 es "Lunes" y el índice 6 es "Domingo".
-                    <pre
-                      class="line-numbers"
-                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import calendar
                       print(calendar.day_name[2])  # Miércoles
@@ -384,13 +356,9 @@
                   <li>
                     <span class="fw-bold">calendar.day_abbr</span>: Lista con
                     las abreviaturas de los días de la semana.
-                    <pre
-                      class="line-numbers"
-                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
-                      <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                      <pre  data-src-status="loaded" tabindex="0">
                         import calendar
                         print(calendar.day_abbr[2])  # Mié
                       </pre>
@@ -409,11 +377,7 @@
                       ><code>calendar.isleap(year)</code></span
                     >: Devuelve <code>True</code> si el año es bisiesto, de lo
                     contrario, devuelve <code>False</code>.
-                    <pre
-                      class="line-numbers"
-                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import calendar
                       print(calendar.isleap(2024))  # True
@@ -426,11 +390,7 @@
                       ><code>calendar.leapdays(year1, year2)</code></span
                     >: Devuelve el número de años bisiestos entre dos años
                     (excluyendo el año final).
-                    <pre
-                      class="line-numbers"
-                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import calendar
                       print(calendar.leapdays(2000, 2024))  # Número de años bisiestos entre 2000 y 2024, 6 años
@@ -453,11 +413,7 @@
                       ><code>calendar.firstweekday()</code></span
                     >: Devuelve el primer día de la semana actual (en formato
                     numérico).
-                    <pre
-                      class="line-numbers"
-                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import calendar
                       print(calendar.firstweekday())  # 0 si el lunes es el primer día
@@ -486,11 +442,7 @@
                     >: Devuelve una lista de semanas (cada una representada como
                     una lista de 7 días). Si un día no está en el mes, se
                     representa como 0.
-                    <pre
-                      class="line-numbers"
-                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     import calendar
                     # Mostrar el calendario de diciembre de 2024 como lista de semanas
@@ -511,11 +463,7 @@
                       ><code>calendar.prmonth(year, month)</code></span
                     >: Imprime el calendario de un mes específico en formato
                     tabular.
-                    <pre
-                      class="line-numbers"
-                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import calendar
                       calendar.prmonth(2024, 12)
@@ -527,11 +475,7 @@
                       ><code>calendar.prcal(year)</code></span
                     >: Imprime el calendario completo de un año en formato
                     tabular.
-                    <pre
-                      class="line-numbers"
-                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import calendar
                       calendar.prcal(2024)
