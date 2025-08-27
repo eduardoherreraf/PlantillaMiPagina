@@ -121,9 +121,10 @@ code[class*="language-"] {
 }
 
 pre[class*="language-"] {
-  border: solid gray 1px !important;
+  border: solid gray 2px !important;
   outline: none !important;
   box-shadow: none !important;
+  overflow: auto;
 }
 
 // formulario
