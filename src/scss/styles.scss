@@ -18,6 +18,14 @@ $enable-negative-margins: true;
 @import "../../node_modules/prismjs/plugins/match-braces/prism-match-braces.min.css";
 @import "../../node_modules/prismjs/plugins/line-highlight/prism-line-highlight.min.css";
 
+:root {
+  --color-texto: #e7e9eb;
+  --color-borde: #5c6670;
+  --color-fondo: #212529;
+  --alto-caja: 250px;
+  --alto-caja-ejecutado: 350px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -105,15 +113,17 @@ a:hover {
   height: 9rem;
 }
 
-/* Fondo Códigos */
 pre[class*="language-"],
 code[class*="language-"] {
   background-color: var(--color-fondo);
   margin: 0.5rem;
+  border: none; /* Elimina cualquier borde existente */
 }
 
 pre[class*="language-"] {
-  border: solid gray 1px;
+  border: solid gray 1px !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 // formulario
