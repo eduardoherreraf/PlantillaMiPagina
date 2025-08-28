@@ -635,7 +635,6 @@
           <!--  El Módulo datetime, Funciones para Manejo de la Hora y la Fecha en Python  -->
           <!-- -------------------------------- comentarios -------------------------------- -->
           <article class="row pt-5" id="comments">
-            <br />
             <h2>COMENTARIOS</h2>
             <p>
               Si tiene alguna inquietud, duda o ha encontrado algún error, por
@@ -648,43 +647,55 @@
                 method="POST"
                 id="myForm"
               >
-                <div
-                  class="input-group d-flex justify-content-center flex-column"
-                >
-                  <label for="name" class="pe-2">Nombre:</label>
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="User"
-                    class="rounded"
-                    required="required"
-                  />
-                  <label for="email" class="pe-2">Email:</label>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="user@mail.com"
-                    class="rounded"
-                    required="required"
-                  />
-                  <label for="message" class="pe-2">Mensaje:</label>
-                  <textarea
-                    name="message"
-                    id="message"
-                    cols="30"
-                    rows="5"
-                    placeholder="Su comentario..."
-                    class="rounded rounded-3"
-                  ></textarea>
-                  <input
-                    class="btn btn-outline-light my-3 border rounded-pill border-2"
+                <fieldset class="d-flex flex-column gap-3">
+                  <legend class="text-center fs-4">Deje su comentario</legend>
+
+                  <div class="d-flex flex-column">
+                    <label for="name">Nombre:</label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="User"
+                      class="form-control rounded"
+                      required
+                    />
+                  </div>
+
+                  <div class="d-flex flex-column">
+                    <label for="email">Email:</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="user@mail.com"
+                      class="form-control rounded"
+                      required
+                    />
+                  </div>
+
+                  <div class="d-flex flex-column">
+                    <label for="message">Mensaje:</label>
+                    <textarea
+                      name="message"
+                      id="message"
+                      cols="30"
+                      rows="5"
+                      placeholder="Su comentario..."
+                      class="form-control rounded-3"
+                      required
+                    ></textarea>
+                  </div>
+
+                  <button
                     type="submit"
-                    value="Enviar..."
-                  />
-                </div>
-                <p>
+                    class="btn btn-outline-light my-3 border rounded-pill border-2"
+                  >
+                    Enviar
+                  </button>
+                </fieldset>
+
+                <p class="small text-center">
                   La política de privacidad, y los términos y condiciones están
                   disponibles en el formulario de contacto.
                 </p>
@@ -744,78 +755,66 @@
     <!--  Principal Fin  -->
 
     <!-- -------------------------------- pie de pagina -------------------------------- -->
-    <footer class="row col border-top border-1 m-1">
-      <div class="row">
-        <!-- contacto -->
-        <address class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Contacto</div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-envelope-at fs-3"></i>
-            <span class="ms-3">
-              <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com"
-                >ehfeduardo@gmail.com</a
-              >
-            </span>
-          </div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-geo-alt fs-3"></i>
-            <span class="ms-3">Bogotá D. C. - Colombia</span>
-          </div>
-        </address>
-        <!-- Derechos de autor -->
-        <div
-          class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100"
-        >
-          <div>
-            <i class="bi bi-c-circle fs-5"></i>
-          </div>
-          <div class="ms-2">All Rights Reserved 2025</div>
-        </div>
-        <!-- redes sociales -->
-        <div class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Redes Sociales</div>
-          <div class="d-flex justify-content-evenly align-items-center gap-5">
-            <div>
-              <a
-                href="https://www.linkedin.com/in/eduardoherreraf/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-linkedin fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://github.com/eduardoherreraf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-github fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.facebook.com/eduardoherreraforero/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-facebook fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://twitter.com/ehfeduardo/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-twitter-x fs-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
+<footer class="border-top border-1 m-1 py-4">
+  <div class="row">
+    <!-- contacto -->
+    <address class="col-lg-4 d-flex flex-column align-items-center">
+      <div class="text-center fs-2">Contacto</div>
+      <div class="d-flex flex-row align-items-center">
+        <i class="bi bi-envelope-at fs-3"></i>
+        <span class="ms-3">
+          <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com">
+            ehfeduardo@gmail.com
+          </a>
+        </span>
       </div>
-      <div class="d-flex align-items-center justify-content-center gap-2"></div>
-    </footer>
+      <div class="d-flex flex-row align-items-center">
+        <i class="bi bi-geo-alt fs-3"></i>
+        <span class="ms-3">Bogotá D. C. - Colombia</span>
+      </div>
+    </address>
+
+    <!-- Derechos de autor -->
+    <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100">
+      <div>
+        <i class="bi bi-c-circle fs-5"></i>
+      </div>
+      <div class="ms-2">All Rights Reserved 2025</div>
+    </div>
+
+    <!-- redes sociales -->
+    <div class="col-lg-4 d-flex flex-column align-items-center">
+      <div class="text-center fs-2">Redes Sociales</div>
+      <div class="d-flex justify-content-evenly align-items-center gap-5">
+        <a href="https://www.linkedin.com/in/eduardoherreraf/"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="LinkedIn">
+          <i class="bi bi-linkedin fs-1"></i>
+        </a>
+        <a href="https://github.com/eduardoherreraf"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="GitHub">
+          <i class="bi bi-github fs-1"></i>
+        </a>
+        <a href="https://www.facebook.com/eduardoherreraforero/"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Facebook">
+          <i class="bi bi-facebook fs-1"></i>
+        </a>
+        <a href="https://twitter.com/ehfeduardo/"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Twitter / X">
+          <i class="bi bi-twitter-x fs-1"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
     <!-- -------------------------------- pie de pagina fin -------------------------------- -->
     <!-- button to top -->
     <button onclick="topFunction()" id="myBtnScroll" title="Go to top">

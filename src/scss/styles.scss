@@ -134,17 +134,22 @@ form {
   border-radius: 20px;
 }
 
-input,
-textarea {
-  padding: 10px 20px;
-  background-color: lightgrey;
-  color: black;
-  // outline: none;
+form .form-control {
+  background-color: var(--color-texto); /* Fondo del input */
+  color: var(--color-fondo); /* Texto escrito */
+  border: 1px solid var(--color-fondo);
 }
 
-input::placeholder,
-textarea::placeholder {
-  color: #4b514c;
+form .form-control::placeholder {
+  color: var(--color-fondo); /* Texto del placeholder */
+  opacity: 1; /* Evita que algunos navegadores lo aclaren */
+}
+
+form .form-control:focus {
+  background-color: var(--color-texto);
+  color: var(--color-fondo);
+  border-color: var(--color-fondo);
+  box-shadow: 0 0 5px var(--color-fondo);
 }
 
 .btn {
@@ -292,3 +297,5 @@ aside {
     color: yellow;
   }
 }
+
+// Formulario

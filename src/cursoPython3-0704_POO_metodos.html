@@ -45,7 +45,7 @@
     <!-- fin Open Graph data -->
 
     <!-- Twitter cards -->
-    <meta name="twitter:card"  content="summary"/>
+    <meta name="twitter:card" content="summary" />
     <meta
       name="twitter:title"
       content="POO: Métodos Python 3 - Ing. Eduardo Herrera Forero."
@@ -177,7 +177,7 @@
               <header>
                 <h1>POO: Métodos en Python</h1>
               </header>
-                           <!-- Introducción -->
+              <!-- Introducción -->
               <div class="mt-5">
                 <h2>Introducción</h2>
                 <p>
@@ -235,11 +235,7 @@
                           >Acceder a los atributos del objeto</span
                         >: Se utiliza <code>self</code> para leer o modificar
                         los atributos que pertenecen a la instancia.
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     class Persona:
                         def __init__(self, nombre, edad):
@@ -256,11 +252,7 @@
                         >: <code>self</code>
                         permite invocar otros métodos de la clase dentro de un
                         método.
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     class Calculadora:
                         def suma(self, a, b):
@@ -276,11 +268,7 @@
                         >: Usar <code>self</code>
                         permite distinguir entre las variables locales dentro de
                         un método y los atributos de la instancia.
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     class Producto:
                         def __init__(self, precio):
@@ -295,11 +283,7 @@
                           >Asociar datos a la instancia actual</span
                         >: Se utiliza para asignar valores únicos a cada
                         instancia de la clase.
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     class Vehiculo:
                         def __init__(self, marca, modelo):
@@ -367,9 +351,7 @@
                   <!-- Sintaxis de un Constructor -->
                   <div>
                     <h4>Sintaxis de un Constructor</h4>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       class ClaseEjemplo:
                           def __init__(self, parametro1, parametro2):
@@ -394,9 +376,7 @@
                   <!-- Ejemplo Práctico -->
                   <div>
                     <h4>Ejemplo Práctico</h4>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       class Persona:
                       def __init__(self, nombre, edad):
@@ -422,9 +402,7 @@
                       definirse sin parámetros adicionales, aparte de
                       <code>self</code>:
                     </p>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       class Ejemplo:
                       def __init__(self):
@@ -444,11 +422,7 @@
                           >Constructores con valores predeterminados</span
                         >: Los parámetros pueden tener valores por defecto, lo
                         que permite crear objetos con parámetros opcionales.
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           class Persona:
                           def __init__(self, nombre="Anónimo", edad=0):
@@ -466,11 +440,7 @@
                         constructores, pero puede lograrse utilizando parámetros
                         con valores predeterminados o manejando la lógica dentro
                         del método <code>__init__</code>.
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           class Persona:
                               def __init__(self, nombre=None):
@@ -505,11 +475,7 @@
                     argumento para <code>self</code>, ya que Python lo asigna
                     automáticamente.
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     class Classy:
                     def method(self):
@@ -578,11 +544,7 @@
                     deben proporcionar los argumentos correspondientes para esos
                     parámetros. Ejemplo:
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     class Ejemplo:
                     def saludo(self, nombre):
@@ -603,11 +565,7 @@
                         </li>
                         <li>Agregar otros parámetros según sea necesario.</li>
                       </ul>
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           def metodo(self, param1, param2):
                               # Código del método
@@ -618,11 +576,7 @@
                       <span class="fw-bold">Invocación del método</span>:
                       Proporcionar los valores correspondientes a los parámetros
                       adicionales al llamar al método.
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           obj.metodo(valor1, valor2)
                         </code>
@@ -633,11 +587,7 @@
                         >Manejo de parámetros opcionales</span
                       >: Se pueden usar valores predeterminados en los
                       parámetros para hacerlos opcionales.
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           def metodo(self, param1="valor_por_defecto"):
                               print(param1)
@@ -725,11 +675,7 @@
                         >: Si una clase utiliza <code>__slots__</code>, no se
                         crea un atributo <code>__dict__</code> por defecto, a
                         menos que se declare explícitamente.
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           class Persona:
                               __slots__ = ['nombre', 'edad']
@@ -760,9 +706,7 @@
                       disponible, pero representa los atributos de la clase, no
                       de las instancias.
                     </p>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       class Animal:
                           especie = "Mamífero"
@@ -821,9 +765,7 @@
                       Se usa comúnmente en combinación con la siguiente
                       estructura:
                     </p>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                           if __name__ == "__main__":
                           # Código que solo se ejecutará si este archivo se ejecuta directamente
@@ -863,9 +805,7 @@
                       Supongamos que tienes un archivo llamado
                       <code>utilidades.py</code> con el siguiente contenido:
                     </p>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       def saludar():
                           print("Hola desde utilidades!")
@@ -878,9 +818,7 @@
                       Si se ejecuta <code>utilidades.py</code> directamente, se
                       verá:
                     </p>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       Ejecutando utilidades.py directamente
                       Hola desde utilidades!
@@ -890,18 +828,14 @@
                       Pero si se importa este archivo en otro archivo, por
                       ejemplo, con:
                     </p>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import utilidades
                       utilidades.saludar()
                     </code>
                   </pre>
                     <p>El resultado será únicamente:</p>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       Hola desde utilidades!
                     </code>
@@ -945,9 +879,7 @@
                       </li>
                     </ul>
                     <p>Ejemplo:</p>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       x = 10
                       y = "Hola"
@@ -983,9 +915,7 @@
                         la clase.
                       </li>
                     </ul>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Crear una clase llamada MiClase con un método saludar
                       MiClase = type('MiClase', (object,), {'saludar': lambda self: "Hola, soy una clase dinámica"})
@@ -1024,9 +954,7 @@
                       un objeto es de un tipo específico o de una subclase de
                       dicho tipo:
                     </p>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       print(isinstance(10, int))  # Salida: True
                     </code>
@@ -1060,9 +988,7 @@
                         donde se definió la clase.
                       </li>
                     </ul>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       class MiClase:
                           pass
@@ -1087,11 +1013,7 @@
                         >: Es útil para saber en qué módulo está definida una
                         clase, especialmente en proyectos grandes o cuando se
                         importan clases desde otros módulos.
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # archivo_modulo.py
                           class ClaseExterna:
@@ -1118,11 +1040,7 @@
                           >Comprobaciones de pertenencia</span
                         >: Se puede usar para verificar si un objeto pertenece a
                         un módulo específico.
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           def pertenece_a_modulo(objeto, modulo):
                           return objeto.__class__.__module__ == modulo
@@ -1217,9 +1135,7 @@
                   <!-- Ejemplo Práctico de Uso de __main__ -->
                   <div>
                     <h4>Ejemplo Práctico de Uso de __main__</h4>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Archivo modulo.py
                       def funcion_util():
@@ -1236,11 +1152,7 @@
                         <li>
                           <span class="fw-bold">Si se ejecuta directamente</span
                           >:
-                          <pre
-                            
-                            data-src-status="loaded"
-                            tabindex="0"
-                          >
+                          <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     python modulo.py
                     """
@@ -1254,11 +1166,7 @@
                           <span class="fw-bold"
                             >Si se importa en otro script</span
                           >:
-                          <pre
-                            
-                            data-src-status="loaded"
-                            tabindex="0"
-                          >
+                          <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             import modulo
                             modulo.funcion_util()
@@ -1354,9 +1262,7 @@
                   <!-- Ejemplo de Uso -->
                   <div>
                     <h4>Ejemplo de Uso</h4>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Definición de algunas clases
                       class A:
@@ -1402,11 +1308,7 @@
                         <span class="fw-bold"
                           >Verificar la herencia en un programa</span
                         >:
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Crear un código que verifique si una clase tiene una clase base específica
                           class Animal:
@@ -1482,11 +1384,7 @@
                     </li>
                   </ul>
                   <p>Ejemplo:</p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     class Persona:
                         nombre = "Juan"
@@ -1561,11 +1459,7 @@
                     </li>
                   </ul>
                   <p>Ejemplo:</p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     import inspect
                     def ejemplo_funcion(param):
@@ -1636,65 +1530,70 @@
           </article>
           <!--  POO: Métodos en Python  -->
           <!-- -------------------------------- comentarios -------------------------------- -->
-<article
-            class="row pt-5"
-            id="comments">
-            <br />
+          <article class="row pt-5" id="comments">
             <h2>COMENTARIOS</h2>
             <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del
-              formulario disponible para este propósito.
+              Si tiene alguna inquietud, duda o ha encontrado algún error, por
+              favor infórmelo a través del formulario disponible para este
+              propósito.
             </p>
             <div class="d-flex justify-content-center">
               <form
                 action="https://formspree.io/f/mdkdawkg"
                 method="POST"
-                id="myForm">
-                <div class="input-group d-flex justify-content-center flex-column">
-                  <label
-                    for="name"
-                    class="pe-2"
-                    >Nombre:</label
-                  >
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="User"
-                    class="rounded"
-                    required="required" />
-                  <label
-                    for="email"
-                    class="pe-2"
-                    >Email:</label
-                  >
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="user@mail.com"
-                    class="rounded"
-                    required="required" />
-                  <label
-                    for="message"
-                    class="pe-2"
-                    >Mensaje:</label
-                  >
-                  <textarea
-                    name="message"
-                    id="message"
-                    cols="30"
-                    rows="5"
-                    placeholder="Su comentario..."
-                    class="rounded rounded-3"></textarea>
-                  <input
-                    class="btn btn-outline-light my-3 border rounded-pill border-2"
+                id="myForm"
+              >
+                <fieldset class="d-flex flex-column gap-3">
+                  <legend class="text-center fs-4">Deje su comentario</legend>
+
+                  <div class="d-flex flex-column">
+                    <label for="name">Nombre:</label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="User"
+                      class="form-control rounded"
+                      required
+                    />
+                  </div>
+
+                  <div class="d-flex flex-column">
+                    <label for="email">Email:</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="user@mail.com"
+                      class="form-control rounded"
+                      required
+                    />
+                  </div>
+
+                  <div class="d-flex flex-column">
+                    <label for="message">Mensaje:</label>
+                    <textarea
+                      name="message"
+                      id="message"
+                      cols="30"
+                      rows="5"
+                      placeholder="Su comentario..."
+                      class="form-control rounded-3"
+                      required
+                    ></textarea>
+                  </div>
+
+                  <button
                     type="submit"
-                    value="Enviar..." />
-                </div>
-                <p>
-                  La política de privacidad, y los términos y condiciones están disponibles en el formulario
-                  de contacto.
+                    class="btn btn-outline-light my-3 border rounded-pill border-2"
+                  >
+                    Enviar
+                  </button>
+                </fieldset>
+
+                <p class="small text-center">
+                  La política de privacidad, y los términos y condiciones están
+                  disponibles en el formulario de contacto.
                 </p>
               </form>
             </div>
@@ -1707,9 +1606,9 @@
       <aside class="col-lg-3 d-none d-lg-block pt-5">
         <h1>En Este Artículo</h1>
         <ul class="list-group">
-                      <li class="list-group-item">
-              <a href="#introduccion">Introducción</a>
-            </li>
+          <li class="list-group-item">
+            <a href="#introduccion">Introducción</a>
+          </li>
           <li class="list-group-item">
             <a href="#metodosAlDetalle">Métodos al Detalle</a>
           </li>
@@ -1721,9 +1620,9 @@
           <li class="list-group-item">
             <a href="#reflexionEIntrospeccion">Reflexión e introspección</a>
           </li>
-                      <li class="list-group-item">
-              <a href="#comments">Comentarios</a>
-            </li>
+          <li class="list-group-item">
+            <a href="#comments">Comentarios</a>
+          </li>
         </ul>
       </aside>
       <!-- -------------------------------- fin barra lateral -------------------------------- -->
@@ -1731,78 +1630,66 @@
     <!--  Principal Fin  -->
 
     <!-- -------------------------------- pie de pagina -------------------------------- -->
-    <footer class="row col border-top border-1 m-1">
-      <div class="row">
-        <!-- contacto -->
-        <address class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Contacto</div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-envelope-at fs-3"></i>
-            <span class="ms-3">
-              <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com"
-                >ehfeduardo@gmail.com</a
-              >
-            </span>
-          </div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-geo-alt fs-3"></i>
-            <span class="ms-3">Bogotá D. C. - Colombia</span>
-          </div>
-        </address>
-        <!-- Derechos de autor -->
-        <div
-          class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100"
-        >
-          <div>
-            <i class="bi bi-c-circle fs-5"></i>
-          </div>
-          <div class="ms-2">All Rights Reserved 2025</div>
-        </div>
-        <!-- redes sociales -->
-        <div class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Redes Sociales</div>
-          <div class="d-flex justify-content-evenly align-items-center gap-5">
-            <div>
-              <a
-                href="https://www.linkedin.com/in/eduardoherreraf/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-linkedin fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://github.com/eduardoherreraf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-github fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.facebook.com/eduardoherreraforero/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-facebook fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://twitter.com/ehfeduardo/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-twitter-x fs-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
+<footer class="border-top border-1 m-1 py-4">
+  <div class="row">
+    <!-- contacto -->
+    <address class="col-lg-4 d-flex flex-column align-items-center">
+      <div class="text-center fs-2">Contacto</div>
+      <div class="d-flex flex-row align-items-center">
+        <i class="bi bi-envelope-at fs-3"></i>
+        <span class="ms-3">
+          <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com">
+            ehfeduardo@gmail.com
+          </a>
+        </span>
       </div>
-      <div class="d-flex align-items-center justify-content-center gap-2"></div>
-    </footer>
+      <div class="d-flex flex-row align-items-center">
+        <i class="bi bi-geo-alt fs-3"></i>
+        <span class="ms-3">Bogotá D. C. - Colombia</span>
+      </div>
+    </address>
+
+    <!-- Derechos de autor -->
+    <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100">
+      <div>
+        <i class="bi bi-c-circle fs-5"></i>
+      </div>
+      <div class="ms-2">All Rights Reserved 2025</div>
+    </div>
+
+    <!-- redes sociales -->
+    <div class="col-lg-4 d-flex flex-column align-items-center">
+      <div class="text-center fs-2">Redes Sociales</div>
+      <div class="d-flex justify-content-evenly align-items-center gap-5">
+        <a href="https://www.linkedin.com/in/eduardoherreraf/"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="LinkedIn">
+          <i class="bi bi-linkedin fs-1"></i>
+        </a>
+        <a href="https://github.com/eduardoherreraf"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="GitHub">
+          <i class="bi bi-github fs-1"></i>
+        </a>
+        <a href="https://www.facebook.com/eduardoherreraforero/"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Facebook">
+          <i class="bi bi-facebook fs-1"></i>
+        </a>
+        <a href="https://twitter.com/ehfeduardo/"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Twitter / X">
+          <i class="bi bi-twitter-x fs-1"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
     <!-- -------------------------------- pie de pagina fin -------------------------------- -->
     <!-- button to top -->
     <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
