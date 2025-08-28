@@ -45,7 +45,7 @@
     <!-- fin Open Graph data -->
 
     <!-- Twitter cards -->
-    <meta name="twitter:card"  content="summary"/>
+    <meta name="twitter:card" content="summary" />
     <meta
       name="twitter:title"
       content="POO: Propiedades Python 3 - Ing. Eduardo Herrera Forero."
@@ -163,7 +163,7 @@
     <!-- Barra deNavegación -->
 
     <!-- -------------------------------- principal -------------------------------- -->
-    <div class="row col mx-1">
+    <div class="container-fluid" id="introduccion">
       <main class="pt-5 col-lg-9">
         <section class="pb-3">
           <!--  POO: Propiedades en Python  -->
@@ -177,24 +177,29 @@
               <header>
                 <h1>POO: Propiedades en Python</h1>
               </header>
-              <p>
-                Este documento explora las variables de instancia y de clase en
-                Python. Se abordarán las diferencias entre estos tipos de
-                variables, su uso adecuado y cómo afectan el comportamiento de
-                las instancias de una clase.
-              </p>
-              <div class="text-center imagen">
-                <picture>
-                  <img
-                    src="https://i.ibb.co/YdKHfNW/poopropiedades.jpg"
-                    class="img-fluid rounded-4"
-                    width="50%"
-                    alt="POO: Propiedades en Python  "
-                    title="Comprendiendo las Variables de Instancia vs. Variables de Clase en Python"
-                  />
-                  <figcaption>poo: Propiedades en Python</figcaption>
-                </picture>
+              <!-- Introducción -->
+              <div class="mt-5">
+                <h2>Introducción</h2>
+                <p>
+                  Este documento explora las variables de instancia y de clase
+                  en Python. Se abordarán las diferencias entre estos tipos de
+                  variables, su uso adecuado y cómo afectan el comportamiento de
+                  las instancias de una clase.
+                </p>
+                <div class="text-center imagen">
+                  <picture>
+                    <img
+                      src="https://i.ibb.co/YdKHfNW/poopropiedades.jpg"
+                      class="img-fluid rounded-4"
+                      width="50%"
+                      alt="POO: Propiedades en Python  "
+                      title="Comprendiendo las Variables de Instancia vs. Variables de Clase en Python"
+                    />
+                    <figcaption>poo: Propiedades en Python</figcaption>
+                  </picture>
+                </div>
               </div>
+
               <!-- Variables de Instancia -->
               <div id="variablesDeInstancia" class="mt-5">
                 <h2 class="mt-1">Variables de Instancia</h2>
@@ -219,11 +224,7 @@
                 <!-- Ejemplo de Uso de Variables de Instancia-->
                 <div>
                   <h3>Ejemplo de Uso de Variables de Instancia</h3>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     class Carro:
                         def __init__(self, marca, modelo):
@@ -275,9 +276,7 @@
                       Ejemplo de Uso de Variables de Instancia con Dos Guiones
                       Bajos
                     </h4>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       class Carro:
                           def __init__(self, marca, modelo):
@@ -309,9 +308,7 @@
                       cambiar su nombre internamente. A través de la técnica de
                       "name mangling", se pueden acceder de la siguiente manera:
                     </p>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       print(carro1._Carro__marca)  # Imprime: Honda
                     </code>
@@ -365,11 +362,7 @@
                 <!-- Ejemplo en Python de Variables de Clase -->
                 <div>
                   <h3>Ejemplo en Python de Variables de Clase</h3>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     class Carro:
                         # Variable de clase
@@ -413,9 +406,7 @@
                       modificación afectará a todas las instancias de la clase
                       que no hayan sobrescrito esa variable.
                     </p>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       class Carro:
                         # Variable de clase
@@ -451,9 +442,7 @@
                       creará una nueva variable de instancia para esa instancia
                       específica.
                     </p>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       class Carro:
                           # Variable de clase
@@ -516,21 +505,13 @@
                     objeto o clase tiene un atributo determinado. Devuelve True
                     si el atributo existe y False si no.
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     hasattr(objeto, "atributo")
                   </code>
                 </pre>
                   <p>Ejemplo:</p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     class Carro:
                         def __init__(self, marca):
@@ -562,21 +543,13 @@
                     excepción. Esto también permite comprobar si el atributo
                     existe.
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     getattr(objeto, "atributo", valor_por_defecto)
                   </code>
                 </pre>
                   <p>Ejemplo:</p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     class Carro:
                         def __init__(self, marca):
@@ -606,11 +579,7 @@
                     <code>__dict__</code>.
                   </p>
                   <p>Ejemplo:</p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     class Carro:
                         def __init__(self, marca):
@@ -658,65 +627,59 @@
           </article>
           <!--  POO: Propiedades en Python  -->
           <!-- -------------------------------- comentarios -------------------------------- -->
-<article
-            class="row pt-5"
-            id="comment">
+          <article class="row pt-5" id="comments">
             <br />
             <h2>COMENTARIOS</h2>
             <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del
-              formulario disponible para este propósito.
+              Si tiene alguna inquietud, duda o ha encontrado algún error, por
+              favor infórmelo a través del formulario disponible para este
+              propósito.
             </p>
             <div class="d-flex justify-content-center">
               <form
                 action="https://formspree.io/f/mdkdawkg"
                 method="POST"
-                id="myForm">
-                <div class="input-group d-flex justify-content-center flex-column">
-                  <label
-                    for="name"
-                    class="pe-2"
-                    >Nombre:</label
-                  >
+                id="myForm"
+              >
+                <div
+                  class="input-group d-flex justify-content-center flex-column"
+                >
+                  <label for="name" class="pe-2">Nombre:</label>
                   <input
                     type="text"
                     name="name"
                     id="name"
                     placeholder="User"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="email"
-                    class="pe-2"
-                    >Email:</label
-                  >
+                    required="required"
+                  />
+                  <label for="email" class="pe-2">Email:</label>
                   <input
                     type="email"
                     name="email"
                     id="email"
                     placeholder="user@mail.com"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="message"
-                    class="pe-2"
-                    >Mensaje:</label
-                  >
+                    required="required"
+                  />
+                  <label for="message" class="pe-2">Mensaje:</label>
                   <textarea
                     name="message"
                     id="message"
                     cols="30"
                     rows="5"
                     placeholder="Su comentario..."
-                    class="rounded rounded-3"></textarea>
+                    class="rounded rounded-3"
+                  ></textarea>
                   <input
                     class="btn btn-outline-light my-3 border rounded-pill border-2"
                     type="submit"
-                    value="Enviar..." />
+                    value="Enviar..."
+                  />
                 </div>
                 <p>
-                  La política de privacidad, y los términos y condiciones están disponibles en el formulario
-                  de contacto.
+                  La política de privacidad, y los términos y condiciones están
+                  disponibles en el formulario de contacto.
                 </p>
               </form>
             </div>
@@ -730,6 +693,9 @@
         <h1>En Este Artículo</h1>
         <ul class="list-group">
           <li class="list-group-item">
+            <a href="#introduccion">Introducción</a>
+          </li>
+          <li class="list-group-item">
             <a href="#variablesDeInstancia">Variables de Instancia</a>
           </li>
           <li class="list-group-item">
@@ -739,6 +705,9 @@
             <a href="#comprobandoLaExistenciaDeUnAtributo"
               >Comprobando la Existencia de un Atributo</a
             >
+          </li>
+          <li class="list-group-item">
+            <a href="#comments">Comentarios</a>
           </li>
         </ul>
       </aside>

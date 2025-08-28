@@ -45,7 +45,7 @@
     <!-- fin Open Graph data -->
 
     <!-- Twitter cards -->
-    <meta name="twitter:card"  content="summary"/>
+    <meta name="twitter:card" content="summary" />
     <meta
       name="twitter:title"
       content="Operadores Python 3 - Ing. Eduardo Herrera Forero."
@@ -163,7 +163,7 @@
     <!-- Barra deNavegación -->
 
     <!-- -------------------------------- principal -------------------------------- -->
-    <div class="row col mx-1">
+    <div class="container-fluid" id="introduccion">
       <main class="pt-5 col-lg-9">
         <section class="pb-3">
           <!--  Operadores  -->
@@ -177,29 +177,32 @@
               <header>
                 <h1>Operadores en Python</h1>
               </header>
-              <p>
-                Los operadores en Python son símbolos especiales que realizan
-                operaciones específicas en uno o más valores (operandos). Son
-                esenciales para realizar cálculos, comparaciones y
-                manipulaciones de datos en los programas.
-              </p>
-              <div class="text-center imagen">
-                <picture>
-                  <img
-                    src="https://i.ibb.co/bQtJKxH/operadores.jpg"
-                    class="img-fluid rounded-4"
-                    width="50%"
-                    alt="Operadores en Python"
-                    title="Dominando los Operadores de Python"
-                  />
-                  <figcaption>Operadores en Python</figcaption>
-                </picture>
+              <!-- Introducción -->
+              <div class="mt-5">
+                <h2>Introducción</h2>
+                <p>
+                  Los operadores en Python son símbolos especiales que realizan
+                  operaciones específicas en uno o más valores (operandos). Son
+                  esenciales para realizar cálculos, comparaciones y
+                  manipulaciones de datos en los programas.
+                </p>
+                <div class="text-center imagen">
+                  <picture>
+                    <img
+                      src="https://i.ibb.co/bQtJKxH/operadores.jpg"
+                      class="img-fluid rounded-4"
+                      width="50%"
+                      alt="Operadores en Python"
+                      title="Dominando los Operadores de Python"
+                    />
+                    <figcaption>Operadores en Python</figcaption>
+                  </picture>
+                </div>
               </div>
               <!-- Operadores Aritméticos -->
               <div id="operadoresAritmeticos" class="mt-5">
                 <h2 class="mt-1">Operadores Aritméticos</h2>
                 <pre
-                  
                   data-src-status="loaded"
                   tabindex="0"
                 ><code class="language-python" data-prismjs-copy="Copy">
@@ -222,7 +225,6 @@
                   o <code>False</code>).
                 </p>
                 <pre
-                  
                   data-src-status="loaded"
                   tabindex="0"
                 ><code class="language-python" data-prismjs-copy="Copy"
@@ -238,7 +240,6 @@
               <div id="operadoresLogicos" class="mt-5">
                 <h2 class="mt-1">Operadores Lógicos</h2>
                 <pre
-                  
                   data-src-status="loaded"
                   tabindex="0"
                 ><code class="language-python" data-prismjs-copy="Copy">
@@ -251,7 +252,6 @@ not: Negación lógica                      # not(5 > 3) Resultado: False
               <div id="operadoresAsignacion" class="mt-5">
                 <h2 class="mt-1">Operadores de Asignación</h2>
                 <pre
-                  
                   data-src-status="loaded"
                   tabindex="0"
                 ><code class="language-python" data-prismjs-copy="Copy">
@@ -273,7 +273,6 @@ not: Negación lógica                      # not(5 > 3) Resultado: False
                   en memoria.
                 </p>
                 <pre
-                  
                   data-src-status="loaded"
                   tabindex="0"
                 ><code class="language-python" data-prismjs-copy="Copy">is: Comprueba si dos objetos son el mismo objeto
@@ -294,7 +293,6 @@ x is not y  # Resultado: True
                   una lista, tupla, cadena o conjunto.
                 </p>
                 <pre
-                  
                   data-src-status="loaded"
                   tabindex="0"
                 ><code class="language-python" data-prismjs-copy="Copy">in: Comprueba si un valor está en una secuencia
@@ -308,7 +306,6 @@ not in: Comprueba si un valor no está en una secuencia
                 <h2 class="mt-1">Operadores Bit a Bit (Para tipos enteros)</h2>
                 <p></p>
                 <pre
-                  
                   data-src-status="loaded"
                   tabindex="0"
                 ><code class="language-python" data-prismjs-copy="Copy">& (AND a nivel de bits): Realiza una operación AND bit a bit.
@@ -351,7 +348,6 @@ not in: Comprueba si un valor no está en una secuencia
                     expresiones.
                   </p>
                   <pre
-                    
                     data-src-status="loaded"
                     tabindex="0"
                   ><code class="language-python" data-prismjs-copy="Copy">(3 + 2) * 4  # Resultado: 20
@@ -368,7 +364,6 @@ not in: Comprueba si un valor no está en una secuencia
                     se evalúa de derecha a izquierda.
                   </p>
                   <pre
-                    
                     data-src-status="loaded"
                     tabindex="0"
                   ><code class="language-python" data-prismjs-copy="Copy">2 ** 3 ** 2  # Resultado: 512
@@ -385,7 +380,6 @@ not in: Comprueba si un valor no está en una secuencia
                     negación bit a bit.
                   </p>
                   <pre
-                    
                     data-src-status="loaded"
                     tabindex="0"
                   ><code class="language-python" data-prismjs-copy="Copy">-5 + 3  # Resultado: -2
@@ -402,7 +396,6 @@ not in: Comprueba si un valor no está en una secuencia
                     evalúan de izquierda a derecha.
                   </p>
                   <pre
-                    
                     data-src-status="loaded"
                     tabindex="0"
                   ><code class="language-python" data-prismjs-copy="Copy">5 * 2 // 3  # Resultado: 3
@@ -418,7 +411,6 @@ not in: Comprueba si un valor no está en una secuencia
                     evalúan de izquierda a derecha.
                   </p>
                   <pre
-                    
                     data-src-status="loaded"
                     tabindex="0"
                   ><code class="language-python" data-prismjs-copy="Copy">5 - 3 + 2  # Resultado: 4
@@ -434,7 +426,6 @@ not in: Comprueba si un valor no está en una secuencia
                     izquierda o derecha, respectivamente.
                   </p>
                   <pre
-                    
                     data-src-status="loaded"
                     tabindex="0"
                   ><code class="language-python" data-prismjs-copy="Copy">in: Comprueba si un valor está en una secuencia
@@ -452,7 +443,6 @@ not in: Comprueba si un valor no está en una secuencia
                     la misma precedencia y se evalúan de izquierda a derecha.
                   </p>
                   <pre
-                    
                     data-src-status="loaded"
                     tabindex="0"
                   ><code class="language-python" data-prismjs-copy="Copy">in: Comprueba si un valor está en una secuencia
@@ -470,7 +460,6 @@ not in: Comprueba si un valor no está en una secuencia
                     menor precedencia que los operadores de comparación.
                   </p>
                   <pre
-                    
                     data-src-status="loaded"
                     tabindex="0"
                   ><code class="language-python" data-prismjs-copy="Copy">in: Comprueba si un valor está en una secuencia
@@ -487,7 +476,6 @@ not in: Comprueba si un valor no está en una secuencia
                     Este operador realiza una operación AND a nivel de bits.
                   </p>
                   <pre
-                    
                     data-src-status="loaded"
                     tabindex="0"
                   ><code class="language-python" data-prismjs-copy="Copy">in: Comprueba si un valor está en una secuencia
@@ -505,7 +493,6 @@ not in: Comprueba si un valor no está en una secuencia
                     OR a nivel de bits.
                   </p>
                   <pre
-                    
                     data-src-status="loaded"
                     tabindex="0"
                   ><code class="language-python" data-prismjs-copy="Copy">in: Comprueba si un valor está en una secuencia
@@ -523,7 +510,6 @@ not in: Comprueba si un valor no está en una secuencia
                     not tiene mayor precedencia que and y or.
                   </p>
                   <pre
-                    
                     data-src-status="loaded"
                     tabindex="0"
                   ><code class="language-python" data-prismjs-copy="Copy">in: Comprueba si un valor está en una secuencia
@@ -542,7 +528,6 @@ not in: Comprueba si un valor no está en una secuencia
                     derecho de una asignación se evalúan primero.
                   </p>
                   <pre
-                    
                     data-src-status="loaded"
                     tabindex="0"
                   ><code class="language-python" data-prismjs-copy="Copy">in: Comprueba si un valor está en una secuencia
@@ -557,7 +542,6 @@ not in: Comprueba si un valor no está en una secuencia
                   <h3>Operadores de Identidad is, is not</h3>
                   <p>Verifican si dos variables se refieren al mismo objeto.</p>
                   <pre
-                    
                     data-src-status="loaded"
                     tabindex="0"
                   ><code class="language-python" data-prismjs-copy="Copy">in: Comprueba si un valor está en una secuencia
@@ -574,7 +558,6 @@ not in: Comprueba si un valor no está en una secuencia
                     Comprueban si un elemento está presente en una secuencia.
                   </p>
                   <pre
-                    
                     data-src-status="loaded"
                     tabindex="0"
                   ><code class="language-python" data-prismjs-copy="Copy">in: Comprueba si un valor está en una secuencia
@@ -590,65 +573,59 @@ not in: Comprueba si un valor no está en una secuencia
           <!--  Operadores  -->
 
           <!-- -------------------------------- comentarios -------------------------------- -->
-<article
-            class="row pt-5"
-            id="comment">
+          <article class="row pt-5" id="comments">
             <br />
             <h2>COMENTARIOS</h2>
             <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del
-              formulario disponible para este propósito.
+              Si tiene alguna inquietud, duda o ha encontrado algún error, por
+              favor infórmelo a través del formulario disponible para este
+              propósito.
             </p>
             <div class="d-flex justify-content-center">
               <form
                 action="https://formspree.io/f/mdkdawkg"
                 method="POST"
-                id="myForm">
-                <div class="input-group d-flex justify-content-center flex-column">
-                  <label
-                    for="name"
-                    class="pe-2"
-                    >Nombre:</label
-                  >
+                id="myForm"
+              >
+                <div
+                  class="input-group d-flex justify-content-center flex-column"
+                >
+                  <label for="name" class="pe-2">Nombre:</label>
                   <input
                     type="text"
                     name="name"
                     id="name"
                     placeholder="User"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="email"
-                    class="pe-2"
-                    >Email:</label
-                  >
+                    required="required"
+                  />
+                  <label for="email" class="pe-2">Email:</label>
                   <input
                     type="email"
                     name="email"
                     id="email"
                     placeholder="user@mail.com"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="message"
-                    class="pe-2"
-                    >Mensaje:</label
-                  >
+                    required="required"
+                  />
+                  <label for="message" class="pe-2">Mensaje:</label>
                   <textarea
                     name="message"
                     id="message"
                     cols="30"
                     rows="5"
                     placeholder="Su comentario..."
-                    class="rounded rounded-3"></textarea>
+                    class="rounded rounded-3"
+                  ></textarea>
                   <input
                     class="btn btn-outline-light my-3 border rounded-pill border-2"
                     type="submit"
-                    value="Enviar..." />
+                    value="Enviar..."
+                  />
                 </div>
                 <p>
-                  La política de privacidad, y los términos y condiciones están disponibles en el formulario
-                  de contacto.
+                  La política de privacidad, y los términos y condiciones están
+                  disponibles en el formulario de contacto.
                 </p>
               </form>
             </div>
@@ -662,6 +639,9 @@ not in: Comprueba si un valor no está en una secuencia
         <div>
           <h1>En Este Artículo</h1>
           <ul class="list-group">
+            <li class="list-group-item">
+              <a href="#introduccion">Introducción</a>
+            </li>
             <li class="list-group-item">
               <a href="#operadoresAritmeticos">Operadores Aritméticos</a>
             </li>
@@ -687,6 +667,9 @@ not in: Comprueba si un valor no está en una secuencia
             </li>
             <li class="list-group-item">
               <a href="#prioridadOperadores">Prioridad de los Operadores</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#comments">Comentarios</a>
             </li>
           </ul>
         </div>

@@ -45,7 +45,7 @@
     <!-- fin Open Graph data -->
 
     <!-- Twitter cards -->
-    <meta name="twitter:card"  content="summary" />
+    <meta name="twitter:card" content="summary" />
     <meta
       name="twitter:title"
       content="Iteradores, Generadores y Cierres Python 3 - Ing. Eduardo Herrera Forero."
@@ -165,11 +165,11 @@
     <!-- Barra deNavegación -->
 
     <!-- -------------------------------- principal -------------------------------- -->
-    <div class="row col mx-1">
+    <div class="container-fluid" id="introduccion">
       <main class="pt-5 col-lg-9">
         <section class="pb-3">
           <!--  Iteradores, Generadores y Cierres en Python  -->
-                    <article
+          <article
             class="row border-1 border-bottom pb-3"
             data-bs-spy="scroll"
             data-bs-target="#list-example"
@@ -179,30 +179,35 @@
               <header>
                 <h1>Iteradores, Generadores y Cierres en Python</h1>
               </header>
-              <p>
-                En este documento se explorarán los conceptos de iteradores,
-                generadores y cierres en Python, tres características
-                fundamentales que permiten manejar la iteración y el manejo de
-                funciones de manera eficiente. A través de ejemplos y
-                explicaciones claras, se busca proporcionar una comprensión
-                profunda de cómo funcionan estos elementos y cómo pueden ser
-                utilizados para mejorar la calidad y la eficiencia del código en
-                Python.
-              </p>
-              <div class="text-center imagen">
-                <picture>
-                  <img
-                    src="https://i.ibb.co/h2ddmyG/iteradoresgeneradorescierres.jpg"
-                    class="img-fluid rounded-4"
-                    width="50%"
-                    alt="Iteradores, Generadores y Cierres en Python  "
-                    title="Dominando los conceptos clave de Python"
-                  />
-                  <figcaption>
-                    Iteradores, Generadores y Cierres en Python
-                  </figcaption>
-                </picture>
+              <!-- Introducción -->
+              <div class="mt-5">
+                <h2>Introducción</h2>
+                <p>
+                  En este documento se explorarán los conceptos de iteradores,
+                  generadores y cierres en Python, tres características
+                  fundamentales que permiten manejar la iteración y el manejo de
+                  funciones de manera eficiente. A través de ejemplos y
+                  explicaciones claras, se busca proporcionar una comprensión
+                  profunda de cómo funcionan estos elementos y cómo pueden ser
+                  utilizados para mejorar la calidad y la eficiencia del código
+                  en Python.
+                </p>
+                <div class="text-center imagen">
+                  <picture>
+                    <img
+                      src="https://i.ibb.co/h2ddmyG/iteradoresgeneradorescierres.jpg"
+                      class="img-fluid rounded-4"
+                      width="50%"
+                      alt="Iteradores, Generadores y Cierres en Python  "
+                      title="Dominando los conceptos clave de Python"
+                    />
+                    <figcaption>
+                      Iteradores, Generadores y Cierres en Python
+                    </figcaption>
+                  </picture>
+                </div>
               </div>
+
               <!-- Iteradores -->
               <div id="iteradores" class="mt-5">
                 <h2 class="mt-1">Iteradores</h2>
@@ -349,11 +354,7 @@
                 <!-- Ejemplo de Uso Iteradores -->
                 <div>
                   <h3>Ejemplo de Uso Iteradores</h3>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     mi_lista = [1, 2, 3]
                     mi_iterador = iter(mi_lista)  # Convierte la lista en un iterador
@@ -509,9 +510,7 @@
                       generador en Python. El código genera números del 1 al 5,
                       uno a la vez, en lugar de crear toda la lista en memoria.
                     </p>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       def generador_numeros():
                           for numero in range(1, 6):
@@ -568,9 +567,7 @@
                       una lista por comprensión, pero utiliza paréntesis
                       <code>()</code> en lugar de corchetes <code>[]</code>.
                     </p>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       generador = (expresión for elemento in iterable if condición)
                     </code>
@@ -602,9 +599,7 @@
                       Ejemplo de Código Generador Usando Listas por Comprensión
                     </h4>
                     <p>Generar cuadrados de los números del 1 al 5:</p>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       generador = (x**2 for x in range(1, 6))
                       print(generador)  # Salida: que es un objeto generador
@@ -636,9 +631,7 @@
                         generadora</strong
                       >:
                     </p>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Lista de palabras
                       palabras = ["manzana", "banana", "naranja", "uva"]
@@ -799,11 +792,7 @@
                     </li>
                   </ul>
                   <p><strong>Ejemplo básico de cierre</strong>:</p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     def <code>funcion_externa</code>(x):
                         def <code>funcion_interna</code>(y):
@@ -848,11 +837,7 @@
                   <p>
                     <strong>Ejemplo práctico de cierre para un contador</strong>
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     def contador():
                     contador = 0
@@ -926,11 +911,7 @@
                     </li>
                   </ul>
                   <p><strong>Sintaxis básica</strong>:</p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     lambda argumentos: expresión
                   </code>
@@ -945,11 +926,7 @@
                       <span class="fw-bold">Como funciones anónimas</span>: Se
                       usan directamente sin necesidad de asignarlas a un nombre.
                       Por ejemplo:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         resultado = (lambda x, y: x + y)(5, 3)
                         print(resultado)  # Salida: 8
@@ -960,11 +937,7 @@
                       <span class="fw-bold">Asignadas a variables</span>: Se
                       puede asignar a una variable para usarlas como funciones
                       normales.
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         sumar = lambda x, y: x + y
                         print(sumar(10, 20))  # Salida: 30
@@ -976,11 +949,7 @@
                       Son útiles en funciones como <code>map</code>,
                       <code>filter</code> y <code>sorted</code> que aceptan
                       otras funciones como parámetros.
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         numeros = [1, 2, 3, 4]
                         cuadrados = list(map(lambda x: x ** 2, numeros))
@@ -992,11 +961,7 @@
                       <span class="fw-bold">En listas o diccionarios</span>:
                       Pueden ser usadas para transformar o filtrar elementos
                       dinámicamente.
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         palabras = ["python", "lambda", "función"]
                         longitudes = list(map(lambda palabra: len(palabra), palabras))
@@ -1033,11 +998,7 @@
                 <div>
                   <h3>Ejemplo Práctico de Funciones lambda</h3>
                   <p>Ordenar una lista de tuplas por el segundo elemento:</p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     datos = [(1, 'b'), (3, 'a'), (2, 'c')]
                     datos_ordenados = sorted(datos, key=lambda x: x[1])
@@ -1056,11 +1017,7 @@
                       línea sin necesidad de un bloque <code>def</code>. Esto
                       reduce la cantidad de código, haciéndolo más legible en
                       tareas simples.
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         suma = lambda x, y: x + y
                         print(suma(3, 4))  # Salida: 7
@@ -1079,11 +1036,7 @@
                         <li>
                           Ejemplo: En un <code>map</code>, <code>filter</code> o
                           <code>reduce</code>:
-                          <pre
-                            
-                            data-src-status="loaded"
-                            tabindex="0"
-                          >
+                          <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             lista = [1, 2, 3, 4]
                             cuadrados = map(lambda x: x**2, lista)
@@ -1115,11 +1068,7 @@
                         <li>
                           Ejemplo: Ordenar una lista de tuplas por el segundo
                           valor.
-                          <pre
-                            
-                            data-src-status="loaded"
-                            tabindex="0"
-                          >
+                          <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           datos = [(1, 'a'), (3, 'c'), (2, 'b')]
                           datos_ordenados = sorted(datos, key=lambda x: x[1])
@@ -1160,11 +1109,7 @@
                         </li>
                         <li>
                           Ejemplo válido:
-                          <pre
-                            
-                            data-src-status="loaded"
-                            tabindex="0"
-                          >
+                          <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             suma = lambda x, y: x + y
                             print(suma(2, 3))  # Salida: 5
@@ -1173,11 +1118,7 @@
                         </li>
                         <li>
                           Ejemplo inválido:
-                          <pre
-                            
-                            data-src-status="loaded"
-                            tabindex="0"
-                          >
+                          <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             # Esto generará un error porque lambda no permite múltiples líneas
                             operacion = lambda x: (
@@ -1199,11 +1140,7 @@
                         </li>
                         <li>
                           Ejemplo válido con operador ternario:
-                          <pre
-                            
-                            data-src-status="loaded"
-                            tabindex="0"
-                          >
+                          <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             par_o_impar = lambda x: "par" if x % 2 == 0 else "impar"
                             print(par_o_impar(4))  # Salida: "par"
@@ -1212,11 +1149,7 @@
                         </li>
                         <li>
                           Ejemplo inválido:
-                          <pre
-                            
-                            data-src-status="loaded"
-                            tabindex="0"
-                          >
+                          <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             # Esto generará un error porque "for" no es permitido en una lambda
                             sumar_lista = lambda lista: for x in lista: x + 1
@@ -1231,11 +1164,7 @@
                       un nombre interno como las funciones definidas con
                       <code>def</code>. Esto significa que puede ser menos útil
                       para depuración o documentación.
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         multiplicar = lambda x, y: x * y
                         print(multiplicar(2, 3))  # Salida: 6
@@ -1252,11 +1181,7 @@
                         </li>
                         <li>
                           Ejemplo válido con <code>def</code>:
-                          <pre
-                            
-                            data-src-status="loaded"
-                            tabindex="0"
-                          >
+                          <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             def sumar(x: int, y: int) -> int:
                             return x + y
@@ -1279,11 +1204,7 @@
                         </li>
                         <li>
                           Ejemplo con map:
-                          <pre
-                            
-                            data-src-status="loaded"
-                            tabindex="0"
-                          >
+                          <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             numeros = [1, 2, 3, 4]
                             cuadrados = map(lambda x: x**2, numeros)
@@ -1299,11 +1220,7 @@
                       >: No puedes usar la palabra clave return dentro de una
                       lambda, ya que siempre devuelve implícitamente el
                       resultado de la expresión.
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Correcto
                         suma = lambda x, y: x + y
@@ -1328,7 +1245,7 @@
                   iterable de los resultados.
                 </p>
                 <p><strong>Sintaxis</strong>:</p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   map(func, iterable)
                 </code>
@@ -1348,7 +1265,7 @@
                   puede pasar una función anónima para realizar la operación.
                 </p>
                 <p><strong>Ejemplo</strong>:</p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   # Multiplicar cada número de la lista por 2 usando lambda y map
                   numbers = [1, 2, 3, 4, 5]
@@ -1372,7 +1289,7 @@
                   condición.
                 </p>
                 <p><strong>Sintaxis</strong>:</p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   filter(func, iterable)
                 </code>
@@ -1391,7 +1308,7 @@
                   se define una condición anónima para filtrar los elementos.
                 </p>
                 <p><strong>Ejemplo</strong>:</p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   # Filtrar los números impares de la lista usando lambda y filter
                   numbers = [1, 2, 3, 4, 5, 6, 7]
@@ -1411,65 +1328,59 @@
           </article>
           <!--  Iteradores, Generadores y Cierres en Python  -->
           <!-- -------------------------------- comentarios -------------------------------- -->
-<article
-            class="row pt-5"
-            id="comment">
+          <article class="row pt-5" id="comments">
             <br />
             <h2>COMENTARIOS</h2>
             <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del
-              formulario disponible para este propósito.
+              Si tiene alguna inquietud, duda o ha encontrado algún error, por
+              favor infórmelo a través del formulario disponible para este
+              propósito.
             </p>
             <div class="d-flex justify-content-center">
               <form
                 action="https://formspree.io/f/mdkdawkg"
                 method="POST"
-                id="myForm">
-                <div class="input-group d-flex justify-content-center flex-column">
-                  <label
-                    for="name"
-                    class="pe-2"
-                    >Nombre:</label
-                  >
+                id="myForm"
+              >
+                <div
+                  class="input-group d-flex justify-content-center flex-column"
+                >
+                  <label for="name" class="pe-2">Nombre:</label>
                   <input
                     type="text"
                     name="name"
                     id="name"
                     placeholder="User"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="email"
-                    class="pe-2"
-                    >Email:</label
-                  >
+                    required="required"
+                  />
+                  <label for="email" class="pe-2">Email:</label>
                   <input
                     type="email"
                     name="email"
                     id="email"
                     placeholder="user@mail.com"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="message"
-                    class="pe-2"
-                    >Mensaje:</label
-                  >
+                    required="required"
+                  />
+                  <label for="message" class="pe-2">Mensaje:</label>
                   <textarea
                     name="message"
                     id="message"
                     cols="30"
                     rows="5"
                     placeholder="Su comentario..."
-                    class="rounded rounded-3"></textarea>
+                    class="rounded rounded-3"
+                  ></textarea>
                   <input
                     class="btn btn-outline-light my-3 border rounded-pill border-2"
                     type="submit"
-                    value="Enviar..." />
+                    value="Enviar..."
+                  />
                 </div>
                 <p>
-                  La política de privacidad, y los términos y condiciones están disponibles en el formulario
-                  de contacto.
+                  La política de privacidad, y los términos y condiciones están
+                  disponibles en el formulario de contacto.
                 </p>
               </form>
             </div>
@@ -1483,6 +1394,9 @@
         <h1>En Este Artículo</h1>
         <ul class="list-group">
           <li class="list-group-item">
+            <a href="#introduccion">Introducción</a>
+          </li>
+          <li class="list-group-item">
             <a href="#iteradores">Iteradores</a>
           </li>
           <li class="list-group-item">
@@ -1493,6 +1407,9 @@
           </li>
           <li class="list-group-item">
             <a href="#laFuncionLambda">La Función lambda</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#comments">Comentarios</a>
           </li>
         </ul>
       </aside>

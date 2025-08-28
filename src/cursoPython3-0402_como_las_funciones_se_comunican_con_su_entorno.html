@@ -45,7 +45,7 @@
     <!-- fin Open Graph data -->
 
     <!-- Twitter cards -->
-    <meta name="twitter:card"  content="summary" />
+    <meta name="twitter:card" content="summary" />
     <meta
       name="twitter:title"
       content="Cómo las funciones se comunican con su entorno Python 3 - Ing. Eduardo Herrera Forero."
@@ -166,11 +166,11 @@
     <!-- Barra deNavegación -->
 
     <!-- -------------------------------- principal -------------------------------- -->
-    <div class="row col mx-1">
+    <div class="container-fluid" id="introduccion">
       <main class="pt-5 col-lg-9">
         <section class="pb-3">
           <!--  Cómo las funciones se comunican con su entorno en Python  -->
-                    <article
+          <article
             class="row border-1 border-bottom pb-3"
             data-bs-spy="scroll"
             data-bs-target="#list-example"
@@ -182,27 +182,32 @@
                   Cómo las funciones se comunican con su entorno en Python
                 </h1>
               </header>
-              <p>
-                En este apartado se explorarán las funciones en Python,
-                profundizando en la creación de funciones con y sin parámetros.
-                Se proporcionarán ejemplos prácticos de funciones que reciben
-                uno, dos o tres argumentos, y se explicará el proceso de pasar
-                valores a estas funciones.
-              </p>
-              <div class="text-center imagen">
-                <picture>
-                  <img
-                    src="https://i.ibb.co/PhTWcSp/funcionesentorno.jpg"
-                    class="img-fluid rounded-4"
-                    width="50%"
-                    alt="Cómo las funciones se comunican con su entorno en Python  "
-                    title="Tutorial de Funciones en Python: Sintaxis, Parámetros y Argumentos"
-                  />
-                  <figcaption>
-                    Cómo las funciones se comunican con su entorno en Python
-                  </figcaption>
-                </picture>
+              <!-- Introducción -->
+              <div class="mt-5">
+                <h2>Introducción</h2>
+                <p>
+                  En este apartado se explorarán las funciones en Python,
+                  profundizando en la creación de funciones con y sin
+                  parámetros. Se proporcionarán ejemplos prácticos de funciones
+                  que reciben uno, dos o tres argumentos, y se explicará el
+                  proceso de pasar valores a estas funciones.
+                </p>
+                <div class="text-center imagen">
+                  <picture>
+                    <img
+                      src="https://i.ibb.co/PhTWcSp/funcionesentorno.jpg"
+                      class="img-fluid rounded-4"
+                      width="50%"
+                      alt="Cómo las funciones se comunican con su entorno en Python  "
+                      title="Tutorial de Funciones en Python: Sintaxis, Parámetros y Argumentos"
+                    />
+                    <figcaption>
+                      Cómo las funciones se comunican con su entorno en Python
+                    </figcaption>
+                  </picture>
+                </div>
               </div>
+              
               <!-- Parámetros y Argumentos -->
               <div id="parametrosyArgumentos" class="mt-5">
                 <h2 class="mt-1">Parámetros y Argumentos</h2>
@@ -221,11 +226,7 @@
                     se llame. Los parámetros se especifican dentro de los
                     paréntesis en la definición de la función.
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     def saludar(nombre, edad):
                     print(f"Hola, {nombre}. Tienes {edad} años.")
@@ -245,11 +246,7 @@
                     función cuando se llama. Estos valores se asignan a los
                     parámetros de la función en el orden en que se proporcionan.
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     saludar("Juan", 30)
                   </code>
@@ -273,7 +270,7 @@
                   respectivo parámetro según su posición, nos referimos a este
                   método como argumentos posicionales.
                 </p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   def suma(a, b):
                     return a + b
@@ -292,7 +289,7 @@
                   mediante un nombre específico en lugar de su ubicación en la
                   función.
                 </p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   def saludar(nombre, edad):
                   print(f"Hola, {nombre}. Tienes {edad} años.")
@@ -316,7 +313,7 @@
                   ubicados antes que los argumentos nombrados (o de palabra
                   clave).
                 </p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   def adding(a, b, c):
                       print(a, "+", b, "+", c, "=", a + b + c)
@@ -326,7 +323,7 @@
                   La función puede ser invocada de la siguiente manera con
                   argumentos posicionales:
                 </p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   adding(1, 2, 3)  # Salida: 1 + 2 + 3 = 6
                 </code>
@@ -336,7 +333,7 @@
                   convocatoria mediante argumentos nombrados, tal como se
                   ilustra en el ejemplo siguiente:
                 </p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   adding(c = 1, a = 2, b = 3) # Salida: 1 + 2 + 3 = 6
                 </code>
@@ -345,7 +342,7 @@
                   Para finalizar, es posible combinar ambas formas de llamada a
                   la función, tal como se muestra a continuación:
                 </p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   adding(3, c = 1, b = 2)  # Salida: 3 + 2 + 1 = 6
                 </code>
@@ -361,7 +358,7 @@
                   asignación repetida del parámetro <code>a</code>, lo que
                   provoca un error de sintaxis.
                 </p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   adding(3, a = 1, b = 2)   # Error
                   </code>
@@ -381,7 +378,7 @@
                   una función.
                 </p>
                 <p>Ejemplos para entender cómo funciona:</p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   # Ejemplo básico de parámetro por defecto
                   def saludar(nombre="Mundo"):
@@ -433,9 +430,7 @@
                         tupla.
                       </li>
                     </ul>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       def ejemplo(*args):
                           for arg in args:
@@ -459,9 +454,7 @@
                         <code>**kwargs</code> (para argumentos con nombre).
                       </li>
                     </ul>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       def combinar_args(nombre, *args):
                           print(f"Nombre: {nombre}")
@@ -478,9 +471,7 @@
                   <div>
                     <h4>Ejemplos Prácticos</h4>
                     <p class="fw-bold">Suma de Números</p>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       def suma(*numeros):
                           return sum(numeros)
@@ -491,9 +482,7 @@
                     <p class="fw-bold">
                       Uso en Funciones que Aceptan Operaciones Variadas
                     </p>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       def imprimir_informacion(*datos):
                       for i, dato in enumerate(datos, 1):
@@ -528,9 +517,7 @@
                       <code>**kwargs</code> para manejar tanto argumentos
                       posicionales como argumentos con nombre:
                     </p>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       def ejemplo_mixto(*args, **kwargs):
                           print("Posicionales:", args)
@@ -551,9 +538,7 @@
                       desempaquetar listas o tuplas como argumentos de una
                       función:
                     </p>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       def suma(a, b, c):
                           return a + b + c
@@ -579,9 +564,7 @@
                   <!-- Sintaxis básica -->
                   <div>
                     <h4>Sintaxis básica</h4>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       def funcion_ejemplo(**kwargs):
                           for clave, valor in kwargs.items():
@@ -596,11 +579,7 @@
                     <ul>
                       <li>
                         Llamada a la función con argumentos variables:
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           funcion_ejemplo(nombre="Juan", edad=25, ciudad="Bogotá")
                           # salida: nombre: Juan
@@ -612,11 +591,7 @@
                       <li>
                         Uso combinado con <code>*args</code> y parámetros
                         normales:
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           def ejemplo_combinado(parametro_fijo, *args, **kwargs):
                               print(f"Fijo: {parametro_fijo}")
@@ -639,11 +614,7 @@
                       <li>
                         Personalización de funciones: Permite escribir funciones
                         genéricas que pueden aceptar diferentes configuraciones.
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                             def saludar(**kwargs):
                               if 'nombre' in kwargs:
@@ -660,11 +631,7 @@
                       <li>
                         Construcción de objetos dinámicos: Se usa para
                         inicializar objetos con atributos variables.
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             class Persona:
                             def __init__(self, **kwargs):
@@ -709,65 +676,59 @@
           <!--  Cómo las funciones se comunican con su entorno en Python  -->
 
           <!-- -------------------------------- comentarios -------------------------------- -->
-<article
-            class="row pt-5"
-            id="comment">
+          <article class="row pt-5" id="comments">
             <br />
             <h2>COMENTARIOS</h2>
             <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del
-              formulario disponible para este propósito.
+              Si tiene alguna inquietud, duda o ha encontrado algún error, por
+              favor infórmelo a través del formulario disponible para este
+              propósito.
             </p>
             <div class="d-flex justify-content-center">
               <form
                 action="https://formspree.io/f/mdkdawkg"
                 method="POST"
-                id="myForm">
-                <div class="input-group d-flex justify-content-center flex-column">
-                  <label
-                    for="name"
-                    class="pe-2"
-                    >Nombre:</label
-                  >
+                id="myForm"
+              >
+                <div
+                  class="input-group d-flex justify-content-center flex-column"
+                >
+                  <label for="name" class="pe-2">Nombre:</label>
                   <input
                     type="text"
                     name="name"
                     id="name"
                     placeholder="User"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="email"
-                    class="pe-2"
-                    >Email:</label
-                  >
+                    required="required"
+                  />
+                  <label for="email" class="pe-2">Email:</label>
                   <input
                     type="email"
                     name="email"
                     id="email"
                     placeholder="user@mail.com"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="message"
-                    class="pe-2"
-                    >Mensaje:</label
-                  >
+                    required="required"
+                  />
+                  <label for="message" class="pe-2">Mensaje:</label>
                   <textarea
                     name="message"
                     id="message"
                     cols="30"
                     rows="5"
                     placeholder="Su comentario..."
-                    class="rounded rounded-3"></textarea>
+                    class="rounded rounded-3"
+                  ></textarea>
                   <input
                     class="btn btn-outline-light my-3 border rounded-pill border-2"
                     type="submit"
-                    value="Enviar..." />
+                    value="Enviar..."
+                  />
                 </div>
                 <p>
-                  La política de privacidad, y los términos y condiciones están disponibles en el formulario
-                  de contacto.
+                  La política de privacidad, y los términos y condiciones están
+                  disponibles en el formulario de contacto.
                 </p>
               </form>
             </div>
@@ -780,6 +741,9 @@
       <aside class="col-lg-3 d-none d-lg-block pt-5">
         <h1>En Este Artículo</h1>
         <ul class="list-group">
+          <li class="list-group-item">
+            <a href="#introduccion">Introducción</a>
+          </li>
           <li class="list-group-item">
             <a href="#parametrosyArgumentos">Parámetros y Argumentos</a>
           </li>
@@ -803,6 +767,9 @@
           </li>
           <li class="list-group-item">
             <a href="#parametrosVariables">Parámetros Variables</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#comments">Comentarios</a>
           </li>
         </ul>
       </aside>

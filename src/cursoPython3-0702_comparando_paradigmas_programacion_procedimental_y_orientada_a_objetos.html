@@ -45,7 +45,7 @@
     <!-- fin Open Graph data -->
 
     <!-- Twitter cards -->
-    <meta name="twitter:card"  content="summary" />
+    <meta name="twitter:card" content="summary" />
     <meta
       name="twitter:title"
       content="Comparando Paradigmas: Programación Procedimental y Orientada a Objetos Python 3 - Ing. Eduardo Herrera Forero."
@@ -166,11 +166,11 @@
     <!-- Barra deNavegación -->
 
     <!-- -------------------------------- principal -------------------------------- -->
-    <div class="row col mx-1">
+    <div class="container-fluid" id="introduccion">
       <main class="pt-5 col-lg-9">
         <section class="pb-3">
           <!--  Comparando Paradigmas: Programación Procedimental y Orientada a Objetos en Python  -->
-                    <article
+          <article
             class="row border-1 border-bottom pb-3"
             data-bs-spy="scroll"
             data-bs-target="#list-example"
@@ -183,31 +183,36 @@
                   a Objetos en Python
                 </h1>
               </header>
-              <p>
-                Las diferencias y similitudes entre los paradigmas de
-                programación procedimental y orientado a objetos se revelan con
-                claridad mediante un análisis comparativo utilizando Python como
-                lenguaje de referencia. El estudio profundiza en sus
-                características distintivas, explorando las ventajas y
-                desventajas de cada enfoque, mediante ejemplos prácticos que
-                ilustran cómo abordan la resolución de problemas
-                computacionales.
-              </p>
-              <div class="text-center imagen">
-                <picture>
-                  <img
-                    src="https://i.ibb.co/xJ6xjwd/procedimentalvspoo.jpg"
-                    class="img-fluid rounded-4"
-                    width="90%"
-                    alt="Comparando Paradigmas: Programación Procedimental y Orientada a Objetos en Python  "
-                    title="Eligir el mejor paradigma de programación para el proyecto"
-                  />
-                  <figcaption>
-                    Comparando Paradigmas: Programación Procedimental y
-                    Orientada a Objetos en Python
-                  </figcaption>
-                </picture>
+              <!-- Introducción -->
+              <div class="mt-5">
+                <h2>Introducción</h2>
+                <p>
+                  Las diferencias y similitudes entre los paradigmas de
+                  programación procedimental y orientado a objetos se revelan
+                  con claridad mediante un análisis comparativo utilizando
+                  Python como lenguaje de referencia. El estudio profundiza en
+                  sus características distintivas, explorando las ventajas y
+                  desventajas de cada enfoque, mediante ejemplos prácticos que
+                  ilustran cómo abordan la resolución de problemas
+                  computacionales.
+                </p>
+                <div class="text-center imagen">
+                  <picture>
+                    <img
+                      src="https://i.ibb.co/xJ6xjwd/procedimentalvspoo.jpg"
+                      class="img-fluid rounded-4"
+                      width="90%"
+                      alt="Comparando Paradigmas: Programación Procedimental y Orientada a Objetos en Python  "
+                      title="Eligir el mejor paradigma de programación para el proyecto"
+                    />
+                    <figcaption>
+                      Comparando Paradigmas: Programación Procedimental y
+                      Orientada a Objetos en Python
+                    </figcaption>
+                  </picture>
+                </div>
               </div>
+
               <!-- ¿Qué es una Pila? -->
               <div id="QueEsUnaPila" class="mt-5">
                 <h2 class="mt-1">¿Qué es una Pila?</h2>
@@ -334,11 +339,7 @@
                   <h3>
                     Implementación Procedimental de Estructuras de una Pila
                   </h3>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     # Implementación de la pila con enfoque procedimental
                     # Crear una pila vacía
@@ -657,11 +658,7 @@
                     Implementación Orientada a Objetos de Estructuras de una
                     Pila
                   </h3>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     class Pila:
                         def __init__(self):
@@ -764,65 +761,59 @@
           </article>
           <!--  Comparando Paradigmas: Programación Procedimental y Orientada a Objetos en Python  -->
           <!-- -------------------------------- comentarios -------------------------------- -->
-<article
-            class="row pt-5"
-            id="comment">
+          <article class="row pt-5" id="comments">
             <br />
             <h2>COMENTARIOS</h2>
             <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del
-              formulario disponible para este propósito.
+              Si tiene alguna inquietud, duda o ha encontrado algún error, por
+              favor infórmelo a través del formulario disponible para este
+              propósito.
             </p>
             <div class="d-flex justify-content-center">
               <form
                 action="https://formspree.io/f/mdkdawkg"
                 method="POST"
-                id="myForm">
-                <div class="input-group d-flex justify-content-center flex-column">
-                  <label
-                    for="name"
-                    class="pe-2"
-                    >Nombre:</label
-                  >
+                id="myForm"
+              >
+                <div
+                  class="input-group d-flex justify-content-center flex-column"
+                >
+                  <label for="name" class="pe-2">Nombre:</label>
                   <input
                     type="text"
                     name="name"
                     id="name"
                     placeholder="User"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="email"
-                    class="pe-2"
-                    >Email:</label
-                  >
+                    required="required"
+                  />
+                  <label for="email" class="pe-2">Email:</label>
                   <input
                     type="email"
                     name="email"
                     id="email"
                     placeholder="user@mail.com"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="message"
-                    class="pe-2"
-                    >Mensaje:</label
-                  >
+                    required="required"
+                  />
+                  <label for="message" class="pe-2">Mensaje:</label>
                   <textarea
                     name="message"
                     id="message"
                     cols="30"
                     rows="5"
                     placeholder="Su comentario..."
-                    class="rounded rounded-3"></textarea>
+                    class="rounded rounded-3"
+                  ></textarea>
                   <input
                     class="btn btn-outline-light my-3 border rounded-pill border-2"
                     type="submit"
-                    value="Enviar..." />
+                    value="Enviar..."
+                  />
                 </div>
                 <p>
-                  La política de privacidad, y los términos y condiciones están disponibles en el formulario
-                  de contacto.
+                  La política de privacidad, y los términos y condiciones están
+                  disponibles en el formulario de contacto.
                 </p>
               </form>
             </div>
@@ -835,6 +826,9 @@
       <aside class="col-lg-3 d-none d-lg-block pt-5">
         <h1>En Este Artículo</h1>
         <ul class="list-group">
+          <li class="list-group-item">
+            <a href="#introduccion">Introducción</a>
+          </li>
           <li class="list-group-item">
             <a href="#QueEsUnaPila">¿Qué es una Pila?</a>
           </li>
@@ -854,6 +848,9 @@
             <a href="#laPila-ElEnfoqueOrientadoAObjetos"
               >La Pila: El Enfoque Orientado a Objetos</a
             >
+          </li>
+          <li class="list-group-item">
+            <a href="#comments">Comentarios</a>
           </li>
         </ul>
       </aside>

@@ -45,7 +45,7 @@
     <!-- fin Open Graph data -->
 
     <!-- Twitter cards -->
-    <meta name="twitter:card"  content="summary" />
+    <meta name="twitter:card" content="summary" />
     <meta
       name="twitter:title"
       content="Interacción con el Usuario Python 3 - Ing. Eduardo Herrera Forero."
@@ -165,11 +165,11 @@
     <!-- Barra deNavegación -->
 
     <!-- -------------------------------- principal -------------------------------- -->
-    <div class="row col mx-1">
+    <div class="container-fluid" id="introduccion">
       <main class="pt-5 col-lg-9">
         <section class="pb-3">
           <!--  Interacción con el Usuario en Python  -->
-                    <article
+          <article
             class="row border-1 border-bottom pb-3"
             data-bs-spy="scroll"
             data-bs-target="#list-example"
@@ -179,30 +179,36 @@
               <header>
                 <h1>Interacción con el Usuario en Python</h1>
               </header>
-              <p>
-                La función <code>input()</code> en Python es una herramienta
-                fundamental para interactuar con el usuario. Permite que el
-                programa solicite y reciba información directamente del teclado.
-              </p>
-              <p>
-                Cuando se llama a esta función, el programa se detiene y espera
-                a que el usuario ingrese algún dato. Una vez que el usuario
-                presiona
-                <kbd>Enter</kbd>, el valor ingresado se devuelve como una cadena
-                de texto (string).
-              </p>
-              <div class="text-center imagen">
-                <picture>
-                  <img
-                    src="https://i.ibb.co/wNwH0x3/input.jpg"
-                    class="img-fluid rounded-4"
-                    width="50%"
-                    alt="Función input() en Python"
-                    title="Diagrama del funcionamiento de la función input() en Python"
-                  />
-                  <figcaption>Función input() en Python</figcaption>
-                </picture>
+              <!-- Introducción -->
+              <div class="mt-5">
+                <h2>Introducción</h2>
+                <p>
+                  La función <code>input()</code> en Python es una herramienta
+                  fundamental para interactuar con el usuario. Permite que el
+                  programa solicite y reciba información directamente del
+                  teclado.
+                </p>
+                <p>
+                  Cuando se llama a esta función, el programa se detiene y
+                  espera a que el usuario ingrese algún dato. Una vez que el
+                  usuario presiona
+                  <kbd>Enter</kbd>, el valor ingresado se devuelve como una
+                  cadena de texto (string).
+                </p>
+                <div class="text-center imagen">
+                  <picture>
+                    <img
+                      src="https://i.ibb.co/wNwH0x3/input.jpg"
+                      class="img-fluid rounded-4"
+                      width="50%"
+                      alt="Función input() en Python"
+                      title="Diagrama del funcionamiento de la función input() en Python"
+                    />
+                    <figcaption>Función input() en Python</figcaption>
+                  </picture>
+                </div>
               </div>
+              
               <!-- La función input() -->
               <div id="laFuncionInput" class="mt-5">
                 <h2 class="mt-1">La función input()</h2>
@@ -220,7 +226,6 @@
                 </p>
                 <p>Sintaxis:</p>
                 <pre
-                  
                   data-src-status="loaded"
                   tabindex="0"
                 ><code class="language-python" data-prismjs-copy="Copy">
@@ -239,7 +244,6 @@
                 </ul>
                 <p>Ejemplo:</p>
                 <pre
-                  
                   data-src-status="loaded"
                   tabindex="0"
                 ><code class="language-python" data-prismjs-copy="Copy">
@@ -332,7 +336,8 @@
                 <ul>
                   <li>
                     Para valores enteros:
-                                        <pre                      data-src-status="loaded"
+                    <pre
+                      data-src-status="loaded"
                       tabindex="0"
                     ><code class="language-python" data-prismjs-copy="Copy">
                 edad = int(input("¿Cuál es tu edad? "))
@@ -340,7 +345,8 @@
                   </li>
                   <li>
                     Para valores flotantes:
-                                        <pre                      data-src-status="loaded"
+                    <pre
+                      data-src-status="loaded"
                       tabindex="0"
                     ><code class="language-python" data-prismjs-copy="Copy">
                     leg_a = float(input("Ingresa la longitud del primer cateto: "))
@@ -365,7 +371,6 @@
                   juntar varios fragmentos de texto en un mismo resultado.
                 </p>
                 <pre
-                  
                   data-src-status="loaded"
                   tabindex="0"
                 ><code class="language-python" data-prismjs-copy="Copy">
@@ -380,7 +385,8 @@
                     <span class="fw-bold">Replicación de cadenas</span>: En este
                     caso, el operador <code>*</code> permite repetir la cadena
                     un número específico de veces.
-                                        <pre                      data-src-status="loaded"
+                    <pre
+                      data-src-status="loaded"
                       tabindex="0"
                     ><code class="language-python" data-prismjs-copy="Copy">
                   texto = "Hola " * 3  # texto será "Hola Hola Hola "
@@ -390,7 +396,8 @@
                     <span class="fw-bold">Replicación de listas</span>: En este
                     caso el operador <code>*</code> permite replicar el
                     contenido de la cadena.
-                                        <pre                      data-src-status="loaded"
+                    <pre
+                      data-src-status="loaded"
                       tabindex="0"
                     ><code class="language-python" data-prismjs-copy="Copy">
                   lista = [1, 2, 3] * 2  # lista será [1, 2, 3, 1, 2, 3]
@@ -412,7 +419,6 @@
                 </p>
                 <p>Sintaxis:</p>
                 <pre
-                  
                   data-src-status="loaded"
                   tabindex="0"
                 ><code class="language-python" data-prismjs-copy="Copy">
@@ -429,7 +435,8 @@
                 <ul>
                   <li>
                     <span class="fw-bold">Convertir un número a cadena</span>:
-                                        <pre                      data-src-status="loaded"
+                    <pre
+                      data-src-status="loaded"
                       tabindex="0"
                     ><code class="language-python" data-prismjs-copy="Copy">
                     numero = 42
@@ -439,7 +446,8 @@
                   </li>
                   <li>
                     <span class="fw-bold">Convertir un booleano a cadena</span>:
-                                        <pre                      data-src-status="loaded"
+                    <pre
+                      data-src-status="loaded"
                       tabindex="0"
                     ><code class="language-python" data-prismjs-copy="Copy">
                     verdad = True
@@ -449,7 +457,8 @@
                   </li>
                   <li>
                     <span class="fw-bold">Convertir una lista a cadena</span>:
-                                        <pre                      data-src-status="loaded"
+                    <pre
+                      data-src-status="loaded"
                       tabindex="0"
                     ><code class="language-python" data-prismjs-copy="Copy">
                     lista = [1, 2, 3]
@@ -461,7 +470,8 @@
                     <span class="fw-bold"
                       >Convertir un diccionario a cadena</span
                     >:
-                                        <pre                      data-src-status="loaded"
+                    <pre
+                      data-src-status="loaded"
                       tabindex="0"
                     ><code class="language-python" data-prismjs-copy="Copy">
                     diccionario = {'nombre': 'Juan', 'edad': 30}
@@ -476,7 +486,6 @@
                   diferentes tipos de datos en una cadena. Por ejemplo:
                 </p>
                 <pre
-                  
                   data-src-status="loaded"
                   tabindex="0"
                 ><code class="language-python" data-prismjs-copy="Copy">
@@ -502,7 +511,6 @@
                   ejemplo, clases).
                 </p>
                 <pre
-                  
                   data-src-status="loaded"
                   tabindex="0"
                 ><code class="language-python" data-prismjs-copy="Copy">
@@ -550,65 +558,59 @@
           <!--  Interacción con el Usuario en Python  -->
 
           <!-- -------------------------------- comentarios -------------------------------- -->
-<article
-            class="row pt-5"
-            id="comment">
+          <article class="row pt-5" id="comments">
             <br />
             <h2>COMENTARIOS</h2>
             <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del
-              formulario disponible para este propósito.
+              Si tiene alguna inquietud, duda o ha encontrado algún error, por
+              favor infórmelo a través del formulario disponible para este
+              propósito.
             </p>
             <div class="d-flex justify-content-center">
               <form
                 action="https://formspree.io/f/mdkdawkg"
                 method="POST"
-                id="myForm">
-                <div class="input-group d-flex justify-content-center flex-column">
-                  <label
-                    for="name"
-                    class="pe-2"
-                    >Nombre:</label
-                  >
+                id="myForm"
+              >
+                <div
+                  class="input-group d-flex justify-content-center flex-column"
+                >
+                  <label for="name" class="pe-2">Nombre:</label>
                   <input
                     type="text"
                     name="name"
                     id="name"
                     placeholder="User"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="email"
-                    class="pe-2"
-                    >Email:</label
-                  >
+                    required="required"
+                  />
+                  <label for="email" class="pe-2">Email:</label>
                   <input
                     type="email"
                     name="email"
                     id="email"
                     placeholder="user@mail.com"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="message"
-                    class="pe-2"
-                    >Mensaje:</label
-                  >
+                    required="required"
+                  />
+                  <label for="message" class="pe-2">Mensaje:</label>
                   <textarea
                     name="message"
                     id="message"
                     cols="30"
                     rows="5"
                     placeholder="Su comentario..."
-                    class="rounded rounded-3"></textarea>
+                    class="rounded rounded-3"
+                  ></textarea>
                   <input
                     class="btn btn-outline-light my-3 border rounded-pill border-2"
                     type="submit"
-                    value="Enviar..." />
+                    value="Enviar..."
+                  />
                 </div>
                 <p>
-                  La política de privacidad, y los términos y condiciones están disponibles en el formulario
-                  de contacto.
+                  La política de privacidad, y los términos y condiciones están
+                  disponibles en el formulario de contacto.
                 </p>
               </form>
             </div>
@@ -622,6 +624,9 @@
         <div>
           <h1>En Este Artículo</h1>
           <ul class="list-group">
+            <li class="list-group-item">
+              <a href="#introduccion">Introducción</a>
+            </li>
             <li class="list-group-item">
               <a href="#laFuncionInput">La función input()</a>
             </li>
@@ -645,6 +650,9 @@
               <a href="#funcióndeVerificacióndeTipo"
                 >Función de Verificación de Tipo</a
               >
+            </li>
+            <li class="list-group-item">
+              <a href="#comments">Comentarios</a>
             </li>
           </ul>
         </div>

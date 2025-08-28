@@ -45,7 +45,7 @@
     <!-- fin Open Graph data -->
 
     <!-- Twitter cards -->
-    <meta name="twitter:card"  content="summary" />
+    <meta name="twitter:card" content="summary" />
     <meta
       name="twitter:title"
       content="El Módulo datetime, Funciones para Manejo de la Hora y la Fecha Python 3 - Ing. Eduardo Herrera Forero."
@@ -166,11 +166,11 @@
     <!-- Barra deNavegación -->
 
     <!-- -------------------------------- principal -------------------------------- -->
-    <div class="row col mx-1">
+    <div class="container-fluid" id="introduccion">
       <main class="pt-5 col-lg-9">
         <section class="pb-3">
           <!--  El Módulo datetime, Funciones para Manejo de la Hora y la Fecha en Python  -->
-                    <article
+          <article
             class="row border-1 border-bottom pb-3"
             data-bs-spy="scroll"
             data-bs-target="#list-example"
@@ -183,32 +183,37 @@
                   Fecha en Python
                 </h1>
               </header>
-              <p>
-                El módulo <code>datetime</code> de Python es una herramienta
-                poderosa y versátil que permite a los desarrolladores trabajar
-                con fechas y horas de manera eficiente. Este documento explora
-                las principales funcionalidades del módulo, incluyendo la
-                creación de objetos de fecha y hora, la manipulación de estos
-                objetos y la realización de operaciones comunes como la
-                comparación y el formateo. A través de ejemplos prácticos, se
-                ilustrará cómo utilizar este módulo para resolver problemas
-                cotidianos relacionados con el tiempo.
-              </p>
-              <div class="text-center imagen">
-                <picture>
-                  <img
-                    src="https://i.ibb.co/j3d9mCK/modulodatetime.jpg"
-                    class="img-fluid rounded-4"
-                    width="60%"
-                    alt="El Módulo datetime, Funciones para Manejo de la Hora y la Fecha en Python  "
-                    title="Dominando el Módulo datetime de Python"
-                  />
-                  <figcaption>
-                    El Módulo <code>datetime</code>, Funciones para Manejo de la
-                    Hora y la Fecha en Python.
-                  </figcaption>
-                </picture>
+              <!-- Introducción -->
+              <div class="mt-5">
+                <h2>Introducción</h2>
+                <p>
+                  El módulo <code>datetime</code> de Python es una herramienta
+                  poderosa y versátil que permite a los desarrolladores trabajar
+                  con fechas y horas de manera eficiente. Este documento explora
+                  las principales funcionalidades del módulo, incluyendo la
+                  creación de objetos de fecha y hora, la manipulación de estos
+                  objetos y la realización de operaciones comunes como la
+                  comparación y el formateo. A través de ejemplos prácticos, se
+                  ilustrará cómo utilizar este módulo para resolver problemas
+                  cotidianos relacionados con el tiempo.
+                </p>
+                <div class="text-center imagen">
+                  <picture>
+                    <img
+                      src="https://i.ibb.co/j3d9mCK/modulodatetime.jpg"
+                      class="img-fluid rounded-4"
+                      width="60%"
+                      alt="El Módulo datetime, Funciones para Manejo de la Hora y la Fecha en Python  "
+                      title="Dominando el Módulo datetime de Python"
+                    />
+                    <figcaption>
+                      El Módulo <code>datetime</code>, Funciones para Manejo de
+                      la Hora y la Fecha en Python.
+                    </figcaption>
+                  </picture>
+                </div>
               </div>
+
               <!-- Introducción al Módulo datetime -->
               <div id="introduccionAlModuloDatetime" class="mt-5">
                 <h2 class="mt-1">Introducción al Módulo datetime</h2>
@@ -250,9 +255,7 @@
                   <li>
                     <span class="fw-bold"><code>date(año, mes, día)</code></span
                     >: Crea una fecha (solo contiene año, mes y día).
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       from datetime import datetime
                       fecha = date(2024, 12, 19)
@@ -267,9 +270,7 @@
                       ></span
                     >: Crea una hora (solo contiene hora, minuto, segundo y
                     opcionalmente microsegundos).
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       from datetime import time
                       hora = time(15, 30, 45)
@@ -284,9 +285,7 @@
                         microsegundo</code
                       >)</span
                     >: Crea una combinación de fecha y hora.
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       from datetime import datetime
                       fecha_hora = datetime(2024, 12, 19, 15, 48, 45)
@@ -302,9 +301,7 @@
                       ></span
                     >: Devuelve un nuevo objeto datetime con los atributos
                     especificados reemplazados.
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       from datetime import datetime
                       # Crear una fecha y hora
@@ -323,9 +320,7 @@
                     en una cadena con un formato de fecha y hora legible por
                     humanos. Si no se proporciona un valor de tiempo, la función
                     devuelve la fecha y hora actuales del sistema.
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import time
                       # Ejemplo: 1000000000 segundos desde el Epoch
@@ -343,9 +338,7 @@
                   <li>
                     <span class="fw-bold"><code>datetime.now()</code></span
                     >: Devuelve la fecha y hora actual.
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       from datetime import datetime
                       now = datetime.now()
@@ -356,9 +349,7 @@
                   <li>
                     <span class="fw-bold"><code>date.today()</code></span
                     >: Devuelve solo la fecha actual.
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       from datetime import date
                       today = date.today()
@@ -371,9 +362,7 @@
                       ><code>datetime.now(timezone.utc)</code></span
                     >: Devuelve la fecha y hora actual en UTC (Tiempo Universal
                     Coordinado).
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       from datetime import datetime, timezone
                       print("Hora actual en UTC:")
@@ -397,9 +386,7 @@
                     <span class="fw-bold"><code>strftime(formato)</code></span
                     >: Convierte un objeto <code>datetime</code>
                     a una cadena de texto en un formato específico.
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       from datetime import datetime
                       # Obtener la fecha y hora actual
@@ -442,9 +429,7 @@
                       ><code>strptime(cadena, formato)</code></span
                     >: Convierte una cadena de texto a un objeto
                     <code>datetime</code>.
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       from datetime import datetime
                       texto = "2024-12-19 19:08:08"
@@ -470,9 +455,7 @@
                       ></span
                     >: Representa un cambio en el tiempo, útil para sumar o
                     restar.
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       from datetime import datetime, timedelta
                       # Obtener la fecha y hora actual
@@ -486,9 +469,7 @@
                   </li>
                   <li>
                     Restar dos fechas u horas devuelve un timedelta.
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   diferencia = nueva_fecha - fecha_hora
                   print(diferencia)  # Salida: 5 days, 3:00:00
@@ -511,9 +492,7 @@
                       ><code>year</code>, <code>month</code>,
                       <code>day</code></span
                     >: Obtienen el año, mes o día.
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       from datetime import datetime, timedelta
                       # Obtener la fecha y hora actual
@@ -529,9 +508,7 @@
                       ><code>hour</code>, <code>minute</code>,
                       <code>second</code>, <code>microsecond</code></span
                     >: Obtienen la hora, minuto, segundo o microsegundo.
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       from datetime import datetime, timedelta
                       # Obtener la fecha y hora actual
@@ -551,9 +528,7 @@
                     <span class="fw-bold"><code>isoweekday()</code></span
                     >: Devuelve el día de la semana como un entero (lunes=1,
                     domingo=7).
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       from datetime import datetime, timedelta
                       # Obtener la fecha y hora actual
@@ -573,9 +548,7 @@
                   <li>
                     <span class="fw-bold">datetime.timezone</span>: Define un
                     objeto de zona horaria.
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       from datetime import datetime, timezone, timedelta
                       zona = timezone(timedelta(hours=-5))  # Zona horaria UTC-5
@@ -587,9 +560,7 @@
                   <li>
                     <span class="fw-bold">astimezone(zona)</span>: Convierte un
                     objeto datetime a otra zona horaria.
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       from datetime import datetime, timezone, timedelta
                       zona = timezone(timedelta(hours=-5))  # Zona horaria UTC-5
@@ -629,7 +600,7 @@
                     >: La resolución de timedelta (1 microsegundo)
                   </li>
                 </ul>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   from datetime import datetime, timedelta
                   # Mínimo y máximo año soportado por datetime
@@ -663,65 +634,59 @@
           </article>
           <!--  El Módulo datetime, Funciones para Manejo de la Hora y la Fecha en Python  -->
           <!-- -------------------------------- comentarios -------------------------------- -->
-<article
-            class="row pt-5"
-            id="comment">
+          <article class="row pt-5" id="comments">
             <br />
             <h2>COMENTARIOS</h2>
             <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del
-              formulario disponible para este propósito.
+              Si tiene alguna inquietud, duda o ha encontrado algún error, por
+              favor infórmelo a través del formulario disponible para este
+              propósito.
             </p>
             <div class="d-flex justify-content-center">
               <form
                 action="https://formspree.io/f/mdkdawkg"
                 method="POST"
-                id="myForm">
-                <div class="input-group d-flex justify-content-center flex-column">
-                  <label
-                    for="name"
-                    class="pe-2"
-                    >Nombre:</label
-                  >
+                id="myForm"
+              >
+                <div
+                  class="input-group d-flex justify-content-center flex-column"
+                >
+                  <label for="name" class="pe-2">Nombre:</label>
                   <input
                     type="text"
                     name="name"
                     id="name"
                     placeholder="User"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="email"
-                    class="pe-2"
-                    >Email:</label
-                  >
+                    required="required"
+                  />
+                  <label for="email" class="pe-2">Email:</label>
                   <input
                     type="email"
                     name="email"
                     id="email"
                     placeholder="user@mail.com"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="message"
-                    class="pe-2"
-                    >Mensaje:</label
-                  >
+                    required="required"
+                  />
+                  <label for="message" class="pe-2">Mensaje:</label>
                   <textarea
                     name="message"
                     id="message"
                     cols="30"
                     rows="5"
                     placeholder="Su comentario..."
-                    class="rounded rounded-3"></textarea>
+                    class="rounded rounded-3"
+                  ></textarea>
                   <input
                     class="btn btn-outline-light my-3 border rounded-pill border-2"
                     type="submit"
-                    value="Enviar..." />
+                    value="Enviar..."
+                  />
                 </div>
                 <p>
-                  La política de privacidad, y los términos y condiciones están disponibles en el formulario
-                  de contacto.
+                  La política de privacidad, y los términos y condiciones están
+                  disponibles en el formulario de contacto.
                 </p>
               </form>
             </div>
@@ -734,6 +699,9 @@
       <aside class="col-lg-3 d-none d-lg-block pt-5">
         <h1>En Este Artículo</h1>
         <ul class="list-group">
+          <li class="list-group-item">
+            <a href="#introduccion">Introducción</a>
+          </li>
           <li class="list-group-item">
             <a href="#introduccionAlModuloDatetime"
               >Introducción al Módulo datetime</a
@@ -765,6 +733,9 @@
           </li>
           <li class="list-group-item">
             <a href="#constantes">Constantes</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#comments">Comentarios</a>
           </li>
         </ul>
       </aside>

@@ -45,7 +45,7 @@
     <!-- fin Open Graph data -->
 
     <!-- Twitter cards -->
-    <meta name="twitter:card"  content="summary" />
+    <meta name="twitter:card" content="summary" />
     <meta
       name="twitter:title"
       content="Instalador de Paquetes de Python (PIP) - Ing. Eduardo Herrera Forero"
@@ -165,11 +165,11 @@
     <!-- Barra deNavegación -->
 
     <!-- -------------------------------- principal -------------------------------- -->
-    <div class="row col mx-1">
+    <div class="container-fluid" id="introduccion">
       <main class="pt-5 col-lg-9">
         <section class="pb-3">
           <!--  Instalador de Paquetes de Python (PIP)  -->
-                    <article
+          <article
             class="row border-1 border-bottom pb-3"
             data-bs-spy="scroll"
             data-bs-target="#list-example"
@@ -179,28 +179,33 @@
               <header>
                 <h1>Instalador de Paquetes de Python (PIP)</h1>
               </header>
-              <p>
-                El Instalador de Paquetes de Python (PIP) es una herramienta que
-                permite instalar, actualizar y gestionar paquetes y bibliotecas
-                de Python de manera sencilla. PIP es esencial para trabajar con
-                Python, ya que facilita la incorporación de funcionalidades
-                adicionales desarrolladas por la comunidad, disponibles en el
-                repositorio PyPI (Python Package Index).
-              </p>
-              <div class="text-center imagen">
-                <picture>
-                  <img
-                    src="https://i.ibb.co/GC81Y2X/pip.jpg"
-                    class="img-fluid rounded-4 rounded-4"
-                    width="50%"
-                    alt="Instalador de Paquetes de Python (PIP)  "
-                    title="Instalador de Paquetes PIP en Python: Guía Completa de Gestión de Bibliotecas"
-                  />
-                  <figcaption>
-                    Instalador de Paquetes de Python (PIP)
-                  </figcaption>
-                </picture>
+              <!-- Introducción -->
+              <div class="mt-5">
+                <h2>Introducción</h2>
+                <p>
+                  El Instalador de Paquetes de Python (PIP) es una herramienta
+                  que permite instalar, actualizar y gestionar paquetes y
+                  bibliotecas de Python de manera sencilla. PIP es esencial para
+                  trabajar con Python, ya que facilita la incorporación de
+                  funcionalidades adicionales desarrolladas por la comunidad,
+                  disponibles en el repositorio PyPI (Python Package Index).
+                </p>
+                <div class="text-center imagen">
+                  <picture>
+                    <img
+                      src="https://i.ibb.co/GC81Y2X/pip.jpg"
+                      class="img-fluid rounded-4 rounded-4"
+                      width="50%"
+                      alt="Instalador de Paquetes de Python (PIP)  "
+                      title="Instalador de Paquetes PIP en Python: Guía Completa de Gestión de Bibliotecas"
+                    />
+                    <figcaption>
+                      Instalador de Paquetes de Python (PIP)
+                    </figcaption>
+                  </picture>
+                </div>
               </div>
+
               <!-- ¿Qué es PIP? -->
               <div id="queEsPip" class="mt-5">
                 <h2 class="mt-1">¿Qué es PIP?</h2>
@@ -224,11 +229,7 @@
                         <li>
                           Permite instalar paquetes disponibles en PyPI con un
                           solo comando:
-                          <pre
-                            
-                            data-src-status="loaded"
-                            tabindex="0"
-                          >
+                          <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             pip install requests # instalará la biblioteca requests.
                           </code>
@@ -236,11 +237,7 @@
                         </li>
                         <li>
                           Facilita la desinstalación de paquetes:
-                          <pre
-                            
-                            data-src-status="loaded"
-                            tabindex="0"
-                          >
+                          <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             pip uninstall requests # desinstalará la biblioteca requests.
                           </code>
@@ -268,11 +265,7 @@
                       <code>requirements.txt</code> para instalar varias
                       dependencias necesarias de un proyecto con un único
                       comando:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         pip install -r requirements.txt
                       </code>
@@ -296,11 +289,7 @@
                       <span class="fw-bold">Actualización de paquetes</span>:
                       Facilita la actualización de paquetes a versiones más
                       recientes:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         pip install --upgrade numpy
                       </code>
@@ -313,11 +302,7 @@
                       <ul>
                         <li>
                           Muestra los paquetes instalados en el entorno actual:
-                          <pre
-                            
-                            data-src-status="loaded"
-                            tabindex="0"
-                          >
+                          <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             pip list
                           </code>
@@ -325,11 +310,7 @@
                         </li>
                         <li>
                           Proporciona detalles específicos sobre un paquete:
-                          <pre
-                            
-                            data-src-status="loaded"
-                            tabindex="0"
-                          >
+                          <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             pip show nombre_paquete
                           </code>
@@ -372,11 +353,7 @@
                   <ul>
                     <li>
                       <span class="fw-bold">Instalar un paquete</span>:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         pip install nombre_del_paquete
                         </code>
@@ -384,11 +361,7 @@
                     </li>
                     <li>
                       <span class="fw-bold">Verificar versión de PIP</span>:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         pip --version
                         </code>
@@ -396,11 +369,7 @@
                     </li>
                     <li>
                       <span class="fw-bold">Actualizar PIP</span>:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         python -m pip install --upgrade pip
                       </code>
@@ -410,11 +379,7 @@
                       <span class="fw-bold"
                         >Mostrar detalles de un paquete instalado</span
                       >:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         pip show nombre_del_paquete
                       </code>
@@ -563,11 +528,7 @@
                       <span class="fw-bold"
                         >Instalación de paquetes con pip</span
                       >:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         pip install numpy
                       </code>
@@ -575,11 +536,7 @@
                     </li>
                     <li>
                       <span class="fw-bold">Listar paquetes instalados</span>:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         pip list
                       </code>
@@ -587,11 +544,7 @@
                     </li>
                     <li>
                       <span class="fw-bold">Actualizar un paquete</span>:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         pip install --upgrade numpy
                       </code>
@@ -599,11 +552,7 @@
                     </li>
                     <li>
                       <span class="fw-bold">Crear un entorno virtual</span>:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         python -m venv nombre_entorno
                         source nombre_entorno/bin/activate  # En Linux/Mac
@@ -632,11 +581,7 @@
                     <li>Usar entornos virtuales para cada proyecto.</li>
                     <li>
                       Congelar dependencias en requirements.txt:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         pip freeze > requirements.txt
                       </code>
@@ -736,11 +681,7 @@
                       <span class="fw-bold">Publicación de paquetes</span>: Los
                       desarrolladores pueden publicar sus paquetes utilizando
                       herramientas como setuptools y twine. Por ejemplo:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         python setup.py sdist bdist_wheel
                         twine upload dist/*
@@ -794,11 +735,7 @@
                 <div>
                   <h3>Verificar si PIP ya Está Instalado</h3>
                   <p>Ejecutar el siguiente comando en la terminal o consola:</p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     pip --version
                     # Salida: pip 22.3.1 from C:\Users\MP1KGT61\miniconda3\envs\FaceEmotion\lib\site-packages\pip (python 3.7)
@@ -829,11 +766,7 @@
                     </li>
                     <li>
                       <span class="fw-bold">Verificar la instalación</span>:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         pip --version
                         # Salida: pip 22.3.1 from C:\Users\MP1KGT61\miniconda3\envs\FaceEmotion\lib\site-packages\pip (python 3.7)
@@ -860,9 +793,7 @@
                       >.
                     </li>
                     <li>Ejecutar el archivo con Python:</li>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       python get-pip.py
                     </code>
@@ -874,11 +805,7 @@
                 <div>
                   <h3>Actualizar PIP</h3>
                   <p>Para asegurarse de usar la última versión:</p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     python -m pip install --upgrade pip
                   </code>
@@ -892,11 +819,7 @@
                     Si se necesita instalar paquetes sin permisos de
                     administrador:
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     pip install nombre-del-paquete --user
                   </code>
@@ -948,11 +871,7 @@
                     sus versiones, o solo los nombres de los paquetes si no se
                     especifica la versión.
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-txt" data-prismjs-copy="Copy">
                     # requirements.txt
                     # Dependencias principales
@@ -976,11 +895,7 @@
                     versión de Python que se debe usar para el entorno. A
                     continuación se muestra una plantilla básica:
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-toml" data-prismjs-copy="Copy">
                     # Pipfile
                     [[source]]
@@ -1055,65 +970,59 @@
           </article>
           <!--  Instalador de Paquetes de Python (PIP)  -->
           <!-- -------------------------------- comentarios -------------------------------- -->
-<article
-            class="row pt-5"
-            id="comment">
+          <article class="row pt-5" id="comments">
             <br />
             <h2>COMENTARIOS</h2>
             <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del
-              formulario disponible para este propósito.
+              Si tiene alguna inquietud, duda o ha encontrado algún error, por
+              favor infórmelo a través del formulario disponible para este
+              propósito.
             </p>
             <div class="d-flex justify-content-center">
               <form
                 action="https://formspree.io/f/mdkdawkg"
                 method="POST"
-                id="myForm">
-                <div class="input-group d-flex justify-content-center flex-column">
-                  <label
-                    for="name"
-                    class="pe-2"
-                    >Nombre:</label
-                  >
+                id="myForm"
+              >
+                <div
+                  class="input-group d-flex justify-content-center flex-column"
+                >
+                  <label for="name" class="pe-2">Nombre:</label>
                   <input
                     type="text"
                     name="name"
                     id="name"
                     placeholder="User"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="email"
-                    class="pe-2"
-                    >Email:</label
-                  >
+                    required="required"
+                  />
+                  <label for="email" class="pe-2">Email:</label>
                   <input
                     type="email"
                     name="email"
                     id="email"
                     placeholder="user@mail.com"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="message"
-                    class="pe-2"
-                    >Mensaje:</label
-                  >
+                    required="required"
+                  />
+                  <label for="message" class="pe-2">Mensaje:</label>
                   <textarea
                     name="message"
                     id="message"
                     cols="30"
                     rows="5"
                     placeholder="Su comentario..."
-                    class="rounded rounded-3"></textarea>
+                    class="rounded rounded-3"
+                  ></textarea>
                   <input
                     class="btn btn-outline-light my-3 border rounded-pill border-2"
                     type="submit"
-                    value="Enviar..." />
+                    value="Enviar..."
+                  />
                 </div>
                 <p>
-                  La política de privacidad, y los términos y condiciones están disponibles en el formulario
-                  de contacto.
+                  La política de privacidad, y los términos y condiciones están
+                  disponibles en el formulario de contacto.
                 </p>
               </form>
             </div>
@@ -1126,6 +1035,9 @@
       <aside class="col-lg-3 d-none d-lg-block pt-5">
         <h1>En Este Artículo</h1>
         <ul class="list-group">
+          <li class="list-group-item">
+            <a href="#introduccion">Introducción</a>
+          </li>
           <li class="list-group-item">
             <a href="#queEsPip">¿Qué es PIP?</a>
           </li>
@@ -1145,6 +1057,9 @@
           </li>
           <li class="list-group-item">
             <a href="#resumen">Resumen</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#comments">Comentarios</a>
           </li>
         </ul>
       </aside>

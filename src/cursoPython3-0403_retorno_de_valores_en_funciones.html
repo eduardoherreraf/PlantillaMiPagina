@@ -45,7 +45,7 @@
     <!-- fin Open Graph data -->
 
     <!-- Twitter cards -->
-    <meta name="twitter:card"  content="summary" />
+    <meta name="twitter:card" content="summary" />
     <meta
       name="twitter:title"
       content="Retorno de Valores en Funciones Python 3 - Ing. Eduardo Herrera Forero."
@@ -165,11 +165,11 @@
     <!-- Barra deNavegación -->
 
     <!-- -------------------------------- principal -------------------------------- -->
-    <div class="row col mx-1">
+    <div class="container-fluid" id="introduccion">
       <main class="pt-5 col-lg-9">
         <section class="pb-3">
           <!--  Retorno de Valores en Funciones Python  -->
-                    <article
+          <article
             class="row border-1 border-bottom pb-3"
             data-bs-spy="scroll"
             data-bs-target="#list-example"
@@ -179,28 +179,32 @@
               <header>
                 <h1>Retorno de Valores en Funciones Python</h1>
               </header>
-              <p>
-                e explica cómo devolver el resultado de una función en Python,
-                un concepto fundamental en la programación que permite a los
-                programadores crear funciones capaces de realizar cálculos o
-                procesar datos y proporcionar un resultado utilizable en otras
-                partes del código. A través de ejemplos prácticos, se aprenderá
-                a definir funciones, usar la declaración return y manejar los
-                resultados devueltos.
-              </p>
-              <div class="text-center imagen">
-                <picture>
-                  <img
-                    src="https://i.ibb.co/MBqwk1b/retornovalores.jpg"
-                    class="img-fluid rounded-4"
-                    width="40%"
-                    alt="Retorno de Valores en Funciones Python"
-                    title="Diagrama de árbol que ilustra la ejecución de una función en Python, mostrando su comportamiento con y sin valor de retorno"
-                  />
-                  <figcaption>
-                    Retorno de Valores en Funciones Python
-                  </figcaption>
-                </picture>
+              <!-- Introducción -->
+              <div class="mt-5">
+                <h2>Introducción</h2>
+                <p>
+                  e explica cómo devolver el resultado de una función en Python,
+                  un concepto fundamental en la programación que permite a los
+                  programadores crear funciones capaces de realizar cálculos o
+                  procesar datos y proporcionar un resultado utilizable en otras
+                  partes del código. A través de ejemplos prácticos, se
+                  aprenderá a definir funciones, usar la declaración return y
+                  manejar los resultados devueltos.
+                </p>
+                <div class="text-center imagen">
+                  <picture>
+                    <img
+                      src="https://i.ibb.co/MBqwk1b/retornovalores.jpg"
+                      class="img-fluid rounded-4"
+                      width="40%"
+                      alt="Retorno de Valores en Funciones Python"
+                      title="Diagrama de árbol que ilustra la ejecución de una función en Python, mostrando su comportamiento con y sin valor de retorno"
+                    />
+                    <figcaption>
+                      Retorno de Valores en Funciones Python
+                    </figcaption>
+                  </picture>
+                </div>
               </div>
               <!-- Ventajas y Desventajas -->
               <div id="ventajasYDesventajas" class="mt-5">
@@ -294,11 +298,7 @@
                 <!-- Sintaxis Básica -->
                 <div>
                   <h3>Sintaxis Básica</h3>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     def nombre_de_la_funcion(parametros):
                         # Código de la función
@@ -307,11 +307,7 @@
                   </code>
                 </pre>
                   <p>Ejemplo:</p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     def suma(a, b):
                         resultado = a + b
@@ -381,7 +377,7 @@
                   Python permite que una función devuelva múltiples valores
                   utilizando una tupla:
                 </p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   def obtener_coordenadas():
                       """Esta función devuelve las coordenadas x e y."""
@@ -394,7 +390,7 @@
                 </code>
               </pre>
                 <p>Otro ejemplo:</p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   def operaciones(a, b):
                       suma = a + b
@@ -415,7 +411,7 @@
                   posterior. También se pueden pasar como argumentos a otras
                   funciones. Aquí hay un ejemplo:
                 </p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   def cuadrado(x):
                   return x * x
@@ -472,9 +468,7 @@
                       Las funciones en Python que no devuelven explícitamente un
                       valor devuelven <code>None</code> por defecto.
                     </p>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       def funcion_sin_retorno():
                           pass
@@ -492,9 +486,7 @@
                       se puede asignar<code>None</code>para indicar que la
                       variable no tiene un valor significativo.
                     </p>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       variable = None
                       print(variable)  # Salida: None
@@ -509,9 +501,7 @@
                       <code>None</code>se puede comparar con otros valores
                       usando operadores de comparación.
                     </p>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           if variable is None:
                             print("La variable es None")
@@ -546,11 +536,7 @@
                     misma manera que pasarías cualquier otro tipo de dato. Aquí
                     hay un ejemplo básico:
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     def imprimir_lista(lista):
                     for elemento in lista:
@@ -574,11 +560,7 @@
                     que se puede modificar la lista dentro de la función y los
                     cambios se reflejarán fuera de la función.
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     def agregar_elemento(lista, elemento):
                         lista.append(elemento)
@@ -629,9 +611,7 @@
                       estar seguro que la lista original no se modifique, se
                       puede pasar una copia de ella.
                     </li>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       def agregar_elemento_seguro(lista, elemento):
                           lista_copia = lista.copy()
@@ -688,65 +668,59 @@
           <!--  Retorno de Valores en Funciones Python  -->
 
           <!-- -------------------------------- comentarios -------------------------------- -->
-<article
-            class="row pt-5"
-            id="comment">
+          <article class="row pt-5" id="comments">
             <br />
             <h2>COMENTARIOS</h2>
             <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del
-              formulario disponible para este propósito.
+              Si tiene alguna inquietud, duda o ha encontrado algún error, por
+              favor infórmelo a través del formulario disponible para este
+              propósito.
             </p>
             <div class="d-flex justify-content-center">
               <form
                 action="https://formspree.io/f/mdkdawkg"
                 method="POST"
-                id="myForm">
-                <div class="input-group d-flex justify-content-center flex-column">
-                  <label
-                    for="name"
-                    class="pe-2"
-                    >Nombre:</label
-                  >
+                id="myForm"
+              >
+                <div
+                  class="input-group d-flex justify-content-center flex-column"
+                >
+                  <label for="name" class="pe-2">Nombre:</label>
                   <input
                     type="text"
                     name="name"
                     id="name"
                     placeholder="User"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="email"
-                    class="pe-2"
-                    >Email:</label
-                  >
+                    required="required"
+                  />
+                  <label for="email" class="pe-2">Email:</label>
                   <input
                     type="email"
                     name="email"
                     id="email"
                     placeholder="user@mail.com"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="message"
-                    class="pe-2"
-                    >Mensaje:</label
-                  >
+                    required="required"
+                  />
+                  <label for="message" class="pe-2">Mensaje:</label>
                   <textarea
                     name="message"
                     id="message"
                     cols="30"
                     rows="5"
                     placeholder="Su comentario..."
-                    class="rounded rounded-3"></textarea>
+                    class="rounded rounded-3"
+                  ></textarea>
                   <input
                     class="btn btn-outline-light my-3 border rounded-pill border-2"
                     type="submit"
-                    value="Enviar..." />
+                    value="Enviar..."
+                  />
                 </div>
                 <p>
-                  La política de privacidad, y los términos y condiciones están disponibles en el formulario
-                  de contacto.
+                  La política de privacidad, y los términos y condiciones están
+                  disponibles en el formulario de contacto.
                 </p>
               </form>
             </div>
@@ -759,6 +733,9 @@
       <aside class="col-lg-3 d-none d-lg-block pt-5">
         <h1>En Este Artículo</h1>
         <ul class="list-group">
+          <li class="list-group-item">
+            <a href="#introduccion">Introducción</a>
+          </li>
           <li class="list-group-item">
             <a href="#ventajasYDesventajas">Ventajas y Desventajas</a>
           </li>
@@ -785,6 +762,9 @@
           </li>
           <li class="list-group-item">
             <a href="#buenasPracticas">Buenas Prácticas</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#comments">Comentarios</a>
           </li>
         </ul>
       </aside>

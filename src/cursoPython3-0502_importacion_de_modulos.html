@@ -45,7 +45,7 @@
     <!-- fin Open Graph data -->
 
     <!-- Twitter cards -->
-    <meta name="twitter:card"  content="summary" />
+    <meta name="twitter:card" content="summary" />
     <meta
       name="twitter:title"
       content="Importación de módulos Python 3 - Ing. Eduardo Herrera Forero."
@@ -165,11 +165,11 @@
     <!-- Barra deNavegación -->
 
     <!-- -------------------------------- principal -------------------------------- -->
-    <div class="row col mx-1">
+    <div class="container-fluid" id="introduccion">
       <main class="pt-5 col-lg-9">
         <section class="pb-3">
           <!--   Importación de módulos en Python  -->
-                    <article
+          <article
             class="row border-1 border-bottom pb-3"
             data-bs-spy="scroll"
             data-bs-target="#list-example"
@@ -179,27 +179,31 @@
               <header>
                 <h1>Importación de módulos en Python</h1>
               </header>
-              <p>
-                Se explorará el concepto de módulos en Python, una
-                característica fundamental que permite organizar y reutilizar el
-                código de manera eficiente. Los módulos son archivos que
-                contienen definiciones y declaraciones de Python, y pueden
-                incluir funciones, clases y variables. Al utilizar módulos, los
-                desarrolladores pueden dividir su código en partes más
-                manejables, facilitando su mantenimiento y mejorando la
-                legibilidad.
-              </p>
-              <div class="text-center imagen">
-                <picture>
-                  <img
-                    src="https://i.ibb.co/4s1PXb7/importacionmodulos.jpg"
-                    class="img-fluid rounded-4"
-                    width="70%"
-                    alt="Importación de módulos en Python"
-                    title="Importando y Usando un Módulo de Python"
-                  />
-                  <figcaption>Importación de módulos en Python</figcaption>
-                </picture>
+              <!-- Introducción -->
+              <div class="mt-5">
+                <h2>Introducción</h2>
+                <p>
+                  Se explorará el concepto de módulos en Python, una
+                  característica fundamental que permite organizar y reutilizar
+                  el código de manera eficiente. Los módulos son archivos que
+                  contienen definiciones y declaraciones de Python, y pueden
+                  incluir funciones, clases y variables. Al utilizar módulos,
+                  los desarrolladores pueden dividir su código en partes más
+                  manejables, facilitando su mantenimiento y mejorando la
+                  legibilidad.
+                </p>
+                <div class="text-center imagen">
+                  <picture>
+                    <img
+                      src="https://i.ibb.co/4s1PXb7/importacionmodulos.jpg"
+                      class="img-fluid rounded-4"
+                      width="70%"
+                      alt="Importación de módulos en Python"
+                      title="Importando y Usando un Módulo de Python"
+                    />
+                    <figcaption>Importación de módulos en Python</figcaption>
+                  </picture>
+                </div>
               </div>
 
               <!-- Importación Directa -->
@@ -209,7 +213,7 @@
                   Se usa el comando <code>import</code> seguido del nombre del
                   módulo.
                 </p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   import math
                   print(math.sqrt(16))  # Imprime 4.0
@@ -224,7 +228,7 @@
                   Si solo se necesita una función, clase o variable específica
                   del módulo, se puede usar <code>from</code>.
                 </p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   from math import sqrt
                   print(sqrt(16))  # Imprime 4.0
@@ -239,7 +243,7 @@
                   Para simplificar el uso de un módulo o para evitar conflictos,
                   se puede renombrar con <code>as</code>.
                 </p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   import math as m
                   print(m.sqrt(16))  # Imprime 4.0
@@ -255,7 +259,7 @@
                   pero no es recomendable en proyectos grandes ya que puede
                   causar conflictos de nombres
                 </p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   from math import *
                   print(sqrt(16))  # Imprime 4.0
@@ -271,7 +275,7 @@
                   <code>mi_modulo.py</code>, ubicado en el mismo directorio que
                   el archivo principal, se puede importar así:
                 </p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   import mi_modulo
                   mi_modulo.mi_funcion()  # Llama una función dentro del módulo
@@ -284,7 +288,7 @@
                   <code>sys</code> para agregar el directorio al sistema de
                   búsqueda:
                 </p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   import sys
                   sys.path.append('/ruta/a/mi/directorio')
@@ -305,11 +309,7 @@
                 <div>
                   <h3>Verificar si pip Está Instalado</h3>
                   <p>Ejecutar en la terminal o línea de comandos:</p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     pip --version
                   </code>
@@ -318,11 +318,7 @@
                     Si devuelve una versión, significa que está instalado, por
                     ejemplo:
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     pip 23.0.1 from ... (python 3.10)
                   </code>
@@ -338,11 +334,7 @@
                 <div>
                   <h3>Instalar un Módulo Externo</h3>
                   <p>El comando básico para instalar un módulo es:</p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     pip install nombre_del_modulo
                     # p.ej.
@@ -355,11 +347,7 @@
                 <div>
                   <h3>Instalar una Versión Específica</h3>
                   <p>Si se necesita una versión específica del módulo:</p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     pip install nombre_del_modulo==1.2.3
                     # p.ej.
@@ -375,11 +363,7 @@
                     Para actualizar a la última versión de un módulo ya
                     instalado:
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     pip install --upgrade nombre_del_modulo
                     # p.ej.
@@ -396,21 +380,13 @@
                     archivo requirements.txt. Para instalar todos los módulos
                     listados:
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     pip install -r requirements.txt
                   </code>
                 </pre>
                   <p>El archivo podría contener líneas como estas:</p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     requests==2.28.1
                     numpy>=1.21.0
@@ -424,11 +400,7 @@
                   <p>
                     Si ya no se necesita un módulo, se puede desinstalar con:
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     pip uninstall nombre_del_modulo
                     # p.ej.
@@ -441,21 +413,13 @@
                 <div>
                   <h3>Ver Módulos Instalados</h3>
                   <p>Para listar todos los módulos instalados:</p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     pip list
                   </code>
                 </pre>
                   <p>Esto mostrará algo similar a:</p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     Package    Version
                     ---------- -------
@@ -480,11 +444,7 @@
                       aparece un error de permisos, use <code>sudo</code> en
                       Linux/macOS o abra CMD/PowerShell como administrador en
                       Windows:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         sudo pip install nombre_del_modulo
                       </code>
@@ -510,9 +470,7 @@
                 <ul>
                   <li>
                     <span class="fw-bold">Crear el entorno</span>:
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       python -m venv mi_entorno
                     </code>
@@ -520,9 +478,7 @@
                   </li>
                   <li>
                     <span class="fw-bold">Activar el entorno</span>:
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       mi_entorno\Scripts\activate
                     </code>
@@ -540,65 +496,59 @@
           <!--   Importación de módulos en Python  -->
 
           <!-- -------------------------------- comentarios -------------------------------- -->
-<article
-            class="row pt-5"
-            id="comment">
+          <article class="row pt-5" id="comments">
             <br />
             <h2>COMENTARIOS</h2>
             <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del
-              formulario disponible para este propósito.
+              Si tiene alguna inquietud, duda o ha encontrado algún error, por
+              favor infórmelo a través del formulario disponible para este
+              propósito.
             </p>
             <div class="d-flex justify-content-center">
               <form
                 action="https://formspree.io/f/mdkdawkg"
                 method="POST"
-                id="myForm">
-                <div class="input-group d-flex justify-content-center flex-column">
-                  <label
-                    for="name"
-                    class="pe-2"
-                    >Nombre:</label
-                  >
+                id="myForm"
+              >
+                <div
+                  class="input-group d-flex justify-content-center flex-column"
+                >
+                  <label for="name" class="pe-2">Nombre:</label>
                   <input
                     type="text"
                     name="name"
                     id="name"
                     placeholder="User"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="email"
-                    class="pe-2"
-                    >Email:</label
-                  >
+                    required="required"
+                  />
+                  <label for="email" class="pe-2">Email:</label>
                   <input
                     type="email"
                     name="email"
                     id="email"
                     placeholder="user@mail.com"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="message"
-                    class="pe-2"
-                    >Mensaje:</label
-                  >
+                    required="required"
+                  />
+                  <label for="message" class="pe-2">Mensaje:</label>
                   <textarea
                     name="message"
                     id="message"
                     cols="30"
                     rows="5"
                     placeholder="Su comentario..."
-                    class="rounded rounded-3"></textarea>
+                    class="rounded rounded-3"
+                  ></textarea>
                   <input
                     class="btn btn-outline-light my-3 border rounded-pill border-2"
                     type="submit"
-                    value="Enviar..." />
+                    value="Enviar..."
+                  />
                 </div>
                 <p>
-                  La política de privacidad, y los términos y condiciones están disponibles en el formulario
-                  de contacto.
+                  La política de privacidad, y los términos y condiciones están
+                  disponibles en el formulario de contacto.
                 </p>
               </form>
             </div>
@@ -611,6 +561,9 @@
       <aside class="col-lg-3 d-none d-lg-block pt-5">
         <h1>En Este Artículo</h1>
         <ul class="list-group">
+          <li class="list-group-item">
+            <a href="#introduccion">Introducción</a>
+          </li>
           <li class="list-group-item">
             <a href="#ImportacionDirecta">Importación Directa</a>
           </li>
@@ -637,6 +590,9 @@
           </li>
           <li class="list-group-item">
             <a href="#usoDeEntornosVirtuales">Uso de Entornos Virtuales</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#comments">Comentarios</a>
           </li>
         </ul>
       </aside>

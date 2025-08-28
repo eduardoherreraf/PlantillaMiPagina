@@ -45,7 +45,7 @@
     <!-- fin Open Graph data -->
 
     <!-- Twitter cards -->
-    <meta name="twitter:card"  content="summary" />
+    <meta name="twitter:card" content="summary" />
     <meta
       name="twitter:title"
       content="Sentencia if de Control de Flujo Python 3 - Ing. Eduardo Herrera Forero."
@@ -165,11 +165,11 @@
     <!-- Barra deNavegación -->
 
     <!-- -------------------------------- principal -------------------------------- -->
-    <div class="row col mx-1">
+    <div class="container-fluid" id="introduccion">
       <main class="pt-5 col-lg-9">
         <section class="pb-3">
           <!--  Sentencia if de Control de Flujo en Python -->
-                    <article
+          <article
             class="row border-1 border-bottom pb-3"
             data-bs-spy="scroll"
             data-bs-target="#list-example"
@@ -179,25 +179,31 @@
               <header>
                 <h1>Sentencia if de Control de Flujo en Python</h1>
               </header>
-              <p>
-                La sentencia if es una de las estructuras de control de flujo
-                más fundamentales en Python. Permite a los programadores tomar
-                decisiones en función de condiciones específicas, lo que hace
-                que el código sea más dinámico y adaptable. En este artículo,
-                exploraremos en profundidad cómo funciona la sentencia if, sus
-                variantes, y ejemplos prácticos que ilustran su uso.
-              </p>
-              <div class="text-center imagen">
-                <picture>
-                  <img
-                    src="https://i.ibb.co/VtYvtX5/sentenciaif.jpg"
-                    class="img-fluid rounded-4"
-                    width="60%"
-                    alt="¿Cómo se debe usar la declaración if?"
-                    title="En este artículo se explicará la sentencia condicional if en Python y todas sus variantes."
-                  />
-                  <figcaption>¿Cómo se debe usar la declaración if?</figcaption>
-                </picture>
+              <!-- Introducción -->
+              <div class="mt-5">
+                <h2>Introducción</h2>
+                <p>
+                  La sentencia if es una de las estructuras de control de flujo
+                  más fundamentales en Python. Permite a los programadores tomar
+                  decisiones en función de condiciones específicas, lo que hace
+                  que el código sea más dinámico y adaptable. En este artículo,
+                  exploraremos en profundidad cómo funciona la sentencia if, sus
+                  variantes, y ejemplos prácticos que ilustran su uso.
+                </p>
+                <div class="text-center imagen">
+                  <picture>
+                    <img
+                      src="https://i.ibb.co/VtYvtX5/sentenciaif.jpg"
+                      class="img-fluid rounded-4"
+                      width="60%"
+                      alt="¿Cómo se debe usar la declaración if?"
+                      title="En este artículo se explicará la sentencia condicional if en Python y todas sus variantes."
+                    />
+                    <figcaption>
+                      ¿Cómo se debe usar la declaración if?
+                    </figcaption>
+                  </picture>
+                </div>
               </div>
               <!-- Sentencia if-then  -->
               <div id="sentenciaif-then" class="mt-5">
@@ -210,7 +216,6 @@
                 <div>
                   <h3>Estructura Básica if-then</h3>
                   <pre
-                    
                     data-src-status="loaded"
                     tabindex="0"
                   ><code class="language-python" data-prismjs-copy="Copy">
@@ -223,7 +228,6 @@
                 <div>
                   <h3>Ejemplo Simple if-then</h3>
                   <pre
-                    
                     data-src-status="loaded"
                     tabindex="0"
                   ><code class="language-python" data-prismjs-copy="Copy">
@@ -248,7 +252,6 @@
                 <div>
                   <h3>Estructura Básica if-then-else</h3>
                   <pre
-                    
                     data-src-status="loaded"
                     tabindex="0"
                   ><code class="language-python" data-prismjs-copy="Copy">
@@ -263,7 +266,6 @@
                 <div>
                   <h3>Ejemplo Simple if-then-else</h3>
                   <pre
-                    
                     data-src-status="loaded"
                     tabindex="0"
                   ><code class="language-python" data-prismjs-copy="Copy">
@@ -291,7 +293,6 @@
                 <div>
                   <h3>Estructura Básica if-elif-else</h3>
                   <pre
-                    
                     data-src-status="loaded"
                     tabindex="0"
                   ><code class="language-python" data-prismjs-copy="Copy">
@@ -308,7 +309,6 @@
                 <div>
                   <h3>Ejemplo Simple if-elif-else</h3>
                   <pre
-                    
                     data-src-status="loaded"
                     tabindex="0"
                   ><code class="language-python" data-prismjs-copy="Copy">
@@ -362,65 +362,59 @@
           <!--  Sentencia if de Control de Flujo en Python -->
 
           <!-- -------------------------------- comentarios -------------------------------- -->
-<article
-            class="row pt-5"
-            id="comment">
+          <article class="row pt-5" id="comments">
             <br />
             <h2>COMENTARIOS</h2>
             <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del
-              formulario disponible para este propósito.
+              Si tiene alguna inquietud, duda o ha encontrado algún error, por
+              favor infórmelo a través del formulario disponible para este
+              propósito.
             </p>
             <div class="d-flex justify-content-center">
               <form
                 action="https://formspree.io/f/mdkdawkg"
                 method="POST"
-                id="myForm">
-                <div class="input-group d-flex justify-content-center flex-column">
-                  <label
-                    for="name"
-                    class="pe-2"
-                    >Nombre:</label
-                  >
+                id="myForm"
+              >
+                <div
+                  class="input-group d-flex justify-content-center flex-column"
+                >
+                  <label for="name" class="pe-2">Nombre:</label>
                   <input
                     type="text"
                     name="name"
                     id="name"
                     placeholder="User"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="email"
-                    class="pe-2"
-                    >Email:</label
-                  >
+                    required="required"
+                  />
+                  <label for="email" class="pe-2">Email:</label>
                   <input
                     type="email"
                     name="email"
                     id="email"
                     placeholder="user@mail.com"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="message"
-                    class="pe-2"
-                    >Mensaje:</label
-                  >
+                    required="required"
+                  />
+                  <label for="message" class="pe-2">Mensaje:</label>
                   <textarea
                     name="message"
                     id="message"
                     cols="30"
                     rows="5"
                     placeholder="Su comentario..."
-                    class="rounded rounded-3"></textarea>
+                    class="rounded rounded-3"
+                  ></textarea>
                   <input
                     class="btn btn-outline-light my-3 border rounded-pill border-2"
                     type="submit"
-                    value="Enviar..." />
+                    value="Enviar..."
+                  />
                 </div>
                 <p>
-                  La política de privacidad, y los términos y condiciones están disponibles en el formulario
-                  de contacto.
+                  La política de privacidad, y los términos y condiciones están
+                  disponibles en el formulario de contacto.
                 </p>
               </form>
             </div>
@@ -434,6 +428,11 @@
         <h1>En Este Artículo</h1>
         <ul class="list-group">
           <li class="list-group-item">
+            <a href="#introduccion"
+              >Introducción</a
+            >
+          </li>
+          <li class="list-group-item">
             <a href="#sentenciaif-then">Sentencia if-then</a>
           </li>
           <li class="list-group-item">
@@ -444,6 +443,9 @@
           </li>
           <li class="list-group-item">
             <a href="#indentacion">Indentación</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#comments">Comentarios</a>
           </li>
         </ul>
       </aside>

@@ -45,7 +45,7 @@
     <!-- fin Open Graph data -->
 
     <!-- Twitter cards -->
-    <meta name="twitter:card"  content="summary" />
+    <meta name="twitter:card" content="summary" />
     <meta
       name="twitter:title"
       content="Módulos especializados de Python: matemático, aleatorio y de sistema Python 3 - Ing. Eduardo Herrera Forero."
@@ -166,11 +166,11 @@
     <!-- Barra deNavegación -->
 
     <!-- -------------------------------- principal -------------------------------- -->
-    <div class="row col mx-1">
+    <div class="container-fluid" id="introduccion">
       <main class="pt-5 col-lg-9">
         <section class="pb-3">
           <!--  Módulos especializados de Python: matemático, aleatorio y de sistema en Python  -->
-                    <article
+          <article
             class="row border-1 border-bottom pb-3"
             data-bs-spy="scroll"
             data-bs-target="#list-example"
@@ -183,26 +183,30 @@
                   sistema en Python
                 </h1>
               </header>
-              <p>
-                Los módulos math, random y platform son herramientas poderosas
-                de la biblioteca estándar de Python que facilitan operaciones
-                matemáticas, generación de números aleatorios y la obtención de
-                información sobre el sistema en ejecución, respectivamente.
-              </p>
-              <div class="text-center imagen">
-                <picture>
-                  <img
-                    src="https://i.ibb.co/BPcv16g/modulosmathrandomos.jpg"
-                    class="img-fluid rounded-4"
-                    width="50%"
-                    alt="Módulos especializados de Python: matemático, aleatorio y de sistema en Python  "
-                    title="Mejorando la Programación en Python con Módulos"
-                  />
-                  <figcaption>
-                    Módulos especializados de Python: matemático, aleatorio y de
-                    sistema en Python
-                  </figcaption>
-                </picture>
+              <!-- Introducción -->
+              <div class="mt-5">
+                <h2>Introducción</h2>
+                <p>
+                  Los módulos math, random y platform son herramientas poderosas
+                  de la biblioteca estándar de Python que facilitan operaciones
+                  matemáticas, generación de números aleatorios y la obtención
+                  de información sobre el sistema en ejecución, respectivamente.
+                </p>
+                <div class="text-center imagen">
+                  <picture>
+                    <img
+                      src="https://i.ibb.co/BPcv16g/modulosmathrandomos.jpg"
+                      class="img-fluid rounded-4"
+                      width="50%"
+                      alt="Módulos especializados de Python: matemático, aleatorio y de sistema en Python  "
+                      title="Mejorando la Programación en Python con Módulos"
+                    />
+                    <figcaption>
+                      Módulos especializados de Python: matemático, aleatorio y
+                      de sistema en Python
+                    </figcaption>
+                  </picture>
+                </div>
               </div>
 
               <!-- Inspector de Nombres y Atributos -->
@@ -225,9 +229,7 @@
                       una lista de nombres definidos en el ámbito local actual,
                       incluyendo variables, funciones, y otros objetos.
                     </p>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Ejemplo sin argumentos
                       x = 10
@@ -254,9 +256,7 @@
                       Cuando se pasa un objeto como argumento, devuelve una
                       lista de los atributos y métodos del objeto.
                     </p>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Ejemplo con un argumento
                       texto = "Hola, mundo"
@@ -275,9 +275,7 @@
                       >
                       muestra los atributos y métodos de ese objeto.
                     </p>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       class MiClase:
                       def metodo(self):
@@ -300,9 +298,7 @@
                       especiales utilizados por Python para funcionalidades
                       internas.
                     </p>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       print(dir(int))
                       # Salida incluye: '__add__', '__class__', '__doc__', '__eq__', ...
@@ -326,9 +322,7 @@
                       Es útil para inspeccionar qué métodos y atributos están
                       disponibles en un módulo.
                     </p>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import math
                       print(dir(math))
@@ -340,9 +334,7 @@
                       nombres de todas las entidades dentro del módulo
                       <code>math:</code>
                     </p>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import math
                       for name in dir(math):
@@ -568,11 +560,7 @@
                 <!-- Ejemplo de Uso Práctico -->
                 <div>
                   <h3>Ejemplo de Uso Práctico</h3>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     import math
                     # Cálculos básicos
@@ -664,11 +652,7 @@
                       <li>
                         <code>random()</code>: Devuelve un número flotante entre
                         0.0 y 1.0.
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           print(random.random())  # Ejemplo: 0.453627327015
                         </code>
@@ -677,11 +661,7 @@
                       <li>
                         <code>uniform(a, b)</code>: Genera un número flotante
                         entre los valores especificados a y b.
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           print(random.uniform(1, 10))  # Ejemplo: 7.934
                         </code>
@@ -690,11 +670,7 @@
                       <li>
                         <code>randint(a, b)</code>: Genera un número entero
                         aleatorio entre a y b (ambos inclusive).
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           print(random.randint(1, 10))  # Ejemplo: 4
                         </code>
@@ -703,11 +679,7 @@
                       <li>
                         <code>randrange(start, stop[, step])</code>: Devuelve un
                         número entero de un rango especificado.
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           print(random.randrange(1, 10, 2))  # Ejemplo: 3
                         </code>
@@ -723,11 +695,7 @@
                       <li>
                         <code>choice(seq)</code>: Selecciona un elemento
                         aleatorio de una secuencia (lista, tupla, cadena, etc.).
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           opciones = ['rojo', 'verde', 'azul']
                           print(random.choice(opciones))  # Ejemplo: 'verde'
@@ -738,11 +706,7 @@
                         <code>choices(population, weights=None, k=1)</code>:
                         Selecciona k elementos con reemplazo, opcionalmente
                         ponderados.
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           colores = ['rojo', 'verde', 'azul']
                           print(random.choices(colores, weights=[1, 3, 1], k=2))  # Ejemplo: ['verde', 'rojo']
@@ -752,11 +716,7 @@
                       <li>
                         <code>sample(population, k)</code>: Selecciona k
                         elementos sin reemplazo.
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           numeros = [1, 2, 3, 4, 5]
                           print(random.sample(numeros, 3))  # Ejemplo: [4, 1, 3]
@@ -773,11 +733,7 @@
                       <li>
                         <code>shuffle(x)</code>: Mezcla los elementos de una
                         lista en su lugar.
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           cartas = [1, 2, 3, 4, 5] random.shuffle(cartas)
                           print(cartas) # Ejemplo: [3, 1, 5, 4, 2]
@@ -795,11 +751,7 @@
                         <code>seed(a=None)</code>: Establece la semilla del
                         generador aleatorio para obtener los mismos resultados
                         en cada ejecución.
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         random.seed(42)
                         print(random.random())  # Siempre dará el mismo resultado
@@ -823,11 +775,7 @@
                         <code>setstate(state)</code>: Restablece el estado
                         interno del generador de números aleatorios a partir del
                         objeto de estado proporcionado.
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           import random
                           # Obtener el estado inicial
@@ -855,11 +803,7 @@
                     Crear un programa que genere una lista de números
                     aleatorios:
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     import random
                     numeros_aleatorios = [random.randint(1, 100) for _ in range(10)]
@@ -893,11 +837,7 @@
                     <li>
                       <code>platform.platform()</code>: Genera una descripción
                       de la plataforma en la que se está ejecutando el programa.
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         import platform
                         platform.platform(aliased=False, terse=False)
@@ -919,11 +859,7 @@
                     <li>
                       <code>platform.system()</code>: Devuelve el nombre del
                       sistema operativo.
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         import platform
                         sistema_operativo = platform.system()
@@ -934,11 +870,7 @@
                     <li>
                       <code>platform.release()</code>: Obtiene la versión del
                       sistema operativo.
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         import platform
                         sistema_operativo = platform.system()
@@ -949,11 +881,7 @@
                     <li>
                       <code>platform.version()</code>: Proporciona más detalles
                       sobre la versión del sistema operativo.
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         import platform
                         detalle_version = platform.version()
@@ -964,11 +892,7 @@
                     <li>
                       <code>platform.machine()</code>: Devuelve el tipo de
                       máquina.
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         import platform
                         tipo_maquina = platform.machine()
@@ -979,11 +903,7 @@
                     <li>
                       <code>platform.processor()</code>: Indica el tipo de
                       procesador, si está disponible.
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         import platform
                         procesador = platform.processor()
@@ -994,11 +914,7 @@
                     <li>
                       <code>platform.python_version()</code>: Devuelve la
                       versión de Python que se está utilizando.
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         import platform
                         version_python = platform.python_version()
@@ -1009,11 +925,7 @@
                     <li>
                       <code>platform.architecture()</code>: Indica si el sistema
                       es de 32 o 64 bits.
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         import platform
                         print(platform.architecture())
@@ -1023,11 +935,7 @@
                     <li>
                       <code>platform.node()</code>: Devuelve el nombre del host
                       de la máquina.
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         import platform
                         print(platform.node())
@@ -1038,11 +946,7 @@
                       <code>platform.uname()</code>: Devuelve un objeto con toda
                       la información del sistema: sistema operativo, nodo,
                       versión, máquina, etc.
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         import platform
                         info = platform.uname()
@@ -1060,11 +964,7 @@
                     El siguiente ejemplo muestra cómo usar varias funciones del
                     módulo <code>platform</code>:
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     import platform
                     print(f"Sistema operativo: {platform.system()}")
@@ -1157,65 +1057,59 @@
           </article>
           <!--  Módulos especializados de Python: matemático, aleatorio y de sistema en Python  -->
           <!-- -------------------------------- comentarios -------------------------------- -->
-<article
-            class="row pt-5"
-            id="comment">
+          <article class="row pt-5" id="comments">
             <br />
             <h2>COMENTARIOS</h2>
             <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del
-              formulario disponible para este propósito.
+              Si tiene alguna inquietud, duda o ha encontrado algún error, por
+              favor infórmelo a través del formulario disponible para este
+              propósito.
             </p>
             <div class="d-flex justify-content-center">
               <form
                 action="https://formspree.io/f/mdkdawkg"
                 method="POST"
-                id="myForm">
-                <div class="input-group d-flex justify-content-center flex-column">
-                  <label
-                    for="name"
-                    class="pe-2"
-                    >Nombre:</label
-                  >
+                id="myForm"
+              >
+                <div
+                  class="input-group d-flex justify-content-center flex-column"
+                >
+                  <label for="name" class="pe-2">Nombre:</label>
                   <input
                     type="text"
                     name="name"
                     id="name"
                     placeholder="User"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="email"
-                    class="pe-2"
-                    >Email:</label
-                  >
+                    required="required"
+                  />
+                  <label for="email" class="pe-2">Email:</label>
                   <input
                     type="email"
                     name="email"
                     id="email"
                     placeholder="user@mail.com"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="message"
-                    class="pe-2"
-                    >Mensaje:</label
-                  >
+                    required="required"
+                  />
+                  <label for="message" class="pe-2">Mensaje:</label>
                   <textarea
                     name="message"
                     id="message"
                     cols="30"
                     rows="5"
                     placeholder="Su comentario..."
-                    class="rounded rounded-3"></textarea>
+                    class="rounded rounded-3"
+                  ></textarea>
                   <input
                     class="btn btn-outline-light my-3 border rounded-pill border-2"
                     type="submit"
-                    value="Enviar..." />
+                    value="Enviar..."
+                  />
                 </div>
                 <p>
-                  La política de privacidad, y los términos y condiciones están disponibles en el formulario
-                  de contacto.
+                  La política de privacidad, y los términos y condiciones están
+                  disponibles en el formulario de contacto.
                 </p>
               </form>
             </div>
@@ -1229,6 +1123,9 @@
         <h1>En Este Artículo</h1>
         <ul class="list-group">
           <li class="list-group-item">
+            <a href="#introduccion">Introducción</a>
+          </li>
+          <li class="list-group-item">
             <a href="#inspectorDeNombresYAtributos"
               >Inspector de Nombres y Atributos</a
             >
@@ -1241,6 +1138,9 @@
           </li>
           <li class="list-group-item">
             <a href="#moduloPlatform">Módulo platform</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#comments">Comentarios</a>
           </li>
         </ul>
       </aside>

@@ -45,7 +45,7 @@
     <!-- fin Open Graph data -->
 
     <!-- Twitter cards -->
-    <meta name="twitter:card"  content="summary" />
+    <meta name="twitter:card" content="summary" />
     <meta
       name="twitter:title"
       content="Operadores de Comparación y de Lógica Python 3 - Ing. Eduardo Herrera Forero."
@@ -166,11 +166,11 @@
     <!-- Barra deNavegación -->
 
     <!-- -------------------------------- principal -------------------------------- -->
-    <div class="row col mx-1">
+    <div class="container-fluid" id="introduccion">
       <main class="pt-5 col-lg-9">
         <section class="pb-3">
           <!--  Operadores de Comparación y Lógicos en Python -->
-                    <article
+          <article
             class="row border-1 border-bottom pb-3"
             data-bs-spy="scroll"
             data-bs-target="#list-example"
@@ -180,54 +180,39 @@
               <header>
                 <h1>Operadores de Comparación y Lógicos en Python</h1>
               </header>
-              <p>
-                En este artículo se explorarán los operadores de comparación y
-                lógicos en Python, elementos fundamentales para realizar
-                evaluaciones y tomar decisiones en los programas. Los operadores
-                de comparación permiten comparar valores y devolver un resultado
-                booleano (<code>True</code> o <code>False</code>), mientras que
-                los operadores lógicos (and, or, not) permiten combinar o
-                modificar estas condiciones booleanas. Ambos tipos de operadores
-                son esenciales en estructuras de control como las condicionales
-                y los bucles. A lo largo del documento, se analizará cada
-                operador en detalle, incluyendo su sintaxis y ejemplos prácticos
-                de uso, demostrando cómo se pueden utilizar tanto de manera
-                individual como combinada para crear condiciones más complejas y
-                precisas.
-              </p>
-              <div class="text-center imagen">
-                <picture>
-                  <img
-                    src="https://i.ibb.co/smDQ3Dw/comparadorescomparacionylogicos.jpg"
-                    class="img-fluid rounded-4"
-                    width="50%"
-                    alt="Operadores de Comparación y de Lógica en Python"
-                    title="En este artículo explicará los seis operadores de comparación y los tres operadores de Lógica que tiene Python"
-                  />
-                  <figcaption>
-                    Operadores de Comparación y de Lógica en Python
-                  </figcaption>
-                </picture>
-                <!-- Go to top -->
-                <div class="text-center mt-5">
-                  <a href="#" id="myBtnScroll2" title="Go to top">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="32"
-                      height="32"
-                      fill="currentColor"
-                      class="bi bi-arrow-bar-up"
-                      viewBox="0 0 16 16"
-                      style="margin-left: -2px"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"
-                      />
-                    </svg>
-                  </a>
+              <!-- Introducción -->
+              <div class="mt-5">
+                <h2>Introducción</h2>
+                <p>
+                  En este artículo se explorarán los operadores de comparación y
+                  lógicos en Python, elementos fundamentales para realizar
+                  evaluaciones y tomar decisiones en los programas. Los
+                  operadores de comparación permiten comparar valores y devolver
+                  un resultado booleano (<code>True</code> o
+                  <code>False</code>), mientras que los operadores lógicos (and,
+                  or, not) permiten combinar o modificar estas condiciones
+                  booleanas. Ambos tipos de operadores son esenciales en
+                  estructuras de control como las condicionales y los bucles. A
+                  lo largo del documento, se analizará cada operador en detalle,
+                  incluyendo su sintaxis y ejemplos prácticos de uso,
+                  demostrando cómo se pueden utilizar tanto de manera individual
+                  como combinada para crear condiciones más complejas y
+                  precisas.
+                </p>
+                <div class="text-center imagen">
+                  <picture>
+                    <img
+                      src="https://i.ibb.co/smDQ3Dw/comparadorescomparacionylogicos.jpg"
+                      class="img-fluid rounded-4"
+                      width="50%"
+                      alt="Operadores de Comparación y de Lógica en Python"
+                      title="En este artículo explicará los seis operadores de comparación y los tres operadores de Lógica que tiene Python"
+                    />
+                    <figcaption>
+                      Operadores de Comparación y de Lógica en Python
+                    </figcaption>
+                  </picture>
                 </div>
-                <!-- Go to top Fin-->
               </div>
               <!-- Operadores de Comparación en Python -->
               <div id="operadoresdeComparacion" class="mt-5">
@@ -255,7 +240,8 @@
                       <code>True</code> si ambos valores son idénticos y
                       <code>False</code> en caso contrario.
                     </p>
-                                        <pre                      data-src-status="loaded"
+                    <pre
+                      data-src-status="loaded"
                       tabindex="0"
                     ><code class="language-python" data-prismjs-copy="Copy">
                   a = 5
@@ -272,7 +258,8 @@
                       Retorna <code>True</code> si los valores no son iguales y
                       <code>False</code> si lo son.
                     </p>
-                                        <pre                      data-src-status="loaded"
+                    <pre
+                      data-src-status="loaded"
                       tabindex="0"
                     ><code class="language-python" data-prismjs-copy="Copy">
                   a = 5
@@ -288,7 +275,8 @@
                       Comprueba si el valor a la izquierda es mayor que el valor
                       a la derecha.
                     </p>
-                                        <pre                      data-src-status="loaded"
+                    <pre
+                      data-src-status="loaded"
                       tabindex="0"
                     ><code class="language-python" data-prismjs-copy="Copy">
                   a = 5
@@ -304,7 +292,8 @@
                       Evalúa si el valor a la izquierda es menor que el valor a
                       la derecha.
                     </p>
-                                        <pre                      data-src-status="loaded"
+                    <pre
+                      data-src-status="loaded"
                       tabindex="0"
                     ><code class="language-python" data-prismjs-copy="Copy">
                   a = 5
@@ -320,7 +309,8 @@
                       Este operador devuelve <code>True</code> si el valor a la
                       izquierda es mayor o igual al valor a la derecha.
                     </p>
-                                        <pre                      data-src-status="loaded"
+                    <pre
+                      data-src-status="loaded"
                       tabindex="0"
                     ><code class="language-python" data-prismjs-copy="Copy">
                   a = 5
@@ -336,7 +326,8 @@
                       Verifica si el valor a la izquierda es menor o igual al
                       valor a la derecha.
                     </p>
-                                        <pre                      data-src-status="loaded"
+                    <pre
+                      data-src-status="loaded"
                       tabindex="0"
                     ><code class="language-python" data-prismjs-copy="Copy">
                   a = 4
@@ -386,7 +377,6 @@
                   </ul>
                   <h4>Ejemplo de Uso</h4>
                   <pre
-                    
                     data-src-status="loaded"
                     tabindex="0"
                   ><code class="language-python" data-prismjs-copy="Copy">
@@ -431,65 +421,59 @@
           <!--  Operadores de Comparación y Lógicos en Python - fIn -->
 
           <!-- -------------------------------- comentarios -------------------------------- -->
-<article
-            class="row pt-5"
-            id="comment">
+          <article class="row pt-5" id="comments">
             <br />
             <h2>COMENTARIOS</h2>
             <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del
-              formulario disponible para este propósito.
+              Si tiene alguna inquietud, duda o ha encontrado algún error, por
+              favor infórmelo a través del formulario disponible para este
+              propósito.
             </p>
             <div class="d-flex justify-content-center">
               <form
                 action="https://formspree.io/f/mdkdawkg"
                 method="POST"
-                id="myForm">
-                <div class="input-group d-flex justify-content-center flex-column">
-                  <label
-                    for="name"
-                    class="pe-2"
-                    >Nombre:</label
-                  >
+                id="myForm"
+              >
+                <div
+                  class="input-group d-flex justify-content-center flex-column"
+                >
+                  <label for="name" class="pe-2">Nombre:</label>
                   <input
                     type="text"
                     name="name"
                     id="name"
                     placeholder="User"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="email"
-                    class="pe-2"
-                    >Email:</label
-                  >
+                    required="required"
+                  />
+                  <label for="email" class="pe-2">Email:</label>
                   <input
                     type="email"
                     name="email"
                     id="email"
                     placeholder="user@mail.com"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="message"
-                    class="pe-2"
-                    >Mensaje:</label
-                  >
+                    required="required"
+                  />
+                  <label for="message" class="pe-2">Mensaje:</label>
                   <textarea
                     name="message"
                     id="message"
                     cols="30"
                     rows="5"
                     placeholder="Su comentario..."
-                    class="rounded rounded-3"></textarea>
+                    class="rounded rounded-3"
+                  ></textarea>
                   <input
                     class="btn btn-outline-light my-3 border rounded-pill border-2"
                     type="submit"
-                    value="Enviar..." />
+                    value="Enviar..."
+                  />
                 </div>
                 <p>
-                  La política de privacidad, y los términos y condiciones están disponibles en el formulario
-                  de contacto.
+                  La política de privacidad, y los términos y condiciones están
+                  disponibles en el formulario de contacto.
                 </p>
               </form>
             </div>
@@ -504,6 +488,9 @@
           <h1>En Este Artículo</h1>
           <ul class="list-group">
             <li class="list-group-item">
+              <a href="#introduccion">Introducción</a>
+            </li>
+            <li class="list-group-item">
               <a href="#operadoresdeComparacion">Operadores de Comparación</a>
             </li>
             <li class="list-group-item">
@@ -513,6 +500,9 @@
               <a href="#prioridadDeLosOperadoresDeComparacionYLogicos"
                 >Prioridad de los Operadores de Comparación y Lógicos</a
               >
+            </li>
+            <li class="list-group-item">
+              <a href="#comments">Comentarios</a>
             </li>
           </ul>
         </div>

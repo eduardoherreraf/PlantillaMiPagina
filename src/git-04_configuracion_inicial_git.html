@@ -43,7 +43,7 @@
     <meta property="og:locale" content="es_CO" />
     <!-- fin Open Graph data -->
     <!-- Twitter cards -->
-    <meta name="twitter:card"  content="summary"/>
+    <meta name="twitter:card" content="summary" />
     <meta
       name="twitter:title"
       content="Configuración Inicial de GIT - Ing. Eduardo Herrera Forero."
@@ -153,7 +153,7 @@
     </nav>
     <!-- Barra deNavegación -->
     <!-- -------------------------------- principal -------------------------------- -->
-    <div class="row col mx-1">
+    <div class="container-fluid" id="introduccion">
       <main class="pt-5 col-lg-9">
         <section class="pb-3">
           <!-- Configuración Inicial de GIT  -->
@@ -165,8 +165,8 @@
           >
             <h1>Configuración Inicial de GIT</h1>
             <!-- Introducción -->
-            <div id="introduccion" class="mt-5">
-              <h2 class="mt-1">Introducción</h2>
+            <div class="mt-5">
+              <h2>Introducción</h2>
               <p>
                 Los comandos de configuración inicial de Git permiten establecer
                 parámetros globales que definen cómo Git interactúa con el
@@ -192,7 +192,7 @@
                 los commits, permitiendo identificar quién hizo los cambios en
                 un proyecto.
               </p>
-              <pre  data-src-status="loaded" tabindex="0">
+              <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git config --global user.name "Nombre del usuario"
                     git config --global user.email "Semail@ejemplo.com"
@@ -205,7 +205,7 @@
                 repositorio en particular, se puede omitir
                 <strong>--global</strong>:
               </p>
-              <pre  data-src-status="loaded" tabindex="0">
+              <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   git config user.name "Otro Nombre"
                   git config user.email "otro_email@ejemplo.com"
@@ -246,7 +246,7 @@
                 o archivos de configuración. Es útil configurar el editor de
                 texto preferido para estas tareas.
               </p>
-              <pre  data-src-status="loaded" tabindex="0">
+              <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git config --global core.editor "nombre-del-editor"
                     // para VSCode
@@ -284,7 +284,7 @@
                 Se usa principalmente para mejorar la legibilidad de los
                 mensajes en la terminal.
               </p>
-              <pre  data-src-status="loaded" tabindex="0">
+              <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git config --global color.ui auto
                   </code>
@@ -297,7 +297,7 @@
                   Además, se pueden personalizar colores para distintas
                   secciones de los mensajes en Git:
                 </p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     # Colorea la salida de 'git status'
                     git config --global color.status auto
@@ -322,7 +322,7 @@
                   Si se desea personalizar los colores con más detalle, se
                   pueden definir colores específicos. Por ejemplo:
                 </p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     # Archivos añadidos en verde y negrita
                     git config --global color.status.added "green bold"
@@ -338,7 +338,7 @@
                   Para ver todas las opciones de colores disponibles, se puede
                   consultar la documentación de Git con:
                 </p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     git help config
                   </code>
@@ -353,7 +353,7 @@
                   Para comprobar la configuración de colores en Git, se puede
                   ejecutar:
                 </p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     git config --global --list | grep color
                   </code>
@@ -369,7 +369,7 @@
                 Se puedes especificar cómo Git debe manejar las fusiones de
                 archivos.
               </p>
-              <pre  data-src-status="loaded" tabindex="0">
+              <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git config --global merge.tool "nombre-del-herramienta-de-fusión"
                   </code>
@@ -426,7 +426,7 @@
                 Los alias se utilizan para abreviar comandos largos o
                 complicados, facilitando y agilizando su uso.
               </p>
-              <pre  data-src-status="loaded" tabindex="0">
+              <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git config --global alias.st status
                     git config --global alias.co checkout
@@ -435,7 +435,7 @@
               <p>
                 En este ejemplo, ambos comandos producen el mismo resultado.
               </p>
-              <pre  data-src-status="loaded" tabindex="0">
+              <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git st
                     git status
@@ -448,11 +448,7 @@
                 <!-- Alias para comandos básicos -->
                 <div>
                   <h4>Alias para comandos básicos</h4>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Muestra el estado del repositorio
                       git config --global alias.st status
@@ -482,11 +478,7 @@
                 <!-- Alias para Agregar y Confirmar Cambios -->
                 <div>
                   <h4>Alias para Agregar y Confirmar Cambios</h4>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Añade todos los cambios al área de preparación
                       git config --global alias.ad "add ."
@@ -509,11 +501,7 @@
                 <!-- Alias para Manejar Ramas -->
                 <div>
                   <h4>Alias para Manejar Ramas</h4>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Crea y cambia a una nueva rama
                         git config --global alias.ck "checkout -b"
@@ -537,11 +525,7 @@
                 <!-- Alias para Trabajar con Remotos -->
                 <div>
                   <h4>Alias para Trabajar con Remotos</h4>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Envía cambios al repositorio remoto
                       git config --global alias.pu "push"
@@ -563,11 +547,7 @@
                 <!-- Alias para Reiniciar y Limpiar Cambios -->
                 <div>
                   <h4>Alias para Reiniciar y Limpiar Cambios</h4>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Revierte el último commit manteniendo los cambios
                         git config --global alias.undo "reset --soft HEAD~1"
@@ -586,11 +566,7 @@
                 <!-- Alias Avanzados -->
                 <div>
                   <h4>Alias Avanzados</h4>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         git config --global alias.lg "log --graph --decorate --oneline --all"
 
@@ -614,7 +590,7 @@
                 <p>
                   Para ver la lista completa de alias configurados en Git, usar:
                 </p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     git config --global --list | grep alias
                   </code>
@@ -632,7 +608,7 @@
                 correo electrónico, alias y más. Es un comando útil para revisar
                 la configuración de GIT de un vistazo.
               </p>
-              <pre  data-src-status="loaded" tabindex="0">
+              <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git config --list
                   </code>
@@ -653,65 +629,59 @@
           </article>
           <!-- fin Comandos Básicos CLI -->
           <!-- -------------------------------- comentarios -------------------------------- -->
-          <article
-            class="row pt-5"
-            id="comment">
+          <article class="row pt-5" id="comments">
             <br />
             <h2>COMENTARIOS</h2>
             <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del
-              formulario disponible para este propósito.
+              Si tiene alguna inquietud, duda o ha encontrado algún error, por
+              favor infórmelo a través del formulario disponible para este
+              propósito.
             </p>
             <div class="d-flex justify-content-center">
               <form
                 action="https://formspree.io/f/mdkdawkg"
                 method="POST"
-                id="myForm">
-                <div class="input-group d-flex justify-content-center flex-column">
-                  <label
-                    for="name"
-                    class="pe-2"
-                    >Nombre:</label
-                  >
+                id="myForm"
+              >
+                <div
+                  class="input-group d-flex justify-content-center flex-column"
+                >
+                  <label for="name" class="pe-2">Nombre:</label>
                   <input
                     type="text"
                     name="name"
                     id="name"
                     placeholder="User"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="email"
-                    class="pe-2"
-                    >Email:</label
-                  >
+                    required="required"
+                  />
+                  <label for="email" class="pe-2">Email:</label>
                   <input
                     type="email"
                     name="email"
                     id="email"
                     placeholder="user@mail.com"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="message"
-                    class="pe-2"
-                    >Mensaje:</label
-                  >
+                    required="required"
+                  />
+                  <label for="message" class="pe-2">Mensaje:</label>
                   <textarea
                     name="message"
                     id="message"
                     cols="30"
                     rows="5"
                     placeholder="Su comentario..."
-                    class="rounded rounded-3"></textarea>
+                    class="rounded rounded-3"
+                  ></textarea>
                   <input
                     class="btn btn-outline-light my-3 border rounded-pill border-2"
                     type="submit"
-                    value="Enviar..." />
+                    value="Enviar..."
+                  />
                 </div>
                 <p>
-                  La política de privacidad, y los términos y condiciones están disponibles en el formulario
-                  de contacto.
+                  La política de privacidad, y los términos y condiciones están
+                  disponibles en el formulario de contacto.
                 </p>
               </form>
             </div>
@@ -750,6 +720,9 @@
           </li>
           <li class="list-group-item">
             <a href="#verlaconfiguracion">Ver la configuración</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#comments">Comentarios</a>
           </li>
         </ul>
       </aside>

@@ -45,7 +45,7 @@
     <!-- fin Open Graph data -->
 
     <!-- Twitter cards -->
-    <meta name="twitter:card"  content="summary"/>
+    <meta name="twitter:card" content="summary" />
     <meta
       name="twitter:title"
       content="Manejo de Archivos Python 3 - Ing. Eduardo Herrera Forero."
@@ -163,7 +163,7 @@
     <!-- Barra deNavegación -->
 
     <!-- -------------------------------- principal -------------------------------- -->
-    <div class="row col mx-1">
+    <div class="container-fluid" id="introduccion">
       <main class="pt-5 col-lg-9">
         <section class="pb-3">
           <!--  Manejo de Archivos en Python  -->
@@ -177,28 +177,33 @@
               <header>
                 <h1>Manejo de Archivos en Python</h1>
               </header>
-              <p>
-                El manejo de archivos en Python es una habilidad fundamental
-                para cualquier programador, ya que permite la lectura y
-                escritura de datos en archivos, facilitando la persistencia de
-                información. Este documento explora las diversas técnicas y
-                métodos disponibles en Python para trabajar con archivos,
-                incluyendo la apertura, lectura, escritura y cierre de archivos,
-                así como el manejo de excepciones y la manipulación de archivos
-                en diferentes formatos.
-              </p>
-              <div class="text-center imagen">
-                <picture>
-                  <img
-                    src="https://i.ibb.co/Z86kBk1/manejoarchivos.jpg"
-                    class="img-fluid rounded-4"
-                    width="65%"
-                    alt="Manejo de Archivos en Python  "
-                    title="Dominando Técnicas de Archivos en Python"
-                  />
-                  <figcaption>Manejo de Archivos en Python</figcaption>
-                </picture>
+              <!-- Introducción -->
+              <div class="mt-5">
+                <h2>Introducción</h2>
+                <p>
+                  El manejo de archivos en Python es una habilidad fundamental
+                  para cualquier programador, ya que permite la lectura y
+                  escritura de datos en archivos, facilitando la persistencia de
+                  información. Este documento explora las diversas técnicas y
+                  métodos disponibles en Python para trabajar con archivos,
+                  incluyendo la apertura, lectura, escritura y cierre de
+                  archivos, así como el manejo de excepciones y la manipulación
+                  de archivos en diferentes formatos.
+                </p>
+                <div class="text-center imagen">
+                  <picture>
+                    <img
+                      src="https://i.ibb.co/Z86kBk1/manejoarchivos.jpg"
+                      class="img-fluid rounded-4"
+                      width="65%"
+                      alt="Manejo de Archivos en Python  "
+                      title="Dominando Técnicas de Archivos en Python"
+                    />
+                    <figcaption>Manejo de Archivos en Python</figcaption>
+                  </picture>
+                </div>
               </div>
+
               <!-- Apertura de Archivos -->
               <div id="aperturaDeArchivos" class="mt-5">
                 <h2 class="mt-1">Abrir archivos (open())</h2>
@@ -212,11 +217,7 @@
                 <!-- Sintaxis Básica  Open() -->
                 <div>
                   <h3>Sintaxis Básica Open()</h3>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     open(file, mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)
                   </code>
@@ -325,11 +326,7 @@
                       <span class="fw-bold"
                         >Abrir un archivo para lectura (<code>'r'</code>)</span
                       >:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   # Abrir un archivo en modo lectura
                   archivo = open('mi_archivo.txt', 'r')
@@ -346,11 +343,7 @@
                         >Abrir un archivo para escritura
                         (<code>'w'</code>)</span
                       >:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   # Abrir un archivo en modo escritura (sobrescribe si existe)
                   archivo = open('mi_archivo.txt', 'w')
@@ -366,11 +359,7 @@
                         >Abrir un archivo para añadir contenido
                         (<code>'a'</code>)</span
                       >:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   # Abrir un archivo en modo añadir (agrega al final)
                   archivo = open('mi_archivo.txt', 'a')
@@ -385,11 +374,7 @@
                       <span class="fw-bold"
                         >Leer un archivo línea por línea</span
                       >:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   # Abrir un archivo en modo añadir (agrega al final)
                   archivo = open('mi_archivo.txt', 'a')
@@ -405,11 +390,7 @@
                         >Abrir un archivo en modo binario
                         (<code>'rb</code>')</span
                       >:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   # Abrir un archivo binario en modo lectura
                   archivo = open('imagen.png', 'rb')
@@ -457,9 +438,7 @@
                 <ul>
                   <li>
                     <span class="fw-bold">Leer todo el archivo</span>:
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Leer todo el archivo
                       archivo=open("miArchivo.txt","r",encoding="utf-8")
@@ -471,9 +450,7 @@
                   </li>
                   <li>
                     <span class="fw-bold">Leer una línea</span>:
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Leer una línea
                       archivo=open("miArchivo.txt","r")
@@ -487,9 +464,7 @@
                   </li>
                   <li>
                     <span class="fw-bold">Leer todas las líneas</span>:
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Leer todas las líneas
                       archivo = open("miArchivo.txt", "r")
@@ -500,9 +475,7 @@
                   </li>
                   <li>
                     <span class="fw-bold">Leer línea por línea</span>:
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Leer línea por línea
                       archivo=open("miArchivo.txt","r")
@@ -567,9 +540,7 @@
                     modo abre el archivo para escribir. Si el archivo no existe,
                     se crea uno nuevo. Si el archivo ya existe, su contenido se
                     sobrescribe.
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Abrir el archivo en modo de escritura
                       with open('archivo.txt', 'w') as archivo:
@@ -583,9 +554,7 @@
                     abre el archivo para escribir. Si el archivo no existe, se
                     crea uno nuevo. Si el archivo ya existe, el nuevo contenido
                     se añade al final del archivo.
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Abrir el archivo en modo de anexar
                       with open('archivo.txt', 'a') as archivo:
@@ -598,9 +567,7 @@
                       >Modo de Lectura y Escritura ('r+')</span
                     >: Este modo abre el archivo para leer y escribir. El
                     puntero del archivo se coloca al principio del archivo.
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Abrir el archivo en modo de lectura y escritura
                       with open('archivo.txt', 'r+') as archivo:
@@ -612,9 +579,7 @@
                   <li>
                     <strong>Escritura de Múltiples Líneas</strong>: Para
                     escribir múltiples líneas de manera eficiente:
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Abrir el archivo en modo de escritura
                       lineas = ["Primera línea\n", "Segunda línea\n", "Tercera línea\n"]
@@ -627,9 +592,7 @@
                     <strong>Escribir Objetos Convertidos a Texto</strong>: Si se
                     desea guardar datos como listas o diccionarios, estos deben
                     convertirse en cadenas:
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       datos = {"nombre": "Juan", "edad": 30}
                       with open("archivo.json", "w") as archivo:
@@ -650,11 +613,7 @@
                         <span class="fw-bold">Codificación</span>: Si el archivo
                         contiene caracteres especiales, especifique la
                         codificación:
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         with open("archivo.txt", "w", encoding="utf-8") as archivo:
                         archivo.write("Texto con caracteres especiales: ñ, á, é.\n")
@@ -678,7 +637,7 @@
                   Aquí se tiene un ejemplo completo que muestra cómo usar estos
                   modos:
                 </p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   # Escribir en el archivo (sobrescribir si existe)
                   with open('archivo.txt', 'w') as archivo:
@@ -712,7 +671,7 @@
                   archivo, pero si se usa la sentencia <code>with</code> es
                   innecesario.
                 </p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   file.close()
                 </code>
@@ -768,11 +727,7 @@
                     <code>try</code>, <code>except</code>, <code>else</code>, y
                     <code>finally</code>:
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     try:
                     # Código que puede causar una excepción
@@ -803,11 +758,7 @@
                       <span class="fw-bold"
                         >Leer un archivo con manejo de errores</span
                       >:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         try:
                         with open("datos.txt", "r") as archivo:
@@ -824,11 +775,7 @@
                       <span class="fw-bold"
                         >Escribir en un archivo con validación de permisos</span
                       >:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       try:
                       with open("salida.txt", "w") as archivo:
@@ -847,11 +794,7 @@
                         >Gestionar múltiples errores en lectura y
                         escritura</span
                       >:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         try:
                         with open("entrada.txt", "r") as entrada, open("salida.txt", "w") as salida:
@@ -904,11 +847,7 @@
                     Se pueden lanzar errores personalizados si se desea realizar
                     validaciones adicionales:
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     try:
                     archivo = "datos.txt"
@@ -940,11 +879,7 @@
                 <!-- Sintaxis Básica de with -->
                 <div>
                   <h3>Sintaxis Básica de with</h3>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     with open('archivo.txt', 'modo') as variable:
                         # Operaciones con el archivo
@@ -989,11 +924,7 @@
                   <ul>
                     <li>
                       <span class="fw-bold">Leer un archivo</span>:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         with open('archivo.txt', 'r') as archivo:
                             contenido = archivo.read()
@@ -1004,11 +935,7 @@
                     </li>
                     <li>
                       <span class="fw-bold">Escribir en un archivo</span>:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         with open('archivo.txt', 'w') as archivo:
                             archivo.write('Hola, este es un archivo de prueba.')
@@ -1019,11 +946,7 @@
                     <li>
                       <span class="fw-bold">Añadir contenido a un archivo</span
                       >:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         with open('archivo.txt', 'a') as archivo:
                             archivo.write('\nLínea adicional al archivo.')
@@ -1035,11 +958,7 @@
                       <span class="fw-bold"
                         >Leer un archivo línea por línea</span
                       >:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         with open('archivo.txt', 'r') as archivo:
                             for linea in archivo:
@@ -1057,65 +976,59 @@
           </article>
           <!--  Manejo de Archivos en Python  -->
           <!-- -------------------------------- comentarios -------------------------------- -->
-<article
-            class="row pt-5"
-            id="comment">
+          <article class="row pt-5" id="comments">
             <br />
             <h2>COMENTARIOS</h2>
             <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del
-              formulario disponible para este propósito.
+              Si tiene alguna inquietud, duda o ha encontrado algún error, por
+              favor infórmelo a través del formulario disponible para este
+              propósito.
             </p>
             <div class="d-flex justify-content-center">
               <form
                 action="https://formspree.io/f/mdkdawkg"
                 method="POST"
-                id="myForm">
-                <div class="input-group d-flex justify-content-center flex-column">
-                  <label
-                    for="name"
-                    class="pe-2"
-                    >Nombre:</label
-                  >
+                id="myForm"
+              >
+                <div
+                  class="input-group d-flex justify-content-center flex-column"
+                >
+                  <label for="name" class="pe-2">Nombre:</label>
                   <input
                     type="text"
                     name="name"
                     id="name"
                     placeholder="User"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="email"
-                    class="pe-2"
-                    >Email:</label
-                  >
+                    required="required"
+                  />
+                  <label for="email" class="pe-2">Email:</label>
                   <input
                     type="email"
                     name="email"
                     id="email"
                     placeholder="user@mail.com"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="message"
-                    class="pe-2"
-                    >Mensaje:</label
-                  >
+                    required="required"
+                  />
+                  <label for="message" class="pe-2">Mensaje:</label>
                   <textarea
                     name="message"
                     id="message"
                     cols="30"
                     rows="5"
                     placeholder="Su comentario..."
-                    class="rounded rounded-3"></textarea>
+                    class="rounded rounded-3"
+                  ></textarea>
                   <input
                     class="btn btn-outline-light my-3 border rounded-pill border-2"
                     type="submit"
-                    value="Enviar..." />
+                    value="Enviar..."
+                  />
                 </div>
                 <p>
-                  La política de privacidad, y los términos y condiciones están disponibles en el formulario
-                  de contacto.
+                  La política de privacidad, y los términos y condiciones están
+                  disponibles en el formulario de contacto.
                 </p>
               </form>
             </div>
@@ -1128,6 +1041,9 @@
       <aside class="col-lg-3 d-none d-lg-block pt-5">
         <h1>En Este Artículo</h1>
         <ul class="list-group">
+          <li class="list-group-item">
+            <a href="#introduccion">Introducción</a>
+          </li>
           <li class="list-group-item">
             <a href="#aperturaDeArchivos">Abrir archivos (open())</a>
           </li>
@@ -1145,6 +1061,9 @@
           </li>
           <li class="list-group-item">
             <a href="#usoDeLaDeclaracionWith">Uso de la Declaración with</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#comments">Comentarios</a>
           </li>
         </ul>
       </aside>

@@ -45,7 +45,7 @@
     <!-- fin Open Graph data -->
 
     <!-- Twitter cards -->
-    <meta name="twitter:card"  content="summary" />
+    <meta name="twitter:card" content="summary" />
     <meta
       name="twitter:title"
       content="Módulos y Paquetes Python 3 - Ing. Eduardo Herrera Forero."
@@ -163,11 +163,11 @@
     <!-- Barra deNavegación -->
 
     <!-- -------------------------------- principal -------------------------------- -->
-    <div class="row col mx-1">
+    <div class="container-fluid" id="introduccion">
       <main class="pt-5 col-lg-9">
         <section class="pb-3">
           <!--  Módulos y Paquetes de Python  -->
-                    <article
+          <article
             class="row border-1 border-bottom pb-3"
             data-bs-spy="scroll"
             data-bs-target="#list-example"
@@ -177,26 +177,31 @@
               <header>
                 <h1>Módulos y Paquetes de Python</h1>
               </header>
-              <p>
-                Este documento explora el concepto de módulos y paquetes en
-                Python, dos elementos fundamentales que permiten organizar y
-                reutilizar el código de manera eficiente. A través de ejemplos y
-                explicaciones claras, se abordarán las diferencias entre módulos
-                y paquetes, así como su creación y uso en proyectos de
-                programación.
-              </p>
-              <div class="text-center imagen">
-                <picture>
-                  <img
-                    src="https://i.ibb.co/k5nTj1r/paquetesmodulos.jpg"
-                    class="img-fluid rounded-4"
-                    width="70%"
-                    alt="Módulos y Paquetes de Python  "
-                    title="Módulo vs Paquete"
-                  />
-                  <figcaption>Módulos y Paquetes de Python</figcaption>
-                </picture>
+              <!-- Introducción -->
+              <div class="mt-5">
+                <h2>Introducción</h2>
+                <p>
+                  Este documento explora el concepto de módulos y paquetes en
+                  Python, dos elementos fundamentales que permiten organizar y
+                  reutilizar el código de manera eficiente. A través de ejemplos
+                  y explicaciones claras, se abordarán las diferencias entre
+                  módulos y paquetes, así como su creación y uso en proyectos de
+                  programación.
+                </p>
+                <div class="text-center imagen">
+                  <picture>
+                    <img
+                      src="https://i.ibb.co/k5nTj1r/paquetesmodulos.jpg"
+                      class="img-fluid rounded-4"
+                      width="70%"
+                      alt="Módulos y Paquetes de Python  "
+                      title="Módulo vs Paquete"
+                    />
+                    <figcaption>Módulos y Paquetes de Python</figcaption>
+                  </picture>
+                </div>
               </div>
+
               <!-- ¿Qué es un Paquete y un Módulo? -->
               <div id="queEsUnPaqueteYUnModulo" class="mt-5">
                 <h2 class="mt-1">¿Qué es un Paquete y un Módulo?</h2>
@@ -213,11 +218,7 @@
                     paquete. pero es buena práctica incluir un docstring que
                     describa el propósito general del paquete. Ejemplo:
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     """
                     Paquete: operaciones_matematicas
@@ -375,11 +376,7 @@
                     <li>
                       <span class="fw-bold"><code>module.py</code></span
                       >: Archivo que contiene el código del módulo.
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         print("Me gusta ser un módulo.")
                       </code>
@@ -390,11 +387,7 @@
                       >: En este archivo se importa el módulo
                       <code>module.py</code>, ambos archivos deben estar en la
                       misma carpeta.
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         import module
                       </code>
@@ -504,11 +497,7 @@
                         Si al archivo <code>module.py</code> se le adiciona la
                         instrucción <code>print(__name__)</code> como se muestra
                         a continuación:
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # module.py
                           print("Me gusta ser un módulo.")
@@ -529,11 +518,7 @@
                           módulo que se está importando sin la extensión
                           <code>.py</code>.
                         </p>
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # main.py
                         import module
@@ -603,11 +588,7 @@
                       Utilizar la variable <code>__all__</code> para definir qué
                       funciones, variables o clases estarán disponibles al usar
                       <code>from modulo import *</code>.
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Exportar únicamente lo necesario
                           __all__ = ['suma', 'promedio']
@@ -624,11 +605,7 @@
                     Se muestra un código nuevo del archivo
                     <code>module.py</code>. El módulo actualizado está aquí:
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       #!/usr/bin/env python3 
                       "" module.py - an example of a Python module ""
@@ -724,11 +701,7 @@
                       niveles jerárquicos.
                     </li>
                   </ul>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     mi_paquete/
                         __init__.py
@@ -771,11 +744,7 @@
                       defecto). <br />
                       Ejemplo: <code>mi_paquete/__init__.py</code> puede
                       contener:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         from .modulo1 import funcion1
                         from .modulo2 import clase2
@@ -788,11 +757,7 @@
                       paquete.
                       <br />
                       Ejemplo de <code>modulo1.py</code>:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         def funcion1():
                             print("Hola desde modulo1!")
@@ -814,11 +779,7 @@
                     <li>
                       <span class="fw-bold">Crear la siguiente estructura</span
                       >:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         mi_paquete/
                             __init__.py
@@ -831,11 +792,7 @@
                       <span class="fw-bold"
                         >Código en <code>modulo1.py</code></span
                       >:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         def funcion1():
                             return "Función en modulo1"
@@ -844,11 +801,7 @@
                     </li>
                     <li>
                       <span class="fw-bold">Código en modulo2.py</span>:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         def funcion2():
                             return "Función en modulo2"
@@ -857,11 +810,7 @@
                     </li>
                     <li>
                       <span class="fw-bold">Importar en un script Python</span>:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         from mi_paquete import modulo1, modulo2
                         print(modulo1.funcion1())  # Salida: Función en modulo1
@@ -880,11 +829,7 @@
                     jerárquicas.
                   </p>
                   <p>Ejemplo de estructura:</p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     mi_paquete/
                         __init__.py
@@ -895,11 +840,7 @@
                   </code>
                 </pre>
                   <p>Para usar el subpaquete:</p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     from mi_paquete.subpaquete import modulo3
                     # Llamar funciones o clases de modulo3
@@ -919,11 +860,7 @@
                   <ul>
                     <li>
                       <span class="fw-bold">Instalar un paquete</span>:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         pip install numpy
                       </code>
@@ -931,11 +868,7 @@
                     </li>
                     <li>
                       <span class="fw-bold">Usar el paquete instalado</span>:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         import numpy as np
                         array = np.array([1, 2, 3])
@@ -1068,65 +1001,59 @@
           </article>
           <!--  Módulos y Paquetes de Python  -->
           <!-- -------------------------------- comentarios -------------------------------- -->
-<article
-            class="row pt-5"
-            id="comment">
+          <article class="row pt-5" id="comments">
             <br />
             <h2>COMENTARIOS</h2>
             <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del
-              formulario disponible para este propósito.
+              Si tiene alguna inquietud, duda o ha encontrado algún error, por
+              favor infórmelo a través del formulario disponible para este
+              propósito.
             </p>
             <div class="d-flex justify-content-center">
               <form
                 action="https://formspree.io/f/mdkdawkg"
                 method="POST"
-                id="myForm">
-                <div class="input-group d-flex justify-content-center flex-column">
-                  <label
-                    for="name"
-                    class="pe-2"
-                    >Nombre:</label
-                  >
+                id="myForm"
+              >
+                <div
+                  class="input-group d-flex justify-content-center flex-column"
+                >
+                  <label for="name" class="pe-2">Nombre:</label>
                   <input
                     type="text"
                     name="name"
                     id="name"
                     placeholder="User"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="email"
-                    class="pe-2"
-                    >Email:</label
-                  >
+                    required="required"
+                  />
+                  <label for="email" class="pe-2">Email:</label>
                   <input
                     type="email"
                     name="email"
                     id="email"
                     placeholder="user@mail.com"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="message"
-                    class="pe-2"
-                    >Mensaje:</label
-                  >
+                    required="required"
+                  />
+                  <label for="message" class="pe-2">Mensaje:</label>
                   <textarea
                     name="message"
                     id="message"
                     cols="30"
                     rows="5"
                     placeholder="Su comentario..."
-                    class="rounded rounded-3"></textarea>
+                    class="rounded rounded-3"
+                  ></textarea>
                   <input
                     class="btn btn-outline-light my-3 border rounded-pill border-2"
                     type="submit"
-                    value="Enviar..." />
+                    value="Enviar..."
+                  />
                 </div>
                 <p>
-                  La política de privacidad, y los términos y condiciones están disponibles en el formulario
-                  de contacto.
+                  La política de privacidad, y los términos y condiciones están
+                  disponibles en el formulario de contacto.
                 </p>
               </form>
             </div>
@@ -1139,6 +1066,9 @@
       <aside class="col-lg-3 d-none d-lg-block pt-5">
         <h1>En Este Artículo</h1>
         <ul class="list-group">
+          <li class="list-group-item">
+            <a href="#introduccion">Introducción</a>
+          </li>
           <li class="list-group-item">
             <a href="#queEsUnPaqueteYUnModulo"
               >¿Qué es un Paquete y un Módulo?</a
@@ -1159,6 +1089,9 @@
             <a href="#cuandoUsarModulosYPaquetes"
               >Cuándo Usar Módulos y Paquetes</a
             >
+          </li>
+          <li class="list-group-item">
+            <a href="#comments">Comentarios</a>
           </li>
         </ul>
       </aside>

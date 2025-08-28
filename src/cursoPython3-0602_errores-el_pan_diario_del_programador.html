@@ -45,7 +45,7 @@
     <!-- fin Open Graph data -->
 
     <!-- Twitter cards -->
-    <meta name="twitter:card"  content="summary" />
+    <meta name="twitter:card" content="summary" />
     <meta
       name="twitter:title"
       content="Errores: el pan diario del programador Python - Ing. Eduardo Herrera Forero."
@@ -166,11 +166,11 @@
     <!-- Barra deNavegación -->
 
     <!-- -------------------------------- principal -------------------------------- -->
-    <div class="row col mx-1">
+    <div class="container-fluid" id="introduccion">
       <main class="pt-5 col-lg-9">
         <section class="pb-3">
           <!--  Errores: el pan diario del programador  -->
-                    <article
+          <article
             class="row border-1 border-bottom pb-3"
             data-bs-spy="scroll"
             data-bs-target="#list-example"
@@ -180,31 +180,36 @@
               <header>
                 <h1>Errores: el pan diario del programador</h1>
               </header>
-              <p>
-                En el mundo de la programación, los errores son inevitables y
-                forman parte del proceso de aprendizaje y desarrollo. Este
-                documento explora los tipos más comunes de errores que los
-                programadores enfrentan al trabajar con Python, así como algunas
-                estrategias para identificarlos y solucionarlos. A través de
-                ejemplos prácticos, se busca proporcionar una comprensión más
-                profunda de cómo manejar errores y mejorar la calidad del
-                código.
-              </p>
-              <div class="text-center imagen">
-                <picture>
-                  <img
-                    src="https://i.ibb.co/56h2n3H/errores.jpg"
-                    class="img-fluid rounded-4"
-                    width="50%"
-                    alt="Errores: el pan diario del programador  "
-                    title="Dominando los Errores de Python"
-                  />
-                  <figcaption>
-                    Errores: el pan diario del programador
-                  </figcaption>
-                </picture>
+              <!-- Introducción -->
+              <div class="mt-5">
+                <h2>Introducción</h2>
+                <p>
+                  En el mundo de la programación, los errores son inevitables y
+                  forman parte del proceso de aprendizaje y desarrollo. Este
+                  documento explora los tipos más comunes de errores que los
+                  programadores enfrentan al trabajar con Python, así como
+                  algunas estrategias para identificarlos y solucionarlos. A
+                  través de ejemplos prácticos, se busca proporcionar una
+                  comprensión más profunda de cómo manejar errores y mejorar la
+                  calidad del código.
+                </p>
+                <div class="text-center imagen">
+                  <picture>
+                    <img
+                      src="https://i.ibb.co/56h2n3H/errores.jpg"
+                      class="img-fluid rounded-4"
+                      width="50%"
+                      alt="Errores: el pan diario del programador  "
+                      title="Dominando los Errores de Python"
+                    />
+                    <figcaption>
+                      Errores: el pan diario del programador
+                    </figcaption>
+                  </picture>
+                </div>
               </div>
             </div>
+            
             <!-- Tipos de Errores en Python -->
             <div id="tiposDeErroresEnPython" class="mt-5">
               <h2 class="mt-1">Tipos de Errores en Python</h2>
@@ -220,9 +225,7 @@
                 <ul>
                   <li>
                     Olvidar cerrar un paréntesis o una comilla:
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         print("Hola mundo)
                       </code>
@@ -230,9 +233,7 @@
                   </li>
                   <li>
                     Uso incorrecto de una palabra clave:
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         def = 5
                       </code>
@@ -256,9 +257,7 @@
                       >Error de <code>IndentationError</code></span
                     >: Se produce cuando no se respeta la indentación del
                     código.
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     def saludo():
                     print("Hola")
@@ -269,9 +268,7 @@
                     <span class="fw-bold">Error de <code>TypeError</code></span
                     >: Se produce cuando se intenta realizar una operación con
                     un tipo de datos incompatible.
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     resultado = "Hola" + 5
                   </code>
@@ -281,9 +278,7 @@
                     <span class="fw-bold">Error de <code>ValueError</code></span
                     >: Sucede cuando se pasa un argumento a una función que no
                     es adecuado, aunque su tipo de datos sea correcto.
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     int("abc")
                   </code>
@@ -293,9 +288,7 @@
                     <span class="fw-bold">Error de <code>IndexError</code></span
                     >: Se da cuando se intenta acceder a un índice fuera del
                     rango de una lista.
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     lista = [1, 2, 3]
                     print(lista[5])
@@ -306,9 +299,7 @@
                     <span class="fw-bold">Error de <code>KeyError</code></span
                     >: Ocurre cuando se intenta acceder a una clave que no
                     existe en un diccionario.
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     diccionario = {"nombre": "Juan"}
                     print(diccionario["edad"])
@@ -320,9 +311,7 @@
                       >Error de <code>AttributeError</code></span
                     >: Se genera cuando se intenta acceder a un atributo o
                     método que no existe en un objeto.
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     objeto = "Hola"
                     objeto.append(" Mundo")
@@ -333,9 +322,7 @@
                     <span class="fw-bold"
                       >Error de <code>ZeroDivisionError</code></span
                     >: Ocurre cuando se intenta dividir un número entre cero.
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     x = 5 / 0
                   </code>
@@ -346,9 +333,7 @@
                       >Error de <code>FileNotFoundError</code></span
                     >: Se produce cuando se intenta abrir un archivo que no
                     existe.
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     open("archivo_inexistente.txt")
                   </code>
@@ -366,7 +351,7 @@
                   esperado. Son errores en la lógica del programa.
                 </p>
                 <p>Ejemplo.</p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     def calcular_area(base, altura):
                         return base * base  # Error lógico, debería ser base * altura
@@ -663,7 +648,7 @@
                   módulo o paquete especificado.
                 </p>
                 <p>Ejemplo:</p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     import modulo_inexistente
                   </code>
@@ -725,9 +710,7 @@
                     un tipo de dato incorrecto), detecta que la operación no
                     puede continuar de forma normal. <br />
                     Ejemplo:
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         x = [1, 2, 3]
                         print(x[5])  # Operación inválida (acceso a un índice fuera de rango)
@@ -766,9 +749,7 @@
                     error. Esto interrumpe inmediatamente la ejecución normal
                     del programa y comienza a buscar un manejador de excepciones
                     adecuado en el código (un bloque try...except). Ejemplo:
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         x = [1, 2, 3]
                         print(x[5])  # Genera IndexError
@@ -814,11 +795,7 @@
                           </li>
                         </ul>
                         <strong>Ejemplo sin manejo</strong>:
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         print(10 / 0)  # Sin bloque try...except
                         # Resultado:
@@ -832,11 +809,7 @@
                         código dentro del bloque <code>except</code> se ejecuta,
                         permitiendo que el programa continúe su ejecución de
                         manera controlada.
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       try:
                           print(10 / 0)
@@ -884,11 +857,7 @@
                     La estructura básica de un bloque
                     <code>try...except</code> es la siguiente:
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         try:
                             # Código que puede generar una excepción
@@ -923,11 +892,7 @@
                       >: Es posible manejar un tipo de excepción específico,
                       como <code>ValueError</code>,
                       <code>ZeroDivisionError</code>, o cualquier otra.
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           try:
                               x = int(input("Introduce un número: "))
@@ -943,11 +908,7 @@
                       <span class="fw-bold">Capturar múltiples excepciones</span
                       >: Si varias excepciones deben manejarse de la misma
                       manera, se pueden agrupar usando una tupla.
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           try:
                               x = int(input("Introduce un número: "))
@@ -961,11 +922,7 @@
                       <span class="fw-bold">Capturar cualquier excepción</span>:
                       Utilizando un <code>except</code> sin especificar el tipo,
                       se capturan todas las excepciones.
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           try:
                               x = int(input("Introduce un número: "))
@@ -983,11 +940,7 @@
                         >Obtener detalles de la excepción</span
                       >: La excepción puede ser capturada en una variable para
                       acceder a información detallada.
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           try:
                               x = int(input("Introduce un número: "))
@@ -1014,11 +967,7 @@
                       <span class="fw-bold"><code>else</code></span
                       >: Este bloque se ejecuta si no se genera ninguna
                       excepción dentro del bloque <code>try</code>:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             try:
                                 x = int(input("Introduce un número: "))
@@ -1035,11 +984,7 @@
                       >: Este bloque siempre se ejecuta, ya sea que ocurra o no
                       una excepción. Se utiliza para realizar limpieza de
                       recursos, como cerrar archivos o conexiones.
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             try:
                                 archivo = open("datos.txt", "r")
@@ -1085,11 +1030,7 @@
                     Supongamos que se desea leer números de un archivo y
                     calcular el recíproco de cada uno:
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       try:
                           with open("numeros.txt", "r") as archivo:
@@ -1131,9 +1072,7 @@
                   <ul>
                     <li>Fácil de usar.</li>
                     <li>No requiere herramientas externas.</li>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         def suma(a, b):
                             print(f"Valores recibidos: a={a}, b={b}")  # Depuración
@@ -1168,11 +1107,7 @@
                         <li>Ejecutar el programa y usar comandos de pdb.</li>
                       </ul>
                       Ejemplo:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           import pdb
                           def suma(a, b):
@@ -1236,11 +1171,7 @@
                     sobre la ejecución del programa en un archivo o en la
                     consola, lo que facilita la depuración.
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import logging
                       logging.basicConfig(level=logging.DEBUG)
@@ -1262,11 +1193,7 @@
                     verificar la tipificación estática.
                   </p>
                   <p>Ejemplo con flake8: Ejecutar en la terminal:</p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       flake8 mi_codigo.py
                     </code>
@@ -1291,11 +1218,7 @@
                     </li>
                   </ul>
                   <p>Ejemplo con <code>cProfile</code>:</p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       python -m cProfile mi_codigo.py
                     </code>
@@ -1313,7 +1236,7 @@
                   ocurran en producción.
                 </p>
                 <p>Ejemplo con unittest:</p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     import unittest
                     def dividir(a, b):
@@ -1339,11 +1262,7 @@
                 <li>
                   No se puede agregar más de un bloque <code>except</code> sin
                   nombre (anónimo) después de los bloques con nombre.
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     # Este es el código principal que siempre se ejecuta sin problemas
                     try:
@@ -1373,11 +1292,7 @@
                   No se debe poner excepciones más concretas antes de las más
                   generales dentro de la misma secuencia de bloques except. Por
                   ejemplo, se puede hacer esto:
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     try:
                         # Código riesgoso.
@@ -1391,11 +1306,7 @@
                   una certeza absoluta de que se desea que una parte específica
                   del código quede excluida de la generación de su excepción
                   correspondiente en caso que suceda).
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     try:
                     # Código riesgoso.
@@ -1413,11 +1324,7 @@
                   <code>NombreDeExcepción</code>, se puede usar solamente dentro
                   del bloque <code>except</code>, y genera la misma excepción
                   que se está manejando actualmente.
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     edad = int(input("Introduce tu edad: "))
                     if edad &lt; 0:
@@ -1457,11 +1364,7 @@
                   código, ayudando a identificar problemas durante el desarrollo
                   y garantizando la integridad de los datos. <br />
                   Si se desea estar seguro que un número sea positivo:
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     numero = 5
                     assert numero > 0, "El número no es positivo."
@@ -1518,11 +1421,7 @@
                     </li>
                     <li>
                       <strong>Ejemplo</strong>:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                 raise BaseException("Esto es una excepción general")
                 </code>
@@ -1543,11 +1442,7 @@
                     </li>
                     <li>
                       <strong>Ejemplo</strong>:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                 raise Exception("Excepción genérica")
                 </code>
@@ -1567,11 +1462,7 @@
                     </li>
                     <li>
                       <strong>Ejemplo</strong>:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                 x = 1 / 0  # Genera un ZeroDivisionError, hijo de ArithmeticError
                 </code>
@@ -1592,11 +1483,7 @@
                     </li>
                     <li>
                       <strong>Ejemplo</strong>:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                 x = 10 / 0
                 </code>
@@ -1617,11 +1504,7 @@
                     </li>
                     <li>
                       <strong>Ejemplo</strong>:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                 "import math
                 math.exp(1000)"
@@ -1642,11 +1525,7 @@
                     </li>
                     <li>
                       <strong>Ejemplo</strong>:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                 assert 2 + 2 == 5, "Aserción fallida"
                 </code>
@@ -1666,11 +1545,7 @@
                     </li>
                     <li>
                       <strong>Ejemplo</strong>:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                 "obj = 5
                 obj.nonexistent_attribute"
@@ -1691,11 +1566,7 @@
                     </li>
                     <li>
                       <strong>Ejemplo</strong>:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                 input("Ingresa algo: ")  # Genera EOFError si se presiona Ctrl+D (Linux/Mac) o Ctrl+Z (Windows)
                 </code>
@@ -1715,11 +1586,7 @@
                     </li>
                     <li>
                       <strong>Ejemplo</strong>:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                 import nonexistent_module
                 </code>
@@ -1741,11 +1608,7 @@
                     </li>
                     <li>
                       <strong>Ejemplo</strong>:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                 "lista = [1, 2, 3]
                 lista[5]"
@@ -1767,11 +1630,7 @@
                     </li>
                     <li>
                       <strong>Ejemplo</strong>:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                 "diccionario = {""a"": 1}
                 diccionario[""b""]"
@@ -1793,11 +1652,7 @@
                     </li>
                     <li>
                       <strong>Ejemplo</strong>:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                 "while True:
                     pass  # Interrumpe con Ctrl+C"
@@ -1818,11 +1673,7 @@
                     </li>
                     <li>
                       <strong>Ejemplo</strong>:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                 a = [1] * (10**10)
                 </code>
@@ -1842,11 +1693,7 @@
                     </li>
                     <li>
                       <strong>Ejemplo</strong>:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                 print(una_variable_no_definida)
                 </code>
@@ -1867,11 +1714,7 @@
                     </li>
                     <li>
                       <strong>Ejemplo</strong>:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                 "class MiClase:
                     def metodo(self):
@@ -1893,11 +1736,7 @@
                     </li>
                     <li>
                       <strong>Ejemplo</strong>:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                 open("/ruta/no/existe.txt")
                 </code>
@@ -1917,11 +1756,7 @@
                     </li>
                     <li>
                       <strong>Ejemplo</strong>:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                 x = "texto" + 5
                 </code>
@@ -1941,11 +1776,7 @@
                     </li>
                     <li>
                       <strong>Ejemplo</strong>:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                 int("texto")
                 </code>
@@ -1966,11 +1797,7 @@
                     </li>
                     <li>
                       <strong>Ejemplo</strong>:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                 b"\xff".decode("utf-8")
                 </code>
@@ -1990,11 +1817,7 @@
                     </li>
                     <li>
                       <strong>Ejemplo</strong>:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                 "iterador = iter([1, 2, 3])
                 next(iterador)
@@ -2012,65 +1835,59 @@
           </article>
           <!--  Errores: el pan diario del programador  -->
           <!-- -------------------------------- comentarios -------------------------------- -->
-<article
-            class="row pt-5"
-            id="comment">
+          <article class="row pt-5" id="comments">
             <br />
             <h2>COMENTARIOS</h2>
             <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del
-              formulario disponible para este propósito.
+              Si tiene alguna inquietud, duda o ha encontrado algún error, por
+              favor infórmelo a través del formulario disponible para este
+              propósito.
             </p>
             <div class="d-flex justify-content-center">
               <form
                 action="https://formspree.io/f/mdkdawkg"
                 method="POST"
-                id="myForm">
-                <div class="input-group d-flex justify-content-center flex-column">
-                  <label
-                    for="name"
-                    class="pe-2"
-                    >Nombre:</label
-                  >
+                id="myForm"
+              >
+                <div
+                  class="input-group d-flex justify-content-center flex-column"
+                >
+                  <label for="name" class="pe-2">Nombre:</label>
                   <input
                     type="text"
                     name="name"
                     id="name"
                     placeholder="User"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="email"
-                    class="pe-2"
-                    >Email:</label
-                  >
+                    required="required"
+                  />
+                  <label for="email" class="pe-2">Email:</label>
                   <input
                     type="email"
                     name="email"
                     id="email"
                     placeholder="user@mail.com"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="message"
-                    class="pe-2"
-                    >Mensaje:</label
-                  >
+                    required="required"
+                  />
+                  <label for="message" class="pe-2">Mensaje:</label>
                   <textarea
                     name="message"
                     id="message"
                     cols="30"
                     rows="5"
                     placeholder="Su comentario..."
-                    class="rounded rounded-3"></textarea>
+                    class="rounded rounded-3"
+                  ></textarea>
                   <input
                     class="btn btn-outline-light my-3 border rounded-pill border-2"
                     type="submit"
-                    value="Enviar..." />
+                    value="Enviar..."
+                  />
                 </div>
                 <p>
-                  La política de privacidad, y los términos y condiciones están disponibles en el formulario
-                  de contacto.
+                  La política de privacidad, y los términos y condiciones están
+                  disponibles en el formulario de contacto.
                 </p>
               </form>
             </div>
@@ -2083,6 +1900,9 @@
       <aside class="col-lg-3 d-none d-lg-block pt-5">
         <h1>En Este Artículo</h1>
         <ul class="list-group">
+          <li class="list-group-item">
+            <a href="#introduccion">Introducción</a>
+          </li>
           <li class="list-group-item">
             <a href="#tiposDeErroresEnPython">Tipos de Errores en Python</a>
           </li>
@@ -2098,6 +1918,9 @@
           </li>
           <li class="list-group-item">
             <a href="#excepcionesIntegradas">Excepciones Integradas</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#comments">Comentarios</a>
           </li>
         </ul>
       </aside>

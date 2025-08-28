@@ -45,7 +45,7 @@
     <!-- fin Open Graph data -->
 
     <!-- Twitter cards -->
-    <meta name="twitter:card"  content="summary"/>
+    <meta name="twitter:card" content="summary" />
     <meta
       name="twitter:title"
       content="POO: Herencia Python 3 - Ing. Eduardo Herrera Forero."
@@ -163,7 +163,7 @@
     <!-- Barra deNavegación -->
 
     <!-- -------------------------------- principal -------------------------------- -->
-    <div class="row col mx-1">
+    <div class="container-fluid" id="introduccion">
       <main class="pt-5 col-lg-9">
         <section class="pb-3">
           <!--  POO: Herencia en Python  -->
@@ -178,7 +178,9 @@
                 <h1>POO: Herencia en Python</h1>
               </header>
 
+              <!-- Introducción -->
               <div class="mt-5">
+                <h2>Introducción</h2>
                 <p>
                   La Programación Orientada a Objetos (POO) es un paradigma
                   fundamental en el desarrollo de software que permite organizar
@@ -226,7 +228,7 @@
                   Aquí se tiene un ejemplo básico de cómo funciona la herencia
                   en Python:
                 </p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     # Definición de la clase base
                     class Animal:
@@ -290,7 +292,7 @@
                   complejidad, especialmente en términos de resolución de
                   métodos y atributos cuando hay conflictos.
                 </p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   # Definición de la primera clase base
                   class Animal:
@@ -404,9 +406,7 @@
                       herencia y evita conflictos.
                     </p>
                     <p>Ejemplo:</p>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Clase base A, define un método general llamado "method"
                       class A:
@@ -495,22 +495,14 @@
                     clase es una subclase de otra. Esto es útil al trabajar con
                     jerarquías de clases y herencia.
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     issubclass(subclass, class)
                     # Salida: True si la subclase es derivada de la clase.
                   </code>
                 </pre>
                   <p>Ejemplo: Verificar una subclase directa:</p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     class A
                         pass
@@ -521,11 +513,7 @@
                   </code>
                 </pre>
                   <p>Uso con múltiples clases en una tupla:</p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     # Definición de clases
                     class A:
@@ -554,21 +542,13 @@
                     tipos de datos en un programa y mejorar la legibilidad y la
                     seguridad del código.
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     isinstance(objectName, ClassName_or_tuple)
                   </code>
                 </pre>
                   <p>Ejemplo: Verificar múltiples clases con una tupla:</p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     class MiClase:
                       pass
@@ -590,11 +570,7 @@
                     la misma ubicación de memoria.
                   </p>
                   <p>Ejemplo:</p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     a = [1, 2, 3]
                     b = a
@@ -640,9 +616,7 @@
                       del código en una jerarquía de clases.
                     </p>
                     <p>Ejemplo:</p>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       class Animal:
                           def __init__(self, nombre):
@@ -727,7 +701,7 @@
                   A continuación, se muestra un ejemplo de una jerarquía de
                   clases para un sistema de gestión de empleados:
                 </p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   # Clase base
                   class Empleado:
@@ -904,7 +878,7 @@
                   crear subclases con comportamientos específicos (polimorfismo)
                   a partir de una clase base.
                 </p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   class Animal:
                       def __init__(self, nombre):
@@ -963,9 +937,7 @@
                     >: Evite clases base excesivamente complejas. Mantenga su
                     funcionalidad lo más genérica posible para que sean
                     reutilizables y fáciles de extender.
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       class Persona:
                       def __init__(self, nombre, edad):
@@ -991,11 +963,7 @@
                       </li>
                       <li>
                         Ejemplo de una clase mixin:
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Definimos un mixin para agregar la funcionalidad de volar.
                           # Un mixin es una clase que proporciona funcionalidad adicional
@@ -1038,9 +1006,7 @@
                     >: Siempre que se sobrescriba el método
                     <code>__init__</code>, utilice <code>super()</code> para
                     garantizar que la clase base sea inicializada correctamente.
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       class Mamifero(Animal):
                           def __init__(self, nombre, tiene_pelo=True):
@@ -1066,11 +1032,7 @@
                       </li>
                       <li>
                         Aquí está el código ejemplo:
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             from typing import override  # Disponible desde Python 3.12
                             class Mamifero:
@@ -1133,65 +1095,59 @@
           </article>
           <!--  POO: Herencia en Python  -->
           <!-- -------------------------------- comentarios -------------------------------- -->
-<article
-            class="row pt-5"
-            id="comment">
+          <article class="row pt-5" id="comments">
             <br />
             <h2>COMENTARIOS</h2>
             <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del
-              formulario disponible para este propósito.
+              Si tiene alguna inquietud, duda o ha encontrado algún error, por
+              favor infórmelo a través del formulario disponible para este
+              propósito.
             </p>
             <div class="d-flex justify-content-center">
               <form
                 action="https://formspree.io/f/mdkdawkg"
                 method="POST"
-                id="myForm">
-                <div class="input-group d-flex justify-content-center flex-column">
-                  <label
-                    for="name"
-                    class="pe-2"
-                    >Nombre:</label
-                  >
+                id="myForm"
+              >
+                <div
+                  class="input-group d-flex justify-content-center flex-column"
+                >
+                  <label for="name" class="pe-2">Nombre:</label>
                   <input
                     type="text"
                     name="name"
                     id="name"
                     placeholder="User"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="email"
-                    class="pe-2"
-                    >Email:</label
-                  >
+                    required="required"
+                  />
+                  <label for="email" class="pe-2">Email:</label>
                   <input
                     type="email"
                     name="email"
                     id="email"
                     placeholder="user@mail.com"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="message"
-                    class="pe-2"
-                    >Mensaje:</label
-                  >
+                    required="required"
+                  />
+                  <label for="message" class="pe-2">Mensaje:</label>
                   <textarea
                     name="message"
                     id="message"
                     cols="30"
                     rows="5"
                     placeholder="Su comentario..."
-                    class="rounded rounded-3"></textarea>
+                    class="rounded rounded-3"
+                  ></textarea>
                   <input
                     class="btn btn-outline-light my-3 border rounded-pill border-2"
                     type="submit"
-                    value="Enviar..." />
+                    value="Enviar..."
+                  />
                 </div>
                 <p>
-                  La política de privacidad, y los términos y condiciones están disponibles en el formulario
-                  de contacto.
+                  La política de privacidad, y los términos y condiciones están
+                  disponibles en el formulario de contacto.
                 </p>
               </form>
             </div>
@@ -1204,6 +1160,9 @@
       <aside class="col-lg-3 d-none d-lg-block pt-5">
         <h1>En Este Artículo</h1>
         <ul class="list-group">
+          <li class="list-group-item">
+            <a href="#introduccion">Introducción</a>
+          </li>
           <li class="list-group-item">
             <a href="#queEsLaHerencia">¿Qué es la Herencia?</a>
           </li>
@@ -1223,6 +1182,9 @@
           </li>
           <li class="list-group-item">
             <a href="#buenasPracticas">Buenas Prácticas</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#comments">Comentarios</a>
           </li>
         </ul>
       </aside>

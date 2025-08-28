@@ -45,7 +45,7 @@
     <!-- fin Open Graph data -->
 
     <!-- Twitter cards -->
-    <meta name="twitter:card"  content="summary"/>
+    <meta name="twitter:card" content="summary" />
     <meta
       name="twitter:title"
       content="La naturaleza de las cadenas Python 3 - Ing. Eduardo Herrera Forero."
@@ -165,7 +165,7 @@
     <!-- Barra deNavegación -->
 
     <!-- -------------------------------- principal -------------------------------- -->
-    <div class="row col mx-1">
+    <div class="container-fluid" id="introduccion">
       <main class="pt-5 col-lg-9">
         <section class="pb-3">
           <!--  La naturaleza de las cadenas en Python  -->
@@ -179,28 +179,32 @@
               <header>
                 <h1>La naturaleza de las cadenas en Python</h1>
               </header>
-              <p>
-                En este artículo se explora la naturaleza de las cadenas en
-                Python, un tipo de dato fundamental en este lenguaje de
-                programación. Las cadenas son secuencias de caracteres que
-                permiten almacenar y manipular texto de manera eficiente. A lo
-                largo de este documento, se abordarán las características,
-                métodos y usos de las cadenas, así como su importancia en el
-                desarrollo de aplicaciones.
-              </p>
-              <div class="text-center imagen">
-                <picture>
-                  <img
-                    src="https://i.ibb.co/VHpnX1w/cadenas.jpg"
-                    class="img-fluid rounded-4"
-                    width="60%"
-                    alt="La naturaleza de las cadenas en Python"
-                    title="Guía visual de cadenas en Python: tipos, métodos y manipulación de strings"
-                  />
-                  <figcaption>
-                    La naturaleza de las cadenas en Python
-                  </figcaption>
-                </picture>
+              <!-- Introducción -->
+              <div class="mt-5">
+                <h2>Introducción</h2>
+                <p>
+                  En este artículo se explora la naturaleza de las cadenas en
+                  Python, un tipo de dato fundamental en este lenguaje de
+                  programación. Las cadenas son secuencias de caracteres que
+                  permiten almacenar y manipular texto de manera eficiente. A lo
+                  largo de este documento, se abordarán las características,
+                  métodos y usos de las cadenas, así como su importancia en el
+                  desarrollo de aplicaciones.
+                </p>
+                <div class="text-center imagen">
+                  <picture>
+                    <img
+                      src="https://i.ibb.co/VHpnX1w/cadenas.jpg"
+                      class="img-fluid rounded-4"
+                      width="60%"
+                      alt="La naturaleza de las cadenas en Python"
+                      title="Guía visual de cadenas en Python: tipos, métodos y manipulación de strings"
+                    />
+                    <figcaption>
+                      La naturaleza de las cadenas en Python
+                    </figcaption>
+                  </picture>
+                </div>
               </div>
 
               <!-- Características de las Cadenas -->
@@ -217,22 +221,14 @@
                     crear una nueva cadena a partir de las operaciones
                     realizadas sobre la original.
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     cadena = "Hola"
                     cadena[0] = "h"  # Error: las cadenas son inmutables
                   </code>
                 </pre>
                   <p>Para "modificar" una cadena, se debe crear una nueva.</p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     texto = "Hola"
                     nuevo_texto = "h" + texto[1:]
@@ -252,11 +248,7 @@
                     facilita la manipulación de subcadenas a través de técnicas
                     como slicing.
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     texto = "Python"
                     print(texto[0])  # P
@@ -279,9 +271,7 @@
                   <h4>Parámetros del Rebanado</h4>
                   <p>La sintaxis general es.</p>
                   <div>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       cadena[inicio:fin:paso]
                     </code>
@@ -309,11 +299,7 @@
                     <ul>
                       <li>
                         <span class="fw-bold">Rebanado Básico:</span>
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           cadena = "Python"
                           # Extraer los primeros 3 caracteres
@@ -327,11 +313,7 @@
                       </li>
                       <li>
                         <span class="fw-bold">Uso de Índices Negativos:</span>
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Últimos 2 caracteres
                           print(cadena[-2:])  # Salida: "on"
@@ -343,11 +325,7 @@
                       <li>
                         <span class="fw-bold">Especificar un paso:</span> El
                         paso indica cuántos caracteres omitir:
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Caracteres en posiciones pares
                           print(cadena[::2])  # Salida: "Pto"
@@ -395,9 +373,7 @@
                 <ul>
                   <li>
                     <span class="fw-bold">Con comillas simples</span>:
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       cadena1 = 'Hola, mundo'
                     </code>
@@ -405,9 +381,7 @@
                   </li>
                   <li>
                     <span class="fw-bold">Con comillas dobles</span>:
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       cadena2 = "Hola, mundo"
                     </code>
@@ -416,18 +390,14 @@
                   <li>
                     <span class="fw-bold">Con comillas triples</span>: Útil para
                     cadenas multilínea
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       cadena3 = '''Esta es una cadena
                       que abarca varias líneas'''
                     </code>
                   </pre>
                     <p>o</p>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       cadena4 = """Otra forma de hacer
                       cadenas multilínea"""
@@ -445,9 +415,7 @@
                   <li>
                     <span class="fw-bold">Concatenación</span>: Unir cadenas
                     usando el operador <code>+</code> o <code>join()</code>.
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     cadena1 = "Hola"
                     cadena2 = "Mundo"
@@ -459,9 +427,7 @@
                   <li>
                     <span class="fw-bold">Repetición</span>: Repetir una cadena
                     usando el operador <code>*</code>.
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     cadena = "Python"
                     resultado = cadena * 3  # "PythonPythonPython"
@@ -471,9 +437,7 @@
                   <li>
                     <span class="fw-bold">Subcadenas</span>: Extraer partes de
                     una cadena.
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     cadena = "Python es divertido"
                     subcadena = cadena[0:6]  # "Python"
@@ -484,9 +448,7 @@
                   <li>
                     <span class="fw-bold">Longitud</span>: Obtener la cantidad
                     de caracteres con <code>len()</code>.
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     cadena = "Python"
                     longitud = len(cadena)  # 6
@@ -550,9 +512,7 @@
                         >: Verifica si sub esta en cadena.
                       </li>
                     </ul>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     cadena = "aprende Python con Python"
                     palabras = ["manzana", "banana", "cereza"]
@@ -602,9 +562,7 @@
                         caracteres.
                       </li>
                     </ul>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     cadena = "hola MUNDO"
                     print(cadena.capitalize())  # Hola mundo
@@ -646,9 +604,7 @@
                         alcanzar el ancho especificado.
                       </li>
                     </ul>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     cadena = "   Python   "
                     print(cadena.replace("Python", "Java")) # "Java"
@@ -696,9 +652,7 @@
                         el final.
                       </li>
                     </ul>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     cadena = "uno,dos,tres"
                     print(cadena.split(","))         # ['uno', 'dos', 'tres']
@@ -713,9 +667,7 @@
                     <span class="fw-bold">Unir listas en una cadena</span>:
                     Combinar elementos de una lista en una sola cadena con
                     <code>join()</code>.
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     palabras = ["Python", "es", "genial"]
                     cadena = " ".join(palabras)  # "Python es genial"
@@ -757,9 +709,7 @@
                         >: Verifica si la cadena tiene formato de título.
                       </li>
                     </ul>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         cadena = "Python3"
                         print(cadena.isalpha())  # False
@@ -787,11 +737,7 @@
                       >: Alinea la cadena a la derecha.
                     </li>
                   </ul>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       cadena = "Python"
                       print(cadena.center(10, "-"))  # --Python--
@@ -810,7 +756,7 @@
                   Cuando se necesitan incluir caracteres como comillas o saltos
                   de línea, se usa la barra invertida (<code>\</code>):
                 </p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   cadena = "Esto es un \"ejemplo\" de cadena."
                   print(cadena)  # Resultado: Esto es un "ejemplo" de cadena.
@@ -832,7 +778,7 @@
                   Para evitar que los caracteres de escape sean interpretados,
                   se usa el prefijo <code>r</code>:
                 </p>
-                <pre  data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   ruta = r"C:\nueva\carpeta"
                   print(ruta)  # Resultado: C:\nueva\carpeta
@@ -855,11 +801,7 @@
                   <h3>
                     Iterar sobre los Caracteres de un String con un Bucle for
                   </h3>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     mi_string = "Hola Mundo"
                     for caracter in mi_string:
@@ -874,11 +816,7 @@
                     Usar enumerate() para Obtener el Índice y el Valor del
                     Carácter
                   </h3>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     mi_string = "Hola Mundo"
                     for indice, caracter in enumerate(mi_string):
@@ -893,11 +831,7 @@
                     Iterar sobre un Rango de Índices para Acceder a los
                     Caracteres Usando un Bucle for
                   </h3>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     mi_string = "Hola Mundo"
                     for i in range(len(mi_string)):
@@ -912,11 +846,7 @@
                     Usar Comprensión de Listas para Crear una Lista con los
                     Caracteres
                   </h3>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     mi_string = "Hola Mundo"
                     caracteres = [caracter for caracter in mi_string]
@@ -928,11 +858,7 @@
                 <!-- Iterar Usando while -->
                 <div>
                   <h3>Iterar Usando while</h3>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     mi_string = "Hola Mundo"
                     i = 0
@@ -956,11 +882,7 @@
                     Permite insertar valores en una cadena utilizando marcadores
                     de posición.
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     nombre = "Juan"
                     edad = 25
@@ -985,11 +907,7 @@
                     llaves
                     <code>{}</code> como marcadores de posición.
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     nombre = "Juan"
                     edad = 25
@@ -997,11 +915,7 @@
                   </code>
                 </pre>
                   <p>También permite nombrar variables dentro de las llaves:</p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     print("Hola, {nombre}. Tienes {edad} años.".format(nombre="Juan", edad=25))
                   </code>
@@ -1016,11 +930,7 @@
                     eficiente. Utiliza una f antes de la cadena e incrusta
                     expresiones dentro de las llaves <code>{}</code>.
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     nombre = "Juan"
                     edad = 25
@@ -1030,11 +940,7 @@
                   <p>
                     Incluso permite incluir operaciones dentro de las llaves:
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     print(f"El año que viene tendrás {edad + 1} años.")
                   </code>
@@ -1049,11 +955,7 @@
                     especialmente en entornos donde se manejan plantillas de
                     texto.
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     from string import Template
                     template = Template("Hola, $nombre. Tienes $edad años.")
@@ -1072,11 +974,7 @@
                     <code>f-strings</code>, se puede especificar el formato de
                     los números.
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     pi = 3.14159
                     print("El valor de pi es {:.2f}".format(pi))  # Con 2 decimales
@@ -1091,65 +989,59 @@
           </article>
           <!--  La naturaleza de las cadenas en Python  -->
           <!-- -------------------------------- comentarios -------------------------------- -->
-<article
-            class="row pt-5"
-            id="comment">
+          <article class="row pt-5" id="comments">
             <br />
             <h2>COMENTARIOS</h2>
             <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del
-              formulario disponible para este propósito.
+              Si tiene alguna inquietud, duda o ha encontrado algún error, por
+              favor infórmelo a través del formulario disponible para este
+              propósito.
             </p>
             <div class="d-flex justify-content-center">
               <form
                 action="https://formspree.io/f/mdkdawkg"
                 method="POST"
-                id="myForm">
-                <div class="input-group d-flex justify-content-center flex-column">
-                  <label
-                    for="name"
-                    class="pe-2"
-                    >Nombre:</label
-                  >
+                id="myForm"
+              >
+                <div
+                  class="input-group d-flex justify-content-center flex-column"
+                >
+                  <label for="name" class="pe-2">Nombre:</label>
                   <input
                     type="text"
                     name="name"
                     id="name"
                     placeholder="User"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="email"
-                    class="pe-2"
-                    >Email:</label
-                  >
+                    required="required"
+                  />
+                  <label for="email" class="pe-2">Email:</label>
                   <input
                     type="email"
                     name="email"
                     id="email"
                     placeholder="user@mail.com"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="message"
-                    class="pe-2"
-                    >Mensaje:</label
-                  >
+                    required="required"
+                  />
+                  <label for="message" class="pe-2">Mensaje:</label>
                   <textarea
                     name="message"
                     id="message"
                     cols="30"
                     rows="5"
                     placeholder="Su comentario..."
-                    class="rounded rounded-3"></textarea>
+                    class="rounded rounded-3"
+                  ></textarea>
                   <input
                     class="btn btn-outline-light my-3 border rounded-pill border-2"
                     type="submit"
-                    value="Enviar..." />
+                    value="Enviar..."
+                  />
                 </div>
                 <p>
-                  La política de privacidad, y los términos y condiciones están disponibles en el formulario
-                  de contacto.
+                  La política de privacidad, y los términos y condiciones están
+                  disponibles en el formulario de contacto.
                 </p>
               </form>
             </div>
@@ -1162,6 +1054,9 @@
       <aside class="col-lg-3 d-none d-lg-block pt-5">
         <h1>En Este Artículo</h1>
         <ul class="list-group">
+          <li class="list-group-item">
+            <a href="#introduccion">Introducción</a>
+          </li>
           <li class="list-group-item">
             <a href="#CaracterIsticasDeLasCadenas"
               >Características de las Cadenas</a
@@ -1188,6 +1083,9 @@
           </li>
           <li class="list-group-item">
             <a href="#darFormatoALasCadenas ">Dar Formato a las Cadenas </a>
+          </li>
+          <li class="list-group-item">
+            <a href="#comments">Comentarios</a>
           </li>
         </ul>
       </aside>

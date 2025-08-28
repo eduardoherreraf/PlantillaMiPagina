@@ -45,7 +45,7 @@
     <!-- fin Open Graph data -->
 
     <!-- Twitter cards -->
-    <meta name="twitter:card"  content="summary"/>
+    <meta name="twitter:card" content="summary" />
     <meta
       name="twitter:title"
       content="Los fundamentos de la poo Python 3 - Ing. Eduardo Herrera Forero."
@@ -165,7 +165,7 @@
     <!-- Barra deNavegación -->
 
     <!-- -------------------------------- principal -------------------------------- -->
-    <div class="row col mx-1">
+    <div class="container-fluid" id="introduccion">
       <main class="pt-5 col-lg-9">
         <section class="pb-3">
           <!--  Los Fundamentos de la Programación Orientada a Objetos (OOP) en Python  -->
@@ -181,7 +181,9 @@
                 Python
               </h1>
             </header>
+            <!-- Introducción -->
             <div class="mt-5">
+              <h2>Introducción</h2>
               <p>
                 En el mundo de la programación, los errores son inevitables y
                 forman parte del proceso de aprendizaje y desarrollo. Este
@@ -268,9 +270,7 @@
                   <!-- Ejemplo Completo de una Clase en Python -->
                   <div>
                     <h4>Ejemplo Completo de una Clase en Python</h4>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       class Persona:
                       # Atributo de clase (compartido por todas las instancias)
@@ -348,9 +348,7 @@
                       En Python, se crea un objeto instanciando una clase, es
                       decir, llamando a la clase como si fuera una función.
                     </p>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Definición de una clase
                       class Persona:
@@ -374,11 +372,7 @@
                         atributos almacenan el estado del objeto. Cada objeto
                         puede tener valores diferentes para los mismos
                         atributos.
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     print(persona1.nombre)  # Juan
                     print(persona2.nombre)  # Ana
@@ -389,11 +383,7 @@
                         <span class="fw-bold">Métodos del objeto</span>: Son
                         funciones que operan sobre el objeto. Pueden acceder a
                         sus atributos y modificarlos.
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     class Persona:
                         def __init__(self, nombre, edad):
@@ -422,11 +412,7 @@
                         objeto tiene una identidad que lo diferencia de otros
                         objetos. Esto se puede verificar con la función
                         <code>id()</code>.
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           print(id(persona1))  # Muestra la dirección en memoria del objeto persona1
                           print(id(persona2))  # Será diferente a la de persona1
@@ -436,11 +422,7 @@
                       <li>
                         <span class="fw-bold">Estado mutable</span>: El estado
                         del objeto puede cambiar al modificar sus atributos.
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           persona1.edad = 26  # Cambiando el estado del objeto persona1
                           print(persona1.edad)  # 26
@@ -458,9 +440,7 @@
                   <!-- Ejemplo Completo de un Objeto -->
                   <div>
                     <h4>Ejemplo Completo de un Objeto</h4>
-                                        <pre                      data-src-status="loaded"
-                      tabindex="0"
-                    >
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       class Vehiculo:
                       def __init__(self, marca, modelo, velocidad_maxima):
@@ -499,11 +479,7 @@
                         <span class="fw-bold"> Comparación de objetos</span>: Se
                         pueden comparar objetos por identidad <code>is</code> o
                         por valor <code>==</code>.
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Comparación por identidad
                           print(persona1 is persona2)  # False, son objetos distintos
@@ -526,11 +502,7 @@
                         La representación textual de un objeto se puede
                         personalizar implementando el método especial
                         <code>__str__</code>.
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           class Producto:
                           def __init__(self, nombre, precio):
@@ -547,11 +519,7 @@
                         <span class="fw-bold">Copias de objetos</span>: Se
                         pueden realizar copias superficiales o profundas de un
                         objeto usando el módulo <code>copy</code>.
-                        <pre
-                          
-                          data-src-status="loaded"
-                          tabindex="0"
-                        >
+                        <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           import copy
                           objeto_original = Punto(3, 4)
@@ -603,11 +571,7 @@
                 <!-- Ejemplo Básico de Herencia en Python -->
                 <div>
                   <h3>Ejemplo Básico de Herencia en Python</h3>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     # Clase Padre
                     class Animal:
@@ -658,11 +622,7 @@
                     <li>
                       <span class="fw-bold">Herencia múltiple</span>: En Python,
                       una clase puede heredar de múltiples clases:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         class ClaseA:
                         def metodo_a(self):
@@ -685,11 +645,7 @@
                       para determinar el orden en el que se buscan métodos y
                       atributos en la herencia múltiple. <br />
                       Puedes verificar el MRO con:
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         print(ClaseC.__mro__)
                       </code>
@@ -774,11 +730,7 @@
                 <!-- Ejemplo Básico de Jerarquía de Clases -->
                 <div>
                   <h3>Ejemplo Básico de Jerarquía de Clases</h3>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     # Clase base
                     class Animal:
@@ -817,11 +769,7 @@
                     <li>
                       <span class="fw-bold">Herencia Múltiple</span>: Una clase
                       puede heredar de múltiples clases base.
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Clase base que representa características generales de un mamífero
                         class Mamifero:
@@ -861,11 +809,7 @@
                       >: La función <code>super()</code> se utiliza para acceder
                       a métodos y atributos de la clase base desde la clase
                       derivada.
-                      <pre
-                        
-                        data-src-status="loaded"
-                        tabindex="0"
-                      >
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Clase base que representa un animal genérico
                         class Animal:
@@ -907,11 +851,7 @@
                     <code>object</code>, incluso si no se especifica
                     explícitamente.
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       class MiClase:
                       pass
@@ -969,11 +909,7 @@
                 <!-- Ejemplo de Encapsulamiento en Python -->
                 <div>
                   <h3>Ejemplo de Encapsulamiento en Python</h3>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     class Persona:
                     def __init__(self, nombre, edad):
@@ -1072,11 +1008,7 @@
                     En Python, el polimorfismo se puede lograr mediante la
                     herencia de clases y la sobrescritura de métodos.
                   </p>
-                  <pre
-                    
-                    data-src-status="loaded"
-                    tabindex="0"
-                  >
+                  <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     class Animal:
                     def hacer_sonido(self):
@@ -1148,65 +1080,59 @@
           </article>
           <!--  Los Fundamentos de la Programación Orientada a Objetos (OOP) en Python  -->
           <!-- -------------------------------- comentarios -------------------------------- -->
-<article
-            class="row pt-5"
-            id="comment">
+          <article class="row pt-5" id="comments">
             <br />
             <h2>COMENTARIOS</h2>
             <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del
-              formulario disponible para este propósito.
+              Si tiene alguna inquietud, duda o ha encontrado algún error, por
+              favor infórmelo a través del formulario disponible para este
+              propósito.
             </p>
             <div class="d-flex justify-content-center">
               <form
                 action="https://formspree.io/f/mdkdawkg"
                 method="POST"
-                id="myForm">
-                <div class="input-group d-flex justify-content-center flex-column">
-                  <label
-                    for="name"
-                    class="pe-2"
-                    >Nombre:</label
-                  >
+                id="myForm"
+              >
+                <div
+                  class="input-group d-flex justify-content-center flex-column"
+                >
+                  <label for="name" class="pe-2">Nombre:</label>
                   <input
                     type="text"
                     name="name"
                     id="name"
                     placeholder="User"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="email"
-                    class="pe-2"
-                    >Email:</label
-                  >
+                    required="required"
+                  />
+                  <label for="email" class="pe-2">Email:</label>
                   <input
                     type="email"
                     name="email"
                     id="email"
                     placeholder="user@mail.com"
                     class="rounded"
-                    required="required" />
-                  <label
-                    for="message"
-                    class="pe-2"
-                    >Mensaje:</label
-                  >
+                    required="required"
+                  />
+                  <label for="message" class="pe-2">Mensaje:</label>
                   <textarea
                     name="message"
                     id="message"
                     cols="30"
                     rows="5"
                     placeholder="Su comentario..."
-                    class="rounded rounded-3"></textarea>
+                    class="rounded rounded-3"
+                  ></textarea>
                   <input
                     class="btn btn-outline-light my-3 border rounded-pill border-2"
                     type="submit"
-                    value="Enviar..." />
+                    value="Enviar..."
+                  />
                 </div>
                 <p>
-                  La política de privacidad, y los términos y condiciones están disponibles en el formulario
-                  de contacto.
+                  La política de privacidad, y los términos y condiciones están
+                  disponibles en el formulario de contacto.
                 </p>
               </form>
             </div>
@@ -1219,6 +1145,9 @@
       <aside class="col-lg-3 d-none d-lg-block pt-5">
         <h1>En Este Artículo</h1>
         <ul class="list-group">
+          <li class="list-group-item">
+            <a href="#introduccion">Introducción</a>
+          </li>
           <li class="list-group-item">
             <a href="#clasesYObjetos">Clases y Objetos</a>
           </li>
@@ -1233,6 +1162,9 @@
           </li>
           <li class="list-group-item">
             <a href="#polimorfismo">Polimorfismo</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#comments">Comentarios</a>
           </li>
         </ul>
       </aside>
