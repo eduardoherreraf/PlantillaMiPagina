@@ -89,13 +89,13 @@
 
   <body>
     <!-- Barra deNavegación -->
-    <nav
+<nav
       class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
     >
       <div class="container-fluid">
         <!-- Enlace a la página principal con el logo y nombre -->
         <a
-          class="navbar-brand d-flex align-items-center ms-2 text-decoration-none"
+          class="navbar-brand d-flex align-items-center ms-2"
           href="index.html"
         >
           <img
@@ -128,54 +128,37 @@
             class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100"
           >
             <li class="nav-item">
-              <a class="nav-link mx-1 text-decoration-none" href="index.html"
-                >SOBRE MÍ</a
-              >
+              <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link mx-1 text-decoration-none"
-                href="index.html#resume"
-                >EXPERIENCIA</a
-              >
+              <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link mx-1 text-decoration-none"
-                href="index.html#portfolio"
+              <a class="nav-link mx-1" href="index.html#portfolio"
                 >PORTAFOLIO</a
               >
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link mx-1 text-decoration-none"
-                href="index.html#studies"
-                >ESTUDIOS</a
-              >
+              <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link mx-1 active text-decoration-none"
-                href="index.html#blog"
+              <a class="nav-link mx-1 active" href="index.html#blog"
                 >PUBLICACIONES</a
               >
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link mx-1 text-decoration-none"
-                href="index.html#contact"
-                >CONTACTO</a
-              >
+              <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- Barra deNavegación -->
+
     <!-- -------------------------------- principal -------------------------------- -->
-    <div class="container-fluid flex-fill" id="introduccion">
-      <main class="pt-5 col-lg-9">
-        <section class="pb-3">
+    <div class="container-fluid" id="introduccion">
+      <main class="row">
+        <section class="pb-3 pt-5 col-lg-9">
           <!-- Parcel NPM -->
           <article
             class="row border-1 border-bottom pb-3"
@@ -599,42 +582,42 @@
           </article>
           <!-- -------------------------------- fin comentarios -------------------------------- -->
         </section>
+        <!-- -------------------------------- barra lateral -------------------------------- -->
+        <aside class="col-lg-3 d-none d-lg-block pt-5">
+          <h1>En Este Artículo</h1>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a href="#introduccion">Introducción</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#configuracionInical">Configuración Inicial</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#instalacionParcel">Instalación de Parcel</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#instalacionBootstrapv5">Instalación de Bootstrap</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#configuracionParcel">Configuración de Parcel</a>
+              <span class="text-blink-yellow">Editado</span>
+            </li>
+            <li class="list-group-item">
+              <a href="#importacionBootstrapv5">Importación Bootstrap v5</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#compilacionProyectoProduccion"
+                >Compilación del proyecto para Producción</a
+              >
+            </li>
+            <li class="list-group-item">
+              <a href="#comments">Comentarios</a>
+            </li>
+          </ul>
+        </aside>
+        <!-- -------------------------------- fin barra lateral -------------------------------- -->
       </main>
       <!-- -------------------------------- fin principal -------------------------------- -->
-      <!-- -------------------------------- barra lateral -------------------------------- -->
-      <aside class="col-lg-3 d-none d-lg-block pt-5">
-        <h1>En Este Artículo</h1>
-        <ul class="list-group">
-          <li class="list-group-item">
-            <a href="#introduccion">Introducción</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#configuracionInical">Configuración Inicial</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#instalacionParcel">Instalación de Parcel</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#instalacionBootstrapv5">Instalación de Bootstrap</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#configuracionParcel">Configuración de Parcel</a>
-            <span class="text-blink-yellow">Editado</span>
-          </li>
-          <li class="list-group-item">
-            <a href="#importacionBootstrapv5">Importación Bootstrap v5</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#compilacionProyectoProduccion"
-              >Compilación del proyecto para Producción</a
-            >
-          </li>
-          <li class="list-group-item">
-            <a href="#comments">Comentarios</a>
-          </li>
-        </ul>
-      </aside>
-      <!-- -------------------------------- fin barra lateral -------------------------------- -->
     </div>
 
     <!-- -------------------------------- pie de pagina -------------------------------- -->
