@@ -169,20 +169,19 @@ aside {
 
 // sunrayar item publicaciones
 /* Fuerza el subrayado independientemente del JavaScript */
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link[href*="blog"] {
+/* .navbar-nav .nav-link.active {
   border-bottom: 2px solid #0d6efd !important;
   color: #0d6efd !important;
-  font-size: larger !important;
-}
+  font-size: larger !important; 
+}*/
 
 /* Si necesitas ser más específico */
-.nav-underline .navbar-nav .nav-link[href*="blog"] {
+/* .nav-underline .navbar-nav .nav-link[href*="blog"] {
   border-bottom: 2px solid #0d6efd !important;
   color: #0d6efd !important;
   font-weight: 700 !important;
   font-size: larger !important;
-}
+} */
 
 //  botón to top
 #myBtnScroll {
