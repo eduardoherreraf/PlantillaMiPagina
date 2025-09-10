@@ -94,7 +94,7 @@
 
   <body class="d-flex flex-column min-vh-100">
     <!-- Barra deNavegación -->
-<nav
+    <nav
       class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
     >
       <div class="container-fluid">
@@ -147,7 +147,9 @@
               <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog"
+              <a
+                class="nav-link mx-1 publicaciones-activo"
+                href="index.html#blog"
                 >PUBLICACIONES</a
               >
             </li>
@@ -163,38 +165,40 @@
     <!-- -------------------------------- principal -------------------------------- -->
     <main class="row mx-1 flex-fill">
       <div class="pt-5 col">
-        <article class="row border-1">
+        <section class="row pb-3">
           <h1>ChatGPT</h1>
-          <div id="principal" class="px-5">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th scope="col" class="col-1">#</th>
-                  <th scope="col" class="col-8">Nombre</th>
-                  <th scope="col" class="col-3 text-center">Fecha</th>
-                </tr>
-              </thead>
-              <tbody>
-                <!--
+          <article id="principal" class="px-3 px-md-5">
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col" class="col-1">#</th>
+                    <th scope="col" class="col-8">Nombre</th>
+                    <th scope="col" class="col-3 text-center">Fecha</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!--
 <tr class="text-center text-uppercase fs-4">
 <td colspan="3">Introducción a HTML</td>
 </tr> -->
 
-                <tr>
-                  <td>1</td>
-                  <td>
-                    <a
-                      href="./chatgpt-0001_como_aprender_cualquier_habilidad_facilmente_con_chatgpt.html"
-                    >
-                      Cómo Aprender Cualquier Habilidad Fácilmente con ChatGPT
-                    </a>
-                  </td>
-                  <td class="text-center">3-Oct/2024</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </article>
+                  <tr>
+                    <td>1</td>
+                    <td>
+                      <a
+                        href="./chatgpt-0001_como_aprender_cualquier_habilidad_facilmente_con_chatgpt.html"
+                      >
+                        Cómo Aprender Cualquier Habilidad Fácilmente con ChatGPT
+                      </a>
+                    </td>
+                    <td class="text-center">3-Oct/2024</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+        </section>
       </div>
       <!-- -------------------------------- fin principal -------------------------------- -->
     </main>

@@ -42,7 +42,7 @@
     <!-- fin Open Graph data -->
 
     <!-- Twitter cards -->
-    <meta name="twitter:card"  content="summary"/>
+    <meta name="twitter:card" content="summary" />
     <meta
       name="twitter:title"
       content="Índice de GIT / GITHUB - Ing. Eduardo Herrera Forero"
@@ -91,7 +91,7 @@
 
   <body class="d-flex flex-column min-vh-100">
     <!-- Barra deNavegación -->
-<nav
+    <nav
       class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
     >
       <div class="container-fluid">
@@ -144,7 +144,9 @@
               <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog"
+              <a
+                class="nav-link mx-1 publicaciones-activo"
+                href="index.html#blog"
                 >PUBLICACIONES</a
               >
             </li>
@@ -160,43 +162,45 @@
     <!-- -------------------------------- principal -------------------------------- -->
     <main class="row mx-1 flex-fill">
       <div class="pt-5 col">
-        <article class="row border-1">
+        <section class="row pb-3">
           <h1>BOOTSTRAP Versión 5.3</h1>
-          <div id="principal" class="px-5">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th scope="col" class="col-1">#</th>
-                  <th scope="col" class="col-9">Nombre</th>
-                  <th scope="col" class="col-2">Fecha</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>
-                    <a
-                      href="./bootstrap-0001-instalacion_de_bootstrap_v5_con_npm_y_vite.html"
-                      >Instalación de Bootstrap V5.3 con NPM y Vite</a
-                    >
-                  </td>
-                  <td>27-Jul/2023</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>
-                    <a
-                      href="./bootstrap-0002-instalacion_de_bootstrap_v5_con_npm_y_parcel.html"
-                      >Instalación de Bootstrap V5.3 con NPM y Parcel</a
-                    >
-                    <span class="text-blink-yellow">Editado</span>
-                  </td>
-                  <td>16-May/2025</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </article>
+          <article id="principal" class="px-3 px-md-5">
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col" class="col-1">#</th>
+                    <th scope="col" class="col-9">Nombre</th>
+                    <th scope="col" class="col-2">Fecha</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>
+                      <a
+                        href="./bootstrap-0001-instalacion_de_bootstrap_v5_con_npm_y_vite.html"
+                        >Instalación de Bootstrap V5.3 con NPM y Vite</a
+                      >
+                    </td>
+                    <td>27-Jul/2023</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>
+                      <a
+                        href="./bootstrap-0002-instalacion_de_bootstrap_v5_con_npm_y_parcel.html"
+                        >Instalación de Bootstrap V5.3 con NPM y Parcel</a
+                      >
+                      <span class="text-blink-yellow">Editado</span>
+                    </td>
+                    <td>16-May/2025</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+        </section>
       </div>
       <!-- -------------------------------- fin principal -------------------------------- -->
     </main>

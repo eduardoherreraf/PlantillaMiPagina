@@ -94,7 +94,7 @@
 
   <body class="d-flex flex-column min-vh-100">
     <!-- Barra deNavegación -->
-<nav
+    <nav
       class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
     >
       <div class="container-fluid">
@@ -147,7 +147,9 @@
               <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog"
+              <a
+                class="nav-link mx-1 publicaciones-activo"
+                href="index.html#blog"
                 >PUBLICACIONES</a
               >
             </li>
@@ -163,32 +165,34 @@
     <!-- -------------------------------- principal -------------------------------- -->
     <main class="row mx-1 flex-fill">
       <div class="pt-5 col">
-        <article class="row border-1 pb-3">
+        <section class="row pb-3">
           <h1>Otros Temas</h1>
-          <div id="principal" class="px-5">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th scope="col" class="col-1">#</th>
-                  <th scope="col" class="col-9">Nombre</th>
-                  <th scope="col" class="col-2">Fecha</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>
-                    <a
-                      href="./otrosTemas-0001_como_borrar_la_cache_y_archivos_basura_en_windows.html"
-                      >Cómo Borrar la CACHÉ y Archivos Basura en Windows
-                    </a>
-                  </td>
-                  <td>11-Oct/2024</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </article>
+          <article id="principal" class="px-3 px-md-5">
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col" class="col-1">#</th>
+                    <th scope="col" class="col-9">Nombre</th>
+                    <th scope="col" class="col-2">Fecha</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>
+                      <a
+                        href="./otrosTemas-0001_como_borrar_la_cache_y_archivos_basura_en_windows.html"
+                        >Cómo Borrar la CACHÉ y Archivos Basura en Windows
+                      </a>
+                    </td>
+                    <td>11-Oct/2024</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+        </section>
       </div>
       <!-- -------------------------------- fin principal -------------------------------- -->
     </main>
