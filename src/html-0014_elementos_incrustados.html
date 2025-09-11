@@ -178,11 +178,17 @@
     </nav>
     <!-- Barra deNavegación -->
     <!--  Principal  -->
-    <div class="container-fluid">
-      <main class="pt-2 col-lg-9" id="introduccion">
-        <section class="pb-3 pt-4">
+    <!-- Principal -->
+    <div class="container-fluid" id="introduccion">
+      <main class="row">
+        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
           <!--  Elementos Incrustados HTM-->
-          <article class="row border-bottom border-1">
+          <article
+            class="row border-1 border-bottom pb-3"
+            data-bs-spy="scroll"
+            data-bs-target="#list-example"
+            data-bs-smooth-scroll="true"
+          >
             <div>
               <header>
                 <h1>Elementos Incrustados HTML</h1>
@@ -249,9 +255,7 @@
 
               <!-- Elemento <iframe> -->
               <div id="elemento-iframe" class="pt-4">
-                <h2>
-                  Elemento <code class="language-html">&lt;iframe></code>
-                </h2>
+                <h2>Elemento <code class="language-html">&lt;iframe></code></h2>
                 <p>
                   <code class="language-html">&lt;iframe></code> es un elemento
                   HTML que permite mostrar dentro de una página web otro
@@ -694,9 +698,7 @@
 
               <!-- Elemento <embed> -->
               <div id="elemento-embed" class="pt-4">
-                <h2>
-                  Elemento <code class="language-html">&lt;embed></code>
-                </h2>
+                <h2>Elemento <code class="language-html">&lt;embed></code></h2>
                 <p>
                   La etiqueta HTML
                   <code class="language-html">&lt;embed></code> es un elemento
@@ -880,9 +882,7 @@
 
               <!-- Elemento <object> -->
               <div id="elemento-object" class="pt-4">
-                <h2>
-                  Elemento <code class="language-html">&lt;object></code>
-                </h2>
+                <h2>Elemento <code class="language-html">&lt;object></code></h2>
                 <p>
                   La etiqueta <code class="language-html">&lt;object></code> en
                   HTML es un elemento diseñado para incrustar prácticamente
@@ -1022,9 +1022,7 @@
 
               <!-- Elemento <param> -->
               <div id="elemento-param" class="pt-4">
-                <h2>
-                  Elemento <code class="language-html">&lt;param></code>
-                </h2>
+                <h2>Elemento <code class="language-html">&lt;param></code></h2>
                 <p>
                   El elemento HTML
                   <code class="language-html">&lt;param></code> se utiliza para
@@ -1145,48 +1143,48 @@
           </article>
           <!-- Comentarios fin -->
         </section>
+        <!-- -------------------------------- barra lateral -------------------------------- -->
+        <aside class="col-lg-3 d-none d-lg-block pt-5">
+          <h1>En Este Artículo</h1>
+          <div class="menu-container">
+            <div class="menu-item">
+              <a href="#introduccion" class="simple-link">Introducción</a>
+            </div>
+
+            <div class="menu-item">
+              <a href="#elemento-iframe" class="simple-link"
+                >Elemento <code class="language-html">&lt;iframe></code></a
+              >
+            </div>
+
+            <div class="menu-item">
+              <a href="#elemento-embed" class="simple-link"
+                >Elemento <code class="language-html">&lt;embed></code></a
+              >
+            </div>
+
+            <div class="menu-item">
+              <a href="#elemento-object" class="simple-link"
+                >Elemento <code class="language-html">&lt;object></code></a
+              >
+            </div>
+
+            <div class="menu-item">
+              <a href="#elemento-param" class="simple-link"
+                >Elemento <code class="language-html">&lt;param></code></a
+              >
+            </div>
+
+            <!-- Comentarios  -->
+            <div class="menu-item">
+              <a href="#comment" class="simple-link">Comentarios</a>
+            </div>
+          </div>
+        </aside>
+        <!-- -------------------------------- fin barra lateral -------------------------------- -->
         <!--  Elementos Incrustados HTM-->
       </main>
       <!-- -------------------------------- fin principal -------------------------------- -->
-      <!-- -------------------------------- barra lateral -------------------------------- -->
-      <aside class="col-lg-3 d-none d-lg-block pt-5">
-        <h1>En Este Artículo</h1>
-        <div class="menu-container">
-          <div class="menu-item">
-            <a href="#introduccion" class="simple-link">Introducción</a>
-          </div>
-
-          <div class="menu-item">
-            <a href="#elemento-iframe" class="simple-link"
-              >Elemento <code class="language-html">&lt;iframe></code></a
-            >
-          </div>
-
-          <div class="menu-item">
-            <a href="#elemento-embed" class="simple-link"
-              >Elemento <code class="language-html">&lt;embed></code></a
-            >
-          </div>
-
-          <div class="menu-item">
-            <a href="#elemento-object" class="simple-link"
-              >Elemento <code class="language-html">&lt;object></code></a
-            >
-          </div>
-
-          <div class="menu-item">
-            <a href="#elemento-param" class="simple-link"
-              >Elemento <code class="language-html">&lt;param></code></a
-            >
-          </div>
-
-          <!-- Comentarios  -->
-          <div class="menu-item">
-            <a href="#comment" class="simple-link">Comentarios</a>
-          </div>
-        </div>
-      </aside>
-      <!-- -------------------------------- fin barra lateral -------------------------------- -->
     </div>
     <!--  Principal Fin  -->
     <!-- button to top -->

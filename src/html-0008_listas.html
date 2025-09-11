@@ -174,12 +174,17 @@
     </nav>
     <!-- Barra deNavegación -->
 
-    <!--  Principal  -->
-    <div class="container-fluid">
-      <main class="pt-1 col-lg-9" id="introduccion">
-        <section class="pb-3 pt-4">
+    <!-- Principal -->
+    <div class="container-fluid" id="introduccion">
+      <main class="row">
+        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
           <!--  Listas HTML -->
-          <article class="row pb-3 border-bottom border-1">
+          <article
+            class="row border-1 border-bottom pb-3"
+            data-bs-spy="scroll"
+            data-bs-target="#list-example"
+            data-bs-smooth-scroll="true"
+          >
             <div>
               <header>
                 <h1>Listas HTML</h1>
@@ -2590,56 +2595,56 @@
           </article>
           <!-- Comentarios fin -->
         </section>
+        <!-- -------------------------------- barra lateral -------------------------------- -->
+        <aside class="col-lg-3 d-none d-lg-block pt-5">
+          <h1>En Este Artículo</h1>
+
+          <div class="menu-container">
+            <div class="menu-item">
+              <a href="#introduccion" class="simple-link">Introducción</a>
+            </div>
+
+            <div class="menu-item">
+              <a href="#definicion-de-listas-en-html" class="simple-link"
+                >Definición de Listas en HTML</a
+              >
+            </div>
+
+            <div class="menu-item">
+              <details>
+                <summary>Tipos de Listas</summary>
+                <div class="submenu">
+                  <a href="#tipos-de-listas" class="submenu-item"
+                    >Tipos de Listas</a
+                  >
+
+                  <a href="#listas-ordenadas-ol" class="submenu-item"
+                    >Listas Ordenadas
+                    <code class="language-html">&lt;ol></code></a
+                  >
+                  <a href="#listas-desordenadas-ul" class="submenu-item"
+                    >Listas Desordenadas
+                    <code class="language-html">&lt;ul></code></a
+                  >
+                  <a href="#listas-de-descripcion-dl" class="submenu-item"
+                    >Listas de Descripción
+                    <code class="language-html">&lt;dl></code></a
+                  >
+                  <a href="#listas-mezcladas" class="submenu-item"
+                    >Listas Mezcladas</a
+                  >
+                </div>
+              </details>
+            </div>
+            <div class="menu-item">
+              <a href="#comment" class="simple-link">Comentarios</a>
+            </div>
+          </div>
+        </aside>
+        <!-- -------------------------------- fin barra lateral -------------------------------- -->
         <!--  Listas HTML -->
       </main>
       <!-- -------------------------------- fin principal -------------------------------- -->
-      <!-- -------------------------------- barra lateral -------------------------------- -->
-      <aside class="col-lg-3 d-none d-lg-block pt-5">
-        <h1>En Este Artículo</h1>
-
-        <div class="menu-container">
-          <div class="menu-item">
-            <a href="#introduccion" class="simple-link">Introducción</a>
-          </div>
-
-          <div class="menu-item">
-            <a href="#definicion-de-listas-en-html" class="simple-link"
-              >Definición de Listas en HTML</a
-            >
-          </div>
-
-          <div class="menu-item">
-            <details>
-              <summary>Tipos de Listas</summary>
-              <div class="submenu">
-                <a href="#tipos-de-listas" class="submenu-item"
-                  >Tipos de Listas</a
-                >
-
-                <a href="#listas-ordenadas-ol" class="submenu-item"
-                  >Listas Ordenadas
-                  <code class="language-html">&lt;ol></code></a
-                >
-                <a href="#listas-desordenadas-ul" class="submenu-item"
-                  >Listas Desordenadas
-                  <code class="language-html">&lt;ul></code></a
-                >
-                <a href="#listas-de-descripcion-dl" class="submenu-item"
-                  >Listas de Descripción
-                  <code class="language-html">&lt;dl></code></a
-                >
-                <a href="#listas-mezcladas" class="submenu-item"
-                  >Listas Mezcladas</a
-                >
-              </div>
-            </details>
-          </div>
-          <div class="menu-item">
-            <a href="#comment" class="simple-link">Comentarios</a>
-          </div>
-        </div>
-      </aside>
-      <!-- -------------------------------- fin barra lateral -------------------------------- -->
     </div>
     <!--  Principal Fin  -->
     <!-- button to top -->

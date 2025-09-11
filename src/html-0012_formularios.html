@@ -184,12 +184,17 @@
     </nav>
     <!-- Barra deNavegación -->
 
-    <!--  Principal  -->
-    <div class="container-fluid">
-      <main class="pt-1 col-lg-9" id="introduccion">
-        <section class="pb-3 pt-4">
+    <!-- Principal -->
+    <div class="container-fluid" id="introduccion">
+      <main class="row">
+        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
           <!--  Formularios HTML-->
-          <article class="row pb-3 border-bottom border-1">
+          <article
+            class="row border-1 border-bottom pb-3"
+            data-bs-spy="scroll"
+            data-bs-target="#list-example"
+            data-bs-smooth-scroll="true"
+          >
             <div>
               <header>
                 <h1>Formularios HTML</h1>
@@ -8809,190 +8814,190 @@
           </article>
           <!-- Comentarios fin -->
         </section>
+        <!-- -------------------------------- barra lateral -------------------------------- -->
+        <aside class="col-lg-3 d-none d-lg-block pt-5">
+          <h1>En Este Artículo</h1>
+
+          <div class="menu-container">
+            <div class="menu-item">
+              <details>
+                <summary>Introducción</summary>
+                <div class="submenu">
+                  <a href="#introduccion" class="submenu-item">Introducción</a>
+                  <a href="#que-es-un-formulario-en-html" class="submenu-item"
+                    >¿Qué Es un Formulario en HTML?</a
+                  >
+                  <a
+                    href="#por-que-son-importantes-en-desarrollo-web"
+                    class="submenu-item"
+                    >¿Por Qué Son Importantes en Desarrollo Web?</a
+                  >
+                </div>
+              </details>
+            </div>
+
+            <div class="menu-item">
+              <details>
+                <summary>Estructura Básica de un Formulario</summary>
+                <div class="submenu">
+                  <a href="#el-elemento-form" class="submenu-item"
+                    >El Elemento
+                    <code class="language-html"
+                      ><code class="language-html">&lt;form></code></code
+                    ></a
+                  >
+
+                  <a
+                    href="#anatomía-completa-del-elemento-form"
+                    class="submenu-item"
+                    >Anatomía Completa del Elemento
+                    <code class="language-html"
+                      ><code class="language-html">&lt;form></code></code
+                    ></a
+                  >
+                </div>
+              </details>
+            </div>
+
+            <div class="menu-item">
+              <details>
+                <summary>
+                  Atributos del Formulario
+                  <code class="language-html">&lt;form></code>
+                </summary>
+                <div class="submenu">
+                  <div class="menu-item">
+                    <a
+                      href="#que-son-los-atributos-del-formulario-form"
+                      class="submenu-item"
+                      >Qué Son los Atributos del Formulario</a
+                    >
+                  </div>
+
+                  <div class="menu-item">
+                    <a href="#action" class="submenu-item"
+                      ><code class="language-html">action</code></a
+                    >
+                  </div>
+
+                  <div class="menu-item">
+                    <a href="#method" class="submenu-item"
+                      ><code class="language-html">method</code></a
+                    >
+                  </div>
+
+                  <div class="menu-item">
+                    <a href="#enctype" class="submenu-item"
+                      ><code class="language-html">enctype</code></a
+                    >
+                  </div>
+
+                  <div class="menu-item">
+                    <a href="#name" class="submenu-item"
+                      ><code class="language-html">name</code></a
+                    >
+                  </div>
+
+                  <div class="menu-item">
+                    <a href="#id" class="submenu-item"
+                      ><code class="language-html">id</code></a
+                    >
+                  </div>
+
+                  <div class="menu-item">
+                    <a href="#target" class="submenu-item"
+                      ><code class="language-html">target</code></a
+                    >
+                  </div>
+
+                  <div class="menu-item">
+                    <a href="#autocomplete" class="submenu-item"
+                      ><code class="language-html">autocomplete</code></a
+                    >
+                  </div>
+
+                  <div class="menu-item">
+                    <a href="#novalidate" class="submenu-item"
+                      ><code class="language-html">novalidate</code></a
+                    >
+                  </div>
+
+                  <div class="menu-item">
+                    <a href="#accept-charset" class="submenu-item"
+                      ><code class="language-html">accept-charset</code></a
+                    >
+                  </div>
+                </div>
+              </details>
+            </div>
+
+            <div class="menu-item">
+              <details>
+                <summary>Los Elementos del formulario</summary>
+                <div class="submenu">
+                  <div class="menu-item">
+                    <a href="#el-elemento-input" class="submenu-item"
+                      >El Elemento
+                      <code class="language-html">&lt;input /></code></a
+                    >
+
+                    <a href="#tipos-de-entrada-input" class="submenu-item"
+                      >Tipos de Entrada
+                      <code class="language-html">&lt;input /></code></a
+                    >
+
+                    <a href="#atributos-de-entrada-input" class="submenu-item"
+                      >Atributos de Entrada
+                      <code class="language-html">&lt;input /></code></a
+                    >
+
+                    <a href="#el-elemento-label" class="submenu-item"
+                      >El Elemento
+                      <code class="language-html">&lt;label></code></a
+                    >
+
+                    <a href="#el-elemento-select" class="submenu-item"
+                      >El Elemento
+                      <code class="language-html">&lt;select></code></a
+                    >
+
+                    <a href="#el-elemento-textarea" class="submenu-item"
+                      >El elemento
+                      <code class="language-html">&lt;textarea></code></a
+                    >
+
+                    <a
+                      href="#los-elementos-fieldset-y-legend"
+                      class="submenu-item"
+                      >Los Elementos
+                      <code class="language-html">&lt;fieldset></code> y
+                      <code class="language-html">&lt;legend></code></a
+                    >
+
+                    <a href="#el-elemento-datalist" class="submenu-item"
+                      >El Elemento
+                      <code class="language-html">&lt;datalist></code></a
+                    >
+                  </div>
+                </div>
+              </details>
+            </div>
+
+            <div class="menu-item">
+              <a href="#ejemplo-practico-de-formulario-html" class="simple-link"
+                >Ejemplo Práctico de Formulario HTML</a
+              >
+            </div>
+
+            <div class="menu-item">
+              <a href="#comment" class="simple-link">Comentarios</a>
+            </div>
+          </div>
+        </aside>
+        <!-- -------------------------------- fin barra lateral -------------------------------- -->
         <!--  Formularios HTML-->
       </main>
       <!-- -------------------------------- fin principal -------------------------------- -->
-      <!-- -------------------------------- barra lateral -------------------------------- -->
-      <aside class="col-lg-3 d-none d-lg-block pt-5">
-        <h1>En Este Artículo</h1>
-
-        <div class="menu-container">
-          <div class="menu-item">
-            <details>
-              <summary>Introducción</summary>
-              <div class="submenu">
-                <a href="#introduccion" class="submenu-item">Introducción</a>
-                <a href="#que-es-un-formulario-en-html" class="submenu-item"
-                  >¿Qué Es un Formulario en HTML?</a
-                >
-                <a
-                  href="#por-que-son-importantes-en-desarrollo-web"
-                  class="submenu-item"
-                  >¿Por Qué Son Importantes en Desarrollo Web?</a
-                >
-              </div>
-            </details>
-          </div>
-
-          <div class="menu-item">
-            <details>
-              <summary>Estructura Básica de un Formulario</summary>
-              <div class="submenu">
-                <a href="#el-elemento-form" class="submenu-item"
-                  >El Elemento
-                  <code class="language-html"
-                    ><code class="language-html">&lt;form></code></code
-                  ></a
-                >
-
-                <a
-                  href="#anatomía-completa-del-elemento-form"
-                  class="submenu-item"
-                  >Anatomía Completa del Elemento
-                  <code class="language-html"
-                    ><code class="language-html">&lt;form></code></code
-                  ></a
-                >
-              </div>
-            </details>
-          </div>
-
-          <div class="menu-item">
-            <details>
-              <summary>
-                Atributos del Formulario
-                <code class="language-html">&lt;form></code>
-              </summary>
-              <div class="submenu">
-                <div class="menu-item">
-                  <a
-                    href="#que-son-los-atributos-del-formulario-form"
-                    class="submenu-item"
-                    >Qué Son los Atributos del Formulario</a
-                  >
-                </div>
-
-                <div class="menu-item">
-                  <a href="#action" class="submenu-item"
-                    ><code class="language-html">action</code></a
-                  >
-                </div>
-
-                <div class="menu-item">
-                  <a href="#method" class="submenu-item"
-                    ><code class="language-html">method</code></a
-                  >
-                </div>
-
-                <div class="menu-item">
-                  <a href="#enctype" class="submenu-item"
-                    ><code class="language-html">enctype</code></a
-                  >
-                </div>
-
-                <div class="menu-item">
-                  <a href="#name" class="submenu-item"
-                    ><code class="language-html">name</code></a
-                  >
-                </div>
-
-                <div class="menu-item">
-                  <a href="#id" class="submenu-item"
-                    ><code class="language-html">id</code></a
-                  >
-                </div>
-
-                <div class="menu-item">
-                  <a href="#target" class="submenu-item"
-                    ><code class="language-html">target</code></a
-                  >
-                </div>
-
-                <div class="menu-item">
-                  <a href="#autocomplete" class="submenu-item"
-                    ><code class="language-html">autocomplete</code></a
-                  >
-                </div>
-
-                <div class="menu-item">
-                  <a href="#novalidate" class="submenu-item"
-                    ><code class="language-html">novalidate</code></a
-                  >
-                </div>
-
-                <div class="menu-item">
-                  <a href="#accept-charset" class="submenu-item"
-                    ><code class="language-html">accept-charset</code></a
-                  >
-                </div>
-              </div>
-            </details>
-          </div>
-
-          <div class="menu-item">
-            <details>
-              <summary>Los Elementos del formulario</summary>
-              <div class="submenu">
-                <div class="menu-item">
-                  <a href="#el-elemento-input" class="submenu-item"
-                    >El Elemento
-                    <code class="language-html">&lt;input /></code></a
-                  >
-
-                  <a href="#tipos-de-entrada-input" class="submenu-item"
-                    >Tipos de Entrada
-                    <code class="language-html">&lt;input /></code></a
-                  >
-
-                  <a href="#atributos-de-entrada-input" class="submenu-item"
-                    >Atributos de Entrada
-                    <code class="language-html">&lt;input /></code></a
-                  >
-
-                  <a href="#el-elemento-label" class="submenu-item"
-                    >El Elemento
-                    <code class="language-html">&lt;label></code></a
-                  >
-
-                  <a href="#el-elemento-select" class="submenu-item"
-                    >El Elemento
-                    <code class="language-html">&lt;select></code></a
-                  >
-
-                  <a href="#el-elemento-textarea" class="submenu-item"
-                    >El elemento
-                    <code class="language-html">&lt;textarea></code></a
-                  >
-
-                  <a
-                    href="#los-elementos-fieldset-y-legend"
-                    class="submenu-item"
-                    >Los Elementos
-                    <code class="language-html">&lt;fieldset></code> y
-                    <code class="language-html">&lt;legend></code></a
-                  >
-
-                  <a href="#el-elemento-datalist" class="submenu-item"
-                    >El Elemento
-                    <code class="language-html">&lt;datalist></code></a
-                  >
-                </div>
-              </div>
-            </details>
-          </div>
-
-          <div class="menu-item">
-            <a href="#ejemplo-practico-de-formulario-html" class="simple-link"
-              >Ejemplo Práctico de Formulario HTML</a
-            >
-          </div>
-
-          <div class="menu-item">
-            <a href="#comment" class="simple-link">Comentarios</a>
-          </div>
-        </div>
-      </aside>
-      <!-- -------------------------------- fin barra lateral -------------------------------- -->
     </div>
     <!--  Principal Fin  -->
 

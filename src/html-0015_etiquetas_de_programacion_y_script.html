@@ -189,12 +189,17 @@
     </nav>
     <!-- Barra deNavegación -->
 
-    <!--  Principal  -->
-    <div class="container-fluid">
-      <main class="pt-2 col-lg-9" id="introduccion">
-        <section class="pb-3 pt-4">
+    <!-- Principal -->
+    <div class="container-fluid" id="introduccion">
+      <main class="row">
+        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
           <!--  Etiquetas de Programación y Scripts-->
-          <article class="row border-bottom border-1">
+          <article
+            class="row border-1 border-bottom pb-3"
+            data-bs-spy="scroll"
+            data-bs-target="#list-example"
+            data-bs-smooth-scroll="true"
+          >
             <div>
               <header>
                 <h1>Etiquetas de Programación y Scripts</h1>
@@ -1137,40 +1142,40 @@
           </article>
           <!--Comentarios fin -->
         </section>
+        <!-- --------------------------------barra lateral-------------------------------- -->
+        <aside class="col-lg-3 d-none d-lg-block pt-5">
+          <h1>En Este Artículo</h1>
+
+          <div class="menu-container">
+            <div class="menu-item">
+              <a href="#introduccion" class="simple-link">Introducción</a>
+            </div>
+            <div class="menu-item">
+              <a href="#elemento-script" class="simple-link"
+                >Elemento <code class="language-html">&lt;script></code></a
+              >
+            </div>
+            <div class="menu-item">
+              <a href="#elemento-noscript" class="simple-link"
+                >Elemento <code class="language-html">&lt;noscript></code></a
+              >
+            </div>
+            <div class="menu-item">
+              <a href="#elemento-template" class="simple-link"
+                >Elemento <code class="language-html">&lt;template></code></a
+              >
+            </div>
+
+            <!-- Comentarios  -->
+            <div class="menu-item">
+              <a href="#comment" class="simple-link">Comentarios</a>
+            </div>
+          </div>
+        </aside>
+        <!-- --------------------------------fin barra lateral-------------------------------- -->
         <!-- Etiquetas de Programación y Scripts -->
       </main>
       <!--  --------------------------------fin principal-------------------------------- -->
-      <!-- --------------------------------barra lateral-------------------------------- -->
-      <aside class="col-lg-3 d-none d-lg-block pt-5">
-        <h1>En Este Artículo</h1>
-
-        <div class="menu-container">
-          <div class="menu-item">
-            <a href="#introduccion" class="simple-link">Introducción</a>
-          </div>
-          <div class="menu-item">
-            <a href="#elemento-script" class="simple-link"
-              >Elemento <code class="language-html">&lt;script></code></a
-            >
-          </div>
-          <div class="menu-item">
-            <a href="#elemento-noscript" class="simple-link"
-              >Elemento <code class="language-html">&lt;noscript></code></a
-            >
-          </div>
-          <div class="menu-item">
-            <a href="#elemento-template" class="simple-link"
-              >Elemento <code class="language-html">&lt;template></code></a
-            >
-          </div>
-
-          <!-- Comentarios  -->
-          <div class="menu-item">
-            <a href="#comment" class="simple-link">Comentarios</a>
-          </div>
-        </div>
-      </aside>
-      <!-- --------------------------------fin barra lateral-------------------------------- -->
     </div>
     <!--Principal Fin-->
 

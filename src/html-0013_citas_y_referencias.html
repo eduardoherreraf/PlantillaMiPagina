@@ -184,12 +184,17 @@
     </nav>
     <!-- Barra deNavegación -->
 
-    <!--  Principal  -->
-    <div class="container-fluid">
-      <main class="pt-2 col-lg-9" id="introduccion">
-        <section class="pb-3 pt-4">
+    <!-- Principal -->
+    <div class="container-fluid" id="introduccion">
+      <main class="row">
+        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
           <!--  Citas y Referencias HTM-->
-          <article class="row border-bottom border-1">
+          <article
+            class="row border-1 border-bottom pb-3"
+            data-bs-spy="scroll"
+            data-bs-target="#list-example"
+            data-bs-smooth-scroll="true"
+          >
             <div>
               <header>
                 <h1 id="introduccion">Citas y Referencias HTML</h1>
@@ -1033,7 +1038,9 @@
 
                 <!--  Cuándo usar <q>  -->
                 <div id="-cuando-usar-q">
-                  <h3 class="pt-5">Cuándo usar <code class="language-html">&lt;q></code></h3>
+                  <h3 class="pt-5">
+                    Cuándo usar <code class="language-html">&lt;q></code>
+                  </h3>
                   <ul>
                     <li>
                       Para citas breves que no requieren un párrafo separado.
@@ -1473,143 +1480,147 @@
           <!-- Comentarios fin -->
         </section>
         <!--  Citas y Referencias HTM-->
+        <!-- -------------------------------- barra lateral -------------------------------- -->
+        <aside class="col-lg-3 d-none d-lg-block pt-5">
+          <h1>En Este Artículo</h1>
+
+          <div class="menu-container">
+            <div class="menu-item">
+              <a href="#introduccion" class="simple-link">Introducción</a>
+            </div>
+
+            <div class="menu-item">
+              <details>
+                <summary>
+                  Cita Larga o en Bloque
+                  <code class="language-html">&lt;blockquote></code>
+                </summary>
+                <div class="submenu">
+                  <a
+                    href="#cita-larga-o-en-bloque-blockquote"
+                    class="submenu-item"
+                    >Cita Larga o en Bloque
+                    <code class="language-html">&lt;blockquote></code></a
+                  >
+
+                  <a
+                    href="#características-principales-blockquote"
+                    class="submenu-item"
+                    >Características Principales
+                    <code class="language-html">&lt;blockquote></code></a
+                  >
+
+                  <a href="#presentacion-visual-blockquote" class="submenu-item"
+                    >Presentación Visual
+                    <code class="language-html">&lt;blockquote></code></a
+                  >
+
+                  <a
+                    href="#por-que-usar-una-cita-en-bloque"
+                    class="submenu-item"
+                    >¿Por Qué Usar una Cita en Bloque?</a
+                  >
+
+                  <a href="#sintaxis-blockquote" class="submenu-item"
+                    >Sintaxis
+                    <code class="language-html">&lt;blockquote></code></a
+                  >
+
+                  <a href="#ejemplo-practico-blockquote" class="submenu-item"
+                    >Ejemplo Práctico
+                    <code class="language-html">&lt;blockquote></code></a
+                  >
+                </div>
+              </details>
+            </div>
+
+            <div class="menu-item">
+              <details>
+                <summary>
+                  Cita de una fuente
+                  <code class="language-html">&lt;cite></code>
+                </summary>
+                <div class="submenu">
+                  <a href="#cita-de-una-fuente-cite" class="submenu-item"
+                    >Cita de una fuente
+                    <code class="language-html">&lt;cite></code></a
+                  >
+
+                  <a href="#que-es-la-etiqueta-cite" class="submenu-item"
+                    >¿Qué es la etiqueta
+                    <code class="language-html">&lt;cite></code>?</a
+                  >
+
+                  <a href="#para-que-se-usa" class="submenu-item"
+                    >¿Para qué se usa?</a
+                  >
+
+                  <a
+                    href="#como-se-ve-y-que-hace-el-navegador"
+                    class="submenu-item"
+                    >¿Cómo se ve y qué hace el navegador?</a
+                  >
+
+                  <a href="#sintaxis-basica-cite" class="submenu-item"
+                    >Sintaxis Básica
+                    <code class="language-html">&lt;cite></code></a
+                  >
+
+                  <a href="#ejemplos-de-uso-de-cite" class="submenu-item"
+                    >Ejemplos de uso de
+                    <code class="language-html">&lt;cite></code></a
+                  >
+                </div>
+              </details>
+            </div>
+
+            <div class="menu-item">
+              <details>
+                <summary>
+                  Citas en Línea <code class="language-html">&lt;q></code>
+                </summary>
+                <div class="submenu">
+                  <a href="#citas-en-linea-q" class="submenu-item"
+                    >Citas en Línea <code class="language-html">&lt;q></code></a
+                  >
+                  <a href="#que-es-la-etiqueta-q" class="submenu-item"
+                    >¿Qué es la etiqueta
+                    <code class="language-html">&lt;q></code>?</a
+                  >
+
+                  <a href="#-como-funciona-la-etiqueta-q" class="submenu-item">
+                    ¿Cómo funciona la etiqueta
+                    <code class="language-html">&lt;q></code>?</a
+                  >
+
+                  <a href="#-cuando-usar-q" class="submenu-item">
+                    Cuándo usar <code class="language-html">&lt;q></code></a
+                  >
+
+                  <a href="#personalizacion-con-css" class="submenu-item"
+                    >Personalización con CSS</a
+                  >
+
+                  <a href="#sintaxis-basica-q" class="submenu-item"
+                    >Sintaxis Básica
+                    <code class="language-html">&lt;q></code></a
+                  >
+
+                  <a href="#ejemplo-basico-q" class="submenu-item"
+                    >Ejemplo básico <code class="language-html">&lt;q></code></a
+                  >
+                </div>
+              </details>
+            </div>
+
+            <div class="menu-item">
+              <a href="#comment" class="simple-link">Comentarios</a>
+            </div>
+          </div>
+        </aside>
+        <!-- -------------------------------- fin barra lateral -------------------------------- -->
       </main>
       <!-- -------------------------------- fin principal -------------------------------- -->
-      <!-- -------------------------------- barra lateral -------------------------------- -->
-      <aside class="col-lg-3 d-none d-lg-block pt-5">
-        <h1>En Este Artículo</h1>
-
-        <div class="menu-container">
-          <div class="menu-item">
-            <a href="#introduccion" class="simple-link">Introducción</a>
-          </div>
-
-          <div class="menu-item">
-            <details>
-              <summary>
-                Cita Larga o en Bloque
-                <code class="language-html">&lt;blockquote></code>
-              </summary>
-              <div class="submenu">
-                <a
-                  href="#cita-larga-o-en-bloque-blockquote"
-                  class="submenu-item"
-                  >Cita Larga o en Bloque
-                  <code class="language-html">&lt;blockquote></code></a
-                >
-
-                <a
-                  href="#características-principales-blockquote"
-                  class="submenu-item"
-                  >Características Principales
-                  <code class="language-html">&lt;blockquote></code></a
-                >
-
-                <a href="#presentacion-visual-blockquote" class="submenu-item"
-                  >Presentación Visual
-                  <code class="language-html">&lt;blockquote></code></a
-                >
-
-                <a href="#por-que-usar-una-cita-en-bloque" class="submenu-item"
-                  >¿Por Qué Usar una Cita en Bloque?</a
-                >
-
-                <a href="#sintaxis-blockquote" class="submenu-item"
-                  >Sintaxis
-                  <code class="language-html">&lt;blockquote></code></a
-                >
-
-                <a href="#ejemplo-practico-blockquote" class="submenu-item"
-                  >Ejemplo Práctico
-                  <code class="language-html">&lt;blockquote></code></a
-                >
-              </div>
-            </details>
-          </div>
-
-          <div class="menu-item">
-            <details>
-              <summary>
-                Cita de una fuente <code class="language-html">&lt;cite></code>
-              </summary>
-              <div class="submenu">
-                <a href="#cita-de-una-fuente-cite" class="submenu-item"
-                  >Cita de una fuente
-                  <code class="language-html">&lt;cite></code></a
-                >
-
-                <a href="#que-es-la-etiqueta-cite" class="submenu-item"
-                  >¿Qué es la etiqueta
-                  <code class="language-html">&lt;cite></code>?</a
-                >
-
-                <a href="#para-que-se-usa" class="submenu-item"
-                  >¿Para qué se usa?</a
-                >
-
-                <a
-                  href="#como-se-ve-y-que-hace-el-navegador"
-                  class="submenu-item"
-                  >¿Cómo se ve y qué hace el navegador?</a
-                >
-
-                <a href="#sintaxis-basica-cite" class="submenu-item"
-                  >Sintaxis Básica
-                  <code class="language-html">&lt;cite></code></a
-                >
-
-                <a href="#ejemplos-de-uso-de-cite" class="submenu-item"
-                  >Ejemplos de uso de
-                  <code class="language-html">&lt;cite></code></a
-                >
-              </div>
-            </details>
-          </div>
-
-          <div class="menu-item">
-            <details>
-              <summary>
-                Citas en Línea <code class="language-html">&lt;q></code>
-              </summary>
-              <div class="submenu">
-                <a href="#citas-en-linea-q" class="submenu-item"
-                  >Citas en Línea <code class="language-html">&lt;q></code></a
-                >
-                <a href="#que-es-la-etiqueta-q" class="submenu-item"
-                  >¿Qué es la etiqueta
-                  <code class="language-html">&lt;q></code>?</a
-                >
-
-                <a href="#-como-funciona-la-etiqueta-q" class="submenu-item">
-                  ¿Cómo funciona la etiqueta
-                  <code class="language-html">&lt;q></code>?</a
-                >
-
-                <a href="#-cuando-usar-q" class="submenu-item">
-                  Cuándo usar <code class="language-html">&lt;q></code></a
-                >
-
-                <a href="#personalizacion-con-css" class="submenu-item"
-                  >Personalización con CSS</a
-                >
-
-                <a href="#sintaxis-basica-q" class="submenu-item"
-                  >Sintaxis Básica <code class="language-html">&lt;q></code></a
-                >
-
-                <a href="#ejemplo-basico-q" class="submenu-item"
-                  >Ejemplo básico <code class="language-html">&lt;q></code></a
-                >
-              </div>
-            </details>
-          </div>
-
-          <div class="menu-item">
-            <a href="#comment" class="simple-link">Comentarios</a>
-          </div>
-        </div>
-      </aside>
-      <!-- -------------------------------- fin barra lateral -------------------------------- -->
     </div>
     <!--  Principal Fin  -->
 

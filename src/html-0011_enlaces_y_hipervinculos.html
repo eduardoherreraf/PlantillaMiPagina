@@ -183,12 +183,17 @@
     </nav>
     <!-- Barra deNavegación -->
 
-    <!--  Principal  -->
-    <div class="container-fluid">
-      <main class="pt-1 col-lg-9" id="introduccion">
-        <section class="pb-3 pt-4">
+    <!-- Principal -->
+    <div class="container-fluid" id="introduccion">
+      <main class="row">
+        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
           <!--  Enlaces y hipervínculos HTML-->
-          <article class="row pb-3 border-bottom border-1">
+          <article
+            class="row border-1 border-bottom pb-3"
+            data-bs-spy="scroll"
+            data-bs-target="#list-example"
+            data-bs-smooth-scroll="true"
+          >
             <div>
               <header>
                 <h1>Enlaces y hipervínculos HTML</h1>
@@ -1735,162 +1740,164 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
           <!-- Comentarios fin -->
         </section>
         <!--  Enlaces y hipervínculos HTML-->
+        <!-- -------------------------------- barra lateral -------------------------------- -->
+        <aside class="col-lg-3 d-none d-lg-block pt-5">
+          <h1>En Este Artículo</h1>
+          <div class="menu-container">
+            <div class="menu-item">
+              <a href="#introduccion" class="simple-link">Introducción</a>
+            </div>
+
+            <div class="menu-item">
+              <a href="#enlaces-html-hiperenlaces" class="simple-link"
+                >Enlaces HTML-Hiperenlaces</a
+              >
+            </div>
+
+            <div class="menu-item">
+              <a href="#enlaces-html-sintaxis" class="simple-link"
+                >Enlaces HTML-Sintaxis</a
+              >
+            </div>
+
+            <div class="menu-item">
+              <a href="#enlaces-html---el-atributo-target" class="simple-link"
+                >Enlaces HTML - El Atributo target</a
+              >
+            </div>
+
+            <div class="menu-item">
+              <details>
+                <summary>URLs Absolutas vs URLs Relativas</summary>
+                <div class="submenu">
+                  <a
+                    href="#urls-absolutas-vs-urls-relativas"
+                    class="submenu-item"
+                    >URLs Absolutas vs URLs Relativas</a
+                  >
+                  <a href="#url-absoluta" class="submenu-item">URL Absoluta</a>
+                  <a href="#url-relativa" class="submenu-item">URL Relativa</a>
+                  <a href="#cuándo-usar-cada-tipo-de-url" class="submenu-item"
+                    >Cuándo Usar Cada Tipo de URL</a
+                  >
+                </div>
+              </details>
+            </div>
+
+            <div class="menu-item">
+              <a
+                href="#enlaces-html---usar-una-imagen-como-enlace"
+                class="simple-link"
+                >Enlaces HTML - Usar una Imagen como Enlace</a
+              >
+            </div>
+
+            <div class="menu-item">
+              <details>
+                <summary>
+                  Enlaces HTML - Enlace a una Dirección de Correo Electrónico
+                </summary>
+                <div class="submenu">
+                  <a
+                    href="#enlaces-html---enlace-a-una-direccion-de-correo-electronico"
+                    class="submenu-item"
+                    >Enlaces HTML - Enlace a una Dirección de Correo Electrónico
+                  </a>
+                  <a
+                    href="#opciones-adicionales-para-enviar-correos"
+                    class="submenu-item"
+                    >Opciones Adicionales para Enviar Correos</a
+                  >
+                </div>
+              </details>
+            </div>
+
+            <div class="menu-item">
+              <details>
+                <summary>Enlaces HTML - Un Botón como un Enlace</summary>
+                <div class="submenu">
+                  <a
+                    href="#enlaces-html---un-boton-como-un-enlace"
+                    class="submenu-item"
+                    >Enlaces HTML - Un Botón como un Enlace</a
+                  >
+                  <a href="#botón-dentro-de-un-enlace" class="submenu-item"
+                    >Botón Dentro de un Enlace</a
+                  >
+                  <a href="#enlace-estilizado-como-botón" class="submenu-item"
+                    >Enlace Estilizado como Botón</a
+                  >
+                  <a href="#formulario-con-botón" class="submenu-item"
+                    >Formulario con Botón</a
+                  >
+                  <a href="#botón-con-javascript" class="submenu-item"
+                    >Botón con JavaScript</a
+                  >
+                  <a
+                    href="#botón-con-data-attribute-y-javascript"
+                    class="submenu-item"
+                    >Botón con data attribute y JavaScript</a
+                  >
+                </div>
+              </details>
+            </div>
+
+            <div class="menu-item">
+              <details>
+                <summary>Marcadores (Anchors)</summary>
+                <div class="submenu">
+                  <a href="#marcadores-anchors" class="submenu-item"
+                    >Marcadores (Anchors)</a
+                  >
+                  <a href="#sintaxis-básica-de-marcadores" class="submenu-item"
+                    >Sintaxis Básica de Marcadores</a
+                  >
+                  <a href="#ejemplos-uso-del-marcador" class="submenu-item"
+                    >Ejemplos Uso del Marcador</a
+                  >
+                  <a href="#consejos-y-mejores-prácticas" class="submenu-item"
+                    >Consejos y Mejores Prácticas</a
+                  >
+                  <a
+                    href="#enlaces-a-marcadores-en-otras-páginas"
+                    class="submenu-item"
+                    >Enlaces a Marcadores en Otras Páginas</a
+                  >
+                </div>
+              </details>
+            </div>
+
+            <div class="menu-item">
+              <details>
+                <summary>Otros Atributos para Enlaces</summary>
+                <div class="submenu">
+                  <a href="#atributos-de-seguridad" class="submenu-item"
+                    >Atributos de Seguridad</a
+                  >
+                  <a href="#atributos-de-accesibilidad" class="submenu-item"
+                    >Atributos de Accesibilidad</a
+                  >
+                  <a href="#atributos-de-descarga" class="submenu-item"
+                    >Atributos de Descarga</a
+                  >
+                  <a href="#atributos-de-navegación" class="submenu-item"
+                    >Atributos de Navegación</a
+                  >
+                  <a href="#ejemplo-completo-enlaces" class="submenu-item"
+                    >Ejemplo Completo Enlaces</a
+                  >
+                </div>
+              </details>
+            </div>
+
+            <div class="menu-item">
+              <a href="#comment" class="simple-link">Comentarios</a>
+            </div>
+          </div>
+        </aside>
+        <!-- -------------------------------- fin barra lateral -------------------------------- -->
       </main>
       <!-- -------------------------------- fin principal -------------------------------- -->
-      <!-- -------------------------------- barra lateral -------------------------------- -->
-      <aside class="col-lg-3 d-none d-lg-block pt-5">
-        <h1>En Este Artículo</h1>
-        <div class="menu-container">
-          <div class="menu-item">
-            <a href="#introduccion" class="simple-link">Introducción</a>
-          </div>
-
-          <div class="menu-item">
-            <a href="#enlaces-html-hiperenlaces" class="simple-link"
-              >Enlaces HTML-Hiperenlaces</a
-            >
-          </div>
-
-          <div class="menu-item">
-            <a href="#enlaces-html-sintaxis" class="simple-link"
-              >Enlaces HTML-Sintaxis</a
-            >
-          </div>
-
-          <div class="menu-item">
-            <a href="#enlaces-html---el-atributo-target" class="simple-link"
-              >Enlaces HTML - El Atributo target</a
-            >
-          </div>
-
-          <div class="menu-item">
-            <details>
-              <summary>URLs Absolutas vs URLs Relativas</summary>
-              <div class="submenu">
-                <a href="#urls-absolutas-vs-urls-relativas" class="submenu-item"
-                  >URLs Absolutas vs URLs Relativas</a
-                >
-                <a href="#url-absoluta" class="submenu-item">URL Absoluta</a>
-                <a href="#url-relativa" class="submenu-item">URL Relativa</a>
-                <a href="#cuándo-usar-cada-tipo-de-url" class="submenu-item"
-                  >Cuándo Usar Cada Tipo de URL</a
-                >
-              </div>
-            </details>
-          </div>
-
-          <div class="menu-item">
-            <a
-              href="#enlaces-html---usar-una-imagen-como-enlace"
-              class="simple-link"
-              >Enlaces HTML - Usar una Imagen como Enlace</a
-            >
-          </div>
-
-          <div class="menu-item">
-            <details>
-              <summary>
-                Enlaces HTML - Enlace a una Dirección de Correo Electrónico
-              </summary>
-              <div class="submenu">
-                <a
-                  href="#enlaces-html---enlace-a-una-direccion-de-correo-electronico"
-                  class="submenu-item"
-                  >Enlaces HTML - Enlace a una Dirección de Correo Electrónico
-                </a>
-                <a
-                  href="#opciones-adicionales-para-enviar-correos"
-                  class="submenu-item"
-                  >Opciones Adicionales para Enviar Correos</a
-                >
-              </div>
-            </details>
-          </div>
-
-          <div class="menu-item">
-            <details>
-              <summary>Enlaces HTML - Un Botón como un Enlace</summary>
-              <div class="submenu">
-                <a
-                  href="#enlaces-html---un-boton-como-un-enlace"
-                  class="submenu-item"
-                  >Enlaces HTML - Un Botón como un Enlace</a
-                >
-                <a href="#botón-dentro-de-un-enlace" class="submenu-item"
-                  >Botón Dentro de un Enlace</a
-                >
-                <a href="#enlace-estilizado-como-botón" class="submenu-item"
-                  >Enlace Estilizado como Botón</a
-                >
-                <a href="#formulario-con-botón" class="submenu-item"
-                  >Formulario con Botón</a
-                >
-                <a href="#botón-con-javascript" class="submenu-item"
-                  >Botón con JavaScript</a
-                >
-                <a
-                  href="#botón-con-data-attribute-y-javascript"
-                  class="submenu-item"
-                  >Botón con data attribute y JavaScript</a
-                >
-              </div>
-            </details>
-          </div>
-
-          <div class="menu-item">
-            <details>
-              <summary>Marcadores (Anchors)</summary>
-              <div class="submenu">
-                <a href="#marcadores-anchors" class="submenu-item"
-                  >Marcadores (Anchors)</a
-                >
-                <a href="#sintaxis-básica-de-marcadores" class="submenu-item"
-                  >Sintaxis Básica de Marcadores</a
-                >
-                <a href="#ejemplos-uso-del-marcador" class="submenu-item"
-                  >Ejemplos Uso del Marcador</a
-                >
-                <a href="#consejos-y-mejores-prácticas" class="submenu-item"
-                  >Consejos y Mejores Prácticas</a
-                >
-                <a
-                  href="#enlaces-a-marcadores-en-otras-páginas"
-                  class="submenu-item"
-                  >Enlaces a Marcadores en Otras Páginas</a
-                >
-              </div>
-            </details>
-          </div>
-
-          <div class="menu-item">
-            <details>
-              <summary>Otros Atributos para Enlaces</summary>
-              <div class="submenu">
-                <a href="#atributos-de-seguridad" class="submenu-item"
-                  >Atributos de Seguridad</a
-                >
-                <a href="#atributos-de-accesibilidad" class="submenu-item"
-                  >Atributos de Accesibilidad</a
-                >
-                <a href="#atributos-de-descarga" class="submenu-item"
-                  >Atributos de Descarga</a
-                >
-                <a href="#atributos-de-navegación" class="submenu-item"
-                  >Atributos de Navegación</a
-                >
-                <a href="#ejemplo-completo-enlaces" class="submenu-item"
-                  >Ejemplo Completo Enlaces</a
-                >
-              </div>
-            </details>
-          </div>
-
-          <div class="menu-item">
-            <a href="#comment" class="simple-link">Comentarios</a>
-          </div>
-        </div>
-      </aside>
-      <!-- -------------------------------- fin barra lateral -------------------------------- -->
     </div>
     <!--  Principal Fin  -->
 

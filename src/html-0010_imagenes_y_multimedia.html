@@ -183,12 +183,17 @@
     </nav>
     <!-- Barra deNavegación -->
 
-    <!--  Principal  -->
-    <div class="container-fluid">
-      <main class="pt-1 col-lg-9" id="introduccion">
-        <section class="pb-3 pt-4">
+    <!-- Principal -->
+    <div class="container-fluid" id="introduccion">
+      <main class="row">
+        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
           <!--  Imágenes y Multimedia HTML-->
-          <article class="row pb-3 border-bottom border-1">
+          <article
+            class="row border-1 border-bottom pb-3"
+            data-bs-spy="scroll"
+            data-bs-target="#list-example"
+            data-bs-smooth-scroll="true"
+          >
             <div>
               <header>
                 <h1>Imágenes y Multimedia HTML</h1>
@@ -238,7 +243,7 @@
               <hr class="subtle-divider" />
 
               <!-- Imágenes HTML <img> -->
-              <div id="imagenes-html-img"class="pt-4">
+              <div id="imagenes-html-img" class="pt-4">
                 <h2>
                   Imágenes HTML <code class="language-html">&lt;img></code>
                 </h2>
@@ -449,7 +454,7 @@
               <hr class="subtle-divider" />
 
               <!-- Videos HTML <video> -->
-              <div id="videos-html-video"class="pt-4">
+              <div id="videos-html-video" class="pt-4">
                 <h2>
                   Videos HTML <code class="language-html">&lt;video></code>
                 </h2>
@@ -842,7 +847,7 @@
               <hr class="subtle-divider" />
 
               <!-- Audio HTML <audio> -->
-              <div id="audio-html-audio"class="pt-4">
+              <div id="audio-html-audio" class="pt-4">
                 <h2>
                   Audio HTML <code class="language-html">&lt;audio></code>
                 </h2>
@@ -973,7 +978,7 @@
               <hr class="subtle-divider" />
 
               <!-- Etiqueta HTML <figure> -->
-              <div id="etiqueta-html-figure"class="pt-4">
+              <div id="etiqueta-html-figure" class="pt-4">
                 <h2>
                   Etiqueta HTML <code class="language-html">&lt;figure></code>
                 </h2>
@@ -1689,7 +1694,7 @@
             </div>
 
             <!-- Etiqueta HTML <picture> -->
-            <div id="etiqueta-html-picture"class="pt-4">
+            <div id="etiqueta-html-picture" class="pt-4">
               <h2>
                 Etiqueta HTML <code class="language-html">&lt;picture></code>
               </h2>
@@ -2371,47 +2376,48 @@
           </article>
           <!-- Comentarios fin -->
         </section>
+        <!-- -------------------------------- barra lateral -------------------------------- -->
+        <aside class="col-lg-3 d-none d-lg-block pt-5">
+          <h1>En Este Artículo</h1>
+          <div class="menu-container">
+            <div class="menu-item">
+              <a href="#introduccion" class="simple-link">Introducción</a>
+            </div>
+            <div class="menu-item">
+              <a href="#imagenes-html-img" class="simple-link"
+                >Imágenes HTML <code class="language-html">&lt;img></code></a
+              >
+            </div>
+            <div class="menu-item">
+              <a href="#videos-html-video" class="simple-link"
+                >Videos HTML <code class="language-html">&lt;video></code></a
+              >
+            </div>
+            <div class="menu-item">
+              <a href="#audio-html-audio" class="simple-link"
+                >Audio HTML <code class="language-html">&lt;audio></code></a
+              >
+            </div>
+            <div class="menu-item">
+              <a href="#etiqueta-html-figure" class="simple-link"
+                >Etiqueta HTML <code class="language-html">&lt;figure></code></a
+              >
+            </div>
+            <div class="menu-item">
+              <a href="#etiqueta-html-picture" class="simple-link"
+                >Etiqueta HTML
+                <code class="language-html">&lt;picture></code></a
+              >
+            </div>
+            <div class="menu-item">
+              <a href="#comment" class="simple-link">Comentarios</a>
+            </div>
+          </div>
+        </aside>
+        <!-- -------------------------------- fin barra lateral -------------------------------- -->
         <!--  Imágenes y Multimedia HTML-->
       </main>
       <!-- -------------------------------- fin principal -------------------------------- -->
-      <!-- -------------------------------- barra lateral -------------------------------- -->
-      <aside class="col-lg-3 d-none d-lg-block pt-5">
-        <h1>En Este Artículo</h1>
-        <div class="menu-container">
-          <div class="menu-item">
-            <a href="#introduccion" class="simple-link">Introducción</a>
-          </div>
-          <div class="menu-item">
-            <a href="#imagenes-html-img" class="simple-link"
-              >Imágenes HTML <code class="language-html">&lt;img></code></a
-            >
-          </div>
-          <div class="menu-item">
-            <a href="#videos-html-video" class="simple-link"
-              >Videos HTML <code class="language-html">&lt;video></code></a
-            >
-          </div>
-          <div class="menu-item">
-            <a href="#audio-html-audio" class="simple-link"
-              >Audio HTML <code class="language-html">&lt;audio></code></a
-            >
-          </div>
-          <div class="menu-item">
-            <a href="#etiqueta-html-figure" class="simple-link"
-              >Etiqueta HTML <code class="language-html">&lt;figure></code></a
-            >
-          </div>
-          <div class="menu-item">
-            <a href="#etiqueta-html-picture" class="simple-link"
-              >Etiqueta HTML <code class="language-html">&lt;picture></code></a
-            >
-          </div>
-          <div class="menu-item">
-            <a href="#comment" class="simple-link">Comentarios</a>
-          </div>
-        </div>
-      </aside>
-      <!-- -------------------------------- fin barra lateral -------------------------------- -->
     </div>
     <!-- Principal Fin -->
 

@@ -181,14 +181,19 @@
         </div>
       </div>
     </nav>
-    <!-- Barra de Navegación -->
+    <!-- Barra deNavegación -->
 
     <!--  Principal  -->
-    <div class="container-fluid">
-      <main class="pt-1 col-lg-9" id="introduccion">
-        <section class="pb-3 pt-4">
+    <div class="container-fluid" id="introduccion">
+      <main class="row">
+        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
           <!--  Estructura del Documento HTML -->
-          <article class="row pb-3 border-bottom border-1">
+          <article
+            class="row border-1 border-bottom pb-3"
+            data-bs-spy="scroll"
+            data-bs-target="#list-example"
+            data-bs-smooth-scroll="true"
+          >
             <div>
               <header>
                 <h1>Estructura del Documento HTML</h1>
@@ -634,61 +639,61 @@
           <!-- -------------------------------- fin comentarios -------------------------------- -->
         </section>
         <!--  Estructura del Documento HTML -->
+        <aside class="col-lg-3 d-none d-lg-block pt-5">
+          <h1>En Este Artículo</h1>
+          <div class="menu-container">
+            <div class="menu-item">
+              <a href="#introduccion" class="simple-link">Introducción</a>
+            </div>
+
+            <div class="menu-item">
+              <a href="#estructura-de-la-pagina" class="simple-link"
+                >Estructura de la Página</a
+              >
+            </div>
+
+            <div class="menu-item">
+              <a href="#tipo-de-documento" class="simple-link"
+                >Tipo de Documento</a
+              >
+            </div>
+
+            <div class="menu-item">
+              <a href="#encabezado" class="simple-link">Encabezado</a>
+            </div>
+
+            <div class="menu-item">
+              <details>
+                <summary>Cuerpo de Página</summary>
+                <div class="submenu">
+                  <a href="#cuerpo-de-pagina" class="submenu-item"
+                    >Cuerpo de Página</a
+                  >
+
+                  <a
+                    href="#caracteristicas-y-funcion-de-body"
+                    class="submenu-item"
+                    >Características y Función de
+                    <code class="language-html">&lt;body></code></a
+                  >
+
+                  <a href="#atributos-comunes-de-body" class="submenu-item"
+                    >Atributos Comunes de
+                    <code class="language-html">&lt;body></code></a
+                  >
+                </div>
+              </details>
+            </div>
+
+            <div class="menu-item">
+              <a href="#comment" class="simple-link">Comentarios</a>
+            </div>
+          </div>
+        </aside>
+        <!-- -------------------------------- fin barra lateral -------------------------------- -->
       </main>
       <!-- -------------------------------- fin principal -------------------------------- -->
       <!-- -------------------------------- barra lateral -------------------------------- -->
-      <aside class="col-lg-3 d-none d-lg-block pt-5">
-        <h1>En Este Artículo</h1>
-        <div class="menu-container">
-          <div class="menu-item">
-            <a href="#introduccion" class="simple-link">Introducción</a>
-          </div>
-
-          <div class="menu-item">
-            <a href="#estructura-de-la-pagina" class="simple-link"
-              >Estructura de la Página</a
-            >
-          </div>
-
-          <div class="menu-item">
-            <a href="#tipo-de-documento" class="simple-link"
-              >Tipo de Documento</a
-            >
-          </div>
-
-          <div class="menu-item">
-            <a href="#encabezado" class="simple-link">Encabezado</a>
-          </div>
-
-          <div class="menu-item">
-            <details>
-              <summary>Cuerpo de Página</summary>
-              <div class="submenu">
-                <a href="#cuerpo-de-pagina" class="submenu-item"
-                  >Cuerpo de Página</a
-                >
-
-                <a
-                  href="#caracteristicas-y-funcion-de-body"
-                  class="submenu-item"
-                  >Características y Función de
-                  <code class="language-html">&lt;body></code></a
-                >
-
-                <a href="#atributos-comunes-de-body" class="submenu-item"
-                  >Atributos Comunes de
-                  <code class="language-html">&lt;body></code></a
-                >
-              </div>
-            </details>
-          </div>
-
-          <div class="menu-item">
-            <a href="#comment" class="simple-link">Comentarios</a>
-          </div>
-        </div>
-      </aside>
-      <!-- -------------------------------- fin barra lateral -------------------------------- -->
     </div>
     <!--  Principal Fin  -->
 

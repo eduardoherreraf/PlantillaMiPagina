@@ -171,12 +171,17 @@
     </nav>
     <!-- Barra deNavegación -->
 
-    <!--  Principal  -->
-    <div class="container-fluid">
-      <main class="pt-1 col-lg-9" id="introduccion">
-        <section class="pb-3 pt-4">
+    <!-- Principal -->
+    <div class="container-fluid" id="introduccion">
+      <main class="row">
+        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
           <!--  Etiquetas de Texto HTML -->
-          <article class="row pb-3 border-bottom border-1">
+          <article
+            class="row border-1 border-bottom pb-3"
+            data-bs-spy="scroll"
+            data-bs-target="#list-example"
+            data-bs-smooth-scroll="true"
+          >
             <div>
               <header>
                 <h1>Etiquetas de Texto HTML</h1>
@@ -1844,39 +1849,40 @@
           <!-- Comentarios fin -->
         </section>
         <!--  Etiquetas de Texto HTML -->
+        <!-- -------------------------------- barra lateral -------------------------------- -->
+        <aside class="col-lg-3 d-none d-lg-block pt-5">
+          <h1>En Este Artículo</h1>
+          <div class="menu-container">
+            <div class="menu-item">
+              <a href="#introduccion" class="simple-link">Introducción</a>
+            </div>
+            <div class="menu-item">
+              <a href="#los-encabezados" class="simple-link"
+                >Los Encabezados
+                <code class="language-html">&lt;hx&gt;</code></a
+              >
+            </div>
+
+            <div class="menu-item">
+              <a href="#los-parrafos" class="simple-link"
+                >Los Párrafos <code class="language-html">&lt;p></code></a
+              >
+            </div>
+
+            <div class="menu-item">
+              <a href="#saltos-de-linea" class="simple-link"
+                >Saltos de Línea <code class="language-html">&lt;br></code></a
+              >
+            </div>
+
+            <div class="menu-item">
+              <a href="#comment" class="simple-link">Comentarios</a>
+            </div>
+          </div>
+        </aside>
+        <!-- -------------------------------- fin barra lateral -------------------------------- -->
       </main>
       <!-- -------------------------------- fin principal -------------------------------- -->
-      <!-- -------------------------------- barra lateral -------------------------------- -->
-      <aside class="col-lg-3 d-none d-lg-block pt-5">
-        <h1>En Este Artículo</h1>
-        <div class="menu-container">
-          <div class="menu-item">
-            <a href="#introduccion" class="simple-link">Introducción</a>
-          </div>
-          <div class="menu-item">
-            <a href="#los-encabezados" class="simple-link"
-              >Los Encabezados <code class="language-html">&lt;hx&gt;</code></a
-            >
-          </div>
-
-          <div class="menu-item">
-            <a href="#los-parrafos" class="simple-link"
-              >Los Párrafos <code class="language-html">&lt;p></code></a
-            >
-          </div>
-
-          <div class="menu-item">
-            <a href="#saltos-de-linea" class="simple-link"
-              >Saltos de Línea <code class="language-html">&lt;br></code></a
-            >
-          </div>
-
-          <div class="menu-item">
-            <a href="#comment" class="simple-link">Comentarios</a>
-          </div>
-        </div>
-      </aside>
-      <!-- -------------------------------- fin barra lateral -------------------------------- -->
     </div>
     <!--  Principal Fin  -->
     <!-- button to top -->
