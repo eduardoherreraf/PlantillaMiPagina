@@ -187,11 +187,16 @@
     <!-- Barra de Navegación -->
 
     <!-- Principal -->
-    <div class="container-fluid">
-      <main class="pt-1 col-lg-9" id="introduccion">
-        <section class="pb-3 pt-4">
+    <div class="container-fluid" id="introduccion">
+      <main class="row">
+        <section class="pb-3 pt-5 col-lg-9">
           <!-- Introducción HTML -->
-          <article class="row pb-3 border-bottom border-1">
+          <article
+            class="row border-1 border-bottom pb-3"
+            data-bs-spy="scroll"
+            data-bs-target="#list-example"
+            data-bs-smooth-scroll="true"
+          >
             <header>
               <h1>Introducción HTML</h1>
             </header>
@@ -729,7 +734,10 @@
 
                 <!-- Etiquetas Semánticas más Utilizadas en HTML -->
                 <div>
-                  <h3 class="pt-5" id="etiquetas-semanticas-mas-utilizadas-en-html">
+                  <h3
+                    class="pt-5"
+                    id="etiquetas-semanticas-mas-utilizadas-en-html"
+                  >
                     Etiquetas Semánticas más Utilizadas en HTML
                   </h3>
                   <!-- Estructura del Documento -->
@@ -826,7 +834,10 @@
 
                 <!-- Diferencia entre HTML Semántico y no Semántico -->
                 <div>
-                  <h3 class="pt-5" id="diferencia-entre-html-semantico-y-no-semantico">
+                  <h3
+                    class="pt-5"
+                    id="diferencia-entre-html-semantico-y-no-semantico"
+                  >
                     Diferencia entre HTML Semántico y no Semántico
                   </h3>
                   <p>Ejemplo de código no semántico:</p>
@@ -1100,100 +1111,102 @@
           <!-- -------------------------------- fin comentarios -------------------------------- -->
         </section>
         <!--  Introducción HTML -->
+        <!-- -------------------------------- barra lateral -------------------------------- -->
+        <aside class="col-lg-3 d-none d-lg-block pt-5">
+          <h1>En Este Artículo</h1>
+          <div class="menu-container">
+            <div class="menu-item">
+              <a href="#introduccion" class="simple-link">Introducción HTML</a>
+            </div>
+
+            <div class="menu-item">
+              <a href="#que-es-html" class="simple-link">¿Qué es HTML?</a>
+            </div>
+
+            <div class="menu-item">
+              <details>
+                <summary>Etiquetas y Atributos HTML</summary>
+                <div class="submenu">
+                  <a href="#etiquetas-y-atributos-html" class="submenu-item"
+                    >Etiquetas y Atributos HTML</a
+                  >
+
+                  <a
+                    href="#caracteristicas-de-las-etiquetas-html"
+                    class="submenu-item"
+                    >Características de las etiquetas HTML</a
+                  >
+
+                  <a
+                    href="#clasificacion-de-las-etiquetas-html"
+                    class="submenu-item"
+                    >Clasificación de las etiquetas HTML</a
+                  >
+
+                  <a href="#atributos-html" class="submenu-item"
+                    >Atributos HTML</a
+                  >
+                </div>
+              </details>
+            </div>
+
+            <div class="menu-item">
+              <details>
+                <summary>La Semántica Web</summary>
+                <div class="submenu">
+                  <a href="#la-semantica-web" class="submenu-item"
+                    >La Semántica Web</a
+                  >
+
+                  <a
+                    href="#importancia-de-la-semantica-en-html"
+                    class="submenu-item"
+                    >Importancia de la Semántica en HTML</a
+                  >
+
+                  <a
+                    href="#etiquetas-semanticas-mas-utilizadas-en-html"
+                    class="submenu-item"
+                    >Etiquetas Semánticas más Utilizadas en HTML</a
+                  >
+
+                  <a
+                    href="#diferencia-entre-html-semantico-y-no-semantico"
+                    class="submenu-item"
+                    >Diferencia entre HTML Semántico y no Semántico</a
+                  >
+                </div>
+              </details>
+            </div>
+
+            <div class="menu-item">
+              <details>
+                <summary>Comentarios HTML</summary>
+                <div class="submenu">
+                  <a href="#comentarios" class="submenu-item">Comentarios</a>
+
+                  <a
+                    href="#sintaxis-de-los-comentarios-en-html"
+                    class="submenu-item"
+                    >Sintaxis de los Comentarios en HTML</a
+                  >
+
+                  <a
+                    href="#usos-de-los-comentarios-en-html"
+                    class="submenu-item"
+                    >Usos de los Comentarios en HTML</a
+                  >
+                </div>
+              </details>
+            </div>
+            <div class="menu-item">
+              <a href="#comment" class="simple-link">Comentarios</a>
+            </div>
+          </div>
+        </aside>
+        <!-- -------------------------------- fin barra lateral -------------------------------- -->
       </main>
       <!-- -------------------------------- fin principal -------------------------------- -->
-      <!-- -------------------------------- barra lateral -------------------------------- -->
-      <aside class="col-lg-3 d-none d-lg-block pt-4">
-        <h1>En Este Artículo</h1>
-        <div class="menu-container">
-          <div class="menu-item">
-            <a href="#introduccion" class="simple-link">Introducción HTML</a>
-          </div>
-
-          <div class="menu-item">
-            <a href="#que-es-html" class="simple-link">¿Qué es HTML?</a>
-          </div>
-
-          <div class="menu-item">
-            <details>
-              <summary>Etiquetas y Atributos HTML</summary>
-              <div class="submenu">
-                <a href="#etiquetas-y-atributos-html" class="submenu-item"
-                  >Etiquetas y Atributos HTML</a
-                >
-
-                <a
-                  href="#caracteristicas-de-las-etiquetas-html"
-                  class="submenu-item"
-                  >Características de las etiquetas HTML</a
-                >
-
-                <a
-                  href="#clasificacion-de-las-etiquetas-html"
-                  class="submenu-item"
-                  >Clasificación de las etiquetas HTML</a
-                >
-
-                <a href="#atributos-html" class="submenu-item"
-                  >Atributos HTML</a
-                >
-              </div>
-            </details>
-          </div>
-
-          <div class="menu-item">
-            <details>
-              <summary>La Semántica Web</summary>
-              <div class="submenu">
-                <a href="#la-semantica-web" class="submenu-item"
-                  >La Semántica Web</a
-                >
-
-                <a
-                  href="#importancia-de-la-semantica-en-html"
-                  class="submenu-item"
-                  >Importancia de la Semántica en HTML</a
-                >
-
-                <a
-                  href="#etiquetas-semanticas-mas-utilizadas-en-html"
-                  class="submenu-item"
-                  >Etiquetas Semánticas más Utilizadas en HTML</a
-                >
-
-                <a
-                  href="#diferencia-entre-html-semantico-y-no-semantico"
-                  class="submenu-item"
-                  >Diferencia entre HTML Semántico y no Semántico</a
-                >
-              </div>
-            </details>
-          </div>
-
-          <div class="menu-item">
-            <details>
-              <summary>Comentarios HTML</summary>
-              <div class="submenu">
-                <a href="#comentarios" class="submenu-item">Comentarios</a>
-
-                <a
-                  href="#sintaxis-de-los-comentarios-en-html"
-                  class="submenu-item"
-                  >Sintaxis de los Comentarios en HTML</a
-                >
-
-                <a href="#usos-de-los-comentarios-en-html" class="submenu-item"
-                  >Usos de los Comentarios en HTML</a
-                >
-              </div>
-            </details>
-          </div>
-          <div class="menu-item">
-            <a href="#comment" class="simple-link">Comentarios</a>
-          </div>
-        </div>
-      </aside>
-      <!-- -------------------------------- fin barra lateral -------------------------------- -->
     </div>
     <!--  Principal Fin  -->
 
