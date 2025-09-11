@@ -383,15 +383,33 @@ aside h1 {
 }
 
 /* Contador de filas tablas índice */
+/* Aplica contador por defecto */
 tbody {
   counter-reset: rowCounter;
 }
 
-tbody tr td:first-child::before {
+tbody tr th:first-child::before {
   content: counter(rowCounter) ".";
   counter-increment: rowCounter;
-  padding-right: 10px;
+  margin-left: 20px;   /* 👈 deja 10px de espacio a la izquierda */
+  margin-right: 0.5em; /* 👈 espacio opcional entre el número y el texto */
   display: inline-block;
+}
+tbody tr th[scope="row"] {
+  text-align: left;      /* alinea números a la derecha */
+  margin-left: 25px;   /* 👈 deja 10px de espacio a la izquierda */
+  margin-right: 0.5em; /* 👈 espacio opcional entre el número y el texto */
+  width: 3em;             /* ancho fijo para todos los th */
+}
+
+/* 🔴 Anular el contador en tablas con clase .no-counter */
+.no-counter tbody {
+  counter-reset: none; /* elimina el reinicio del contador */
+}
+
+.no-counter tbody tr th:first-child::before {
+  content: "";          /* no imprime nada */
+  counter-increment: none; /* no incrementa el contador */
 }
 
 /* strong {
