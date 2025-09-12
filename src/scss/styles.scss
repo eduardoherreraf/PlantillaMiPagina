@@ -181,11 +181,11 @@ header {
 }
 
 .imagen50 {
-    width: 50%;
+  width: 50%;
 }
 
 .imagen20 {
-    width: 20%;
+  width: 20%;
 }
 
 /* picture img {
@@ -203,7 +203,6 @@ a {
 nav a:hover {
   text-decoration: none;
 }
-
 
 // subrayar item "publicaciones"
 .nav-underline .nav-link.publicaciones-activo {
@@ -372,6 +371,7 @@ aside {
   padding-bottom: 5px;
   display: flex;
   flex-direction: column;
+  z-index: 1; // Z-index para asegurar que el footer y el aside se superpongan correctamente
 }
 
 aside h1 {
@@ -383,10 +383,13 @@ aside h1 {
   z-index: 10;
   /* Asegura que quede sobre el contenido que se desplaza */
   padding: 0.5rem 0;
-  z-index: 2;
   background-color: --color-fondo;
 }
 
+footer {
+  position: relative;
+  z-index: 2; /* Mayor que el aside */
+}
 //  .codes {
 // height: calc(100% - 1rem);
 /* Altura de la caja results */
@@ -407,15 +410,15 @@ tbody {
 tbody tr th:first-child::before {
   content: counter(rowCounter) ".";
   counter-increment: rowCounter;
-  margin-left: 20px;   /* 👈 deja 10px de espacio a la izquierda */
+  margin-left: 20px; /* 👈 deja 10px de espacio a la izquierda */
   margin-right: 0.5em; /* 👈 espacio opcional entre el número y el texto */
   display: inline-block;
 }
 tbody tr th[scope="row"] {
-  text-align: left;      /* alinea números a la derecha */
-  margin-left: 25px;   /* 👈 deja 10px de espacio a la izquierda */
+  text-align: left; /* alinea números a la derecha */
+  margin-left: 25px; /* 👈 deja 10px de espacio a la izquierda */
   margin-right: 0.5em; /* 👈 espacio opcional entre el número y el texto */
-  width: 3em;             /* ancho fijo para todos los th */
+  width: 3em; /* ancho fijo para todos los th */
 }
 
 /* 🔴 Anular el contador en tablas con clase .no-counter */
@@ -424,7 +427,7 @@ tbody tr th[scope="row"] {
 }
 
 .no-counter tbody tr th:first-child::before {
-  content: "";          /* no imprime nada */
+  content: ""; /* no imprime nada */
   counter-increment: none; /* no incrementa el contador */
 }
 

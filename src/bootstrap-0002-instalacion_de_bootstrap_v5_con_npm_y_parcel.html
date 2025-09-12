@@ -142,7 +142,9 @@
               <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog"
+              <a
+                class="nav-link mx-1 publicaciones-activo"
+                href="index.html#blog"
                 >PUBLICACIONES</a
               >
             </li>
@@ -155,7 +157,7 @@
     </nav>
     <!-- Barra deNavegación -->
 
-    <!-- -------------------------------- principal -------------------------------- -->
+    <!--  principal  -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
         <section class="pb-3 pt-5 col-lg-9 px-lg-4">
@@ -217,36 +219,42 @@
                 </p>
                 <h3>Crear una Carpeta de Proyecto y Configurar npm</h3>
                 <p>
-                  Se creará la carpeta <code>mi-proyecto</code> e
-                  inicializaremos npm con el argumento <code>-y</code> para
-                  evitar que haga todas las preguntas interactivas.
+                  Se creará la carpeta
+                  <code class="language-bash">mi-proyecto</code> e
+                  inicializaremos npm con el argumento
+                  <code class="language-bash">-y</code> para evitar que haga
+                  todas las preguntas interactivas.
                 </p>
-                <pre
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-bash" data-prismjs-copy="Copy">
-                mkdir my-project && cd my-project
-                npm init -y
-            </code></pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-bash" data-prismjs-copy="Copy">
+                      mkdir my-project && cd my-project
+                      npm init -y
+                    </code>
+                  </pre>
+                </div>
                 <h3 id="configuracionEspacioTrabajo">
                   Configuración del Espacio de Trabajo
                 </h3>
                 <p>
-                  Ya se ha creado la carpeta <code>my-project</code> e
-                  inicializado npm. Ahora también se creará la carpeta
-                  <code>src</code>, la hoja de estilos y el archivo JavaScript
-                  para completar la estructura del proyecto. Ejecutar los
-                  siguiente comandos desde <code>mi-proyecto</code>, o crear
+                  Ya se ha creado la carpeta
+                  <code class="language-bash">my-project</code> e inicializado
+                  npm. Ahora también se creará la carpeta
+                  <code class="language-bash">src</code>, la hoja de estilos y
+                  el archivo JavaScript para completar la estructura del
+                  proyecto. Ejecutar los siguiente comandos desde
+                  <code class="language-bash">mi-proyecto</code>, o crear
                   manualmente la estructura de carpetas y archivos que se
                   muestra a continuación.
                 </p>
-                <pre
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-bash" data-prismjs-copy="Copy">
-              mkdir {src,src/js,src/scss}
-              touch src/index.html src/js/main.js src/scss/styles.scss
-            </code></pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-bash" data-prismjs-copy="Copy">
+                      mkdir {src,src/js,src/scss}
+                      touch src/index.html src/js/main.js src/scss/styles.scss
+                    </code>
+                  </pre>
+                </div>
               </div>
               <div id="instalacionParcel" class="mt-5">
                 <h2 class="mt-1">Instalación de Parcel</h2>
@@ -254,15 +262,18 @@
                   Sólo hay una dependencia de una única herramienta de
                   compilación. Parcel instalará automáticamente los
                   transformadores de lenguaje (como Sass) cuando los detecte. Se
-                  Usa la bandera <code>--save-dev</code> para indicar que esta
-                  dependencia es sólo para uso de desarrollo y no para
+                  Usa la bandera
+                  <code class="language-bash">--save-dev</code> para indicar que
+                  esta dependencia es sólo para uso de desarrollo y no para
                   producción.
                 </p>
-                <pre class="" data-src-status="loaded" tabindex="0">
-                  <code class="language-bash" data-prismjs-copy="Copy">
-                    npm i --save-dev parcel
-                  </code>
-                </pre>
+                <div class="ej-sintaxis">
+                  <pre class="" data-src-status="loaded" tabindex="0">
+                    <code class="language-bash" data-prismjs-copy="Copy">
+                      npm i --save-dev parcel
+                    </code>
+                  </pre>
+                </div>
               </div>
               <div id="instalacionBootstrapv5" class="mt-5">
                 <h2 class="mt-1">Instalación de Bootstrap</h2>
@@ -272,12 +283,13 @@
                   para su posicionamiento. Si no se planea usar esos
                   componentes, se puede omitir Popper aquí.
                 </p>
-                <pre
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-bash" data-prismjs-copy="Copy">
-              npm i --save bootstrap @popperjs/core
-          </code></pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-bash" data-prismjs-copy="Copy">
+                      npm i --save bootstrap @popperjs/core
+                    </code>
+                  </pre>
+                </div>
                 <p>
                   Ahora ya se tiene todas las dependencias necesarias instaladas
                   y se puede poner manos a la obra para configurar Parcel e
@@ -291,26 +303,27 @@
                   <span class="fw-bold text-warning">src/index.html</span> se
                   debe configurar así:
                 </p>
-                <pre
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-html" data-prismjs-copy="Copy">
-            &lt;!doctype html&gt;
-            &lt;html lang="en"&gt;
-            &lt;head&gt;
-              &lt;meta charset="utf-8"&gt;
-              &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-              &lt;title&gt;Bootstrap w/ Parcel&lt;/title&gt;
-              &lt;script type="module" src="./js/main.js"&gt;&lt;/script&gt;
-            &lt;/head&gt;
-            &lt;body&gt;
-              &lt;div class="container py-4 px-3 mx-auto"&gt;
-              &lt;h1&gt;Hello, Bootstrap and Parcel!&lt;/h1&gt;
-              &lt;button class="btn btn-primary"&gt;Primary button&lt;/button&gt;
-            &lt;/div&gt;
-            &lt;/body&gt;
-          &lt;/html&gt;
-          </code></pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-html" data-prismjs-copy="Copy">
+                      &lt;!doctype html&gt;
+                      &lt;html lang="en"&gt;
+                      &lt;head&gt;
+                      &lt;meta charset="utf-8"&gt;
+                      &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                      &lt;title&gt;Bootstrap w/ Parcel&lt;/title&gt;
+                      &lt;script type="module" src="./js/main.js"&gt;&lt;/script&gt;
+                      &lt;/head&gt;
+                      &lt;body&gt;
+                      &lt;div class="container py-4 px-3 mx-auto"&gt;
+                      &lt;h1&gt;Hello, Bootstrap and Parcel!&lt;/h1&gt;
+                      &lt;button class="btn btn-primary"&gt;Primary button&lt;/button&gt;
+                      &lt;/div&gt;
+                      &lt;/body&gt;
+                      &lt;/html&gt;
+                    </code>
+                  </pre>
+                </div>
                 <p>
                   Parcel detectará automáticamente que se está usando Sass e
                   instalará el plugin Sass Parcel para soportarlo, se puede
@@ -324,17 +337,18 @@
                   <span class="fw-bold text-warning">package.json</span> añadir
                   como funcionaran los scripts de PARCEL:
                 </p>
-                <pre
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-javascript" data-prismjs-copy="Copy">
-            "scripts": {
-              "dev": "cd dist && rm -Rf * && cd .. && parcel --lazy --open http://localhost:1234/ --no-source-maps",
-              "start": "parcel serve",
-              "build": "cd dist && rm -Rf * && cd .. && parcel build --public-url ./ --no-source-maps",
-              "test": "echo \"Error: no test specified\" && exit 1"
-            },
-        </code></pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-javascript" data-prismjs-copy="Copy">
+                      "scripts": {
+                        "dev": "cd dist && rm -Rf * && cd .. && parcel --lazy --open http://localhost:1234/ --no-source-maps",
+                        "start": "parcel serve",
+                        "build": "cd dist && rm -Rf * && cd .. && parcel build --public-url ./ --no-source-maps",
+                        "test": "echo \"Error: no test specified\" && exit 1"
+                      },
+                    </code>
+                  </pre>
+                </div>
                 <p>
                   Script
                   <span class="fw-bold text-warning"
@@ -392,41 +406,45 @@
                   <span class="fw-bold text-warning">package.json</span> se debe
                   intercambiar:
                 </p>
-                <pre data-src-status="loaded" tabindex="0">
-                <code class="language-javascript" data-prismjs-copy="Copy">
-                  "main": "index.js",
-                </code>
-              </pre>
-                <p>por</p>
-                <pre
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-javascript" data-prismjs-copy="Copy">
-              "source": "src/index.html",
-            </code></pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-javascript" data-prismjs-copy="Copy">
+                      "main": "index.js",
+                    </code>
+                  </pre>
+                  <p>por</p>
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-javascript" data-prismjs-copy="Copy">
+                      "source": "src/index.html",
+                    </code>
+                  </pre>
+                </div>
                 <p>Ahora el punto de entrada es el archivo index.html.</p>
                 <p>
                   <span class="text-blink-yellow">Nuevo</span> Para asegurarse
                   que Parcel siempre genere archivos con el mismo nombre (como
-                  <code>index.js</code>
+                  <code class="language-bash">index.js</code>
                   en lugar de nombres hash), se debe utilizar la configuración
                   avanzada del archivo
-                  <code>.parcelrc</code>:, así:
+                  <code class="language-bash">.parcelrc</code>:, así:
                 </p>
-                <pre data-src-status="loaded" tabindex="0">
-                <code class="language-json" data-prismjs-copy="Copy">
-                  {
-                    "extends": "@parcel/config-default",
-                    "transformers": {},
-                    "namers": {
-                      "parcel-namer-static": {}
-                    }
-                  }
-                </code>
-              </pre>
+
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-json" data-prismjs-copy="Copy">
+                      {
+                        "extends": "@parcel/config-default",
+                        "transformers": {},
+                        "namers": {
+                          "parcel-namer-static": {}
+                        }
+                      }
+                    </code>
+                  </pre>
+                </div>
                 <p>
                   Este archivo debe estar en el directorio del proyecto junto al
-                  archivo <code>package.json</code>
+                  archivo <code class="language-bash">package.json</code>
                 </p>
                 <p>
                   Esta plantilla está configurada de forma tal que es
@@ -439,19 +457,21 @@
                   en el terminal, ejecuta cualquiera de los dos scripts npm
                   recién añadidos:
                 </p>
-                <pre
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-bash" data-prismjs-copy="Copy">
-              npm start
-            </code></pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-bash" data-prismjs-copy="Copy">
+                      npm start
+                    </code>
+                  </pre>
+                </div>
                 <p>ó</p>
-                <pre
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-bash" data-prismjs-copy="Copy">
-              npm run dev
-            </code></pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-bash" data-prismjs-copy="Copy">
+                      npm run dev
+                    </code>
+                  </pre>
+                </div>
               </div>
               <div id="importacionBootstrapv5" class="mt-5">
                 <h2 class="mt-1">Importación de BOOTSTRAP</h2>
@@ -467,13 +487,14 @@
                   el siguiente código para importar todo el Sass fuente de
                   Bootstrap.
                 </p>
-                <pre
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-css" data-prismjs-copy="Copy">
-              // Import all of Bootstrap's CSS
-              @import "bootstrap/scss/bootstrap";
-        </code></pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-css" data-prismjs-copy="Copy">
+                      // Import all of Bootstrap's CSS
+                      @import "bootstrap/scss/bootstrap";
+                    </code>
+                  </pre>
+                </div>
                 <p>
                   La importación del JS de Bootstrap. Añade en el archivo
                   <span class="fw-bold text-warning">src/js/main.js</span> el
@@ -484,15 +505,16 @@
                   La importación de código CSS de usuario también se importa en
                   este mismo archivo.
                 </p>
-                <pre
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-javascript" data-prismjs-copy="Copy">
-            // Import all of Bootstrap's JS
-            import * as bootstrap from 'bootstrap'
-            // Import our custom CSS
-            import '../scss/styles.scss';
-          </code></pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-javascript" data-prismjs-copy="Copy">
+                      // Import all of Bootstrap's JS
+                      import * as bootstrap from 'bootstrap'
+                      // Import our custom CSS
+                      import '../scss/styles.scss';
+                    </code>
+                  </pre>
+                </div>
                 <p>
                   Ahora ya se puede generar una página web utilizando Bootstrap
                   y Parcel.
@@ -506,12 +528,13 @@
                   quedan disponibles en la carpeta
                   <span class="fw-bold text-warning">dist</span>.
                 </p>
-                <pre
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-bash" data-prismjs-copy="Copy">
-            npm run build
-            </code></pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-bash" data-prismjs-copy="Copy">
+                      npm run build
+                    </code>
+                  </pre>
+                </div>
                 <p>
                   Es fundamental tener precaución con el código JavaScript
                   dentro de la etiqueta
@@ -524,7 +547,7 @@
             </div>
           </article>
           <!-- fin Parcel NPM -->
-          <!-- -------------------------------- comentarios -------------------------------- -->
+          <!--  comentarios  -->
           <article class="row pt-5" id="comments">
             <h2>COMENTARIOS</h2>
             <p>
@@ -593,9 +616,9 @@
               </form>
             </div>
           </article>
-          <!-- -------------------------------- fin comentarios -------------------------------- -->
+          <!--  fin comentarios  -->
         </section>
-        <!-- -------------------------------- barra lateral -------------------------------- -->
+        <!--  barra lateral  -->
         <aside class="col-lg-3 d-none d-lg-block pt-5">
           <h1>En Este Artículo</h1>
           <ul class="list-group">
@@ -628,85 +651,10 @@
             </li>
           </ul>
         </aside>
-        <!-- -------------------------------- fin barra lateral -------------------------------- -->
+        <!--  fin barra lateral  -->
       </main>
-      <!-- -------------------------------- fin principal -------------------------------- -->
+      <!--  fin principal  -->
     </div>
-
-    <!-- -------------------------------- pie de pagina -------------------------------- -->
-    <footer class="row border-top border-1 m-1 mt-auto">
-      <div class="row">
-        <!-- contacto -->
-        <address class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Contacto</div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-envelope-at fs-3"></i>
-            <span class="ms-3">
-              <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com"
-                >ehfeduardo@gmail.com</a
-              >
-            </span>
-          </div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-geo-alt fs-3"></i>
-            <span class="ms-3">Bogotá D. C. - Colombia</span>
-          </div>
-        </address>
-        <!-- Derechos de autor -->
-        <div
-          class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100"
-        >
-          <div>
-            <i class="bi bi-c-circle fs-5"></i>
-          </div>
-          <div class="ms-2">All Rights Reserved 2025</div>
-        </div>
-        <!-- redes sociales -->
-        <div class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Redes Sociales</div>
-          <div class="d-flex justify-content-evenly align-items-center gap-5">
-            <div>
-              <a
-                href="https://www.linkedin.com/in/eduardoherreraf/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-linkedin fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://github.com/eduardoherreraf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-github fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.facebook.com/eduardoherreraforero/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-facebook fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://twitter.com/ehfeduardo/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-twitter-x fs-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex align-items-center justify-content-center gap-2"></div>
-    </footer>
-    <!-- -------------------------------- pie de pagina fin -------------------------------- -->
 
     <!-- button to top -->
     <button onclick="topFunction()" id="myBtnScroll" title="Go to top">

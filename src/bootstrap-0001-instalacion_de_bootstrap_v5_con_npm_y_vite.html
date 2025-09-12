@@ -149,7 +149,9 @@
               <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog"
+              <a
+                class="nav-link mx-1 publicaciones-activo"
+                href="index.html#blog"
                 >PUBLICACIONES</a
               >
             </li>
@@ -162,7 +164,7 @@
     </nav>
     <!-- Barra deNavegación -->
 
-    <!-- -------------------------------- principal -------------------------------- -->
+    <!--  principal  -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
         <section class="pb-3 pt-5 col-lg-9 px-lg-4">
@@ -221,23 +223,27 @@
                 señalar que el nombre de la carpeta puede ser cualquier otro
                 según las necesidades del proyecto.
               </p>
-              <pre data-src-status="loaded" tabindex="0">
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                 <code class="language-bash" data-prismjs-copy="Copy">
                   mkdir mi-proyecto && cd mi-proyecto
                   npm init -y
                 </code>
               </pre>
+              </div>
               <p>
                 <b>Instalación Vite</b>: Aquí sólo hay una dependencia de la
                 herramienta de compilación. Se Usará
                 <code>--save-dev</code> para indicar que esta dependencia es
                 sólo para uso de desarrollo y no para producción.
               </p>
-              <pre data-src-status="loaded" tabindex="0">
-                <code class="language-bash" data-prismjs-copy="Copy">
-                  npm i --save-dev vite
-                </code>
-              </pre>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-bash" data-prismjs-copy="Copy">
+                    npm i --save-dev vite
+                  </code>
+                </pre>
+              </div>
               <p>
                 <b>Instalar Bootstrap</b>: Se puede instalar Bootstrap. Además,
                 se instalará Popper, ya que es necesario para el posicionamiento
@@ -245,21 +251,25 @@
                 previsto usar esos componentes, se puede omitir la instalación
                 de este último.
               </p>
-              <pre data-src-status="loaded" tabindex="0">
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                 <code class="language-bash" data-prismjs-copy="Copy">
                   npm i --save bootstrap @popperjs/core
                 </code>
               </pre>
+              </div>
               <p>
                 <b>Instalación dependencias adicionales</b>: Además de Vite y
                 Bootstrap, es necesario contar con otra dependencia (Sass) para
                 importar y empaquetar correctamente el CSS de Bootstrap.
               </p>
-              <pre data-src-status="loaded" tabindex="0">
-                <code class="language-bash" data-prismjs-copy="Copy">
-                  npm i --save-dev sass
-                </code>
-              </pre>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-bash" data-prismjs-copy="Copy">
+                    npm i --save-dev sass
+                  </code>
+                </pre>
+              </div>
               <p>
                 Ahora se tiene todas las dependencias necesarias instaladas y
                 configuradas, ya se puede trabajar creando los archivos del
@@ -276,31 +286,34 @@
                   para completar la estructura del proyecto. Para llevar a cabo
                   esto, ejecuta el siguiente código dentro de "mi-proyecto".
                 </p>
-                <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-bash" data-prismjs-copy="Copy">
-                    mkdir {src,src/js,src/scss}
-                    touch src/index.html src/js/main.js src/scss/styles.scss vite.config.js
-                  </code>
-                </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-bash" data-prismjs-copy="Copy">
+                      mkdir {src,src/js,src/scss}
+                      touch src/index.html src/js/main.js src/scss/styles.scss vite.config.js
+                    </code>
+                  </pre>
+                </div>
                 <p>
                   Cuando se haya terminado, el proyecto completo debería tener
                   este aspecto:
                 </p>
-
-                <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-none" data-prismjs-copy="Copy">
-                    mi-proyecto/
-                    ├── src/
-                    │ ├── js/
-                    │ │    └── main.js
-                    │ └── scss/
-                    │ |    └── styles.scss
-                    | └── index.html
-                    ├── package-lock.json
-                    ├── package.json
-                    └── vite.config.js
-                  </code>
-                </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-bash" data-prismjs-copy="Copy">
+                      mi-proyecto/
+                      ├── src/
+                      │ ├── js/
+                      │ │    └── main.js
+                      │ └── scss/
+                      │ |    └── styles.scss
+                      | └── index.html
+                      ├── package-lock.json
+                      ├── package.json
+                      └── vite.config.js
+                    </code>
+                  </pre>
+                </div>
                 <p>
                   En este punto, todo está en el lugar correcto, pero Vite no
                   funcionará porque aún no se ha rellenado el archivo
@@ -314,63 +327,66 @@
                   <span class="fw-bold text-warning">vite.config.js</span>, se
                   llena con:
                 </p>
-                <pre
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-javascript" data-prismjs-copy="Copy">
-                  const path = require('path')
-                  export default {
-                    root: path.resolve(__dirname, 'src'),
-                    build: {
-                      outDir: '../dist'
-                    },
-                    server: {
-                      port: 8080
-                    }
-                  }
-                </code></pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-javascript" data-prismjs-copy="Copy">
+                      const path = require('path')
+                      export default {
+                        root: path.resolve(__dirname, 'src'),
+                        build: {
+                          outDir: '../dist'
+                        },
+                        server: {
+                          port: 8080
+                        }
+                      }
+                    </code>
+                  </pre>
+                </div>
                 <p>
                   El archivo
                   <span class="fw-bold text-warning">src/index.html</span>, se
                   llena con la siguiente plantilla:
                 </p>
-                <pre
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-html" data-prismjs-copy="Copy">
-                &lt;!doctype html&gt;
-                &lt;html lang="en"&gt;
-                &lt;head&gt;
-                  &lt;meta charset="utf-8"&gt;
-                  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-                  &lt;title&gt;Bootstrap w/ Vite&lt;/title&gt;
-                  &lt;script type="module" src="./js/main.js"&gt;&lt;/script&gt;
-                &lt;/head&gt;
-                &lt;body&gt;
-                  &lt;div class="container py-4 px-3 mx-auto"&gt;
-                  &lt;h1&gt;Hello, Bootstrap and Vite!&lt;/h1&gt;
-                  &lt;button class="btn btn-primary"&gt;Primary button&lt;/button&gt;
-                &lt;/div&gt;
-                &lt;/body&gt;
-              &lt;/html&gt;
-              </code></pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-html" data-prismjs-copy="Copy">
+                      &lt;!doctype html&gt;
+                      &lt;html lang="en"&gt;
+                      &lt;head&gt;
+                      &lt;meta charset="utf-8"&gt;
+                      &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                      &lt;title&gt;Bootstrap w/ Vite&lt;/title&gt;
+                      &lt;script type="module" src="./js/main.js"&gt;&lt;/script&gt;
+                      &lt;/head&gt;
+                      &lt;body&gt;
+                      &lt;div class="container py-4 px-3 mx-auto"&gt;
+                      &lt;h1&gt;Hello, Bootstrap and Vite!&lt;/h1&gt;
+                      &lt;button class="btn btn-primary"&gt;Primary button&lt;/button&gt;
+                      &lt;/div&gt;
+                      &lt;/body&gt;
+                      &lt;/html&gt;
+                    </code>
+                  </pre>
+                </div>
                 <p>
                   Mientras que el archivo
                   <span class="fw-bold text-warning">package.json</span> debe
                   quedar configurado así:
                 </p>
-                <pre
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-javascript" data-prismjs-copy="Copy">
-                {
-                  "scripts": {
-                    "start": "vite",
-                    "build": "vite build",
-                    "test": "echo \"Error: no test specified\" && exit 1"
-                  },
-                }
-            </code></pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-json" data-prismjs-copy="Copy">
+                      {
+                        "scripts": {
+                          "start": "vite",
+                          "build": "vite build",
+                          "test": "echo \"Error: no test specified\" && exit 1"
+                        },
+                      }
+                    </code>
+                  </pre>
+                </div>
                 <p>
                   Iniciar el proyecto con vite:
                   <span class="fw-bold text-warning">npm start</span>, en el
@@ -386,39 +402,44 @@
                 <span class="fw-bold text-warning">src/scss/styles.scss</span>
                 se importa los estilos CSS:
               </p>
-              <pre
-                data-src-status="loaded"
-                tabindex="0"
-              ><code class="language-css" data-prismjs-copy="Copy">
-                  // Import all of Bootstrap's CSS
-                  @import "bootstrap/scss/bootstrap";
-              </code></pre>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-css" data-prismjs-copy="Copy">
+                    // Import all of Bootstrap's CSS
+                    @import "bootstrap/scss/bootstrap";
+                  </code>
+                </pre>
+              </div>
               <p>
                 <b>Importación del archivo JavaScript de Bootstrap:</b>
                 El archivo
                 <span class="fw-bold text-warning">src/js/main.js</span> se
                 carga e importa los CSS y JS de Bootstrap agregando.
               </p>
-              <pre data-src-status="loaded" tabindex="0">
-                <code class="language-js" data-prismjs-copy="Copy">
-                  // Import our custom CSS
-                  import '../scss/styles.scss'
-                  // Import all of Bootstrap's JS
-                  import * as bootstrap from 'bootstrap'
-                </code>
-              </pre>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-js" data-prismjs-copy="Copy">
+                    // Import our custom CSS
+                    import '../scss/styles.scss'
+                    // Import all of Bootstrap's JS
+                    import * as bootstrap from 'bootstrap'
+                  </code>
+                </pre>
+              </div>
               <p>
                 También puede importar plugins JavaScript individualmente según
                 sea necesario para mantener el tamaño de los paquetes bajo:
               </p>
-              <pre data-src-status="loaded" tabindex="0">
-                <code class="language-js" data-prismjs-copy="Copy">
-                  import Alert from 'bootstrap/js/dist/alert';
-
-                  // o, especificar cual plugin es necesario:
-                  import { Tooltip, Toast, Popover } from 'bootstrap';
-                </code>
-              </pre>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-js" data-prismjs-copy="Copy">
+                    import Alert from 'bootstrap/js/dist/alert';
+                    
+                    // o, especificar cual plugin es necesario:
+                    import { Tooltip, Toast, Popover } from 'bootstrap';
+                  </code>
+                </pre>
+              </div>
               <p>
                 Con las fuentes Sass y JS de Bootstrap completamente cargadas,
                 el servidor de desarrollo local debería tener ahora este
@@ -440,13 +461,14 @@
 
             <div id="instalacionpluginPurgeCSSHTML" class="mt-5">
               <h2 class="mt-1">Instalación Plugin PurgeCSS y Plugin HTML</h2>
-              <pre
-                data-src-status="loaded"
-                tabindex="0"
-              ><code class="language-bash" data-prismjs-copy="Copy">
-                  npm i vite-plugin-purgecss
-                  npm i vite-plugin-html
-              </code></pre>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-bash" data-prismjs-copy="Copy">
+                    npm i vite-plugin-purgecss
+                    npm i vite-plugin-html
+                  </code>
+                </pre>
+              </div>
               <p>
                 El plugin <b>purgecss</b> elimina toda clase de CSS que no sea
                 utilizada y el plugin <b>HTML</b> elimina todo espacio extra o
@@ -454,32 +476,33 @@
                 sola línea.
               </p>
               <p>El archivo vite.cfg.js se debe configurar asi:</p>
-              <pre
-                data-src-status="loaded"
-                tabindex="0"
-              ><code class="language-javascript" data-prismjs-copy="Copy">
-                  import htmlPurge from 'vite-plugin-purgecss'
-                  import { createHtmlPlugin } from 'vite-plugin-html'
-                  const path = require('path')
-                  export default {
-                    root: path.resolve(__dirname, 'src'),
-                    plugins:[
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-javascript" data-prismjs-copy="Copy">
+                    import htmlPurge from 'vite-plugin-purgecss'
+                    import { createHtmlPlugin } from 'vite-plugin-html'
+                    const path = require('path')
+                    export default {
+                      root: path.resolve(__dirname, 'src'),
+                      plugins:[
                       htmlPurge(),
                       createHtmlPlugin({
                         minify:true,
                         removeComments:true,
                         colapseWhitespaces:true
                       })
-                    ],
-                    build: {
-                      outDir: '../dist',
-                      emptyOutDir:true
-                    },
-                    server: {
-                      port: 8080
+                      ],
+                      build: {
+                        outDir: '../dist',
+                        emptyOutDir:true
+                      },
+                      server: {
+                        port: 8080
+                      }
                     }
-                  }
-              </code></pre>
+                  </code>
+                </pre>
+              </div>
             </div>
 
             <div id="configuracionesFinales" class="mt-5">
@@ -489,35 +512,36 @@
                 <span class="fw-bold text-warning">package.json</span>,
                 finalmente se debe tener asi:
               </p>
-              <pre
-                data-src-status="loaded"
-                tabindex="0"
-              ><code class="language-javascript" data-prismjs-copy="Copy">
-                  {
-                    "name": "mi-proyecto",
-                    "version": "1.0.0",
-                    "description": "",
-                    "main": "index.js",
-                    "scripts": {
-                      "start": "vite",
-                      "build": "vite build",
-                      "test": "echo \"Error: no test specified\" && exit 1"
-                    },
-                    "keywords": [],
-                    "author": "",
-                    "license": "ISC",
-                    "devDependencies": {
-                      "sass": "^1.64.1",
-                      "vite": "^4.4.7",
-                      "vite-plugin-html": "^3.2.0"
-                    },
-                    "dependencies": {
-                      "@popperjs/core": "^2.11.8",
-                      "bootstrap": "^5.3.0",
-                      "vite-plugin-purgecss": "^0.2.12"
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-javascript" data-prismjs-copy="Copy">
+                    {
+                      "name": "mi-proyecto",
+                      "version": "1.0.0",
+                      "description": "",
+                      "main": "index.js",
+                      "scripts": {
+                        "start": "vite",
+                        "build": "vite build",
+                        "test": "echo \"Error: no test specified\" && exit 1"
+                      },
+                      "keywords": [],
+                      "author": "",
+                      "license": "ISC",
+                      "devDependencies": {
+                        "sass": "^1.64.1",
+                        "vite": "^4.4.7",
+                        "vite-plugin-html": "^3.2.0"
+                      },
+                      "dependencies": {
+                        "@popperjs/core": "^2.11.8",
+                        "bootstrap": "^5.3.0",
+                        "vite-plugin-purgecss": "^0.2.12"
+                      }
                     }
-                  }
-              </code></pre>
+                  </code>
+                </pre>
+              </div>
             </div>
 
             <div id="compilacionProyectoProduccion" class="mt-5">
@@ -539,15 +563,17 @@
                   <span class="fw-bold text-warning">&lt;head&gt;</span> del
                   archivo debe quedar de la siguiente manera:
                 </p>
-                <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-html" data-prismjs-copy="Copy">
-                    &lt;head&gt;
-                    ...
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-html" data-prismjs-copy="Copy">
+                      &lt;head&gt;
+                      ...
                       &lt;script type="module" crossorigin src="./assets/index-e9ba998b.js"&gt;&lt;/script&gt; y
                       &lt;link rel="stylesheet" href="./assets/index-1b619488.css"&gt;
-                    &lt;/head&gt;
-                  </code>
-                </pre>
+                      &lt;/head&gt;
+                    </code>
+                  </pre>
+                </div>
                 <p>
                   Si se tienen imágenes que están guardadas en la carpeta
                   <span class="fw-bold text-warning">assets/</span>, también se
@@ -571,7 +597,7 @@
           </article>
           <!-- fin vite NPM -->
 
-          <!-- -------------------------------- comentarios -------------------------------- -->
+          <!--  comentarios  -->
           <article class="row pt-5" id="comments">
             <h2>COMENTARIOS</h2>
             <p>
@@ -640,9 +666,9 @@
               </form>
             </div>
           </article>
-          <!-- -------------------------------- fin comentarios -------------------------------- -->
+          <!--  fin comentarios  -->
         </section>
-        <!-- -------------------------------- barra lateral -------------------------------- -->
+        <!--  barra lateral  -->
         <aside class="col-lg-3 d-none d-lg-block pt-5">
           <h1>En Este Artículo</h1>
           <ul class="list-group">
@@ -673,85 +699,10 @@
             </li>
           </ul>
         </aside>
-        <!-- -------------------------------- fin barra lateral -------------------------------- -->
+        <!--  fin barra lateral  -->
       </main>
     </div>
-    <!-- -------------------------------- fin principal -------------------------------- -->
-
-    <!-- -------------------------------- pie de pagina -------------------------------- -->
-    <footer class="row border-top border-1 m-1 mt-auto">
-      <div class="row">
-        <!-- contacto -->
-        <address class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Contacto</div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-envelope-at fs-3"></i>
-            <span class="ms-3">
-              <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com"
-                >ehfeduardo@gmail.com</a
-              >
-            </span>
-          </div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-geo-alt fs-3"></i>
-            <span class="ms-3">Bogotá D. C. - Colombia</span>
-          </div>
-        </address>
-        <!-- Derechos de autor -->
-        <div
-          class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100"
-        >
-          <div>
-            <i class="bi bi-c-circle fs-5"></i>
-          </div>
-          <div class="ms-2">All Rights Reserved 2025</div>
-        </div>
-        <!-- redes sociales -->
-        <div class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Redes Sociales</div>
-          <div class="d-flex justify-content-evenly align-items-center gap-5">
-            <div>
-              <a
-                href="https://www.linkedin.com/in/eduardoherreraf/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-linkedin fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://github.com/eduardoherreraf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-github fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.facebook.com/eduardoherreraforero/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-facebook fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://twitter.com/ehfeduardo/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-twitter-x fs-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex align-items-center justify-content-center gap-2"></div>
-    </footer>
-    <!-- -------------------------------- pie de pagina fin -------------------------------- -->
+    <!--  fin principal  -->
 
     <!-- button to top -->
     <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
