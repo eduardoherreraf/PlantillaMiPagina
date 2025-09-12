@@ -165,7 +165,7 @@
     <!-- -------------------------------- principal -------------------------------- -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
-        <section class="pb-3 pt-5 col-lg-9">
+        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
           <!--  Instalador de Paquetes de Python (PIP)  -->
           <article
             class="row border-1 border-bottom pb-3"
@@ -188,7 +188,7 @@
                   funcionalidades adicionales desarrolladas por la comunidad,
                   disponibles en el repositorio PyPI (Python Package Index).
                 </p>
-                <div class="text-center imagen">
+                <div class="centrar-imagen imagen50">
                   <figure>
                     <img
                       src="https://i.ibb.co/GC81Y2X/pip.jpg"
@@ -250,8 +250,8 @@
                     <li>
                       <span class="fw-bold"
                         >Compatibilidad con entornos virtuales</span
-                      >: Trabaja bien con herramientas como <code>venv</code>,
-                      <code>virtualenv</code> o <code>miniconda</code>
+                      >: Trabaja bien con herramientas como <code class="language-python">venv</code>,
+                      <code class="language-python">virtualenv</code> o <code class="language-python">miniconda</code>
                       asegurando que los paquetes se instalen en entornos
                       aislados para evitar conflictos entre proyectos.
                     </li>
@@ -259,7 +259,7 @@
                       <span class="fw-bold"
                         >Soporte para archivos de requisitos</span
                       >: Puede leer un archivo
-                      <code>requirements.txt</code> para instalar varias
+                      <code class="language-python">requirements.txt</code> para instalar varias
                       dependencias necesarias de un proyecto con un único
                       comando:
                       <pre data-src-status="loaded" tabindex="0">
@@ -275,8 +275,8 @@
                       <ul>
                         <li>PyPI (predeterminado).</li>
                         <li>
-                          Archivos locales (<code>.whl</code>,
-                          <code>.tar.gz</code>).
+                          Archivos locales (<code class="language-python">.whl</code>,
+                          <code class="language-python">.tar.gz</code>).
                         </li>
                         <li>Repositorios Git, Mercurial, o Subversion.</li>
                         <li>URLs específicas.</li>
@@ -325,7 +325,7 @@
                         </li>
                         <li>
                           Permite el uso de banderas como
-                          <code>--no-cache-dir</code> o <code>--user</code>
+                          <code class="language-python">--no-cache-dir</code> o <code class="language-python">--user</code>
                           para instalaciones más controladas.
                         </li>
                       </ul>
@@ -447,28 +447,28 @@
                   <ul>
                     <li>
                       <span class="fw-bold">Análisis de datos</span>:
-                      <code>pandas</code>, <code>numpy</code>
+                      <code class="language-python">pandas</code>, <code class="language-python">numpy</code>
                     </li>
                     <li>
                       <span class="fw-bold">Visualización</span>:
-                      <code>matplotlib</code>, <code>seaborn</code>
+                      <code class="language-python">matplotlib</code>, <code class="language-python">seaborn</code>
                     </li>
                     <li>
                       <span class="fw-bold">Desarrollo web</span>:
-                      <code>Django</code>, <code>Flask</code>
+                      <code class="language-python">Django</code>, <code class="language-python">Flask</code>
                     </li>
                     <li>
                       <span class="fw-bold">Machine Learning</span>:
-                      <code>scikit-learn</code>, <code>TensorFlow</code>,
-                      <code>PyTorch</code>
+                      <code class="language-python">scikit-learn</code>, <code class="language-python">TensorFlow</code>,
+                      <code class="language-python">PyTorch</code>
                     </li>
                     <li>
                       <span class="fw-bold">Automatización</span>:
-                      <code>selenium</code>, <code>pytest</code>
+                      <code class="language-python">selenium</code>, <code class="language-python">pytest</code>
                     </li>
                     <li>
                       <span class="fw-bold">Ciencia de datos y estadística</span
-                      >: <code>statsmodels</code>, <code>scipy</code>
+                      >: <code class="language-python">statsmodels</code>, <code class="language-python">scipy</code>
                     </li>
                   </ul>
                 </div>
@@ -491,8 +491,8 @@
                     </li>
                     <li>
                       <span class="fw-bold"
-                        >Entornos virtuales (<code>venv</code> o
-                        <code>virtualenv</code>)</span
+                        >Entornos virtuales (<code class="language-python">venv</code> o
+                        <code class="language-python">virtualenv</code>)</span
                       >: Los entornos virtuales permiten mantener proyectos
                       aislados, asegurando que las dependencias de un proyecto
                       no interfieran con las de otros.
@@ -646,8 +646,8 @@
                       <span class="fw-bold">Estandarización</span>: Los paquetes
                       siguen un estándar para facilitar su distribución,
                       instalación y documentación, utilizando formatos como
-                      Wheel (<code>.whl</code>) y Source Distribution
-                      (<code>.tar.gz</code>).
+                      Wheel (<code class="language-python">.whl</code>) y Source Distribution
+                      (<code class="language-python">.tar.gz</code>).
                     </li>
                     <li>
                       <span class="fw-bold">Gestión de dependencias</span>: PyPI
@@ -839,16 +839,16 @@
                 <p>
                   Por ejemplo, si un desarrollador está trabajando en un
                   proyecto que requiere manipulación de datos, podría necesitar
-                  dependencias como <code>pandas</code> para el análisis de
-                  datos o <code>numpy</code> para operaciones numéricas
+                  dependencias como <code class="language-python">pandas</code> para el análisis de
+                  datos o <code class="language-python">numpy</code> para operaciones numéricas
                   avanzadas. Estas dependencias se instalan generalmente
                   utilizando herramientas de gestión de paquetes como
-                  <code>pip</code>, que es el instalador de paquetes de Python.
+                  <code class="language-python">pip</code>, que es el instalador de paquetes de Python.
                 </p>
                 <p>
                   Para gestionar las dependencias de un proyecto, se suele
-                  utilizar un archivo llamado <code>requirements.txt</code> o
-                  <code>Pipfile</code>, donde se listan todas las bibliotecas y
+                  utilizar un archivo llamado <code class="language-python">requirements.txt</code> o
+                  <code class="language-python">Pipfile</code>, donde se listan todas las bibliotecas y
                   versiones específicas necesarias. Esto facilita la
                   reproducibilidad del entorno de desarrollo, asegurando que
                   cualquier persona que clone el proyecto pueda instalar las
@@ -856,8 +856,8 @@
                 </p>
                 <p>
                   A continuación, se proporciona una plantilla básica para crear
-                  los archivos <code>requirements.txt</code> y
-                  <code>Pipfile</code> en un proyecto de Python.
+                  los archivos <code class="language-python">requirements.txt</code> y
+                  <code class="language-python">Pipfile</code> en un proyecto de Python.
                 </p>
                 <!-- Plantilla para requirements.txt -->
                 <div>
@@ -886,8 +886,8 @@
                 <div>
                   <h4>Plantilla para Pipfile</h4>
                   <p>
-                    El archivo <code>Pipfile</code> es utilizado por
-                    <code>pipenv</code> para gestionar las dependencias de
+                    El archivo <code class="language-python">Pipfile</code> es utilizado por
+                    <code class="language-python">pipenv</code> para gestionar las dependencias de
                     manera más estructurada. Este archivo también incluye la
                     versión de Python que se debe usar para el entorno. A
                     continuación se muestra una plantilla básica:

@@ -166,7 +166,7 @@
     <!-- -------------------------------- principal -------------------------------- -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
-        <section class="pb-3 pt-5 col-lg-9">
+        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
           <!--  Comparando Paradigmas: Programación Procedimental y Orientada a Objetos en Python  -->
           <article
             class="row border-1 border-bottom pb-3"
@@ -194,11 +194,11 @@
                   ilustran cómo abordan la resolución de problemas
                   computacionales.
                 </p>
-                <div class="text-center imagen">
+                <div class="centrar-imagen imagen50">
                   <figure>
                     <img
                       src="https://i.ibb.co/xJ6xjwd/procedimentalvspoo.jpg"
-                      class="img-fluid rounded-4"
+                      class="img-fluid"
                       alt="Comparando Paradigmas: Programación Procedimental y Orientada a Objetos en Python  "
                       title="Eligir el mejor paradigma de programación para el proyecto"
                     />
@@ -387,81 +387,61 @@
                   </h3>
                   <ul>
                     <li>
-                      <span class="fw-bold"><code>create_stack()</code></span
+                      <span class="fw-bold"><code class="language-python">create_stack()</code></span
                       >: Crea y devuelve una lista vacía que representa la pila.
                     </li>
                     <li>
                       <span class="fw-bold"
-                        ><code>push(stack, element)</code></span
+                        ><code class="language-python">push(stack, element)</code></span
                       >: Este método agrega un nuevo elemento a la pila usando
                       el método append() de listas. Esto se traduce como
                       "empujar" un elemento al tope de la pila.
                     </li>
                     <li>
-                      <span class="fw-bold"><code>pop(stack)</code></span
+                      <span class="fw-bold"><code class="language-python">pop(stack)</code></span
                       >: Retira y devuelve el último elemento agregado a la
                       pila. Verifica si la pila está vacía antes de intentar
                       eliminar un elemento, para evitar errores. Utiliza el
                       método pop() de listas.
                     </li>
                     <li>
-                      <span class="fw-bold"><code>peek(stack)</code></span
+                      <span class="fw-bold"><code class="language-python">peek(stack)</code></span
                       >: Permite ver el elemento que se encuentra en la parte
                       superior de la pila sin removerlo. Esto ayuda a
                       inspeccionar el contenido actual.
                     </li>
                     <li>
-                      <span class="fw-bold"><code>is_empty(stack)</code></span
+                      <span class="fw-bold"><code class="language-python">is_empty(stack)</code></span
                       >: Verifica si la pila está vacía retornando un valor
                       booleano. Usa la función len() para comprobar si tiene
                       elementos.
                     </li>
                     <li>
-                      <span class="fw-bold"><code>size(stack)</code></span
+                      <span class="fw-bold"><code class="language-python">size(stack)</code></span
                       >:Devuelve la cantidad de elementos presentes en la pila.
                       Esto es útil para conocer su estado en cualquier momento.
                     </li>
                     <li>
                       <span class="fw-bold"
                         >Ejemplo de Uso La sección dentro del bloque if
-                        <code>__name__</code> == "<code>__main__</code>"</span
+                        <code class="language-python">__name__</code> == "<code class="language-python">__main__</code>"</span
                       >: muestra cómo usar la pila:
                       <ul>
                         <li>
                           Se crean operaciones básicas como agregar elementos
-                          (<code>push</code>), eliminar elementos
-                          (<code>pop</code>), y verificar el elemento superior
-                          (<code>peek</code>).
+                          (<code class="language-python">push</code>), eliminar elementos
+                          (<code class="language-python">pop</code>), y verificar el elemento superior
+                          (<code class="language-python">peek</code>).
                         </li>
                         <li>
                           También se ilustra cómo vaciar completamente la pila
-                          usando un ciclo <code>while</code>.
+                          usando un ciclo <code class="language-python">while</code>.
                         </li>
                       </ul>
                     </li>
                   </ul>
                 </div>
                 <!-- Explicación de la Implementación Procedimental de una Pila fin -->
-                <!--Go to top -->
-                <div class="text-center mt-5">
-                  <a href="#" id="myBtnScroll2" title="Go to top">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="32"
-                      height="32"
-                      fill="currentColor"
-                      class="bi bi-arrow-bar-up"
-                      viewBox="0 0 16 16"
-                      style="margin-left: -2px"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"
-                      />
-                    </svg>
-                  </a>
-                </div>
-                <!-- Go to top Fin-->
               </div>
               <!-- La Pila: el Enfoque Procedimental Fin -->
               <!-- La Pila: El Enfoque Procedimental Versus El Enfoque Orientado a Objetos -->
@@ -713,25 +693,25 @@
                       <ul>
                         <li>
                           La pila se implementa con una lista
-                          (<code>self.elementos</code>) que almacena los datos.
+                          (<code class="language-python">self.elementos</code>) que almacena los datos.
                         </li>
                         <li>
-                          <code>push</code>: Usa el método append para agregar
+                          <code class="language-python">push</code>: Usa el método append para agregar
                           un nuevo elemento al final de la lista.
                         </li>
                         <li>
-                          <code>pop</code>: Usa el método pop para eliminar y
+                          <code class="language-python">pop</code>: Usa el método pop para eliminar y
                           devolver el último elemento. Si la pila está vacía,
                           devuelve un mensaje.
                         </li>
                         <li>
-                          <code>peek</code>: Devuelve el último elemento sin
+                          <code class="language-python">peek</code>: Devuelve el último elemento sin
                           eliminarlo. Verifica primero si la pila no está vacía.
                         </li>
                         <li>
-                          <code>is_empty</code>: Comprueba si la lista está
-                          vacía retornando <code>True</code> o
-                          <code>False</code>.
+                          <code class="language-python">is_empty</code>: Comprueba si la lista está
+                          vacía retornando <code class="language-python">True</code> o
+                          <code class="language-python">False</code>.
                         </li>
                       </ul>
                     </li>

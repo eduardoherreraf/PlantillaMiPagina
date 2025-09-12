@@ -163,7 +163,7 @@
     <!-- -------------------------------- principal -------------------------------- -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
-        <section class="pb-3 pt-5 col-lg-9">
+        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
           <!--  POO: Propiedades en Python  -->
           <article
             class="row border-1 border-bottom pb-3"
@@ -184,11 +184,11 @@
                   variables, su uso adecuado y cómo afectan el comportamiento de
                   las instancias de una clase.
                 </p>
-                <div class="text-center imagen">
+                <div class="centrar-imagen imagen50">
                   <figure>
                     <img
                       src="https://i.ibb.co/YdKHfNW/poopropiedades.jpg"
-                      class="img-fluid rounded-4"
+                      class="img-fluid"
                       alt="POO: Propiedades en Python  "
                       title="Comprendiendo las Variables de Instancia vs. Variables de Clase en Python"
                     />
@@ -204,7 +204,7 @@
                   En la Programación Orientada a Objetos (POO), una variable de
                   instancia representa un atributo propio de cada objeto,
                   definido típicamente dentro del método constructor
-                  <code>__init__</code> de la clase. Dicha variable se
+                  <code class="language-python">__init__</code> de la clase. Dicha variable se
                   caracteriza por pertenecer exclusivamente a una instancia
                   específica, lo que significa que cada objeto creado a partir
                   de una clase posee una copia única de esta variable. Esta
@@ -241,14 +241,14 @@
                   <p>En este ejemplo:</p>
                   <ul>
                     <li>
-                      <code>marca</code> y <code>modelo</code> son variables de
+                      <code class="language-python">marca</code> y <code class="language-python">modelo</code> son variables de
                       instancia, ya que se asignan a cada objeto creado de la
                       clase Carro.
                     </li>
                     <li>
-                      <code>carro1</code> y <code>carro2</code> son instancias
+                      <code class="language-python">carro1</code> y <code class="language-python">carro2</code> son instancias
                       de la clase, y cada una tiene sus propias versiones de
-                      <code>marca</code> y <code>modelo</code>, con valores
+                      <code class="language-python">marca</code> y <code class="language-python">modelo</code>, con valores
                       diferentes.
                     </li>
                   </ul>
@@ -259,7 +259,7 @@
                   <h3>Uso de Variables Privadas</h3>
                   <p>
                     En Python, cuando se utilizan dos guiones bajos
-                    (<code>__</code>) al inicio de una variable de instancia, se
+                    (<code class="language-python">__</code>) al inicio de una variable de instancia, se
                     está aplicando un mecanismo llamado <em>mangling</em> de
                     nombres. Este mecanismo cambia el nombre interno de la
                     variable para evitar que sea sobrescrita o modificada
@@ -378,10 +378,10 @@
                   </code>
                 </pre>
                   <p>
-                    En este ejemplo, la variable <code>ruedas</code> es una
+                    En este ejemplo, la variable <code class="language-python">ruedas</code> es una
                     variable de clase, lo que significa que ambas instancias
-                    (<code>carro1</code> y <code>carro2</code>) comparten el
-                    valor de <code>4</code> para el número de ruedas. Si se
+                    (<code class="language-python">carro1</code> y <code class="language-python">carro2</code>) comparten el
+                    valor de <code class="language-python">4</code> para el número de ruedas. Si se
                     cambiara el valor de ruedas a través de la clase, todas las
                     instancias reflejarían ese cambio.
                   </p>
@@ -420,10 +420,10 @@
                   </pre>
                     <p>
                       En este caso, la variable de clase ruedas se cambia a
-                      <code>6</code> a través de la clase <code>Carro</code>.
-                      Ahora, ambas instancias (<code>carro1</code> y
-                      <code>carro2</code>) reflejan el nuevo valor de
-                      <code>6</code>.
+                      <code class="language-python">6</code> a través de la clase <code class="language-python">Carro</code>.
+                      Ahora, ambas instancias (<code class="language-python">carro1</code> y
+                      <code class="language-python">carro2</code>) reflejan el nuevo valor de
+                      <code class="language-python">6</code>.
                     </p>
                   </div>
                   <!-- Accediendo a través de la Clase fin -->
@@ -457,9 +457,9 @@
                   </pre>
                     <p>
                       En este caso, el valor de ruedas cambia a
-                      <code>6</code> para <code>carro1</code>, pero la variable
-                      de clase <code>ruedas</code> sigue siendo
-                      <code>4</code> para carro2. Esto sucede porque al acceder
+                      <code class="language-python">6</code> para <code class="language-python">carro1</code>, pero la variable
+                      de clase <code class="language-python">ruedas</code> sigue siendo
+                      <code class="language-python">4</code> para carro2. Esto sucede porque al acceder
                       a la variable de clase a través de la instancia, Python
                       crea una nueva variable de instancia local a esa
                       instancia.
@@ -498,7 +498,7 @@
                 <div>
                   <h3>Usando hasattr()</h3>
                   <p>
-                    La función <code>hasattr()</code> permite verificar si un
+                    La función <code class="language-python">hasattr()</code> permite verificar si un
                     objeto o clase tiene un atributo determinado. Devuelve True
                     si el atributo existe y False si no.
                   </p>
@@ -521,11 +521,11 @@
                   </code>
                 </pre>
                   <p>
-                    En este caso, <code>hasattr(carro1, "marca")</code> devuelve
-                    <code>True</code> porque el objeto <code>carro1</code> tiene
-                    el atributo <code>marca</code>, mientras que
-                    <code>hasattr(carro1, "modelo")</code> devuelve
-                    <code>False</code> porque no tiene un atributo llamado
+                    En este caso, <code class="language-python">hasattr(carro1, "marca")</code> devuelve
+                    <code class="language-python">True</code> porque el objeto <code class="language-python">carro1</code> tiene
+                    el atributo <code class="language-python">marca</code>, mientras que
+                    <code class="language-python">hasattr(carro1, "modelo")</code> devuelve
+                    <code class="language-python">False</code> porque no tiene un atributo llamado
                     modelo.
                   </p>
                 </div>
@@ -534,7 +534,7 @@
                 <div>
                   <h3>Usando getattr() con un valor por defecto</h3>
                   <p>
-                    La función <code>getattr()</code> se utiliza para obtener el
+                    La función <code class="language-python">getattr()</code> se utiliza para obtener el
                     valor de un atributo, y si el atributo no existe, puede
                     devolver un valor por defecto en lugar de lanzar una
                     excepción. Esto también permite comprobar si el atributo
@@ -560,9 +560,9 @@
                 </pre>
                   <p>
                     En este caso,
-                    <code>getattr(carro1, "modelo", None)</code> devuelve
-                    <code>None</code> porque el atributo <code>modelo</code> no
-                    existe en <code>carro1</code>.
+                    <code class="language-python">getattr(carro1, "modelo", None)</code> devuelve
+                    <code class="language-python">None</code> porque el atributo <code class="language-python">modelo</code> no
+                    existe en <code class="language-python">carro1</code>.
                   </p>
                 </div>
                 <!-- Usando getattr() con un valor por defecto fin -->
@@ -570,10 +570,10 @@
                 <div>
                   <h3>Usando __dict__</h3>
                   <p>
-                    El atributo especial <code>__dict__</code> de un objeto
+                    El atributo especial <code class="language-python">__dict__</code> de un objeto
                     contiene todos los atributos de instancia del objeto. Puedes
                     verificar si un atributo específico está presente en
-                    <code>__dict__</code>.
+                    <code class="language-python">__dict__</code>.
                   </p>
                   <p>Ejemplo:</p>
                   <pre data-src-status="loaded" tabindex="0">
@@ -590,8 +590,8 @@
                 </pre>
                   <p>
                     En este ejemplo, se utiliza
-                    <code>carro1.__dict__</code> para comprobar si los atributos
-                    <code>marca</code> y <code>modelo</code> están en el
+                    <code class="language-python">carro1.__dict__</code> para comprobar si los atributos
+                    <code class="language-python">marca</code> y <code class="language-python">modelo</code> están en el
                     diccionario de atributos de la instancia.
                   </p>
                 </div>
@@ -601,16 +601,16 @@
                   <h3>Resumen</h3>
                   <ul>
                     <li>
-                      <span class="fw-bold"><code>codehasattr()</code></span
+                      <span class="fw-bold"><code class="language-python">codehasattr()</code></span
                       >: Comprueba si un objeto tiene un atributo determinado.
                     </li>
                     <li>
-                      <span class="fw-bold"><code>getattr()</code></span
+                      <span class="fw-bold"><code class="language-python">getattr()</code></span
                       >: Permite obtener un atributo y proporciona un valor por
                       defecto si no existe.
                     </li>
                     <li>
-                      <span class="fw-bold"><code>__dict__</code></span
+                      <span class="fw-bold"><code class="language-python">__dict__</code></span
                       >: Proporciona un diccionario con los atributos de la
                       instancia, que se puede usar para verificar si un atributo
                       existe.

@@ -171,13 +171,21 @@ header {
 .centrar-imagen {
   display: block;
   margin: 0 auto;
-  max-width: 100%;
   height: auto;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   overflow: hidden;
   /* Fuerza el recorte de las esquinas */
   text-align: center;
+  border-radius: 5px;
+}
+
+.imagen50 {
+    width: 50%;
+}
+
+.imagen20 {
+    width: 20%;
 }
 
 /* picture img {

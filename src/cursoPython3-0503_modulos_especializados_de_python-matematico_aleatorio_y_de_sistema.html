@@ -166,7 +166,7 @@
     <!-- -------------------------------- principal -------------------------------- -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
-        <section class="pb-3 pt-5 col-lg-9">
+        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
           <!--  Módulos especializados de Python: matemático, aleatorio y de sistema en Python  -->
           <article
             class="row border-1 border-bottom pb-3"
@@ -190,11 +190,11 @@
                   matemáticas, generación de números aleatorios y la obtención
                   de información sobre el sistema en ejecución, respectivamente.
                 </p>
-                <div class="text-center imagen">
+                <div class="centrar-imagen imagen50">
                   <figure>
                     <img
                       src="https://i.ibb.co/BPcv16g/modulosmathrandomos.jpg"
-                      class="img-fluid rounded-4"
+                      class="img-fluid"
                       alt="Módulos especializados de Python: matemático, aleatorio y de sistema en Python  "
                       title="Mejorando la Programación en Python con Módulos"
                     />
@@ -210,7 +210,7 @@
               <div id="inspectorDeNombresYAtributos" class="mt-5">
                 <h2 class="mt-1">Inspector de Nombres y Atributos</h2>
                 <p>
-                  En Python, la función <code>dir()</code> se utiliza para
+                  En Python, la función <code class="language-python">dir()</code> se utiliza para
                   obtener una lista de los atributos y métodos disponibles para
                   un objeto. Esta función es útil para explorar las capacidades
                   de un objeto, módulo, clase o incluso el ámbito actual.
@@ -222,7 +222,7 @@
                   <div>
                     <h4>Sin Argumentos</h4>
                     <p>
-                      Si se llama a <code>dir()</code> sin argumentos devolverá
+                      Si se llama a <code class="language-python">dir()</code> sin argumentos devolverá
                       una lista de nombres definidos en el ámbito local actual,
                       incluyendo variables, funciones, y otros objetos.
                     </p>
@@ -238,9 +238,9 @@
                     </code>
                   </pre>
                     <p>
-                      Al examinar la salida de <code>dir()</code>, se observa
-                      que la variable <code>x</code> y la función
-                      <code>func</code> son parte del código definido
+                      Al examinar la salida de <code class="language-python">dir()</code>, se observa
+                      que la variable <code class="language-python">x</code> y la función
+                      <code class="language-python">func</code> son parte del código definido
                       anteriormente, mientras que el resto de los elementos
                       pertenecen al entorno local.
                     </p>
@@ -289,9 +289,9 @@
                   <div>
                     <h4>Nombres Mágicos</h4>
                     <p>
-                      En la salida de <code>dir()</code>, es común ver nombres
+                      En la salida de <code class="language-python">dir()</code>, es común ver nombres
                       que comienzan y terminan con doble guion bajo
-                      (<code>__</code>). Estos son nombres reservados o
+                      (<code class="language-python">__</code>). Estos son nombres reservados o
                       especiales utilizados por Python para funcionalidades
                       internas.
                     </p>
@@ -329,7 +329,7 @@
                     <p>
                       se puede ejecutar el siguiente código para imprimir los
                       nombres de todas las entidades dentro del módulo
-                      <code>math:</code>
+                      <code class="language-python">math:</code>
                     </p>
                     <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
@@ -368,14 +368,14 @@
               <div id="moduloMath" class="mt-5">
                 <h2 class="mt-1">Módulo math</h2>
                 <p>
-                  El módulo <code>math</code> en Python proporciona acceso a las
+                  El módulo <code class="language-python">math</code> en Python proporciona acceso a las
                   funciones matemáticas definidas por el estándar C. Este módulo
                   incluye una amplia variedad de funciones matemáticas,
                   constantes y métodos que son útiles para realizar cálculos
                   matemáticos.
                 </p>
                 <p>
-                  El módulo <code>math</code> siempre debe importarse antes de
+                  El módulo <code class="language-python">math</code> siempre debe importarse antes de
                   su uso, ver el ejemplo más adelante.
                 </p>
                 <!-- Constantes en math -->
@@ -383,22 +383,22 @@
                   <h3>Constantes en math</h3>
                   <ul>
                     <li>
-                      <code>math.pi</code>: Representa el valor de π (pi),
+                      <code class="language-python">math.pi</code>: Representa el valor de π (pi),
                       aproximadamente 3.14159.
                     </li>
                     <li>
-                      <code>math.e</code>: Representa el valor de e (base de los
+                      <code class="language-python">math.e</code>: Representa el valor de e (base de los
                       logaritmos naturales), aproximadamente 2.71828.
                     </li>
                     <li>
-                      <code>math.tau</code>: Representa el valor de τ (tau),
+                      <code class="language-python">math.tau</code>: Representa el valor de τ (tau),
                       equivalente a 2π.
                     </li>
                     <li>
-                      <code>math.inf</code>: Representa infinito positivo.
+                      <code class="language-python">math.inf</code>: Representa infinito positivo.
                     </li>
                     <li>
-                      <code>math.nan</code>: Representa un valor "Not a Number"
+                      <code class="language-python">math.nan</code>: Representa un valor "Not a Number"
                       (NaN).
                     </li>
                   </ul>
@@ -409,29 +409,29 @@
                   <h3>Funciones Básicas</h3>
                   <ul>
                     <li>
-                      <code>math.sqrt(x)</code>: Retorna la raíz cuadrada de x.
+                      <code class="language-python">math.sqrt(x)</code>: Retorna la raíz cuadrada de x.
                     </li>
                     <li>
-                      <code>math.ceil(x)</code>: Redondea x hacia arriba al
+                      <code class="language-python">math.ceil(x)</code>: Redondea x hacia arriba al
                       entero más cercano.
                     </li>
                     <li>
-                      <code>math.floor(x)</code>: Redondea x hacia abajo al
+                      <code class="language-python">math.floor(x)</code>: Redondea x hacia abajo al
                       entero más cercano.
                     </li>
                     <li>
-                      <code>math.trunc(x)</code>: Trunca la parte decimal de x.
+                      <code class="language-python">math.trunc(x)</code>: Trunca la parte decimal de x.
                     </li>
                     <li>
-                      <code>math.fabs(x)</code>: Devuelve el valor absoluto de
+                      <code class="language-python">math.fabs(x)</code>: Devuelve el valor absoluto de
                       x.
                     </li>
                     <li>
-                      <code>math.factorial(x)</code>: Retorna el factorial de x
+                      <code class="language-python">math.factorial(x)</code>: Retorna el factorial de x
                       (solo para enteros no negativos).
                     </li>
                     <li>
-                      <code>math.gcd(a, b)</code>: Calcula el máximo común
+                      <code class="language-python">math.gcd(a, b)</code>: Calcula el máximo común
                       divisor de a y b.
                     </li>
                   </ul>
@@ -442,35 +442,35 @@
                   <h3>Funciones trigonométricas</h3>
                   <ul>
                     <li>
-                      <code>math.sin(x)</code>: Retorna el seno de x (en
+                      <code class="language-python">math.sin(x)</code>: Retorna el seno de x (en
                       radianes).
                     </li>
                     <li>
-                      <code>math.cos(x)</code>: Retorna el coseno de x (en
+                      <code class="language-python">math.cos(x)</code>: Retorna el coseno de x (en
                       radianes).
                     </li>
                     <li>
-                      <code>math.tan(x)</code>: Retorna la tangente de x (en
+                      <code class="language-python">math.tan(x)</code>: Retorna la tangente de x (en
                       radianes).
                     </li>
                     <li>
-                      <code>math.asin(x), math.acos(x), math.atan(x)</code>:
+                      <code class="language-python">math.asin(x), math.acos(x), math.atan(x)</code>:
                       Retornan los valores inversos de seno, coseno y tangente,
                       respectivamente.
                     </li>
                     <li>
-                      <code>math.degrees(x)</code>: Convierte x de radianes a
+                      <code class="language-python">math.degrees(x)</code>: Convierte x de radianes a
                       grados.
                     </li>
                     <li>
-                      <code>math.radians(x)</code>: Convierte x de grados a
+                      <code class="language-python">math.radians(x)</code>: Convierte x de grados a
                       radianes.
                     </li>
                   </ul>
                   <p>
                     Todas estas funciones toman un argumento (una medida de
                     ángulo expresada en radianes) y devuelven el resultado
-                    apropiado (tener cuidado con <code>tan()</code> - no todos
+                    apropiado (tener cuidado con <code class="language-python">tan()</code> - no todos
                     los argumentos son válidos).
                   </p>
                 </div>
@@ -479,30 +479,30 @@
                 <div>
                   <h3>Logaritmos y Exponenciales</h3>
                   <ul>
-                    <li><code>math.exp(x)</code>: Calcula e^x.</li>
+                    <li><code class="language-python">math.exp(x)</code>: Calcula e^x.</li>
                     <li>
-                      <code>math.log(x[, base])</code>: Calcula el logaritmo de
+                      <code class="language-python">math.log(x[, base])</code>: Calcula el logaritmo de
                       x en la base especificada. Si no se especifica la base, se
                       usa e.
                     </li>
                     <li>
-                      <code>math.log10(x)</code>: Calcula el logaritmo base 10
+                      <code class="language-python">math.log10(x)</code>: Calcula el logaritmo base 10
                       de x.
                     </li>
                     <li>
-                      <code>math.log2(x)</code>: Calcula el logaritmo base 2 de
+                      <code class="language-python">math.log2(x)</code>: Calcula el logaritmo base 2 de
                       x.
                     </li>
                     <li>
-                      <code>math.pow(x, y)</code>: Calcula x^y (equivalente a x
+                      <code class="language-python">math.pow(x, y)</code>: Calcula x^y (equivalente a x
                       ** y). Esta es una función incorporada y no se tiene que
                       importar.
                     </li>
                     <li>
-                      <code>hypot(x, y)</code>: devuelve la longitud de la
+                      <code class="language-python">hypot(x, y)</code>: devuelve la longitud de la
                       hipotenusa de un triángulo rectángulo con las longitudes
                       de los catetos iguales a x y y (lo mismo que
-                      <code>sqrt(pow(x, 2) + pow(y, 2))</code> pero más
+                      <code class="language-python">sqrt(pow(x, 2) + pow(y, 2))</code> pero más
                       preciso).
                     </li>
                   </ul>
@@ -513,15 +513,15 @@
                   <h3>Funciones Hiperbólicas</h3>
                   <ul>
                     <li>
-                      <code>math.sinh(x)</code>: Calcula el seno hiperbólico de
+                      <code class="language-python">math.sinh(x)</code>: Calcula el seno hiperbólico de
                       x.
                     </li>
                     <li>
-                      <code>math.cosh(x)</code>: Calcula el coseno hiperbólico
+                      <code class="language-python">math.cosh(x)</code>: Calcula el coseno hiperbólico
                       de x.
                     </li>
                     <li>
-                      <code>math.tanh(x)</code>: Calcula la tangente hiperbólica
+                      <code class="language-python">math.tanh(x)</code>: Calcula la tangente hiperbólica
                       de x.
                     </li>
                     <li>
@@ -537,18 +537,18 @@
                   <h3>Operaciones con Números Especiales</h3>
                   <ul>
                     <li>
-                      <code>math.isfinite(x)</code>: Retorna True si x es un
+                      <code class="language-python">math.isfinite(x)</code>: Retorna True si x es un
                       número finito.
                     </li>
                     <li>
-                      <code>math.isinf(x)</code>: Retorna True si x es infinito.
+                      <code class="language-python">math.isinf(x)</code>: Retorna True si x es infinito.
                     </li>
                     <li>
-                      <code>math.isnan(x)</code>: Retorna True si x no es un
+                      <code class="language-python">math.isnan(x)</code>: Retorna True si x no es un
                       número (NaN).
                     </li>
                     <li>
-                      <code>math.copysign(x, y)</code>: Devuelve un número con
+                      <code class="language-python">math.copysign(x, y)</code>: Devuelve un número con
                       el valor absoluto de x y el signo de y.
                     </li>
                   </ul>
@@ -586,7 +586,7 @@
                     algoritmos computacionales
                   </h3>
                   <p>
-                    El módulo <code>random</code> en Python proporciona
+                    El módulo <code class="language-python">random</code> en Python proporciona
                     funciones para generar números pseudo-aleatorios, realizar
                     elecciones pseudo-aleatorias y mezclar secuencias de manera
                     pseudo-aleatoria.
@@ -647,7 +647,7 @@
                     <h4>Generación de Números Aleatorios</h4>
                     <ul>
                       <li>
-                        <code>random()</code>: Devuelve un número flotante entre
+                        <code class="language-python">random()</code>: Devuelve un número flotante entre
                         0.0 y 1.0.
                         <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
@@ -656,7 +656,7 @@
                       </pre>
                       </li>
                       <li>
-                        <code>uniform(a, b)</code>: Genera un número flotante
+                        <code class="language-python">uniform(a, b)</code>: Genera un número flotante
                         entre los valores especificados a y b.
                         <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
@@ -665,7 +665,7 @@
                       </pre>
                       </li>
                       <li>
-                        <code>randint(a, b)</code>: Genera un número entero
+                        <code class="language-python">randint(a, b)</code>: Genera un número entero
                         aleatorio entre a y b (ambos inclusive).
                         <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
@@ -674,7 +674,7 @@
                       </pre>
                       </li>
                       <li>
-                        <code>randrange(start, stop[, step])</code>: Devuelve un
+                        <code class="language-python">randrange(start, stop[, step])</code>: Devuelve un
                         número entero de un rango especificado.
                         <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
@@ -690,7 +690,7 @@
                     <h4>Selección Aleatoria</h4>
                     <ul>
                       <li>
-                        <code>choice(seq)</code>: Selecciona un elemento
+                        <code class="language-python">choice(seq)</code>: Selecciona un elemento
                         aleatorio de una secuencia (lista, tupla, cadena, etc.).
                         <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
@@ -700,7 +700,7 @@
                       </pre>
                       </li>
                       <li>
-                        <code>choices(population, weights=None, k=1)</code>:
+                        <code class="language-python">choices(population, weights=None, k=1)</code>:
                         Selecciona k elementos con reemplazo, opcionalmente
                         ponderados.
                         <pre data-src-status="loaded" tabindex="0">
@@ -711,7 +711,7 @@
                       </pre>
                       </li>
                       <li>
-                        <code>sample(population, k)</code>: Selecciona k
+                        <code class="language-python">sample(population, k)</code>: Selecciona k
                         elementos sin reemplazo.
                         <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
@@ -728,7 +728,7 @@
                     <h4>Mezcla Aleatoria</h4>
                     <ul>
                       <li>
-                        <code>shuffle(x)</code>: Mezcla los elementos de una
+                        <code class="language-python">shuffle(x)</code>: Mezcla los elementos de una
                         lista en su lugar.
                         <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
@@ -745,7 +745,7 @@
                     <h4>Semilla para Reproducibilidad</h4>
                     <ul>
                       <li>
-                        <code>seed(a=None)</code>: Establece la semilla del
+                        <code class="language-python">seed(a=None)</code>: Establece la semilla del
                         generador aleatorio para obtener los mismos resultados
                         en cada ejecución.
                         <pre data-src-status="loaded" tabindex="0">
@@ -763,13 +763,13 @@
                     <h4>Estado</h4>
                     <ul>
                       <li>
-                        <code>getstate()</code>: Es una función que se utiliza
-                        en el módulo <code>random</code> de Python para obtener
+                        <code class="language-python">getstate()</code>: Es una función que se utiliza
+                        en el módulo <code class="language-python">random</code> de Python para obtener
                         el estado actual del generador de números aleatorios, lo
                         que permite restaurar ese estado más tarde.
                       </li>
                       <li>
-                        <code>setstate(state)</code>: Restablece el estado
+                        <code class="language-python">setstate(state)</code>: Restablece el estado
                         interno del generador de números aleatorios a partir del
                         objeto de estado proporcionado.
                         <pre data-src-status="loaded" tabindex="0">
@@ -815,8 +815,8 @@
               <div id="moduloPlatform" class="mt-5">
                 <h2 class="mt-1">Módulo platform</h2>
                 <p>
-                  En Python, la función <code>platform</code> pertenece al
-                  módulo estándar llamado <code>platform</code>. Este módulo
+                  En Python, la función <code class="language-python">platform</code> pertenece al
+                  módulo estándar llamado <code class="language-python">platform</code>. Este módulo
                   permite obtener información sobre la plataforma en la que se
                   está ejecutando un programa, como el sistema operativo, la
                   versión de Python, el procesador y otros datos relacionados
@@ -826,13 +826,13 @@
                 <div>
                   <h3>Cómo usar la Función Platform</h3>
                   <p>
-                    El módulo <code>platform</code> contiene varias funciones
+                    El módulo <code class="language-python">platform</code> contiene varias funciones
                     para acceder a información específica. A continuación, se
                     detallan las más comunes:
                   </p>
                   <ul>
                     <li>
-                      <code>platform.platform()</code>: Genera una descripción
+                      <code class="language-python">platform.platform()</code>: Genera una descripción
                       de la plataforma en la que se está ejecutando el programa.
                       <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
@@ -843,18 +843,18 @@
                       <ul>
                         <li>
                           <span class="fw-bold">aliased</span>:
-                          <code>True</code> = Entrega nombres de plataforma
+                          <code class="language-python">True</code> = Entrega nombres de plataforma
                           estándar o común.
                         </li>
                         <li>
                           <span class="fw-bold">terse</span>:
-                          <code>True</code> = Entrega información básica y omite
+                          <code class="language-python">True</code> = Entrega información básica y omite
                           detalles adicionales.
                         </li>
                       </ul>
                     </li>
                     <li>
-                      <code>platform.system()</code>: Devuelve el nombre del
+                      <code class="language-python">platform.system()</code>: Devuelve el nombre del
                       sistema operativo.
                       <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
@@ -865,7 +865,7 @@
                     </pre>
                     </li>
                     <li>
-                      <code>platform.release()</code>: Obtiene la versión del
+                      <code class="language-python">platform.release()</code>: Obtiene la versión del
                       sistema operativo.
                       <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
@@ -876,7 +876,7 @@
                     </pre>
                     </li>
                     <li>
-                      <code>platform.version()</code>: Proporciona más detalles
+                      <code class="language-python">platform.version()</code>: Proporciona más detalles
                       sobre la versión del sistema operativo.
                       <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
@@ -887,7 +887,7 @@
                     </pre>
                     </li>
                     <li>
-                      <code>platform.machine()</code>: Devuelve el tipo de
+                      <code class="language-python">platform.machine()</code>: Devuelve el tipo de
                       máquina.
                       <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
@@ -898,7 +898,7 @@
                     </pre>
                     </li>
                     <li>
-                      <code>platform.processor()</code>: Indica el tipo de
+                      <code class="language-python">platform.processor()</code>: Indica el tipo de
                       procesador, si está disponible.
                       <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
@@ -909,7 +909,7 @@
                     </pre>
                     </li>
                     <li>
-                      <code>platform.python_version()</code>: Devuelve la
+                      <code class="language-python">platform.python_version()</code>: Devuelve la
                       versión de Python que se está utilizando.
                       <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
@@ -920,7 +920,7 @@
                     </pre>
                     </li>
                     <li>
-                      <code>platform.architecture()</code>: Indica si el sistema
+                      <code class="language-python">platform.architecture()</code>: Indica si el sistema
                       es de 32 o 64 bits.
                       <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
@@ -930,7 +930,7 @@
                     </pre>
                     </li>
                     <li>
-                      <code>platform.node()</code>: Devuelve el nombre del host
+                      <code class="language-python">platform.node()</code>: Devuelve el nombre del host
                       de la máquina.
                       <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
@@ -940,7 +940,7 @@
                     </pre>
                     </li>
                     <li>
-                      <code>platform.uname()</code>: Devuelve un objeto con toda
+                      <code class="language-python">platform.uname()</code>: Devuelve un objeto con toda
                       la información del sistema: sistema operativo, nodo,
                       versión, máquina, etc.
                       <pre data-src-status="loaded" tabindex="0">
@@ -959,7 +959,7 @@
                   <h3>Ejemplo Práctico</h3>
                   <p>
                     El siguiente ejemplo muestra cómo usar varias funciones del
-                    módulo <code>platform</code>:
+                    módulo <code class="language-python">platform</code>:
                   </p>
                   <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">

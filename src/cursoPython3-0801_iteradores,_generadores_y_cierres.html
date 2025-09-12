@@ -96,7 +96,7 @@
 
   <body>
     <!-- Barra deNavegación -->
-<nav
+    <nav
       class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
     >
       <div class="container-fluid">
@@ -149,7 +149,9 @@
               <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog"
+              <a
+                class="nav-link mx-1 publicaciones-activo"
+                href="index.html#blog"
                 >PUBLICACIONES</a
               >
             </li>
@@ -165,7 +167,7 @@
     <!-- -------------------------------- principal -------------------------------- -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
-        <section class="pb-3 pt-5 col-lg-9">
+        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
           <!--  Iteradores, Generadores y Cierres en Python  -->
           <article
             class="row border-1 border-bottom pb-3"
@@ -190,11 +192,11 @@
                   utilizados para mejorar la calidad y la eficiencia del código
                   en Python.
                 </p>
-                <div class="text-center imagen">
+                <div class="centrar-imagen imagen50">
                   <figure>
                     <img
                       src="https://i.ibb.co/h2ddmyG/iteradoresgeneradorescierres.jpg"
-                      class="img-fluid rounded-4"
+                      class="img-fluid"
                       alt="Iteradores, Generadores y Cierres en Python  "
                       title="Dominando los conceptos clave de Python"
                     />
@@ -227,7 +229,8 @@
                 <ul>
                   <li>
                     Es un objeto que implementa los métodos
-                    <code>__iter__()</code> y <code>__next__()</code>.
+                    <code class="language-python">__iter__()</code> y
+                    <code class="language-python">__next__()</code>.
                   </li>
                   <li>
                     Permite procesar elementos uno a uno, lo que es útil para
@@ -235,7 +238,7 @@
                   </li>
                   <li>
                     Cuando no hay más elementos, lanza una excepción
-                    <code>StopIteration</code>.
+                    <code class="language-python">StopIteration</code>.
                   </li>
                 </ul>
                 <!-- __iter__() -->
@@ -246,13 +249,14 @@
                     <h4>¿Qué Es __iter__()?</h4>
                     <ul>
                       <li>
-                        <code>__iter__()</code> es un método especial en Python
-                        que convierte un objeto en iterable.
+                        <code class="language-python">__iter__()</code> es un
+                        método especial en Python que convierte un objeto en
+                        iterable.
                       </li>
                       <li>
                         Un objeto iterable es aquel que puede ser recorrido
                         (iterado) elemento por elemento, como en un bucle
-                        <code>for</code>.
+                        <code class="language-python">for</code>.
                       </li>
                       <li>
                         Este método es una de las piezas fundamentales del
@@ -267,32 +271,42 @@
                     <ul>
                       <li>
                         Devuelve un iterador (es decir, un objeto que implementa
-                        el método <code>__next__()</code>).
+                        el método
+                        <code class="language-python">__next__()</code>).
                       </li>
                       <li>
                         Cuando llamamos a iter(objeto), en realidad se ejecuta
-                        el método objeto.<code>__iter__()</code>.
+                        el método objeto.<code class="language-python"
+                          >__iter__()</code
+                        >.
                       </li>
                       <li>
                         Si el objeto es ya un iterador,
-                        <code>__iter__()</code> debe devolver el mismo objeto.
+                        <code class="language-python">__iter__()</code> debe
+                        devolver el mismo objeto.
                       </li>
                     </ul>
                   </div>
                   <!-- ¿Qué Hace __iter__()? fin -->
                   <!-- Relación Entre __iter__() y __next__() -->
                   <div>
-                    <h4>Relación Entre <code>__iter__()</code> y __next__()</h4>
+                    <h4>
+                      Relación Entre
+                      <code class="language-python">__iter__()</code> y
+                      __next__()
+                    </h4>
                     <ul>
                       <li>
-                        <code>__iter__()</code> crea un iterador o devuelve uno
-                        existente.
+                        <code class="language-python">__iter__()</code> crea un
+                        iterador o devuelve uno existente.
                       </li>
                       <li>
-                        El método <code>__next__()</code> del iterador devuelve
-                        los elementos uno por uno y lanza una excepción
-                        <code>StopIteration</code> cuando no hay más elementos
-                        para iterar.
+                        El método
+                        <code class="language-python">__next__()</code> del
+                        iterador devuelve los elementos uno por uno y lanza una
+                        excepción
+                        <code class="language-python">StopIteration</code>
+                        cuando no hay más elementos para iterar.
                       </li>
                     </ul>
                   </div>
@@ -306,16 +320,19 @@
                   <div>
                     <h4>¿Qué Es __next__() en Python?</h4>
                     <p>
-                      El método <code> __next__()</code> es una función especial
-                      en Python que se utiliza para obtener el siguiente
-                      elemento de un iterador. Forma parte del protocolo de
-                      iteradores en Python, junto con el método
-                      <code>__iter__()</code>.
+                      El método
+                      <code class="language-python"> __next__()</code> es una
+                      función especial en Python que se utiliza para obtener el
+                      siguiente elemento de un iterador. Forma parte del
+                      protocolo de iteradores en Python, junto con el método
+                      <code class="language-python">__iter__()</code>.
                     </p>
                     <p>
-                      Cuando se llama a <code>__next__()</code>, el iterador
-                      avanza al siguiente elemento. Si ya no hay más elementos,
-                      lanza una excepción <code>StopIteration</code> para
+                      Cuando se llama a
+                      <code class="language-python">__next__()</code>, el
+                      iterador avanza al siguiente elemento. Si ya no hay más
+                      elementos, lanza una excepción
+                      <code class="language-python">StopIteration</code> para
                       indicar que la iteración ha terminado.
                     </p>
                   </div>
@@ -327,7 +344,8 @@
                       <li>
                         <strong
                           >Obtiene el siguiente elemento del iterador</strong
-                        >: Cada vez que se llama a <code>__next__()</code>, el
+                        >: Cada vez que se llama a
+                        <code class="language-python">__next__()</code>, el
                         iterador entrega el siguiente valor disponible.
                       </li>
                       <li>
@@ -340,8 +358,9 @@
                           >Lanza una excepción cuando no hay más
                           elementos</strong
                         >: Si el iterador no tiene más elementos, se lanza una
-                        excepción <code>StopIteration</code>, que se utiliza
-                        para detener bucles como for.
+                        excepción
+                        <code class="language-python">StopIteration</code>, que
+                        se utiliza para detener bucles como for.
                       </li>
                     </ul>
                   </div>
@@ -371,22 +390,25 @@
                   <p><strong>Explicación del código</strong>:</p>
                   <ul>
                     <li>
-                      Se crea una lista <code>mi_lista</code>:
-                      <code>[1, 2, 3]</code>.
+                      Se crea una lista
+                      <code class="language-python">mi_lista</code>:
+                      <code class="language-python">[1, 2, 3]</code>.
                     </li>
                     <li>
-                      <code>iter(mi_lista)</code> convierte la lista en un
-                      iterador.
+                      <code class="language-python">iter(mi_lista)</code>
+                      convierte la lista en un iterador.
                     </li>
                     <li>
-                      Se usa <code>next(mi_iterador)</code> para pedir el
-                      siguiente elemento: La primera vez devuelve
-                      <code>1</code>, luego <code>2</code> y finalmente
-                      <code>3</code>.
+                      Se usa
+                      <code class="language-python">next(mi_iterador)</code>
+                      para pedir el siguiente elemento: La primera vez devuelve
+                      <code class="language-python">1</code>, luego
+                      <code class="language-python">2</code> y finalmente
+                      <code class="language-python">3</code>.
                     </li>
                     <li>
                       Cuando no hay más elementos, se lanza un error
-                      <code>StopIteration</code>.
+                      <code class="language-python">StopIteration</code>.
                     </li>
                   </ul>
                 </div>
@@ -416,13 +438,15 @@
                 <div>
                   <h3>yield</h3>
                   <p>
-                    En Python, <code>yield</code> es una palabra clave que se
-                    utiliza dentro de funciones para crear generadores. Un
-                    generador es una función que permite devolver un valor,
-                    pausando su estado actual, y retomarlo desde el mismo punto
-                    en una próxima iteración. Esto hace que las funciones con
-                    <code>yield</code> se comporten de manera diferente a las
-                    funciones tradicionales que usan <code>return</code>.
+                    En Python, <code class="language-python">yield</code> es una
+                    palabra clave que se utiliza dentro de funciones para crear
+                    generadores. Un generador es una función que permite
+                    devolver un valor, pausando su estado actual, y retomarlo
+                    desde el mismo punto en una próxima iteración. Esto hace que
+                    las funciones con
+                    <code class="language-python">yield</code> se comporten de
+                    manera diferente a las funciones tradicionales que usan
+                    <code class="language-python">return</code>.
                   </p>
                   <!-- ¿Cómo Funciona yield? -->
                   <div>
@@ -430,18 +454,21 @@
                     <ul>
                       <li>
                         Cuando una función contiene al menos una instrucción
-                        <code>yield</code>, se convierte en un generador.
+                        <code class="language-python">yield</code>, se convierte
+                        en un generador.
                       </li>
                       <li>
                         En lugar de ejecutar completamente la función y devolver
-                        un valor, <code>yield</code> devuelve un valor parcial y
-                        "pausa" la ejecución.
+                        un valor,
+                        <code class="language-python">yield</code> devuelve un
+                        valor parcial y "pausa" la ejecución.
                       </li>
                       <li>
                         Cuando se vuelve a llamar al generador (por ejemplo, con
-                        un bucle o el método <code>next()</code>), la ejecución
-                        se reanuda justo después de la instrucción
-                        <code>yield</code> previa.
+                        un bucle o el método
+                        <code class="language-python">next()</code>), la
+                        ejecución se reanuda justo después de la instrucción
+                        <code class="language-python">yield</code> previa.
                       </li>
                     </ul>
                   </div>
@@ -450,9 +477,9 @@
                   <div>
                     <h4>¿Qué Hace yield?</h4>
                     <p>
-                      <code>yield</code> permite generar elementos uno a uno
-                      según se necesiten, en lugar de calcularlos todos de una
-                      vez. Esto lo hace ideal para:
+                      <code class="language-python">yield</code> permite generar
+                      elementos uno a uno según se necesiten, en lugar de
+                      calcularlos todos de una vez. Esto lo hace ideal para:
                     </p>
                     <ul>
                       <li>
@@ -475,8 +502,12 @@
                       <thead>
                         <tr>
                           <th scope="col">Característica</th>
-                          <th scope="col"><code>yield</code></th>
-                          <th scope="col"><code>return</code></th>
+                          <th scope="col">
+                            <code class="language-python">yield</code>
+                          </th>
+                          <th scope="col">
+                            <code class="language-python">return</code>
+                          </th>
                         </tr>
                       </thead>
                       <tbody>
@@ -525,17 +556,20 @@
                     <p><strong>Explicación</strong>:</p>
                     <ul>
                       <li>
-                        Cuando se llama a <code>generador_numeros()</code>, no
-                        ejecuta el código de inmediato. En cambio, devuelve un
-                        objeto generador.
+                        Cuando se llama a
+                        <code class="language-python">generador_numeros()</code
+                        >, no ejecuta el código de inmediato. En cambio,
+                        devuelve un objeto generador.
                       </li>
                       <li>
                         Al iterar sobre ese objeto (por ejemplo, con un bucle
-                        <code>for</code>), la función empieza a ejecutarse hasta
-                        encontrar un <code>yield</code>.
+                        <code class="language-python">for</code>), la función
+                        empieza a ejecutarse hasta encontrar un
+                        <code class="language-python">yield</code>.
                       </li>
                       <li>
-                        Cada vez que se llega a <code>yield</code>, se devuelve
+                        Cada vez que se llega a
+                        <code class="language-python">yield</code>, se devuelve
                         el valor y la ejecución de la función se pausa hasta la
                         próxima iteración.
                       </li>
@@ -562,7 +596,8 @@
                     <p>
                       La sintaxis de un generador por comprensión es similar a
                       una lista por comprensión, pero utiliza paréntesis
-                      <code>()</code> en lugar de corchetes <code>[]</code>.
+                      <code class="language-python">()</code> en lugar de
+                      corchetes <code class="language-python">[]</code>.
                     </p>
                     <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
@@ -571,19 +606,23 @@
                   </pre>
                     <ul>
                       <li>
-                        <span class="fw-bold"><code>expresión</code></span
+                        <span class="fw-bold"
+                          ><code class="language-python">expresión</code></span
                         >: el valor que será generado por el generador.
                       </li>
                       <li>
-                        <span class="fw-bold"><code>elemento</code></span
+                        <span class="fw-bold"
+                          ><code class="language-python">elemento</code></span
                         >: la variable que toma cada valor del iterable.
                       </li>
                       <li>
-                        <span class="fw-bold"><code>iterable</code></span
+                        <span class="fw-bold"
+                          ><code class="language-python">iterable</code></span
                         >: la fuente de datos que se recorre.
                       </li>
                       <li>
-                        <span class="fw-bold"><code>condición</code></span
+                        <span class="fw-bold"
+                          ><code class="language-python">condición</code></span
                         >: (opcional) filtra los valores del iterable que
                         cumplen con esta condición.
                       </li>
@@ -610,7 +649,8 @@
                   <div>
                     <h4>Usando Operador in en Generadores</h4>
                     <p>
-                      En Python, el operador <code>in</code> se utiliza para
+                      En Python, el operador
+                      <code class="language-python">in</code> se utiliza para
                       verificar si un elemento está presente en una secuencia,
                       como una lista, tupla, cadena o conjunto. Aunque no es un
                       "generador" en sí mismo, puede ser empleado dentro de
@@ -619,13 +659,13 @@
                     </p>
                     <p>
                       A continuación se presenta un ejemplo de cómo usar
-                      <code>in</code> en el contexto de una expresión
-                      generadora:
+                      <code class="language-python">in</code> en el contexto de
+                      una expresión generadora:
                     </p>
                     <p>
                       <strong
-                        >Ejemplo de <code>in</code> con una expresión
-                        generadora</strong
+                        >Ejemplo de <code class="language-python">in</code> con
+                        una expresión generadora</strong
                       >:
                     </p>
                     <pre data-src-status="loaded" tabindex="0">
@@ -654,11 +694,12 @@
                           <li>Esto es una expresión generadora.</li>
                           <li>
                             Itera sobre cada palabra en la lista
-                            <code>palabras</code>.
+                            <code class="language-python">palabras</code>.
                           </li>
                           <li>
                             Filtra solo aquellas palabras que contienen la letra
-                            <code>'a'</code> usando el operador <code>in</code>.
+                            <code class="language-python">'a'</code> usando el
+                            operador <code class="language-python">in</code>.
                           </li>
                         </ul>
                       </li>
@@ -686,8 +727,16 @@
                       <tbody>
                         <tr>
                           <th scope="row" class="text-start">Sintaxis</th>
-                          <td><code>[expresión for ... in ...]</code></td>
-                          <td><code>(expresión for ... in ...)</code></td>
+                          <td>
+                            <code class="language-python"
+                              >[expresión for ... in ...]</code
+                            >
+                          </td>
+                          <td>
+                            <code class="language-python"
+                              >(expresión for ... in ...)</code
+                            >
+                          </td>
                         </tr>
                         <tr>
                           <th scope="row" class="text-start">Memoria</th>
@@ -791,12 +840,12 @@
                   <p><strong>Ejemplo básico de cierre</strong>:</p>
                   <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
-                    def <code>funcion_externa</code>(x):
-                        def <code>funcion_interna</code>(y):
+                    def <code class="language-python">funcion_externa</code>(x):
+                        def <code class="language-python">funcion_interna</code>(y):
                         return x + y
-                    return <code>funcion_interna</code>
+                    return <code class="language-python">funcion_interna</code>
                     # Crear una nueva función con x = 10
-                    mi_funcion = <code>funcion_externa</code>(10)
+                    mi_funcion = <code class="language-python">funcion_externa</code>(10)
                     # Llamar a la función interna con y = 5
                     resultado = mi_funcion(5)  # Devuelve 15
                     print(resultado)
@@ -805,19 +854,28 @@
                   <p>En este ejemplo:</p>
                   <ul>
                     <li>
-                      <code><code>funcion_externa</code></code> toma un
-                      argumento <code>x</code> y define una función interna
-                      <code>funcion_interna</code>.
+                      <code class="language-python"
+                        ><code class="language-python"
+                          >funcion_externa</code
+                        ></code
+                      >
+                      toma un argumento <code class="language-python">x</code> y
+                      define una función interna
+                      <code class="language-python">funcion_interna</code>.
                     </li>
                     <li>
-                      <code>funcion_interna</code> tiene acceso a
-                      <code>x</code> de <code>funcion_externa</code> a través de
-                      un cierre.
+                      <code class="language-python">funcion_interna</code> tiene
+                      acceso a <code class="language-python">x</code> de
+                      <code class="language-python">funcion_externa</code> a
+                      través de un cierre.
                     </li>
                     <li>
-                      Aunque la ejecución de <code>funcion_externa</code> ya ha
-                      terminado, <code>funcion_interna</code> aún puede acceder
-                      a la variable <code>x</code>.
+                      Aunque la ejecución de
+                      <code class="language-python">funcion_externa</code> ya ha
+                      terminado,
+                      <code class="language-python">funcion_interna</code> aún
+                      puede acceder a la variable
+                      <code class="language-python">x</code>.
                     </li>
                   </ul>
                 </div>
@@ -852,9 +910,11 @@
                   </code>
                 </pre>
                   <p>
-                    En este ejemplo, <code>mi_contador</code> es una función que
-                    recuerda y actualiza el valor de contador cada vez que se
-                    llama. El uso de <code>nonlocal</code> permite que la
+                    En este ejemplo,
+                    <code class="language-python">mi_contador</code> es una
+                    función que recuerda y actualiza el valor de contador cada
+                    vez que se llama. El uso de
+                    <code class="language-python">nonlocal</code> permite que la
                     variable contador se modifique en el ámbito de la función
                     externa.
                   </p>
@@ -884,19 +944,25 @@
               <div id="laFuncionLambda" class="mt-5">
                 <h2 class="mt-1">La Función lambda</h2>
                 <p>
-                  Una función <code>lambda</code> en Python es una forma de
-                  definir funciones anónimas o funciones pequeñas y de una sola
-                  línea sin necesidad de usar la palabra clave def ni asignarles
-                  un nombre explícito. Estas funciones son útiles para
-                  operaciones rápidas y simples, especialmente cuando no es
-                  necesario reutilizarlas.
+                  Una función <code class="language-python">lambda</code> en
+                  Python es una forma de definir funciones anónimas o funciones
+                  pequeñas y de una sola línea sin necesidad de usar la palabra
+                  clave def ni asignarles un nombre explícito. Estas funciones
+                  son útiles para operaciones rápidas y simples, especialmente
+                  cuando no es necesario reutilizarlas.
                 </p>
                 <!-- Qué Es una Función lambda -->
                 <div>
                   <h3>Qué Es una Función lambda</h3>
-                  <p>Una función <code>lambda</code> es una expresión que:</p>
+                  <p>
+                    Una función <code class="language-python">lambda</code> es
+                    una expresión que:
+                  </p>
                   <ul>
-                    <li>Se define con la palabra clave <code>lambda</code>.</li>
+                    <li>
+                      Se define con la palabra clave
+                      <code class="language-python">lambda</code>.
+                    </li>
                     <li>No necesita un nombre explícito.</li>
                     <li>
                       Puede tener múltiples argumentos, pero solo una expresión
@@ -904,7 +970,8 @@
                     </li>
                     <li>
                       Devuelve el resultado de la expresión automáticamente, sin
-                      necesidad de usar <code>return</code>.
+                      necesidad de usar
+                      <code class="language-python">return</code>.
                     </li>
                   </ul>
                   <p><strong>Sintaxis básica</strong>:</p>
@@ -943,8 +1010,10 @@
                     </li>
                     <li>
                       <span class="fw-bold">En funciones como argumento</span>:
-                      Son útiles en funciones como <code>map</code>,
-                      <code>filter</code> y <code>sorted</code> que aceptan
+                      Son útiles en funciones como
+                      <code class="language-python">map</code>,
+                      <code class="language-python">filter</code> y
+                      <code class="language-python">sorted</code> que aceptan
                       otras funciones como parámetros.
                       <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
@@ -1011,9 +1080,10 @@
                     <li>
                       <span class="fw-bold">Sintaxis concisa</span>: Las
                       funciones lambda permiten definir funciones de una sola
-                      línea sin necesidad de un bloque <code>def</code>. Esto
-                      reduce la cantidad de código, haciéndolo más legible en
-                      tareas simples.
+                      línea sin necesidad de un bloque
+                      <code class="language-python">def</code>. Esto reduce la
+                      cantidad de código, haciéndolo más legible en tareas
+                      simples.
                       <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         suma = lambda x, y: x + y
@@ -1031,8 +1101,10 @@
                           lo que las hace ideales para usos temporales.
                         </li>
                         <li>
-                          Ejemplo: En un <code>map</code>, <code>filter</code> o
-                          <code>reduce</code>:
+                          Ejemplo: En un
+                          <code class="language-python">map</code>,
+                          <code class="language-python">filter</code> o
+                          <code class="language-python">reduce</code>:
                           <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             lista = [1, 2, 3, 4]
@@ -1047,10 +1119,11 @@
                       <span class="fw-bold"
                         >Mejor integración con otras funciones</span
                       >: Son prácticas para usar en expresiones de orden
-                      superior como <code>map()</code>, <code>filter()</code>,
-                      <code>reduce()</code>, o incluso en funciones
-                      personalizadas que aceptan otras funciones como
-                      argumentos.
+                      superior como <code class="language-python">map()</code>,
+                      <code class="language-python">filter()</code>,
+                      <code class="language-python">reduce()</code>, o incluso
+                      en funciones personalizadas que aceptan otras funciones
+                      como argumentos.
                     </li>
                     <li>
                       <span class="fw-bold"
@@ -1159,8 +1232,8 @@
                       <span class="fw-bold">Sin nombre explícito</span>:Aunque
                       puedes asignar una función lambda a una variable, no tiene
                       un nombre interno como las funciones definidas con
-                      <code>def</code>. Esto significa que puede ser menos útil
-                      para depuración o documentación.
+                      <code class="language-python">def</code>. Esto significa
+                      que puede ser menos útil para depuración o documentación.
                       <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         multiplicar = lambda x, y: x * y
@@ -1174,10 +1247,11 @@
                         <li>
                           No puedes agregar anotaciones de tipo a una función
                           lambda, a diferencia de las funciones definidas con
-                          <code>def</code>.
+                          <code class="language-python">def</code>.
                         </li>
                         <li>
-                          Ejemplo válido con <code>def</code>:
+                          Ejemplo válido con
+                          <code class="language-python">def</code>:
                           <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             def sumar(x: int, y: int) -> int:
@@ -1196,8 +1270,9 @@
                           reutilización extensiva. Son más útiles para funciones
                           pequeñas que serán utilizadas de manera inmediata,
                           como en expresiones de orden superior (por ejemplo,
-                          <code>map</code>, <code>filter</code>,
-                          <code>reduce</code>).
+                          <code class="language-python">map</code>,
+                          <code class="language-python">filter</code>,
+                          <code class="language-python">reduce</code>).
                         </li>
                         <li>
                           Ejemplo con map:
@@ -1232,14 +1307,15 @@
               <div class="mt-5">
                 <h3 class="mt-1">Funciones lambda con map()</h3>
                 <p>
-                  En Python, <code>lambda</code> y <code>map()</code> son
-                  herramientas poderosas que se utilizan para trabajar con
-                  funciones de manera más concisa y eficiente.
+                  En Python, <code class="language-python">lambda</code> y
+                  <code class="language-python">map()</code> son herramientas
+                  poderosas que se utilizan para trabajar con funciones de
+                  manera más concisa y eficiente.
                 </p>
                 <p>
-                  La función <code>map()</code> aplica una función a cada
-                  elemento de un iterable (como una lista) y devuelve un
-                  iterable de los resultados.
+                  La función <code class="language-python">map()</code> aplica
+                  una función a cada elemento de un iterable (como una lista) y
+                  devuelve un iterable de los resultados.
                 </p>
                 <p><strong>Sintaxis</strong>:</p>
                 <pre data-src-status="loaded" tabindex="0">
@@ -1249,17 +1325,20 @@
               </pre>
                 <ul>
                   <li>
-                    <span class="fw-bold"><code>func</code></span
+                    <span class="fw-bold"
+                      ><code class="language-python">func</code></span
                     >: una función que se aplica a cada elemento del iterable.
                   </li>
                   <li>
-                    <span class="fw-bold"><code>iterable</code></span
+                    <span class="fw-bold"
+                      ><code class="language-python">iterable</code></span
                     >: una lista, tupla u otro iterable.
                   </li>
                 </ul>
                 <p>
-                  Cuando se usa <code>lambda</code> con <code>map()</code>, se
-                  puede pasar una función anónima para realizar la operación.
+                  Cuando se usa <code class="language-python">lambda</code> con
+                  <code class="language-python">map()</code>, se puede pasar una
+                  función anónima para realizar la operación.
                 </p>
                 <p><strong>Ejemplo</strong>:</p>
                 <pre data-src-status="loaded" tabindex="0">
@@ -1271,8 +1350,10 @@
                   </code>
               </pre>
                 <p>
-                  En este ejemplo, <code>lambda x: x * 2</code> es la función
-                  que multiplica cada número por <code>2</code>.
+                  En este ejemplo,
+                  <code class="language-python">lambda x: x * 2</code> es la
+                  función que multiplica cada número por
+                  <code class="language-python">2</code>.
                 </p>
               </div>
               <!-- Funciones lambda con map() y filter() Fin -->
@@ -1280,10 +1361,10 @@
               <div class="mt-5">
                 <h3 class="mt-1">Funciones lambda con filter()</h3>
                 <p>
-                  La función <code>filter()</code> se utiliza para filtrar los
-                  elementos de un iterable basándose en una condición. Devuelve
-                  un iterable con solo los elementos que cumplen con la
-                  condición.
+                  La función <code class="language-python">filter()</code> se
+                  utiliza para filtrar los elementos de un iterable basándose en
+                  una condición. Devuelve un iterable con solo los elementos que
+                  cumplen con la condición.
                 </p>
                 <p><strong>Sintaxis</strong>:</p>
                 <pre data-src-status="loaded" tabindex="0">
@@ -1293,16 +1374,23 @@
               </pre>
                 <ul>
                   <li>
-                    <code>func</code>: una función que devuelve
-                    <code>True</code> o<code> False</code> para cada elemento.
+                    <code class="language-python">func</code>: una función que
+                    devuelve <code class="language-python">True</code> o<code
+                      class="language-python"
+                    >
+                      False</code
+                    >
+                    para cada elemento.
                   </li>
                   <li>
-                    <code>iterable</code>: una lista, tupla u otro iterable.
+                    <code class="language-python">iterable</code>: una lista,
+                    tupla u otro iterable.
                   </li>
                 </ul>
                 <p>
-                  Cuando se usa <code>lambda</code> con <code>filter()</code>,
-                  se define una condición anónima para filtrar los elementos.
+                  Cuando se usa <code class="language-python">lambda</code> con
+                  <code class="language-python">filter()</code>, se define una
+                  condición anónima para filtrar los elementos.
                 </p>
                 <p><strong>Ejemplo</strong>:</p>
                 <pre data-src-status="loaded" tabindex="0">
@@ -1314,9 +1402,11 @@
                 </code>
               </pre>
                 <p>
-                  En este caso, <code>lambda x: x % 2 != 0</code> es la función
-                  que devuelve <code>True</code> solo para los números impares,
-                  filtrando así esos números de la lista.
+                  En este caso,
+                  <code class="language-python">lambda x: x % 2 != 0</code> es
+                  la función que devuelve
+                  <code class="language-python">True</code> solo para los
+                  números impares, filtrando así esos números de la lista.
                 </p>
               </div>
               <!-- Funciones lambda con filter() Fin -->

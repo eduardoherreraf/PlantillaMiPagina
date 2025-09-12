@@ -165,7 +165,7 @@
     <!-- -------------------------------- principal -------------------------------- -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
-        <section class="pb-3 pt-5 col-lg-9">
+        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
           <!--  Bucles en Python: Una Guía Completa -->
           <article
             class="row border-1 border-bottom pb-3"
@@ -191,11 +191,11 @@
                   sus estructuras sintácticas, casos de uso prácticos y
                   recomendaciones para su implementación óptima.
                 </p>
-                <div class="text-center imagen">
+                <div class="centrar-imagen imagen50">
                   <figure>
                     <img
                       src="https://i.ibb.co/nMng1fL/bucles.jpg"
-                      class="img-fluid rounded-4"
+                      class="img-fluid"
                       alt="Bucles en Python: Una Guía Completa "
                       title="Explicación gráfica de estructuras iterativas en Python: while y for."
                     />
@@ -207,7 +207,7 @@
               <div id="BucleFor" class="mt-5">
                 <h2 class="mt-1">Bucle for</h2>
                 <p>
-                  La sentencia <code>for</code> en programación se usa para
+                  La sentencia <code class="language-python">for</code> en programación se usa para
                   realizar iteraciones, es decir, para ejecutar repetidamente un
                   bloque de código un número específico de veces o hasta que se
                   recorran todos los elementos de una secuencia (como una lista,
@@ -217,18 +217,18 @@
                 </p>
                 <p>
                   En términos generales, la estructura del bucle
-                  <code>for</code> sigue la siguiente lógica:
+                  <code class="language-python">for</code> sigue la siguiente lógica:
                 </p>
                 <ul>
                   <li>
                     <span class="fw-bold">Recorrer secuencias</span>: En Python,
-                    <code>for</code> permite iterar sobre los elementos de una
+                    <code class="language-python">for</code> permite iterar sobre los elementos de una
                     secuencia sin necesidad de un contador explícito.
                   </li>
                   <li>
                     <span class="fw-bold">Rangos de números</span>: Se utiliza
-                    <code>for</code> junto con funciones como
-                    <code>range()</code> para generar secuencias numéricas,
+                    <code class="language-python">for</code> junto con funciones como
+                    <code class="language-python">range()</code> para generar secuencias numéricas,
                     repitiendo el bloque de código según el rango definido.
                   </li>
                   <li>
@@ -261,8 +261,8 @@
                 <div>
                   <h3>Uso de la Función range()</h3>
                   <p>
-                    La función <code>range()</code> es comúnmente utilizada con
-                    bucles <code>for</code> para generar una secuencia de
+                    La función <code class="language-python">range()</code> es comúnmente utilizada con
+                    bucles <code class="language-python">for</code> para generar una secuencia de
                     números. Puede tomar uno, dos o tres argumentos: inicio, fin
                     y paso.
                   </p>
@@ -362,10 +362,10 @@
               <div id="BucleWhile" class="mt-5">
                 <h2 class="mt-1">Bucle While</h2>
                 <p>
-                  La sentencia <code>while</code> se utiliza para crear bucles o
+                  La sentencia <code class="language-python">while</code> se utiliza para crear bucles o
                   ciclos, permitiendo que un bloque de código se ejecute
                   repetidamente mientras se cumpla una condición específica. En
-                  términos sencillos, <code>while</code> evalúa una condición y,
+                  términos sencillos, <code class="language-python">while</code> evalúa una condición y,
                   si esta es verdadera, ejecuta el bloque de código asociado;
                   esto se repite hasta que la condición se vuelva falsa.
                 </p>
@@ -375,7 +375,7 @@
                   <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   while condición:
-                      # bloque de código que se ejecuta cuando la condición es <code>True</code>.
+                      # bloque de código que se ejecuta cuando la condición es <code class="language-python">True</code>.
                   # bloque de código que se ejecuta cuando la condición ya no se cumple.
                 </code>
               </pre>
@@ -420,14 +420,14 @@
                     <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     while condición:
-                        # bloque de código que se ejecuta cuando la condición es <code>True</code>.
+                        # bloque de código que se ejecuta cuando la condición es <code class="language-python">True</code>.
                     else:
                         # bloque de código que se ejecuta cuando la condición no se cumple.
                   </code>
                 </pre>
                     <p>
-                      La sentencia <code>While</code> con <code>else</code> (se
-                      ejecuta cuando la condición es <code>False</code>):
+                      La sentencia <code class="language-python">While</code> con <code class="language-python">else</code> (se
+                      ejecuta cuando la condición es <code class="language-python">False</code>):
                     </p>
                     <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
@@ -445,8 +445,8 @@
                   <div>
                     <h4>Función break</h4>
                     <p>
-                      La sentencia <code>While</code> con
-                      <code>break</code> (para salir del bucle):
+                      La sentencia <code class="language-python">While</code> con
+                      <code class="language-python">break</code> (para salir del bucle):
                     </p>
                     <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
@@ -463,8 +463,8 @@
                   <div>
                     <h4>Función continue</h4>
                     <p>
-                      La sentencia <code>While</code> con
-                      <code>continue</code> (salta a la siguiente iteración):
+                      La sentencia <code class="language-python">While</code> con
+                      <code class="language-python">continue</code> (salta a la siguiente iteración):
                     </p>
                     <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
@@ -528,12 +528,12 @@
                     <span class="fw-bold">
                       Optimizar el código evitando bucles innecesarios</span
                     >: En Python, se puede aprovechar las funciones incorporadas
-                    como <code>map()</code>, <code>filter()</code> y las
+                    como <code class="language-python">map()</code>, <code class="language-python">filter()</code> y las
                     comprensiones de listas, ya que ofrecen una sintaxis más
                     elegante y eficiente que los bucles tradicionales. Estas
                     herramientas no solo hacen el código más legible, sino que
                     generalmente se ejecutan más rápido que los bucles
-                    <code>for</code> convencionales.
+                    <code class="language-python">for</code> convencionales.
                   </li>
                   <li>
                     <span class="fw-bold">Usar nombres descriptivos</span>: Al
@@ -556,7 +556,7 @@
                   <li>
                     Siempre estar seguro que la condición eventualmente se
                     vuelva
-                    <code>False</code>.
+                    <code class="language-python">False</code>.
                   </li>
                   <li>Evitar bucles infinitos no intencionales.</li>
                   <li>Actualizar las variables que controlan el bucle.</li>

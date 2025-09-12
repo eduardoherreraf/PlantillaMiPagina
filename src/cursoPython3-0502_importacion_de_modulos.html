@@ -96,7 +96,7 @@
 
   <body>
     <!-- Barra deNavegación -->
-<nav
+    <nav
       class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
     >
       <div class="container-fluid">
@@ -149,7 +149,9 @@
               <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog"
+              <a
+                class="nav-link mx-1 publicaciones-activo"
+                href="index.html#blog"
                 >PUBLICACIONES</a
               >
             </li>
@@ -165,7 +167,7 @@
     <!-- -------------------------------- principal -------------------------------- -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
-        <section class="pb-3 pt-5 col-lg-9">
+        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
           <!--   Importación de módulos en Python  -->
           <article
             class="row border-1 border-bottom pb-3"
@@ -190,11 +192,11 @@
                   manejables, facilitando su mantenimiento y mejorando la
                   legibilidad.
                 </p>
-                <div class="text-center imagen">
+                <div class="centrar-imagen imagen50">
                   <figure>
                     <img
                       src="https://i.ibb.co/4s1PXb7/importacionmodulos.jpg"
-                      class="img-fluid rounded-4"
+                      class="img-fluid"
                       alt="Importación de módulos en Python"
                       title="Importando y Usando un Módulo de Python"
                     />
@@ -207,7 +209,7 @@
               <div id="ImportacionDirecta" class="mt-5">
                 <h2 class="mt-1">Importación Directa</h2>
                 <p>
-                  Se usa el comando <code>import</code> seguido del nombre del
+                  Se usa el comando <code class="language-python">import</code> seguido del nombre del
                   módulo.
                 </p>
                 <pre data-src-status="loaded" tabindex="0">
@@ -223,7 +225,7 @@
                 <h2 class="mt-1">Importar un Elemento Específico</h2>
                 <p>
                   Si solo se necesita una función, clase o variable específica
-                  del módulo, se puede usar <code>from</code>.
+                  del módulo, se puede usar <code class="language-python">from</code>.
                 </p>
                 <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
@@ -238,7 +240,7 @@
                 <h2 class="mt-1">Importar y Renombrar</h2>
                 <p>
                   Para simplificar el uso de un módulo o para evitar conflictos,
-                  se puede renombrar con <code>as</code>.
+                  se puede renombrar con <code class="language-python">as</code>.
                 </p>
                 <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
@@ -252,7 +254,7 @@
               <div id="ImportarTodosLosElementosDeUnModulo" class="mt-5">
                 <h2 class="mt-1">Importar Todos los Elementos de un Módulo</h2>
                 <p>
-                  Se puede usar el carácter <code>*</code> para importar todo,
+                  Se puede usar el carácter <code class="language-python">*</code> para importar todo,
                   pero no es recomendable en proyectos grandes ya que puede
                   causar conflictos de nombres
                 </p>
@@ -269,7 +271,7 @@
                 <h2 class="mt-1">Importar Módulos Personalizados</h2>
                 <p>
                   Si se tiene un archivo Python, por ejemplo,
-                  <code>mi_modulo.py</code>, ubicado en el mismo directorio que
+                  <code class="language-python">mi_modulo.py</code>, ubicado en el mismo directorio que
                   el archivo principal, se puede importar así:
                 </p>
                 <pre data-src-status="loaded" tabindex="0">
@@ -282,7 +284,7 @@
                   <span class="fw-bold">Nota</span>: Para importar módulos
                   ubicados en diferentes directorios, puede ser necesario
                   configurar el PYTHONPATH o usar bibliotecas como
-                  <code>sys</code> para agregar el directorio al sistema de
+                  <code class="language-python">sys</code> para agregar el directorio al sistema de
                   búsqueda:
                 </p>
                 <pre data-src-status="loaded" tabindex="0">
@@ -300,7 +302,7 @@
                 <p>
                   Si el módulo es externo (no parte de la biblioteca estándar),
                   debe instalarse primero con un gestor de paquetes como
-                  <code>pip</code>:
+                  <code class="language-python">pip</code>:
                 </p>
                 <!-- Verificar si pip Está Instalado -->
                 <div>
@@ -432,13 +434,13 @@
                   <ul>
                     <li>
                       <span class="fw-bold"
-                        >Python no encuentra <code>pip</code></span
+                        >Python no encuentra <code class="language-python">pip</code></span
                       >: Asegúrese de que la instalación de Python esté en el
                       PATH del sistema.
                     </li>
                     <li>
                       <span class="fw-bold">Permisos insuficientes</span>: Si
-                      aparece un error de permisos, use <code>sudo</code> en
+                      aparece un error de permisos, use <code class="language-python">sudo</code> en
                       Linux/macOS o abra CMD/PowerShell como administrador en
                       Windows:
                       <pre data-src-status="loaded" tabindex="0">
@@ -449,7 +451,7 @@
                     </li>
                     <li>
                       <span class="fw-bold">Ambientes virtuales</span>: Es
-                      recomendable usar un entorno virtual (<code>venv</code>)
+                      recomendable usar un entorno virtual (<code class="language-python">venv</code>)
                       para instalar módulos específicos de un proyecto y evitar
                       conflictos con otras instalaciones.
                     </li>
@@ -483,7 +485,7 @@
                   </li>
                 </ul>
                 <p>
-                  Ahora, los módulos instalados con <code>pip</code> estarán
+                  Ahora, los módulos instalados con <code class="language-python">pip</code> estarán
                   aislados dentro del entorno.
                 </p>
               </div>

@@ -163,7 +163,7 @@
     <!-- -------------------------------- principal -------------------------------- -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
-        <section class="pb-3 pt-5 col-lg-9">
+        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
           <!--  Listas en Python  -->
           <article
             class="row border-1 border-bottom pb-3"
@@ -188,11 +188,11 @@
                   características, métodos útiles y ejemplos prácticos que
                   ilustran su uso.
                 </p>
-                <div class="text-center imagen">
+                <div class="centrar-imagen imagen50">
                   <figure>
                     <img
                       src="https://i.ibb.co/8Dh9HF4/listas.jpg"
-                      class="img-fluid rounded-4"
+                      class="img-fluid"
                       alt="Listas en Python  "
                       title="Estructura y uso de listas en Python para almacenar y manipular datos."
                     />
@@ -226,7 +226,7 @@
                 <ul>
                   <li>
                     <span class="fw-bold">Sintaxis</span>: Las listas se definen
-                    utilizando corchetes <code>[]</code>, y los elementos se
+                    utilizando corchetes <code class="language-python">[]</code>, y los elementos se
                     separan por comas.
                     <pre
                       data-src-status="loaded"
@@ -337,12 +337,12 @@
                 <div>
                   <h3>del</h3>
                   <p>
-                    La sentencia <code>del</code> es una instrucción en Python
+                    La sentencia <code class="language-python">del</code> es una instrucción en Python
                     que se utiliza para eliminar elementos o variables. A
                     diferencia de los métodos específicos para listas como
-                    <code>remove()</code> o <code>pop()</code>, que están
+                    <code class="language-python">remove()</code> o <code class="language-python">pop()</code>, que están
                     diseñados para manipular elementos dentro de listas, la
-                    sentencia <code>del</code> es más versátil y se puede usar
+                    sentencia <code class="language-python">del</code> es más versátil y se puede usar
                     en una variedad de contextos para eliminar:
                   </p>
                   <ul>
@@ -355,10 +355,10 @@
                     </li>
                   </ul>
                   <p>
-                    La principal ventaja de <code>del</code> es su flexibilidad,
+                    La principal ventaja de <code class="language-python">del</code> es su flexibilidad,
                     ya que permite eliminar elementos en diferentes estructuras
                     de datos, no sólo en listas. Además, la sentencia
-                    <code>del</code> ofrece más control y opciones de
+                    <code class="language-python">del</code> ofrece más control y opciones de
                     eliminación que los métodos específicos para listas.
                   </p>
                   <pre data-src-status="loaded" tabindex="0">
@@ -374,15 +374,15 @@
                 <div>
                   <h3>append()</h3>
                   <p>
-                    El método <code>append()</code> en Python permite agregar un
+                    El método <code class="language-python">append()</code> en Python permite agregar un
                     nuevo elemento al final de una lista. Cuando se llama a
-                    <code>append()</code> sobre una lista, este método añade el
+                    <code class="language-python">append()</code> sobre una lista, este método añade el
                     elemento especificado como argumento a la parte final de la
                     lista, incrementando su tamaño en uno.
                   </p>
                   <p>
                     Algunas características clave del método
-                    <code>append():</code>
+                    <code class="language-python">append():</code>
                   </p>
                   <ul>
                     <li>Agrega un único elemento al final de la lista.</li>
@@ -409,8 +409,8 @@
                 <div>
                   <h3>insert()</h3>
                   <p>
-                    El método <code>insert()</code> es más versátil que
-                    <code>append()</code>, ya que permite agregar un nuevo
+                    El método <code class="language-python">insert()</code> es más versátil que
+                    <code class="language-python">append()</code>, ya que permite agregar un nuevo
                     elemento en cualquier posición de la lista, no solo al
                     final. Esto brinda mayor control y flexibilidad al trabajar
                     con listas en Python.
@@ -427,8 +427,8 @@
                 </pre>
                   <p>
                     La redacción revisada transmite de manera más efectiva las
-                    capacidades y ventajas del método <code>insert()</code> en
-                    comparación con <code>append()</code>.
+                    capacidades y ventajas del método <code class="language-python">insert()</code> en
+                    comparación con <code class="language-python">append()</code>.
                   </p>
                 </div>
                 <!-- insert() fin -->
@@ -438,9 +438,9 @@
                   <p>
                     Este método permite agregar todos los elementos de un
                     iterable (como otra lista, tupla, cadena, etc.) al final de
-                    la lista actual. A diferencia de <code>append()</code>, que
+                    la lista actual. A diferencia de <code class="language-python">append()</code>, que
                     agrega un solo elemento a la lista,
-                    <code>extend()</code> añade múltiples elementos de una sola
+                    <code class="language-python">extend()</code> añade múltiples elementos de una sola
                     vez, expandiendo el tamaño de la lista original.
                   </p>
                   <pre data-src-status="loaded" tabindex="0">
@@ -474,7 +474,7 @@
                     </li>
                     <li>
                       Si el elemento no existe, lanza un error
-                      <code>ValueError</code>.
+                      <code class="language-python">ValueError</code>.
                     </li>
                   </ul>
                   <pre data-src-status="loaded" tabindex="0">
@@ -501,14 +501,14 @@
                 <div>
                   <h3>pop()</h3>
                   <p>
-                    El método <code>pop()</code> es una función incorporada de
+                    El método <code class="language-python">pop()</code> es una función incorporada de
                     las listas en Python que elimina y devuelve un elemento de
                     una lista.
                   </p>
                   <p>Características importantes:</p>
                   <ul>
                     <li>
-                      Si la lista está vacía, lanza un <code>ValueError</code>.
+                      Si la lista está vacía, lanza un <code class="language-python">ValueError</code>.
                     </li>
                     <li>
                       Si el índice está fuera de rango, lanza un IndexError
@@ -519,7 +519,7 @@
                     </li>
                     <li>
                       Es más eficiente que eliminar elementos con el método
-                      <code>remove()</code> cuando se conoce el índice
+                      <code class="language-python">remove()</code> cuando se conoce el índice
                     </li>
                   </ul>
                   <pre data-src-status="loaded" tabindex="0">
@@ -564,11 +564,11 @@
                   <p>Parámetros:</p>
                   <ul>
                     <li>
-                      <code>reverse</code>: Parámetro opcional (boolean). Si es
-                      <code>True</code>, ordena en orden descendente.
+                      <code class="language-python">reverse</code>: Parámetro opcional (boolean). Si es
+                      <code class="language-python">True</code>, ordena en orden descendente.
                     </li>
                     <li>
-                      <code>key</code>: Parámetro opcional. Una función que
+                      <code class="language-python">key</code>: Parámetro opcional. Una función que
                       sirve como criterio de ordenamiento.
                     </li>
                   </ul>
@@ -596,7 +596,7 @@
                   <ul>
                     <li>Modifica la lista original.</li>
                     <li>
-                      No retorna una nueva lista (retorna <code>None</code>).
+                      No retorna una nueva lista (retorna <code class="language-python">None</code>).
                     </li>
                     <li>Solo funciona con listas, no con otros iterables.</li>
                     <li>Los elementos deben ser comparables entre sí.</li>
@@ -666,14 +666,14 @@
                 </pre>
                   <ul>
                     <li>
-                      <span class="fw-bold"><code>separador</code></span
+                      <span class="fw-bold"><code class="language-python">separador</code></span
                       >: (opcional) Especifica el delimitador que se usará para
                       dividir la cadena. Si no se especifica,
-                      <code>.split()</code> utiliza el espacio en blanco como
+                      <code class="language-python">.split()</code> utiliza el espacio en blanco como
                       delimitador por defecto.
                     </li>
                     <li>
-                      <span class="fw-bold"><code>maxsplit</code></span
+                      <span class="fw-bold"><code class="language-python">maxsplit</code></span
                       >: (opcional) Es el número máximo de divisiones a
                       realizar. Si se especifica, la cadena se dividirá solo ese
                       número de veces. Si no se indica, se realizarán todas las
@@ -713,10 +713,10 @@
                     <li>
                       <span class="fw-bold"
                         >Limitar el número de divisiones usando
-                        <code>maxsplit</code></span
+                        <code class="language-python">maxsplit</code></span
                       >: Es posible limitar el número de partes en las que se
                       divide la cadena utilizando el parámetro
-                      <code>maxsplit</code>.
+                      <code class="language-python">maxsplit</code>.
                       <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     texto = "Python es un lenguaje poderoso y versátil"
@@ -728,7 +728,7 @@
                     <li>
                       <span class="fw-bold"
                         >Dividir una cadena basada en saltos de línea</span
-                      >: <code>.split()</code>
+                      >: <code class="language-python">.split()</code>
                       también puede dividir cadenas que contengan saltos de
                       línea u otros caracteres de espacio en blanco.
                       <pre data-src-status="loaded" tabindex="0">
@@ -743,7 +743,7 @@
                       <span class="fw-bold"
                         >Uso con varias ocurrencias del delimitador</span
                       >: Cuando el delimitador aparece múltiples veces seguidas,
-                      <code>.split()</code> trata cada ocurrencia por separado y
+                      <code class="language-python">.split()</code> trata cada ocurrencia por separado y
                       crea elementos vacíos en la lista resultante si no hay
                       contenido entre delimitadores.
                       <pre data-src-status="loaded" tabindex="0">
@@ -768,7 +768,7 @@
                   secuencias o expresiones existentes. Esta sintaxis elegante
                   facilita la transformación y filtrado de datos en una sola
                   línea de código, eliminando la necesidad de utilizar bucles
-                  <code>for</code> tradicionales.
+                  <code class="language-python">for</code> tradicionales.
                 </p>
                 <p>Sintaxis básica:</p>
                 <pre data-src-status="loaded" tabindex="0">
@@ -778,17 +778,17 @@
               </pre>
                 <ul>
                   <li>
-                    <span class="fw-bold"><code>expresión</code></span
+                    <span class="fw-bold"><code class="language-python">expresión</code></span
                     >: La operación o valor que se aplicará a cada elemento.
                   </li>
                   <li>
                     <span class="fw-bold"
-                      ><code>for elemento in iterable</code></span
+                      ><code class="language-python">for elemento in iterable</code></span
                     >: Un bucle que itera sobre cada elemento en el iterable.
                   </li>
                   <li>
                     <span class="fw-bold"
-                      ><code>if condición</code> (opcional)</span
+                      ><code class="language-python">if condición</code> (opcional)</span
                     >: Una condición que, si se cumple, permite incluir el
                     elemento en la nueva lista.
                   </li>
@@ -888,8 +888,8 @@
                 </pre>
                   <p>
                     En este caso, lista_anidada contiene tres listas:
-                    <code>[1, 2, 3]</code>, <code>[4, 5, 6]</code> y
-                    <code>[7, 8, 9]</code>. Esto puede interpretarse como una
+                    <code class="language-python">[1, 2, 3]</code>, <code class="language-python">[4, 5, 6]</code> y
+                    <code class="language-python">[7, 8, 9]</code>. Esto puede interpretarse como una
                     matriz de 3 filas y 3 columnas.
                   </p>
                 </div>

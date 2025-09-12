@@ -166,7 +166,7 @@
     <!-- -------------------------------- principal -------------------------------- -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
-        <section class="pb-3 pt-5 col-lg-9">
+        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
           <!--  Ordenando Listas Simples: El Ordenamiento de Burbuja en Python  -->
           <article
             class="row border-1 border-bottom pb-3"
@@ -197,11 +197,11 @@
                   y de implementar, lo que lo convierte en una excelente
                   herramienta pedagógica para aprender sobre ordenamiento.
                 </p>
-                <div class="text-center imagen">
+                <div class="centrar-imagen imagen50">
                   <figure>
                     <img
                       src="https://i.ibb.co/W51JTWX/burbujas.jpg"
-                      class="img-fluid rounded-4"
+                      class="img-fluid"
                       alt="Ordenando Listas Simples: El Ordenamiento de Burbuja en Python  "
                       title="Ordenamiento de Burbuja en Python: Cómo Ordenar Listas Sencillas"
                     />
@@ -282,18 +282,18 @@
                   <ul>
                     <li>
                       <span class="fw-bold"
-                        >Definición de la función <code>bubble_sort</code></span
-                      >: La función toma una lista <code>arr</code> como
+                        >Definición de la función <code class="language-python">bubble_sort</code></span
+                      >: La función toma una lista <code class="language-python">arr</code> como
                       argumento.
                     </li>
                     <li>
                       <span class="fw-bold"
-                        >Longitud de la lista <code>n = len(arr)</code></span
+                        >Longitud de la lista <code class="language-python">n = len(arr)</code></span
                       >: obtiene la longitud de la lista
                     </li>
                     <li>
                       <span class="fw-bold"
-                        >Bucle externo <code>n = len(arr)</code></span
+                        >Bucle externo <code class="language-python">n = len(arr)</code></span
                       >: obtiene la longitud de la lista
                     </li>
                     <li>
@@ -303,9 +303,9 @@
                           class="fa fa-internet-explorer"
                           aria-hidden="true"
                         ></i>
-                        <code>for j in range(0, n-i-1)</code></span
+                        <code class="language-python">for j in range(0, n-i-1)</code></span
                       >: Este bucle se ejecuta desde el inicio de la lista hasta
-                      <code>n-i-1</code>, ya que los últimos i elementos ya
+                      <code class="language-python">n-i-1</code>, ya que los últimos i elementos ya
                       están en su lugar correcto.
                     </li>
                     <li>
@@ -313,13 +313,13 @@
                       <ul>
                         <li>
                           <span class="fw-bold"
-                            ><code>if arr[j] > arr[j+1]</code></span
+                            ><code class="language-python">if arr[j] > arr[j+1]</code></span
                           >: Si el elemento actual es mayor que el siguiente, se
                           intercambian.
                         </li>
                         <li>
                           <span class="fw-bold"
-                            ><code>
+                            ><code class="language-python">
                               arr[j], arr[j+1] = arr[j+1], arr[j]</code
                             ></span
                           >: Intercambio de elementos.
@@ -336,21 +336,21 @@
                 <h2 class="mt-1">Ejemplo de Uso</h2>
                 <ul>
                   <li>
-                    Se define una lista <code>arr</code> con algunos elementos:
-                    <code>arr = [64, 34, 25, 12, 22, 11, 90]</code>.
+                    Se define una lista <code class="language-python">arr</code> con algunos elementos:
+                    <code class="language-python">arr = [64, 34, 25, 12, 22, 11, 90]</code>.
                   </li>
                   <li>
                     Se imprime la lista original:
-                    <code>print("Lista original:", arr)</code>.
+                    <code class="language-python">print("Lista original:", arr)</code>.
                   </li>
                   <li>
-                    Se llama a la función <code>bubble_sort</code> para ordenar
+                    Se llama a la función <code class="language-python">bubble_sort</code> para ordenar
                     la lista:
-                    <code>bubble_sort(arr)</code>
+                    <code class="language-python">bubble_sort(arr)</code>
                   </li>
                   <li>
                     Se imprime la lista ordenada:
-                    <code>print("Lista ordenada:", arr)</code>
+                    <code class="language-python">print("Lista ordenada:", arr)</code>
                   </li>
                 </ul>
               </div>
@@ -359,7 +359,7 @@
               <div id="metodoSort" class="mt-5">
                 <h2 class="mt-1">Método sort()</h2>
                 <p>
-                  El método <code>sort()</code> en Python se utiliza para
+                  El método <code class="language-python">sort()</code> en Python se utiliza para
                   ordenar los elementos de una lista en su lugar, es decir,
                   modifica la lista original en vez de crear una nueva lista
                   ordenada. Este método es muy útil cuando se necesita mantener
@@ -380,17 +380,17 @@
                   <h3>Parámetros</h3>
                   <ul>
                     <li>
-                      <span class="fw-bold"><code>key</code></span
+                      <span class="fw-bold"><code class="language-python">key</code></span
                       >: (opcional) Una función que sirve como clave para el
-                      proceso de ordenación. Por defecto, es <code>None</code>,
+                      proceso de ordenación. Por defecto, es <code class="language-python">None</code>,
                       lo que significa que los elementos se ordenan en su forma
                       natural.
                     </li>
                     <li>
-                      <span class="fw-bold"><code>reverse</code></span
+                      <span class="fw-bold"><code class="language-python">reverse</code></span
                       >: (opcional) Un valor booleano que, si es
-                      <code>True</code>, ordena la lista en orden descendente.
-                      Por defecto, es <code>False</code>, lo que significa que
+                      <code class="language-python">True</code>, ordena la lista en orden descendente.
+                      Por defecto, es <code class="language-python">False</code>, lo que significa que
                       la lista se ordena en orden ascendente.
                     </li>
                   </ul>

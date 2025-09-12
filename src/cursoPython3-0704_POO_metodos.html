@@ -94,7 +94,7 @@
 
   <body>
     <!-- Barra deNavegación -->
-<nav
+    <nav
       class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
     >
       <div class="container-fluid">
@@ -147,7 +147,9 @@
               <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog"
+              <a
+                class="nav-link mx-1 publicaciones-activo"
+                href="index.html#blog"
                 >PUBLICACIONES</a
               >
             </li>
@@ -163,7 +165,7 @@
     <!-- -------------------------------- principal -------------------------------- -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
-        <section class="pb-3 pt-5 col-lg-9">
+        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
           <!--  POO: Métodos en Python  -->
           <article
             class="row border-1 border-bottom pb-3"
@@ -186,11 +188,11 @@
                   estado interno, revelando la complejidad y elegancia de la
                   programación orientada a objetos.
                 </p>
-                <div class="text-center imagen">
+                <div class="centrar-imagen imagen50">
                   <figure>
                     <img
                       src="https://i.ibb.co/bLSTRV0/poometodos.jpg"
-                      class="img-fluid rounded-4"
+                      class="img-fluid"
                       alt="POO: Métodos en Python  "
                       title="Comprendiendo los Métodos en Python"
                     />
@@ -206,22 +208,23 @@
                   objeto, normalmente a una clase. Los métodos son usados para
                   definir el comportamiento de los objetos creados a partir de
                   esa clase. Estos son llamados utilizando la notación de punto
-                  (<code>.</code>) y suelen operar en los datos del objeto,
-                  accediendo o modificando sus atributos.
+                  (<code class="language-python">.</code>) y suelen operar en
+                  los datos del objeto, accediendo o modificando sus atributos.
                 </p>
                 <!-- El Parámetro self -->
                 <div>
                   <h3>El Parámetro self</h3>
                   <p>
-                    El parámetro <code>self</code> en Python se utiliza para
-                    hacer referencia a la instancia actual de la clase dentro de
-                    sus métodos. Es un mecanismo que permite acceder a los
-                    atributos y otros métodos del objeto específico sobre el
-                    cual se invoca el método. Aunque se llama
-                    <code>self</code> por convención, puede tener cualquier
-                    nombre válido, pero es altamente recomendable usar
-                    <code>self</code> para mantener la legibilidad y
-                    consistencia del código.
+                    El parámetro <code class="language-python">self</code> en
+                    Python se utiliza para hacer referencia a la instancia
+                    actual de la clase dentro de sus métodos. Es un mecanismo
+                    que permite acceder a los atributos y otros métodos del
+                    objeto específico sobre el cual se invoca el método. Aunque
+                    se llama <code class="language-python">self</code> por
+                    convención, puede tener cualquier nombre válido, pero es
+                    altamente recomendable usar
+                    <code class="language-python">self</code> para mantener la
+                    legibilidad y consistencia del código.
                   </p>
                   <!-- Principales Usos de self -->
                   <div>
@@ -230,8 +233,9 @@
                       <li>
                         <span class="fw-bold"
                           >Acceder a los atributos del objeto</span
-                        >: Se utiliza <code>self</code> para leer o modificar
-                        los atributos que pertenecen a la instancia.
+                        >: Se utiliza
+                        <code class="language-python">self</code> para leer o
+                        modificar los atributos que pertenecen a la instancia.
                         <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     class Persona:
@@ -246,7 +250,7 @@
                       <li>
                         <span class="fw-bold"
                           >Llamar a otros métodos de la misma instancia</span
-                        >: <code>self</code>
+                        >: <code class="language-python">self</code>
                         permite invocar otros métodos de la clase dentro de un
                         método.
                         <pre data-src-status="loaded" tabindex="0">
@@ -262,7 +266,7 @@
                       <li>
                         <span class="fw-bold"
                           >Diferenciar atributos de variables locales</span
-                        >: Usar <code>self</code>
+                        >: Usar <code class="language-python">self</code>
                         permite distinguir entre las variables locales dentro de
                         un método y los atributos de la instancia.
                         <pre data-src-status="loaded" tabindex="0">
@@ -293,8 +297,9 @@
                     <p><strong>Resumen</strong>:</p>
                     <ul>
                       <li>
-                        <code>self</code> siempre debe ser el primer parámetro
-                        en los métodos de instancia de una clase.
+                        <code class="language-python">self</code> siempre debe
+                        ser el primer parámetro en los métodos de instancia de
+                        una clase.
                       </li>
                       <li>
                         Permite acceder y manipular los atributos y métodos
@@ -317,7 +322,8 @@
                     que se utiliza para inicializar los atributos de una nueva
                     instancia cuando se crea. Este método se llama
                     automáticamente al instanciar un objeto de la clase y está
-                    definido con el nombre especial <code>__init__</code>.
+                    definido con el nombre especial
+                    <code class="language-python">__init__</code>.
                   </p>
                   <!-- Características del Constructor -->
                   <div>
@@ -326,12 +332,15 @@
                       <li>
                         <span class="fw-bold">Nombre especial</span>: El
                         constructor siempre se define como
-                        <code>__init__</code>.
+                        <code class="language-python">__init__</code>.
                       </li>
                       <li>
-                        <span class="fw-bold">Parámetro <code>self</code></span
-                        >: El primer parámetro debe ser <code>self</code>, que
-                        hace referencia a la instancia actual.
+                        <span class="fw-bold"
+                          >Parámetro
+                          <code class="language-python">self</code></span
+                        >: El primer parámetro debe ser
+                        <code class="language-python">self</code>, que hace
+                        referencia a la instancia actual.
                       </li>
                       <li>
                         <span class="fw-bold">Inicialización de atributos</span
@@ -359,13 +368,17 @@
                     <p>En este ejemplo:</p>
                     <ul>
                       <li>
-                        <code>parametro1</code> y<code> parametro2</code> son
-                        los valores que se pasan al constructor.
+                        <code class="language-python">parametro1</code> y<code
+                          class="language-python"
+                        >
+                          parametro2</code
+                        >
+                        son los valores que se pasan al constructor.
                       </li>
                       <li>
-                        <code>self.atributo1</code> y
-                        <code>self.atributo2</code> son los atributos de la
-                        instancia.
+                        <code class="language-python">self.atributo1</code> y
+                        <code class="language-python">self.atributo2</code> son
+                        los atributos de la instancia.
                       </li>
                     </ul>
                   </div>
@@ -397,7 +410,7 @@
                     <p>
                       Si no se necesitan valores iniciales, el constructor puede
                       definirse sin parámetros adicionales, aparte de
-                      <code>self</code>:
+                      <code class="language-python">self</code>:
                     </p>
                     <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
@@ -436,7 +449,8 @@
                         >: Python no soporta directamente la sobrecarga de
                         constructores, pero puede lograrse utilizando parámetros
                         con valores predeterminados o manejando la lógica dentro
-                        del método <code>__init__</code>.
+                        del método
+                        <code class="language-python">__init__</code>.
                         <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           class Persona:
@@ -465,12 +479,13 @@
                     Un método en Python siempre debe incluir al menos un
                     parámetro en su declaración, aunque pueda invocarse sin
                     argumentos. El primer parámetro, generalmente llamado
-                    <code>self</code>, es esencial y se recomienda mantener este
-                    nombre para evitar problemas inesperados. Este parámetro
-                    sirve para identificar al objeto al que pertenece el método.
-                    Al llamar un método, no es necesario proporcionar un
-                    argumento para <code>self</code>, ya que Python lo asigna
-                    automáticamente.
+                    <code class="language-python">self</code>, es esencial y se
+                    recomienda mantener este nombre para evitar problemas
+                    inesperados. Este parámetro sirve para identificar al objeto
+                    al que pertenece el método. Al llamar un método, no es
+                    necesario proporcionar un argumento para
+                    <code class="language-python">self</code>, ya que Python lo
+                    asigna automáticamente.
                   </p>
                   <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
@@ -487,46 +502,55 @@
                   <ul>
                     <li>
                       <span class="fw-bold">Definición de la clase</span>: Se
-                      define una clase llamada <code>Classy</code> que contiene
-                      un método llamado <code>method</code>.
+                      define una clase llamada
+                      <code class="language-python">Classy</code> que contiene
+                      un método llamado
+                      <code class="language-python">method</code>.
                     </li>
                     <li>
-                      <span class="fw-bold">Método <code>method</code></span
+                      <span class="fw-bold"
+                        >Método
+                        <code class="language-python">method</code></span
                       >:
                       <ul>
                         <li>
                           Es un método de instancia porque tiene el parámetro
-                          <code>self</code>.
+                          <code class="language-python">self</code>.
                         </li>
                         <li>
                           Al ejecutarse, imprime la cadena
-                          <code>"método"</code>.
+                          <code class="language-python">"método"</code>.
                         </li>
                       </ul>
                     </li>
                     <li>
                       <span class="fw-bold">Creación del objeto</span>: La línea
-                      <code>obj = Classy()</code> crea una instancia de la clase
-                      <code>Classy</code>.
+                      <code class="language-python">obj = Classy()</code> crea
+                      una instancia de la clase
+                      <code class="language-python">Classy</code>.
                     </li>
                     <li>
                       <span class="fw-bold">Invocación del método</span>:
                       <ul>
                         <li>
-                          La línea <code>obj.method()</code> llama al método
-                          <code>method</code> de la instancia <code>obj</code>.
+                          La línea
+                          <code class="language-python">obj.method()</code>
+                          llama al método
+                          <code class="language-python">method</code> de la
+                          instancia <code class="language-python">obj</code>.
                         </li>
                         <li>
                           Python pasa automáticamente el objeto
-                          <code>obj</code> como argumento para el parámetro
-                          <code>self</code> del método.
+                          <code class="language-python">obj</code> como
+                          argumento para el parámetro
+                          <code class="language-python">self</code> del método.
                         </li>
                       </ul>
                     </li>
                   </ul>
                   <p>
                     Por lo tanto, al ejecutarse el código, se imprime el texto
-                    <code>"método"</code>.
+                    <code class="language-python">"método"</code>.
                   </p>
                 </div>
                 <!-- Método sin Parámetros fin -->
@@ -535,11 +559,12 @@
                   <h3>Métodos con Varios Parámetros</h3>
                   <p>
                     Si se desea que un método en Python acepte más parámetros
-                    además de <code>self</code>, simplemente se deben declarar
-                    estos parámetros adicionales en la definición del método,
-                    después de <code>self</code>. Luego, al llamar al método, se
-                    deben proporcionar los argumentos correspondientes para esos
-                    parámetros. Ejemplo:
+                    además de <code class="language-python">self</code>,
+                    simplemente se deben declarar estos parámetros adicionales
+                    en la definición del método, después de
+                    <code class="language-python">self</code>. Luego, al llamar
+                    al método, se deben proporcionar los argumentos
+                    correspondientes para esos parámetros. Ejemplo:
                   </p>
                   <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
@@ -558,7 +583,8 @@
                       <span class="fw-bold">Declaración del método</span>:
                       <ul>
                         <li>
-                          Incluir <code>self</code> como primer parámetro.
+                          Incluir <code class="language-python">self</code> como
+                          primer parámetro.
                         </li>
                         <li>Agregar otros parámetros según sea necesario.</li>
                       </ul>
@@ -607,7 +633,8 @@
                 <div>
                   <h3>__dict__</h3>
                   <p>
-                    En Python, el atributo especial <code>__dict__</code> es un
+                    En Python, el atributo especial
+                    <code class="language-python">__dict__</code> es un
                     diccionario interno que almacena todos los atributos
                     (variables y métodos) de un objeto que no son métodos de
                     clase. Este atributo se utiliza principalmente para acceder,
@@ -668,10 +695,13 @@
                     <ul>
                       <li>
                         <span class="fw-bold"
-                          >Objetos con <code>__slots__</code></span
-                        >: Si una clase utiliza <code>__slots__</code>, no se
-                        crea un atributo <code>__dict__</code> por defecto, a
-                        menos que se declare explícitamente.
+                          >Objetos con
+                          <code class="language-python">__slots__</code></span
+                        >: Si una clase utiliza
+                        <code class="language-python">__slots__</code>, no se
+                        crea un atributo
+                        <code class="language-python">__dict__</code> por
+                        defecto, a menos que se declare explícitamente.
                         <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           class Persona:
@@ -687,10 +717,11 @@
                       <li>
                         <span class="fw-bold"
                           >No incluye atributos de clase</span
-                        >: El atributo <code>__dict__</code> de una instancia
-                        solo incluye los atributos específicos de esa instancia,
-                        no los atributos compartidos o métodos definidos en la
-                        clase.
+                        >: El atributo
+                        <code class="language-python">__dict__</code> de una
+                        instancia solo incluye los atributos específicos de esa
+                        instancia, no los atributos compartidos o métodos
+                        definidos en la clase.
                       </li>
                     </ul>
                   </div>
@@ -699,7 +730,8 @@
                   <div>
                     <h4>Contexto del Uso de __dict__ en Clases</h4>
                     <p>
-                      En las clases, <code>__dict__</code> también está
+                      En las clases,
+                      <code class="language-python">__dict__</code> también está
                       disponible, pero representa los atributos de la clase, no
                       de las instancias.
                     </p>
@@ -712,10 +744,12 @@
                     </code>
                   </pre>
                     <p>
-                      En resumen, <code>__dict__</code> es una herramienta
-                      poderosa y flexible para trabajar con los atributos de
-                      objetos y clases en Python, especialmente en contextos de
-                      inspección, modificación dinámica y serialización.
+                      En resumen,
+                      <code class="language-python">__dict__</code> es una
+                      herramienta poderosa y flexible para trabajar con los
+                      atributos de objetos y clases en Python, especialmente en
+                      contextos de inspección, modificación dinámica y
+                      serialización.
                     </p>
                   </div>
                   <!-- Contexto del Uso de __dict__ en Clases fin -->
@@ -725,13 +759,13 @@
                 <div>
                   <h3>__name__</h3>
                   <p>
-                    En Python, <code>__name__</code> es una variable especial
-                    que contiene una cadena que indica el nombre del módulo que
-                    se está ejecutando. Es una parte importante de cómo se
-                    estructuran y ejecutan los programas de Python. Se utiliza
-                    principalmente para distinguir si un archivo Python está
-                    siendo ejecutado directamente o si está siendo importado
-                    como un módulo en otro archivo.
+                    En Python, <code class="language-python">__name__</code> es
+                    una variable especial que contiene una cadena que indica el
+                    nombre del módulo que se está ejecutando. Es una parte
+                    importante de cómo se estructuran y ejecutan los programas
+                    de Python. Se utiliza principalmente para distinguir si un
+                    archivo Python está siendo ejecutado directamente o si está
+                    siendo importado como un módulo en otro archivo.
                   </p>
                   <!-- Comportamiento de __name__ -->
                   <div>
@@ -742,15 +776,15 @@
                           >Cuando se ejecuta directamente el archivo</span
                         >: Si un archivo Python se ejecuta directamente (por
                         ejemplo, usando python archivo.py), el valor de
-                        <code>__name__</code>
-                        será <code>__main__</code>.
+                        <code class="language-python">__name__</code>
+                        será <code class="language-python">__main__</code>.
                       </li>
                       <li>
                         <span class="fw-bold"
                           >Cuando se importa como un módulo</span
                         >: Si el archivo se importa en otro archivo, el valor de
-                        <code>__name__</code> será el nombre del archivo (sin la
-                        extensión .py).
+                        <code class="language-python">__name__</code> será el
+                        nombre del archivo (sin la extensión .py).
                       </li>
                     </ul>
                   </div>
@@ -800,7 +834,8 @@
                     <h4>Ejemplo Práctico __name__</h4>
                     <p>
                       Supongamos que tienes un archivo llamado
-                      <code>utilidades.py</code> con el siguiente contenido:
+                      <code class="language-python">utilidades.py</code> con el
+                      siguiente contenido:
                     </p>
                     <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
@@ -812,8 +847,9 @@
                     </code>
                   </pre>
                     <p>
-                      Si se ejecuta <code>utilidades.py</code> directamente, se
-                      verá:
+                      Si se ejecuta
+                      <code class="language-python">utilidades.py</code>
+                      directamente, se verá:
                     </p>
                     <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
@@ -839,11 +875,12 @@
                   </pre>
                     <p>
                       En este caso, el bloque bajo
-                      <code>if __name__ == "__main__"</code>: no se ejecutará,
-                      ya que el archivo fue importado, no ejecutado
-                      directamente. Esto permite separar el código que debería
-                      ejecutarse como parte de una funcionalidad principal del
-                      módulo de lo que es reutilizable.
+                      <code class="language-python"
+                        >if __name__ == "__main__"</code
+                      >: no se ejecutará, ya que el archivo fue importado, no
+                      ejecutado directamente. Esto permite separar el código que
+                      debería ejecutarse como parte de una funcionalidad
+                      principal del módulo de lo que es reutilizable.
                     </p>
                   </div>
                   <!-- Ejemplo Práctico __name__ fin -->
@@ -853,19 +890,21 @@
                 <div>
                   <h3>type()</h3>
                   <p>
-                    En Python, la función <code>type()</code> es una herramienta
-                    incorporada que se utiliza para obtener el tipo de un objeto
-                    o para definir nuevos tipos de objetos (clases). Su
-                    propósito depende del contexto en el que se emplee. A
-                    continuación, se explica su uso en dos escenarios
+                    En Python, la función
+                    <code class="language-python">type()</code> es una
+                    herramienta incorporada que se utiliza para obtener el tipo
+                    de un objeto o para definir nuevos tipos de objetos
+                    (clases). Su propósito depende del contexto en el que se
+                    emplee. A continuación, se explica su uso en dos escenarios
                     principales:
                   </p>
                   <!-- Obtener el Tipo de un Objeto -->
                   <div>
                     <h4>Obtener el Tipo de un Objeto</h4>
                     <p>
-                      Cuando se llama a <code>type(objeto)</code>, la función
-                      devuelve el tipo o la clase del objeto pasado como
+                      Cuando se llama a
+                      <code class="language-python">type(objeto)</code>, la
+                      función devuelve el tipo o la clase del objeto pasado como
                       argumento. Esto es útil para:
                     </p>
                     <ul>
@@ -894,20 +933,25 @@
                     <p>
                       En un contexto más avanzado, type() puede usarse para
                       crear nuevas clases de manera dinámica. Cuando se llama
-                      con tres argumentos (<code>nombre</code>,
-                      <code>bases</code>, <code>dict</code>):
+                      con tres argumentos (<code class="language-python"
+                        >nombre</code
+                      >, <code class="language-python">bases</code>,
+                      <code class="language-python">dict</code>):
                     </p>
                     <ul>
                       <li>
-                        <span class="fw-bold"><code>nombre</code></span
+                        <span class="fw-bold"
+                          ><code class="language-python">nombre</code></span
                         >: Nombre de la nueva clase.
                       </li>
                       <li>
-                        <span class="fw-bold"><code>bases</code></span
+                        <span class="fw-bold"
+                          ><code class="language-python">bases</code></span
                         >: Una tupla con las clases base (herencia).
                       </li>
                       <li>
-                        <span class="fw-bold"><code>dict</code></span
+                        <span class="fw-bold"
+                          ><code class="language-python">dict</code></span
                         >: Un diccionario que define los atributos y métodos de
                         la clase.
                       </li>
@@ -947,9 +991,9 @@
                     <p>
                       En lugar de usar type() para verificar el tipo de un
                       objeto, se recomienda en algunos casos usar
-                      <code>isinstance()</code> porque este permite verificar si
-                      un objeto es de un tipo específico o de una subclase de
-                      dicho tipo:
+                      <code class="language-python">isinstance()</code> porque
+                      este permite verificar si un objeto es de un tipo
+                      específico o de una subclase de dicho tipo:
                     </p>
                     <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
@@ -964,13 +1008,14 @@
                 <div>
                   <h3>__module__</h3>
                   <p>
-                    En Python, <code>__module__</code> es un atributo especial
-                    que se encuentra asociado con objetos, como clases o
-                    funciones. Indica el nombre del módulo en el que el objeto
-                    fue definido. Este atributo es útil en varios contextos,
-                    especialmente cuando se trabaja con introspección,
-                    depuración o para entender la organización del código en un
-                    proyecto grande.
+                    En Python,
+                    <code class="language-python">__module__</code> es un
+                    atributo especial que se encuentra asociado con objetos,
+                    como clases o funciones. Indica el nombre del módulo en el
+                    que el objeto fue definido. Este atributo es útil en varios
+                    contextos, especialmente cuando se trabaja con
+                    introspección, depuración o para entender la organización
+                    del código en un proyecto grande.
                   </p>
                   <!-- ¿Qué Es __module__? -->
                   <div>
@@ -993,10 +1038,11 @@
                     </code>
                   </pre>
                     <p>
-                      En este caso: <code>__module__</code> de
-                      <code>MiClase</code> tiene el valor
-                      <code>__main__</code> porque la clase fue definida en el
-                      módulo principal.
+                      En este caso:
+                      <code class="language-python">__module__</code> de
+                      <code class="language-python">MiClase</code> tiene el
+                      valor <code class="language-python">__main__</code> porque
+                      la clase fue definida en el módulo principal.
                     </p>
                   </div>
                   <!-- ¿Qué Es __module__? fin -->
@@ -1029,8 +1075,9 @@
                       <li>
                         <span class="fw-bold">Uso en metaprogramación</span>:
                         Cuando se usan técnicas avanzadas como la introspección,
-                        <code>__module__</code> permite identificar
-                        dinámicamente la procedencia de una clase o función.
+                        <code class="language-python">__module__</code> permite
+                        identificar dinámicamente la procedencia de una clase o
+                        función.
                       </li>
                       <li>
                         <span class="fw-bold"
@@ -1055,14 +1102,14 @@
                     <h4>Consideraciones Importantes</h4>
                     <ul>
                       <li>
-                        <code>__module__</code> es solo un nombre de cadena;
-                        cambiar el nombre del módulo o moverlo puede invalidar
-                        la información que contiene.
+                        <code class="language-python">__module__</code> es solo
+                        un nombre de cadena; cambiar el nombre del módulo o
+                        moverlo puede invalidar la información que contiene.
                       </li>
                       <li>
                         Si el objeto se encuentra en el módulo principal
                         ejecutado directamente, el valor será
-                        <code>__main__</code>.
+                        <code class="language-python">__main__</code>.
                       </li>
                     </ul>
                   </div>
@@ -1081,21 +1128,26 @@
                     <h4>¿Qué es __main__?</h4>
                     <ul>
                       <li>
-                        <code>__main__</code> es el nombre especial que Python
-                        asigna al entorno principal donde se ejecuta un script.
+                        <code class="language-python">__main__</code> es el
+                        nombre especial que Python asigna al entorno principal
+                        donde se ejecuta un script.
                       </li>
                       <li>
                         Cuando se ejecuta un archivo Python directamente (por
-                        ejemplo, python <code>mi_script.py</code>), el
+                        ejemplo, python
+                        <code class="language-python">mi_script.py</code>), el
                         intérprete define una variable especial llamada
-                        <code>__name__</code> y le asigna el valor
-                        "<code>__main__</code>".
+                        <code class="language-python">__name__</code> y le
+                        asigna el valor "<code class="language-python"
+                          >__main__</code
+                        >".
                       </li>
                       <li>
                         Sin embargo, si el archivo se importa como un módulo en
-                        otro script, la variable <code>__name__</code> se define
+                        otro script, la variable
+                        <code class="language-python">__name__</code> se define
                         con el nombre del módulo (el nombre del archivo sin la
-                        extensión <code>.py</code>).
+                        extensión <code class="language-python">.py</code>).
                       </li>
                     </ul>
                   </div>
@@ -1105,10 +1157,11 @@
                     <h4>¿Para qué se usa __main__?</h4>
                     <p>
                       La principal utilidad de
-                      <code>if __name__ == "__main__"</code>: es controlar qué
-                      partes del código se ejecutan cuando un archivo es
-                      ejecutado directamente o importado como un módulo. Esto
-                      permite:
+                      <code class="language-python"
+                        >if __name__ == "__main__"</code
+                      >: es controlar qué partes del código se ejecutan cuando
+                      un archivo es ejecutado directamente o importado como un
+                      módulo. Esto permite:
                     </p>
                     <ul>
                       <li>
@@ -1123,8 +1176,9 @@
                         <span class="fw-bold"
                           >Definir un punto de entrada para el programa</span
                         >: Es común que el bloque
-                        <code>if __name__ == "__main__"</code>: contenga la
-                        lógica principal del script.
+                        <code class="language-python"
+                          >if __name__ == "__main__"</code
+                        >: contenga la lógica principal del script.
                       </li>
                     </ul>
                   </div>
@@ -1170,9 +1224,13 @@
                             # Salida: Esta función puede ser utilizada desde otros módulos.
                           </code>
                         </pre>
-                          El bloque <code>if __name__ == "__main__"</code>: no
-                          se ejecuta porque el valor de <code>__name__</code> es
-                          <code>"modulo"</code> al importar el archivo.
+                          El bloque
+                          <code class="language-python"
+                            >if __name__ == "__main__"</code
+                          >: no se ejecuta porque el valor de
+                          <code class="language-python">__name__</code> es
+                          <code class="language-python">"modulo"</code> al
+                          importar el archivo.
                         </li>
                       </ul>
                     </div>
@@ -1207,10 +1265,11 @@
                 <div>
                   <h3>___bases__</h3>
                   <p>
-                    El atributo especial <code>__bases__</code> representa una
-                    propiedad exclusiva de las clases que devuelve una tupla con
-                    las clases padre o superclases de una clase específica. Esta
-                    característica resulta fundamental en el paradigma de
+                    El atributo especial
+                    <code class="language-python">__bases__</code> representa
+                    una propiedad exclusiva de las clases que devuelve una tupla
+                    con las clases padre o superclases de una clase específica.
+                    Esta característica resulta fundamental en el paradigma de
                     programación orientada a objetos, permitiendo a los
                     desarrolladores examinar y comprender la estructura de
                     herencia de las clases dentro de un sistema de software.
@@ -1227,8 +1286,9 @@
                       </li>
                       <li>
                         <span class="fw-bold"> Contiene las superclases</span>:
-                        <code>__bases__</code> almacena una tupla con las clases
-                        de las cuales una clase específica hereda directamente.
+                        <code class="language-python">__bases__</code> almacena
+                        una tupla con las clases de las cuales una clase
+                        específica hereda directamente.
                       </li>
                     </ul>
                   </div>
@@ -1285,8 +1345,9 @@
                       <li>
                         <span class="fw-bold">Clases "object"</span>: En Python,
                         todas las clases nuevas (herencia clásica y nueva)
-                        derivan de la clase raíz <code>object</code>, a menos
-                        que se especifique explícitamente otra jerarquía.
+                        derivan de la clase raíz
+                        <code class="language-python">object</code>, a menos que
+                        se especifique explícitamente otra jerarquía.
                       </li>
                       <li>
                         <span class="fw-bold">Uso limitado</span>: Aunque es
@@ -1364,19 +1425,23 @@
                   </p>
                   <ul>
                     <li>
-                      <span class="fw-bold"><code>getattr()</code></span
+                      <span class="fw-bold"
+                        ><code class="language-python">getattr()</code></span
                       >: Obtiene el valor de un atributo de un objeto.
                     </li>
                     <li>
-                      <span class="fw-bold"><code>setattr()</code></span
+                      <span class="fw-bold"
+                        ><code class="language-python">setattr()</code></span
                       >: Asigna un valor a un atributo de un objeto.
                     </li>
                     <li>
-                      <span class="fw-bold"><code>hasattr()</code></span
+                      <span class="fw-bold"
+                        ><code class="language-python">hasattr()</code></span
                       >: Verifica si un objeto tiene un atributo específico.
                     </li>
                     <li>
-                      <span class="fw-bold"><code>delattr()</code></span
+                      <span class="fw-bold"
+                        ><code class="language-python">delattr()</code></span
                       >: Elimina un atributo de un objeto.
                     </li>
                   </ul>
@@ -1403,7 +1468,7 @@
                     enfoca exclusivamente en examinar (pero no modificar) los
                     elementos de un programa en tiempo de ejecución. Python
                     permite la introspección mediante funciones integradas y
-                    módulos como <code>inspect</code>.
+                    módulos como <code class="language-python">inspect</code>.
                   </p>
                   <p>Herramientas comunes para introspección:</p>
                   <ul>
@@ -1431,28 +1496,37 @@
                   </ul>
                   <ul>
                     <li>
-                      <span class="fw-bold"><code>type()</code></span
+                      <span class="fw-bold"
+                        ><code class="language-python">type()</code></span
                       >: Determina el tipo de un objeto.
                     </li>
                     <li>
-                      <span class="fw-bold"><code>dir()</code></span
+                      <span class="fw-bold"
+                        ><code class="language-python">dir()</code></span
                       >: Muestra los atributos y métodos disponibles para un
                       objeto.
                     </li>
                     <li>
-                      <span class="fw-bold"><code>isinstance()</code></span
+                      <span class="fw-bold"
+                        ><code class="language-python">isinstance()</code></span
                       >: Verifica si un objeto pertenece a una clase o a una
                       subclase.
                     </li>
                     <li>
-                      <span class="fw-bold"><code>callable()</code></span
+                      <span class="fw-bold"
+                        ><code class="language-python">callable()</code></span
                       >: Determina si un objeto es invocable.
                     </li>
                     <li>
-                      <span class="fw-bold"><code>Módulo inspect</code></span
+                      <span class="fw-bold"
+                        ><code class="language-python"
+                          >Módulo inspect</code
+                        ></span
                       >: Proporciona funciones avanzadas para examinar objetos
-                      (como <code>inspect.getmembers()</code> y
-                      <code>inspect.signature()</code>).
+                      (como
+                      <code class="language-python">inspect.getmembers()</code>
+                      y
+                      <code class="language-python">inspect.signature()</code>).
                     </li>
                   </ul>
                   <p>Ejemplo:</p>
@@ -1494,10 +1568,14 @@
                       </tr>
                       <tr>
                         <td>Ejemplo de uso</td>
-                        <td><code>setattr()</code>, <code>getattr()</code></td>
                         <td>
-                          <code>type()</code>, <code>dir()</code>,
-                          <code>inspect</code>
+                          <code class="language-python">setattr()</code>,
+                          <code class="language-python">getattr()</code>
+                        </td>
+                        <td>
+                          <code class="language-python">type()</code>,
+                          <code class="language-python">dir()</code>,
+                          <code class="language-python">inspect</code>
                         </td>
                       </tr>
                     </tbody>

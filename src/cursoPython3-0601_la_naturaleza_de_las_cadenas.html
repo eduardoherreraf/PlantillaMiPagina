@@ -165,7 +165,7 @@
     <!-- -------------------------------- principal -------------------------------- -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
-        <section class="pb-3 pt-5 col-lg-9">
+        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
           <!--  La naturaleza de las cadenas en Python  -->
           <article
             class="row border-1 border-bottom pb-3"
@@ -189,11 +189,11 @@
                   métodos y usos de las cadenas, así como su importancia en el
                   desarrollo de aplicaciones.
                 </p>
-                <div class="text-center imagen">
+                <div class="centrar-imagen imagen50">
                   <figure>
                     <img
                       src="https://i.ibb.co/VHpnX1w/cadenas.jpg"
-                      class="img-fluid rounded-4"
+                      class="img-fluid"
                       alt="La naturaleza de las cadenas en Python"
                       title="Guía visual de cadenas en Python: tipos, métodos y manipulación de strings"
                     />
@@ -275,16 +275,16 @@
                   </pre>
                     <ul>
                       <li>
-                        <code>inicio</code>: Es el índice donde comienza el
+                        <code class="language-python">inicio</code>: Es el índice donde comienza el
                         rebanado (inclusivo). Si no se especifica, se asume 0.
                       </li>
                       <li>
-                        <code>fin</code>: Es el índice donde termina el rebanado
+                        <code class="language-python">fin</code>: Es el índice donde termina el rebanado
                         (exclusivo). Si no se especifica, se asume el final de
                         la cadena.
                       </li>
                       <li>
-                        <code>paso</code>: Es el número de pasos a saltar entre
+                        <code class="language-python">paso</code>: Es el número de pasos a saltar entre
                         caracteres. Si no se especifica, se asume 1.
                       </li>
                     </ul>
@@ -411,7 +411,7 @@
                 <ul>
                   <li>
                     <span class="fw-bold">Concatenación</span>: Unir cadenas
-                    usando el operador <code>+</code> o <code>join()</code>.
+                    usando el operador <code class="language-python">+</code> o <code class="language-python">join()</code>.
                     <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     cadena1 = "Hola"
@@ -423,7 +423,7 @@
                   </li>
                   <li>
                     <span class="fw-bold">Repetición</span>: Repetir una cadena
-                    usando el operador <code>*</code>.
+                    usando el operador <code class="language-python">*</code>.
                     <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     cadena = "Python"
@@ -444,7 +444,7 @@
                   </li>
                   <li>
                     <span class="fw-bold">Longitud</span>: Obtener la cantidad
-                    de caracteres con <code>len()</code>.
+                    de caracteres con <code class="language-python">len()</code>.
                     <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     cadena = "Python"
@@ -459,53 +459,53 @@
                     <ul>
                       <li>
                         <span class="fw-bold"
-                          ><code>find(sub[, start[, end]])</code></span
+                          ><code class="language-python">find(sub[, start[, end]])</code></span
                         >: Devuelve el índice de la primera aparición de
-                        <code>sub</code>. Si no lo encuentra, devuelve
-                        <code>-1</code>.
+                        <code class="language-python">sub</code>. Si no lo encuentra, devuelve
+                        <code class="language-python">-1</code>.
                       </li>
                       <li>
                         <span class="fw-bold"
-                          ><code>index(sub[, start[, end]])</code></span
-                        >: Similar a <code>find()</code>, pero genera una
+                          ><code class="language-python">index(sub[, start[, end]])</code></span
+                        >: Similar a <code class="language-python">find()</code>, pero genera una
                         excepción
-                        <code>ValueError</code>
+                        <code class="language-python">ValueError</code>
                         si no encuentra la subcadena.
                       </li>
                       <li>
                         <span class="fw-bold"
-                          ><code>count(sub[, start[, end]])</code></span
+                          ><code class="language-python">count(sub[, start[, end]])</code></span
                         >: Devuelve el número de veces que
-                        <code>sub</code> aparece en la cadena.
+                        <code class="language-python">sub</code> aparece en la cadena.
                       </li>
                       <li>
                         <span class="fw-bold"
-                          ><code>startswith(prefix[, start[, end]])</code></span
+                          ><code class="language-python">startswith(prefix[, start[, end]])</code></span
                         >: Verifica si la cadena comienza con
-                        <code>prefix</code>.
+                        <code class="language-python">prefix</code>.
                       </li>
                       <li>
                         <span class="fw-bold"
-                          ><code>endswith(suffix[, start[, end]])</code></span
+                          ><code class="language-python">endswith(suffix[, start[, end]])</code></span
                         >: Verifica si la cadena termina con
-                        <code>suffix</code>.
+                        <code class="language-python">suffix</code>.
                       </li>
                       <li>
-                        <span class="fw-bold"><code>sub in cadena</code></span
+                        <span class="fw-bold"><code class="language-python">sub in cadena</code></span
                         >: Verifica si sub esta en cadena.
                       </li>
                       <li>
                         <span class="fw-bold"
-                          ><code>min(sub,[key=len])</code></span
+                          ><code class="language-python">min(sub,[key=len])</code></span
                         >: Retorna el carácter "menor" (según el valor ASCII) o
                         la cadena "menor" según el orden lexicográfico (orden
                         alfabético), opcionalmente permite definir un criterio
                         de comparación, p. e. la longitud del texto, Si se
                         aplica a una cadena vacía o una colección vacía, se
-                        generará un error (<code>ValueError</code> ).
+                        generará un error (<code class="language-python">ValueError</code> ).
                       </li>
                       <li>
-                        <span class="fw-bold"><code>sub in cadena</code></span
+                        <span class="fw-bold"><code class="language-python">sub in cadena</code></span
                         >: Verifica si sub esta en cadena.
                       </li>
                     </ul>
@@ -534,27 +534,27 @@
                     >:
                     <ul>
                       <li>
-                        <span class="fw-bold"><code>capitalize()</code></span
+                        <span class="fw-bold"><code class="language-python">capitalize()</code></span
                         >: Convierte el primer carácter de la cadena a
                         mayúscula.
                       </li>
                       <li>
-                        <span class="fw-bold"><code>lower()</code></span
+                        <span class="fw-bold"><code class="language-python">lower()</code></span
                         >: Convierte todos los caracteres de la cadena a
                         minúscula.
                       </li>
                       <li>
-                        <span class="fw-bold"><code>upper()</code></span
+                        <span class="fw-bold"><code class="language-python">upper()</code></span
                         >: Convierte todos los caracteres de la cadena a
                         mayúscula.
                       </li>
                       <li>
-                        <span class="fw-bold"><code>title()</code></span
+                        <span class="fw-bold"><code class="language-python">title()</code></span
                         >: Convierte el primer carácter de cada palabra a
                         mayúscula.
                       </li>
                       <li>
-                        <span class="fw-bold"><code>swapcase()</code></span
+                        <span class="fw-bold"><code class="language-python">swapcase()</code></span
                         >: Invierte las mayúsculas y minúsculas de todos los
                         caracteres.
                       </li>
@@ -575,28 +575,28 @@
                     <ul>
                       <li>
                         <span class="fw-bold"
-                          ><code>replace(old, new[, count])</code></span
+                          ><code class="language-python">replace(old, new[, count])</code></span
                         >: Reemplaza todas las apariciones de
-                        <code>old</code> por <code>new</code>. Opcionalmente, se
+                        <code class="language-python">old</code> por <code class="language-python">new</code>. Opcionalmente, se
                         puede limitar el número de reemplazos con
-                        <code>count</code>.
+                        <code class="language-python">count</code>.
                       </li>
                       <li>
-                        <span class="fw-bold"><code>strip([chars])</code></span
+                        <span class="fw-bold"><code class="language-python">strip([chars])</code></span
                         >: Elimina caracteres de espacio en blanco al principio
                         y al final de la cadena (o los caracteres especificados
-                        en <code>chars</code>).
+                        en <code class="language-python">chars</code>).
                       </li>
                       <li>
-                        <span class="fw-bold"><code>lstrip([chars])</code></span
+                        <span class="fw-bold"><code class="language-python">lstrip([chars])</code></span
                         >: Elimina los caracteres al inicio de la cadena.
                       </li>
                       <li>
-                        <span class="fw-bold"><code>rstrip([chars])</code></span
+                        <span class="fw-bold"><code class="language-python">rstrip([chars])</code></span
                         >: Elimina los caracteres al final de la cadena.
                       </li>
                       <li>
-                        <span class="fw-bold"><code>zfill(width)</code></span
+                        <span class="fw-bold"><code class="language-python">zfill(width)</code></span
                         >: Rellena la cadena con ceros a la izquierda hasta
                         alcanzar el ancho especificado.
                       </li>
@@ -619,33 +619,33 @@
                     <ul>
                       <li>
                         <span class="fw-bold"
-                          ><code>split(sep=None, maxsplit=-1)</code></span
+                          ><code class="language-python">split(sep=None, maxsplit=-1)</code></span
                         >: Divide la cadena en una lista según un separador.
                       </li>
                       <li>
                         <span class="fw-bold"
-                          ><code>rsplit(sep=None, maxsplit=-1)</code></span
-                        >: Similar a <code>split()</code>, pero divide desde el
+                          ><code class="language-python">rsplit(sep=None, maxsplit=-1)</code></span
+                        >: Similar a <code class="language-python">split()</code>, pero divide desde el
                         final.
                       </li>
                       <li>
                         <span class="fw-bold"
-                          ><code>splitlines([keepends])</code></span
+                          ><code class="language-python">splitlines([keepends])</code></span
                         >: Divide la cadena en líneas.
                       </li>
                       <li>
-                        <span class="fw-bold"><code>join(iterable)</code></span
+                        <span class="fw-bold"><code class="language-python">join(iterable)</code></span
                         >: Une una lista de cadenas usando el carácter de la
                         cadena original como separador.
                       </li>
                       <li>
-                        <span class="fw-bold"><code>partition(sep)</code></span
+                        <span class="fw-bold"><code class="language-python">partition(sep)</code></span
                         >: Divide la cadena en tres partes: antes, el separador,
                         y después.
                       </li>
                       <li>
-                        <span class="fw-bold"><code>rpartition(sep)</code></span
-                        >: Similar a <code>partition()</code>, pero busca desde
+                        <span class="fw-bold"><code class="language-python">rpartition(sep)</code></span
+                        >: Similar a <code class="language-python">partition()</code>, pero busca desde
                         el final.
                       </li>
                     </ul>
@@ -663,7 +663,7 @@
                   <li>
                     <span class="fw-bold">Unir listas en una cadena</span>:
                     Combinar elementos de una lista en una sola cadena con
-                    <code>join()</code>.
+                    <code class="language-python">join()</code>.
                     <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
                     palabras = ["Python", "es", "genial"]
@@ -674,35 +674,35 @@
                   </li>
                   <li>
                     <span class="fw-bold">Métodos de verificación</span>:
-                    Devuelven <code>True</code> o <code>False</code> según la
+                    Devuelven <code class="language-python">True</code> o <code class="language-python">False</code> según la
                     naturaleza de la cadena:
                     <ul>
                       <li>
-                        <span class="fw-bold"><code>isalpha()</code></span
+                        <span class="fw-bold"><code class="language-python">isalpha()</code></span
                         >: Verifica si todos los caracteres son alfabéticos.
                       </li>
                       <li>
-                        <span class="fw-bold"><code>isdigit()</code></span
+                        <span class="fw-bold"><code class="language-python">isdigit()</code></span
                         >: Verifica si todos los caracteres son dígitos.
                       </li>
                       <li>
-                        <span class="fw-bold"><code>isalnum()</code></span
+                        <span class="fw-bold"><code class="language-python">isalnum()</code></span
                         >: Verifica si todos los caracteres son alfanuméricos.
                       </li>
                       <li>
-                        <span class="fw-bold"><code>isspace()</code></span
+                        <span class="fw-bold"><code class="language-python">isspace()</code></span
                         >: Verifica si la cadena contiene solo espacios.
                       </li>
                       <li>
-                        <span class="fw-bold"><code>islower()</code></span
+                        <span class="fw-bold"><code class="language-python">islower()</code></span
                         >: Verifica si todos los caracteres están en minúscula.
                       </li>
                       <li>
-                        <span class="fw-bold"><code>isupper()</code></span
+                        <span class="fw-bold"><code class="language-python">isupper()</code></span
                         >: Verifica si todos los caracteres están en mayúscula.
                       </li>
                       <li>
-                        <span class="fw-bold"><code>istitle()</code></span
+                        <span class="fw-bold"><code class="language-python">istitle()</code></span
                         >: Verifica si la cadena tiene formato de título.
                       </li>
                     </ul>
@@ -720,17 +720,17 @@
                   <ul>
                     <li>
                       <span class="fw-bold"
-                        ><code>center(width[, fillchar])</code></span
+                        ><code class="language-python">center(width[, fillchar])</code></span
                       >: Centra la cadena en un espacio de width.
                     </li>
                     <li>
                       <span class="fw-bold"
-                        ><code>ljust(width[, fillchar])</code></span
+                        ><code class="language-python">ljust(width[, fillchar])</code></span
                       >: Alinea la cadena a la izquierda.
                     </li>
                     <li>
                       <span class="fw-bold"
-                        ><code>rjust(width[, fillchar])</code></span
+                        ><code class="language-python">rjust(width[, fillchar])</code></span
                       >: Alinea la cadena a la derecha.
                     </li>
                   </ul>
@@ -751,7 +751,7 @@
                 <h2 class="mt-1">Uso de Caracteres Especiales</h2>
                 <p>
                   Cuando se necesitan incluir caracteres como comillas o saltos
-                  de línea, se usa la barra invertida (<code>\</code>):
+                  de línea, se usa la barra invertida (<code class="language-python">\</code>):
                 </p>
                 <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
@@ -773,7 +773,7 @@
                 <h2 class="mt-1">Representación de Cadenas Crudas</h2>
                 <p>
                   Para evitar que los caracteres de escape sean interpretados,
-                  se usa el prefijo <code>r</code>:
+                  se usa el prefijo <code class="language-python">r</code>:
                 </p>
                 <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
@@ -887,11 +887,11 @@
                   </code>
                 </pre>
                   <ul>
-                    <li><code>%s</code> para cadenas</li>
-                    <li><code>%d</code> para enteros</li>
+                    <li><code class="language-python">%s</code> para cadenas</li>
+                    <li><code class="language-python">%d</code> para enteros</li>
                     <li>
-                      <code>%f</code> para números de punto flotante (se puede
-                      especificar la precisión, por ejemplo, <code>%.2f</code>).
+                      <code class="language-python">%f</code> para números de punto flotante (se puede
+                      especificar la precisión, por ejemplo, <code class="language-python">%.2f</code>).
                     </li>
                   </ul>
                 </div>
@@ -902,7 +902,7 @@
                   <p>
                     Una alternativa más flexible que el operador %. Utiliza
                     llaves
-                    <code>{}</code> como marcadores de posición.
+                    <code class="language-python">{}</code> como marcadores de posición.
                   </p>
                   <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
@@ -925,7 +925,7 @@
                   <p>
                     Introducido en Python 3.6, es el método más moderno y
                     eficiente. Utiliza una f antes de la cadena e incrusta
-                    expresiones dentro de las llaves <code>{}</code>.
+                    expresiones dentro de las llaves <code class="language-python">{}</code>.
                   </p>
                   <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
@@ -967,8 +967,8 @@
                 <div>
                   <h3>Controlar la Precisión en Números</h3>
                   <p>
-                    Con los métodos <code>str.format</code> o
-                    <code>f-strings</code>, se puede especificar el formato de
+                    Con los métodos <code class="language-python">str.format</code> o
+                    <code class="language-python">f-strings</code>, se puede especificar el formato de
                     los números.
                   </p>
                   <pre data-src-status="loaded" tabindex="0">

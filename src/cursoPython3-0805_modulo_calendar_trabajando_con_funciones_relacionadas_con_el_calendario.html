@@ -97,7 +97,7 @@
 
   <body>
     <!-- Barra deNavegación -->
-<nav
+    <nav
       class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
     >
       <div class="container-fluid">
@@ -150,7 +150,9 @@
               <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog"
+              <a
+                class="nav-link mx-1 publicaciones-activo"
+                href="index.html#blog"
                 >PUBLICACIONES</a
               >
             </li>
@@ -166,8 +168,8 @@
     <!-- -------------------------------- principal -------------------------------- -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
-        <section class="pb-3 pt-5 col-lg-9">
-          <!--  El módulo <code>calendar</code>, trabajando con funciones relacionadas con el calendario en Python  -->
+        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
+          <!--  El módulo <code class="language-python">calendar</code>, trabajando con funciones relacionadas con el calendario en Python  -->
           <article
             class="row border-1 border-bottom pb-3"
             data-bs-spy="scroll"
@@ -185,26 +187,28 @@
               <div class="mt-5">
                 <h2>Introducción</h2>
                 <p>
-                  El módulo <code>calendar</code> en Python es una herramienta
-                  poderosa que permite trabajar con calendarios de manera
-                  sencilla y eficiente. Este módulo proporciona funciones para
-                  manipular fechas, generar calendarios en diferentes formatos y
-                  realizar cálculos relacionados con el tiempo. En este
-                  documento, exploraremos las principales características y
-                  funciones del módulo <code>calendar</code>, así como ejemplos
-                  prácticos de su uso.
+                  El módulo <code class="language-python">calendar</code> en
+                  Python es una herramienta poderosa que permite trabajar con
+                  calendarios de manera sencilla y eficiente. Este módulo
+                  proporciona funciones para manipular fechas, generar
+                  calendarios en diferentes formatos y realizar cálculos
+                  relacionados con el tiempo. En este documento, exploraremos
+                  las principales características y funciones del módulo
+                  <code class="language-python">calendar</code>, así como
+                  ejemplos prácticos de su uso.
                 </p>
-                <div class="text-center imagen">
+                <div class="centrar-imagen imagen50">
                   <figure>
                     <img
                       src="https://i.ibb.co/pyRL4b6/modulocalendar.jpg"
-                      class="img-fluid rounded-4"
+                      class="img-fluid"
                       alt="El módulo calendar, trabajando con funciones relacionadas con el calendario en Python  "
                       title="Explorando el Módulo de Calendario de Python"
                     />
                     <figcaption>
-                      El módulo <code>calendar</code>, trabajando con funciones
-                      relacionadas con el calendario en Python
+                      El módulo <code class="language-python">calendar</code>,
+                      trabajando con funciones relacionadas con el calendario en
+                      Python
                     </figcaption>
                   </figure>
                 </div>
@@ -227,7 +231,9 @@
                 <ul>
                   <li>
                     <span class="fw-bold"
-                      ><code>calendar.month(year, month)</code></span
+                      ><code class="language-python"
+                        >calendar.month(year, month)</code
+                      ></span
                     >: Esta función devuelve el calendario de un mes específico
                     en formato de texto.
                     <pre data-src-status="loaded" tabindex="0">
@@ -248,7 +254,9 @@
                   </li>
                   <li>
                     <span class="fw-bold"
-                      ><code>calendar.calendar(year)</code></span
+                      ><code class="language-python"
+                        >calendar.calendar(year)</code
+                      ></span
                     >: Devuelve el calendario completo del año en formato de
                     texto.
                     <pre data-src-status="loaded" tabindex="0">
@@ -261,7 +269,9 @@
                   </li>
                   <li>
                     <span class="fw-bold"
-                      ><code>calendar.setfirstweekday(weekday)</code></span
+                      ><code class="language-python"
+                        >calendar.setfirstweekday(weekday)</code
+                      ></span
                     >: Esta función cambia el primer día de la semana. El valor
                     predeterminado es 0 (lunes), pero se puede establecer otro
                     valor (por ejemplo, 6 para domingo).
@@ -294,7 +304,9 @@
                   </li>
                   <li>
                     <span class="fw-bold"
-                      ><code>calendar.weekheader(n)</code></span
+                      ><code class="language-python"
+                        >calendar.weekheader(n)</code
+                      ></span
                     >:Este método es útil cuando se necesita un encabezado
                     compacto para los días en un calendario.
                     <pre data-src-status="loaded" tabindex="0">
@@ -320,7 +332,10 @@
                 <h2 class="mt-1">Funciones de Días de la Semana</h2>
                 <ul>
                   <li>
-                    <span class="fw-bold"><code>calendar.month_name</code></span
+                    <span class="fw-bold"
+                      ><code class="language-python"
+                        >calendar.month_name</code
+                      ></span
                     >: Devuelve el nombre de un mes dado su número. Es útil para
                     mostrar nombres de meses en lugar de solo los números.
                     <pre data-src-status="loaded" tabindex="0">
@@ -333,7 +348,9 @@
                   </li>
                   <li>
                     <span class="fw-bold"
-                      ><code>calendar.weekday(year, month, day)</code></span
+                      ><code class="language-python"
+                        >calendar.weekday(year, month, day)</code
+                      ></span
                     >: Devuelve el día de la semana para una fecha específica (0
                     = lunes, 1 = martes, ..., 6 = domingo).
                     <pre data-src-status="loaded" tabindex="0">
@@ -345,7 +362,10 @@
                   </pre>
                   </li>
                   <li>
-                    <span class="fw-bold"><code>calendar.day_name</code></span
+                    <span class="fw-bold"
+                      ><code class="language-python"
+                        >calendar.day_name</code
+                      ></span
                     >: Lista con los nombres completos de los días de la semana,
                     donde el índice 0 es "Lunes" y el índice 6 es "Domingo".
                     <pre data-src-status="loaded" tabindex="0">
@@ -376,9 +396,12 @@
                 <ul>
                   <li>
                     <span class="fw-bold"
-                      ><code>calendar.isleap(year)</code></span
-                    >: Devuelve <code>True</code> si el año es bisiesto, de lo
-                    contrario, devuelve <code>False</code>.
+                      ><code class="language-python"
+                        >calendar.isleap(year)</code
+                      ></span
+                    >: Devuelve <code class="language-python">True</code> si el
+                    año es bisiesto, de lo contrario, devuelve
+                    <code class="language-python">False</code>.
                     <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import calendar
@@ -389,7 +412,9 @@
                   </li>
                   <li>
                     <span class="fw-bold"
-                      ><code>calendar.leapdays(year1, year2)</code></span
+                      ><code class="language-python"
+                        >calendar.leapdays(year1, year2)</code
+                      ></span
                     >: Devuelve el número de años bisiestos entre dos años
                     (excluyendo el año final).
                     <pre data-src-status="loaded" tabindex="0">
@@ -412,7 +437,9 @@
                 <ul>
                   <li>
                     <span class="fw-bold"
-                      ><code>calendar.firstweekday()</code></span
+                      ><code class="language-python"
+                        >calendar.firstweekday()</code
+                      ></span
                     >: Devuelve el primer día de la semana actual (en formato
                     numérico).
                     <pre data-src-status="loaded" tabindex="0">
@@ -424,7 +451,9 @@
                   </li>
                   <li>
                     <span class="fw-bold"
-                      ><code>calendar.setfirstweekday(weekday)</code></span
+                      ><code class="language-python"
+                        >calendar.setfirstweekday(weekday)</code
+                      ></span
                     >: Esta función cambia el primer día de la semana. El valor
                     predeterminado es 0 (lunes), pero se puede establecer otro
                     valor (por ejemplo, 6 para domingo).
@@ -440,7 +469,9 @@
                 <ul>
                   <li>
                     <span class="fw-bold"
-                      ><code>calendar.monthcalendar(year, month)</code></span
+                      ><code class="language-python"
+                        >calendar.monthcalendar(year, month)</code
+                      ></span
                     >: Devuelve una lista de semanas (cada una representada como
                     una lista de 7 días). Si un día no está en el mes, se
                     representa como 0.
@@ -462,7 +493,9 @@
                   </li>
                   <li>
                     <span class="fw-bold"
-                      ><code>calendar.prmonth(year, month)</code></span
+                      ><code class="language-python"
+                        >calendar.prmonth(year, month)</code
+                      ></span
                     >: Imprime el calendario de un mes específico en formato
                     tabular.
                     <pre data-src-status="loaded" tabindex="0">
@@ -474,7 +507,9 @@
                   </li>
                   <li>
                     <span class="fw-bold"
-                      ><code>calendar.prcal(year)</code></span
+                      ><code class="language-python"
+                        >calendar.prcal(year)</code
+                      ></span
                     >: Imprime el calendario completo de un año en formato
                     tabular.
                     <pre data-src-status="loaded" tabindex="0">
@@ -490,7 +525,7 @@
             </div>
           </article>
 
-          <!--  El módulo <code>calendar</code>, trabajando con funciones relacionadas con el calendario en Python  -->
+          <!--  El módulo <code class="language-python">calendar</code>, trabajando con funciones relacionadas con el calendario en Python  -->
           <!-- -------------------------------- comentarios -------------------------------- -->
           <article class="row pt-5" id="comments">
             <h2>COMENTARIOS</h2>

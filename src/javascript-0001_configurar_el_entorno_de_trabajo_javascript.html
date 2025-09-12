@@ -97,7 +97,7 @@
 
   <body>
     <!-- Barra deNavegación -->
-<nav
+    <nav
       class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
     >
       <div class="container-fluid">
@@ -150,7 +150,9 @@
               <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog"
+              <a
+                class="nav-link mx-1 publicaciones-activo"
+                href="index.html#blog"
                 >PUBLICACIONES</a
               >
             </li>
@@ -166,7 +168,7 @@
     <!-- -------------------------------- principal -------------------------------- -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
-        <section class="pb-3 pt-5 col-lg-9">
+        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
           <!-- Configurar el Entorno de trabajo para Javascript -->
           <article
             class="row border-1 border-bottom"
@@ -605,11 +607,14 @@
                         <ul>
                           <li>
                             <strong>dotenv</strong>: para gestionar variables de
-                            entorno (<code>npm install dotenv</code>)
+                            entorno (<code class="language-bash"
+                              >npm install dotenv</code
+                            >)
                           </li>
                           <li>
                             <strong>nodemon</strong>: para recargar
                             automáticamente el servidor en desarrollo (<code
+                              class="language-bash"
                               >npm install --save-dev nodemon</code
                             >
                             )

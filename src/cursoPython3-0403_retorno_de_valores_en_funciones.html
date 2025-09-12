@@ -167,7 +167,7 @@
     <!-- -------------------------------- principal -------------------------------- -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
-        <section class="pb-3 pt-5 col-lg-9">
+        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
           <!--  Retorno de Valores en Funciones Python  -->
           <article
             class="row border-1 border-bottom pb-3"
@@ -191,11 +191,11 @@
                   aprenderá a definir funciones, usar la declaración return y
                   manejar los resultados devueltos.
                 </p>
-                <div class="text-center imagen">
+                <div class="centrar-imagen imagen50">
                   <figure>
                     <img
                       src="https://i.ibb.co/MBqwk1b/retornovalores.jpg"
-                      class="img-fluid rounded-4"
+                      class="img-fluid"
                       alt="Retorno de Valores en Funciones Python"
                       title="Diagrama de árbol que ilustra la ejecución de una función en Python, mostrando su comportamiento con y sin valor de retorno"
                     />
@@ -319,28 +319,28 @@
                 </pre>
                   <ul>
                     <li>
-                      Se define una función llamada <code>suma</code> que toma
-                      dos parámetros, <code>a</code> y <code>b</code>.
+                      Se define una función llamada <code class="language-python">suma</code> que toma
+                      dos parámetros, <code class="language-python">a</code> y <code class="language-python">b</code>.
                     </li>
                     <li>
                       Dentro de la función, se calcula la suma de
-                      <code>a</code> y <code>b</code> y se almacena en la
-                      variable <code>resultado</code>.
+                      <code class="language-python">a</code> y <code class="language-python">b</code> y se almacena en la
+                      variable <code class="language-python">resultado</code>.
                     </li>
                     <li>
-                      Se usa la instrucción <code>return</code> para devolver el
-                      valor de <code>resultado</code> al punto donde se llamó la
+                      Se usa la instrucción <code class="language-python">return</code> para devolver el
+                      valor de <code class="language-python">resultado</code> al punto donde se llamó la
                       función.
                     </li>
                     <li>
                       En la línea principal del código, se llama a la función
-                      <code>suma</code> con los argumentos <code>5</code> y
-                      <code>3</code>, y se asigna el valor devuelto a la
-                      variable <code>total</code>.
+                      <code class="language-python">suma</code> con los argumentos <code class="language-python">5</code> y
+                      <code class="language-python">3</code>, y se asigna el valor devuelto a la
+                      variable <code class="language-python">total</code>.
                     </li>
                     <li>
-                      Finalmente, se imprime el valor de <code>total</code>, que
-                      es <code>8</code>.
+                      Finalmente, se imprime el valor de <code class="language-python">total</code>, que
+                      es <code class="language-python">8</code>.
                     </li>
                   </ul>
                 </div>
@@ -351,7 +351,7 @@
                   <ul>
                     <li>
                       <span class="fw-bold">Detener la ejecución</span>: Una vez
-                      que se encuentra la instrucción <code>return</code>, la
+                      que se encuentra la instrucción <code class="language-python">return</code>, la
                       ejecución de la función se detiene inmediatamente, incluso
                       si hay más código después de ella.
                     </li>
@@ -425,11 +425,11 @@
               <div id="palabraReservadaNone" class="mt-5">
                 <h2 class="mt-1">Palabra Reservada None</h2>
                 <p>
-                  La palabra reservada <code>None</code> en Python es un
+                  La palabra reservada <code class="language-python">None</code> en Python es un
                   concepto fundamental que todo programador debe entender.
-                  <code>None</code> es un objeto singular en Python que
+                  <code class="language-python">None</code> es un objeto singular en Python que
                   representa la ausencia de valor o un valor nulo. Es similar al
-                  concepto de <code>null</code> en otros lenguajes de
+                  concepto de <code class="language-python">null</code> en otros lenguajes de
                   programación como Java o C++.
                 </p>
                 <!-- Características de None -->
@@ -438,18 +438,18 @@
                   <ul>
                     <li>
                       <span class="fw-bold">Tipo de Dato</span>:
-                      <code>None</code> es un objeto de tipo
-                      <code>NoneType</code>. Esto significa que es una instancia
+                      <code class="language-python">None</code> es un objeto de tipo
+                      <code class="language-python">NoneType</code>. Esto significa que es una instancia
                       única de su propia clase.
                     </li>
                     <li>
                       <span class="fw-bold">Singularidad</span>: En Python, None
                       es un objeto singular. Esto significa que cualquier
-                      variable que se asigne a<code>None</code>apuntará al mismo
+                      variable que se asigne a<code class="language-python">None</code>apuntará al mismo
                       objeto en memoria.
                     </li>
                     <li>
-                      <span class="fw-bold">Uso Común</span>:<code>None</code>se
+                      <span class="fw-bold">Uso Común</span>:<code class="language-python">None</code>se
                       utiliza comúnmente para indicar que una variable no tiene
                       un valor asignado o que una función no devuelve ningún
                       valor.
@@ -465,7 +465,7 @@
                     <h3>Valores de Retorno</h3>
                     <p>
                       Las funciones en Python que no devuelven explícitamente un
-                      valor devuelven <code>None</code> por defecto.
+                      valor devuelven <code class="language-python">None</code> por defecto.
                     </p>
                     <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
@@ -482,7 +482,7 @@
                     <h3>Asignación de Variables</h3>
                     <p>
                       Cuando se inicializa una variable sin un valor específico,
-                      se puede asignar<code>None</code>para indicar que la
+                      se puede asignar<code class="language-python">None</code>para indicar que la
                       variable no tiene un valor significativo.
                     </p>
                     <pre data-src-status="loaded" tabindex="0">
@@ -497,7 +497,7 @@
                   <div>
                     <h3>Comparaciones</h3>
                     <p>
-                      <code>None</code>se puede comparar con otros valores
+                      <code class="language-python">None</code>se puede comparar con otros valores
                       usando operadores de comparación.
                     </p>
                     <pre data-src-status="loaded" tabindex="0">

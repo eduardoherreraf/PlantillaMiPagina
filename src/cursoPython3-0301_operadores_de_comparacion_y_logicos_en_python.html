@@ -97,7 +97,7 @@
 
   <body>
     <!-- Barra deNavegación -->
-<nav
+    <nav
       class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
     >
       <div class="container-fluid">
@@ -150,7 +150,9 @@
               <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog"
+              <a
+                class="nav-link mx-1 publicaciones-activo"
+                href="index.html#blog"
                 >PUBLICACIONES</a
               >
             </li>
@@ -166,7 +168,7 @@
     <!-- -------------------------------- principal -------------------------------- -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
-        <section class="pb-3 pt-5 col-lg-9">
+        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
           <!--  Operadores de Comparación y Lógicos en Python -->
           <article
             class="row border-1 border-bottom pb-3"
@@ -186,22 +188,24 @@
                   lógicos en Python, elementos fundamentales para realizar
                   evaluaciones y tomar decisiones en los programas. Los
                   operadores de comparación permiten comparar valores y devolver
-                  un resultado booleano (<code>True</code> o
-                  <code>False</code>), mientras que los operadores lógicos (and,
-                  or, not) permiten combinar o modificar estas condiciones
-                  booleanas. Ambos tipos de operadores son esenciales en
-                  estructuras de control como las condicionales y los bucles. A
-                  lo largo del documento, se analizará cada operador en detalle,
-                  incluyendo su sintaxis y ejemplos prácticos de uso,
-                  demostrando cómo se pueden utilizar tanto de manera individual
-                  como combinada para crear condiciones más complejas y
-                  precisas.
+                  un resultado booleano (<code class="language-python"
+                    >True</code
+                  >
+                  o <code class="language-python">False</code>), mientras que
+                  los operadores lógicos (and, or, not) permiten combinar o
+                  modificar estas condiciones booleanas. Ambos tipos de
+                  operadores son esenciales en estructuras de control como las
+                  condicionales y los bucles. A lo largo del documento, se
+                  analizará cada operador en detalle, incluyendo su sintaxis y
+                  ejemplos prácticos de uso, demostrando cómo se pueden utilizar
+                  tanto de manera individual como combinada para crear
+                  condiciones más complejas y precisas.
                 </p>
-                <div class="text-center imagen">
+                <div class="centrar-imagen imagen50">
                   <figure>
                     <img
                       src="https://i.ibb.co/smDQ3Dw/comparadorescomparacionylogicos.jpg"
-                      class="img-fluid rounded-4"
+                      class="img-fluid"
                       alt="Operadores de Comparación y de Lógica en Python"
                       title="En este artículo explicará los seis operadores de comparación y los tres operadores de Lógica que tiene Python"
                     />
@@ -234,8 +238,10 @@
                     <h4>Igualdad (==)</h4>
                     <p>
                       Este operador compara si dos valores son iguales. Devuelve
-                      <code>True</code> si ambos valores son idénticos y
-                      <code>False</code> en caso contrario.
+                      <code class="language-python">True</code> si ambos valores
+                      son idénticos y
+                      <code class="language-python">False</code> en caso
+                      contrario.
                     </p>
                     <pre
                       data-src-status="loaded"
@@ -252,8 +258,9 @@
                     <h4>Desigualdad (!=)</h4>
                     <p>
                       Se utiliza para verificar si dos valores son diferentes.
-                      Retorna <code>True</code> si los valores no son iguales y
-                      <code>False</code> si lo son.
+                      Retorna <code class="language-python">True</code> si los
+                      valores no son iguales y
+                      <code class="language-python">False</code> si lo son.
                     </p>
                     <pre
                       data-src-status="loaded"
@@ -303,7 +310,8 @@
                   <div id="MayorOIgualQues">
                     <h4>Mayor o igual que (>=)</h4>
                     <p>
-                      Este operador devuelve <code>True</code> si el valor a la
+                      Este operador devuelve
+                      <code class="language-python">True</code> si el valor a la
                       izquierda es mayor o igual al valor a la derecha.
                     </p>
                     <pre
@@ -359,13 +367,13 @@
                   <ul>
                     <li>
                       <span class="fw-bold"><code>and</code></span
-                      >: Devuelve <code>True</code> si ambas condiciones son
-                      verdaderas.
+                      >: Devuelve <code class="language-python">True</code> si
+                      ambas condiciones son verdaderas.
                     </li>
                     <li>
                       <span class="fw-bold"><code>or</code></span
-                      >: Devuelve <code>True</code> si al menos una de las
-                      condiciones es verdadera.
+                      >: Devuelve <code class="language-python">True</code> si
+                      al menos una de las condiciones es verdadera.
                     </li>
                     <li>
                       <span class="fw-bold"><code>not</code></span
@@ -402,9 +410,12 @@
                   operadores. La prioridad es importante para evitar resultados
                   inesperados en expresiones complejas. En general, los
                   operadores de comparación tienen una prioridad menor que los
-                  operadores aritméticos y los operadores lógicos
-                  (<code>and</code>, <code>or</code>, <code>not</code>), pero
-                  mayor que los operadores de asignación.
+                  operadores aritméticos y los operadores lógicos (<code
+                    class="language-python"
+                    >and</code
+                  >, <code class="language-python">or</code>,
+                  <code class="language-python">not</code>), pero mayor que los
+                  operadores de asignación.
                 </p>
                 <p>
                   Los operadores de comparación en Python tienen la misma

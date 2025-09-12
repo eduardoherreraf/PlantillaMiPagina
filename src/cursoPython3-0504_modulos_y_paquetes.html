@@ -94,7 +94,7 @@
 
   <body>
     <!-- Barra deNavegación -->
-<nav
+    <nav
       class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
     >
       <div class="container-fluid">
@@ -147,7 +147,9 @@
               <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog"
+              <a
+                class="nav-link mx-1 publicaciones-activo"
+                href="index.html#blog"
                 >PUBLICACIONES</a
               >
             </li>
@@ -163,7 +165,7 @@
     <!-- -------------------------------- principal -------------------------------- -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
-        <section class="pb-3 pt-5 col-lg-9">
+        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
           <!--  Módulos y Paquetes de Python  -->
           <article
             class="row border-1 border-bottom pb-3"
@@ -186,11 +188,11 @@
                   módulos y paquetes, así como su creación y uso en proyectos de
                   programación.
                 </p>
-                <div class="text-center imagen">
+                <div class="centrar-imagen imagen50">
                   <figure>
                     <img
                       src="https://i.ibb.co/k5nTj1r/paquetesmodulos.jpg"
-                      class="img-fluid rounded-4"
+                      class="img-fluid"
                       alt="Módulos y Paquetes de Python  "
                       title="Módulo vs Paquete"
                     />
@@ -208,8 +210,9 @@
                   <p>
                     Un paquete es una colección de módulos organizados dentro de
                     un directorio. Este directorio debe incluir un archivo
-                    especial llamado <code>__init__.py</code>, que indica a
-                    Python que el directorio es un paquete, Si no se necesita
+                    especial llamado
+                    <code class="language-python">__init__.py</code>, que indica
+                    a Python que el directorio es un paquete, Si no se necesita
                     lógica específica, el archivo puede estar vacío. Esto es
                     suficiente para que Python trate al directorio como un
                     paquete. pero es buena práctica incluir un docstring que
@@ -261,7 +264,8 @@
                     </li>
                     <li>
                       <span class="fw-bold"
-                        >Uso del archivo <code>__init__.py</code></span
+                        >Uso del archivo
+                        <code class="language-python">__init__.py</code></span
                       >:
                       <ul>
                         <li>
@@ -270,11 +274,11 @@
                         <li>
                           Simplificar importaciones exportando funciones clave
                           en
-                          <code>__init__.py</code>.
+                          <code class="language-python">__init__.py</code>.
                         </li>
                         <li>
                           Controlar lo que se expone con la variable
-                          <code>__all__</code>.
+                          <code class="language-python">__all__</code>.
                         </li>
                       </ul>
                     </li>
@@ -299,7 +303,8 @@
                           claros.
                         </li>
                         <li>
-                          Incluir un archivo <code>README.md</code>. que
+                          Incluir un archivo
+                          <code class="language-python">README.md</code>. que
                           explique el propósito del paquete y cómo usarlo.
                         </li>
                       </ul>
@@ -309,7 +314,8 @@
                       <ul>
                         <li>
                           Agregar pruebas unitarias para cada módulo y usar
-                          herramientas como <code>pytest</code>.
+                          herramientas como
+                          <code class="language-python">pytest</code>.
                         </li>
                         <li>
                           Mantener las pruebas en un directorio separado dentro
@@ -321,8 +327,9 @@
                       <span class="fw-bold">Distribución</span>:
                       <ul>
                         <li>
-                          Preparar un archivo <code>setup.py</code> para definir
-                          cómo se instala el paquete.
+                          Preparar un archivo
+                          <code class="language-python">setup.py</code> para
+                          definir cómo se instala el paquete.
                         </li>
                         <li>
                           Documentar las dependencias y asegurarse de que el
@@ -338,9 +345,10 @@
                           y legible.
                         </li>
                         <li>
-                          Usar herramientas como <code>flake8</code> o
-                          <code>black</code> para mantener la calidad del
-                          código.
+                          Usar herramientas como
+                          <code class="language-python">flake8</code> o
+                          <code class="language-python">black</code> para
+                          mantener la calidad del código.
                         </li>
                         <li>
                           Comentar adecuadamente partes complejas del código.
@@ -360,9 +368,10 @@
                   <h3>Módulo</h3>
                   <p>
                     Un módulo es simplemente un archivo con extensión
-                    <code>.py</code> que contiene código Python, como funciones,
-                    variables o clases. Los módulos ayudan a dividir el código
-                    en partes reutilizables y organizadas.
+                    <code class="language-python">.py</code> que contiene código
+                    Python, como funciones, variables o clases. Los módulos
+                    ayudan a dividir el código en partes reutilizables y
+                    organizadas.
                   </p>
                 </div>
                 <!-- Módulo fin -->
@@ -371,7 +380,8 @@
                   <h3>Manejo de Módulos</h3>
                   <ul>
                     <li>
-                      <span class="fw-bold"><code>module.py</code></span
+                      <span class="fw-bold"
+                        ><code class="language-python">module.py</code></span
                       >: Archivo que contiene el código del módulo.
                       <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
@@ -380,10 +390,11 @@
                     </pre>
                     </li>
                     <li>
-                      <span class="fw-bold"><code>main.py</code></span
+                      <span class="fw-bold"
+                        ><code class="language-python">main.py</code></span
                       >: En este archivo se importa el módulo
-                      <code>module.py</code>, ambos archivos deben estar en la
-                      misma carpeta.
+                      <code class="language-python">module.py</code>, ambos
+                      archivos deben estar en la misma carpeta.
                       <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         import module
@@ -391,27 +402,40 @@
                     </pre>
                     </li>
                     <li>
-                      <span class="fw-bold">Ejecutar <code>main.py</code></span
+                      <span class="fw-bold"
+                        >Ejecutar
+                        <code class="language-python">main.py</code></span
                       >: se debe ver el mensaje "Me gusta ser un módulo".
                     </li>
                     <li>
                       <span class="fw-bold"
-                        >Carpeta <code>__pycache__</code></span
-                      >: Al ejecutar el archivo <code>main.py</code> se crea una
-                      carpeta con el nombre <code>__pycache__</code>, el cual
-                      contiene el archivo <code>module.cpython-xy.pyc</code>:
+                        >Carpeta
+                        <code class="language-python">__pycache__</code></span
+                      >: Al ejecutar el archivo
+                      <code class="language-python">main.py</code> se crea una
+                      carpeta con el nombre
+                      <code class="language-python">__pycache__</code>, el cual
+                      contiene el archivo
+                      <code class="language-python">module.cpython-xy.pyc</code
+                      >:
                     </li>
                     <li>
                       <span class="fw-bold"
-                        >Archivo <code>module.cpython-xy.pyc</code></span
+                        >Archivo
+                        <code class="language-python"
+                          >module.cpython-xy.pyc</code
+                        ></span
                       >:
                       <ul>
                         <li>
                           El archivo se puede llamar (más o menos)
-                          <code>module.cpython-xy.pyc</code> donde
-                          <code>x</code> y <code>y</code> son dígitos derivados
-                          de la versión de Python (por ejemplo, serán 3 y 8 si s
-                          utiliza Python 3.8).
+                          <code class="language-python"
+                            >module.cpython-xy.pyc</code
+                          >
+                          donde <code class="language-python">x</code> y
+                          <code class="language-python">y</code> son dígitos
+                          derivados de la versión de Python (por ejemplo, serán
+                          3 y 8 si s utiliza Python 3.8).
                         </li>
                         <li>
                           El nombre del archivo es el mismo que el del módulo.
@@ -449,7 +473,8 @@
                     </li>
                     <li>
                       <span class="fw-bold"
-                        >Ejecutar <code>module.py</code></span
+                        >Ejecutar
+                        <code class="language-python">module.py</code></span
                       >: se debe ver el mensaje "Me gusta ser un módulo" otra
                       vez.
                     </li>
@@ -457,18 +482,21 @@
                       Como se puede ver no hay ninguna diferencia en el
                       resultado de la ejecución del código directamente desde el
                       módulo
-                      <code>module.py</code> o desde un script
-                      <code>main.py</code>, para poder diferenciar quien ejecutó
-                      el código se usa la variable <code>__name__</code>.
+                      <code class="language-python">module.py</code> o desde un
+                      script <code class="language-python">main.py</code>, para
+                      poder diferenciar quien ejecutó el código se usa la
+                      variable <code class="language-python">__name__</code>.
                     </li>
                     <li>
-                      <span class="fw-bold">variable <code>__name__</code></span
+                      <span class="fw-bold"
+                        >variable
+                        <code class="language-python">__name__</code></span
                       >: En Python, la variable especial
-                      <code>__name__</code> es una cadena que se utiliza para
-                      determinar si un archivo Python está siendo ejecutado
-                      directamente o importado como un módulo. Esto es
-                      especialmente útil para controlar qué partes del código se
-                      ejecutan dependiendo del contexto.
+                      <code class="language-python">__name__</code> es una
+                      cadena que se utiliza para determinar si un archivo Python
+                      está siendo ejecutado directamente o importado como un
+                      módulo. Esto es especialmente útil para controlar qué
+                      partes del código se ejecutan dependiendo del contexto.
                     </li>
                   </ul>
                   <!-- Contextos de Uso de __name__ -->
@@ -479,21 +507,26 @@
                         <span class="fw-bold"
                           >Cuando un archivo se ejecuta directamente</span
                         >: Si se ejecuta directamente, Python asigna a
-                        <code>__name__</code> el valor <code>__main__</code>.
-                        Esto permite identificar que el archivo es el programa
+                        <code class="language-python">__name__</code> el valor
+                        <code class="language-python">__main__</code>. Esto
+                        permite identificar que el archivo es el programa
                         principal.
                       </li>
                       <li>
                         <span class="fw-bold"
                           >Cuando un archivo se importa como módulo</span
                         >: Si el archivo es importado en otro archivo, Python
-                        asigna a<code> __name__</code> el nombre del archivo sin
-                        la extensión .py. Esto asegura que el bloque protegido
-                        con if <code>__name__</code> == <code>__main__</code>:
-                        no se ejecute. <br />
-                        Si al archivo <code>module.py</code> se le adiciona la
-                        instrucción <code>print(__name__)</code> como se muestra
-                        a continuación:
+                        asigna a<code class="language-python"> __name__</code>
+                        el nombre del archivo sin la extensión .py. Esto asegura
+                        que el bloque protegido con if
+                        <code class="language-python">__name__</code> ==
+                        <code class="language-python">__main__</code>: no se
+                        ejecute. <br />
+                        Si al archivo
+                        <code class="language-python">module.py</code> se le
+                        adiciona la instrucción
+                        <code class="language-python">print(__name__)</code>
+                        como se muestra a continuación:
                         <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # module.py
@@ -504,16 +537,20 @@
                       </pre>
                         <p>
                           Al ejecutar este módulo la variable
-                          <code>__name__</code> toma el valor de
-                          <code>__main__</code>.
+                          <code class="language-python">__name__</code> toma el
+                          valor de
+                          <code class="language-python">__main__</code>.
                         </p>
                         <p>
                           Si ejecuta el script que trabaja como paquete,
-                          <code>main.py</code>, la variable
-                          <code>__name__</code> toma el valor de
-                          <code>module</code> es decir el nombre del archivo o
-                          módulo que se está importando sin la extensión
-                          <code>.py</code>.
+                          <code class="language-python">main.py</code>, la
+                          variable
+                          <code class="language-python">__name__</code> toma el
+                          valor de
+                          <code class="language-python">module</code> es decir
+                          el nombre del archivo o módulo que se está importando
+                          sin la extensión
+                          <code class="language-python">.py</code>.
                         </p>
                         <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
@@ -524,7 +561,7 @@
                     </pre>
                         <p>
                           Sucede lo mismo con todos los módulos importados en el
-                          archivo <code>main.py</code>.
+                          archivo <code class="language-python">main.py</code>.
                         </p>
                       </li>
                     </ul>
@@ -582,9 +619,11 @@
                     </li>
                     <li>
                       <span class="fw-bold">Controlar lo que se exporta</span>:
-                      Utilizar la variable <code>__all__</code> para definir qué
-                      funciones, variables o clases estarán disponibles al usar
-                      <code>from modulo import *</code>.
+                      Utilizar la variable
+                      <code class="language-python">__all__</code> para definir
+                      qué funciones, variables o clases estarán disponibles al
+                      usar
+                      <code class="language-python">from modulo import *</code>.
                       <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Exportar únicamente lo necesario
@@ -600,7 +639,8 @@
                   <h3>Plantilla Ejemplo</h3>
                   <p>
                     Se muestra un código nuevo del archivo
-                    <code>module.py</code>. El módulo actualizado está aquí:
+                    <code class="language-python">module.py</code>. El módulo
+                    actualizado está aquí:
                   </p>
                   <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
@@ -629,17 +669,19 @@
                     </code>
                   </pre>
                   <p>
-                    La línea que comienza con <code>#!</code> recibe múltiples
+                    La línea que comienza con
+                    <code class="language-python">#!</code> recibe múltiples
                     nombres, como shabang, shebang, hashbang, poundbang o
                     incluso hashpling. Desde la perspectiva de Python, esta
                     línea no es más que un comentario, ya que comienza con el
-                    carácter <code>#</code>. Sin embargo, para los sistemas
-                    operativos basados en Unix y similares (incluido macOS),
-                    esta línea instruye al sistema operativo sobre cómo ejecutar
-                    el contenido del archivo, especificando qué programa debe
-                    interpretar el texto. En ciertos entornos, especialmente en
-                    aquellos relacionados con servidores web, la ausencia de
-                    esta línea puede ocasionar problemas de funcionamiento.
+                    carácter <code class="language-python">#</code>. Sin
+                    embargo, para los sistemas operativos basados en Unix y
+                    similares (incluido macOS), esta línea instruye al sistema
+                    operativo sobre cómo ejecutar el contenido del archivo,
+                    especificando qué programa debe interpretar el texto. En
+                    ciertos entornos, especialmente en aquellos relacionados con
+                    servidores web, la ausencia de esta línea puede ocasionar
+                    problemas de funcionamiento.
                   </p>
                   <p>
                     Por otro lado, una cadena de texto (que puede ser
@@ -650,7 +692,8 @@
                   </p>
                   <p>
                     Las funciones definidas en el módulo, como
-                    <code>suml()</code> y <code>prodl()</code>, están
+                    <code class="language-python">suml()</code> y
+                    <code class="language-python">prodl()</code>, están
                     disponibles para ser importadas y utilizadas en otros
                     archivos.
                   </p>
@@ -662,18 +705,19 @@
                     lectura y que no debe ser modificada bajo ninguna
                     circunstancia. Para indicar esta restricción, se antepone un
                     guion bajo
-                    <code>_</code> o dos guiones bajos <code>__</code> al nombre
-                    de la variable. Sin embargo, es importante destacar que esta
+                    <code class="language-python">_</code> o dos guiones bajos
+                    <code class="language-python">__</code> al nombre de la
+                    variable. Sin embargo, es importante destacar que esta
                     práctica es únicamente un acuerdo implícito y no una regla
                     obligatoria, por lo que los usuarios del módulo pueden
                     decidir si respetan esta convención o no.
                   </p>
                   <p>
                     Adicionalmente, la variable especial
-                    <code>__name__</code> se utiliza para identificar si el
-                    archivo se está ejecutando de forma independiente. En tal
-                    caso, se aprovecha esta característica para realizar pruebas
-                    simples del código.
+                    <code class="language-python">__name__</code> se utiliza
+                    para identificar si el archivo se está ejecutando de forma
+                    independiente. En tal caso, se aprovecha esta característica
+                    para realizar pruebas simples del código.
                   </p>
                 </div>
                 <!-- Plantilla Ejemplo fin -->
@@ -689,8 +733,9 @@
                   <ul>
                     <li>
                       Contiene un archivo especial llamado
-                      <code>__init__.py</code> (en versiones modernas de Python,
-                      este archivo puede ser opcional).
+                      <code class="language-python">__init__.py</code> (en
+                      versiones modernas de Python, este archivo puede ser
+                      opcional).
                     </li>
                     <li>Agrupa varios módulos relacionados.</li>
                     <li>
@@ -711,15 +756,20 @@
                 </pre>
                   <p>En esta estructura:</p>
                   <ul>
-                    <li><code>mi_paquete</code> es el paquete principal.</li>
                     <li>
-                      <code>subpaquete</code> es un subpaquete dentro de
-                      <code>mi_paquete</code>.
+                      <code class="language-python">mi_paquete</code> es el
+                      paquete principal.
                     </li>
                     <li>
-                      <code>modulo1.py</code>, <code>modulo2.py</code>, y
-                      <code>modulo3.py</code> son módulos que contienen
-                      funciones, clases o variables.
+                      <code class="language-python">subpaquete</code> es un
+                      subpaquete dentro de
+                      <code class="language-python">mi_paquete</code>.
+                    </li>
+                    <li>
+                      <code class="language-python">modulo1.py</code>,
+                      <code class="language-python">modulo2.py</code>, y
+                      <code class="language-python">modulo3.py</code> son
+                      módulos que contienen funciones, clases o variables.
                     </li>
                   </ul>
                 </div>
@@ -735,12 +785,17 @@
                     <li>
                       <span class="fw-bold"
                         >Añadir un archivo
-                        <code>mi_paquete/__init__.py</code></span
+                        <code class="language-python"
+                          >mi_paquete/__init__.py</code
+                        ></span
                       >: Este archivo puede estar vacío o contener código para
                       inicializar el paquete (por ejemplo, importar módulos por
                       defecto). <br />
-                      Ejemplo: <code>mi_paquete/__init__.py</code> puede
-                      contener:
+                      Ejemplo:
+                      <code class="language-python"
+                        >mi_paquete/__init__.py</code
+                      >
+                      puede contener:
                       <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         from .modulo1 import funcion1
@@ -750,10 +805,12 @@
                     </li>
                     <li>
                       <span class="fw-bold">Añadir módulos al paquete</span>:
-                      Crea archivos <code>.py</code> dentro de la carpeta del
-                      paquete.
+                      Crea archivos
+                      <code class="language-python">.py</code> dentro de la
+                      carpeta del paquete.
                       <br />
-                      Ejemplo de <code>modulo1.py</code>:
+                      Ejemplo de
+                      <code class="language-python">modulo1.py</code>:
                       <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         def funcion1():
@@ -787,7 +844,8 @@
                     </li>
                     <li>
                       <span class="fw-bold"
-                        >Código en <code>modulo1.py</code></span
+                        >Código en
+                        <code class="language-python">modulo1.py</code></span
                       >:
                       <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
@@ -883,15 +941,17 @@
                     <li>Usa nombres descriptivos para paquetes y módulos.</li>
                     <li>
                       Evita conflictos de nombres (no uses nombres como
-                      <code>os.py</code> o <code>sys.py</code>).
+                      <code class="language-python">os.py</code> o
+                      <code class="language-python">sys.py</code>).
                     </li>
                     <li>
                       Estructura el proyecto en paquetes para mantener el código
                       organizado.
                     </li>
                     <li>
-                      Documenta los <code>__init__.py</code> para que otros
-                      sepan qué módulos contiene el paquete.
+                      Documenta los
+                      <code class="language-python">__init__.py</code> para que
+                      otros sepan qué módulos contiene el paquete.
                     </li>
                   </ul>
                 </div>
@@ -913,14 +973,15 @@
                     <tr>
                       <td>Definición</td>
                       <td>
-                        Un módulo es un archivo <code>.py</code>que contiene
+                        Un módulo es un archivo
+                        <code class="language-python">.py</code>que contiene
                         código Python reutilizable, como funciones, clases y
                         variables.
                       </td>
                       <td>
                         Un paquete es un directorio que contiene módulos y
                         subpaquetes, junto con un archivo especial
-                        <code>__init__.py</code>.
+                        <code class="language-python">__init__.py</code>.
                       </td>
                     </tr>
                     <tr>
@@ -939,7 +1000,7 @@
                       <td>Es un solo archivo Python.</td>
                       <td>
                         Es una carpeta con módulos y un archivo
-                        <code>__init__.py</code>.
+                        <code class="language-python">__init__.py</code>.
                       </td>
                     </tr>
                     <tr>
@@ -948,18 +1009,20 @@
                       <td>
                         Carpeta matematicas/ que contiene módulos como
                         calculos.py, estadisticas.py, y
-                        <code>__init__.py</code>.
+                        <code class="language-python">__init__.py</code>.
                       </td>
                     </tr>
                     <tr>
                       <td>Importación</td>
                       <td>
                         Se importa directamente usando
-                        <code>import modulo</code>.
+                        <code class="language-python">import modulo</code>.
                       </td>
                       <td>
                         Se importa como un conjunto jerárquico, por ejemplo,
-                        <code>from paquete.modulo import función</code>.
+                        <code class="language-python"
+                          >from paquete.modulo import función</code
+                        >.
                       </td>
                     </tr>
                     <tr>

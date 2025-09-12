@@ -167,7 +167,7 @@
     <!-- -------------------------------- principal -------------------------------- -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
-        <section class="pb-3 pt-5 col-lg-9">
+        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
           <!--  Los Fundamentos de la Programación Orientada a Objetos (OOP) en Python  -->
           <article
             class="row border-1 border-bottom pb-3"
@@ -194,11 +194,11 @@
                 profunda de cómo manejar errores y mejorar la calidad del
                 código.
               </p>
-              <div class="text-center imagen">
+              <div class="centrar-imagen imagen50">
                 <figure>
                   <img
                     src="https://i.ibb.co/DQcK4cT/poo.jpg"
-                    class="img-fluid rounded-4"
+                    class="img-fluid"
                     alt="Los Fundamentos de la Programación Orientada a Objetos (OOP) en Python  "
                     title="Estructura de Clase y Objeto en Python"
                   />
@@ -243,7 +243,7 @@
                       </li>
                       <li>
                         <span class="fw-bold">Constructor</span>: El método
-                        especial <code>__init__</code> se llama automáticamente
+                        especial <code class="language-python">__init__</code> se llama automáticamente
                         al crear un objeto. Se utiliza para inicializar los
                         atributos de la clase.
                       </li>
@@ -410,7 +410,7 @@
                         <span class="fw-bold">Identidad única</span>: Cada
                         objeto tiene una identidad que lo diferencia de otros
                         objetos. Esto se puede verificar con la función
-                        <code>id()</code>.
+                        <code class="language-python">id()</code>.
                         <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           print(id(persona1))  # Muestra la dirección en memoria del objeto persona1
@@ -476,8 +476,8 @@
                     <ul>
                       <li>
                         <span class="fw-bold"> Comparación de objetos</span>: Se
-                        pueden comparar objetos por identidad <code>is</code> o
-                        por valor <code>==</code>.
+                        pueden comparar objetos por identidad <code class="language-python">is</code> o
+                        por valor <code class="language-python">==</code>.
                         <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Comparación por identidad
@@ -500,7 +500,7 @@
                         <span class="fw-bold">Representación de objetos</span>:
                         La representación textual de un objeto se puede
                         personalizar implementando el método especial
-                        <code>__str__</code>.
+                        <code class="language-python">__str__</code>.
                         <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           class Producto:
@@ -517,7 +517,7 @@
                       <li>
                         <span class="fw-bold">Copias de objetos</span>: Se
                         pueden realizar copias superficiales o profundas de un
-                        objeto usando el módulo <code>copy</code>.
+                        objeto usando el módulo <code class="language-python">copy</code>.
                         <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           import copy
@@ -560,7 +560,7 @@
                       sobrescribir métodos y atributos.
                     </li>
                     <li>
-                      <span class="fw-bold"><code>super()</code></span
+                      <span class="fw-bold"><code class="language-python">super()</code></span
                       >: Permite llamar métodos y propiedades de la clase padre
                       desde la clase hija.
                     </li>
@@ -614,7 +614,7 @@
                     </li>
                     <li>
                       <span class="fw-bold"
-                        ><code>super()</code> para acceso a la clase padre</span
+                        ><code class="language-python">super()</code> para acceso a la clase padre</span
                       >: Permite acceder a métodos o atributos de la clase base,
                       como se muestra en el constructor de Perro.
                     </li>
@@ -804,8 +804,8 @@
                     </li>
                     <li>
                       <span class="fw-bold"
-                        >Superclase (<code>super()</code>)</span
-                      >: La función <code>super()</code> se utiliza para acceder
+                        >Superclase (<code class="language-python">super()</code>)</span
+                      >: La función <code class="language-python">super()</code> se utiliza para acceder
                       a métodos y atributos de la clase base desde la clase
                       derivada.
                       <pre data-src-status="loaded" tabindex="0">
@@ -836,8 +836,8 @@
                       >: Python utiliza un algoritmo llamado C3 Linearization
                       para determinar el orden en que se buscan atributos y
                       métodos en una jerarquía de clases. Se puede visualizar
-                      con el atributo <code>__mro__</code> o el método
-                      <code>mro()</code>.
+                      con el atributo <code class="language-python">__mro__</code> o el método
+                      <code class="language-python">mro()</code>.
                     </li>
                   </ul>
                 </div>
@@ -847,7 +847,7 @@
                   <h3>Jerarquía por Defecto en Python</h3>
                   <p>
                     Todas las clases en Python derivan de la clase
-                    <code>object</code>, incluso si no se especifica
+                    <code class="language-python">object</code>, incluso si no se especifica
                     explícitamente.
                   </p>
                   <pre data-src-status="loaded" tabindex="0">
@@ -952,35 +952,35 @@
                   <ul>
                     <li>
                       <span class="fw-bold">Atributos privados</span>: Se
-                      utiliza <code>__edad</code> para hacer que el atributo
+                      utiliza <code class="language-python">__edad</code> para hacer que el atributo
                       edad sea privado.
                     </li>
                     <li>
                       <span class="fw-bold">Métodos privados</span>: El método
-                      <code>__metodo_privado</code> solo puede ser llamado
+                      <code class="language-python">__metodo_privado</code> solo puede ser llamado
                       dentro de la clase.
                     </li>
                     <li>
                       <span class="fw-bold">Métodos públicos</span>: Los métodos
-                      como <code>obtener_nombre</code>,
-                      <code>obtener_edad</code> y
-                      <code>establecer_edad</code> permiten interactuar con los
+                      como <code class="language-python">obtener_nombre</code>,
+                      <code class="language-python">obtener_edad</code> y
+                      <code class="language-python">establecer_edad</code> permiten interactuar con los
                       datos internos de la clase de manera controlada.
                     </li>
                     <li>
                       <span class="fw-bold"
                         >Encapsulamiento a través de métodos</span
                       >: Aunque edad es un atributo privado, se puede acceder a
-                      él mediante el método público <code>obtener_edad</code> y
-                      modificarse a través de <code>establecer_edad</code>.
+                      él mediante el método público <code class="language-python">obtener_edad</code> y
+                      modificarse a través de <code class="language-python">establecer_edad</code>.
                     </li>
                   </ul>
                   <p>
                     En Python, el uso de un solo guion bajo (por ejemplo,
-                    <code>_edad</code>) indica una sugerencia de que el atributo
+                    <code class="language-python">_edad</code>) indica una sugerencia de que el atributo
                     o método es "protegido", es decir, no debería ser accedido
                     directamente fuera de la clase, pero no impide el acceso. El
-                    uso de dos guiones bajos (como <code>__edad</code>) cambia
+                    uso de dos guiones bajos (como <code class="language-python">__edad</code>) cambia
                     el nombre del atributo internamente (name mangling) para
                     evitar que sea accedido directamente desde fuera de la
                     clase, aunque no lo impide por completo.
@@ -1031,11 +1031,11 @@
                 </pre>
                   <p>
                     En este ejemplo, el polimorfismo permite que el mismo método
-                    (<code>hacer_sonido</code>) se ejecute de manera diferente
+                    (<code class="language-python">hacer_sonido</code>) se ejecute de manera diferente
                     según el objeto que lo invoque, sin que el código que llama
                     a
-                    <code>hacer_sonido</code> necesite saber si está trabajando
-                    con un <code>Perro</code> o un <code>Gato</code>.
+                    <code class="language-python">hacer_sonido</code> necesite saber si está trabajando
+                    con un <code class="language-python">Perro</code> o un <code class="language-python">Gato</code>.
                   </p>
                 </div>
                 <!-- Ejemplo Básico de Polimorfismo: fin -->
@@ -1044,20 +1044,20 @@
                   <h3>Explicación del Código Polimorfismo</h3>
                   <ul>
                     <li>
-                      Se crea una clase base <code>Animal</code> que tiene un
-                      método <code>hacer_sonido</code>.
+                      Se crea una clase base <code class="language-python">Animal</code> que tiene un
+                      método <code class="language-python">hacer_sonido</code>.
                     </li>
                     <li>
-                      Se crean dos clases derivadas, <code>Perro</code> y
-                      <code>Gato</code>, que sobrescriben el método
-                      <code>hacer_sonido</code> con comportamientos específicos.
+                      Se crean dos clases derivadas, <code class="language-python">Perro</code> y
+                      <code class="language-python">Gato</code>, que sobrescriben el método
+                      <code class="language-python">hacer_sonido</code> con comportamientos específicos.
                     </li>
                     <li>
-                      La función <code>emitir_sonido</code> puede recibir
-                      cualquier objeto de tipo <code>Animal</code> y,
+                      La función <code class="language-python">emitir_sonido</code> puede recibir
+                      cualquier objeto de tipo <code class="language-python">Animal</code> y,
                       dependiendo del tipo específico de objeto, invoca el
-                      método adecuado (<code>hacer_sonido</code> de
-                      <code>Perro</code> o <code>Gato</code>), demostrando el
+                      método adecuado (<code class="language-python">hacer_sonido</code> de
+                      <code class="language-python">Perro</code> o <code class="language-python">Gato</code>), demostrando el
                       comportamiento polimórfico.
                     </li>
                   </ul>

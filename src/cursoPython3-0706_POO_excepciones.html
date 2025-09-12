@@ -94,7 +94,7 @@
 
   <body>
     <!-- Barra deNavegación -->
-<nav
+    <nav
       class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
     >
       <div class="container-fluid">
@@ -147,7 +147,9 @@
               <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog"
+              <a
+                class="nav-link mx-1 publicaciones-activo"
+                href="index.html#blog"
                 >PUBLICACIONES</a
               >
             </li>
@@ -163,7 +165,7 @@
     <!-- -------------------------------- principal -------------------------------- -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
-        <section class="pb-3 pt-5 col-lg-9">
+        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
           <!--  POO: Excepciones en Python  -->
           <article
             class="row border-1 border-bottom pb-3"
@@ -186,11 +188,11 @@
                   objetos (POO), las excepciones permiten que los objetos
                   manejen errores de manera más estructurada y controlada
                 </p>
-                <div class="text-center imagen">
+                <div class="centrar-imagen imagen50">
                   <figure>
                     <img
                       src="https://i.ibb.co/1f9pbDg/poexcepciones.jpg"
-                      class="img-fluid rounded-4"
+                      class="img-fluid"
                       alt="POO: Excepciones en Python  "
                       title="¿Cómo manejar una excepción en Python?"
                     />
@@ -212,35 +214,42 @@
                 </ul>
                 <p>
                   En Python, las excepciones son objetos derivados de la clase
-                  base <code>BaseException</code>, lo que refuerza su
-                  integración con la POO.
+                  base <code class="language-python">BaseException</code>, lo
+                  que refuerza su integración con la POO.
                 </p>
                 <p>
                   Las excepciones pueden ser manejadas utilizando bloques
-                  <code>try</code>, <code>except</code>, <code>else</code> y
-                  <code>finally</code>. A continuación, se explica cada uno de
-                  estos bloques con un ejemplo:
+                  <code class="language-python">try</code>,
+                  <code class="language-python">except</code>,
+                  <code class="language-python">else</code> y
+                  <code class="language-python">finally</code>. A continuación,
+                  se explica cada uno de estos bloques con un ejemplo:
                 </p>
                 <ul>
                   <li>
-                    <span class="fw-bold"><code>try</code></span
+                    <span class="fw-bold"
+                      ><code class="language-python">try</code></span
                     >: Este bloque contiene el código que puede generar una
                     excepción.
                   </li>
                   <li>
-                    <span class="fw-bold"><code>except</code></span
+                    <span class="fw-bold"
+                      ><code class="language-python">except</code></span
                     >: Este bloque maneja la excepción que se genera en el
-                    bloque <code>try</code>. Puedes tener múltiples bloques
-                    <code>except</code> para manejar diferentes tipos de
-                    excepciones.
+                    bloque <code class="language-python">try</code>. Puedes
+                    tener múltiples bloques
+                    <code class="language-python">except</code> para manejar
+                    diferentes tipos de excepciones.
                   </li>
                   <li>
-                    <span class="fw-bold"><code>else</code></span
+                    <span class="fw-bold"
+                      ><code class="language-python">else</code></span
                     >: Este bloque se ejecuta si no se genera ninguna excepción
-                    en el bloque <code>try</code>.
+                    en el bloque <code class="language-python">try</code>.
                   </li>
                   <li>
-                    <span class="fw-bold"><code>finally</code></span
+                    <span class="fw-bold"
+                      ><code class="language-python">finally</code></span
                     >: Este bloque se ejecuta siempre, independientemente de si
                     se generó una excepción o no.
                   </li>
@@ -284,10 +293,12 @@
                   <p>
                     Las excepciones en Python son implementadas como clases, y
                     todas las excepciones derivan de la clase base
-                    <code>BaseException</code>. La mayoría de las excepciones
-                    que se encuentran en el uso diario derivan de la clase
-                    <code>Exception</code>, que a su vez es una subclase de
-                    <code>BaseException</code>.
+                    <code class="language-python">BaseException</code>. La
+                    mayoría de las excepciones que se encuentran en el uso
+                    diario derivan de la clase
+                    <code class="language-python">Exception</code>, que a su vez
+                    es una subclase de
+                    <code class="language-python">BaseException</code>.
                   </p>
                   <p>
                     Aquí hay una vista general de la jerarquía de excepciones en
@@ -367,11 +378,13 @@
                 <div>
                   <h3>Acceso a Atributos en Excepciones</h3>
                   <p>
-                    En Python, la palabra clave <code>as</code> se utiliza en el
+                    En Python, la palabra clave
+                    <code class="language-python">as</code> se utiliza en el
                     contexto de manejo de excepciones para asignar una excepción
                     capturada a una variable. Esto permite acceder a la
                     información de la excepción, como su mensaje de error y
-                    otros atributos, dentro del bloque <code>except</code>.
+                    otros atributos, dentro del bloque
+                    <code class="language-python">except</code>.
                   </p>
                   <p>Sintaxis Básica:</p>
                   <pre data-src-status="loaded" tabindex="0">
@@ -395,28 +408,34 @@
                   <p>Desglose del código:</p>
                   <ul>
                     <li>
-                      <span class="fw-bold"><code>try</code></span
+                      <span class="fw-bold"
+                        ><code class="language-python">try</code></span
                       >: Se intenta ejecutar el código que podría generar un
                       error.
                     </li>
                     <li>
                       <span class="fw-bold"
-                        ><code>except ZeroDivisionError as e</code></span
+                        ><code class="language-python"
+                          >except ZeroDivisionError as e</code
+                        ></span
                       >:
                       <ul>
                         <li>
                           Captura la excepción del tipo
-                          <code>ZeroDivisionError</code>.
+                          <code class="language-python">ZeroDivisionError</code
+                          >.
                         </li>
                         <li>
                           Asigna la instancia de la excepción capturada a la
-                          variable <code>e</code>.
+                          variable <code class="language-python">e</code>.
                         </li>
                       </ul>
                     </li>
                     <li>
-                      <span class="fw-bold"><code>e</code></span
-                      >: Es una instancia de <code>ZeroDivisionError</code> y
+                      <span class="fw-bold"
+                        ><code class="language-python">e</code></span
+                      >: Es una instancia de
+                      <code class="language-python">ZeroDivisionError</code> y
                       contiene información adicional sobre el error, como el
                       mensaje de error.
                     </li>
@@ -429,9 +448,9 @@
                   <p>
                     Algunas excepciones tienen atributos adicionales que puedes
                     acceder. Por ejemplo, la excepción
-                    <code>OSError</code> tiene un atributo
-                    <code>errno</code> que contiene el número de error del
-                    sistema operativo:
+                    <code class="language-python">OSError</code> tiene un
+                    atributo <code class="language-python">errno</code> que
+                    contiene el número de error del sistema operativo:
                   </p>
                   <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
@@ -453,15 +472,15 @@
                 <p>
                   Para crear una excepción propia en Python, se debe definir una
                   nueva clase que herede de la clase base
-                  <code>Exception</code>. Esta clase personalizada puede incluir
-                  métodos y atributos adicionales según sea necesario. A
-                  continuación, se presenta un ejemplo de cómo redactar una
-                  excepción propia en tercera persona.
+                  <code class="language-python">Exception</code>. Esta clase
+                  personalizada puede incluir métodos y atributos adicionales
+                  según sea necesario. A continuación, se presenta un ejemplo de
+                  cómo redactar una excepción propia en tercera persona.
                 </p>
                 <p>
                   Primero, se define la clase de la excepción personalizada. En
                   este ejemplo, se creará una excepción llamada
-                  <code>MiExcepcionPersonalizada</code>:
+                  <code class="language-python">MiExcepcionPersonalizada</code>:
                 </p>
                 <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
@@ -502,12 +521,16 @@
                     <ul>
                       <li>
                         Se define una clase
-                        <code>MiExcepcionPersonalizada</code> que hereda de
-                        Exception.
+                        <code class="language-python"
+                          >MiExcepcionPersonalizada</code
+                        >
+                        que hereda de Exception.
                       </li>
                       <li>
-                        El método <code>__init__</code> se utiliza para
-                        inicializar la excepción con un mensaje descriptivo.
+                        El método
+                        <code class="language-python">__init__</code> se utiliza
+                        para inicializar la excepción con un mensaje
+                        descriptivo.
                       </li>
                     </ul>
                   </li>
@@ -516,8 +539,10 @@
                     <ul>
                       <li>
                         Se define una función
-                        <code>funcion_que_puede_fallar</code> que toma una
-                        condición booleana como argumento.
+                        <code class="language-python"
+                          >funcion_que_puede_fallar</code
+                        >
+                        que toma una condición booleana como argumento.
                       </li>
                       <li>
                         Si la condición es verdadera, la función lanza la
@@ -531,9 +556,13 @@
                     >:
                     <ul>
                       <li>
-                        Se utiliza un bloque <code>try</code>-except para llamar
-                        a la función <code>funcion_que_puede_fallar</code> con
-                        una condición verdadera.
+                        Se utiliza un bloque
+                        <code class="language-python">try</code>-except para
+                        llamar a la función
+                        <code class="language-python"
+                          >funcion_que_puede_fallar</code
+                        >
+                        con una condición verdadera.
                       </li>
                       <li>
                         Si la excepción personalizada es lanzada, se captura y

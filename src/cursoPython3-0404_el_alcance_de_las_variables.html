@@ -165,7 +165,7 @@
     <!-- -------------------------------- principal -------------------------------- -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
-        <section class="pb-3 pt-5 col-lg-9">
+        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
           <!--  El Alcance de las Variables en Python  -->
           <article
             class="row border-1 border-bottom pb-3"
@@ -191,11 +191,11 @@
                   incluyendo el alcance local, global y no local, así como
                   ejemplos prácticos que ilustran cada uno de estos conceptos.
                 </p>
-                <div class="text-center imagen">
+                <div class="centrar-imagen imagen50">
                   <figure>
                     <img
                       src="https://i.ibb.co/1RVDMWw/alcance.jpg"
-                      class="img-fluid rounded-4"
+                      class="img-fluid"
                       alt="El Alcance de las Variables en Python  "
                       title="Comprendiendo el alcance de las variables en Python"
                     />
@@ -291,7 +291,7 @@
                     <li>
                       <span class="fw-bold">Built-in</span>: En el módulo
                       builtins, que contiene funciones y nombres integrados como
-                      <code>print()</code> o <code>len()</code>.
+                      <code class="language-python">print()</code> o <code class="language-python">len()</code>.
                     </li>
                   </ul>
                   <p>Ejemplo de alcance anidado:</p>
@@ -346,9 +346,9 @@
                   </code>
                 </pre>
                   <p>
-                    El comando <code>print(y)</code> genera un error porque la
-                    variable <code>y</code> tiene un alcance local y únicamente
-                    es accesible dentro de la función <code>sumar()</code>.
+                    El comando <code class="language-python">print(y)</code> genera un error porque la
+                    variable <code class="language-python">y</code> tiene un alcance local y únicamente
+                    es accesible dentro de la función <code class="language-python">sumar()</code>.
                   </p>
                 </div>
                 <!-- Diferencias entre Alcance Local y Global fin -->
@@ -371,7 +371,7 @@
                     Para indicar que una variable dentro de una función se
                     refiere a una variable global existente, se utiliza la
                     palabra clave
-                    <code>global</code> seguida del nombre de la variable. Esto
+                    <code class="language-python">global</code> seguida del nombre de la variable. Esto
                     le indica al intérprete de Python que no debe crear una
                     nueva variable local con el mismo nombre, sino que debe
                     utilizar la variable global.
@@ -492,11 +492,11 @@
                   </code>
                 </pre>
                   <p>
-                    En este ejemplo, la variable <code>contador</code> se define
+                    En este ejemplo, la variable <code class="language-python">contador</code> se define
                     en el ámbito global. Dentro de la función
-                    <code>incrementar_contador</code>, se utiliza la palabra
-                    clave <code>global</code> para indicar que se está
-                    refiriendo a la variable global <code>contador</code>. Esto
+                    <code class="language-python">incrementar_contador</code>, se utiliza la palabra
+                    clave <code class="language-python">global</code> para indicar que se está
+                    refiriendo a la variable global <code class="language-python">contador</code>. Esto
                     permite que la función modifique el valor de contador cada
                     vez que se llama.
                   </p>
@@ -569,7 +569,7 @@
                   <p>
                     Para declarar que se quiere modificar una variable no local
                     dentro de una función, utilizamos la palabra clave
-                    <code>nonlocal</code>. Esta palabra le indica al intérprete
+                    <code class="language-python">nonlocal</code>. Esta palabra le indica al intérprete
                     de Python que la variable a la que estamos haciendo
                     referencia no es una nueva variable local, sino una variable
                     que ya existe en un ámbito superior.
@@ -591,60 +591,60 @@
                   <ul>
                     <li>
                       <span class="fw-bold"
-                        ><code>def outer_function()</code></span
+                        ><code class="language-python">def outer_function()</code></span
                       >: Define una función llamada
-                      <code>outer_function()</code>.
+                      <code class="language-python">outer_function()</code>.
                     </li>
                     <li>
                       <span class="fw-bold"
-                        ><code>x = "valor externo"</code></span
-                      >: Dentro de <code>outer_function()</code>, se crea una
-                      variable local x con el valor <code>valor externo</code>.
+                        ><code class="language-python">x = "valor externo"</code></span
+                      >: Dentro de <code class="language-python">outer_function()</code>, se crea una
+                      variable local x con el valor <code class="language-python">valor externo</code>.
                     </li>
                     <li>
                       <span class="fw-bold"
-                        ><code>def inner_function()</code></span
+                        ><code class="language-python">def inner_function()</code></span
                       >: Define una función anidada llamada
-                      <code>inner_function</code>.
+                      <code class="language-python">inner_function</code>.
                     </li>
                     <li>
-                      <span class="fw-bold"><code>nonlocal x</code></span
+                      <span class="fw-bold"><code class="language-python">nonlocal x</code></span
                       >: Declara que x no es una variable local de
-                      <code>inner_function</code>, sino que se refiere a la
+                      <code class="language-python">inner_function</code>, sino que se refiere a la
                       variable x de la función contenedora
-                      (<code>outer_function()</code>).
+                      (<code class="language-python">outer_function()</code>).
                     </li>
                     <li>
-                      <span class="fw-bold"><code>x = "nuevo valor"</code></span
+                      <span class="fw-bold"><code class="language-python">x = "nuevo valor"</code></span
                       >: Modifica el valor de x en el ámbito de
-                      <code>outer_function()</code> a <code>nuevo valor</code>.
+                      <code class="language-python">outer_function()</code> a <code class="language-python">nuevo valor</code>.
                     </li>
                     <li>
-                      <span class="fw-bold"><code>print(x)</code></span
+                      <span class="fw-bold"><code class="language-python">print(x)</code></span
                       >: Imprime el valor actual de x, que ahora es
-                      <code>nuevo valor</code>.
+                      <code class="language-python">nuevo valor</code>.
                     </li>
                     <li>
-                      <span class="fw-bold"><code>inner_function()</code></span
-                      >: Llama a <code>inner_function()</code>, lo que provoca
+                      <span class="fw-bold"><code class="language-python">inner_function()</code></span
+                      >: Llama a <code class="language-python">inner_function()</code>, lo que provoca
                       que:
                       <ul>
                         <li>
-                          Se cambie el valor de <code>x</code> a
-                          <code>nuevo valor</code>.
+                          Se cambie el valor de <code class="language-python">x</code> a
+                          <code class="language-python">nuevo valor</code>.
                         </li>
-                        <li>Se imprima <code>nuevo valor</code>.</li>
+                        <li>Se imprima <code class="language-python">nuevo valor</code>.</li>
                       </ul>
                     </li>
                     <li>
-                      <span class="fw-bold"><code>print(x)</code></span
+                      <span class="fw-bold"><code class="language-python">print(x)</code></span
                       >: Imprime el valor actual de x después de la ejecución de
-                      <code>inner_function</code>, que sigue siendo
-                      <code>nuevo valor</code>.
+                      <code class="language-python">inner_function</code>, que sigue siendo
+                      <code class="language-python">nuevo valor</code>.
                     </li>
                     <li>
-                      <span class="fw-bold"><code>outer_function()</code></span
-                      >: Llama a <code>outer_function()</code>, iniciando todo
+                      <span class="fw-bold"><code class="language-python">outer_function()</code></span
+                      >: Llama a <code class="language-python">outer_function()</code>, iniciando todo
                       el proceso.
                     </li>
                   </ul>
@@ -652,13 +652,13 @@
                   <ul>
                     <li>
                       El primer print dentro de
-                      <code>inner_function</code> imprime:
-                      <code>nuevo valor</code>
+                      <code class="language-python">inner_function</code> imprime:
+                      <code class="language-python">nuevo valor</code>
                     </li>
                     <li>
                       El segundo print dentro de
-                      <code>outer_function</code> imprime el mismo valor:
-                      <code>nuevo valor</code>
+                      <code class="language-python">outer_function</code> imprime el mismo valor:
+                      <code class="language-python">nuevo valor</code>
                     </li>
                   </ul>
                 </div>

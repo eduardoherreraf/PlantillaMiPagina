@@ -97,7 +97,7 @@
 
   <body>
     <!-- Barra deNavegación -->
-<nav
+    <nav
       class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
     >
       <div class="container-fluid">
@@ -150,7 +150,9 @@
               <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog"
+              <a
+                class="nav-link mx-1 publicaciones-activo"
+                href="index.html#blog"
                 >PUBLICACIONES</a
               >
             </li>
@@ -166,7 +168,7 @@
     <!-- -------------------------------- principal -------------------------------- -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
-        <section class="pb-3 pt-5 col-lg-9">
+        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
           <!--  Cómo las funciones se comunican con su entorno en Python  -->
           <article
             class="row border-1 border-bottom pb-3"
@@ -190,11 +192,11 @@
                   que reciben uno, dos o tres argumentos, y se explicará el
                   proceso de pasar valores a estas funciones.
                 </p>
-                <div class="text-center imagen">
+                <div class="centrar-imagen imagen50">
                   <figure>
                     <img
                       src="https://i.ibb.co/PhTWcSp/funcionesentorno.jpg"
-                      class="img-fluid rounded-4"
+                      class="img-fluid"
                       alt="Cómo las funciones se comunican con su entorno en Python  "
                       title="Tutorial de Funciones en Python: Sintaxis, Parámetros y Argumentos"
                     />
@@ -230,8 +232,10 @@
                   </code>
                 </pre>
                   <p>
-                    En este ejemplo, <code>nombre</code> y <code>edad</code> son
-                    los parámetros de la función saludar.
+                    En este ejemplo,
+                    <code class="language-python">nombre</code> y
+                    <code class="language-python">edad</code> son los parámetros
+                    de la función saludar.
                   </p>
                 </div>
                 <!-- Parámetros fin -->
@@ -249,10 +253,13 @@
                   </code>
                 </pre>
                   <p>
-                    En este ejemplo, <code>Juan</code> y <code>30</code> son los
-                    argumentos que se pasan a la función saludar. El argumento
-                    <code>Juan</code> se asigna al parámetro nombre, y el
-                    argumento <code>30</code> se asigna al parámetro edad.
+                    En este ejemplo, <code class="language-python">Juan</code> y
+                    <code class="language-python">30</code> son los argumentos
+                    que se pasan a la función saludar. El argumento
+                    <code class="language-python">Juan</code> se asigna al
+                    parámetro nombre, y el argumento
+                    <code class="language-python">30</code> se asigna al
+                    parámetro edad.
                   </p>
                 </div>
                 <!-- Argumentos fin -->
@@ -347,13 +354,15 @@
                 <p>
                   Los argumentos posicionales siempre deben preceder a otros
                   tipos de argumentos en la definición de una función. Por
-                  ejemplo, el parámetro <code>a</code> debe colocarse en primer
-                  lugar.
+                  ejemplo, el parámetro
+                  <code class="language-python">a</code> debe colocarse en
+                  primer lugar.
                 </p>
                 <p>
                   En la siguiente invocación de la función, se produce una
-                  asignación repetida del parámetro <code>a</code>, lo que
-                  provoca un error de sintaxis.
+                  asignación repetida del parámetro
+                  <code class="language-python">a</code>, lo que provoca un
+                  error de sintaxis.
                 </p>
                 <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
@@ -399,28 +408,31 @@
                 <p>
                   En ocasiones, es posible que no se conozca de antemano cuántos
                   argumentos se pasarán a la función. Para manejar esto, Python
-                  ofrece la posibilidad de utilizar <code>*args</code> y
-                  <code>**kwargs</code>.
+                  ofrece la posibilidad de utilizar
+                  <code class="language-python">*args</code> y
+                  <code class="language-python">**kwargs</code>.
                 </p>
                 <!-- Uso de *args -->
                 <div>
                   <h3>Uso de *args</h3>
                   <p>
-                    El uso de <code>*args</code> en Python permite que una
-                    función reciba un número variable de argumentos
-                    posicionales. Esto es especialmente útil cuando no se conoce
-                    de antemano cuántos argumentos necesitará manejar la
-                    función. Aquí se presenta una explicación detallada sobre su
-                    uso:
+                    El uso de <code class="language-python">*args</code> en
+                    Python permite que una función reciba un número variable de
+                    argumentos posicionales. Esto es especialmente útil cuando
+                    no se conoce de antemano cuántos argumentos necesitará
+                    manejar la función. Aquí se presenta una explicación
+                    detallada sobre su uso:
                   </p>
                   <!-- Sintaxis Básica -->
                   <div>
                     <h4>Sintaxis Básica</h4>
                     <ul>
                       <li>
-                        La notación <code>*args</code> es una convención; el
-                        nombre <code>args</code> no es obligatorio, pero es
-                        ampliamente utilizado por claridad.
+                        La notación
+                        <code class="language-python">*args</code> es una
+                        convención; el nombre
+                        <code class="language-python">args</code> no es
+                        obligatorio, pero es ampliamente utilizado por claridad.
                       </li>
                       <li>
                         Los argumentos pasados de esta forma se agrupan en una
@@ -448,7 +460,8 @@
                       <li>
                         Se puede usar en combinación con otros tipos de
                         argumentos, como argumentos normales o
-                        <code>**kwargs</code> (para argumentos con nombre).
+                        <code class="language-python">**kwargs</code> (para
+                        argumentos con nombre).
                       </li>
                     </ul>
                     <pre data-src-status="loaded" tabindex="0">
@@ -498,21 +511,23 @@
                     <h4>Consideraciones</h4>
                     <ul>
                       <li>
-                        Aunque <code>*args</code> es útil, no debe usarse si los
-                        argumentos de la función tienen una cantidad fija y
-                        conocida.
+                        Aunque <code class="language-python">*args</code> es
+                        útil, no debe usarse si los argumentos de la función
+                        tienen una cantidad fija y conocida.
                       </li>
                       <li>
                         No puede usarse como el primer argumento en una función;
                         si se necesita un argumento posicional, este debe
-                        definirse antes de <code>*args</code>.
+                        definirse antes de
+                        <code class="language-python">*args</code>.
                       </li>
                     </ul>
                     <p class="fw-bold">Combinación con **kwargs:</p>
                     <p>
-                      Se puede usar <code>*args</code> junto con
-                      <code>**kwargs</code> para manejar tanto argumentos
-                      posicionales como argumentos con nombre:
+                      Se puede usar
+                      <code class="language-python">*args</code> junto con
+                      <code class="language-python">**kwargs</code> para manejar
+                      tanto argumentos posicionales como argumentos con nombre:
                     </p>
                     <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
@@ -531,9 +546,9 @@
                   <div>
                     <h4>Uso Avanzado</h4>
                     <p>
-                      <code>*args</code> también se puede utilizar para
-                      desempaquetar listas o tuplas como argumentos de una
-                      función:
+                      <code class="language-python">*args</code> también se
+                      puede utilizar para desempaquetar listas o tuplas como
+                      argumentos de una función:
                     </p>
                     <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
@@ -551,9 +566,10 @@
                 <div>
                   <h3>Uso de **kwargs</h3>
                   <p>
-                    El uso de <code>**kwargs</code> en Python permite que una
-                    función acepte un número variable de argumentos con nombre.
-                    La palabra clave <code>**kwargs</code> representa un
+                    El uso de <code class="language-python">**kwargs</code> en
+                    Python permite que una función acepte un número variable de
+                    argumentos con nombre. La palabra clave
+                    <code class="language-python">**kwargs</code> representa un
                     diccionario que contiene los pares clave-valor pasados a la
                     función. Esto es útil cuando no se conoce de antemano
                     cuántos argumentos con nombre se van a necesitar.
@@ -586,7 +602,8 @@
                       </pre>
                       </li>
                       <li>
-                        Uso combinado con <code>*args</code> y parámetros
+                        Uso combinado con
+                        <code class="language-python">*args</code> y parámetros
                         normales:
                         <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
@@ -642,9 +659,10 @@
                       </li>
                       <li>
                         Integración con librerías: Librerías como
-                        <code>matplotlib</code> o <code>pandas</code> usan
-                        <code>**kwargs</code> para aceptar configuraciones
-                        flexibles en sus funciones.
+                        <code class="language-python">matplotlib</code> o
+                        <code class="language-python">pandas</code> usan
+                        <code class="language-python">**kwargs</code> para
+                        aceptar configuraciones flexibles en sus funciones.
                       </li>
                     </ul>
                   </div>
@@ -654,8 +672,9 @@
                     <h4>Consideraciones</h4>
                     <ul>
                       <li>
-                        <code>**kwargs</code> debe aparecer al final de los
-                        parámetros en la definición de una función.
+                        <code class="language-python">**kwargs</code> debe
+                        aparecer al final de los parámetros en la definición de
+                        una función.
                       </li>
                       <li>
                         Es ideal documentar los posibles argumentos que la

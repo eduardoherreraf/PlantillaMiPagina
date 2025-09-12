@@ -163,7 +163,7 @@
     <!-- -------------------------------- principal -------------------------------- -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
-        <section class="pb-3 pt-5 col-lg-9">
+        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
           <!--  POO: Herencia en Python  -->
           <article
             class="row border-1 border-bottom pb-3"
@@ -196,11 +196,11 @@
                   de los pilares fundamentales de la POO es la herencia, que
                   permite crear nuevas clases basadas en clases existentes.
                 </p>
-                <div class="text-center imagen">
+                <div class="centrar-imagen imagen50">
                   <figure>
                     <img
                       src="https://i.ibb.co/BLLRnCg/pooherencia.jpg"
-                      class="img-fluid rounded-4"
+                      class="img-fluid"
                       alt="POO: Herencia en Python  "
                       title="Entendiendo la Herencia en Python"
                     />
@@ -253,24 +253,24 @@
                 <p>En este ejemplo:</p>
                 <ul>
                   <li>
-                    <code>Animal</code> es la clase base que tiene un método
-                    <code>hacer_sonido</code> que no hace nada
-                    (<code>pass</code>).
+                    <code class="language-python">Animal</code> es la clase base que tiene un método
+                    <code class="language-python">hacer_sonido</code> que no hace nada
+                    (<code class="language-python">pass</code>).
                   </li>
                   <li>
-                    <code>Perro</code> y <code>Gato</code> son clases derivadas
-                    que heredan de <code>Animal</code>.
+                    <code class="language-python">Perro</code> y <code class="language-python">Gato</code> son clases derivadas
+                    que heredan de <code class="language-python">Animal</code>.
                   </li>
                   <li>
                     Ambas clases derivadas sobrescriben el método
-                    <code>hacer_sonido</code>
+                    <code class="language-python">hacer_sonido</code>
                     para proporcionar una implementación específica.
                   </li>
                 </ul>
                 <p>
-                  La herencia permite que <code>Perro</code> y
-                  <code>Gato</code> hereden el método <code>__init__</code> de
-                  <code>Animal</code>, lo que significa que pueden inicializar
+                  La herencia permite que <code class="language-python">Perro</code> y
+                  <code class="language-python">Gato</code> hereden el método <code class="language-python">__init__</code> de
+                  <code class="language-python">Animal</code>, lo que significa que pueden inicializar
                   el atributo nombre de la misma manera que la clase base.
                   Además, pueden sobrescribir métodos de la clase base para
                   proporcionar comportamientos específicos.
@@ -316,17 +316,17 @@
                 <p>En este ejemplo:</p>
                 <ul>
                   <li>
-                    <code>Animal</code> es una clase base que tiene un método
-                    <code>hacer_sonido</code> y un atributo <code>nombre</code>.
+                    <code class="language-python">Animal</code> es una clase base que tiene un método
+                    <code class="language-python">hacer_sonido</code> y un atributo <code class="language-python">nombre</code>.
                   </li>
                   <li>
-                    <code>Volador</code> es otra clase base que tiene un método
-                    <code>volar</code>.
+                    <code class="language-python">Volador</code> es otra clase base que tiene un método
+                    <code class="language-python">volar</code>.
                   </li>
                   <li>
-                    <code>Pajaro</code> es una clase derivada que hereda de
-                    ambas clases <code>base</code>, <code>Animal</code> y
-                    <code>Volador</code>.
+                    <code class="language-python">Pajaro</code> es una clase derivada que hereda de
+                    ambas clases <code class="language-python">base</code>, <code class="language-python">Animal</code> y
+                    <code class="language-python">Volador</code>.
                   </li>
                 </ul>
                 <!-- Consideraciones Sobre la Herencia Múltiple -->
@@ -346,7 +346,7 @@
                     <li>
                       En sistemas con herencia múltiple, la resolución de
                       métodos y la sobrescritura pueden volverse notablemente
-                      complicadas. El uso de <code>super()</code> se torna
+                      complicadas. El uso de <code class="language-python">super()</code> se torna
                       ambiguo, especialmente en jerarquías de herencia más
                       profundas.
                     </li>
@@ -436,42 +436,42 @@
                     </code>
                   </pre>
                     <p>
-                      Cuando se llama a <code>d.method()</code>, Python buscará
-                      el método <code>method</code> en el siguiente orden:
+                      Cuando se llama a <code class="language-python">d.method()</code>, Python buscará
+                      el método <code class="language-python">method</code> en el siguiente orden:
                     </p>
                     <ul>
                       <li>
-                        Clase <code>D</code>: Hereda de ambas clases
-                        <code>B</code> y <code>C</code>. No sobrescribe el
+                        Clase <code class="language-python">D</code>: Hereda de ambas clases
+                        <code class="language-python">B</code> y <code class="language-python">C</code>. No sobrescribe el
                         método method.
                       </li>
                       <li>
-                        Clase <code>B</code>: Hereda de <code>A</code> y
+                        Clase <code class="language-python">B</code>: Hereda de <code class="language-python">A</code> y
                         sobrescribe el método method, que imprime
-                        <code>"Method in B"</code>.
+                        <code class="language-python">"Method in B"</code>.
                       </li>
                       <li>
-                        Clase <code>C</code>: También hereda de <code>A</code> y
-                        sobrescribe el método <code>method</code>, que imprime
-                        <code>"Method in C"</code>.
+                        Clase <code class="language-python">C</code>: También hereda de <code class="language-python">A</code> y
+                        sobrescribe el método <code class="language-python">method</code>, que imprime
+                        <code class="language-python">"Method in C"</code>.
                       </li>
                       <li>
-                        Clase <code>A</code>: Define el método
-                        <code>method</code>, que imprime
-                        <code>"Method in A"</code>.
+                        Clase <code class="language-python">A</code>: Define el método
+                        <code class="language-python">method</code>, que imprime
+                        <code class="language-python">"Method in A"</code>.
                       </li>
                       <li>
                         Finalmente, si no lo encuentra en ninguna de las clases
-                        anteriores, buscará en <code>object</code>.
+                        anteriores, buscará en <code class="language-python">object</code>.
                       </li>
                     </ul>
                     <p>
-                      Como la clase <code>D</code> no proporciona su propia
+                      Como la clase <code class="language-python">D</code> no proporciona su propia
                       implementación del método, Python continúa su búsqueda.
-                      Encuentra la implementación en la clase <code>B</code>. En
-                      consecuencia, cuando se invoca <code>method()</code>, se
-                      ejecutará la versión de la clase <code>B</code>,
-                      imprimiendo <code>"Method in B"</code> y ahí termina la
+                      Encuentra la implementación en la clase <code class="language-python">B</code>. En
+                      consecuencia, cuando se invoca <code class="language-python">method()</code>, se
+                      ejecutará la versión de la clase <code class="language-python">B</code>,
+                      imprimiendo <code class="language-python">"Method in B"</code> y ahí termina la
                       búsqueda.
                     </p>
                   </div>
@@ -487,7 +487,7 @@
                 <div>
                   <h3>issubclass()</h3>
                   <p>
-                    La función <code>issubclass()</code> en Python es una
+                    La función <code class="language-python">issubclass()</code> en Python es una
                     función integrada que se utiliza para determinar si una
                     clase es una subclase de otra. Esto es útil al trabajar con
                     jerarquías de clases y herencia.
@@ -533,7 +533,7 @@
                 <div>
                   <h3>isinstance()</h3>
                   <p>
-                    La función <code>isinstance()</code> en Python se utiliza
+                    La función <code class="language-python">isinstance()</code> en Python se utiliza
                     para verificar si un objeto pertenece a una clase o a una
                     subclase específica. Es particularmente útil para validar
                     tipos de datos en un programa y mejorar la legibilidad y la
@@ -561,7 +561,7 @@
                 <div>
                   <h3>El Operador is</h3>
                   <p>
-                    En programación, el operador <code>is</code> es un operador
+                    En programación, el operador <code class="language-python">is</code> es un operador
                     en Python que se utiliza para comprobar si dos variables o
                     objetos son el mismo objeto en memoria, es decir, si tienen
                     la misma ubicación de memoria.
@@ -580,9 +580,9 @@
                   <div>
                     <h4>Diferencia Clave</h4>
                     <ul>
-                      <li><code>==</code> compara el valor de los objetos.</li>
+                      <li><code class="language-python">==</code> compara el valor de los objetos.</li>
                       <li>
-                        <code>is</code> compara si las referencias de los
+                        <code class="language-python">is</code> compara si las referencias de los
                         objetos son las mismas (es decir, si ambos apuntan al
                         mismo lugar en memoria).
                       </li>
@@ -606,8 +606,8 @@
                   <div>
                     <h4>¿Cómo Funciona super()?</h4>
                     <p>
-                      <code>super()</code> se usa principalmente en el método
-                      <code>__init__()</code> para inicializar una clase base,
+                      <code class="language-python">super()</code> se usa principalmente en el método
+                      <code class="language-python">__init__()</code> para inicializar una clase base,
                       pero también se puede usar para invocar cualquier otro
                       método de la clase base. Su uso facilita la reutilización
                       del código en una jerarquía de clases.
@@ -636,18 +636,18 @@
                     <p>Explicación:</p>
                     <ul>
                       <li>
-                        La clase <code>Perro</code> hereda de
-                        <code>Animal</code>.
+                        La clase <code class="language-python">Perro</code> hereda de
+                        <code class="language-python">Animal</code>.
                       </li>
                       <li>
-                        Se utiliza <code>super().__init__(nombre)</code> para
+                        Se utiliza <code class="language-python">super().__init__(nombre)</code> para
                         llamar al constructor de la clase base
-                        <code>Animal</code> y asignar el atributo
-                        <code>nombre</code>.
+                        <code class="language-python">Animal</code> y asignar el atributo
+                        <code class="language-python">nombre</code>.
                       </li>
                       <li>
-                        Se usa <code>super().hablar()</code> para llamar al
-                        método <code>hablar()</code> de la clase base antes de
+                        Se usa <code class="language-python">super().hablar()</code> para llamar al
+                        método <code class="language-python">hablar()</code> de la clase base antes de
                         agregar funcionalidad adicional en la clase derivada.
                       </li>
                     </ul>
@@ -660,7 +660,7 @@
                       <li>
                         <span class="fw-bold">Herencia múltiple</span>: En
                         Python, una clase puede heredar de más de una clase
-                        base. <code>super()</code> ayuda a manejar la llamada a
+                        base. <code class="language-python">super()</code> ayuda a manejar la llamada a
                         los métodos de las clases base en el orden correcto.
                       </li>
                       <li>
@@ -741,12 +741,12 @@
                     <strong>Clase Base (Empleado)</strong>:
                     <ul>
                       <li>
-                        Tiene un constructor (<code>__init__</code>) que
-                        inicializa los atributos <code>nombre</code>,
-                        <code>edad</code> y <code>salario</code>.
+                        Tiene un constructor (<code class="language-python">__init__</code>) que
+                        inicializa los atributos <code class="language-python">nombre</code>,
+                        <code class="language-python">edad</code> y <code class="language-python">salario</code>.
                       </li>
                       <li>
-                        Tiene un método <code>mostrar_informacion</code> que
+                        Tiene un método <code class="language-python">mostrar_informacion</code> que
                         devuelve una cadena con la información del empleado.
                       </li>
                     </ul>
@@ -754,13 +754,13 @@
                   <li>
                     <strong>Clase Derivada 1 (Gerente)</strong>:
                     <ul>
-                      <li>Hereda de <code>Empleado</code>.</li>
+                      <li>Hereda de <code class="language-python">Empleado</code>.</li>
                       <li>
-                        Añade un atributo adicional <code>departamento</code>.
+                        Añade un atributo adicional <code class="language-python">departamento</code>.
                       </li>
                       <li>
                         Sobrescribe el método
-                        <code>mostrar_informacion</code> para incluir el
+                        <code class="language-python">mostrar_informacion</code> para incluir el
                         departamento.
                       </li>
                     </ul>
@@ -768,14 +768,14 @@
                   <li>
                     <strong>Clase Derivada 2 (Desarrollador)</strong>:
                     <ul>
-                      <li>Hereda de <code>Empleado</code>.</li>
+                      <li>Hereda de <code class="language-python">Empleado</code>.</li>
                       <li>
                         Añade un atributo adicional
-                        <code>lenguaje_programacion</code>.
+                        <code class="language-python">lenguaje_programacion</code>.
                       </li>
                       <li>
                         Sobrescribe el método
-                        <code>mostrar_informacion</code> para incluir el
+                        <code class="language-python">mostrar_informacion</code> para incluir el
                         lenguaje de programación.
                       </li>
                     </ul>
@@ -784,12 +784,12 @@
                     <strong>Creación de Instancias</strong>:
                     <ul>
                       <li>
-                        Se crean instancias de <code>Empleado</code>,
-                        <code>Gerente</code> y <code>Desarrollador</code>.
+                        Se crean instancias de <code class="language-python">Empleado</code>,
+                        <code class="language-python">Gerente</code> y <code class="language-python">Desarrollador</code>.
                       </li>
                       <li>
                         Se muestra la información de cada instancia utilizando
-                        el método <code>mostrar_informacion</code>.
+                        el método <code class="language-python">mostrar_informacion</code>.
                       </li>
                     </ul>
                   </li>
@@ -853,8 +853,8 @@
                     <span class="fw-bold">Organización jerárquica</span>:
                     Permite organizar las clases en una jerarquía lógica, lo que
                     mejora la comprensión y legibilidad del código. Por ejemplo,
-                    una clase base <code>Vehículo</code> puede tener subclases
-                    como <code>Carro</code> y <code>Moto</code>.
+                    una clase base <code class="language-python">Vehículo</code> puede tener subclases
+                    como <code class="language-python">Carro</code> y <code class="language-python">Moto</code>.
                   </li>
                   <li>
                     <span class="fw-bold">Sobrescritura de métodos</span>: Las
@@ -998,10 +998,10 @@
                   </li>
                   <li>
                     <span class="fw-bold"
-                      >Usar <code>super()</code> para llamar al constructor de
+                      >Usar <code class="language-python">super()</code> para llamar al constructor de
                       la clase base</span
                     >: Siempre que se sobrescriba el método
-                    <code>__init__</code>, utilice <code>super()</code> para
+                    <code class="language-python">__init__</code>, utilice <code class="language-python">super()</code> para
                     garantizar que la clase base sea inicializada correctamente.
                     <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
@@ -1022,7 +1022,7 @@
                       <li>
                         Para sobrescribir métodos de manera explícita y hacer el
                         código más entendible, se puede utilizar el decorador
-                        <code>@override</code>, disponible desde Python 3.12.
+                        <code class="language-python">@override</code>, disponible desde Python 3.12.
                         Esto deja claro que el método sobrescribe uno de la
                         clase base. Además, es útil agregar comentarios y dar
                         nombres más descriptivos si es necesario
