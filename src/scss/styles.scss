@@ -204,6 +204,14 @@ nav a:hover {
   text-decoration: none;
 }
 
+
+// subrayar item "publicaciones"
+.nav-underline .nav-link.publicaciones-activo {
+  font-weight: 700 !important;
+  color: var(--bs-nav-underline-link-active-color) !important;
+  border-bottom-color: currentcolor !important;
+}
+
 .text_saira {
   font-family: "Saira Extra Condensed", sans-serif;
 }
