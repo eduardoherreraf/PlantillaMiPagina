@@ -96,7 +96,7 @@
 
   <body>
     <!-- Barra deNavegación -->
-<nav
+    <nav
       class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
     >
       <div class="container-fluid">
@@ -149,7 +149,9 @@
               <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog"
+              <a
+                class="nav-link mx-1 publicaciones-activo"
+                href="index.html#blog"
                 >PUBLICACIONES</a
               >
             </li>
@@ -162,7 +164,7 @@
     </nav>
     <!-- Barra deNavegación -->
 
-    <!-- -------------------------------- principal -------------------------------- -->
+    <!--  principal  -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
         <section class="pb-3 pt-5 col-lg-9 px-lg-4">
@@ -207,14 +209,16 @@
                   <li>
                     En Windows, los nombres de archivos y carpetas no distinguen
                     entre mayúsculas y minúsculas, por lo que
-                    <code>archivo.txt</code> y <code>Archivo.txt</code> se
-                    consideran el mismo archivo.
+                    <code class="language-bash">archivo.txt</code> y
+                    <code class="language-bash">Archivo.txt</code> se consideran
+                    el mismo archivo.
                   </li>
                   <li>
                     En Linux y macOS, los nombres de archivos y carpetas sí
                     distinguen entre mayúsculas y minúsculas, lo que significa
-                    que <code>archivo.txt</code> y <code>Archivo.txt</code> son
-                    archivos diferentes.
+                    que <code class="language-bash">archivo.txt</code> y
+                    <code class="language-bash">Archivo.txt</code> son archivos
+                    diferentes.
                   </li>
                 </ul>
 
@@ -225,19 +229,20 @@
                 <ul>
                   <li>
                     En sistemas Unix (Linux y macOS), es recomendable agregar
-                    una barra inclinada (<code>/</code>) al final de un nombre
-                    de directorio para evitar confusiones.
+                    una barra inclinada (<code class="language-bash">/</code>)
+                    al final de un nombre de directorio para evitar confusiones.
                   </li>
                   <li>
-                    Ejemplo: <code>proyectos/</code> indica que "proyectos" es
-                    un directorio y no un archivo.
+                    Ejemplo:
+                    <code class="language-bash">proyectos/</code> indica que
+                    "proyectos" es un directorio y no un archivo.
                   </li>
                 </ul>
                 <p>
                   también se debe tener en cuenta que para referirse a un
                   directorio se debe usar el slash (/) al final de su nombre,
                   p.ej
-                  <code>proyectos/</code>.
+                  <code class="language-bash">proyectos/</code>.
                 </p>
                 <!-- Ventajas del Uso de la CLI -->
                 <div>
@@ -280,24 +285,29 @@
                 <div>
                   <h3>Uso de pwd</h3>
                   <p>Simplemente se debe escribir el comando en la terminal:</p>
-                  <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-bash" data-prismjs-copy="Copy">
-                      pwd
-                    </code>
-                  </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-bash" data-prismjs-copy="Copy">
+                        pwd
+                      </code>
+                    </pre>
+                  </div>
                   <!-- Ejemplo de Salida -->
                   <div>
                     <h4>Ejemplo de Salida</h4>
                     <p>
                       Si el usuario está en la carpeta
-                      <code>/home/usuario/proyectos</code>, al ejecutar
-                      <code>pwd</code>, la terminal mostrará:
+                      <code class="language-bash">/home/usuario/proyectos</code
+                      >, al ejecutar <code class="language-bash">pwd</code>, la
+                      terminal mostrará:
                     </p>
-                    <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-bash" data-prismjs-copy="Copy">
-                        /home/usuario/proyectos
-                      </code>
-                    </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-bash" data-prismjs-copy="Copy">
+                          /home/usuario/proyectos
+                        </code>
+                      </pre>
+                    </div>
                   </div>
                   <!-- Ejemplo de Salida fin -->
                 </div>
@@ -322,12 +332,12 @@
                   <h3>Opciones útiles de pwd</h3>
                   <ul>
                     <li>
-                      <code>pwd -L</code>: Muestra el directorio actual con
-                      enlaces simbólicos (por defecto).
+                      <code class="language-bash">pwd -L</code>: Muestra el
+                      directorio actual con enlaces simbólicos (por defecto).
                     </li>
                     <li>
-                      <code>pwd -P</code>: Muestra la ruta real sin enlaces
-                      simbólicos.
+                      <code class="language-bash">pwd -P</code>: Muestra la ruta
+                      real sin enlaces simbólicos.
                     </li>
                   </ul>
                 </div>
@@ -344,65 +354,73 @@
                   esenciales en la interfaz de línea de comandos (CLI).
                 </p>
                 <h3>Formato ls</h3>
-                <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-bash" data-prismjs-copy="Copy">
-                    ls [opciones] [ruta_de_directorio] [nombre_de_los_archivos]
-                  </code>
-                </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-bash" data-prismjs-copy="Copy">
+                      ls [opciones] [ruta_de_directorio] [nombre_de_los_archivos]
+                    </code>
+                  </pre>
+                </div>
                 <h3>Usos ls</h3>
                 <ul>
                   <li>
-                    <code>ls</code>, muestra el listado de archivos en el
-                    directorio de trabajo actual.
+                    <code class="language-bash">ls</code>, muestra el listado de
+                    archivos en el directorio de trabajo actual.
                   </li>
                   <li>
-                    <code>ls c:\usuario\proyecto</code>, muestra el listado del
-                    directorio <code>proyecto</code>.
+                    <code class="language-bash">ls c:\usuario\proyecto</code>,
+                    muestra el listado del directorio
+                    <code class="language-bash">proyecto</code>.
                   </li>
                   <li>
-                    <code>ls ..</code>, muestra el contenido del directorio
-                    padre, es decir el nivel superior.
+                    <code class="language-bash">ls ..</code>, muestra el
+                    contenido del directorio padre, es decir el nivel superior.
                   </li>
                   <li>
-                    <code>ls -d */</code>, lista sólo directorios o carpetas.
+                    <code class="language-bash">ls -d */</code>, lista sólo
+                    directorios o carpetas.
                   </li>
                   <li>
-                    <code>ls *</code>, presenta todos los archivos incluyendo
-                    los que están dentro de los subdirectorios.
+                    <code class="language-bash">ls *</code>, presenta todos los
+                    archivos incluyendo los que están dentro de los
+                    subdirectorios.
                   </li>
                   <li>
-                    <code>ls -R</code>, revela todos los archivos incluyendo los
-                    que hay en todas las subcarpetas hasta el último.
+                    <code class="language-bash">ls -R</code>, revela todos los
+                    archivos incluyendo los que hay en todas las subcarpetas
+                    hasta el último.
                   </li>
                   <li>
-                    <code>ls -s</code>, exhibe los archivos junto a su tamaño.
+                    <code class="language-bash">ls -s</code>, exhibe los
+                    archivos junto a su tamaño.
                   </li>
                   <li>
-                    <code>ls -l</code>, presenta los archivos en formato largo o
-                    más detallado.
+                    <code class="language-bash">ls -l</code>, presenta los
+                    archivos en formato largo o más detallado.
                   </li>
                   <li>
-                    <code>ls -a</code>, desplega todos los archivos y carpetas
-                    incluyendo los ocultos.
+                    <code class="language-bash">ls -a</code>, desplega todos los
+                    archivos y carpetas incluyendo los ocultos.
                   </li>
                   <li>
-                    <code>ls -t</code>, muestra los archivos y carpetas
-                    ordenados por de su fecha de modificación en orden
-                    descendente (de mayor a menor).
+                    <code class="language-bash">ls -t</code>, muestra los
+                    archivos y carpetas ordenados por de su fecha de
+                    modificación en orden descendente (de mayor a menor).
                   </li>
                   <li>
-                    <code>ls -tr</code>, muestra los archivos y carpetas
-                    ordenados por de su fecha de modificación en orden
-                    ascendente (de menor a mayor).
+                    <code class="language-bash">ls -tr</code>, muestra los
+                    archivos y carpetas ordenados por de su fecha de
+                    modificación en orden ascendente (de menor a mayor).
                   </li>
                   <li>
-                    <code>ls > output.txt</code>, el listado obtenido con el
-                    comando <code>ls</code> se guarda en el archivo
-                    <code>output.txt</code>.
+                    <code class="language-bash">ls > output.txt</code>, el
+                    listado obtenido con el comando
+                    <code class="language-bash">ls</code> se guarda en el
+                    archivo <code class="language-bash">output.txt</code>.
                   </li>
                   <li>
-                    <code>ls --help</code>, muestra la ayuda del comando
-                    <code>ls</code>.
+                    <code class="language-bash">ls --help</code>, muestra la
+                    ayuda del comando <code class="language-bash">ls</code>.
                   </li>
                 </ul>
                 <!-- Ejemplos de uso ls -->
@@ -411,46 +429,57 @@
                   <ul>
                     <li>
                       Listar archivos con detalles completos:
-                      <p></p>
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-bash" data-prismjs-copy="Copy">
-                          ls -l
-                        </code>
-                      </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            ls -l
+                          </code>
+                        </pre>
+                      </div>
                       <p>Salida esperada:</p>
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-bash" data-prismjs-copy="Copy">
-                          -rw-r--r--  1 usuario  grupo   2048 Feb 15 10:30 archivo.txt
-                          drwxr-xr-x  2 usuario  grupo   4096 Feb 14 08:12 documentos/
-                        </code>
-                      </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            -rw-r--r--  1 usuario  grupo   2048 Feb 15 10:30 archivo.txt
+                            drwxr-xr-x  2 usuario  grupo   4096 Feb 14 08:12 documentos/
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>Listar todos los archivos, incluyendo los ocultos:</li>
-                    <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        ls -a
-                      </code>
-                    </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-bash" data-prismjs-copy="Copy">
+                          ls -a
+                        </code>
+                      </pre>
+                    </div>
                     <p>Salida esperada:</p>
-                    <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        .  ..  .oculto  archivo.txt  documentos/
-                      </code>
-                    </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-bash" data-prismjs-copy="Copy">
+                          .  ..  .oculto  archivo.txt  documentos/
+                        </code>
+                      </pre>
+                    </div>
                     <li>Listar archivos ordenados por tamaño:</li>
-                    <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        ls -lS
-                      </code>
-                    </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-bash" data-prismjs-copy="Copy">
+                          ls -lS
+                        </code>
+                      </pre>
+                    </div>
                     <p>Esto ordena los archivos de mayor a menor tamaño.</p>
                     <li>
                       Listar archivos en subdirectorios de manera recursiva:
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          ls -R
-                        </code>
-                      </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            ls -R
+                          </code>
+                        </pre>
+                      </div>
                       <p>
                         Esto muestra todos los archivos dentro de los
                         subdirectorios.
@@ -458,10 +487,11 @@
                     </li>
                   </ul>
                   <p>
-                    El comando <code>ls</code> es fundamental para la navegación
-                    y gestión de archivos en la terminal, y su uso combinado con
-                    opciones avanzadas permite optimizar el flujo de trabajo en
-                    sistemas Unix/Linux y macOS.
+                    El comando <code class="language-bash">ls</code> es
+                    fundamental para la navegación y gestión de archivos en la
+                    terminal, y su uso combinado con opciones avanzadas permite
+                    optimizar el flujo de trabajo en sistemas Unix/Linux y
+                    macOS.
                   </p>
                 </div>
                 <!-- Ejemplos de uso ls fin -->
@@ -491,58 +521,81 @@
                       <strong>Ir a un directorio específico</strong>: Esto
                       cambia al directorio llamado "documentos", siempre que se
                       encuentre dentro del directorio actual.
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          cd documentos/
-                        </code>
-                      </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            cd documentos/
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <strong>Regresar al directorio anterior</strong>: El doble
-                      punto <code>..</code> indica el directorio padre. Con este
-                      comando, se sube un nivel en la jerarquía de directorios.
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          cd ..
-                        </code>
-                      </pre>
+                      punto <code class="language-bash">..</code> indica el
+                      directorio padre. Con este comando, se sube un nivel en la
+                      jerarquía de directorios.
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            cd ..
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <strong
-                        >Regresar al directorio raíz (<code>/</code>)</strong
+                        >Regresar al directorio raíz (<code
+                          class="language-bash"
+                          >/</code
+                        >)</strong
                       >: Esto lleva al usuario al directorio raíz del sistema.
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          cd /
-                        </code>
-                      </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            cd /
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <strong
-                        >Ir al directorio personal del usuario
-                        (<code>home</code>)</strong
-                      >: El símbolo <code>~</code> representa el home del
-                      usuario, generalmente
-                      <code>/home/nombre_usuario/</code> en Linux,
-                      <code>/Users/nombre_usuario/</code> en macOS o
-                      <code>C:\Users\Nombre-de-usuario</code> en Windows.
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          cd ~
-                        </code>
-                      </pre>
+                        >Ir al directorio personal del usuario (<code
+                          class="language-bash"
+                          >home</code
+                        >)</strong
+                      >: El símbolo
+                      <code class="language-bash">~</code> representa el home
+                      del usuario, generalmente
+                      <code class="language-bash">/home/nombre_usuario/</code>
+                      en Linux,
+                      <code class="language-bash">/Users/nombre_usuario/</code>
+                      en macOS o
+                      <code class="language-bash"
+                        >C:\Users\Nombre-de-usuario</code
+                      >
+                      en Windows.
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            cd ~
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <strong
                         >Regresar al directorio anterior (no confundir con el
                         directorio padre)</strong
                       >: Este comando cambia al directorio en el que el usuario
-                      estaba antes de ejecutar el último <code>cd</code>.
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
+                      estaba antes de ejecutar el último
+                      <code class="language-bash">cd</code>.
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
                           cd -
                         </code>
                       </pre>
+                      </div>
                     </li>
                     <li>
                       <strong
@@ -550,32 +603,40 @@
                         absoluta</strong
                       >: En este caso, se accede al directorio "proyectos"
                       usando su ruta completa.
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          cd /home/usuario/proyectos/
-                        </code>
-                      </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            cd /home/usuario/proyectos/
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <strong
                         >Acceder a un directorio mediante una ruta
                         relativa</strong
-                      >: Si el usuario está en <code>/home/usuario/</code>, este
+                      >: Si el usuario está en
+                      <code class="language-bash">/home/usuario/</code>, este
                       comando lo llevará a
-                      <code>/home/usuario/proyectos/</code>.
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          cd proyectos/
-                        </code>
-                      </pre>
+                      <code class="language-bash">/home/usuario/proyectos/</code
+                      >.
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            cd proyectos/
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <strong>Muestra la ayuda de este comando</strong>:
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          cd --help 
-                        </code>
-                      </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            cd --help 
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -594,11 +655,13 @@
                 </p>
                 <h3>Formato mkdir</h3>
                 <p>La sintaxis general del comando mkdir es:</p>
-                <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-bash" data-prismjs-copy="Copy">
-                    mkdir [nombre_de_directorio]
-                  </code>
-                </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-bash" data-prismjs-copy="Copy">
+                      mkdir [nombre_de_directorio]
+                    </code>
+                  </pre>
+                </div>
                 <p>Esto crea un nuevo directorio en la ubicación actual.</p>
                 <!-- Ejemplos de Uso mkdir -->
                 <div>
@@ -608,57 +671,69 @@
                       <strong>Crear un solo directorio</strong>: Este comando
                       crea un directorio llamado "proyectos" en el directorio
                       actual.
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          mkdir proyectos
-                        </code>
-                      </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            mkdir proyectos
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <strong>Crear varios directorios a la vez</strong>: Esto
                       creará tres directorios llamados "carpeta1", "carpeta2" y
                       "carpeta3" en la ubicación actual.
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          mkdir carpeta1 carpeta2 carpeta3
-                        </code>
-                      </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            mkdir carpeta1 carpeta2 carpeta3
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <strong
                         >Crear un directorio en una ubicación específica</strong
                       >: Este comando creará el directorio "nuevo_proyecto"
                       dentro de "/home/usuario/documentos/".
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          mkdir /home/usuario/documentos/nuevo_proyecto
-                        </code>
-                      </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            mkdir /home/usuario/documentos/nuevo_proyecto
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <strong
                         >Crear un directorio con una subcarpeta (opción
-                        <code>-p</code>)</strong
-                      >: La opción <code>-p</code> (parents) permite crear
-                      directorios anidados sin necesidad de hacerlo uno por uno.
-                      En este caso, si "proyectos" y "clienteX" no existen,
-                      <code>mkdir</code> los creará automáticamente junto con
-                      "documentos".
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          mkdir -p proyectos/clienteX/documentos
-                        </code>
-                      </pre>
+                        <code class="language-bash">-p</code>)</strong
+                      >: La opción
+                      <code class="language-bash">-p</code> (parents) permite
+                      crear directorios anidados sin necesidad de hacerlo uno
+                      por uno. En este caso, si "proyectos" y "clienteX" no
+                      existen, <code class="language-bash">mkdir</code> los
+                      creará automáticamente junto con "documentos".
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            mkdir -p proyectos/clienteX/documentos
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <strong>Verificar que el directorio se creó</strong>:
-                      Después de ejecutar <code>mkdir</code>, se puede usar ls
+                      Después de ejecutar
+                      <code class="language-bash">mkdir</code>, se puede usar ls
                       para comprobar que el directorio ha sido creado:
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          ls -l
-                        </code>
-                      </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            ls -l
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -695,19 +770,21 @@
               <div id="touch" class="mt-5">
                 <h2 class="mt-1">touch</h2>
                 <p>
-                  El comando <code>touch</code> en sistemas Unix/Linux y macOS
-                  se utiliza principalmente para crear archivos vacíos o
-                  actualizar la fecha y hora de modificación de un archivo sin
-                  modificar su contenido. Es una herramienta útil en la
-                  administración de archivos dentro de la interfaz de línea de
-                  comandos (CLI).
+                  El comando <code class="language-bash">touch</code> en
+                  sistemas Unix/Linux y macOS se utiliza principalmente para
+                  crear archivos vacíos o actualizar la fecha y hora de
+                  modificación de un archivo sin modificar su contenido. Es una
+                  herramienta útil en la administración de archivos dentro de la
+                  interfaz de línea de comandos (CLI).
                 </p>
                 <h3>Formato touch</h3>
-                <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-bash" data-prismjs-copy="Copy">
-                    touch [nombre_del_archivo]
-                  </code>
-                </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-bash" data-prismjs-copy="Copy">
+                      touch [nombre_del_archivo]
+                    </code>
+                  </pre>
+                </div>
                 <p>
                   Si el archivo no existe, el comando lo crea vacío. Si el
                   archivo ya existe, simplemente actualiza su fecha de
@@ -721,21 +798,25 @@
                       <span class="fw-bold">Crear un archivo vacío</span>: Este
                       comando creará un archivo llamado "documento.txt" en el
                       directorio act
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          touch documento.txt
-                        </code>
-                      </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            touch documento.txt
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold">Crear varios archivos a la vez</span
                       >: Esto creará los archivos "archivo1.txt", "archivo2.txt"
                       y "archivo3.txt" en el directorio actual.
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          touch archivo1.txt archivo2.txt archivo3.txt
-                        </code>
-                      </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            touch archivo1.txt archivo2.txt archivo3.txt
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold"
@@ -744,11 +825,13 @@
                       >: Si "informe.txt" ya existe, su fecha de modificación se
                       actualizará a la fecha y hora actual sin modificar su
                       contenido.
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          touch informe.txt
-                        </code>
-                      </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            touch informe.txt
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold"
@@ -756,11 +839,13 @@
                         específica</span
                       >: Esto cambia la fecha de modificación de "archivo.txt" a
                       28 de febrero de 2024 a las 15:30.
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          touch -t 202402281530 archivo.txt
-                        </code>
-                      </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            touch -t 202402281530 archivo.txt
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold"
@@ -768,11 +853,13 @@
                         actualizar la fecha)</span
                       >: Si el archivo no existe, no se creará. Si existe, se
                       actualizará su fecha de modificación.
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          touch -c archivo.txt
-                        </code>
-                      </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            touch -c archivo.txt
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -821,45 +908,59 @@
               <div id="rm" class="mt-5">
                 <h2 class="mt-1">rm (ReMove)</h2>
                 <p>
-                  El comando <abbr title="ReMove"><code>rm</code></abbr> se
-                  utiliza para eliminar archivos y directorios. Su uso puede ser
-                  peligroso porque los archivos eliminados con
-                  <code>rm</code> no se envían a la papelera, sino que se borran
-                  de manera permanente.
+                  El comando
+                  <abbr title="ReMove"
+                    ><code class="language-bash">rm</code></abbr
+                  >
+                  se utiliza para eliminar archivos y directorios. Su uso puede
+                  ser peligroso porque los archivos eliminados con
+                  <code class="language-bash">rm</code> no se envían a la
+                  papelera, sino que se borran de manera permanente.
                 </p>
                 <h3>Formato rm</h3>
-                <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-bash" data-prismjs-copy="Copy">
-                    rm [opciones] [ruta_de_directorio]/[nombre_del_archivo]
-                  </code>
-                </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-bash" data-prismjs-copy="Copy">
+                      rm [opciones] [ruta_de_directorio]/[nombre_del_archivo]
+                    </code>
+                  </pre>
+                </div>
                 <div>
                   <h3>Usos rm</h3>
                   <ul>
                     <li>
-                      <code>rm -f c:\usuarios\respaldo\index.css</code>, se hace
-                      la eliminación del archivo <code>index.css</code> sin
-                      pedir confirmación alguna.
+                      <code class="language-bash"
+                        >rm -f c:\usuarios\respaldo\index.css</code
+                      >, se hace la eliminación del archivo
+                      <code class="language-bash">index.css</code> sin pedir
+                      confirmación alguna.
                     </li>
                     <li>
-                      <code>rm -i index.css</code>, pide la confirmación antes
-                      de la eliminación del archivo <code>index.css</code>.
+                      <code class="language-bash">rm -i index.css</code>, pide
+                      la confirmación antes de la eliminación del archivo
+                      <code class="language-bash">index.css</code>.
                     </li>
                     <li>
-                      <code>rm -r c:\usuarios\respaldo\</code> o
-                      <code>-R</code>, se elimina el directorio de
-                      <code>respaldo</code> recursivamente, es decir, se elimina
-                      el directorio con todo su contenido incluyendo subcarpetas
-                      y archivos.
+                      <code class="language-bash"
+                        >rm -r c:\usuarios\respaldo\</code
+                      >
+                      o <code class="language-bash">-R</code>, se elimina el
+                      directorio de
+                      <code class="language-bash">respaldo</code>
+                      recursivamente, es decir, se elimina el directorio con
+                      todo su contenido incluyendo subcarpetas y archivos.
                     </li>
                     <li>
-                      <code>rm -d c:\usuarios\respaldo\</code>, borra el
-                      directorio <code>respaldo</code>, si y sólo si, está
-                      vacío, de lo contrario mostrará un error.
+                      <code class="language-bash"
+                        >rm -d c:\usuarios\respaldo\</code
+                      >, borra el directorio
+                      <code class="language-bash">respaldo</code>, si y sólo si,
+                      está vacío, de lo contrario mostrará un error.
                     </li>
                     <li>
-                      <code>rm -v c:\usuarios\respaldo\</code>, Muestra los
-                      archivos eliminados.
+                      <code class="language-bash"
+                        >rm -v c:\usuarios\respaldo\</code
+                      >, Muestra los archivos eliminados.
                     </li>
                   </ul>
                 </div>
@@ -869,45 +970,56 @@
                   <ul>
                     <li>
                       <span class="fw-bold">Eliminar un archivo específico</span
-                      >: Borra el archivo <code>archivo.txt</code> en el
+                      >: Borra el archivo
+                      <code class="language-bash">archivo.txt</code> en el
                       directorio actual.
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          rm archivo.txt
-                        </code>
-                      </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            rm archivo.txt
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold">Eliminar varios archivos</span>:
-                      Elimina <code>archivo1.txt</code> y
-                      <code>archivo2.txt</code>.
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          rm archivo1.txt archivo2.txt
-                        </code>
-                      </pre>
+                      Elimina <code class="language-bash">archivo1.txt</code> y
+                      <code class="language-bash">archivo2.txt</code>.
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            rm archivo1.txt archivo2.txt
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold"
                         >Eliminar todos los archivos con cierta extensión</span
                       >: Elimina todos los archivos con extensión
-                      <code>.log</code> en el directorio actual.
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          rm *.log
-                        </code>
-                      </pre>
+                      <code class="language-bash">.log</code> en el directorio
+                      actual.
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            rm *.log
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold"
                         >Eliminar un directorio y su contenido</span
-                      >: Elimina <code>carpeta</code> junto con todos sus
-                      archivos y subdirectorios.
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          rm -r carpeta
-                        </code>
-                      </pre>
+                      >: Elimina
+                      <code class="language-bash">carpeta</code> junto con todos
+                      sus archivos y subdirectorios.
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            rm -r carpeta
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold"
@@ -915,20 +1027,25 @@
                       >: Elimina carpeta de forma recursiva y sin pedir
                       confirmación. ¡Cuidado con este comando, puede borrar
                       archivos importantes de forma irreversible!.
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          rm -rf carpeta
-                        </code>
-                      </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            rm -rf carpeta
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold">Confirmar antes de eliminar</span>:
-                      Pregunta antes de eliminar <code>archivo.txt</code>.
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          rm -i archivo.txt
-                        </code>
-                      </pre>
+                      Pregunta antes de eliminar
+                      <code class="language-bash">archivo.txt</code>.
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            rm -i archivo.txt
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -938,13 +1055,15 @@
                   <h3>Consejos de Seguridad rm</h3>
                   <ul>
                     <li>
-                      Antes de usar <code>rm -rf</code>, verificar con
-                      <code>ls</code> qué se va a eliminar.
+                      Antes de usar <code class="language-bash">rm -rf</code>,
+                      verificar con <code class="language-bash">ls</code> qué se
+                      va a eliminar.
                     </li>
                     <li>
-                      Se puede usar <code>trash-cli</code> como alternativa
-                      segura para mover archivos a la papelera en lugar de
-                      eliminarlos permanentemente.
+                      Se puede usar
+                      <code class="language-bash">trash-cli</code> como
+                      alternativa segura para mover archivos a la papelera en
+                      lugar de eliminarlos permanentemente.
                     </li>
                   </ul>
                 </div>
@@ -961,18 +1080,22 @@
                   original intacto.
                 </p>
                 <h3>Formato cp</h3>
-                <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-bash" data-prismjs-copy="Copy">
-                    cp [opciones] origen destino
-                  </code>
-                </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-bash" data-prismjs-copy="Copy">
+                      cp [opciones] origen destino
+                    </code>
+                  </pre>
+                </div>
                 <ul>
                   <li>
-                    <span class="fw-bold"><code>origen</code></span
+                    <span class="fw-bold"
+                      ><code class="language-bash">origen</code></span
                     >: Archivo o directorio que se desea copiar.
                   </li>
                   <li>
-                    <span class="fw-bold"><code>destino</code></span
+                    <span class="fw-bold"
+                      ><code class="language-bash">destino</code></span
                     >: Ubicación donde se copiará el archivo o directorio.
                   </li>
                 </ul>
@@ -980,26 +1103,30 @@
                 <h3>Usos cp</h3>
                 <ul>
                   <li>
-                    <code>cp -i index.html c:\usuario\proyecto</code>, copia el
-                    archivo index.hml en el directorio c:\usuario\proyecto pero
-                    si el archivo ya existe se pide la confirmación.
+                    <code class="language-bash"
+                      >cp -i index.html c:\usuario\proyecto</code
+                    >, copia el archivo index.hml en el directorio
+                    c:\usuario\proyecto pero si el archivo ya existe se pide la
+                    confirmación.
                   </li>
                   <li>
-                    <code>cp -r c:\usuario\proyecto c:\usuario\respaldo</code>,
-                    se copia recursivamente el contenido de la carpeta proyecto
-                    en la respaldo, o sea, incluyendo todas las subcarpetas y
-                    los archivos.
+                    <code class="language-bash"
+                      >cp -r c:\usuario\proyecto c:\usuario\respaldo</code
+                    >, se copia recursivamente el contenido de la carpeta
+                    proyecto en la respaldo, o sea, incluyendo todas las
+                    subcarpetas y los archivos.
                   </li>
                   <li>
-                    <code>cp -f origen destino</code>, Se fuerza la copia
-                    sobrescribiendo archivos sin pedir confirmación.
+                    <code class="language-bash">cp -f origen destino</code>, Se
+                    fuerza la copia sobrescribiendo archivos sin pedir
+                    confirmación.
                   </li>
                   <li>
-                    <code>cp -v origen destino</code>, muestra cada
-                    archivo/directorio que se esta copiando.
+                    <code class="language-bash">cp -v origen destino</code>,
+                    muestra cada archivo/directorio que se esta copiando.
                   </li>
                   <li>
-                    <code
+                    <code class="language-bash"
                       >cp c:\usuario\archivo_viejo.txt
                       c:\usuario\archivo_nuevo.txt</code
                     >, renombra el archivo_viejo.txt con archivo_nuevo.txt
@@ -1009,14 +1136,16 @@
                   </li>
 
                   <li>
-                    <code>cp -p informe.pdf \home\usuario\respaldo\ </code>, Se
-                    copia el archivo <code>informe.pdf</code> a la carpeta
-                    <code>\home\usuario\respaldo\</code>, manteniendo sus
-                    permisos y fecha de modificación.
+                    <code class="language-bash"
+                      >cp -p informe.pdf \home\usuario\respaldo\ </code
+                    >, Se copia el archivo
+                    <code class="language-bash">informe.pdf</code> a la carpeta
+                    <code class="language-bash">\home\usuario\respaldo\</code>,
+                    manteniendo sus permisos y fecha de modificación.
                   </li>
 
                   <li>
-                    <code
+                    <code class="language-bash"
                       >cp c:\usuario\archivo_viejo.txt
                       c:\usuario\archivo_nuevo.txt</code
                     >, renombra el archivo_viejo.txt con archivo_nuevo.txt
@@ -1025,16 +1154,20 @@
                     consecuencias.
                   </li>
                   <li>
-                    <code>cp -u datos.csv \home\usuario\respaldo\ </code>: Copia
-                    el archivo <code>datos.csv</code> al directorio
-                    <code>\home\usuario\respaldo\</code>, pero evitando
-                    sobrescribirlo si ya existe una versión más reciente en el
-                    destino.
-                    <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        cp -u datos.csv \home\usuario\respaldo\
-                      </code>
-                    </pre>
+                    <code class="language-bash"
+                      >cp -u datos.csv \home\usuario\respaldo\ </code
+                    >: Copia el archivo
+                    <code class="language-bash">datos.csv</code> al directorio
+                    <code class="language-bash">\home\usuario\respaldo\</code>,
+                    pero evitando sobrescribirlo si ya existe una versión más
+                    reciente en el destino.
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-bash" data-prismjs-copy="Copy">
+                          cp -u datos.csv \home\usuario\respaldo\
+                        </code>
+                      </pre>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -1047,11 +1180,13 @@
                   contenido visible en pantalla y dejando una interfaz limpia.
                 </p>
                 <h3>Formato clear</h3>
-                <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-bash" data-prismjs-copy="Copy">
-                    clear
-                  </code>
-                </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-bash" data-prismjs-copy="Copy">
+                      clear
+                    </code>
+                  </pre>
+                </div>
                 <!-- Alternativas a clear -->
                 <div>
                   <h3>Alternativas a clear</h3>
@@ -1060,11 +1195,13 @@
                       <span class="fw-bold"
                         >Limpiar la pantalla sin perder el historial</span
                       >:
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          printf "\033c"
-                        </code>
-                      </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            printf "\033c"
+                          </code>
+                        </pre>
+                      </div>
                       Esto restablece la terminal a su estado inicial.
                     </li>
                     <li>
@@ -1072,11 +1209,13 @@
                         >Limpiar el historial de la sesión actual y la
                         pantalla</span
                       >:
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          history -c && clear
-                        </code>
-                      </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            history -c && clear
+                          </code>
+                        </pre>
+                      </div>
                       Este comando borra completamente el historial de comandos
                       y limpia la pantalla.
                     </li>
@@ -1094,11 +1233,13 @@
                   comandos previamente utilizados.
                 </p>
                 <h3>Formato history</h3>
-                <pre data-src-status="loaded" tabindex="0">
-              <code class="language-bash" data-prismjs-copy="Copy">
-                history [opciones] [n]
-              </code>
-            </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-bash" data-prismjs-copy="Copy">
+                      history [opciones] [n]
+                    </code>
+                  </pre>
+                </div>
                 <ul>
                   <li>
                     Si se usa sin argumentos, muestra todos los comandos
@@ -1115,75 +1256,90 @@
                         >Mostrar todo el historial de comandos</span
                       >: Muestra una lista numerada con todos los comandos
                       ejecutados en la sesión actual.
-                      <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-python" data-prismjs-copy="Copy">
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
                             history
                           </code>
                         </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold"
                         >Mostrar solo los últimos n comandos</span
                       >: Muestra los últimos 10 comandos ejecutados.
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          history 10
-                        </code>
-                      </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            history 10
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold"
                         >Buscar un comando en el historial</span
                       >: Muestra todas las líneas del historial que contienen el
-                      comando <code>ls</code>.
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          history | grep "ls"
-                        </code>
-                      </pre>
+                      comando <code class="language-bash">ls</code>.
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            history | grep "ls"
+                          </code>
+                        </pre>
+                      </div>
                       Otra forma rápida de buscar comandos es presionar
-                      <code>Ctrl + R</code> y escribir una parte del comando.
+                      <code class="language-bash">Ctrl + R</code> y escribir una
+                      parte del comando.
                     </li>
                     <li>
                       <span class="fw-bold"
                         >Reejecutar un comando del historial</span
                       >: Se puede ejecutar un comando directamente usando su
                       número en la lista.
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          !100
-                        </code>
-                      </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            !100
+                          </code>
+                        </pre>
+                      </div>
                       Ejecuta el comando con el número 100 en el historial.
                       <br />
                       Para ejecutar el último comando usado:
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          !!
-                        </code>
-                      </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            !!
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold"
                         >Eliminar un comando específico del historial</span
-                      >: Elimina el comando número <code>50</code> del
-                      historial.
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          history -d 50
-                        </code>
-                      </pre>
+                      >: Elimina el comando número
+                      <code class="language-bash">50</code> del historial.
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            history -d 50
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold"
                         >Limpiar completamente el historial</span
                       >: Borra todos los comandos almacenados en el historial de
                       la sesión actual.
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          history -c
-                        </code>
-                      </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            history -c
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold"
@@ -1191,11 +1347,13 @@
                         historial</span
                       >: Guarda los cambios en el archivo ~/.bash_history, donde
                       se almacena el historial de comandos.
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          history -w
-                        </code>
-                      </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            history -w
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -1207,15 +1365,17 @@
                     El historial de comandos se guarda en el archivo oculto
                     ~/.bash_history. Se puede ver con:
                   </p>
-                  <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      cat ~/.bash_history
-                    </code>
-                  </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-bash" data-prismjs-copy="Copy">
+                        cat ~/.bash_history
+                      </code>
+                    </pre>
+                  </div>
                   <p>
-                    El comando <code>history</code> es útil para reutilizar
-                    comandos, depurar errores o automatizar tareas mediante
-                    scripts.
+                    El comando <code class="language-bash">history</code> es
+                    útil para reutilizar comandos, depurar errores o automatizar
+                    tareas mediante scripts.
                   </p>
                 </div>
                 <!-- Ubicación del historial fin -->
@@ -1223,7 +1383,7 @@
             </div>
           </article>
           <!-- fin Comandos Básicos CLI -->
-          <!-- -------------------------------- comentarios -------------------------------- -->
+          <!--  comentarios  -->
           <article class="row pt-5" id="comments">
             <h2>COMENTARIOS</h2>
             <p>
@@ -1292,9 +1452,9 @@
               </form>
             </div>
           </article>
-          <!-- -------------------------------- fin comentarios -------------------------------- -->
+          <!--  fin comentarios  -->
         </section>
-        <!-- -------------------------------- barra lateral -------------------------------- -->
+        <!--  barra lateral  -->
         <aside class="col-lg-3 d-none d-lg-block pt-5">
           <h1>En Este Artículo</h1>
           <ul class="list-group">
@@ -1333,85 +1493,10 @@
             </li>
           </ul>
         </aside>
-        <!-- -------------------------------- fin barra lateral -------------------------------- -->
+        <!--  fin barra lateral  -->
       </main>
-      <!-- -------------------------------- fin principal -------------------------------- -->
+      <!--  fin principal  -->
     </div>
-
-    <!-- -------------------------------- pie de pagina -------------------------------- -->
-    <footer class="row border-top border-1 m-1 mt-auto">
-      <div class="row">
-        <!-- contacto -->
-        <address class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Contacto</div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-envelope-at fs-3"></i>
-            <span class="ms-3">
-              <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com"
-                >ehfeduardo@gmail.com</a
-              >
-            </span>
-          </div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-geo-alt fs-3"></i>
-            <span class="ms-3">Bogotá D. C. - Colombia</span>
-          </div>
-        </address>
-        <!-- Derechos de autor -->
-        <div
-          class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100"
-        >
-          <div>
-            <i class="bi bi-c-circle fs-5"></i>
-          </div>
-          <div class="ms-2">All Rights Reserved 2025</div>
-        </div>
-        <!-- redes sociales -->
-        <div class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Redes Sociales</div>
-          <div class="d-flex justify-content-evenly align-items-center gap-5">
-            <div>
-              <a
-                href="https://www.linkedin.com/in/eduardoherreraf/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-linkedin fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://github.com/eduardoherreraf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-github fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.facebook.com/eduardoherreraforero/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-facebook fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://twitter.com/ehfeduardo/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-twitter-x fs-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex align-items-center justify-content-center gap-2"></div>
-    </footer>
-    <!-- -------------------------------- pie de pagina fin -------------------------------- -->
 
     <!-- button to top -->
     <button onclick="topFunction()" id="myBtnScroll" title="Go to top">

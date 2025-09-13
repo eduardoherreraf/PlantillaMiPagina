@@ -246,13 +246,15 @@
                   <li>Navegar hasta el directorio del repositorio local.</li>
                   <li>Ejecutar el siguiente comando:</li>
                 </ul>
-                <pre data-src-status="loaded" tabindex="0">
-                  <code
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code
                     class="language-bash"
                     data-prismjs-copy="Copy"
-                  >rm -rf .git
+                    >rm -rf .git
                   </code>
                 </pre>
+                </div>
               </div>
               <!-- Eliminar el Historial de Git Localmente fin -->
               <!-- Volver a Inicializar Git -->
@@ -261,13 +263,15 @@
                 <p>
                   Con el siguiente comando se inicializa de cero el repositorio.
                 </p>
-                <pre data-src-status="loaded" tabindex="0">
-                <code
-                  class="language-bash"
-                  data-prismjs-copy="Copy"
-                >git init
-                </code>
-              </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code
+                    class="language-bash"
+                    data-prismjs-copy="Copy"
+                    >git init
+                  </code>
+                </pre>
+                </div>
               </div>
               <!-- Volver a Inicializar Git fin -->
               <!-- Volver a Conectar con GitHub -->
@@ -277,11 +281,13 @@
                   Si el repositorio está vinculado con GitHub, se debe volver a
                   agregar la URL remota:
                 </p>
-                <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    git remote add origin https://github.com/usuario/nombre-del-repo.git
-                  </code>
-                </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      git remote add origin https://github.com/usuario/nombre-del-repo.git
+                    </code>
+                  </pre>
+                </div>
                 <p>
                   La dirección del repositorio está disponible en GitHub y se
                   puede encontrar como se muestra en la siguiente imagen.
@@ -308,13 +314,15 @@
                   Este paso es opcional. Si se desea crear un commit vacío, es
                   decir, sin incluir ningún archivo, usar el siguiente código:
                 </p>
-                <pre data-src-status="loaded" tabindex="0">
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                     <code
-                      class="language-bash"
-                      data-prismjs-copy="Copy"
+                    class="language-bash"
+                    data-prismjs-copy="Copy"
                     >git commit --allow-empty -m "Commit vacío inicial"
                     </code>
                   </pre>
+                </div>
                 <p>
                   Este paso se usa para definir un punto de inicio y se puede
                   usar para:
@@ -342,14 +350,16 @@
                   Después de reiniciar Git, hay que añadir los archivos
                   nuevamente al nuevo historial y hacer un primer commit:
                 </p>
-                <pre data-src-status="loaded" tabindex="0">
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                     <code
-                      class="language-bash"
-                      data-prismjs-copy="Copy"
+                    class="language-bash"
+                    data-prismjs-copy="Copy"
                     >git add .
                     git commit -m "1ro del repositorio
                     </code>
                   </pre>
+                </div>
               </div>
               <!-- Agregar los Archivos y Hacer un Nuevo Commit fin -->
               <!-- Forzar la Subida del Nuevo Historial a GitHub -->
@@ -360,11 +370,13 @@
                   se debe forzar el push con la opción
                   <code>--force</code>:
                 </p>
-                <pre data-src-status="loaded" tabindex="0">
-                <code class="language-python" data-prismjs-copy="Copy">
-                  git push --force origin main
-                </code>
-              </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      git push --force origin main
+                    </code>
+                  </pre>
+                </div>
                 <p>
                   Si el repositorio usa otra rama predeterminada, como
                   <code>master</code>, reemplazar <code>main</code> por
@@ -390,7 +402,8 @@
                   creando un commit que marque el nuevo inicio antes de volver a
                   subirlos a GitHub.
                 </p>
-                <pre data-src-status="loaded" tabindex="0">
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       rm -rf .git
                       git init
@@ -402,12 +415,14 @@
                       git push --force origin main
                     </code>
                   </pre>
+                </div>
                 <p>
                   Recopilación de comandos para eliminar todo el historial de un
                   repositorio Git, conservar los archivos y subirlos nuevamente
                   a GitHub:
                 </p>
-                <pre data-src-status="loaded" tabindex="0">
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       rm -rf .git
                       git init
@@ -417,6 +432,7 @@
                       git push --force origin main
                     </code>
                   </pre>
+                </div>
               </div>
               <!-- Recopilación de comandos utilizados fin -->
               <!-- Notas Importantes -->

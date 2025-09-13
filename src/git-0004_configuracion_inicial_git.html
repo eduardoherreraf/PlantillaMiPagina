@@ -140,7 +140,9 @@
               <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog"
+              <a
+                class="nav-link mx-1 publicaciones-activo"
+                href="index.html#blog"
                 >PUBLICACIONES</a
               >
             </li>
@@ -152,7 +154,7 @@
       </div>
     </nav>
     <!-- Barra deNavegación -->
-    <!-- -------------------------------- principal -------------------------------- -->
+    <!--  principal  -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
         <section class="pb-3 pt-5 col-lg-9 px-lg-4">
@@ -192,12 +194,14 @@
                 los commits, permitiendo identificar quién hizo los cambios en
                 un proyecto.
               </p>
-              <pre data-src-status="loaded" tabindex="0">
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git config --global user.name "Nombre del usuario"
                     git config --global user.email "Semail@ejemplo.com"
                   </code>
                 </pre>
+              </div>
               <p>
                 <strong>--global</strong>: Aplica la configuración a nivel
                 global, es decir, a todos los repositorios en el equipo. Si se
@@ -205,12 +209,14 @@
                 repositorio en particular, se puede omitir
                 <strong>--global</strong>:
               </p>
-              <pre data-src-status="loaded" tabindex="0">
-                <code class="language-python" data-prismjs-copy="Copy">
-                  git config user.name "Otro Nombre"
-                  git config user.email "otro_email@ejemplo.com"
-                </code>
-              </pre>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-bash" data-prismjs-copy="Copy">
+                    git config user.name "Otro Nombre"
+                    git config user.email "otro_email@ejemplo.com"
+                  </code>
+                </pre>
+              </div>
 
               <!-- ¿Cuándo es Necesario Ejecutar estos Comandos? -->
               <div>
@@ -246,7 +252,8 @@
                 o archivos de configuración. Es útil configurar el editor de
                 texto preferido para estas tareas.
               </p>
-              <pre data-src-status="loaded" tabindex="0">
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git config --global core.editor "nombre-del-editor"
                     // para VSCode
@@ -261,6 +268,7 @@
                     git config --global core.editor "subl -n -w"
                   </code>
                 </pre>
+              </div>
               <p>
                 Se debe estar seguro de que el editor que se elije esté
                 correctamente instalado y accesible desde la línea de comandos.
@@ -284,11 +292,13 @@
                 Se usa principalmente para mejorar la legibilidad de los
                 mensajes en la terminal.
               </p>
-              <pre data-src-status="loaded" tabindex="0">
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git config --global color.ui auto
                   </code>
                 </pre>
+              </div>
 
               <!-- Configuraciones Específicas de Color -->
               <div>
@@ -297,21 +307,23 @@
                   Además, se pueden personalizar colores para distintas
                   secciones de los mensajes en Git:
                 </p>
-                <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    # Colorea la salida de 'git status'
-                    git config --global color.status auto
-
-                    # Colorea la salida de 'git diff'
-                    git config --global color.diff auto
-
-                    # Colorea la salida de 'git branch'
-                    git config --global color.branch auto
-
-                    # Colorea las opciones en el modo interactivo
-                    git config --global color.interactive auto
-                  </code>
-                </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-bash" data-prismjs-copy="Copy">
+                      # Colorea la salida de 'git status'
+                      git config --global color.status auto
+                      
+                      # Colorea la salida de 'git diff'
+                      git config --global color.diff auto
+                      
+                      # Colorea la salida de 'git branch'
+                      git config --global color.branch auto
+                      
+                      # Colorea las opciones en el modo interactivo
+                      git config --global color.interactive auto
+                    </code>
+                  </pre>
+                </div>
               </div>
               <!-- Configuraciones Específicas de Color fin -->
 
@@ -322,27 +334,31 @@
                   Si se desea personalizar los colores con más detalle, se
                   pueden definir colores específicos. Por ejemplo:
                 </p>
-                <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    # Archivos añadidos en verde y negrita
-                    git config --global color.status.added "green bold"
-
-                    # Archivos modificados en amarillo y negrita
-                    git config --global color.status.changed "yellow bold"
-
-                    # Archivos no rastreados en rojo y negrita
-                    git config --global color.status.untracked "red bold"
-                  </code>
-                </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-bash" data-prismjs-copy="Copy">
+                      # Archivos añadidos en verde y negrita
+                      git config --global color.status.added "green bold"
+                      
+                      # Archivos modificados en amarillo y negrita
+                      git config --global color.status.changed "yellow bold"
+                      
+                      # Archivos no rastreados en rojo y negrita
+                      git config --global color.status.untracked "red bold"
+                    </code>
+                  </pre>
+                </div>
                 <p>
                   Para ver todas las opciones de colores disponibles, se puede
                   consultar la documentación de Git con:
                 </p>
-                <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    git help config
-                  </code>
-                </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-bash" data-prismjs-copy="Copy">
+                      git help config
+                    </code>
+                  </pre>
+                </div>
               </div>
               <!-- Personalización Avanzada de Colores fin -->
 
@@ -353,11 +369,13 @@
                   Para comprobar la configuración de colores en Git, se puede
                   ejecutar:
                 </p>
-                <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    git config --global --list | grep color
-                  </code>
-                </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-bash" data-prismjs-copy="Copy">
+                      git config --global --list | grep color
+                    </code>
+                  </pre>
+                </div>
               </div>
               <!-- Verificación de la Configuración fin -->
             </div>
@@ -369,11 +387,13 @@
                 Se puedes especificar cómo Git debe manejar las fusiones de
                 archivos.
               </p>
-              <pre data-src-status="loaded" tabindex="0">
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git config --global merge.tool "nombre-del-herramienta-de-fusión"
                   </code>
                 </pre>
+              </div>
               <p>Los nombre-del-herramienta-de-fusión pueden ser:</p>
               <ul>
                 <li><b>vimdiff</b>: Utiliza Vim en modo de diferencia.</li>
@@ -426,21 +446,25 @@
                 Los alias se utilizan para abreviar comandos largos o
                 complicados, facilitando y agilizando su uso.
               </p>
-              <pre data-src-status="loaded" tabindex="0">
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git config --global alias.st status
                     git config --global alias.co checkout
                   </code>
                 </pre>
+              </div>
               <p>
                 En este ejemplo, ambos comandos producen el mismo resultado.
               </p>
-              <pre data-src-status="loaded" tabindex="0">
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git st
                     git status
                   </code>
                 </pre>
+              </div>
 
               <!-- Alias de Git Más Usados -->
               <div>
@@ -448,48 +472,52 @@
                 <!-- Alias para comandos básicos -->
                 <div>
                   <h4>Alias para comandos básicos</h4>
-                  <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      # Muestra el estado del repositorio
-                      git config --global alias.st status
-
-                      # Cambia de rama o restaura archivos
-                      git config --global alias.co checkout
-
-                      # Lista, crea o elimina ramas
-                      git config --global alias.br branch
-
-                      # Realiza un commit
-                      git config --global alias.cm commit
-
-                      # Clona un repositorio
-                      git config --global alias.cl clone
-
-                      # Muestra los cambios entre commits o archivos
-                      git config --global alias.df diff
-
-                      # Proporciona un historial gráfico simplificado de commits.
-                      git config --global alias.logg "log --oneline --graph --decorate --all"
-                    </code>
-                  </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-bash" data-prismjs-copy="Copy">
+                        # Muestra el estado del repositorio
+                        git config --global alias.st status
+                        
+                        # Cambia de rama o restaura archivos
+                        git config --global alias.co checkout
+                        
+                        # Lista, crea o elimina ramas
+                        git config --global alias.br branch
+                        
+                        # Realiza un commit
+                        git config --global alias.cm commit
+                        
+                        # Clona un repositorio
+                        git config --global alias.cl clone
+                        
+                        # Muestra los cambios entre commits o archivos
+                        git config --global alias.df diff
+                        
+                        # Proporciona un historial gráfico simplificado de commits.
+                        git config --global alias.logg "log --oneline --graph --decorate --all"
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- Alias para comandos básicos fin -->
 
                 <!-- Alias para Agregar y Confirmar Cambios -->
                 <div>
                   <h4>Alias para Agregar y Confirmar Cambios</h4>
-                  <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      # Añade todos los cambios al área de preparación
-                      git config --global alias.ad "add ."
-
-                      # Añade y confirma cambios en un solo paso
-                      git config --global alias.ca "commit -am"
-
-                      # Modifica el último commit sin cambiar el mensaje
-                      git config --global alias.cane "commit --amend --no-edit"
-                    </code>
-                  </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-bash" data-prismjs-copy="Copy">
+                        # Añade todos los cambios al área de preparación
+                        git config --global alias.ad "add ."
+                        
+                        # Añade y confirma cambios en un solo paso
+                        git config --global alias.ca "commit -am"
+                        
+                        # Modifica el último commit sin cambiar el mensaje
+                        git config --global alias.cane "commit --amend --no-edit"
+                      </code>
+                    </pre>
+                  </div>
                   <p>
                     En Git, cuando se define un alias que incluye más de una
                     palabra, se deben usar comillas para encapsular el comando
@@ -501,42 +529,46 @@
                 <!-- Alias para Manejar Ramas -->
                 <div>
                   <h4>Alias para Manejar Ramas</h4>
-                  <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-bash" data-prismjs-copy="Copy">
                         # Crea y cambia a una nueva rama
                         git config --global alias.ck "checkout -b"
-
+                        
                         # Fusiona ramas
                         git config --global alias.mg "merge"
-
+                        
                         # Reorganiza commits con rebase
                         git config --global alias.rb "rebase"
-
+                        
                         # Cancela un rebase en curso
                         git config --global alias.rba "rebase --abort"
-
+                        
                         # Continúa un rebase tras resolver conflictos
                         git config --global alias.rbc "rebase --continue"
                       </code>
                     </pre>
+                  </div>
                 </div>
                 <!-- Alias para Manejar Ramas fin -->
 
                 <!-- Alias para Trabajar con Remotos -->
                 <div>
                   <h4>Alias para Trabajar con Remotos</h4>
-                  <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      # Envía cambios al repositorio remoto
-                      git config --global alias.pu "push"
-
-                      # Obtiene cambios del remoto
-                      git config --global alias.pl "pull"
-
-                      # Descarga cambios sin fusionarlos y elimina ramas remotas eliminadas
-                      git config --global alias.fu "fetch -p"
-                    </code>
-                  </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-bash" data-prismjs-copy="Copy">
+                        # Envía cambios al repositorio remoto
+                        git config --global alias.pu "push"
+                        
+                        # Obtiene cambios del remoto
+                        git config --global alias.pl "pull"
+                        
+                        # Descarga cambios sin fusionarlos y elimina ramas remotas eliminadas
+                        git config --global alias.fu "fetch -p"
+                      </code>
+                    </pre>
+                  </div>
                   <p>
                     El <code>alias fu</code> es útil para limpiar referencias a
                     ramas eliminadas en el remoto.
@@ -547,18 +579,20 @@
                 <!-- Alias para Reiniciar y Limpiar Cambios -->
                 <div>
                   <h4>Alias para Reiniciar y Limpiar Cambios</h4>
-                  <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-bash" data-prismjs-copy="Copy">
                         # Revierte el último commit manteniendo los cambios
                         git config --global alias.undo "reset --soft HEAD~1"
-
+                        
                         # Borra cambios no confirmados
                         git config --global alias.clean "reset --hard HEAD"
-
+                        
                         # Quita archivos del área de preparación sin eliminar cambios
                         git config --global alias.unstage "reset HEAD --"
                       </code>
                     </pre>
+                  </div>
                   <p>Útil para corregir errores sin perder trabajo.</p>
                 </div>
                 <!-- Alias para Reiniciar y Limpiar Cambios fin -->
@@ -566,15 +600,17 @@
                 <!-- Alias Avanzados -->
                 <div>
                   <h4>Alias Avanzados</h4>
-                  <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-bash" data-prismjs-copy="Copy">
                         git config --global alias.lg "log --graph --decorate --oneline --all"
-
+                        
                         git config --global alias.last "log -1 HEAD"
-
+                        
                         git config --global alias.who "shortlog -sn --all"
                       </code>
                     </pre>
+                  </div>
                   <p>
                     Estos alias ayudan a visualizar el historial de commits de
                     manera rápida y efectiva.
@@ -590,11 +626,13 @@
                 <p>
                   Para ver la lista completa de alias configurados en Git, usar:
                 </p>
-                <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    git config --global --list | grep alias
-                  </code>
-                </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-bash" data-prismjs-copy="Copy">
+                      git config --global --list | grep alias
+                    </code>
+                  </pre>
+                </div>
               </div>
               <!-- Cómo Ver los alias Configurados fin -->
             </div>
@@ -608,11 +646,13 @@
                 correo electrónico, alias y más. Es un comando útil para revisar
                 la configuración de GIT de un vistazo.
               </p>
-              <pre data-src-status="loaded" tabindex="0">
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git config --list
                   </code>
                 </pre>
+              </div>
             </div>
             <p>
               Estos comandos de configuración inicial se usan generalmente una
@@ -628,7 +668,7 @@
             </p>
           </article>
           <!-- fin Comandos Básicos CLI -->
-          <!-- -------------------------------- comentarios -------------------------------- -->
+          <!--  comentarios  -->
           <article class="row pt-5" id="comments">
             <h2>COMENTARIOS</h2>
             <p>
@@ -697,9 +737,9 @@
               </form>
             </div>
           </article>
-          <!-- -------------------------------- fin comentarios -------------------------------- -->
+          <!--  fin comentarios  -->
         </section>
-        <!-- -------------------------------- barra lateral -------------------------------- -->
+        <!--  barra lateral  -->
         <aside class="col-lg-3 d-none d-lg-block pt-5">
           <h1>En Este Artículo</h1>
           <ul class="list-group">
@@ -735,84 +775,10 @@
             </li>
           </ul>
         </aside>
-        <!-- -------------------------------- fin barra lateral -------------------------------- -->
+        <!--  fin barra lateral  -->
       </main>
-      <!-- -------------------------------- fin principal -------------------------------- -->
+      <!--  fin principal  -->
     </div>
-    <!-- -------------------------------- pie de pagina -------------------------------- -->
-    <footer class="row border-top border-1 m-1 mt-auto">
-      <div class="row">
-        <!-- contacto -->
-        <address class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Contacto</div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-envelope-at fs-3"></i>
-            <span class="ms-3">
-              <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com"
-                >ehfeduardo@gmail.com</a
-              >
-            </span>
-          </div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-geo-alt fs-3"></i>
-            <span class="ms-3">Bogotá D. C. - Colombia</span>
-          </div>
-        </address>
-        <!-- Derechos de autor -->
-        <div
-          class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100"
-        >
-          <div>
-            <i class="bi bi-c-circle fs-5"></i>
-          </div>
-          <div class="ms-2">All Rights Reserved 2025</div>
-        </div>
-        <!-- redes sociales -->
-        <div class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Redes Sociales</div>
-          <div class="d-flex justify-content-evenly align-items-center gap-5">
-            <div>
-              <a
-                href="https://www.linkedin.com/in/eduardoherreraf/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-linkedin fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://github.com/eduardoherreraf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-github fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.facebook.com/eduardoherreraforero/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-facebook fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://twitter.com/ehfeduardo/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-twitter-x fs-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex align-items-center justify-content-center gap-2"></div>
-    </footer>
-    <!-- -------------------------------- pie de pagina fin -------------------------------- -->
 
     <!-- button to top -->
     <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
