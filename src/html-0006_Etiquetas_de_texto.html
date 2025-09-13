@@ -187,7 +187,7 @@
                 <h1>Etiquetas de Texto HTML</h1>
               </header>
               <!-- Introducción -->
-              <div class="pt-4">
+              <div>
                 <h2>Introducción</h2>
                 <p>
                   Las etiquetas de texto en el diseño web son fundamentales por
@@ -264,7 +264,7 @@
               <hr class="subtle-divider" />
 
               <!-- Los Encabezados -->
-              <div id="los-encabezados" class="pt-4">
+              <div id="los-encabezados">
                 <h2>
                   Los Encabezados <code class="language-html">&lt;hx></code>
                 </h2>
@@ -772,7 +772,7 @@
               <hr class="subtle-divider" />
 
               <!-- Los Párrafos -->
-              <div id="los-parrafos" class="pt-4">
+              <div id="los-parrafos">
                 <h2 class="pt-1">Los Párrafos &lt;p></h2>
                 <!-- Definición Párrafos p -->
                 <div>
@@ -1355,7 +1355,7 @@
               <hr class="subtle-divider" />
 
               <!-- Saltos de Línea -->
-              <div id="saltos-de-linea" class="pt-4">
+              <div id="saltos-de-linea">
                 <h2 class="pt-1">Saltos de Línea &lt;br></h2>
                 <!-- Definición Saltos de Línea <br> -->
                 <div>
@@ -1789,8 +1789,8 @@
               <!-- Saltos de Línea -->
             </div>
           </article>
-          <!-- Comentarios -->
-          <article class="row pt-5" id="comment">
+          <!--  comentarios  -->
+          <article class="row pt-5" id="comments">
             <h2>COMENTARIOS</h2>
             <p>
               Si tiene alguna inquietud, duda o ha encontrado algún error, por
@@ -1803,53 +1803,65 @@
                 method="POST"
                 id="myForm"
               >
-                <div
-                  class="input-group d-flex justify-content-center flex-column"
-                >
-                  <label for="name" class="pe-2">Nombre:</label>
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="User"
-                    class="rounded"
-                    required="required"
-                  />
-                  <label for="email" class="pe-2">Email:</label>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="user@mail.com"
-                    class="rounded"
-                    required="required"
-                  />
-                  <label for="message" class="pe-2">Mensaje:</label>
-                  <textarea
-                    name="message"
-                    id="message"
-                    cols="30"
-                    rows="5"
-                    placeholder="Su comentario..."
-                    class="rounded rounded-3"
-                  ></textarea>
-                  <input
-                    class="btn btn-outline-light my-3 border rounded-pill border-2"
+                <fieldset class="d-flex flex-column gap-3">
+                  <legend class="text-center fs-4">Deje su comentario</legend>
+
+                  <div class="d-flex flex-column">
+                    <label for="name">Nombre:</label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="User"
+                      class="form-control rounded"
+                      required
+                    />
+                  </div>
+
+                  <div class="d-flex flex-column">
+                    <label for="email">Email:</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="user@mail.com"
+                      class="form-control rounded"
+                      required
+                    />
+                  </div>
+
+                  <div class="d-flex flex-column">
+                    <label for="message">Mensaje:</label>
+                    <textarea
+                      name="message"
+                      id="message"
+                      cols="30"
+                      rows="5"
+                      placeholder="Su comentario..."
+                      class="form-control rounded-3"
+                      required
+                    ></textarea>
+                  </div>
+
+                  <button
                     type="submit"
-                    value="Enviar..."
-                  />
-                </div>
-                <p>
+                    class="btn btn-outline-light my-3 border rounded-pill border-2"
+                  >
+                    Enviar
+                  </button>
+                </fieldset>
+
+                <p class="small text-center">
                   La política de privacidad, y los términos y condiciones están
                   disponibles en el formulario de contacto.
                 </p>
               </form>
             </div>
           </article>
-          <!-- Comentarios fin -->
+          <!--  fin comentarios  -->
         </section>
         <!--  Etiquetas de Texto HTML -->
-        <!-- -------------------------------- barra lateral -------------------------------- -->
+        <!--  barra lateral  -->
         <aside class="col-lg-3 d-none d-lg-block pt-5">
           <h1>En Este Artículo</h1>
           <div class="menu-container">
@@ -1876,13 +1888,13 @@
             </div>
 
             <div class="menu-item">
-              <a href="#comment" class="simple-link">Comentarios</a>
+              <a href="#comments" class="simple-link">Comentarios</a>
             </div>
           </div>
         </aside>
-        <!-- -------------------------------- fin barra lateral -------------------------------- -->
+        <!--  fin barra lateral  -->
       </main>
-      <!-- -------------------------------- fin principal -------------------------------- -->
+      <!--  fin principal  -->
     </div>
     <!--  Principal Fin  -->
     <!-- button to top -->

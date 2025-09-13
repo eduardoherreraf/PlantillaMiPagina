@@ -97,7 +97,7 @@
 
   <body>
     <!-- Barra deNavegación -->
-<nav
+    <nav
       class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
     >
       <div class="container-fluid">
@@ -150,7 +150,9 @@
               <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog"
+              <a
+                class="nav-link mx-1 publicaciones-activo"
+                href="index.html#blog"
                 >PUBLICACIONES</a
               >
             </li>
@@ -163,7 +165,7 @@
     </nav>
     <!-- Barra deNavegación -->
 
-    <!-- -------------------------------- principal -------------------------------- -->
+    <!--  principal  -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
         <section class="pb-3 pt-5 col-lg-9 px-lg-4">
@@ -336,48 +338,50 @@
                   <h3>
                     Implementación Procedimental de Estructuras de una Pila
                   </h3>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    # Implementación de la pila con enfoque procedimental
-                    # Crear una pila vacía
-                    def create_stack():
-                        return []
-                    # Insertar un elemento en la pila
-                    def push(stack, element):
-                        stack.append(element)
-                        print(f"Pushed: {element}")
-                    # Eliminar y devolver el elemento superior de la pila
-                    def pop(stack):
-                        if is_empty(stack):
-                            print("Stack is empty! Cannot pop.")
-                            return None
-                        return stack.pop()
-                    # Ver el elemento superior sin eliminarlo
-                    def peek(stack):
-                        if is_empty(stack):
-                            print("Stack is empty! Nothing to peek.")
-                            return None
-                        return stack[-1]
-                    # Verificar si la pila está vacía
-                    def is_empty(stack):
-                        return len(stack) == 0
-                    # Obtener el tamaño de la pila
-                    def size(stack):
-                        return len(stack)
-                    # Ejemplo de uso
-                    if __name__ == "__main__":
-                        stack = create_stack()
-                        push(stack, 10)
-                        push(stack, 20)
-                        push(stack, 30)
-                        print("Top element is:", peek(stack))
-                        print("Popped element is:", pop(stack))
-                        print("Top element after pop:", peek(stack))
-                        print("Stack size:", size(stack))
-                        while not is_empty(stack):
-                            print("Popped:", pop(stack))
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        # Implementación de la pila con enfoque procedimental
+                        # Crear una pila vacía
+                        def create_stack():
+                            return []
+                        # Insertar un elemento en la pila
+                        def push(stack, element):
+                            stack.append(element)
+                            print(f"Pushed: {element}")
+                        # Eliminar y devolver el elemento superior de la pila
+                        def pop(stack):
+                            if is_empty(stack):
+                                print("Stack is empty! Cannot pop.")
+                                return None
+                            return stack.pop()
+                        # Ver el elemento superior sin eliminarlo
+                        def peek(stack):
+                            if is_empty(stack):
+                                print("Stack is empty! Nothing to peek.")
+                                return None
+                            return stack[-1]
+                        # Verificar si la pila está vacía
+                        def is_empty(stack):
+                            return len(stack) == 0
+                        # Obtener el tamaño de la pila
+                        def size(stack):
+                            return len(stack)
+                        # Ejemplo de uso
+                        if __name__ == "__main__":
+                            stack = create_stack()
+                            push(stack, 10)
+                            push(stack, 20)
+                            push(stack, 30)
+                            print("Top element is:", peek(stack))
+                            print("Popped element is:", pop(stack))
+                            print("Top element after pop:", peek(stack))
+                            print("Stack size:", size(stack))
+                            while not is_empty(stack):
+                                print("Popped:", pop(stack))
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- Implementación Procedimental de Estructuras de una Pila fin -->
                 <!-- Explicación de la Implementación Procedimental de una Pila -->
@@ -387,55 +391,73 @@
                   </h3>
                   <ul>
                     <li>
-                      <span class="fw-bold"><code class="language-python">create_stack()</code></span
+                      <span class="fw-bold"
+                        ><code class="language-python"
+                          >create_stack()</code
+                        ></span
                       >: Crea y devuelve una lista vacía que representa la pila.
                     </li>
                     <li>
                       <span class="fw-bold"
-                        ><code class="language-python">push(stack, element)</code></span
+                        ><code class="language-python"
+                          >push(stack, element)</code
+                        ></span
                       >: Este método agrega un nuevo elemento a la pila usando
                       el método append() de listas. Esto se traduce como
                       "empujar" un elemento al tope de la pila.
                     </li>
                     <li>
-                      <span class="fw-bold"><code class="language-python">pop(stack)</code></span
+                      <span class="fw-bold"
+                        ><code class="language-python">pop(stack)</code></span
                       >: Retira y devuelve el último elemento agregado a la
                       pila. Verifica si la pila está vacía antes de intentar
                       eliminar un elemento, para evitar errores. Utiliza el
                       método pop() de listas.
                     </li>
                     <li>
-                      <span class="fw-bold"><code class="language-python">peek(stack)</code></span
+                      <span class="fw-bold"
+                        ><code class="language-python">peek(stack)</code></span
                       >: Permite ver el elemento que se encuentra en la parte
                       superior de la pila sin removerlo. Esto ayuda a
                       inspeccionar el contenido actual.
                     </li>
                     <li>
-                      <span class="fw-bold"><code class="language-python">is_empty(stack)</code></span
+                      <span class="fw-bold"
+                        ><code class="language-python"
+                          >is_empty(stack)</code
+                        ></span
                       >: Verifica si la pila está vacía retornando un valor
                       booleano. Usa la función len() para comprobar si tiene
                       elementos.
                     </li>
                     <li>
-                      <span class="fw-bold"><code class="language-python">size(stack)</code></span
+                      <span class="fw-bold"
+                        ><code class="language-python">size(stack)</code></span
                       >:Devuelve la cantidad de elementos presentes en la pila.
                       Esto es útil para conocer su estado en cualquier momento.
                     </li>
                     <li>
                       <span class="fw-bold"
                         >Ejemplo de Uso La sección dentro del bloque if
-                        <code class="language-python">__name__</code> == "<code class="language-python">__main__</code>"</span
+                        <code class="language-python">__name__</code> == "<code
+                          class="language-python"
+                          >__main__</code
+                        >"</span
                       >: muestra cómo usar la pila:
                       <ul>
                         <li>
                           Se crean operaciones básicas como agregar elementos
-                          (<code class="language-python">push</code>), eliminar elementos
-                          (<code class="language-python">pop</code>), y verificar el elemento superior
-                          (<code class="language-python">peek</code>).
+                          (<code class="language-python">push</code>), eliminar
+                          elementos (<code class="language-python">pop</code>),
+                          y verificar el elemento superior (<code
+                            class="language-python"
+                            >peek</code
+                          >).
                         </li>
                         <li>
                           También se ilustra cómo vaciar completamente la pila
-                          usando un ciclo <code class="language-python">while</code>.
+                          usando un ciclo
+                          <code class="language-python">while</code>.
                         </li>
                       </ul>
                     </li>
@@ -635,50 +657,52 @@
                     Implementación Orientada a Objetos de Estructuras de una
                     Pila
                   </h3>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    class Pila:
-                        def __init__(self):
-                            """Crea una pila vacía."""
-                            self.elementos = []  # Lista para almacenar los elementos
-                        def push(self, elemento):
-                            """Añade un elemento a la cima de la pila."""
-                            self.elementos.append(elemento)  # Añadir elemento al final
-                        def pop(self):
-                            """Elimina y devuelve el último elemento de la pila."""
-                            if not self.is_empty():  # Verificar si la pila no está vacía
-                                return self.elementos.pop()  # Eliminar y devolver el último elemento
-                            else:
-                                return "La pila está vacía"
-                        def peek(self):
-                            """Devuelve el elemento en la cima sin eliminarlo."""
-                            if not self.is_empty():
-                                return self.elementos[-1]  # Retorna el último elemento
-                            else:
-                                return "La pila está vacía"
-                        def is_empty(self):
-                            """Devuelve True si la pila está vacía, False en caso contrario."""
-                            return len(self.elementos) == 0  # Compara el tamaño de la lista
-                    # Ejemplo de uso
-                    if __name__ == "__main__":
-                        # Crear una nueva pila
-                        pila = Pila()
-                        # Añadir elementos a la pila
-                        pila.push(5)
-                        pila.push(10)
-                        pila.push(15)
-                        # Mostrar el elemento en la cima
-                        print("Elemento en la cima:", pila.peek())
-                        # Eliminar el último elemento
-                        print("Elemento eliminado:", pila.pop())
-                        # Comprobar si la pila está vacía
-                        print("¿La pila está vacía?", pila.is_empty())
-                        # Intentar eliminar de una pila vacía
-                        pila.pop()
-                        pila.pop()
-                        print("Elemento eliminado:", pila.pop())
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        class Pila:
+                            def __init__(self):
+                                """Crea una pila vacía."""
+                                self.elementos = []  # Lista para almacenar los elementos
+                            def push(self, elemento):
+                                """Añade un elemento a la cima de la pila."""
+                                self.elementos.append(elemento)  # Añadir elemento al final
+                            def pop(self):
+                                """Elimina y devuelve el último elemento de la pila."""
+                                if not self.is_empty():  # Verificar si la pila no está vacía
+                                    return self.elementos.pop()  # Eliminar y devolver el último elemento
+                                else:
+                                    return "La pila está vacía"
+                            def peek(self):
+                                """Devuelve el elemento en la cima sin eliminarlo."""
+                                if not self.is_empty():
+                                    return self.elementos[-1]  # Retorna el último elemento
+                                else:
+                                    return "La pila está vacía"
+                            def is_empty(self):
+                                """Devuelve True si la pila está vacía, False en caso contrario."""
+                                return len(self.elementos) == 0  # Compara el tamaño de la lista
+                        # Ejemplo de uso
+                        if __name__ == "__main__":
+                            # Crear una nueva pila
+                            pila = Pila()
+                            # Añadir elementos a la pila
+                            pila.push(5)
+                            pila.push(10)
+                            pila.push(15)
+                            # Mostrar el elemento en la cima
+                            print("Elemento en la cima:", pila.peek())
+                            # Eliminar el último elemento
+                            print("Elemento eliminado:", pila.pop())
+                            # Comprobar si la pila está vacía
+                            print("¿La pila está vacía?", pila.is_empty())
+                            # Intentar eliminar de una pila vacía
+                            pila.pop()
+                            pila.pop()
+                            print("Elemento eliminado:", pila.pop())
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- Implementación Orientada a Objetos de Estructuras de una Pila fin -->
                 <!-- Explicación de la Implementación Orientada a Objetos de una Pila  -->
@@ -692,25 +716,30 @@
                       <span class="fw-bold">Atributos y Métodos</span>:
                       <ul>
                         <li>
-                          La pila se implementa con una lista
-                          (<code class="language-python">self.elementos</code>) que almacena los datos.
+                          La pila se implementa con una lista (<code
+                            class="language-python"
+                            >self.elementos</code
+                          >) que almacena los datos.
                         </li>
                         <li>
-                          <code class="language-python">push</code>: Usa el método append para agregar
-                          un nuevo elemento al final de la lista.
+                          <code class="language-python">push</code>: Usa el
+                          método append para agregar un nuevo elemento al final
+                          de la lista.
                         </li>
                         <li>
-                          <code class="language-python">pop</code>: Usa el método pop para eliminar y
-                          devolver el último elemento. Si la pila está vacía,
-                          devuelve un mensaje.
+                          <code class="language-python">pop</code>: Usa el
+                          método pop para eliminar y devolver el último
+                          elemento. Si la pila está vacía, devuelve un mensaje.
                         </li>
                         <li>
-                          <code class="language-python">peek</code>: Devuelve el último elemento sin
-                          eliminarlo. Verifica primero si la pila no está vacía.
+                          <code class="language-python">peek</code>: Devuelve el
+                          último elemento sin eliminarlo. Verifica primero si la
+                          pila no está vacía.
                         </li>
                         <li>
-                          <code class="language-python">is_empty</code>: Comprueba si la lista está
-                          vacía retornando <code class="language-python">True</code> o
+                          <code class="language-python">is_empty</code>:
+                          Comprueba si la lista está vacía retornando
+                          <code class="language-python">True</code> o
                           <code class="language-python">False</code>.
                         </li>
                       </ul>
@@ -737,7 +766,7 @@
             </div>
           </article>
           <!--  Comparando Paradigmas: Programación Procedimental y Orientada a Objetos en Python  -->
-          <!-- -------------------------------- comentarios -------------------------------- -->
+          <!--  comentarios  -->
           <article class="row pt-5" id="comments">
             <h2>COMENTARIOS</h2>
             <p>
@@ -806,9 +835,9 @@
               </form>
             </div>
           </article>
-          <!-- -------------------------------- fin comentarios -------------------------------- -->
+          <!--  fin comentarios  -->
         </section>
-        <!-- -------------------------------- barra lateral -------------------------------- -->
+        <!--  barra lateral  -->
         <aside class="col-lg-3 d-none d-lg-block pt-5">
           <h1>En Este Artículo</h1>
           <ul class="list-group">
@@ -840,86 +869,11 @@
             </li>
           </ul>
         </aside>
-        <!-- -------------------------------- fin barra lateral -------------------------------- -->
+        <!--  fin barra lateral  -->
       </main>
-      <!-- -------------------------------- fin principal -------------------------------- -->
+      <!--  fin principal  -->
     </div>
     <!--  Principal Fin  -->
-
-    <!-- -------------------------------- pie de pagina -------------------------------- -->
-    <footer class="row border-top border-1 m-1 mt-auto">
-      <div class="row">
-        <!-- contacto -->
-        <address class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Contacto</div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-envelope-at fs-3"></i>
-            <span class="ms-3">
-              <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com"
-                >ehfeduardo@gmail.com</a
-              >
-            </span>
-          </div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-geo-alt fs-3"></i>
-            <span class="ms-3">Bogotá D. C. - Colombia</span>
-          </div>
-        </address>
-        <!-- Derechos de autor -->
-        <div
-          class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100"
-        >
-          <div>
-            <i class="bi bi-c-circle fs-5"></i>
-          </div>
-          <div class="ms-2">All Rights Reserved 2025</div>
-        </div>
-        <!-- redes sociales -->
-        <div class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Redes Sociales</div>
-          <div class="d-flex justify-content-evenly align-items-center gap-5">
-            <div>
-              <a
-                href="https://www.linkedin.com/in/eduardoherreraf/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-linkedin fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://github.com/eduardoherreraf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-github fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.facebook.com/eduardoherreraforero/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-facebook fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://twitter.com/ehfeduardo/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-twitter-x fs-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex align-items-center justify-content-center gap-2"></div>
-    </footer>
-    <!-- -------------------------------- pie de pagina fin -------------------------------- -->
 
     <!-- button to top -->
     <button onclick="topFunction()" id="myBtnScroll" title="Go to top">

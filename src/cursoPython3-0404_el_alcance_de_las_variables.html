@@ -96,7 +96,7 @@
 
   <body>
     <!-- Barra deNavegación -->
-<nav
+    <nav
       class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
     >
       <div class="container-fluid">
@@ -149,7 +149,9 @@
               <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog"
+              <a
+                class="nav-link mx-1 publicaciones-activo"
+                href="index.html#blog"
                 >PUBLICACIONES</a
               >
             </li>
@@ -162,7 +164,7 @@
     </nav>
     <!-- Barra deNavegación -->
 
-    <!-- -------------------------------- principal -------------------------------- -->
+    <!--  principal  -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
         <section class="pb-3 pt-5 col-lg-9 px-lg-4">
@@ -234,15 +236,17 @@
                     </li>
                   </ul>
                   <p>Ejemplo:</p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    def mi_funcion():
-                        variable_local = "Hola desde dentro de la función"
-                        print(variable_local)
-                    mi_funcion()  # Imprime "Hola desde dentro de la función"
-                    print(variable_local)  # Esto causaría un error, ya que variable_local solo existe dentro de mi_funcion(
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        def mi_funcion():
+                            variable_local = "Hola desde dentro de la función"
+                            print(variable_local)
+                        mi_funcion()  # Imprime "Hola desde dentro de la función"
+                        print(variable_local)  # Esto causaría un error, ya que variable_local solo existe dentro de mi_funcion(
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- ¿Qué es el Alcance Local? fin -->
                 <!-- ¿Por Qué Es Importante el Alcance Local? -->
@@ -291,22 +295,25 @@
                     <li>
                       <span class="fw-bold">Built-in</span>: En el módulo
                       builtins, que contiene funciones y nombres integrados como
-                      <code class="language-python">print()</code> o <code class="language-python">len()</code>.
+                      <code class="language-python">print()</code> o
+                      <code class="language-python">len()</code>.
                     </li>
                   </ul>
                   <p>Ejemplo de alcance anidado:</p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    def funcion_externa():
-                        variable_externa = "Soy externa"
-                        def funcion_interna():
-                            variable_interna = "Soy interna"
-                            print(variable_externa)  # Se puede acceder a variable_externa
-                            print(variable_interna)
-                        funcion_interna()
-                    funcion_externa()       # Salida: Soy externa Soy interna
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        def funcion_externa():
+                            variable_externa = "Soy externa"
+                            def funcion_interna():
+                                variable_interna = "Soy interna"
+                                print(variable_externa)  # Se puede acceder a variable_externa
+                                print(variable_interna)
+                            funcion_interna()
+                        funcion_externa()       # Salida: Soy externa Soy interna
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- ¿Cómo Funciona el Alcance en Python? fin -->
                 <!-- Recomendaciones -->
@@ -334,21 +341,26 @@
                     cualquier función y son accesibles desde cualquier parte del
                     programa.
                   </p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    x = 10  # Variable de alcance global
-                    def sumar(numero):
-                        y = numero + x  # x es accesible porque tiene alcance global
-                        return y
-                    print(sumar(5))  # Salida: 15
-                    print(x)  # Salida: 10
-                    print(y)  # Error: NameError: name 'y' is not defined
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        x = 10  # Variable de alcance global
+                        def sumar(numero):
+                            y = numero + x  # x es accesible porque tiene alcance global
+                            return y
+                        print(sumar(5))  # Salida: 15
+                        print(x)  # Salida: 10
+                        print(y)  # Error: NameError: name 'y' is not defined
+                      </code>
+                    </pre>
+                  </div>
                   <p>
-                    El comando <code class="language-python">print(y)</code> genera un error porque la
-                    variable <code class="language-python">y</code> tiene un alcance local y únicamente
-                    es accesible dentro de la función <code class="language-python">sumar()</code>.
+                    El comando
+                    <code class="language-python">print(y)</code> genera un
+                    error porque la variable
+                    <code class="language-python">y</code> tiene un alcance
+                    local y únicamente es accesible dentro de la función
+                    <code class="language-python">sumar()</code>.
                   </p>
                 </div>
                 <!-- Diferencias entre Alcance Local y Global fin -->
@@ -371,10 +383,10 @@
                     Para indicar que una variable dentro de una función se
                     refiere a una variable global existente, se utiliza la
                     palabra clave
-                    <code class="language-python">global</code> seguida del nombre de la variable. Esto
-                    le indica al intérprete de Python que no debe crear una
-                    nueva variable local con el mismo nombre, sino que debe
-                    utilizar la variable global.
+                    <code class="language-python">global</code> seguida del
+                    nombre de la variable. Esto le indica al intérprete de
+                    Python que no debe crear una nueva variable local con el
+                    mismo nombre, sino que debe utilizar la variable global.
                   </p>
                 </div>
                 <!-- La palabra clave "global" fin -->
@@ -400,19 +412,21 @@
                     </li>
                   </ul>
                   <p>Ejemplo:</p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    # Definición de una variable global
-                    contador = 0
-                    def incrementar_contador():
-                        global contador
-                        contador += 1
-                        print(f"Contador incrementado: {contador}")
-                    # Llamada a la función
-                    incrementar_contador()  # Salida: Contador incrementado: 1
-                    incrementar_contador()  # Salida: Contador incrementado: 2
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        # Definición de una variable global
+                        contador = 0
+                        def incrementar_contador():
+                            global contador
+                            contador += 1
+                            print(f"Contador incrementado: {contador}")
+                        # Llamada a la función
+                        incrementar_contador()  # Salida: Contador incrementado: 1
+                        incrementar_contador()  # Salida: Contador incrementado: 2
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- ¿Cuándo usar "global"? fin -->
                 <!-- Consideraciones importantes: -->
@@ -478,27 +492,32 @@
                     A continuación, se presenta un ejemplo sencillo para
                     ilustrar el uso del alcance global en Python:
                   </p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    # Definición de una variable global
-                    contador = 0
-                    def incrementar_contador():
-                        global contador
-                        contador += 1
-                        print(f"Contador incrementado: {contador}")
-                    # Llamada a la función
-                    incrementar_contador()  # Salida: Contador incrementado: 1
-                    incrementar_contador()  # Salida: Contador incrementado: 2
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        # Definición de una variable global
+                        contador = 0
+                        def incrementar_contador():
+                            global contador
+                            contador += 1
+                            print(f"Contador incrementado: {contador}")
+                        # Llamada a la función
+                        incrementar_contador()  # Salida: Contador incrementado: 1
+                        incrementar_contador()  # Salida: Contador incrementado: 2
+                      </code>
+                    </pre>
+                  </div>
                   <p>
-                    En este ejemplo, la variable <code class="language-python">contador</code> se define
-                    en el ámbito global. Dentro de la función
-                    <code class="language-python">incrementar_contador</code>, se utiliza la palabra
-                    clave <code class="language-python">global</code> para indicar que se está
-                    refiriendo a la variable global <code class="language-python">contador</code>. Esto
-                    permite que la función modifique el valor de contador cada
-                    vez que se llama.
+                    En este ejemplo, la variable
+                    <code class="language-python">contador</code> se define en
+                    el ámbito global. Dentro de la función
+                    <code class="language-python">incrementar_contador</code>,
+                    se utiliza la palabra clave
+                    <code class="language-python">global</code> para indicar que
+                    se está refiriendo a la variable global
+                    <code class="language-python">contador</code>. Esto permite
+                    que la función modifique el valor de contador cada vez que
+                    se llama.
                   </p>
                 </div>
                 <!-- Buenas Prácticas -->
@@ -569,95 +588,127 @@
                   <p>
                     Para declarar que se quiere modificar una variable no local
                     dentro de una función, utilizamos la palabra clave
-                    <code class="language-python">nonlocal</code>. Esta palabra le indica al intérprete
-                    de Python que la variable a la que estamos haciendo
-                    referencia no es una nueva variable local, sino una variable
-                    que ya existe en un ámbito superior.
+                    <code class="language-python">nonlocal</code>. Esta palabra
+                    le indica al intérprete de Python que la variable a la que
+                    estamos haciendo referencia no es una nueva variable local,
+                    sino una variable que ya existe en un ámbito superior.
                   </p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    def outer_function():
-                        x = "valor externo"
-                        def inner_function():
-                            nonlocal x
-                            x = "nuevo valor"
-                            print(x)
-                    inner_function()
-                    print(x)
-                    outer_function()
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        def outer_function():
+                            x = "valor externo"
+                            def inner_function():
+                                nonlocal x
+                                x = "nuevo valor"
+                                print(x)
+                        inner_function()
+                        print(x)
+                        outer_function()
+                      </code>
+                    </pre>
+                  </div>
                   <p>Código explicado:</p>
                   <ul>
                     <li>
                       <span class="fw-bold"
-                        ><code class="language-python">def outer_function()</code></span
+                        ><code class="language-python"
+                          >def outer_function()</code
+                        ></span
                       >: Define una función llamada
                       <code class="language-python">outer_function()</code>.
                     </li>
                     <li>
                       <span class="fw-bold"
-                        ><code class="language-python">x = "valor externo"</code></span
-                      >: Dentro de <code class="language-python">outer_function()</code>, se crea una
-                      variable local x con el valor <code class="language-python">valor externo</code>.
+                        ><code class="language-python"
+                          >x = "valor externo"</code
+                        ></span
+                      >: Dentro de
+                      <code class="language-python">outer_function()</code>, se
+                      crea una variable local x con el valor
+                      <code class="language-python">valor externo</code>.
                     </li>
                     <li>
                       <span class="fw-bold"
-                        ><code class="language-python">def inner_function()</code></span
+                        ><code class="language-python"
+                          >def inner_function()</code
+                        ></span
                       >: Define una función anidada llamada
                       <code class="language-python">inner_function</code>.
                     </li>
                     <li>
-                      <span class="fw-bold"><code class="language-python">nonlocal x</code></span
+                      <span class="fw-bold"
+                        ><code class="language-python">nonlocal x</code></span
                       >: Declara que x no es una variable local de
-                      <code class="language-python">inner_function</code>, sino que se refiere a la
-                      variable x de la función contenedora
+                      <code class="language-python">inner_function</code>, sino
+                      que se refiere a la variable x de la función contenedora
                       (<code class="language-python">outer_function()</code>).
                     </li>
                     <li>
-                      <span class="fw-bold"><code class="language-python">x = "nuevo valor"</code></span
+                      <span class="fw-bold"
+                        ><code class="language-python"
+                          >x = "nuevo valor"</code
+                        ></span
                       >: Modifica el valor de x en el ámbito de
-                      <code class="language-python">outer_function()</code> a <code class="language-python">nuevo valor</code>.
+                      <code class="language-python">outer_function()</code> a
+                      <code class="language-python">nuevo valor</code>.
                     </li>
                     <li>
-                      <span class="fw-bold"><code class="language-python">print(x)</code></span
+                      <span class="fw-bold"
+                        ><code class="language-python">print(x)</code></span
                       >: Imprime el valor actual de x, que ahora es
                       <code class="language-python">nuevo valor</code>.
                     </li>
                     <li>
-                      <span class="fw-bold"><code class="language-python">inner_function()</code></span
-                      >: Llama a <code class="language-python">inner_function()</code>, lo que provoca
-                      que:
+                      <span class="fw-bold"
+                        ><code class="language-python"
+                          >inner_function()</code
+                        ></span
+                      >: Llama a
+                      <code class="language-python">inner_function()</code>, lo
+                      que provoca que:
                       <ul>
                         <li>
-                          Se cambie el valor de <code class="language-python">x</code> a
+                          Se cambie el valor de
+                          <code class="language-python">x</code> a
                           <code class="language-python">nuevo valor</code>.
                         </li>
-                        <li>Se imprima <code class="language-python">nuevo valor</code>.</li>
+                        <li>
+                          Se imprima
+                          <code class="language-python">nuevo valor</code>.
+                        </li>
                       </ul>
                     </li>
                     <li>
-                      <span class="fw-bold"><code class="language-python">print(x)</code></span
+                      <span class="fw-bold"
+                        ><code class="language-python">print(x)</code></span
                       >: Imprime el valor actual de x después de la ejecución de
-                      <code class="language-python">inner_function</code>, que sigue siendo
+                      <code class="language-python">inner_function</code>, que
+                      sigue siendo
                       <code class="language-python">nuevo valor</code>.
                     </li>
                     <li>
-                      <span class="fw-bold"><code class="language-python">outer_function()</code></span
-                      >: Llama a <code class="language-python">outer_function()</code>, iniciando todo
-                      el proceso.
+                      <span class="fw-bold"
+                        ><code class="language-python"
+                          >outer_function()</code
+                        ></span
+                      >: Llama a
+                      <code class="language-python">outer_function()</code>,
+                      iniciando todo el proceso.
                     </li>
                   </ul>
                   <p>Salida del programa:</p>
                   <ul>
                     <li>
                       El primer print dentro de
-                      <code class="language-python">inner_function</code> imprime:
+                      <code class="language-python">inner_function</code>
+                      imprime:
                       <code class="language-python">nuevo valor</code>
                     </li>
                     <li>
                       El segundo print dentro de
-                      <code class="language-python">outer_function</code> imprime el mismo valor:
+                      <code class="language-python">outer_function</code>
+                      imprime el mismo valor:
                       <code class="language-python">nuevo valor</code>
                     </li>
                   </ul>
@@ -750,15 +801,17 @@
                     </li>
                   </ul>
                   <p>Ejemplo:</p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    def factorial(n):
-                        if n == 0:
-                            return 1  # Caso base
-                        else:
-                            return n * factorial(n-1)  # Caso recursivo
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        def factorial(n):
+                            if n == 0:
+                                return 1  # Caso base
+                            else:
+                                return n * factorial(n-1)  # Caso recursivo
+                      </code>
+                    </pre>
+                  </div>
                   <p>
                     En este ejemplo, el factorial de un número se define en
                     términos del factorial de un número menor. La función se
@@ -866,7 +919,7 @@
           </article>
           <!--  El Alcance de las Variables en Python  -->
 
-          <!-- -------------------------------- comentarios -------------------------------- -->
+          <!--  comentarios  -->
           <article class="row pt-5" id="comments">
             <h2>COMENTARIOS</h2>
             <p>
@@ -935,9 +988,9 @@
               </form>
             </div>
           </article>
-          <!-- -------------------------------- fin comentarios -------------------------------- -->
+          <!--  fin comentarios  -->
         </section>
-        <!-- -------------------------------- barra lateral -------------------------------- -->
+        <!--  barra lateral  -->
         <aside class="col-lg-3 d-none d-lg-block pt-5">
           <h1>En Este Artículo</h1>
           <ul class="list-group">
@@ -964,86 +1017,11 @@
             </li>
           </ul>
         </aside>
-        <!-- -------------------------------- fin barra lateral -------------------------------- -->
+        <!--  fin barra lateral  -->
       </main>
-      <!-- -------------------------------- fin principal -------------------------------- -->
+      <!--  fin principal  -->
     </div>
     <!--  Principal Fin  -->
-
-    <!-- -------------------------------- pie de pagina -------------------------------- -->
-    <footer class="row border-top border-1 m-1 mt-auto">
-      <div class="row">
-        <!-- contacto -->
-        <address class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Contacto</div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-envelope-at fs-3"></i>
-            <span class="ms-3">
-              <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com"
-                >ehfeduardo@gmail.com</a
-              >
-            </span>
-          </div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-geo-alt fs-3"></i>
-            <span class="ms-3">Bogotá D. C. - Colombia</span>
-          </div>
-        </address>
-        <!-- Derechos de autor -->
-        <div
-          class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100"
-        >
-          <div>
-            <i class="bi bi-c-circle fs-5"></i>
-          </div>
-          <div class="ms-2">All Rights Reserved 2025</div>
-        </div>
-        <!-- redes sociales -->
-        <div class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Redes Sociales</div>
-          <div class="d-flex justify-content-evenly align-items-center gap-5">
-            <div>
-              <a
-                href="https://www.linkedin.com/in/eduardoherreraf/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-linkedin fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://github.com/eduardoherreraf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-github fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.facebook.com/eduardoherreraforero/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-facebook fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://twitter.com/ehfeduardo/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-twitter-x fs-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex align-items-center justify-content-center gap-2"></div>
-    </footer>
-    <!-- -------------------------------- pie de pagina fin -------------------------------- -->
 
     <!-- button to top -->
     <button onclick="topFunction()" id="myBtnScroll" title="Go to top">

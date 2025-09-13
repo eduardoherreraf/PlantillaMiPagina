@@ -94,7 +94,7 @@
 
   <body>
     <!-- Barra deNavegación -->
-<nav
+    <nav
       class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
     >
       <div class="container-fluid">
@@ -147,7 +147,9 @@
               <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog"
+              <a
+                class="nav-link mx-1 publicaciones-activo"
+                href="index.html#blog"
                 >PUBLICACIONES</a
               >
             </li>
@@ -160,7 +162,7 @@
     </nav>
     <!-- Barra deNavegación -->
 
-    <!-- -------------------------------- principal -------------------------------- -->
+    <!--  principal  -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
         <section class="pb-3 pt-5 col-lg-9 px-lg-4">
@@ -226,29 +228,30 @@
                 <ul>
                   <li>
                     <span class="fw-bold">Sintaxis</span>: Las listas se definen
-                    utilizando corchetes <code class="language-python">[]</code>, y los elementos se
+                    utilizando corchetes
+                    <code class="language-python">[]</code>, y los elementos se
                     separan por comas.
-                    <pre
-                      data-src-status="loaded"
-                      tabindex="0"
-                    ><code class="language-python" data-prismjs-copy="Copy">
-                    mi_lista = [0, 1, 2, 'Python', 4.5, True]
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          mi_lista = [0, 1, 2, 'Python', 4.5, True]
+                        </code>
+                      </pre>
+                    </div>
                   </li>
                   <li>
                     <span class="fw-bold">Indexación</span>: Los elementos de
                     una lista pueden ser accedidos utilizando índices, donde el
                     primer elemento tiene un índice 0, el segundo un índice 1, y
                     así sucesivamente.
-                    <pre
-                      data-src-status="loaded"
-                      tabindex="0"
-                    ><code class="language-python" data-prismjs-copy="Copy">
-                    print(mi_lista[0])  # Imprime: 1
-                    print(mi_lista[3])  # Imprime: 'Python'
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          print(mi_lista[0])  # Imprime: 1
+                          print(mi_lista[3])  # Imprime: 'Python'
+                        </code>
+                      </pre>
+                    </div>
                     <p>
                       Python también admite la indexación negativa de listas. En
                       este caso, los índices comienzan desde el final de la
@@ -259,25 +262,27 @@
                       elementos finales de una lista sin conocer su longitud
                       exacta.
                     </p>
-                    <pre
-                      data-src-status="loaded"
-                      tabindex="0"
-                    ><code class="language-python" data-prismjs-copy="Copy">
-                    print(mi_lista[-1])  # Imprime: True
-                    print(mi_lista[-2])  # Imprime: 4.5
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          print(mi_lista[-1])  # Imprime: True
+                          print(mi_lista[-2])  # Imprime: 4.5
+                        </code>
+                      </pre>
+                    </div>
                   </li>
                   <li>
                     <span class="fw-bold">Mutabilidad</span>: Los elementos
                     dentro de una lista pueden ser cambiados después de que la
                     lista ha sido creada.
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      mi_lista[1] = 'cambiado'
-                      print(mi_lista) # Imprime: [0,'cambiado', 2, 'Python', 4.5, True]
-                      </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          mi_lista[1] = 'cambiado'
+                          print(mi_lista) # Imprime: [0,'cambiado', 2, 'Python', 4.5, True]
+                        </code>
+                      </pre>
+                    </div>
                   </li>
                   <li>
                     <span class="fw-bold">Heterogeneidad</span>: Una lista puede
@@ -288,12 +293,14 @@
                     <span class="fw-bold">Sublistas</span>: Las listas en Python
                     permiten obtener sublistas utilizando la notación de
                     rebanado o indexación por rango.
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      sub_lista = mi_lista[1:4]  # Obtiene una sublista con los elementos en las posiciones 1 a 3
-                      print(sub_lista)  # Imprime: ['cambiado', 3, 'Python']
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          sub_lista = mi_lista[1:4]  # Obtiene una sublista con los elementos en las posiciones 1 a 3
+                          print(sub_lista)  # Imprime: ['cambiado', 3, 'Python']
+                        </code>
+                      </pre>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -322,28 +329,32 @@
                     tamaño de estructuras de datos en Python, lo que permite
                     trabajar con ellas de manera más eficiente y programática.
                   </p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    print(len([1, 2, 3, 4, 5]))  # Output: 5
-                    print(len("Python"))  # Output: 6 
-                    print(len(("apple", "banana", "cherry")))  # Output: 3
-                    print(len({1, 2, 3}))  # Output: 3
-                    print(len({"name": "John", "age": 30}))  # Output: 2
-                  </code>
-              </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                            print(len([1, 2, 3, 4, 5]))  # Output: 5
+                            print(len("Python"))  # Output: 6 
+                            print(len(("apple", "banana", "cherry")))  # Output: 3
+                            print(len({1, 2, 3}))  # Output: 3
+                            print(len({"name": "John", "age": 30}))  # Output: 2
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- len() fin -->
                 <!-- del -->
                 <div>
                   <h3>del</h3>
                   <p>
-                    La sentencia <code class="language-python">del</code> es una instrucción en Python
-                    que se utiliza para eliminar elementos o variables. A
-                    diferencia de los métodos específicos para listas como
-                    <code class="language-python">remove()</code> o <code class="language-python">pop()</code>, que están
+                    La sentencia <code class="language-python">del</code> es una
+                    instrucción en Python que se utiliza para eliminar elementos
+                    o variables. A diferencia de los métodos específicos para
+                    listas como <code class="language-python">remove()</code> o
+                    <code class="language-python">pop()</code>, que están
                     diseñados para manipular elementos dentro de listas, la
-                    sentencia <code class="language-python">del</code> es más versátil y se puede usar
-                    en una variedad de contextos para eliminar:
+                    sentencia <code class="language-python">del</code> es más
+                    versátil y se puede usar en una variedad de contextos para
+                    eliminar:
                   </p>
                   <ul>
                     <li>Variables</li>
@@ -355,30 +366,36 @@
                     </li>
                   </ul>
                   <p>
-                    La principal ventaja de <code class="language-python">del</code> es su flexibilidad,
+                    La principal ventaja de
+                    <code class="language-python">del</code> es su flexibilidad,
                     ya que permite eliminar elementos en diferentes estructuras
                     de datos, no sólo en listas. Además, la sentencia
-                    <code class="language-python">del</code> ofrece más control y opciones de
-                    eliminación que los métodos específicos para listas.
+                    <code class="language-python">del</code> ofrece más control
+                    y opciones de eliminación que los métodos específicos para
+                    listas.
                   </p>
-                  <pre data-src-status="loaded" tabindex="0">
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
-                    mi_lista = [0, 1, 2, 3, 4, 5]
-                    del mi_lista[2]  # Elimina el elemento en el índice 2 (en este caso, el número 2)
-                    print(mi_lista)  # Imprime: [0, 1, 3, 4, 5]
-                  </code>
-                </pre>
+                        mi_lista = [0, 1, 2, 3, 4, 5]
+                        del mi_lista[2]  # Elimina el elemento en el índice 2 (en este caso, el número 2)
+                        print(mi_lista)  # Imprime: [0, 1, 3, 4, 5]
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- del fin -->
                 <!-- append() -->
                 <div>
                   <h3>append()</h3>
                   <p>
-                    El método <code class="language-python">append()</code> en Python permite agregar un
-                    nuevo elemento al final de una lista. Cuando se llama a
-                    <code class="language-python">append()</code> sobre una lista, este método añade el
-                    elemento especificado como argumento a la parte final de la
-                    lista, incrementando su tamaño en uno.
+                    El método <code class="language-python">append()</code> en
+                    Python permite agregar un nuevo elemento al final de una
+                    lista. Cuando se llama a
+                    <code class="language-python">append()</code> sobre una
+                    lista, este método añade el elemento especificado como
+                    argumento a la parte final de la lista, incrementando su
+                    tamaño en uno.
                   </p>
                   <p>
                     Algunas características clave del método
@@ -396,39 +413,49 @@
                       para ir construyendo una lista de forma dinámica.
                     </li>
                   </ul>
-                  <pre data-src-status="loaded" tabindex="0">
+
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
-                    my_list = [0, 1, 2, 3]
-                    my_list.append(4)
-                    print(my_list) # Output: [0, 1, 2, 3, 4]
-                  </code>
-                </pre>
+                        my_list = [0, 1, 2, 3]
+                        my_list.append(4)
+                        print(my_list) # Output: [0, 1, 2, 3, 4]
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- append() fin -->
                 <!-- insert() -->
                 <div>
                   <h3>insert()</h3>
                   <p>
-                    El método <code class="language-python">insert()</code> es más versátil que
-                    <code class="language-python">append()</code>, ya que permite agregar un nuevo
-                    elemento en cualquier posición de la lista, no solo al
-                    final. Esto brinda mayor control y flexibilidad al trabajar
-                    con listas en Python.
+                    El método <code class="language-python">insert()</code> es
+                    más versátil que
+                    <code class="language-python">append()</code>, ya que
+                    permite agregar un nuevo elemento en cualquier posición de
+                    la lista, no solo al final. Esto brinda mayor control y
+                    flexibilidad al trabajar con listas en Python.
                   </p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    # Crear una lista
-                    fruits = ['apple', 'banana', 'cherry']
-                    # Agregar un elemento en la posición 1 (entre 'apple' y 'banana')
-                    fruits.insert(1, 'orange')
-                    # La lista resultante es:
-                    # ['apple', 'orange', 'banana', 'cherry']
-                  </code>
-                </pre>
+
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        # Crear una lista
+                        fruits = ['apple', 'banana', 'cherry']
+                        
+                        # Agregar un elemento en la posición 1 (entre 'apple' y 'banana')
+                        fruits.insert(1, 'orange')
+                        
+                        # La lista resultante es:
+                        # ['apple', 'orange', 'banana', 'cherry']
+                      </code>
+                    </pre>
+                  </div>
                   <p>
                     La redacción revisada transmite de manera más efectiva las
-                    capacidades y ventajas del método <code class="language-python">insert()</code> en
-                    comparación con <code class="language-python">append()</code>.
+                    capacidades y ventajas del método
+                    <code class="language-python">insert()</code> en comparación
+                    con <code class="language-python">append()</code>.
                   </p>
                 </div>
                 <!-- insert() fin -->
@@ -438,22 +465,29 @@
                   <p>
                     Este método permite agregar todos los elementos de un
                     iterable (como otra lista, tupla, cadena, etc.) al final de
-                    la lista actual. A diferencia de <code class="language-python">append()</code>, que
-                    agrega un solo elemento a la lista,
-                    <code class="language-python">extend()</code> añade múltiples elementos de una sola
-                    vez, expandiendo el tamaño de la lista original.
+                    la lista actual. A diferencia de
+                    <code class="language-python">append()</code>, que agrega un
+                    solo elemento a la lista,
+                    <code class="language-python">extend()</code> añade
+                    múltiples elementos de una sola vez, expandiendo el tamaño
+                    de la lista original.
                   </p>
-                  <pre data-src-status="loaded" tabindex="0">
+
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
-                    # Lista original
-                    frutas = ['manzana', 'pera', 'naranja']
-                    # Nueva lista para agregar
-                    mas_frutas = ['uva', 'fresa']
-                    # Usando extend() para agregar los elementos
-                    frutas.extend(mas_frutas)
-                    print(frutas)  # Resultado: ['manzana', 'pera', 'naranja', 'uva', 'fresa']
-                  </code>
-              </pre>
+                        # Lista original
+                        frutas = ['manzana', 'pera', 'naranja']
+                        
+                        # Nueva lista para agregar
+                        mas_frutas = ['uva', 'fresa']
+                        
+                        # Usando extend() para agregar los elementos
+                        frutas.extend(mas_frutas)
+                        print(frutas)  # Resultado: ['manzana', 'pera', 'naranja', 'uva', 'fresa']
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- Extend() fin -->
                 <!-- remove() -->
@@ -477,38 +511,45 @@
                       <code class="language-python">ValueError</code>.
                     </li>
                   </ul>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    # Lista de frutas
-                    frutas = ['manzana', 'pera', 'naranja', 'manzana', 'uva']
-                    # Eliminar la primera 'manzana'
-                    frutas.remove('manzana')
-                    print(frutas)  # Resultado: ['pera', 'naranja', 'manzana', 'uva']
-                    # Manejo de errores al intentar eliminar un elemento que no existe
-                    try:
-                        frutas.remove('plátano')
-                    except ValueError:
-                        print("No se encontró el elemento en la lista")
-                    # Si hay elementos duplicados, solo elimina la primera ocurrencia
-                    numeros = [1, 2, 3, 2, 4]
-                    numeros.remove(2)
-                    print(numeros)  # Resultado: [1, 3, 2, 4]
-                    </code>
-                </pre>
+
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        # Lista de frutas
+                        frutas = ['manzana', 'pera', 'naranja', 'manzana', 'uva']
+                        
+                        # Eliminar la primera 'manzana'
+                        frutas.remove('manzana')
+                        print(frutas)  # Resultado: ['pera', 'naranja', 'manzana', 'uva']
+                        
+                        # Manejo de errores al intentar eliminar un elemento que no existe
+                        try:
+                            frutas.remove('plátano')
+                        except ValueError:
+                            print("No se encontró el elemento en la lista")
+                        
+                        # Si hay elementos duplicados, solo elimina la primera ocurrencia
+                        numeros = [1, 2, 3, 2, 4]
+                        numeros.remove(2)
+                        print(numeros)  # Resultado: [1, 3, 2, 4]
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- remove() fin -->
                 <!-- pop() -->
                 <div>
                   <h3>pop()</h3>
                   <p>
-                    El método <code class="language-python">pop()</code> es una función incorporada de
-                    las listas en Python que elimina y devuelve un elemento de
-                    una lista.
+                    El método <code class="language-python">pop()</code> es una
+                    función incorporada de las listas en Python que elimina y
+                    devuelve un elemento de una lista.
                   </p>
                   <p>Características importantes:</p>
                   <ul>
                     <li>
-                      Si la lista está vacía, lanza un <code class="language-python">ValueError</code>.
+                      Si la lista está vacía, lanza un
+                      <code class="language-python">ValueError</code>.
                     </li>
                     <li>
                       Si el índice está fuera de rango, lanza un IndexError
@@ -519,31 +560,40 @@
                     </li>
                     <li>
                       Es más eficiente que eliminar elementos con el método
-                      <code class="language-python">remove()</code> cuando se conoce el índice
+                      <code class="language-python">remove()</code> cuando se
+                      conoce el índice
                     </li>
                   </ul>
-                  <pre data-src-status="loaded" tabindex="0">
+
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
-                    # Lista inicial de lenguajes de programación
-                    lenguajes = ['Python', 'Java', 'JavaScript', 'PHP', 'Ruby']
-                    # 1. Eliminar y obtener el último elemento (sin índice)
-                    ultimo_lenguaje = lenguajes.pop()
-                    print(f"Lenguaje eliminado: {ultimo_lenguaje}")          # Resultado: Lenguaje eliminado: Ruby
-                    print(f"Lista actualizada: {lenguajes}")                 # Resultado: ['Python', 'Java', 'JavaScript', 'PHP']
-                    # 2. Eliminar y obtener elemento por índice específico
-                    lenguaje_posicion_1 = lenguajes.pop(1)
-                    print(f"Lenguaje eliminado: {lenguaje_posicion_1}")     # Resultado: Lenguaje eliminado: Java
-                    print(f"Lista actualizada: {lenguajes}")                 # Resultado: ['Python', 'JavaScript', 'PHP']
-                    # 3. Eliminar y obtener elemento con índice negativo
-                    lenguaje_penultimo = lenguajes.pop(-2)
-                    print(f"Lenguaje eliminado: {lenguaje_penultimo}")      # Resultado: Lenguaje eliminado: JavaScript
-                    print(f"Lista actualizada: {lenguajes}")                 # Resultado: ['Python', 'PHP']
-                    # 4. Uso práctico: Eliminar y usar el elemento eliminado
-                    carrito_compras = ['laptop', 'mouse', 'teclado', 'monitor']
-                    item_procesado = carrito_compras.pop(0)
-                    print(f"Procesando item: {item_procesado}")             # Resultado: Procesando item: laptop
-                    print(f"Items pendientes: {carrito_compras}")           # Resultado: ['mouse', 'teclado', 'monitor']                    </code>
-                </pre>
+                        # Lista inicial de lenguajes de programación
+                        lenguajes = ['Python', 'Java', 'JavaScript', 'PHP', 'Ruby']
+                       
+                        # 1. Eliminar y obtener el último elemento (sin índice)
+                        ultimo_lenguaje = lenguajes.pop()
+                        print(f"Lenguaje eliminado: {ultimo_lenguaje}")          # Resultado: Lenguaje eliminado: Ruby
+                        print(f"Lista actualizada: {lenguajes}")                 # Resultado: ['Python', 'Java', 'JavaScript', 'PHP']
+                        
+                        # 2. Eliminar y obtener elemento por índice específico
+                        lenguaje_posicion_1 = lenguajes.pop(1)
+                        print(f"Lenguaje eliminado: {lenguaje_posicion_1}")      # Resultado: Lenguaje eliminado: Java
+                        print(f"Lista actualizada: {lenguajes}")                 # Resultado: ['Python', 'JavaScript', 'PHP']
+                        
+                        # 3. Eliminar y obtener elemento con índice negativo
+                        lenguaje_penultimo = lenguajes.pop(-2)
+                        print(f"Lenguaje eliminado: {lenguaje_penultimo}")       # Resultado: Lenguaje eliminado: JavaScript
+                        print(f"Lista actualizada: {lenguajes}")                 # Resultado: ['Python', 'PHP']
+                        
+                        # 4. Uso práctico: Eliminar y usar el elemento eliminado
+                        carrito_compras = ['laptop', 'mouse', 'teclado', 'monitor']
+                        item_procesado = carrito_compras.pop(0)
+                        print(f"Procesando item: {item_procesado}")             # Resultado: Procesando item: laptop
+                        print(f"Items pendientes: {carrito_compras}")           # Resultado: ['mouse', 'teclado', 'monitor']    
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- pop() fin -->
                 <!-- sort() -->
@@ -556,47 +606,60 @@
                     in-place) y no crea una nueva lista."
                   </p>
                   <p>Sintaxis básica:</p>
-                  <pre data-src-status="loaded" tabindex="0">
-                <code class="language-python" data-prismjs-copy="Copy">
-                  lista.sort(reverse=False, key=None)
-                  </code>
-              </pre>
+
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-python" data-prismjs-copy="Copy">
+                        lista.sort(reverse=False, key=None)
+                      </code>
+                    </pre>
+                  </div>
                   <p>Parámetros:</p>
                   <ul>
                     <li>
-                      <code class="language-python">reverse</code>: Parámetro opcional (boolean). Si es
-                      <code class="language-python">True</code>, ordena en orden descendente.
+                      <code class="language-python">reverse</code>: Parámetro
+                      opcional (boolean). Si es
+                      <code class="language-python">True</code>, ordena en orden
+                      descendente.
                     </li>
                     <li>
-                      <code class="language-python">key</code>: Parámetro opcional. Una función que
-                      sirve como criterio de ordenamiento.
+                      <code class="language-python">key</code>: Parámetro
+                      opcional. Una función que sirve como criterio de
+                      ordenamiento.
                     </li>
                   </ul>
                   <p>Ejemplos prácticos:</p>
-                  <pre data-src-status="loaded" tabindex="0">
+
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
-                    # Ordenar números
-                    numeros = [5, 2, 8, 1, 9, 3]
-                    numeros.sort()
-                    print(numeros)  # Resultado: [1, 2, 3, 5, 8, 9]
-                    # Ordenar en orden descendente
-                    numeros.sort(reverse=True)
-                    print(numeros)  # Resultado: [9, 8, 5, 3, 2, 1]
-                    # Ordenar cadenas
-                    palabras = ['zebra', 'animal', 'casa', 'barco']
-                    palabras.sort()
-                    print(palabras)  # Resultado: ['animal', 'barco', 'casa', 'zebra']
-                    # Ordenar por longitud de palabra usando key
-                    palabras = ['gato', 'elefante', 'oso', 'mariposa']
-                    palabras.sort(key=len)
-                    print(palabras)  # Resultado: ['oso', 'gato', 'elefante', 'mariposa']
-                    </code>
-                </pre>
+                        # Ordenar números
+                        numeros = [5, 2, 8, 1, 9, 3]
+                        numeros.sort()
+                        print(numeros)  # Resultado: [1, 2, 3, 5, 8, 9]
+                        
+                        # Ordenar en orden descendente
+                        numeros.sort(reverse=True)
+                        print(numeros)  # Resultado: [9, 8, 5, 3, 2, 1]
+                        
+                        # Ordenar cadenas
+                        palabras = ['zebra', 'animal', 'casa', 'barco']
+                        palabras.sort()
+                        print(palabras)  # Resultado: ['animal', 'barco', 'casa', 'zebra']
+                        
+                        # Ordenar por longitud de palabra usando key
+                        palabras = ['gato', 'elefante', 'oso', 'mariposa']
+                        palabras.sort(key=len)
+                        print(palabras)  # Resultado: ['oso', 'gato', 'elefante', 'mariposa']
+                      </code>
+                    </pre>
+                  </div>
                   <p>Características importantes:</p>
                   <ul>
                     <li>Modifica la lista original.</li>
                     <li>
-                      No retorna una nueva lista (retorna <code class="language-python">None</code>).
+                      No retorna una nueva lista (retorna
+                      <code class="language-python">None</code>).
                     </li>
                     <li>Solo funciona con listas, no con otros iterables.</li>
                     <li>Los elementos deben ser comparables entre sí.</li>
@@ -623,29 +686,35 @@
                     </li>
                   </ul>
                   <p>Ejemplo práctico:</p>
-                  <pre data-src-status="loaded" tabindex="0">
+
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
-                    # Lista original
-                    numeros = [1, 2, 3, 4, 5]
-                    # Aplicando el método reverse()
-                    numeros.reverse()
-                    print(numeros)  # Resultado: [5, 4, 3, 2, 1]
-                    # También funciona con diferentes tipos de datos
-                    frutas = ['manzana', 'pera', 'plátano', 'naranja']
-                    frutas.reverse()
-                    print(frutas)  # Resultado: ['naranja', 'plátano', 'pera', 'manzana']
-                    </code>
-                </pre>
+                        # Lista original
+                        numeros = [1, 2, 3, 4, 5]
+                        # Aplicando el método reverse()
+                        numeros.reverse()
+                        print(numeros)  # Resultado: [5, 4, 3, 2, 1]
+                        # También funciona con diferentes tipos de datos
+                        frutas = ['manzana', 'pera', 'plátano', 'naranja']
+                        frutas.reverse()
+                        print(frutas)  # Resultado: ['naranja', 'plátano', 'pera', 'manzana']
+                      </code>
+                    </pre>
+                  </div>
                   <p>Alternativas:</p>
-                  <pre data-src-status="loaded" tabindex="0">
+
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                   <code class="language-python" data-prismjs-copy="Copy">
-                    # Usando el operador de rebanado [::-1] (crea una nueva lista)
-                    numeros = [1, 2, 3, 4, 5]
-                    numeros_invertidos = numeros[::-1]  # Nueva lista: [5, 4, 3, 2, 1]
-                    # La lista original permanece sin cambios
-                    print(numeros)  # Resultado: [1, 2, 3, 4, 5]
-                    </code>
-                </pre>
+                        # Usando el operador de rebanado [::-1] (crea una nueva lista)
+                        numeros = [1, 2, 3, 4, 5]
+                        numeros_invertidos = numeros[::-1]  # Nueva lista: [5, 4, 3, 2, 1]
+                        # La lista original permanece sin cambios
+                        print(numeros)  # Resultado: [1, 2, 3, 4, 5]
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- reverse() fin -->
                 <!-- split() -->
@@ -659,21 +728,26 @@
                     palabras o partes específicas de una cadena larga.
                   </p>
                   <p>Sintaxis:</p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    cadena.split(separador, maxsplit)
-                  </code>
-                </pre>
+
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        cadena.split(separador, maxsplit)
+                      </code>
+                    </pre>
+                  </div>
                   <ul>
                     <li>
-                      <span class="fw-bold"><code class="language-python">separador</code></span
+                      <span class="fw-bold"
+                        ><code class="language-python">separador</code></span
                       >: (opcional) Especifica el delimitador que se usará para
                       dividir la cadena. Si no se especifica,
-                      <code class="language-python">.split()</code> utiliza el espacio en blanco como
-                      delimitador por defecto.
+                      <code class="language-python">.split()</code> utiliza el
+                      espacio en blanco como delimitador por defecto.
                     </li>
                     <li>
-                      <span class="fw-bold"><code class="language-python">maxsplit</code></span
+                      <span class="fw-bold"
+                        ><code class="language-python">maxsplit</code></span
                       >: (opcional) Es el número máximo de divisiones a
                       realizar. Si se especifica, la cadena se dividirá solo ese
                       número de veces. Si no se indica, se realizarán todas las
@@ -687,13 +761,16 @@
                         >Dividir una cadena en palabras (con espacio como
                         delimitador por defecto)</span
                       >:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        texto = "Python es un lenguaje poderoso"
-                        palabras = texto.split()
-                        print(palabras)  # Imprime: ['Python', 'es', 'un', 'lenguaje', 'poderoso']
-                      </code>
-                    </pre>
+
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            texto = "Python es un lenguaje poderoso"
+                            palabras = texto.split()
+                            print(palabras)  # Imprime: ['Python', 'es', 'un', 'lenguaje', 'poderoso']
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold"
@@ -702,13 +779,16 @@
                       >: Si se quiere dividir una cadena basada en un carácter
                       diferente, como una coma, es posible especificarlo como
                       delimitador.
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        valores = "10,20,30,40"
-                        numeros = valores.split(",")
-                        print(numeros)  # Imprime: ['10', '20', '30', '40']
-                      </code>
-                    </pre>
+
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            valores = "10,20,30,40"
+                            numeros = valores.split(",")
+                            print(numeros)  # Imprime: ['10', '20', '30', '40']
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold"
@@ -717,13 +797,16 @@
                       >: Es posible limitar el número de partes en las que se
                       divide la cadena utilizando el parámetro
                       <code class="language-python">maxsplit</code>.
-                      <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    texto = "Python es un lenguaje poderoso y versátil"
-                    fragmentos = texto.split(" ", 3)
-                    print(fragmentos)  # Imprime: ['Python', 'es', 'un', 'lenguaje poderoso y versátil']
-                  </code>
-                </pre>
+
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            texto = "Python es un lenguaje poderoso y versátil"
+                            fragmentos = texto.split(" ", 3)
+                            print(fragmentos)  # Imprime: ['Python', 'es', 'un', 'lenguaje poderoso y versátil']
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold"
@@ -731,28 +814,34 @@
                       >: <code class="language-python">.split()</code>
                       también puede dividir cadenas que contengan saltos de
                       línea u otros caracteres de espacio en blanco.
-                      <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    parrafo = "Línea1\nLínea2\nLínea3"
-                    lineas = parrafo.split("\n")
-                    print(lineas)  # Imprime: ['Línea1', 'Línea2', 'Línea3']
-                  </code>
-                </pre>
+
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            parrafo = "Línea1\nLínea2\nLínea3"
+                            lineas = parrafo.split("\n")
+                            print(lineas)  # Imprime: ['Línea1', 'Línea2', 'Línea3']
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold"
                         >Uso con varias ocurrencias del delimitador</span
                       >: Cuando el delimitador aparece múltiples veces seguidas,
-                      <code class="language-python">.split()</code> trata cada ocurrencia por separado y
-                      crea elementos vacíos en la lista resultante si no hay
-                      contenido entre delimitadores.
-                      <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    texto = "apple,,banana,,cherry"
-                    frutas = texto.split(",")
-                    print(frutas)  # Imprime: ['apple', '', 'banana', '', 'cherry']
-                  </code>
-                </pre>
+                      <code class="language-python">.split()</code> trata cada
+                      ocurrencia por separado y crea elementos vacíos en la
+                      lista resultante si no hay contenido entre delimitadores.
+
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            texto = "apple,,banana,,cherry"
+                            frutas = texto.split(",")
+                            print(frutas)  # Imprime: ['apple', '', 'banana', '', 'cherry']
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -771,24 +860,31 @@
                   <code class="language-python">for</code> tradicionales.
                 </p>
                 <p>Sintaxis básica:</p>
-                <pre data-src-status="loaded" tabindex="0">
-                <code class="language-python" data-prismjs-copy="Copy">
-                  [expresión for elemento in iterable if condición]
-                </code>
-              </pre>
+
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      [expresión for elemento in iterable if condición]
+                    </code>
+                  </pre>
+                </div>
                 <ul>
                   <li>
-                    <span class="fw-bold"><code class="language-python">expresión</code></span
+                    <span class="fw-bold"
+                      ><code class="language-python">expresión</code></span
                     >: La operación o valor que se aplicará a cada elemento.
                   </li>
                   <li>
                     <span class="fw-bold"
-                      ><code class="language-python">for elemento in iterable</code></span
+                      ><code class="language-python"
+                        >for elemento in iterable</code
+                      ></span
                     >: Un bucle que itera sobre cada elemento en el iterable.
                   </li>
                   <li>
                     <span class="fw-bold"
-                      ><code class="language-python">if condición</code> (opcional)</span
+                      ><code class="language-python">if condición</code>
+                      (opcional)</span
                     >: Una condición que, si se cumple, permite incluir el
                     elemento en la nueva lista.
                   </li>
@@ -800,51 +896,60 @@
                       Crear una lista de números al cuadrado</span
                     >: En lugar de usar un bucle for para elevar cada número al
                     cuadrado, se puede utilizar una lista por comprensión:
-                    <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    # Usando lista por comprensión
-                    cuadrados = [x**2 for x in range(1, 6)]
-                    print(cuadrados)  # Imprime: [1, 4, 9, 16, 25]
-                  </code>
-                </pre>
+
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          # Usando lista por comprensión
+                          cuadrados = [x**2 for x in range(1, 6)]
+                          print(cuadrados)  # Imprime: [1, 4, 9, 16, 25]
+                        </code>
+                      </pre>
+                    </div>
                   </li>
                   <li>
                     <span class="fw-bold"
                       >Filtrar elementos con una condición</span
                     >: Se pueden incluir solo ciertos elementos en la lista, por
                     ejemplo, los números pares:
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      # Filtrar solo números pares
-                      pares = [x for x in range(10) if x % 2 == 0]
-                      print(pares)  # Imprime: [0, 2, 4, 6, 8]
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          # Filtrar solo números pares
+                          pares = [x for x in range(10) if x % 2 == 0]
+                          print(pares)  # Imprime: [0, 2, 4, 6, 8]
+                        </code>
+                      </pre>
+                    </div>
                   </li>
                   <li>
                     <span class="fw-bold"
                       >Modificar y filtrar elementos al mismo tiempo</span
                     >: Se puede modificar cada elemento y aplicar una condición
                     a la vez, como multiplicar por 2 solo los números impares:
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      # Multiplicar por 2 solo números impares
-                      modificados = [x * 2 for x in range(10) if x % 2 != 0]
-                      print(modificados)  # Imprime: [2, 6, 10, 14, 18]
-                    </code>
-                </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          # Multiplicar por 2 solo números impares
+                          modificados = [x * 2 for x in range(10) if x % 2 != 0]
+                          print(modificados)  # Imprime: [2, 6, 10, 14, 18]
+                        </code>
+                      </pre>
+                    </div>
                   </li>
                   <li>
                     <span class="fw-bold">Trabajar con cadenas de texto</span>:
                     Las listas por comprensión también funcionan con cadenas de
                     texto. Por ejemplo, extraer solo las vocales de una cadena:
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      cadena = "Python es increíble"
-                      vocales = [letra for letra in cadena if letra in "aeiou"]
-                      print(vocales)  # Imprime: ['o', 'e', 'i', 'e', 'i', 'e']
-                    </code>
-                </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          cadena = "Python es increíble"
+                          vocales = [letra for letra in cadena if letra in "aeiou"]
+                          print(vocales)  # Imprime: ['o', 'e', 'i', 'e', 'i', 'e']
+                        </code>
+                      </pre>
+                    </div>
                   </li>
                   <li>
                     <span class="fw-bold"
@@ -852,13 +957,15 @@
                     >: Se puede aplicar una función a cada elemento mientras se
                     crea la lista. Por ejemplo, convertir cada palabra en
                     mayúsculas:
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      frase = "aprendiendo listas por comprensión"
-                      palabras_mayus = [palabra.upper() for palabra in frase.split()]
-                      print(palabras_mayus)  # Imprime: ['APRENDIENDO', 'LISTAS', 'POR', 'COMPRENSIÓN']
-                    </code>
-                </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          frase = "aprendiendo listas por comprensión"
+                          palabras_mayus = [palabra.upper() for palabra in frase.split()]
+                          print(palabras_mayus)  # Imprime: ['APRENDIENDO', 'LISTAS', 'POR', 'COMPRENSIÓN']
+                        </code>
+                      </pre>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -881,16 +988,20 @@
                     otras listas como elementos. A continuación se muestra un
                     ejemplo básico de una lista anidada:
                   </p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    lista_anidada = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-                  </code>
-                </pre>
+
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          lista_anidada = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+                        </code>
+                      </pre>
+                  </div>
                   <p>
                     En este caso, lista_anidada contiene tres listas:
-                    <code class="language-python">[1, 2, 3]</code>, <code class="language-python">[4, 5, 6]</code> y
-                    <code class="language-python">[7, 8, 9]</code>. Esto puede interpretarse como una
-                    matriz de 3 filas y 3 columnas.
+                    <code class="language-python">[1, 2, 3]</code>,
+                    <code class="language-python">[4, 5, 6]</code> y
+                    <code class="language-python">[7, 8, 9]</code>. Esto puede
+                    interpretarse como una matriz de 3 filas y 3 columnas.
                   </p>
                 </div>
                 <!-- Creación de Listas Anidadas fin -->
@@ -903,13 +1014,16 @@
                     deseada, y el segundo índice selecciona el elemento dentro
                     de esa sublista.
                   </p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    print(lista_anidada[0])      # Imprime: [1, 2, 3] (primera sublista)
-                    print(lista_anidada[0][1])   # Imprime: 2 (segundo elemento de la primera sublista)
-                    print(lista_anidada[2][2])   # Imprime: 9 (tercer elemento de la tercera sublista)
-                  </code>
-                </pre>
+
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          print(lista_anidada[0])      # Imprime: [1, 2, 3] (primera sublista)
+                          print(lista_anidada[0][1])   # Imprime: 2 (segundo elemento de la primera sublista)
+                          print(lista_anidada[2][2])   # Imprime: 9 (tercer elemento de la tercera sublista)
+                        </code>
+                      </pre>
+                  </div>
                 </div>
                 <!-- Acceso a Elementos en Listas Anidadas fin -->
                 <!-- Modificación de Elementos en Listas Anidadas -->
@@ -919,12 +1033,15 @@
                     Es posible modificar elementos dentro de listas anidadas
                     accediendo directamente al índice del elemento deseado.
                   </p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    lista_anidada[1][1] = 99  # Cambia el valor 5 por 99 en la segunda sublista
-                    print(lista_anidada)      # Imprime: [[1, 2, 3], [4, 99, 6], [7, 8, 9]]
-                  </code>
-                </pre>
+
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          lista_anidada[1][1] = 99  # Cambia el valor 5 por 99 en la segunda sublista
+                          print(lista_anidada)      # Imprime: [[1, 2, 3], [4, 99, 6], [7, 8, 9]]
+                        </code>
+                      </pre>
+                  </div>
                 </div>
                 <!-- Modificación de Elementos en Listas Anidadas fin -->
                 <!-- Iteración en Listas Anidadas -->
@@ -935,14 +1052,17 @@
                     anidados. A continuación se muestra cómo imprimir cada
                     elemento de una lista anidada.
                   </p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    for fila in lista_anidada:
-                      for elemento in fila:
-                        print(elemento, end=" ")
-                      print()  # Salto de línea después de cada sublista
-                  </code>
-                </pre>
+
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          for fila in lista_anidada:
+                              for elemento in fila:
+                                  print(elemento, end=" ")
+                              print()  # Salto de línea después de cada sublista
+                        </code>
+                      </pre>
+                  </div>
                 </div>
                 <!-- Iteración en Listas Anidadas fin -->
                 <!-- Ejemplo: Representación de una Matriz -->
@@ -952,17 +1072,20 @@
                     Las listas anidadas son útiles para representar estructuras
                     bidimensionales como matrices. Por ejemplo:
                   </p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    matriz = [
-                    [1, 0, 0],
-                    [0, 1, 0],
-                    [0, 0, 1]
-                    ]
-                    # Accediendo al elemento en la posición (2, 2)
-                    print(matriz[1][1])  # Imprime: 1
-                  </code>
-                </pre>
+
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          matriz = [
+                          [1, 0, 0],
+                          [0, 1, 0],
+                          [0, 0, 1]
+                          ]
+                          # Accediendo al elemento en la posición (2, 2)
+                          print(matriz[1][1])  # Imprime: 1
+                        </code>
+                      </pre>
+                  </div>
                 </div>
                 <!-- Ejemplo: Representación de una Matriz fin -->
               </div>
@@ -971,7 +1094,7 @@
           </article>
           <!--  Listas en Python  -->
 
-          <!-- -------------------------------- comentarios -------------------------------- -->
+          <!--  comentarios  -->
           <article class="row pt-5" id="comments">
             <h2>COMENTARIOS</h2>
             <p>
@@ -1040,9 +1163,9 @@
               </form>
             </div>
           </article>
-          <!-- -------------------------------- fin comentarios -------------------------------- -->
+          <!--  fin comentarios  -->
         </section>
-        <!-- -------------------------------- barra lateral -------------------------------- -->
+        <!--  barra lateral  -->
         <aside class="col-lg-3 d-none d-lg-block pt-5">
           <h1>En Este Artículo</h1>
           <ul class="list-group">
@@ -1073,86 +1196,11 @@
             </li>
           </ul>
         </aside>
-        <!-- -------------------------------- fin barra lateral -------------------------------- -->
+        <!--  fin barra lateral  -->
       </main>
-      <!-- -------------------------------- fin principal -------------------------------- -->
+      <!--  fin principal  -->
     </div>
     <!--  Principal Fin  -->
-
-    <!-- -------------------------------- pie de pagina -------------------------------- -->
-    <footer class="row border-top border-1 m-1 mt-auto">
-      <div class="row">
-        <!-- contacto -->
-        <address class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Contacto</div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-envelope-at fs-3"></i>
-            <span class="ms-3">
-              <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com"
-                >ehfeduardo@gmail.com</a
-              >
-            </span>
-          </div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-geo-alt fs-3"></i>
-            <span class="ms-3">Bogotá D. C. - Colombia</span>
-          </div>
-        </address>
-        <!-- Derechos de autor -->
-        <div
-          class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100"
-        >
-          <div>
-            <i class="bi bi-c-circle fs-5"></i>
-          </div>
-          <div class="ms-2">All Rights Reserved 2025</div>
-        </div>
-        <!-- redes sociales -->
-        <div class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Redes Sociales</div>
-          <div class="d-flex justify-content-evenly align-items-center gap-5">
-            <div>
-              <a
-                href="https://www.linkedin.com/in/eduardoherreraf/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-linkedin fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://github.com/eduardoherreraf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-github fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.facebook.com/eduardoherreraforero/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-facebook fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://twitter.com/ehfeduardo/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-twitter-x fs-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex align-items-center justify-content-center gap-2"></div>
-    </footer>
-    <!-- -------------------------------- pie de pagina fin -------------------------------- -->
 
     <!-- button to top -->
     <button onclick="topFunction()" id="myBtnScroll" title="Go to top">

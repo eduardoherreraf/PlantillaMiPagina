@@ -162,7 +162,7 @@
     </nav>
     <!-- Barra deNavegación -->
 
-    <!-- -------------------------------- principal -------------------------------- -->
+    <!--  principal  -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
         <section class="pb-3 pt-5 col-lg-9 px-lg-4">
@@ -217,11 +217,13 @@
                 <!-- Sintaxis Básica  Open() -->
                 <div>
                   <h3>Sintaxis Básica Open()</h3>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    open(file, mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        open(file, mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)
+                      </code>
+                    </pre>
+                  </div>
                   <p><strong>Parámetros</strong>:</p>
                   <ul>
                     <li>
@@ -346,17 +348,19 @@
                           >'r'</code
                         >)</span
                       >:
-                      <pre data-src-status="loaded" tabindex="0">
-                <code class="language-python" data-prismjs-copy="Copy">
-                  # Abrir un archivo en modo lectura
-                  archivo = open('mi_archivo.txt', 'r')
-                  # Leer el contenido del archivo
-                  contenido = archivo.read()
-                  print(contenido)
-                  # Cerrar el archivo
-                  archivo.close()
-                </code>
-              </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            # Abrir un archivo en modo lectura
+                            archivo = open('mi_archivo.txt', 'r')
+                            # Leer el contenido del archivo
+                            contenido = archivo.read()
+                            print(contenido)
+                            # Cerrar el archivo
+                            archivo.close()
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold"
@@ -365,16 +369,18 @@
                           >'w'</code
                         >)</span
                       >:
-                      <pre data-src-status="loaded" tabindex="0">
-                <code class="language-python" data-prismjs-copy="Copy">
-                  # Abrir un archivo en modo escritura (sobrescribe si existe)
-                  archivo = open('mi_archivo.txt', 'w')
-                  # Escribir en el archivo
-                  archivo.write('Hola, este es un nuevo contenido.')
-                  # Cerrar el archivo
-                  archivo.close()
-                </code>
-              </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            # Abrir un archivo en modo escritura (sobrescribe si existe)
+                            archivo = open('mi_archivo.txt', 'w')
+                            # Escribir en el archivo
+                            archivo.write('Hola, este es un nuevo contenido.')
+                            # Cerrar el archivo
+                            archivo.close()
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold"
@@ -383,31 +389,35 @@
                           >'a'</code
                         >)</span
                       >:
-                      <pre data-src-status="loaded" tabindex="0">
-                <code class="language-python" data-prismjs-copy="Copy">
-                  # Abrir un archivo en modo añadir (agrega al final)
-                  archivo = open('mi_archivo.txt', 'a')
-                  # Añadir contenido al final del archivo
-                  archivo.write('\nEsta línea se agrega al final.')
-                  # Cerrar el archivo
-                  archivo.close()
-                </code>
-              </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            # Abrir un archivo en modo añadir (agrega al final)
+                            archivo = open('mi_archivo.txt', 'a')
+                            # Añadir contenido al final del archivo
+                            archivo.write('\nEsta línea se agrega al final.')
+                            # Cerrar el archivo
+                            archivo.close()
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold"
                         >Leer un archivo línea por línea</span
                       >:
-                      <pre data-src-status="loaded" tabindex="0">
-                <code class="language-python" data-prismjs-copy="Copy">
-                  # Abrir un archivo en modo añadir (agrega al final)
-                  archivo = open('mi_archivo.txt', 'a')
-                  # Añadir contenido al final del archivo
-                  archivo.write('\nEsta línea se agrega al final.')
-                  # Cerrar el archivo
-                  archivo.close()
-                </code>
-              </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            # Abrir un archivo en modo añadir (agrega al final)
+                            archivo = open('mi_archivo.txt', 'a')
+                            # Añadir contenido al final del archivo
+                            archivo.write('\nEsta línea se agrega al final.')
+                            # Cerrar el archivo
+                            archivo.close()
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold"
@@ -416,16 +426,18 @@
                           >'rb</code
                         >')</span
                       >:
-                      <pre data-src-status="loaded" tabindex="0">
-                <code class="language-python" data-prismjs-copy="Copy">
-                  # Abrir un archivo binario en modo lectura
-                  archivo = open('imagen.png', 'rb')
-                  # Leer el contenido binario del archivo
-                  contenido_binario = archivo.read()
-                  # Cerrar el archivo
-                  archivo.close()
-                </code>
-              </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            # Abrir un archivo binario en modo lectura
+                            archivo = open('imagen.png', 'rb')
+                            # Leer el contenido binario del archivo
+                            contenido_binario = archivo.read()
+                            # Cerrar el archivo
+                            archivo.close()
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -467,52 +479,60 @@
                 <ul>
                   <li>
                     <span class="fw-bold">Leer todo el archivo</span>:
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      # Leer todo el archivo
-                      archivo=open("miArchivo.txt","r",encoding="utf-8")
-                      contenido = archivo.read()
-                      print (contenido)
-                      archivo.close()
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          # Leer todo el archivo
+                          archivo=open("miArchivo.txt","r",encoding="utf-8")
+                          contenido = archivo.read()
+                          print (contenido)
+                          archivo.close()
+                        </code>
+                      </pre>
+                    </div>
                   </li>
                   <li>
                     <span class="fw-bold">Leer una línea</span>:
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      # Leer una línea
-                      archivo=open("miArchivo.txt","r")
-                      linea = archivo.readline()
-                      print (linea)
-                      linea = archivo.readline()
-                      print (linea)
-                      archivo.close()
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          # Leer una línea
+                          archivo=open("miArchivo.txt","r")
+                          linea = archivo.readline()
+                          print (linea)
+                          linea = archivo.readline()
+                          print (linea)
+                          archivo.close()
+                        </code>
+                      </pre>
+                    </div>
                   </li>
                   <li>
                     <span class="fw-bold">Leer todas las líneas</span>:
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      # Leer todas las líneas
-                      archivo = open("miArchivo.txt", "r")
-                      lineas = archivo.readlines()
-                      archivo.close()
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          # Leer todas las líneas
+                          archivo = open("miArchivo.txt", "r")
+                          lineas = archivo.readlines()
+                          archivo.close()
+                        </code>
+                      </pre>
+                    </div>
                   </li>
                   <li>
                     <span class="fw-bold">Leer línea por línea</span>:
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      # Leer línea por línea
-                      archivo=open("miArchivo.txt","r")
-                      for linea in archivo:
-                        print (linea)
-                      archivo.close()
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          # Leer línea por línea
+                          archivo=open("miArchivo.txt","r")
+                          for linea in archivo:
+                            print (linea)
+                          archivo.close()
+                        </code>
+                      </pre>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -578,65 +598,75 @@
                     modo abre el archivo para escribir. Si el archivo no existe,
                     se crea uno nuevo. Si el archivo ya existe, su contenido se
                     sobrescribe.
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      # Abrir el archivo en modo de escritura
-                      with open('archivo.txt', 'w') as archivo:
-                          archivo.write('Hola, mundo!\n')
-                          archivo.write('Esta es una línea adicional.\n')
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          # Abrir el archivo en modo de escritura
+                          with open('archivo.txt', 'w') as archivo:
+                              archivo.write('Hola, mundo!\n')
+                              archivo.write('Esta es una línea adicional.\n')
+                        </code>
+                      </pre>
+                    </div>
                   </li>
                   <li>
                     <span class="fw-bold">Modo de Anexar ('a')</span>: Este modo
                     abre el archivo para escribir. Si el archivo no existe, se
                     crea uno nuevo. Si el archivo ya existe, el nuevo contenido
                     se añade al final del archivo.
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      # Abrir el archivo en modo de anexar
-                      with open('archivo.txt', 'a') as archivo:
-                          archivo.write('Esta línea se añade al final del archivo.\n')
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          # Abrir el archivo en modo de anexar
+                          with open('archivo.txt', 'a') as archivo:
+                              archivo.write('Esta línea se añade al final del archivo.\n')
+                        </code>
+                      </pre>
+                    </div>
                   </li>
                   <li>
                     <span class="fw-bold"
                       >Modo de Lectura y Escritura ('r+')</span
                     >: Este modo abre el archivo para leer y escribir. El
                     puntero del archivo se coloca al principio del archivo.
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      # Abrir el archivo en modo de lectura y escritura
-                      with open('archivo.txt', 'r+') as archivo:
-                          contenido = archivo.read()  # Leer el contenido actual
-                          archivo.write('Esta línea se añade al principio del archivo.\n')  # Escribir al principio
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          # Abrir el archivo en modo de lectura y escritura
+                          with open('archivo.txt', 'r+') as archivo:
+                              contenido = archivo.read()  # Leer el contenido actual
+                              archivo.write('Esta línea se añade al principio del archivo.\n')  # Escribir al principio
+                        </code>
+                      </pre>
+                    </div>
                   </li>
                   <li>
                     <strong>Escritura de Múltiples Líneas</strong>: Para
                     escribir múltiples líneas de manera eficiente:
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      # Abrir el archivo en modo de escritura
-                      lineas = ["Primera línea\n", "Segunda línea\n", "Tercera línea\n"]
-                      with open("archivo.txt", "w") as archivo:
-                          archivo.writelines(lineas)
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          # Abrir el archivo en modo de escritura
+                          lineas = ["Primera línea\n", "Segunda línea\n", "Tercera línea\n"]
+                          with open("archivo.txt", "w") as archivo:
+                              archivo.writelines(lineas)
+                        </code>
+                      </pre>
+                    </div>
                   </li>
                   <li>
                     <strong>Escribir Objetos Convertidos a Texto</strong>: Si se
                     desea guardar datos como listas o diccionarios, estos deben
                     convertirse en cadenas:
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      datos = {"nombre": "Juan", "edad": 30}
-                      with open("archivo.json", "w") as archivo:
-                          archivo.write(str(datos))
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          datos = {"nombre": "Juan", "edad": 30}
+                          with open("archivo.json", "w") as archivo:
+                              archivo.write(str(datos))
+                        </code>
+                      </pre>
+                    </div>
                   </li>
                   <li>
                     <strong>Consideraciones Importantes</strong>:
@@ -652,12 +682,14 @@
                         <span class="fw-bold">Codificación</span>: Si el archivo
                         contiene caracteres especiales, especifique la
                         codificación:
-                        <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        with open("archivo.txt", "w", encoding="utf-8") as archivo:
-                        archivo.write("Texto con caracteres especiales: ñ, á, é.\n")
-                      </code>
-                    </pre>
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
+                            <code class="language-python" data-prismjs-copy="Copy">
+                              with open("archivo.txt", "w", encoding="utf-8") as archivo:
+                              archivo.write("Texto con caracteres especiales: ñ, á, é.\n")
+                            </code>
+                          </pre>
+                        </div>
                       </li>
                       <li>
                         <span class="fw-bold">Mover puntero</span>: El método
@@ -677,28 +709,30 @@
                   Aquí se tiene un ejemplo completo que muestra cómo usar estos
                   modos:
                 </p>
-                <pre data-src-status="loaded" tabindex="0">
-                <code class="language-python" data-prismjs-copy="Copy">
-                  # Escribir en el archivo (sobrescribir si existe)
-                  with open('archivo.txt', 'w') as archivo:
-                      archivo.write('Línea 1\n')
-                      archivo.write('Línea 2\n')
-                  # Anexar al archivo
-                  with open('archivo.txt', 'a') as archivo:
-                      archivo.write('Línea 3\n')
-                  # Leer y escribir en el archivo
-                  with open('archivo.txt', 'r+') as archivo:
-                      contenido = archivo.read()
-                      print('Contenido antes de escribir:')
-                      print(contenido)
-                      # Mover el puntero al principio del archivo
-                      archivo.seek(0)
-                      archivo.write('Nueva Línea 1\n')
-                      # Mover el puntero al final del archivo
-                      archivo.seek(0, 2)
-                      archivo.write('Nueva Línea 2\n')
-                </code>
-              </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      # Escribir en el archivo (sobrescribir si existe)
+                      with open('archivo.txt', 'w') as archivo:
+                          archivo.write('Línea 1\n')
+                          archivo.write('Línea 2\n')
+                      # Anexar al archivo
+                      with open('archivo.txt', 'a') as archivo:
+                          archivo.write('Línea 3\n')
+                      # Leer y escribir en el archivo
+                      with open('archivo.txt', 'r+') as archivo:
+                          contenido = archivo.read()
+                          print('Contenido antes de escribir:')
+                          print(contenido)
+                          # Mover el puntero al principio del archivo
+                          archivo.seek(0)
+                          archivo.write('Nueva Línea 1\n')
+                          # Mover el puntero al final del archivo
+                          archivo.seek(0, 2)
+                          archivo.write('Nueva Línea 2\n')
+                    </code>
+                  </pre>
+                </div>
               </div>
               <!-- Escritura en Archivos Fin -->
               <!-- Cerrar archivos -->
@@ -711,11 +745,13 @@
                   recursos asociados al archivo, pero si se usa la sentencia
                   <code class="language-python">with</code> es innecesario.
                 </p>
-                <pre data-src-status="loaded" tabindex="0">
-                <code class="language-python" data-prismjs-copy="Copy">
-                  file.close()
-                </code>
-              </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      file.close()
+                    </code>
+                  </pre>
+                </div>
               </div>
               <!-- Cerrar archivos Fin -->
               <!-- Manejo de Excepciones -->
@@ -780,27 +816,29 @@
                     <code class="language-python">else</code>, y
                     <code class="language-python">finally</code>:
                   </p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    try:
-                    # Código que puede causar una excepción
-                    with open("archivo.txt", "r") as archivo:
-                        contenido = archivo.read()
-                        print(contenido)
-                    except FileNotFoundError:
-                        print("Error: El archivo no existe.")
-                    except PermissionError:
-                        print("Error: No tienes permisos para acceder al archivo.")
-                    except Exception as e:  # Captura de cualquier otro error no especificado
-                        print(f"Error inesperado: {e}")
-                    else:
-                        # Código que se ejecuta si no hubo excepciones
-                        print("Archivo leído exitosamente.")
-                    finally:
-                        # Código que se ejecuta siempre, ocurra o no una excepción
-                        print("Operación de archivo finalizada.")
-                </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        try:
+                        # Código que puede causar una excepción
+                        with open("archivo.txt", "r") as archivo:
+                            contenido = archivo.read()
+                            print(contenido)
+                        except FileNotFoundError:
+                            print("Error: El archivo no existe.")
+                        except PermissionError:
+                            print("Error: No tienes permisos para acceder al archivo.")
+                        except Exception as e:  # Captura de cualquier otro error no especificado
+                            print(f"Error inesperado: {e}")
+                        else:
+                            # Código que se ejecuta si no hubo excepciones
+                            print("Archivo leído exitosamente.")
+                        finally:
+                            # Código que se ejecuta siempre, ocurra o no una excepción
+                            print("Operación de archivo finalizada.")
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- Estructura Básica con Manejo de Excepciones fin -->
                 <!-- Ejemplos Prácticos -->
@@ -811,58 +849,64 @@
                       <span class="fw-bold"
                         >Leer un archivo con manejo de errores</span
                       >:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        try:
-                        with open("datos.txt", "r") as archivo:
-                            for linea in archivo:
-                                print(linea.strip())
-                        except FileNotFoundError:
-                            print("El archivo 'datos.txt' no se encuentra.")
-                        except IOError:
-                            print("Ocurrió un error al intentar leer el archivo.")
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            try:
+                            with open("datos.txt", "r") as archivo:
+                                for linea in archivo:
+                                    print(linea.strip())
+                            except FileNotFoundError:
+                                print("El archivo 'datos.txt' no se encuentra.")
+                            except IOError:
+                                print("Ocurrió un error al intentar leer el archivo.")
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold"
                         >Escribir en un archivo con validación de permisos</span
                       >:
-                      <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      try:
-                      with open("salida.txt", "w") as archivo:
-                          archivo.write("Esto es una prueba.\n")
-                      except PermissionError:
-                          print("No se tienen permisos para escribir en 'salida.txt'.")
-                      except Exception as e:
-                          print(f"Error inesperado: {e}")
-                      else:
-                          print("El archivo se escribió correctamente.")
-                    </code>
-                  </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            try:
+                            with open("salida.txt", "w") as archivo:
+                                archivo.write("Esto es una prueba.\n")
+                            except PermissionError:
+                                print("No se tienen permisos para escribir en 'salida.txt'.")
+                            except Exception as e:
+                                print(f"Error inesperado: {e}")
+                            else:
+                                print("El archivo se escribió correctamente.")
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold"
                         >Gestionar múltiples errores en lectura y
                         escritura</span
                       >:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        try:
-                        with open("entrada.txt", "r") as entrada, open("salida.txt", "w") as salida:
-                            datos = entrada.read()
-                            salida.write(datos)
-                        except FileNotFoundError as e:
-                            print(f"Archivo no encontrado: {e.filename}")
-                        except PermissionError as e:
-                            print(f"Problema de permisos: {e}")
-                        except Exception as e:
-                            print(f"Error inesperado: {e}")
-                        finally:
-                            print("Proceso completado, con o sin errores.")
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            try:
+                            with open("entrada.txt", "r") as entrada, open("salida.txt", "w") as salida:
+                                datos = entrada.read()
+                                salida.write(datos)
+                            except FileNotFoundError as e:
+                                print(f"Archivo no encontrado: {e.filename}")
+                            except PermissionError as e:
+                                print(f"Problema de permisos: {e}")
+                            except Exception as e:
+                                print(f"Error inesperado: {e}")
+                            finally:
+                                print("Proceso completado, con o sin errores.")
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -902,20 +946,22 @@
                     Se pueden lanzar errores personalizados si se desea realizar
                     validaciones adicionales:
                   </p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    try:
-                    archivo = "datos.txt"
-                    if not archivo.endswith(".txt"):
-                        raise ValueError("El archivo debe tener extensión .txt")
-                    with open(archivo, "r") as f:
-                        print(f.read())
-                    except ValueError as e:
-                        print(f"Error de validación: {e}")
-                    except Exception as e:
-                        print(f"Error inesperado: {e}")
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        try:
+                        archivo = "datos.txt"
+                        if not archivo.endswith(".txt"):
+                            raise ValueError("El archivo debe tener extensión .txt")
+                        with open(archivo, "r") as f:
+                            print(f.read())
+                        except ValueError as e:
+                            print(f"Error de validación: {e}")
+                        except Exception as e:
+                            print(f"Error inesperado: {e}")
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- Errores Personalizados fin -->
               </div>
@@ -934,13 +980,15 @@
                 <!-- Sintaxis Básica de with -->
                 <div>
                   <h3>Sintaxis Básica de with</h3>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    with open('archivo.txt', 'modo') as variable:
-                        # Operaciones con el archivo
-                        contenido = variable.read()
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        with open('archivo.txt', 'modo') as variable:
+                            # Operaciones con el archivo
+                            contenido = variable.read()
+                      </code>
+                    </pre>
+                  </div>
                   <p><strong>Cómo funciona</strong>:</p>
                   <ul>
                     <li>
@@ -981,48 +1029,56 @@
                   <ul>
                     <li>
                       <span class="fw-bold">Leer un archivo</span>:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        with open('archivo.txt', 'r') as archivo:
-                            contenido = archivo.read()
-                            print(contenido)
-                        # El archivo se cierra automáticamente aquí
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            with open('archivo.txt', 'r') as archivo:
+                                contenido = archivo.read()
+                                print(contenido)
+                            # El archivo se cierra automáticamente aquí
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold">Escribir en un archivo</span>:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        with open('archivo.txt', 'w') as archivo:
-                            archivo.write('Hola, este es un archivo de prueba.')
-                        # El archivo se cierra automáticamente aquí
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            with open('archivo.txt', 'w') as archivo:
+                                archivo.write('Hola, este es un archivo de prueba.')
+                            # El archivo se cierra automáticamente aquí
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold">Añadir contenido a un archivo</span
                       >:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        with open('archivo.txt', 'a') as archivo:
-                            archivo.write('\nLínea adicional al archivo.')
-                        # El archivo se cierra automáticamente aquí
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            with open('archivo.txt', 'a') as archivo:
+                                archivo.write('\nLínea adicional al archivo.')
+                            # El archivo se cierra automáticamente aquí
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold"
                         >Leer un archivo línea por línea</span
                       >:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        with open('archivo.txt', 'r') as archivo:
-                            for linea in archivo:
-                                print(linea.strip())  # Elimina saltos de línea extra
-                        # El archivo se cierra automáticamente aquí
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            with open('archivo.txt', 'r') as archivo:
+                                for linea in archivo:
+                                    print(linea.strip())  # Elimina saltos de línea extra
+                            # El archivo se cierra automáticamente aquí
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -1032,7 +1088,7 @@
             </div>
           </article>
           <!--  Manejo de Archivos en Python  -->
-          <!-- -------------------------------- comentarios -------------------------------- -->
+          <!--  comentarios  -->
           <article class="row pt-5" id="comments">
             <h2>COMENTARIOS</h2>
             <p>
@@ -1101,9 +1157,9 @@
               </form>
             </div>
           </article>
-          <!-- -------------------------------- fin comentarios -------------------------------- -->
+          <!--  fin comentarios  -->
         </section>
-        <!-- -------------------------------- barra lateral -------------------------------- -->
+        <!--  barra lateral  -->
         <aside class="col-lg-3 d-none d-lg-block pt-5">
           <h1>En Este Artículo</h1>
           <ul class="list-group">
@@ -1133,86 +1189,11 @@
             </li>
           </ul>
         </aside>
-        <!-- -------------------------------- fin barra lateral -------------------------------- -->
+        <!--  fin barra lateral  -->
       </main>
-      <!-- -------------------------------- fin principal -------------------------------- -->
+      <!--  fin principal  -->
     </div>
     <!--  Principal Fin  -->
-
-    <!-- -------------------------------- pie de pagina -------------------------------- -->
-    <footer class="row border-top border-1 m-1 mt-auto">
-      <div class="row">
-        <!-- contacto -->
-        <address class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Contacto</div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-envelope-at fs-3"></i>
-            <span class="ms-3">
-              <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com"
-                >ehfeduardo@gmail.com</a
-              >
-            </span>
-          </div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-geo-alt fs-3"></i>
-            <span class="ms-3">Bogotá D. C. - Colombia</span>
-          </div>
-        </address>
-        <!-- Derechos de autor -->
-        <div
-          class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100"
-        >
-          <div>
-            <i class="bi bi-c-circle fs-5"></i>
-          </div>
-          <div class="ms-2">All Rights Reserved 2025</div>
-        </div>
-        <!-- redes sociales -->
-        <div class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Redes Sociales</div>
-          <div class="d-flex justify-content-evenly align-items-center gap-5">
-            <div>
-              <a
-                href="https://www.linkedin.com/in/eduardoherreraf/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-linkedin fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://github.com/eduardoherreraf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-github fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.facebook.com/eduardoherreraforero/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-facebook fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://twitter.com/ehfeduardo/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-twitter-x fs-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex align-items-center justify-content-center gap-2"></div>
-    </footer>
-    <!-- -------------------------------- pie de pagina fin -------------------------------- -->
 
     <!-- button to top -->
     <button onclick="topFunction()" id="myBtnScroll" title="Go to top">

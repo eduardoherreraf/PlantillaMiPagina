@@ -97,7 +97,7 @@
 
   <body>
     <!-- Barra deNavegación -->
-<nav
+    <nav
       class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
     >
       <div class="container-fluid">
@@ -150,7 +150,9 @@
               <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog"
+              <a
+                class="nav-link mx-1 publicaciones-activo"
+                href="index.html#blog"
                 >PUBLICACIONES</a
               >
             </li>
@@ -163,7 +165,7 @@
     </nav>
     <!-- Barra deNavegación -->
 
-    <!-- -------------------------------- principal -------------------------------- -->
+    <!--  principal  -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
         <section class="pb-3 pt-5 col-lg-9 px-lg-4">
@@ -218,38 +220,43 @@
                   </p>
                   <ul>
                     <li>
-                      <span class="fw-bold">or (o)</span>:
-                      Devuelve <code class="language-python">True</code> si al menos una de las
-                      expresiones es verdadera.
+                      <span class="fw-bold">or (o)</span>: Devuelve
+                      <code class="language-python">True</code> si al menos una
+                      de las expresiones es verdadera.
                     </li>
                     <li>
-                      <span class="fw-bold">and (y)</span>:
-                      Devuelve <code class="language-python">True</code> si ambas expresiones son
-                      verdaderas.
+                      <span class="fw-bold">and (y)</span>: Devuelve
+                      <code class="language-python">True</code> si ambas
+                      expresiones son verdaderas.
                     </li>
                     <li>
-                      <span class="fw-bold">not (no)</span>:
-                      Devuelve <code class="language-python">True</code> si la expresión es
-                      <code class="language-python">False</code>, y viceversa.
+                      <span class="fw-bold">not (no)</span>: Devuelve
+                      <code class="language-python">True</code> si la expresión
+                      es <code class="language-python">False</code>, y
+                      viceversa.
                     </li>
                   </ul>
                 </div>
                 <!-- Operadores Lógicos o Booleanos fin -->
                 <!-- Ejemplos de Operaciones Lógicas -->
                 <div>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    a = True
-                    b = False
-                    resultado_and = a and b   # False
-                    resultado_or  = a or b    # True
-                    resultado_not = not a     # False
-                    print(f"AND: {resultado_and}, OR: {resultado_or}, NOT: {resultado_not}")
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        a = True
+                        b = False
+                        resultado_and = a and b   # False
+                        resultado_or  = a or b    # True
+                        resultado_not = not a     # False
+                        print(f"AND: {resultado_and}, OR: {resultado_or}, NOT: {resultado_not}")
+                      </code>
+                    </pre>
+                  </div>
                   <p>
-                    Python imprime: AND: <code class="language-python">False</code>, OR:
-                    <code class="language-python">True</code>, NOT: <code class="language-python">False</code>
+                    Python imprime: AND:
+                    <code class="language-python">False</code>, OR:
+                    <code class="language-python">True</code>, NOT:
+                    <code class="language-python">False</code>
                   </p>
                 </div>
                 <!-- Ejemplos de Operaciones Lógicas fin -->
@@ -259,19 +266,22 @@
                   <p>
                     Las operaciones lógicas son útiles en condiciones y bucles.
                     Por ejemplo, se pueden usar en estructuras de control como
-                    <code class="language-python">if</code> y <code class="language-python">while</code> para tomar decisiones
-                    basadas en múltiples condiciones.
+                    <code class="language-python">if</code> y
+                    <code class="language-python">while</code> para tomar
+                    decisiones basadas en múltiples condiciones.
                   </p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    edad = 20
-                    tiene_permiso = True
-                    if edad >= 18 and tiene_permiso:
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        edad = 20
+                        tiene_permiso = True
+                        if edad >= 18 and tiene_permiso:
                         print("Puede entrar.")
-                    else:
+                        else:
                         print("No puede entrar.")
-                  </code>
-                </pre>
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- Uso de Operaciones Lógicas fin -->
               </div>
@@ -320,19 +330,21 @@
                 <!-- Ejemplos de Operaciones de Bits -->
                 <div>
                   <h3>Ejemplos de Operaciones de Bits</h3>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    x = 10  # 1010 en binario
-                    y = 4   # 0100 en binario
-                    resultado_and_bits = x & y             # 0 (0000 en binario)
-                    resultado_or_bits = x | y              # 14 (1110 en binario)
-                    resultado_xor_bits = x ^ y             # 14 (1110 en binario)
-                    resultado_not_bits = ~x                # -11 (en complemento a dos)
-                    resultado_desplazamiento_izq = x &lt;&lt; 1  # 20 (10100 en binario)
-                    resultado_desplazamiento_der = x >> 1  # 5 (0101 en binario)
-                    print(f"AND: {resultado_and_bits}, OR: {resultado_or_bits}, XOR: {resultado_xor_bits}, NOT: {resultado_not_bits}, Desplazamiento Izquierda: {resultado_desplazamiento_izq}, Desplazamiento Derecha: {resultado_desplazamiento_der}")
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        x = 10  # 1010 en binario
+                        y = 4   # 0100 en binario
+                        resultado_and_bits = x & y             # 0 (0000 en binario)
+                        resultado_or_bits = x | y              # 14 (1110 en binario)
+                        resultado_xor_bits = x ^ y             # 14 (1110 en binario)
+                        resultado_not_bits = ~x                # -11 (en complemento a dos)
+                        resultado_desplazamiento_izq = x &lt;&lt; 1  # 20 (10100 en binario)
+                        resultado_desplazamiento_der = x >> 1  # 5 (0101 en binario)
+                        print(f"AND: {resultado_and_bits}, OR: {resultado_or_bits}, XOR: {resultado_xor_bits}, NOT: {resultado_not_bits}, Desplazamiento Izquierda: {resultado_desplazamiento_izq}, Desplazamiento Derecha: {resultado_desplazamiento_der}")
+                      </code>
+                    </pre>
+                  </div>
                   <p>
                     Python imprime: AND: 0, OR: 14, XOR: 14, NOT: -11,
                     Desplazamiento Izquierda: 20, Desplazamiento Derecha: 5
@@ -355,7 +367,7 @@
             </div>
           </article>
 
-          <!-- -------------------------------- comentarios -------------------------------- -->
+          <!--  comentarios  -->
           <article class="row pt-5" id="comments">
             <h2>COMENTARIOS</h2>
             <p>
@@ -424,10 +436,10 @@
               </form>
             </div>
           </article>
-          <!-- -------------------------------- fin comentarios -------------------------------- -->
+          <!--  fin comentarios  -->
           <!--  Operadores Lógicos y Operaciones Bit a Bit en Python  -->
         </section>
-        <!-- -------------------------------- barra lateral -------------------------------- -->
+        <!--  barra lateral  -->
         <aside class="col-lg-3 d-none d-lg-block pt-5">
           <h1>En Este Artículo</h1>
           <ul class="list-group">
@@ -445,86 +457,11 @@
             </li>
           </ul>
         </aside>
-        <!-- -------------------------------- fin barra lateral -------------------------------- -->
+        <!--  fin barra lateral  -->
       </main>
-      <!-- -------------------------------- fin principal -------------------------------- -->
+      <!--  fin principal  -->
     </div>
     <!--  Principal Fin  -->
-
-    <!-- -------------------------------- pie de pagina -------------------------------- -->
-    <footer class="row border-top border-1 m-1 mt-auto">
-      <div class="row">
-        <!-- contacto -->
-        <address class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Contacto</div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-envelope-at fs-3"></i>
-            <span class="ms-3">
-              <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com"
-                >ehfeduardo@gmail.com</a
-              >
-            </span>
-          </div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-geo-alt fs-3"></i>
-            <span class="ms-3">Bogotá D. C. - Colombia</span>
-          </div>
-        </address>
-        <!-- Derechos de autor -->
-        <div
-          class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100"
-        >
-          <div>
-            <i class="bi bi-c-circle fs-5"></i>
-          </div>
-          <div class="ms-2">All Rights Reserved 2025</div>
-        </div>
-        <!-- redes sociales -->
-        <div class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Redes Sociales</div>
-          <div class="d-flex justify-content-evenly align-items-center gap-5">
-            <div>
-              <a
-                href="https://www.linkedin.com/in/eduardoherreraf/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-linkedin fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://github.com/eduardoherreraf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-github fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.facebook.com/eduardoherreraforero/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-facebook fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://twitter.com/ehfeduardo/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-twitter-x fs-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex align-items-center justify-content-center gap-2"></div>
-    </footer>
-    <!-- -------------------------------- pie de pagina fin -------------------------------- -->
 
     <!-- button to top -->
     <button onclick="topFunction()" id="myBtnScroll" title="Go to top">

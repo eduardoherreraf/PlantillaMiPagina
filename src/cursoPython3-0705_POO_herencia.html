@@ -94,7 +94,7 @@
 
   <body>
     <!-- Barra deNavegación -->
-<nav
+    <nav
       class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
     >
       <div class="container-fluid">
@@ -147,7 +147,9 @@
               <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog"
+              <a
+                class="nav-link mx-1 publicaciones-activo"
+                href="index.html#blog"
                 >PUBLICACIONES</a
               >
             </li>
@@ -160,7 +162,7 @@
     </nav>
     <!-- Barra deNavegación -->
 
-    <!-- -------------------------------- principal -------------------------------- -->
+    <!--  principal  -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
         <section class="pb-3 pt-5 col-lg-9 px-lg-4">
@@ -225,41 +227,46 @@
                   Aquí se tiene un ejemplo básico de cómo funciona la herencia
                   en Python:
                 </p>
-                <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    # Definición de la clase base
-                    class Animal:
-                        def __init__(self, nombre):
-                            self.nombre = nombre
-                        def hacer_sonido(self):
-                            pass
-                    # Definición de la clase derivada
-                    class Perro(Animal):
-                        def hacer_sonido(self):
-                            return "Guau"
-                    class Gato(Animal):
-                        def hacer_sonido(self):
-                            return "Miau"
-                    # Creación de instancias de las clases derivadas
-                    perro = Perro("Fido")
-                    gato = Gato("Whiskers")
-                    # Uso de métodos heredados y sobrescritos
-                    print(perro.nombre)  # Salida: Fido
-                    print(perro.hacer_sonido())  # Salida: Guau
-                    print(gato.nombre)  # Salida: Whiskers
-                    print(gato.hacer_sonido())  # Salida: Miau
-                  </code>
-                </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      # Definición de la clase base
+                      class Animal:
+                          def __init__(self, nombre):
+                              self.nombre = nombre
+                          def hacer_sonido(self):
+                              pass
+                      # Definición de la clase derivada
+                      class Perro(Animal):
+                          def hacer_sonido(self):
+                              return "Guau"
+                      class Gato(Animal):
+                          def hacer_sonido(self):
+                              return "Miau"
+                      # Creación de instancias de las clases derivadas
+                      perro = Perro("Fido")
+                      gato = Gato("Whiskers")
+                      # Uso de métodos heredados y sobrescritos
+                      print(perro.nombre)  # Salida: Fido
+                      print(perro.hacer_sonido())  # Salida: Guau
+                      print(gato.nombre)  # Salida: Whiskers
+                      print(gato.hacer_sonido())  # Salida: Miau
+                    </code>
+                  </pre>
+                </div>
                 <p>En este ejemplo:</p>
                 <ul>
                   <li>
-                    <code class="language-python">Animal</code> es la clase base que tiene un método
-                    <code class="language-python">hacer_sonido</code> que no hace nada
-                    (<code class="language-python">pass</code>).
+                    <code class="language-python">Animal</code> es la clase base
+                    que tiene un método
+                    <code class="language-python">hacer_sonido</code> que no
+                    hace nada (<code class="language-python">pass</code>).
                   </li>
                   <li>
-                    <code class="language-python">Perro</code> y <code class="language-python">Gato</code> son clases derivadas
-                    que heredan de <code class="language-python">Animal</code>.
+                    <code class="language-python">Perro</code> y
+                    <code class="language-python">Gato</code> son clases
+                    derivadas que heredan de
+                    <code class="language-python">Animal</code>.
                   </li>
                   <li>
                     Ambas clases derivadas sobrescriben el método
@@ -268,12 +275,14 @@
                   </li>
                 </ul>
                 <p>
-                  La herencia permite que <code class="language-python">Perro</code> y
-                  <code class="language-python">Gato</code> hereden el método <code class="language-python">__init__</code> de
-                  <code class="language-python">Animal</code>, lo que significa que pueden inicializar
-                  el atributo nombre de la misma manera que la clase base.
-                  Además, pueden sobrescribir métodos de la clase base para
-                  proporcionar comportamientos específicos.
+                  La herencia permite que
+                  <code class="language-python">Perro</code> y
+                  <code class="language-python">Gato</code> hereden el método
+                  <code class="language-python">__init__</code> de
+                  <code class="language-python">Animal</code>, lo que significa
+                  que pueden inicializar el atributo nombre de la misma manera
+                  que la clase base. Además, pueden sobrescribir métodos de la
+                  clase base para proporcionar comportamientos específicos.
                 </p>
               </div>
               <!-- ¿Qué es la Herencia? -->
@@ -289,43 +298,50 @@
                   complejidad, especialmente en términos de resolución de
                   métodos y atributos cuando hay conflictos.
                 </p>
-                <pre data-src-status="loaded" tabindex="0">
-                <code class="language-python" data-prismjs-copy="Copy">
-                  # Definición de la primera clase base
-                  class Animal:
-                      def __init__(self, nombre):
-                          self.nombre = nombre
-                      def hacer_sonido(self):
-                          pass
-                  # Definición de la segunda clase base
-                  class Volador:
-                      def volar(self):
-                          return "Estoy volando"
-                  # Definición de la clase derivada que hereda de ambas clases base
-                  class Pajaro(Animal, Volador):
-                      def hacer_sonido(self):
-                          return "Pío"
-                  # Creación de una instancia de la clase derivada
-                  pajaro = Pajaro("Piolín")
-                  # Uso de métodos heredados de ambas clases base
-                  print(pajaro.nombre)  # Salida: Piolín
-                  print(pajaro.hacer_sonido())  # Salida: Pío
-                  print(pajaro.volar())  # Salida: Estoy volando
-                </code>
-              </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      # Definición de la primera clase base
+                      class Animal:
+                          def __init__(self, nombre):
+                              self.nombre = nombre
+                          def hacer_sonido(self):
+                              pass
+                      # Definición de la segunda clase base
+                      class Volador:
+                          def volar(self):
+                              return "Estoy volando"
+                      # Definición de la clase derivada que hereda de ambas clases base
+                      class Pajaro(Animal, Volador):
+                          def hacer_sonido(self):
+                              return "Pío"
+                      # Creación de una instancia de la clase derivada
+                      pajaro = Pajaro("Piolín")
+                      # Uso de métodos heredados de ambas clases base
+                      print(pajaro.nombre)  # Salida: Piolín
+                      print(pajaro.hacer_sonido())  # Salida: Pío
+                      print(pajaro.volar())  # Salida: Estoy volando
+                    </code>
+                  </pre>
+                </div>
                 <p>En este ejemplo:</p>
                 <ul>
                   <li>
-                    <code class="language-python">Animal</code> es una clase base que tiene un método
-                    <code class="language-python">hacer_sonido</code> y un atributo <code class="language-python">nombre</code>.
+                    <code class="language-python">Animal</code> es una clase
+                    base que tiene un método
+                    <code class="language-python">hacer_sonido</code> y un
+                    atributo <code class="language-python">nombre</code>.
                   </li>
                   <li>
-                    <code class="language-python">Volador</code> es otra clase base que tiene un método
+                    <code class="language-python">Volador</code> es otra clase
+                    base que tiene un método
                     <code class="language-python">volar</code>.
                   </li>
                   <li>
-                    <code class="language-python">Pajaro</code> es una clase derivada que hereda de
-                    ambas clases <code class="language-python">base</code>, <code class="language-python">Animal</code> y
+                    <code class="language-python">Pajaro</code> es una clase
+                    derivada que hereda de ambas clases
+                    <code class="language-python">base</code>,
+                    <code class="language-python">Animal</code> y
                     <code class="language-python">Volador</code>.
                   </li>
                 </ul>
@@ -346,7 +362,8 @@
                     <li>
                       En sistemas con herencia múltiple, la resolución de
                       métodos y la sobrescritura pueden volverse notablemente
-                      complicadas. El uso de <code class="language-python">super()</code> se torna
+                      complicadas. El uso de
+                      <code class="language-python">super()</code> se torna
                       ambiguo, especialmente en jerarquías de herencia más
                       profundas.
                     </li>
@@ -403,76 +420,90 @@
                       herencia y evita conflictos.
                     </p>
                     <p>Ejemplo:</p>
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      # Clase base A, define un método general llamado "method"
-                      class A:
-                          def method(self):
-                              print("Method in A")
-                      # Clase B hereda de A y sobrescribe el método "method"
-                      class B(A):
-                          def method(self):
-                              print("Method in B")
-                      # Clase C también hereda de A y sobrescribe el método "method"
-                      class C(A):
-                          def method(self):
-                              print("Method in C")
-                      # Clase D hereda de B y C, utilizando herencia múltiple
-                      class D(B, C):
-                          pass  # No sobrescribe "method", por lo que usa el MRO para resolver qué método ejecutar
-                      # Creación de un objeto de la clase D
-                      d = D()
-                      # Llamada al método "method" del objeto d
-                      d.method()
-                      # Salida: "Method in B"
-                      # Luego imprime: None (porque el método method() no retorna ningún valor, por lo que print() imprime el valor predeterminado de retorno, que es None)
-                      # Imprime el MRO (Orden de Resolución de Métodos) de la clase D
-                      print(D.__mro__)
-                      # Salida: (&lt;class '__main__.D'>, &lt;class '__main__.B'>, &lt;class '__main__.C'>, &lt;class '__main__.A'>, &lt;class 'object'>)
-                      # Esto muestra el orden en el que Python buscará métodos cuando se llamen desde una instancia de D.
-                      # Otra forma de obtener el MRO usando el método mro()
-                      print(D.mro())
-                      # Salida: Igual que el anterior, porque ambos muestran el orden de resolución de métodos.
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          # Clase base A, define un método general llamado "method"
+                          class A:
+                              def method(self):
+                                  print("Method in A")
+                          # Clase B hereda de A y sobrescribe el método "method"
+                          class B(A):
+                              def method(self):
+                                  print("Method in B")
+                          # Clase C también hereda de A y sobrescribe el método "method"
+                          class C(A):
+                              def method(self):
+                                  print("Method in C")
+                          # Clase D hereda de B y C, utilizando herencia múltiple
+                          class D(B, C):
+                              pass  # No sobrescribe "method", por lo que usa el MRO para resolver qué método ejecutar
+                          # Creación de un objeto de la clase D
+                          d = D()
+                          # Llamada al método "method" del objeto d
+                          d.method()
+                          # Salida: "Method in B"
+                          # Luego imprime: None (porque el método method() no retorna ningún valor, por lo que print() imprime el valor predeterminado de retorno, que es None)
+                          # Imprime el MRO (Orden de Resolución de Métodos) de la clase D
+                          print(D.__mro__)
+                          # Salida: (&lt;class '__main__.D'>, &lt;class '__main__.B'>, &lt;class '__main__.C'>, &lt;class '__main__.A'>, &lt;class 'object'>)
+                          # Esto muestra el orden en el que Python buscará métodos cuando se llamen desde una instancia de D.
+                          # Otra forma de obtener el MRO usando el método mro()
+                          print(D.mro())
+                          # Salida: Igual que el anterior, porque ambos muestran el orden de resolución de métodos.
+                        </code>
+                      </pre>
+                    </div>
                     <p>
-                      Cuando se llama a <code class="language-python">d.method()</code>, Python buscará
-                      el método <code class="language-python">method</code> en el siguiente orden:
+                      Cuando se llama a
+                      <code class="language-python">d.method()</code>, Python
+                      buscará el método
+                      <code class="language-python">method</code> en el
+                      siguiente orden:
                     </p>
                     <ul>
                       <li>
-                        Clase <code class="language-python">D</code>: Hereda de ambas clases
-                        <code class="language-python">B</code> y <code class="language-python">C</code>. No sobrescribe el
-                        método method.
+                        Clase <code class="language-python">D</code>: Hereda de
+                        ambas clases <code class="language-python">B</code> y
+                        <code class="language-python">C</code>. No sobrescribe
+                        el método method.
                       </li>
                       <li>
-                        Clase <code class="language-python">B</code>: Hereda de <code class="language-python">A</code> y
-                        sobrescribe el método method, que imprime
+                        Clase <code class="language-python">B</code>: Hereda de
+                        <code class="language-python">A</code> y sobrescribe el
+                        método method, que imprime
                         <code class="language-python">"Method in B"</code>.
                       </li>
                       <li>
-                        Clase <code class="language-python">C</code>: También hereda de <code class="language-python">A</code> y
-                        sobrescribe el método <code class="language-python">method</code>, que imprime
+                        Clase <code class="language-python">C</code>: También
+                        hereda de <code class="language-python">A</code> y
+                        sobrescribe el método
+                        <code class="language-python">method</code>, que imprime
                         <code class="language-python">"Method in C"</code>.
                       </li>
                       <li>
-                        Clase <code class="language-python">A</code>: Define el método
-                        <code class="language-python">method</code>, que imprime
+                        Clase <code class="language-python">A</code>: Define el
+                        método <code class="language-python">method</code>, que
+                        imprime
                         <code class="language-python">"Method in A"</code>.
                       </li>
                       <li>
                         Finalmente, si no lo encuentra en ninguna de las clases
-                        anteriores, buscará en <code class="language-python">object</code>.
+                        anteriores, buscará en
+                        <code class="language-python">object</code>.
                       </li>
                     </ul>
                     <p>
-                      Como la clase <code class="language-python">D</code> no proporciona su propia
-                      implementación del método, Python continúa su búsqueda.
-                      Encuentra la implementación en la clase <code class="language-python">B</code>. En
-                      consecuencia, cuando se invoca <code class="language-python">method()</code>, se
-                      ejecutará la versión de la clase <code class="language-python">B</code>,
-                      imprimiendo <code class="language-python">"Method in B"</code> y ahí termina la
-                      búsqueda.
+                      Como la clase <code class="language-python">D</code> no
+                      proporciona su propia implementación del método, Python
+                      continúa su búsqueda. Encuentra la implementación en la
+                      clase <code class="language-python">B</code>. En
+                      consecuencia, cuando se invoca
+                      <code class="language-python">method()</code>, se
+                      ejecutará la versión de la clase
+                      <code class="language-python">B</code>, imprimiendo
+                      <code class="language-python">"Method in B"</code> y ahí
+                      termina la búsqueda.
                     </p>
                   </div>
                   <!-- MRO en Python fin -->
@@ -487,104 +518,122 @@
                 <div>
                   <h3>issubclass()</h3>
                   <p>
-                    La función <code class="language-python">issubclass()</code> en Python es una
-                    función integrada que se utiliza para determinar si una
-                    clase es una subclase de otra. Esto es útil al trabajar con
-                    jerarquías de clases y herencia.
+                    La función
+                    <code class="language-python">issubclass()</code> en Python
+                    es una función integrada que se utiliza para determinar si
+                    una clase es una subclase de otra. Esto es útil al trabajar
+                    con jerarquías de clases y herencia.
                   </p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    issubclass(subclass, class)
-                    # Salida: True si la subclase es derivada de la clase.
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        issubclass(subclass, class)
+                        # Salida: True si la subclase es derivada de la clase.
+                      </code>
+                    </pre>
+                  </div>
                   <p>Ejemplo: Verificar una subclase directa:</p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    class A
-                        pass
-                    class B(A):
-                        pass
-                    print(issubclass(B, A))  # True
-                    print(issubclass(A, B))  # False
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        class A
+                            pass
+                        class B(A):
+                            pass
+                        print(issubclass(B, A))  # True
+                        print(issubclass(A, B))  # False
+                      </code>
+                    </pre>
+                  </div>
                   <p>Uso con múltiples clases en una tupla:</p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    # Definición de clases
-                    class A:
-                        pass
-                    class B(A):
-                        pass
-                    class C(B):
-                        pass
-                    # Verificaciones con issubclass()
-                    print(issubclass(B, A))  # True: B es subclase de A
-                    print(issubclass(A, B))  # False: A no es subclase de B
-                    print(issubclass(C, A))  # True: C hereda indirectamente de A
-                    # Uso de issubclass() con una tupla
-                    print(issubclass(C, (A, B))) # True: C es subclase de A y también de B
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        # Definición de clases
+                        class A:
+                            pass
+                        class B(A):
+                            pass
+                        class C(B):
+                            pass
+                        # Verificaciones con issubclass()
+                        print(issubclass(B, A))  # True: B es subclase de A
+                        print(issubclass(A, B))  # False: A no es subclase de B
+                        print(issubclass(C, A))  # True: C hereda indirectamente de A
+                        # Uso de issubclass() con una tupla
+                        print(issubclass(C, (A, B))) # True: C es subclase de A y también de B
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- issubclass() fin -->
                 <!-- isinstance() -->
                 <div>
                   <h3>isinstance()</h3>
                   <p>
-                    La función <code class="language-python">isinstance()</code> en Python se utiliza
-                    para verificar si un objeto pertenece a una clase o a una
-                    subclase específica. Es particularmente útil para validar
-                    tipos de datos en un programa y mejorar la legibilidad y la
-                    seguridad del código.
+                    La función
+                    <code class="language-python">isinstance()</code> en Python
+                    se utiliza para verificar si un objeto pertenece a una clase
+                    o a una subclase específica. Es particularmente útil para
+                    validar tipos de datos en un programa y mejorar la
+                    legibilidad y la seguridad del código.
                   </p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    isinstance(objectName, ClassName_or_tuple)
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        isinstance(objectName, ClassName_or_tuple)
+                      </code>
+                    </pre>
+                  </div>
                   <p>Ejemplo: Verificar múltiples clases con una tupla:</p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    class MiClase:
-                      pass
-                    # Crear una instancia de la clase
-                    obj = MiClase()
-                    # Verificar si el objeto es una instancia de MiClase
-                    print(f"¿Es 'obj' una instancia de MiClase? {isinstance(obj, MiClase)}")  # True
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        class MiClase:
+                          pass
+                        # Crear una instancia de la clase
+                        obj = MiClase()
+                        # Verificar si el objeto es una instancia de MiClase
+                        print(f"¿Es 'obj' una instancia de MiClase? {isinstance(obj, MiClase)}")  # True
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- isinstance() fin -->
                 <!-- El Operador is -->
                 <div>
                   <h3>El Operador is</h3>
                   <p>
-                    En programación, el operador <code class="language-python">is</code> es un operador
-                    en Python que se utiliza para comprobar si dos variables o
+                    En programación, el operador
+                    <code class="language-python">is</code> es un operador en
+                    Python que se utiliza para comprobar si dos variables o
                     objetos son el mismo objeto en memoria, es decir, si tienen
                     la misma ubicación de memoria.
                   </p>
                   <p>Ejemplo:</p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    a = [1, 2, 3]
-                    b = a
-                    c = [1, 2, 3]
-                    print(a is b)  # True, porque a y b apuntan al mismo objeto en memoria
-                    print(a is c)  # False, porque a y c son dos objetos diferentes con el mismo contenido
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        a = [1, 2, 3]
+                        b = a
+                        c = [1, 2, 3]
+                        print(a is b)  # True, porque a y b apuntan al mismo objeto en memoria
+                        print(a is c)  # False, porque a y c son dos objetos diferentes con el mismo contenido
+                      </code>
+                    </pre>
+                  </div>
                   <!-- Diferencia Clave -->
                   <div>
                     <h4>Diferencia Clave</h4>
                     <ul>
-                      <li><code class="language-python">==</code> compara el valor de los objetos.</li>
                       <li>
-                        <code class="language-python">is</code> compara si las referencias de los
-                        objetos son las mismas (es decir, si ambos apuntan al
-                        mismo lugar en memoria).
+                        <code class="language-python">==</code> compara el valor
+                        de los objetos.
+                      </li>
+                      <li>
+                        <code class="language-python">is</code> compara si las
+                        referencias de los objetos son las mismas (es decir, si
+                        ambos apuntan al mismo lugar en memoria).
                       </li>
                     </ul>
                   </div>
@@ -606,49 +655,60 @@
                   <div>
                     <h4>¿Cómo Funciona super()?</h4>
                     <p>
-                      <code class="language-python">super()</code> se usa principalmente en el método
-                      <code class="language-python">__init__()</code> para inicializar una clase base,
-                      pero también se puede usar para invocar cualquier otro
-                      método de la clase base. Su uso facilita la reutilización
-                      del código en una jerarquía de clases.
+                      <code class="language-python">super()</code> se usa
+                      principalmente en el método
+                      <code class="language-python">__init__()</code> para
+                      inicializar una clase base, pero también se puede usar
+                      para invocar cualquier otro método de la clase base. Su
+                      uso facilita la reutilización del código en una jerarquía
+                      de clases.
                     </p>
                     <p>Ejemplo:</p>
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      class Animal:
-                          def __init__(self, nombre):
-                              self.nombre = nombre
-                          def hablar(self):
-                              print(f'{self.nombre} hace un sonido')
-                      class Perro(Animal):
-                          def __init__(self, nombre, raza):
-                              super().__init__(nombre)  # Llama al __init__ de la clase base (Animal)
-                              self.raza = raza
-                          def hablar(self):
-                              super().hablar()  # Llama al método hablar de la clase base (Animal)
-                              print(f'{self.nombre} ladra')
-                      mi_perro = Perro("Rex", "Pastor Alemán")
-                      mi_perro.hablar()
-                      # salida: Rex hace un sonido
-                      # salida: Rex ladra
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          class Animal:
+                              def __init__(self, nombre):
+                                  self.nombre = nombre
+                              def hablar(self):
+                                  print(f'{self.nombre} hace un sonido')
+                          class Perro(Animal):
+                              def __init__(self, nombre, raza):
+                                  super().__init__(nombre)  # Llama al __init__ de la clase base (Animal)
+                                  self.raza = raza
+                              def hablar(self):
+                                  super().hablar()  # Llama al método hablar de la clase base (Animal)
+                                  print(f'{self.nombre} ladra')
+                          mi_perro = Perro("Rex", "Pastor Alemán")
+                          mi_perro.hablar()
+                          # salida: Rex hace un sonido
+                          # salida: Rex ladra
+                        </code>
+                      </pre>
+                    </div>
                     <p>Explicación:</p>
                     <ul>
                       <li>
-                        La clase <code class="language-python">Perro</code> hereda de
+                        La clase
+                        <code class="language-python">Perro</code> hereda de
                         <code class="language-python">Animal</code>.
                       </li>
                       <li>
-                        Se utiliza <code class="language-python">super().__init__(nombre)</code> para
-                        llamar al constructor de la clase base
-                        <code class="language-python">Animal</code> y asignar el atributo
-                        <code class="language-python">nombre</code>.
+                        Se utiliza
+                        <code class="language-python"
+                          >super().__init__(nombre)</code
+                        >
+                        para llamar al constructor de la clase base
+                        <code class="language-python">Animal</code> y asignar el
+                        atributo <code class="language-python">nombre</code>.
                       </li>
                       <li>
-                        Se usa <code class="language-python">super().hablar()</code> para llamar al
-                        método <code class="language-python">hablar()</code> de la clase base antes de
-                        agregar funcionalidad adicional en la clase derivada.
+                        Se usa
+                        <code class="language-python">super().hablar()</code>
+                        para llamar al método
+                        <code class="language-python">hablar()</code> de la
+                        clase base antes de agregar funcionalidad adicional en
+                        la clase derivada.
                       </li>
                     </ul>
                   </div>
@@ -660,8 +720,9 @@
                       <li>
                         <span class="fw-bold">Herencia múltiple</span>: En
                         Python, una clase puede heredar de más de una clase
-                        base. <code class="language-python">super()</code> ayuda a manejar la llamada a
-                        los métodos de las clases base en el orden correcto.
+                        base. <code class="language-python">super()</code> ayuda
+                        a manejar la llamada a los métodos de las clases base en
+                        el orden correcto.
                       </li>
                       <li>
                         <span class="fw-bold">Métodos de clase</span>: Cuando se
@@ -698,85 +759,98 @@
                   A continuación, se muestra un ejemplo de una jerarquía de
                   clases para un sistema de gestión de empleados:
                 </p>
-                <pre data-src-status="loaded" tabindex="0">
-                <code class="language-python" data-prismjs-copy="Copy">
-                  # Clase base
-                  class Empleado:
-                      def __init__(self, nombre, edad, salario):
-                          self.nombre = nombre
-                          self.edad = edad
-                          self.salario = salario
-                      def mostrar_informacion(self):
-                          return f"Nombre: {self.nombre}, Edad: {self.edad}, Salario: {self.salario}"
-                  # Clase derivada 1
-                  class Gerente(Empleado):
-                      def __init__(self, nombre, edad, salario, departamento):
-                          super().__init__(nombre, edad, salario)
-                          self.departamento = departamento
-                      def mostrar_informacion(self):
-                          return f"{super().mostrar_informacion()}, Departamento: {self.departamento}"
-                  # Clase derivada 2
-                  class Desarrollador(Empleado):
-                      def __init__(self, nombre, edad, salario, lenguaje_programacion):
-                          super().__init__(nombre, edad, salario)
-                          self.lenguaje_programacion = lenguaje_programacion
-                      def mostrar_informacion(self):
-                          return f"{super().mostrar_informacion()}, Lenguaje de Programación: {self.lenguaje_programacion}"
-                  # Crear instancias de las clases
-                  empleado = Empleado("Juan Pérez", 30, 50000)
-                  gerente = Gerente("María López", 40, 80000, "Ventas")
-                  desarrollador = Desarrollador("Carlos Gómez", 25, 60000, "Python")
-                  # Mostrar información de las instancias
-                  print(empleado.mostrar_informacion())
-                  print(gerente.mostrar_informacion())
-                  print(desarrollador.mostrar_informacion())
-                  # salida: Nombre: Juan Pérez, Edad: 30, Salario: 50000
-                  # salida: Nombre: María López, Edad: 40, Salario: 80000, Departamento: Ventas
-                  # salida: Nombre: Carlos Gómez, Edad: 25, Salario: 60000, Lenguaje de Programación: Python
-                </code>
-              </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      # Clase base
+                      class Empleado:
+                          def __init__(self, nombre, edad, salario):
+                              self.nombre = nombre
+                              self.edad = edad
+                              self.salario = salario
+                          def mostrar_informacion(self):
+                              return f"Nombre: {self.nombre}, Edad: {self.edad}, Salario: {self.salario}"
+                      # Clase derivada 1
+                      class Gerente(Empleado):
+                          def __init__(self, nombre, edad, salario, departamento):
+                              super().__init__(nombre, edad, salario)
+                              self.departamento = departamento
+                          def mostrar_informacion(self):
+                              return f"{super().mostrar_informacion()}, Departamento: {self.departamento}"
+                      # Clase derivada 2
+                      class Desarrollador(Empleado):
+                          def __init__(self, nombre, edad, salario, lenguaje_programacion):
+                              super().__init__(nombre, edad, salario)
+                              self.lenguaje_programacion = lenguaje_programacion
+                          def mostrar_informacion(self):
+                              return f"{super().mostrar_informacion()}, Lenguaje de Programación: {self.lenguaje_programacion}"
+                      # Crear instancias de las clases
+                      empleado = Empleado("Juan Pérez", 30, 50000)
+                      gerente = Gerente("María López", 40, 80000, "Ventas")
+                      desarrollador = Desarrollador("Carlos Gómez", 25, 60000, "Python")
+                      # Mostrar información de las instancias
+                      print(empleado.mostrar_informacion())
+                      print(gerente.mostrar_informacion())
+                      print(desarrollador.mostrar_informacion())
+                      # salida: Nombre: Juan Pérez, Edad: 30, Salario: 50000
+                      # salida: Nombre: María López, Edad: 40, Salario: 80000, Departamento: Ventas
+                      # salida: Nombre: Carlos Gómez, Edad: 25, Salario: 60000, Lenguaje de Programación: Python
+                    </code>
+                  </pre>
+                </div>
                 <p>Explicación</p>
                 <ul>
                   <li>
                     <strong>Clase Base (Empleado)</strong>:
                     <ul>
                       <li>
-                        Tiene un constructor (<code class="language-python">__init__</code>) que
-                        inicializa los atributos <code class="language-python">nombre</code>,
-                        <code class="language-python">edad</code> y <code class="language-python">salario</code>.
+                        Tiene un constructor (<code class="language-python"
+                          >__init__</code
+                        >) que inicializa los atributos
+                        <code class="language-python">nombre</code>,
+                        <code class="language-python">edad</code> y
+                        <code class="language-python">salario</code>.
                       </li>
                       <li>
-                        Tiene un método <code class="language-python">mostrar_informacion</code> que
-                        devuelve una cadena con la información del empleado.
+                        Tiene un método
+                        <code class="language-python">mostrar_informacion</code>
+                        que devuelve una cadena con la información del empleado.
                       </li>
                     </ul>
                   </li>
                   <li>
                     <strong>Clase Derivada 1 (Gerente)</strong>:
                     <ul>
-                      <li>Hereda de <code class="language-python">Empleado</code>.</li>
                       <li>
-                        Añade un atributo adicional <code class="language-python">departamento</code>.
+                        Hereda de <code class="language-python">Empleado</code>.
+                      </li>
+                      <li>
+                        Añade un atributo adicional
+                        <code class="language-python">departamento</code>.
                       </li>
                       <li>
                         Sobrescribe el método
-                        <code class="language-python">mostrar_informacion</code> para incluir el
-                        departamento.
+                        <code class="language-python">mostrar_informacion</code>
+                        para incluir el departamento.
                       </li>
                     </ul>
                   </li>
                   <li>
                     <strong>Clase Derivada 2 (Desarrollador)</strong>:
                     <ul>
-                      <li>Hereda de <code class="language-python">Empleado</code>.</li>
+                      <li>
+                        Hereda de <code class="language-python">Empleado</code>.
+                      </li>
                       <li>
                         Añade un atributo adicional
-                        <code class="language-python">lenguaje_programacion</code>.
+                        <code class="language-python"
+                          >lenguaje_programacion</code
+                        >.
                       </li>
                       <li>
                         Sobrescribe el método
-                        <code class="language-python">mostrar_informacion</code> para incluir el
-                        lenguaje de programación.
+                        <code class="language-python">mostrar_informacion</code>
+                        para incluir el lenguaje de programación.
                       </li>
                     </ul>
                   </li>
@@ -784,12 +858,16 @@
                     <strong>Creación de Instancias</strong>:
                     <ul>
                       <li>
-                        Se crean instancias de <code class="language-python">Empleado</code>,
-                        <code class="language-python">Gerente</code> y <code class="language-python">Desarrollador</code>.
+                        Se crean instancias de
+                        <code class="language-python">Empleado</code>,
+                        <code class="language-python">Gerente</code> y
+                        <code class="language-python">Desarrollador</code>.
                       </li>
                       <li>
                         Se muestra la información de cada instancia utilizando
-                        el método <code class="language-python">mostrar_informacion</code>.
+                        el método
+                        <code class="language-python">mostrar_informacion</code
+                        >.
                       </li>
                     </ul>
                   </li>
@@ -853,8 +931,10 @@
                     <span class="fw-bold">Organización jerárquica</span>:
                     Permite organizar las clases en una jerarquía lógica, lo que
                     mejora la comprensión y legibilidad del código. Por ejemplo,
-                    una clase base <code class="language-python">Vehículo</code> puede tener subclases
-                    como <code class="language-python">Carro</code> y <code class="language-python">Moto</code>.
+                    una clase base
+                    <code class="language-python">Vehículo</code> puede tener
+                    subclases como <code class="language-python">Carro</code> y
+                    <code class="language-python">Moto</code>.
                   </li>
                   <li>
                     <span class="fw-bold">Sobrescritura de métodos</span>: Las
@@ -875,27 +955,29 @@
                   crear subclases con comportamientos específicos (polimorfismo)
                   a partir de una clase base.
                 </p>
-                <pre data-src-status="loaded" tabindex="0">
-                <code class="language-python" data-prismjs-copy="Copy">
-                  class Animal:
-                      def __init__(self, nombre):
-                          self.nombre = nombre
-                      def sonido(self):
-                          return "El animal hace un sonido"
-                  class Perro(Animal):
-                      def sonido(self):
-                          return "El perro ladra"
-                  class Gato(Animal):
-                      def sonido(self):
-                          return "El gato maúlla"
-                  # Uso de las clases
-                  animales = [Perro("Firulais"), Gato("Michi")]
-                  for animal in animales:
-                      print(f"{animal.nombre}: {animal.sonido()}")
-                  # Salida: Firulais: El perro ladra
-                  # Salida: Michi: El gato maúlla
-                </code>
-              </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      class Animal:
+                          def __init__(self, nombre):
+                              self.nombre = nombre
+                          def sonido(self):
+                              return "El animal hace un sonido"
+                      class Perro(Animal):
+                          def sonido(self):
+                              return "El perro ladra"
+                      class Gato(Animal):
+                          def sonido(self):
+                              return "El gato maúlla"
+                      # Uso de las clases
+                      animales = [Perro("Firulais"), Gato("Michi")]
+                      for animal in animales:
+                          print(f"{animal.nombre}: {animal.sonido()}")
+                      # Salida: Firulais: El perro ladra
+                      # Salida: Michi: El gato maúlla
+                    </code>
+                  </pre>
+                </div>
               </div>
               <!-- Ventajas de la Herencia Fin -->
               <!-- Buenas Prácticas -->
@@ -934,19 +1016,21 @@
                     >: Evite clases base excesivamente complejas. Mantenga su
                     funcionalidad lo más genérica posible para que sean
                     reutilizables y fáciles de extender.
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      class Persona:
-                      def __init__(self, nombre, edad):
-                          self.nombre = nombre
-                          self.edad = edad
-                      def saludar(self):
-                          return f"Hola, mi nombre es {self.nombre} y tengo {self.edad} años."
-                      # Uso de la clase base
-                      persona1 = Persona("Ana", 30)
-                      print(persona1.saludar())
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          class Persona:
+                          def __init__(self, nombre, edad):
+                              self.nombre = nombre
+                              self.edad = edad
+                          def saludar(self):
+                              return f"Hola, mi nombre es {self.nombre} y tengo {self.edad} años."
+                          # Uso de la clase base
+                          persona1 = Persona("Ana", 30)
+                          print(persona1.saludar())
+                        </code>
+                      </pre>
+                    </div>
                   </li>
                   <li>
                     <span class="fw-bold"
@@ -960,57 +1044,62 @@
                       </li>
                       <li>
                         Ejemplo de una clase mixin:
-                        <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          # Definimos un mixin para agregar la funcionalidad de volar.
-                          # Un mixin es una clase que proporciona funcionalidad adicional
-                          a otras clases sin ser una clase principal.
-                          class VoladorMixin:
-                              def volar(self):
-                                  # Este método imprime un mensaje indicando que el objeto puede volar.
-                                  print("\u00a1Estoy volando!")
-                          # Creamos una clase base llamada "Animal" para representar características generales de los animales.
-                          class Animal:
-                              def __init__(self, nombre):
-                                  # Cada animal tendrá un nombre.
-                                  self.nombre = nombre
-                              def describir(self):
-                                  # Este método imprime una descripción básica del animal.
-                                  print(f"Soy un animal llamado {self.nombre}.")
-                          # Definimos una clase "Ave" que hereda de "Animal" y del mixin "VoladorMixin".
-                          # Esto permite que "Ave" combine características generales de los animales
-                          # con la capacidad de volar proporcionada por el mixin.
-                          class Ave(Animal, VoladorMixin):
-                              def hacer_sonido(self):
-                                  # Este método imprime un sonido típico de un ave.
-                                  print("P\u00edo")
-                          # Ejemplo de uso
-                          # Creamos un objeto de la clase "Ave".
-                          mi_ave = Ave("Canario")
-                          # Llamamos a los métodos de la clase "Ave".
-                          mi_ave.describir()   # Imprime: Soy un animal llamado Canario.
-                          mi_ave.hacer_sonido()  # Imprime: Pío
-                          mi_ave.volar()         # Imprime: ¡Estoy volando!
-                        </code>
-                      </pre>
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
+                            <code class="language-python" data-prismjs-copy="Copy">
+                              # Definimos un mixin para agregar la funcionalidad de volar.
+                              # Un mixin es una clase que proporciona funcionalidad adicional
+                              a otras clases sin ser una clase principal.
+                              class VoladorMixin:
+                                  def volar(self):
+                                      # Este método imprime un mensaje indicando que el objeto puede volar.
+                                      print("\u00a1Estoy volando!")
+                              # Creamos una clase base llamada "Animal" para representar características generales de los animales.
+                              class Animal:
+                                  def __init__(self, nombre):
+                                      # Cada animal tendrá un nombre.
+                                      self.nombre = nombre
+                                  def describir(self):
+                                      # Este método imprime una descripción básica del animal.
+                                      print(f"Soy un animal llamado {self.nombre}.")
+                              # Definimos una clase "Ave" que hereda de "Animal" y del mixin "VoladorMixin".
+                              # Esto permite que "Ave" combine características generales de los animales
+                              # con la capacidad de volar proporcionada por el mixin.
+                              class Ave(Animal, VoladorMixin):
+                                  def hacer_sonido(self):
+                                      # Este método imprime un sonido típico de un ave.
+                                      print("P\u00edo")
+                              # Ejemplo de uso
+                              # Creamos un objeto de la clase "Ave".
+                              mi_ave = Ave("Canario")
+                              # Llamamos a los métodos de la clase "Ave".
+                              mi_ave.describir()   # Imprime: Soy un animal llamado Canario.
+                              mi_ave.hacer_sonido()  # Imprime: Pío
+                              mi_ave.volar()         # Imprime: ¡Estoy volando!
+                            </code>
+                          </pre>
+                        </div>
                       </li>
                     </ul>
                   </li>
                   <li>
                     <span class="fw-bold"
-                      >Usar <code class="language-python">super()</code> para llamar al constructor de
-                      la clase base</span
+                      >Usar <code class="language-python">super()</code> para
+                      llamar al constructor de la clase base</span
                     >: Siempre que se sobrescriba el método
-                    <code class="language-python">__init__</code>, utilice <code class="language-python">super()</code> para
-                    garantizar que la clase base sea inicializada correctamente.
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      class Mamifero(Animal):
-                          def __init__(self, nombre, tiene_pelo=True):
-                              super().__init__(nombre)
-                              self.tiene_pelo = tiene_pelo
-                    </code>
-                  </pre>
+                    <code class="language-python">__init__</code>, utilice
+                    <code class="language-python">super()</code> para garantizar
+                    que la clase base sea inicializada correctamente.
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          class Mamifero(Animal):
+                              def __init__(self, nombre, tiene_pelo=True):
+                                  super().__init__(nombre)
+                                  self.tiene_pelo = tiene_pelo
+                        </code>
+                      </pre>
+                    </div>
                   </li>
                   <li>
                     <span class="fw-bold"
@@ -1022,30 +1111,33 @@
                       <li>
                         Para sobrescribir métodos de manera explícita y hacer el
                         código más entendible, se puede utilizar el decorador
-                        <code class="language-python">@override</code>, disponible desde Python 3.12.
-                        Esto deja claro que el método sobrescribe uno de la
-                        clase base. Además, es útil agregar comentarios y dar
-                        nombres más descriptivos si es necesario
+                        <code class="language-python">@override</code>,
+                        disponible desde Python 3.12. Esto deja claro que el
+                        método sobrescribe uno de la clase base. Además, es útil
+                        agregar comentarios y dar nombres más descriptivos si es
+                        necesario
                       </li>
                       <li>
                         Aquí está el código ejemplo:
-                        <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-python" data-prismjs-copy="Copy">
-                            from typing import override  # Disponible desde Python 3.12
-                            class Mamifero:
-                                def hacer_sonido(self):
-                                    print("Sonido genérico de mamífero")
-                            class Gato(Mamifero):
-                                @override
-                                def hacer_sonido(self):
-                                    # Sobrescribiendo el método 'hacer_sonido' de la clase base
-                                    print("Miau")
-                            # Ejemplo de uso
-                            if __name__ == "__main__":
-                                gato = Gato()
-                                gato.hacer_sonido()  # Salida: Miau
-                          </code>
-                        </pre>
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
+                            <code class="language-python" data-prismjs-copy="Copy">
+                              from typing import override  # Disponible desde Python 3.12
+                              class Mamifero:
+                                  def hacer_sonido(self):
+                                      print("Sonido genérico de mamífero")
+                              class Gato(Mamifero):
+                                  @override
+                                  def hacer_sonido(self):
+                                      # Sobrescribiendo el método 'hacer_sonido' de la clase base
+                                      print("Miau")
+                              # Ejemplo de uso
+                              if __name__ == "__main__":
+                                  gato = Gato()
+                                  gato.hacer_sonido()  # Salida: Miau
+                            </code>
+                          </pre>
+                        </div>
                       </li>
                     </ul>
                   </li>
@@ -1091,7 +1183,7 @@
             </div>
           </article>
           <!--  POO: Herencia en Python  -->
-          <!-- -------------------------------- comentarios -------------------------------- -->
+          <!--  comentarios  -->
           <article class="row pt-5" id="comments">
             <h2>COMENTARIOS</h2>
             <p>
@@ -1160,9 +1252,9 @@
               </form>
             </div>
           </article>
-          <!-- -------------------------------- fin comentarios -------------------------------- -->
+          <!--  fin comentarios  -->
         </section>
-        <!-- -------------------------------- barra lateral -------------------------------- -->
+        <!--  barra lateral  -->
         <aside class="col-lg-3 d-none d-lg-block pt-5">
           <h1>En Este Artículo</h1>
           <ul class="list-group">
@@ -1176,7 +1268,9 @@
               <a href="#herenciaMultiple">Herencia Múltiple</a>
             </li>
             <li class="list-group-item">
-              <a href="#metodosEspecialesySuper">Métodos especiales y super()</a>
+              <a href="#metodosEspecialesySuper"
+                >Métodos especiales y super()</a
+              >
             </li>
             <li class="list-group-item">
               <a href="#comoConstruirUnaJerarquiaDeClases"
@@ -1194,86 +1288,11 @@
             </li>
           </ul>
         </aside>
-        <!-- -------------------------------- fin barra lateral -------------------------------- -->
+        <!--  fin barra lateral  -->
       </main>
-      <!-- -------------------------------- fin principal -------------------------------- -->
+      <!--  fin principal  -->
     </div>
     <!--  Principal Fin  -->
-
-    <!-- -------------------------------- pie de pagina -------------------------------- -->
-    <footer class="row border-top border-1 m-1 mt-auto">
-      <div class="row">
-        <!-- contacto -->
-        <address class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Contacto</div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-envelope-at fs-3"></i>
-            <span class="ms-3">
-              <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com"
-                >ehfeduardo@gmail.com</a
-              >
-            </span>
-          </div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-geo-alt fs-3"></i>
-            <span class="ms-3">Bogotá D. C. - Colombia</span>
-          </div>
-        </address>
-        <!-- Derechos de autor -->
-        <div
-          class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100"
-        >
-          <div>
-            <i class="bi bi-c-circle fs-5"></i>
-          </div>
-          <div class="ms-2">All Rights Reserved 2025</div>
-        </div>
-        <!-- redes sociales -->
-        <div class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Redes Sociales</div>
-          <div class="d-flex justify-content-evenly align-items-center gap-5">
-            <div>
-              <a
-                href="https://www.linkedin.com/in/eduardoherreraf/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-linkedin fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://github.com/eduardoherreraf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-github fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.facebook.com/eduardoherreraforero/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-facebook fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://twitter.com/ehfeduardo/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-twitter-x fs-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex align-items-center justify-content-center gap-2"></div>
-    </footer>
-    <!-- -------------------------------- pie de pagina fin -------------------------------- -->
 
     <!-- button to top -->
     <button onclick="topFunction()" id="myBtnScroll" title="Go to top">

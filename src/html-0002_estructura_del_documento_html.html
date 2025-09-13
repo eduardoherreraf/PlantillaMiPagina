@@ -183,11 +183,11 @@
     </nav>
     <!-- Barra deNavegación -->
 
-    <!--  Principal  -->
+    <!--  principal  -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
         <section class="pb-3 pt-5 col-lg-9 px-lg-4">
-          <!--  Estructura del Documento HTML -->
+          <!-- Introducción HTML -->
           <article
             class="row border-1 border-bottom pb-3"
             data-bs-spy="scroll"
@@ -200,7 +200,7 @@
               </header>
 
               <!-- Introducción -->
-              <div class="pt-4">
+              <div class="mt-3">
                 <h2>Introducción</h2>
                 <p>
                   Un documento HTML debe estar correctamente estructurado para
@@ -222,7 +222,6 @@
                     <img
                       src="https://i.ibb.co/5WGDvxYb/Estructura-del-Documento-HTML.png"
                       class="img-fluid"
-                      
                       alt="Estructura del Documento HTML"
                       title="Analogía entre Estructura del Documento HTML y una casa"
                     />
@@ -235,8 +234,8 @@
               <hr class="subtle-divider" />
 
               <!-- Estructura de la Página -->
-              <div id="estructura-de-la-pagina" class="pt-4">
-                <h2 class="pt-1">Estructura de la Página</h2>
+              <div id="estructura-de-la-pagina" class="mt-3">
+                <h2>Estructura de la Página</h2>
                 <p>
                   Como se observa en la gráfica anterior, la primera etiqueta
                   (<code class="language-html">&lt;!DOCTYPE html></code>) indica
@@ -278,8 +277,8 @@
               <hr class="subtle-divider" />
 
               <!-- Tipo de Documento -->
-              <div id="tipo-de-documento" class="pt-4">
-                <h2 class="pt-1">Tipo de Documento</h2>
+              <div id="tipo-de-documento" class="mt-3">
+                <h2>Tipo de Documento</h2>
                 <p>
                   El <code class="language-html">!DOCTYPE</code> o tipo de
                   documento es una declaración especial que se escribe en la
@@ -326,8 +325,8 @@
               <hr class="subtle-divider" />
 
               <!-- Encabezado -->
-              <div id="encabezado" class="pt-4">
-                <h2 class="pt-1">Encabezado</h2>
+              <div id="encabezado" class="mt-3">
+                <h2>Encabezado</h2>
                 <p>
                   La etiqueta
                   <code class="language-html">&lt;head></code> constituye una de
@@ -383,8 +382,8 @@
               <hr class="subtle-divider" />
 
               <!-- Cuerpo de Página -->
-              <div id="cuerpo-de-pagina" class="pt-4">
-                <h2 class="pt-1">Cuerpo de Página</h2>
+              <div id="cuerpo-de-pagina" class="mt-3">
+                <h2>Cuerpo de Página</h2>
                 <p>
                   La etiqueta <code class="language-html">&lt;body></code> en
                   HTML define la sección del documento donde se incorpora todo
@@ -399,7 +398,7 @@
                 </p>
                 <!-- Características y Función de <body> -->
                 <div>
-                  <h3 class="pt-5" id="caracteristicas-y-funcion-de-body">
+                  <h3 id="caracteristicas-y-funcion-de-body">
                     Características y Función de
                     <code class="language-html">&lt;body></code>
                   </h3>
@@ -430,7 +429,7 @@
 
                 <!-- Atributos Comunes de <body> -->
                 <div>
-                  <h3 class="pt-5" id="atributos-comunes-de-body">
+                  <h3 id="atributos-comunes-de-body">
                     Atributos Comunes de
                     <code class="language-html">&lt;body></code>
                   </h3>
@@ -578,9 +577,8 @@
           </article>
           <!--  Estructura del Documento HTML fin-->
 
-          <!--  Comentarios -->
-          <article class="row pt-5" id="comment">
-            <br />
+          <!--  comentarios  -->
+          <article class="row pt-5" id="comments">
             <h2>COMENTARIOS</h2>
             <p>
               Si tiene alguna inquietud, duda o ha encontrado algún error, por
@@ -593,50 +591,62 @@
                 method="POST"
                 id="myForm"
               >
-                <div
-                  class="input-group d-flex justify-content-center flex-column"
-                >
-                  <label for="name" class="pe-2">Nombre:</label>
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="User"
-                    class="rounded"
-                    required="required"
-                  />
-                  <label for="email" class="pe-2">Email:</label>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="user@mail.com"
-                    class="rounded"
-                    required="required"
-                  />
-                  <label for="message" class="pe-2">Mensaje:</label>
-                  <textarea
-                    name="message"
-                    id="message"
-                    cols="30"
-                    rows="5"
-                    placeholder="Su comentario..."
-                    class="rounded rounded-3"
-                  ></textarea>
-                  <input
-                    class="btn btn-outline-light my-3 border rounded-pill border-2"
+                <fieldset class="d-flex flex-column gap-3">
+                  <legend class="text-center fs-4">Deje su comentario</legend>
+
+                  <div class="d-flex flex-column">
+                    <label for="name">Nombre:</label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="User"
+                      class="form-control rounded"
+                      required
+                    />
+                  </div>
+
+                  <div class="d-flex flex-column">
+                    <label for="email">Email:</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="user@mail.com"
+                      class="form-control rounded"
+                      required
+                    />
+                  </div>
+
+                  <div class="d-flex flex-column">
+                    <label for="message">Mensaje:</label>
+                    <textarea
+                      name="message"
+                      id="message"
+                      cols="30"
+                      rows="5"
+                      placeholder="Su comentario..."
+                      class="form-control rounded-3"
+                      required
+                    ></textarea>
+                  </div>
+
+                  <button
                     type="submit"
-                    value="Enviar..."
-                  />
-                </div>
-                <p>
+                    class="btn btn-outline-light my-3 border rounded-pill border-2"
+                  >
+                    Enviar
+                  </button>
+                </fieldset>
+
+                <p class="small text-center">
                   La política de privacidad, y los términos y condiciones están
                   disponibles en el formulario de contacto.
                 </p>
               </form>
             </div>
           </article>
-          <!-- -------------------------------- fin comentarios -------------------------------- -->
+          <!--  fin comentarios  -->
         </section>
         <!--  Estructura del Documento HTML -->
         <aside class="col-lg-3 d-none d-lg-block pt-5">
@@ -686,14 +696,14 @@
             </div>
 
             <div class="menu-item">
-              <a href="#comment" class="simple-link">Comentarios</a>
+              <a href="#comments" class="simple-link">Comentarios</a>
             </div>
           </div>
         </aside>
-        <!-- -------------------------------- fin barra lateral -------------------------------- -->
+        <!--  fin barra lateral  -->
       </main>
-      <!-- -------------------------------- fin principal -------------------------------- -->
-      <!-- -------------------------------- barra lateral -------------------------------- -->
+      <!--  fin principal  -->
+      <!--  barra lateral  -->
     </div>
     <!--  Principal Fin  -->
 

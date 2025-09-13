@@ -94,7 +94,7 @@
 
   <body>
     <!-- Barra deNavegación -->
-<nav
+    <nav
       class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
     >
       <div class="container-fluid">
@@ -147,7 +147,9 @@
               <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog"
+              <a
+                class="nav-link mx-1 publicaciones-activo"
+                href="index.html#blog"
                 >PUBLICACIONES</a
               >
             </li>
@@ -160,7 +162,7 @@
     </nav>
     <!-- Barra deNavegación -->
 
-    <!-- -------------------------------- principal -------------------------------- -->
+    <!--  principal  -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
         <section class="pb-3 pt-5 col-lg-9 px-lg-4">
@@ -243,15 +245,16 @@
                   valor a un nombre. No es necesario declarar el tipo de dato de
                   antemano, ya que Python lo infiere automáticamente.
                 </p>
-                <pre
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-python" data-prismjs-copy="Copy">
-# Ejemplo de declaración de variables
-nombre = "Juan"  # Variable de tipo cadena (texto)
-edad = 30        # Variable de tipo entero
-altura = 1.75    # Variable de tipo flotante (número con decimales)
-                  </code></pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      # Ejemplo de declaración de variables
+                      nombre = "Juan"  # Variable de tipo cadena (texto)
+                      edad = 30        # Variable de tipo entero
+                      altura = 1.75    # Variable de tipo flotante (número con decimales)
+                    </code>
+                  </pre>
+                </div>
               </div>
               <!-- Cómo declarar una Variable en Python fin -->
               <!-- Reglas para Nombrar Variables -->
@@ -272,7 +275,8 @@ altura = 1.75    # Variable de tipo flotante (número con decimales)
                     <span class="fw-bold"
                       >Distinguir entre mayúsculas y minúsculas</span
                     >: Python es case-sensitive, por lo que
-                    <code>nombre</code> y <code>Nombre</code> son variables
+                    <code class="language-python">nombre</code> y
+                    <code class="language-python">Nombre</code> son variables
                     diferentes.
                   </li>
                   <li>
@@ -374,16 +378,17 @@ altura = 1.75    # Variable de tipo flotante (número con decimales)
                   <li><span class="fw-bold">Y muchos otros...</span></li>
                 </ul>
                 <p>Ejemplo completo:</p>
-                <pre
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-python" data-prismjs-copy="Copy">
-# Calcular el área de un círculo
-radio = 5  # Radio del círculo (en cm)
-pi = 3.14159  # Valor aproximado de pi
-area = pi * radio**2
-print("El área del círculo es:", area, "cm²")
-                </code></pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      # Calcular el área de un círculo
+                      radio = 5  # Radio del círculo (en cm)
+                      pi = 3.14159  # Valor aproximado de pi
+                      area = pi * radio**2
+                      print("El área del círculo es:", area, "cm²")
+                    </code>
+                  </pre>
+                </div>
               </div>
               <!-- Tipos de Datos en Python fin-->
               <!-- Operadores Abreviados -->
@@ -400,44 +405,48 @@ print("El área del círculo es:", area, "cm²")
                   sucesivos de la potencia de 2, se puede usar el siguiente
                   código:
                 </p>
-                <pre
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-python" data-prismjs-copy="Copy">
-x = x * 2
-            </code></pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      x = x * 2
+                    </code>
+                  </pre>
+                </div>
                 <p>
                   Python ofrece una manera más corta de escribir operaciones
                   como estas, lo cual se puede codificar de la siguiente manera:
                 </p>
-                <pre
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-python" data-prismjs-copy="Copy">
-x *= 2
-          </code></pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      x *= 2
+                    </code>
+                  </pre>
+                </div>
                 <p>
                   A continuación se intenta presentar una descripción general
                   para este tipo de operaciones. Si op es un operador de dos
                   argumentos (esta es una condición muy importante) y el
                   operador es utilizado en el siguiente contexto...:
                 </p>
-                <pre
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-python" data-prismjs-copy="Copy">
-                variable = variable op expresión
-          </code></pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      variable = variable op expresión
+                    </code>
+                  </pre>
+                </div>
                 <p>
                   ...entonces se puede simplificar y mostrar de la siguiente
                   manera:
                 </p>
-                <pre
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-python" data-prismjs-copy="Copy">
-                variable op= expresión
-          </code></pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      variable op= expresión
+                    </code>
+                  </pre>
+                </div>
                 <p>Ejemplos de operaciones:</p>
                 <div class="mx-auto miTabla">
                   <table class="table table-striped table-bordered table-sm">
@@ -451,28 +460,42 @@ x *= 2
                     <tbody class="table-group-divider text-center">
                       <tr>
                         <td>1</td>
-                        <td><code>i = i + 2 * j</code></td>
-                        <td><code>i += 2 * 3</code></td>
+                        <td>
+                          <code class="language-python">i = i + 2 * j</code>
+                        </td>
+                        <td><code class="language-python">i += 2 * 3</code></td>
                       </tr>
                       <tr>
                         <td>2</td>
-                        <td><code>var = var / 2</code></td>
-                        <td><code>var /= 2</code></td>
+                        <td>
+                          <code class="language-python">var = var / 2</code>
+                        </td>
+                        <td><code class="language-python">var /= 2</code></td>
                       </tr>
                       <tr>
                         <td>3</td>
-                        <td><code>rem = rem % 10</code></td>
-                        <td><code>rem %= 10</code></td>
+                        <td>
+                          <code class="language-python">rem = rem % 10</code>
+                        </td>
+                        <td><code class="language-python">rem %= 10</code></td>
                       </tr>
                       <tr>
                         <td>4</td>
-                        <td><code>j = j - (i + var + rem)</code></td>
-                        <td><code>j -= (i + var + rem)</code></td>
+                        <td>
+                          <code class="language-python"
+                            >j = j - (i + var + rem)</code
+                          >
+                        </td>
+                        <td>
+                          <code class="language-python"
+                            >j -= (i + var + rem)</code
+                          >
+                        </td>
                       </tr>
                       <tr>
                         <td>5</td>
-                        <td><code>x = x ** 2</code></td>
-                        <td><code>x **= 2 </code></td>
+                        <td><code class="language-python">x = x ** 2</code></td>
+                        <td><code class="language-python">x **= 2 </code></td>
                       </tr>
                     </tbody>
                   </table>
@@ -483,7 +506,7 @@ x *= 2
           </article>
           <!--  Variables  -->
 
-          <!-- -------------------------------- comentarios -------------------------------- -->
+          <!--  comentarios  -->
           <article class="row pt-5" id="comments">
             <h2>COMENTARIOS</h2>
             <p>
@@ -552,9 +575,9 @@ x *= 2
               </form>
             </div>
           </article>
-          <!-- -------------------------------- fin comentarios -------------------------------- -->
+          <!--  fin comentarios  -->
         </section>
-        <!-- -------------------------------- barra lateral -------------------------------- -->
+        <!--  barra lateral  -->
         <aside class="col-lg-3 d-none d-lg-block pt-5">
           <div>
             <h1>En Este Artículo</h1>
@@ -599,86 +622,11 @@ x *= 2
             </ul>
           </div>
         </aside>
-        <!-- -------------------------------- fin barra lateral -------------------------------- -->
+        <!--  fin barra lateral  -->
       </main>
-      <!-- -------------------------------- fin principal -------------------------------- -->
+      <!--  fin principal  -->
     </div>
     <!--  Principal Fin  -->
-
-    <!-- -------------------------------- pie de pagina -------------------------------- -->
-    <footer class="row border-top border-1 m-1 mt-auto">
-      <div class="row">
-        <!-- contacto -->
-        <address class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Contacto</div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-envelope-at fs-3"></i>
-            <span class="ms-3">
-              <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com"
-                >ehfeduardo@gmail.com</a
-              >
-            </span>
-          </div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-geo-alt fs-3"></i>
-            <span class="ms-3">Bogotá D. C. - Colombia</span>
-          </div>
-        </address>
-        <!-- Derechos de autor -->
-        <div
-          class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100"
-        >
-          <div>
-            <i class="bi bi-c-circle fs-5"></i>
-          </div>
-          <div class="ms-2">All Rights Reserved 2025</div>
-        </div>
-        <!-- redes sociales -->
-        <div class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Redes Sociales</div>
-          <div class="d-flex justify-content-evenly align-items-center gap-5">
-            <div>
-              <a
-                href="https://www.linkedin.com/in/eduardoherreraf/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-linkedin fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://github.com/eduardoherreraf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-github fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.facebook.com/eduardoherreraforero/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-facebook fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://twitter.com/ehfeduardo/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-twitter-x fs-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex align-items-center justify-content-center gap-2"></div>
-    </footer>
-    <!-- -------------------------------- pie de pagina fin -------------------------------- -->
 
     <!-- button to top -->
     <button onclick="topFunction()" id="myBtnScroll" title="Go to top">

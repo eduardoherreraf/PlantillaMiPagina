@@ -174,7 +174,7 @@
     </nav>
     <!-- Barra deNavegación -->
 
-    <!-- Principal -->
+    <!--  principal  -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
         <section class="pb-3 pt-5 col-lg-9 px-lg-4">
@@ -190,7 +190,7 @@
                 <h1>Listas HTML</h1>
               </header>
               <!-- Introducción -->
-              <div class="pt-4">
+              <div>
                 <h2>Introducción</h2>
                 <p>
                   En el fascinante mundo del desarrollo web, dar estilo y
@@ -218,7 +218,7 @@
               <hr class="subtle-divider" />
 
               <!-- Definición de Listas en HTML -->
-              <div id="definicion-de-listas-en-html" class="pt-4">
+              <div id="definicion-de-listas-en-html">
                 <h2 class="pt-1">Definición de Listas en HTML</h2>
                 <p>
                   Según la <abbr title="Real Academia Española">RAE</abbr>, una
@@ -238,8 +238,8 @@
               <hr class="subtle-divider" />
 
               <!-- Tipos de Listas -->
-              <div id="tipos-de-listas" class="pt-4">
-                <h2 class="pt-2">Tipos de Listas</h2>
+              <div id="tipos-de-listas">
+                <h2>Tipos de Listas</h2>
                 <p>
                   HTML ofrece tres formas de especificar listas: listas
                   ordenadas, listas desordenadas y listas de descripción. Las
@@ -251,8 +251,8 @@
                 </p>
 
                 <!-- Listas Ordenadas <ol> -->
-                <div id="listas-ordenadas-ol" class="pt-4">
-                  <h3 class="pt-2">
+                <div id="listas-ordenadas-ol">
+                  <h3>
                     Listas Ordenadas <code class="language-html">&lt;ol></code>
                   </h3>
                   <p>
@@ -690,8 +690,8 @@
                 <!-- Listas Ordenadas <ol> fin -->
 
                 <!-- Listas Desordenadas <ul> -->
-                <div id="listas-desordenadas-ul" class="pt-4">
-                  <h3 class="pt-2">
+                <div id="listas-desordenadas-ul">
+                  <h3>
                     Listas Desordenadas
                     <code class="language-html">&lt;ul></code>
                   </h3>
@@ -1164,8 +1164,8 @@
                 <!-- Listas Desordenadas <ul> fin -->
 
                 <!-- Listas de Descripción <dl> -->
-                <div id="listas-de-descripcion-dl" class="pt-4">
-                  <h3 class="pt-2">
+                <div id="listas-de-descripcion-dl">
+                  <h3>
                     Listas de Descripción
                     <code class="language-html">&lt;dl></code>
                   </h3>
@@ -1705,8 +1705,8 @@
                 <!-- Listas de Descripción <dl> fin -->
 
                 <!-- Listas Mezcladas <dl> -->
-                <div id="listas-mezcladas" class="pt-4">
-                  <h3 class="pt-2">Listas Mezcladas</h3>
+                <div id="listas-mezcladas">
+                  <h3>Listas Mezcladas</h3>
                   <p>
                     Las listas mezcladas en HTML consisten en combinar listas
                     ordenadas ( <code class="language-html">&lt;ol></code>) y/o
@@ -2535,8 +2535,9 @@
             </div>
           </article>
           <!--  Listas HTML  fin -->
-          <!-- Comentarios -->
-          <article class="pt-4" id="comment">
+
+                    <!--  comentarios  -->
+          <article class="row pt-5" id="comments">
             <h2>COMENTARIOS</h2>
             <p>
               Si tiene alguna inquietud, duda o ha encontrado algún error, por
@@ -2549,52 +2550,64 @@
                 method="POST"
                 id="myForm"
               >
-                <div
-                  class="input-group d-flex justify-content-center flex-column"
-                >
-                  <label for="name" class="pe-2">Nombre:</label>
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="User"
-                    class="rounded"
-                    required="required"
-                  />
-                  <label for="email" class="pe-2">Email:</label>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="user@mail.com"
-                    class="rounded"
-                    required="required"
-                  />
-                  <label for="message" class="pe-2">Mensaje:</label>
-                  <textarea
-                    name="message"
-                    id="message"
-                    cols="30"
-                    rows="5"
-                    placeholder="Su comentario..."
-                    class="rounded rounded-3"
-                  ></textarea>
-                  <input
-                    class="btn btn-outline-light my-3 border rounded-pill border-2"
+                <fieldset class="d-flex flex-column gap-3">
+                  <legend class="text-center fs-4">Deje su comentario</legend>
+
+                  <div class="d-flex flex-column">
+                    <label for="name">Nombre:</label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="User"
+                      class="form-control rounded"
+                      required
+                    />
+                  </div>
+
+                  <div class="d-flex flex-column">
+                    <label for="email">Email:</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="user@mail.com"
+                      class="form-control rounded"
+                      required
+                    />
+                  </div>
+
+                  <div class="d-flex flex-column">
+                    <label for="message">Mensaje:</label>
+                    <textarea
+                      name="message"
+                      id="message"
+                      cols="30"
+                      rows="5"
+                      placeholder="Su comentario..."
+                      class="form-control rounded-3"
+                      required
+                    ></textarea>
+                  </div>
+
+                  <button
                     type="submit"
-                    value="Enviar..."
-                  />
-                </div>
-                <p>
+                    class="btn btn-outline-light my-3 border rounded-pill border-2"
+                  >
+                    Enviar
+                  </button>
+                </fieldset>
+
+                <p class="small text-center">
                   La política de privacidad, y los términos y condiciones están
                   disponibles en el formulario de contacto.
                 </p>
               </form>
             </div>
           </article>
-          <!-- Comentarios fin -->
+          <!--  fin comentarios  -->
         </section>
-        <!-- -------------------------------- barra lateral -------------------------------- -->
+        <!--  barra lateral  -->
         <aside class="col-lg-3 d-none d-lg-block pt-5">
           <h1>En Este Artículo</h1>
 
@@ -2636,14 +2649,14 @@
               </details>
             </div>
             <div class="menu-item">
-              <a href="#comment" class="simple-link">Comentarios</a>
+              <a href="#comments" class="simple-link">Comentarios</a>
             </div>
           </div>
         </aside>
-        <!-- -------------------------------- fin barra lateral -------------------------------- -->
+        <!--  fin barra lateral  -->
         <!--  Listas HTML -->
       </main>
-      <!-- -------------------------------- fin principal -------------------------------- -->
+      <!--  fin principal  -->
     </div>
     <!--  Principal Fin  -->
     <!-- button to top -->

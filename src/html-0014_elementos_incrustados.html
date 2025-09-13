@@ -177,8 +177,8 @@
       </div>
     </nav>
     <!-- Barra deNavegación -->
-    <!--  Principal  -->
-    <!-- Principal -->
+
+    <!--  principal  -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
         <section class="pb-3 pt-5 col-lg-9 px-lg-4">
@@ -194,14 +194,13 @@
                 <h1>Elementos Incrustados HTML</h1>
               </header>
               <!-- Introducción -->
-              <div class="pt-4">
-                <h2 class="pt-2">Introducción</h2>
+              <div>
+                <h2>Introducción</h2>
                 <div class="centrar-imagen imagen50">
                   <figure class="img-container">
                     <img
                       src="https://i.postimg.cc/ydDhpkj7/Elementos-Incrustados-Compressed.png"
                       class="img-fluid"
-                      
                       alt="Una ventana de madera que muestra un paisaje exterior y un televisor CRT incrustado en la pared mostrando una escena similar"
                       title="Elementos Incrustados HTML"
                       loading="lazy"
@@ -254,7 +253,7 @@
               <hr class="subtle-divider" />
 
               <!-- Elemento <iframe> -->
-              <div id="elemento-iframe" class="pt-4">
+              <div id="elemento-iframe" class="mt-3">
                 <h2>Elemento <code class="language-html">&lt;iframe></code></h2>
                 <p>
                   <code class="language-html">&lt;iframe></code> es un elemento
@@ -697,7 +696,7 @@
               <hr class="subtle-divider" />
 
               <!-- Elemento <embed> -->
-              <div id="elemento-embed" class="pt-4">
+              <div id="elemento-embed" class="mt-3">
                 <h2>Elemento <code class="language-html">&lt;embed></code></h2>
                 <p>
                   La etiqueta HTML
@@ -881,7 +880,7 @@
               <hr class="subtle-divider" />
 
               <!-- Elemento <object> -->
-              <div id="elemento-object" class="pt-4">
+              <div id="elemento-object" class="mt-3">
                 <h2>Elemento <code class="language-html">&lt;object></code></h2>
                 <p>
                   La etiqueta <code class="language-html">&lt;object></code> en
@@ -1021,7 +1020,7 @@
               <!-- Elemento <object> Fin -->
 
               <!-- Elemento <param> -->
-              <div id="elemento-param" class="pt-4">
+              <div id="elemento-param" class="mt-3">
                 <h2>Elemento <code class="language-html">&lt;param></code></h2>
                 <p>
                   El elemento HTML
@@ -1083,9 +1082,9 @@
             </div>
           </article>
           <!--  Elementos Incrustados HTM fin -->
-          <!-- Comentarios -->
-          <article class="row pt-5" id="comment">
-            <br />
+
+          <!--  comentarios  -->
+          <article class="row pt-5" id="comments">
             <h2>COMENTARIOS</h2>
             <p>
               Si tiene alguna inquietud, duda o ha encontrado algún error, por
@@ -1098,52 +1097,64 @@
                 method="POST"
                 id="myForm"
               >
-                <div
-                  class="input-group d-flex justify-content-center flex-column"
-                >
-                  <label for="name" class="pe-2">Nombre:</label>
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="User"
-                    class="rounded"
-                    required="required"
-                  />
-                  <label for="email" class="pe-2">Email:</label>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="user@mail.com"
-                    class="rounded"
-                    required="required"
-                  />
-                  <label for="message" class="pe-2">Mensaje:</label>
-                  <textarea
-                    name="message"
-                    id="message"
-                    cols="30"
-                    rows="5"
-                    placeholder="Su comentario..."
-                    class="rounded rounded-3"
-                  ></textarea>
-                  <input
-                    class="btn btn-outline-light my-3 border rounded-pill border-2"
+                <fieldset class="d-flex flex-column gap-3">
+                  <legend class="text-center fs-4">Deje su comentario</legend>
+
+                  <div class="d-flex flex-column">
+                    <label for="name">Nombre:</label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="User"
+                      class="form-control rounded"
+                      required
+                    />
+                  </div>
+
+                  <div class="d-flex flex-column">
+                    <label for="email">Email:</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="user@mail.com"
+                      class="form-control rounded"
+                      required
+                    />
+                  </div>
+
+                  <div class="d-flex flex-column">
+                    <label for="message">Mensaje:</label>
+                    <textarea
+                      name="message"
+                      id="message"
+                      cols="30"
+                      rows="5"
+                      placeholder="Su comentario..."
+                      class="form-control rounded-3"
+                      required
+                    ></textarea>
+                  </div>
+
+                  <button
                     type="submit"
-                    value="Enviar..."
-                  />
-                </div>
-                <p>
+                    class="btn btn-outline-light my-3 border rounded-pill border-2"
+                  >
+                    Enviar
+                  </button>
+                </fieldset>
+
+                <p class="small text-center">
                   La política de privacidad, y los términos y condiciones están
                   disponibles en el formulario de contacto.
                 </p>
               </form>
             </div>
           </article>
-          <!-- Comentarios fin -->
+          <!--  fin comentarios  -->
         </section>
-        <!-- -------------------------------- barra lateral -------------------------------- -->
+        <!--  barra lateral  -->
         <aside class="col-lg-3 d-none d-lg-block pt-5">
           <h1>En Este Artículo</h1>
           <div class="menu-container">
@@ -1177,14 +1188,14 @@
 
             <!-- Comentarios  -->
             <div class="menu-item">
-              <a href="#comment" class="simple-link">Comentarios</a>
+              <a href="#comments" class="simple-link">Comentarios</a>
             </div>
           </div>
         </aside>
-        <!-- -------------------------------- fin barra lateral -------------------------------- -->
+        <!--  fin barra lateral  -->
         <!--  Elementos Incrustados HTM-->
       </main>
-      <!-- -------------------------------- fin principal -------------------------------- -->
+      <!--  fin principal  -->
     </div>
     <!--  Principal Fin  -->
     <!-- button to top -->

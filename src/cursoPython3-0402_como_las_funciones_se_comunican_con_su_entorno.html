@@ -165,7 +165,7 @@
     </nav>
     <!-- Barra deNavegación -->
 
-    <!-- -------------------------------- principal -------------------------------- -->
+    <!--  principal  -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
         <section class="pb-3 pt-5 col-lg-9 px-lg-4">
@@ -225,12 +225,14 @@
                     se llame. Los parámetros se especifican dentro de los
                     paréntesis en la definición de la función.
                   </p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    def saludar(nombre, edad):
-                    print(f"Hola, {nombre}. Tienes {edad} años.")
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        def saludar(nombre, edad):
+                            print(f"Hola, {nombre}. Tienes {edad} años.")
+                      </code>
+                    </pre>
+                  </div>
                   <p>
                     En este ejemplo,
                     <code class="language-python">nombre</code> y
@@ -247,11 +249,13 @@
                     función cuando se llama. Estos valores se asignan a los
                     parámetros de la función en el orden en que se proporcionan.
                   </p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    saludar("Juan", 30)
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        saludar("Juan", 30)
+                      </code>
+                    </pre>
+                  </div>
                   <p>
                     En este ejemplo, <code class="language-python">Juan</code> y
                     <code class="language-python">30</code> son los argumentos
@@ -274,13 +278,15 @@
                   respectivo parámetro según su posición, nos referimos a este
                   método como argumentos posicionales.
                 </p>
-                <pre data-src-status="loaded" tabindex="0">
-                <code class="language-python" data-prismjs-copy="Copy">
-                  def suma(a, b):
-                    return a + b
-                  resultado = suma(3, 5)  # a = 3, b = 5
-                </code>
-              </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      def suma(a, b):
+                        return a + b
+                      resultado = suma(3, 5)  # a = 3, b = 5
+                    </code>
+                  </pre>
+                </div>
               </div>
               <!-- Paso de ParámetrosPosicionales Fin -->
               <!-- Paso de Argumentos de Palabra Clave -->
@@ -293,13 +299,15 @@
                   mediante un nombre específico en lugar de su ubicación en la
                   función.
                 </p>
-                <pre data-src-status="loaded" tabindex="0">
-                <code class="language-python" data-prismjs-copy="Copy">
-                  def saludar(nombre, edad):
-                  print(f"Hola, {nombre}. Tienes {edad} años.")
-                  saludar(edad=30, nombre="Juan")
-                  </code>
-              </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      def saludar(nombre, edad):
+                          print(f"Hola, {nombre}. Tienes {edad} años.")
+                          saludar(edad=30, nombre="Juan")
+                    </code>
+                  </pre>
+                </div>
               </div>
               <!-- Paso de Argumentos de Palabra Clave Fin -->
               <!-- Mezcla de Argumentos Posicionales y de Palabras Clave -->
@@ -317,40 +325,48 @@
                   ubicados antes que los argumentos nombrados (o de palabra
                   clave).
                 </p>
-                <pre data-src-status="loaded" tabindex="0">
-                <code class="language-python" data-prismjs-copy="Copy">
-                  def adding(a, b, c):
-                      print(a, "+", b, "+", c, "=", a + b + c)
-                </code>
-              </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      def adding(a, b, c):
+                          print(a, "+", b, "+", c, "=", a + b + c)
+                    </code>
+                  </pre>
+                </div>
                 <p>
                   La función puede ser invocada de la siguiente manera con
                   argumentos posicionales:
                 </p>
-                <pre data-src-status="loaded" tabindex="0">
-                <code class="language-python" data-prismjs-copy="Copy">
-                  adding(1, 2, 3)  # Salida: 1 + 2 + 3 = 6
-                </code>
-              </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      adding(1, 2, 3)  # Salida: 1 + 2 + 3 = 6
+                    </code>
+                  </pre>
+                </div>
                 <p>
                   Adicionalmente, existe la posibilidad de emplear la
                   convocatoria mediante argumentos nombrados, tal como se
                   ilustra en el ejemplo siguiente:
                 </p>
-                <pre data-src-status="loaded" tabindex="0">
-                <code class="language-python" data-prismjs-copy="Copy">
-                  adding(c = 1, a = 2, b = 3) # Salida: 1 + 2 + 3 = 6
-                </code>
-              </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      adding(c = 1, a = 2, b = 3) # Salida: 1 + 2 + 3 = 6
+                    </code>
+                  </pre>
+                </div>
                 <p>
                   Para finalizar, es posible combinar ambas formas de llamada a
                   la función, tal como se muestra a continuación:
                 </p>
-                <pre data-src-status="loaded" tabindex="0">
-                <code class="language-python" data-prismjs-copy="Copy">
-                  adding(3, c = 1, b = 2)  # Salida: 3 + 2 + 1 = 6
-                </code>
-              </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      adding(3, c = 1, b = 2)  # Salida: 3 + 2 + 1 = 6
+                    </code>
+                  </pre>
+                </div>
                 <p>
                   Los argumentos posicionales siempre deben preceder a otros
                   tipos de argumentos en la definición de una función. Por
@@ -364,11 +380,13 @@
                   <code class="language-python">a</code>, lo que provoca un
                   error de sintaxis.
                 </p>
-                <pre data-src-status="loaded" tabindex="0">
-                <code class="language-python" data-prismjs-copy="Copy">
-                  adding(3, a = 1, b = 2)   # Error
-                  </code>
-              </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      adding(3, a = 1, b = 2)   # Error
+                    </code>
+                  </pre>
+                </div>
                 <p>
                   La respuesta de ejecución es: TypeError: adding() got multiple
                   values for argument 'a'
@@ -384,22 +402,24 @@
                   una función.
                 </p>
                 <p>Ejemplos para entender cómo funciona:</p>
-                <pre data-src-status="loaded" tabindex="0">
-                <code class="language-python" data-prismjs-copy="Copy">
-                  # Ejemplo básico de parámetro por defecto
-                  def saludar(nombre="Mundo"):
-                      return f"Hola, {nombre}!"
-                  # Llamadas a la función
-                  print(saludar())  # Imprime: Hola, Mundo!
-                  print(saludar("Ana"))  # Imprime: Hola, Ana!
-                  # Ejemplo con múltiples parámetros por defecto
-                  def crear_perfil(nombre, edad=0, ciudad="Desconocida"):
-                      return f"Nombre: {nombre}, Edad: {edad}, Ciudad: {ciudad}"
-                  print(crear_perfil("Carlos"))  # Solo nombre
-                  print(crear_perfil("María", 25))  # Nombre y edad
-                  print(crear_perfil("Juan", 30, "Madrid"))  # Todos los parámetros
-                </code>
-              </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      # Ejemplo básico de parámetro por defecto
+                      def saludar(nombre="Mundo"):
+                          return f"Hola, {nombre}!"
+                      # Llamadas a la función
+                      print(saludar())  # Imprime: Hola, Mundo!
+                      print(saludar("Ana"))  # Imprime: Hola, Ana!
+                      # Ejemplo con múltiples parámetros por defecto
+                      def crear_perfil(nombre, edad=0, ciudad="Desconocida"):
+                          return f"Nombre: {nombre}, Edad: {edad}, Ciudad: {ciudad}"
+                      print(crear_perfil("Carlos"))  # Solo nombre
+                      print(crear_perfil("María", 25))  # Nombre y edad
+                      print(crear_perfil("Juan", 30, "Madrid"))  # Todos los parámetros
+                    </code>
+                  </pre>
+                </div>
               </div>
               <!-- Parámetros por Defecto Fin -->
               <!-- Parámetros Variables -->
@@ -439,14 +459,16 @@
                         tupla.
                       </li>
                     </ul>
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      def ejemplo(*args):
-                          for arg in args:
-                          print(arg)
-                      ejemplo(1, 2, 3, "Python")  # Imprime: 1, 2, 3, Python
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          def ejemplo(*args):
+                              for arg in args:
+                              print(arg)
+                          ejemplo(1, 2, 3, "Python")  # Imprime: 1, 2, 3, Python
+                        </code>
+                      </pre>
+                    </div>
                   </div>
                   <!-- Sintaxis Básica fin -->
                   <!-- Características -->
@@ -464,46 +486,52 @@
                         argumentos con nombre).
                       </li>
                     </ul>
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      def combinar_args(nombre, *args):
-                          print(f"Nombre: {nombre}")
-                          print("Otros argumentos:", args)
-                      combinar_args("Juan", 10, 20, "Hola")
-                      # Salida:
-                      # Nombre: Juan
-                      # Otros argumentos: (10, 20, 'Hola')
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          def combinar_args(nombre, *args):
+                              print(f"Nombre: {nombre}")
+                              print("Otros argumentos:", args)
+                          combinar_args("Juan", 10, 20, "Hola")
+                          # Salida:
+                          # Nombre: Juan
+                          # Otros argumentos: (10, 20, 'Hola')
+                        </code>
+                      </pre>
+                    </div>
                   </div>
                   <!-- Características fin -->
                   <!-- Ejemplo Práctico -->
                   <div>
                     <h4>Ejemplos Prácticos</h4>
                     <p class="fw-bold">Suma de Números</p>
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      def suma(*numeros):
-                          return sum(numeros)
-                      resultado = suma(1, 2, 3, 4)
-                      print(resultado)  # Salida: 10
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          def suma(*numeros):
+                              return sum(numeros)
+                          resultado = suma(1, 2, 3, 4)
+                          print(resultado)  # Salida: 10
+                        </code>
+                      </pre>
+                    </div>
                     <p class="fw-bold">
                       Uso en Funciones que Aceptan Operaciones Variadas
                     </p>
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      def imprimir_informacion(*datos):
-                      for i, dato in enumerate(datos, 1):
-                          print(f"Dato {i}: {dato}")
-                      imprimir_informacion("Python", 3.9, "es poderoso")
-                      # Salida:
-                      # Dato 1: Python
-                      # Dato 2: 3.9
-                      # Dato 3: es poderoso
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          def imprimir_informacion(*datos):
+                          for i, dato in enumerate(datos, 1):
+                              print(f"Dato {i}: {dato}")
+                          imprimir_informacion("Python", 3.9, "es poderoso")
+                          # Salida:
+                          # Dato 1: Python
+                          # Dato 2: 3.9
+                          # Dato 3: es poderoso
+                        </code>
+                      </pre>
+                    </div>
                   </div>
                   <!-- Ejemplo Práctico fin -->
                   <!-- Consideraciones -->
@@ -529,17 +557,19 @@
                       <code class="language-python">**kwargs</code> para manejar
                       tanto argumentos posicionales como argumentos con nombre:
                     </p>
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      def ejemplo_mixto(*args, **kwargs):
-                          print("Posicionales:", args)
-                          print("Con nombre:", kwargs)
-                      ejemplo_mixto(1, 2, 3, clave1="valor1", clave2="valor2")
-                      # Salida:
-                      # Posicionales: (1, 2, 3)
-                      # Con nombre: {'clave1': 'valor1', 'clave2': 'valor2'}
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          def ejemplo_mixto(*args, **kwargs):
+                              print("Posicionales:", args)
+                              print("Con nombre:", kwargs)
+                          ejemplo_mixto(1, 2, 3, clave1="valor1", clave2="valor2")
+                          # Salida:
+                          # Posicionales: (1, 2, 3)
+                          # Con nombre: {'clave1': 'valor1', 'clave2': 'valor2'}
+                        </code>
+                      </pre>
+                    </div>
                   </div>
                   <!-- Consideraciones fin -->
                   <!-- Uso Avanzado -->
@@ -550,14 +580,16 @@
                       puede utilizar para desempaquetar listas o tuplas como
                       argumentos de una función:
                     </p>
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      def suma(a, b, c):
-                          return a + b + c
-                      valores = (1, 2, 3)
-                      print(suma(*valores))  # Salida: 6
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          def suma(a, b, c):
+                              return a + b + c
+                          valores = (1, 2, 3)
+                          print(suma(*valores))  # Salida: 6
+                        </code>
+                      </pre>
+                    </div>
                   </div>
                   <!-- Uso Avanzado fin -->
                 </div>
@@ -577,13 +609,15 @@
                   <!-- Sintaxis básica -->
                   <div>
                     <h4>Sintaxis básica</h4>
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      def funcion_ejemplo(**kwargs):
-                          for clave, valor in kwargs.items():
-                          print(f"{clave}: {valor}")
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          def funcion_ejemplo(**kwargs):
+                              for clave, valor in kwargs.items():
+                              print(f"{clave}: {valor}")
+                        </code>
+                      </pre>
+                    </div>
                   </div>
                   <!-- Sintaxis básica fin -->
                   <!-- Ejemplo de Uso -->
@@ -592,31 +626,35 @@
                     <ul>
                       <li>
                         Llamada a la función con argumentos variables:
-                        <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          funcion_ejemplo(nombre="Juan", edad=25, ciudad="Bogotá")
-                          # salida: nombre: Juan
-                          # salida: edad: 25
-                          # salida: ciudad: Bogotá
-                        </code>
-                      </pre>
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
+                            <code class="language-python" data-prismjs-copy="Copy">
+                              funcion_ejemplo(nombre="Juan", edad=25, ciudad="Bogotá")
+                              # salida: nombre: Juan
+                              # salida: edad: 25
+                              # salida: ciudad: Bogotá
+                            </code>
+                          </pre>
+                        </div>
                       </li>
                       <li>
                         Uso combinado con
                         <code class="language-python">*args</code> y parámetros
                         normales:
-                        <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          def ejemplo_combinado(parametro_fijo, *args, **kwargs):
-                              print(f"Fijo: {parametro_fijo}")
-                              print(f"Args: {args}")
-                              print(f"Kwargs: {kwargs}")
-                          ejemplo_combinado("Obligatorio", 1, 2, 3, nombre="Ana", edad=30)
-                          # Salida: Fijo: Obligatorio
-                          # Salida: Args: (1, 2, 3)
-                          # Salida: Kwargs: {'nombre': 'Ana', 'edad': 30}
-                        </code>
-                      </pre>
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
+                            <code class="language-python" data-prismjs-copy="Copy">
+                              def ejemplo_combinado(parametro_fijo, *args, **kwargs):
+                                  print(f"Fijo: {parametro_fijo}")
+                                  print(f"Args: {args}")
+                                  print(f"Kwargs: {kwargs}")
+                              ejemplo_combinado("Obligatorio", 1, 2, 3, nombre="Ana", edad=30)
+                              # Salida: Fijo: Obligatorio
+                              # Salida: Args: (1, 2, 3)
+                              # Salida: Kwargs: {'nombre': 'Ana', 'edad': 30}
+                            </code>
+                          </pre>
+                        </div>
                       </li>
                     </ul>
                   </div>
@@ -628,34 +666,38 @@
                       <li>
                         Personalización de funciones: Permite escribir funciones
                         genéricas que pueden aceptar diferentes configuraciones.
-                        <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                            def saludar(**kwargs):
-                              if 'nombre' in kwargs:
-                                  print(f"Hola, {kwargs['nombre']}!")
-                              else:
-                                  print("Hola, desconocido.")
-                          saludar(nombre="Luis")
-                          saludar()
-                          # Salida: Hola, Luis!
-                          # Salida: Hola, desconocido.
-                        </code>
-                      </pre>
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
+                            <code class="language-python" data-prismjs-copy="Copy">
+                                def saludar(**kwargs):
+                                  if 'nombre' in kwargs:
+                                      print(f"Hola, {kwargs['nombre']}!")
+                                  else:
+                                      print("Hola, desconocido.")
+                              saludar(nombre="Luis")
+                              saludar()
+                              # Salida: Hola, Luis!
+                              # Salida: Hola, desconocido.
+                            </code>
+                          </pre>
+                        </div>
                       </li>
                       <li>
                         Construcción de objetos dinámicos: Se usa para
                         inicializar objetos con atributos variables.
-                        <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-python" data-prismjs-copy="Copy">
-                            class Persona:
-                            def __init__(self, **kwargs):
-                                for clave, valor in kwargs.items():
-                                    setattr(self, clave, valor)
-                            persona = Persona(nombre="Carlos", edad=40, ciudad="Lima")
-                            print(persona.nombre)  # Salida: Carlos
-                            print(persona.edad)    # Salida: 40
-                          </code>
-                        </pre>
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
+                            <code class="language-python" data-prismjs-copy="Copy">
+                              class Persona:
+                              def __init__(self, **kwargs):
+                                  for clave, valor in kwargs.items():
+                                      setattr(self, clave, valor)
+                              persona = Persona(nombre="Carlos", edad=40, ciudad="Lima")
+                              print(persona.nombre)  # Salida: Carlos
+                              print(persona.edad)    # Salida: 40
+                            </code>
+                          </pre>
+                        </div>
                       </li>
                       <li>
                         Integración con librerías: Librerías como
@@ -691,7 +733,7 @@
           </article>
           <!--  Cómo las funciones se comunican con su entorno en Python  -->
 
-          <!-- -------------------------------- comentarios -------------------------------- -->
+          <!--  comentarios  -->
           <article class="row pt-5" id="comments">
             <h2>COMENTARIOS</h2>
             <p>
@@ -760,9 +802,9 @@
               </form>
             </div>
           </article>
-          <!-- -------------------------------- fin comentarios -------------------------------- -->
+          <!--  fin comentarios  -->
         </section>
-        <!-- -------------------------------- barra lateral -------------------------------- -->
+        <!--  barra lateral  -->
         <aside class="col-lg-3 d-none d-lg-block pt-5">
           <h1>En Este Artículo</h1>
           <ul class="list-group">
@@ -798,86 +840,11 @@
             </li>
           </ul>
         </aside>
-        <!-- -------------------------------- fin barra lateral -------------------------------- -->
+        <!--  fin barra lateral  -->
       </main>
-      <!-- -------------------------------- fin principal -------------------------------- -->
+      <!--  fin principal  -->
     </div>
     <!--  Principal Fin  -->
-
-    <!-- -------------------------------- pie de pagina -------------------------------- -->
-    <footer class="row border-top border-1 m-1 mt-auto">
-      <div class="row">
-        <!-- contacto -->
-        <address class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Contacto</div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-envelope-at fs-3"></i>
-            <span class="ms-3">
-              <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com"
-                >ehfeduardo@gmail.com</a
-              >
-            </span>
-          </div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-geo-alt fs-3"></i>
-            <span class="ms-3">Bogotá D. C. - Colombia</span>
-          </div>
-        </address>
-        <!-- Derechos de autor -->
-        <div
-          class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100"
-        >
-          <div>
-            <i class="bi bi-c-circle fs-5"></i>
-          </div>
-          <div class="ms-2">All Rights Reserved 2025</div>
-        </div>
-        <!-- redes sociales -->
-        <div class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Redes Sociales</div>
-          <div class="d-flex justify-content-evenly align-items-center gap-5">
-            <div>
-              <a
-                href="https://www.linkedin.com/in/eduardoherreraf/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-linkedin fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://github.com/eduardoherreraf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-github fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.facebook.com/eduardoherreraforero/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-facebook fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://twitter.com/ehfeduardo/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-twitter-x fs-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex align-items-center justify-content-center gap-2"></div>
-    </footer>
-    <!-- -------------------------------- pie de pagina fin -------------------------------- -->
 
     <!-- button to top -->
     <button onclick="topFunction()" id="myBtnScroll" title="Go to top">

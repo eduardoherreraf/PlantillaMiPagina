@@ -162,7 +162,7 @@
     </nav>
     <!-- Barra deNavegación -->
 
-    <!-- -------------------------------- principal -------------------------------- -->
+    <!--  principal  -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
         <section class="pb-3 pt-5 col-lg-9 px-lg-4">
@@ -218,14 +218,16 @@
                     paquete. pero es buena práctica incluir un docstring que
                     describa el propósito general del paquete. Ejemplo:
                   </p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    """
-                    Paquete: operaciones_matematicas
-                    Este paquete incluye módulos para realizar cálculos matemáticos básicos y avanzados.
-                    """
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        """
+                        Paquete: operaciones_matematicas
+                        Este paquete incluye módulos para realizar cálculos matemáticos básicos y avanzados.
+                        """
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- Paquete fin -->
                 <!-- Buenas Prácticas para Paquetes -->
@@ -383,11 +385,13 @@
                       <span class="fw-bold"
                         ><code class="language-python">module.py</code></span
                       >: Archivo que contiene el código del módulo.
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        print("Me gusta ser un módulo.")
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            print("Me gusta ser un módulo.")
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold"
@@ -395,11 +399,13 @@
                       >: En este archivo se importa el módulo
                       <code class="language-python">module.py</code>, ambos
                       archivos deben estar en la misma carpeta.
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        import module
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            import module
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold"
@@ -527,14 +533,16 @@
                         adiciona la instrucción
                         <code class="language-python">print(__name__)</code>
                         como se muestra a continuación:
-                        <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          # module.py
-                          print("Me gusta ser un módulo.")
-                          print(__name__)
-                          # Salida: __main__
-                        </code>
-                      </pre>
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
+                            <code class="language-python" data-prismjs-copy="Copy">
+                              # module.py
+                              print("Me gusta ser un módulo.")
+                              print(__name__)
+                              # Salida: __main__
+                            </code>
+                          </pre>
+                        </div>
                         <p>
                           Al ejecutar este módulo la variable
                           <code class="language-python">__name__</code> toma el
@@ -552,13 +560,15 @@
                           sin la extensión
                           <code class="language-python">.py</code>.
                         </p>
-                        <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        # main.py
-                        import module
-                        # Salida: module
-                      </code>
-                    </pre>
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
+                            <code class="language-python" data-prismjs-copy="Copy">
+                              # main.py
+                              import module
+                              # Salida: module
+                            </code>
+                          </pre>
+                        </div>
                         <p>
                           Sucede lo mismo con todos los módulos importados en el
                           archivo <code class="language-python">main.py</code>.
@@ -624,12 +634,14 @@
                       qué funciones, variables o clases estarán disponibles al
                       usar
                       <code class="language-python">from modulo import *</code>.
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          # Exportar únicamente lo necesario
-                          __all__ = ['suma', 'promedio']
-                        </code>
-                      </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            # Exportar únicamente lo necesario
+                            __all__ = ['suma', 'promedio']
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -642,32 +654,40 @@
                     <code class="language-python">module.py</code>. El módulo
                     actualizado está aquí:
                   </p>
-                  <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      #!/usr/bin/env python3 
-                      "" module.py - an example of a Python module ""
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                      #!/usr/bin/env python3
+                      """
+                      module.py – an example of a Python module
+                      """
+
                       __counter = 0
+
                       def suml(the_list):
-                        global __counter
-                        __counter += 1
-                        the_sum = 0
-                        for element in the_list:
-                            the_sum += element
-                        return the_sum
-                        def prodl(the_list):
-                            global __counter
-                            __counter += 1
-                            prod = 1
-                            for element in the_list:
-                            prod *= element
-                            return prod
+                          global __counter
+                          __counter += 1
+                          the_sum = 0
+                          for element in the_list:
+                              the_sum += element
+                          return the_sum
+
+                      def prodl(the_list):
+                          global __counter
+                          __counter += 1
+                          prod = 1
+                          for element in the_list:
+                              prod *= element
+                          return prod
+
                       if __name__ == "__main__":
-                        print("Prefiero ser un módulo, pero puedo hacer algunas pruebas para usted.")
-                        my_list = [i+1 for i in range(5)]
-                        print(suml(my_list) == 15)
-                        print(prodl(my_list) == 120)
-                    </code>
-                  </pre>
+                          print("Prefiero ser un módulo, pero puedo hacer algunas pruebas para usted.")
+                          my_list = [i + 1 for i in range(5)]
+                          print(suml(my_list) == 15)
+                          print(prodl(my_list) == 120)
+                      </code>
+                    </pre>
+                  </div>
                   <p>
                     La línea que comienza con
                     <code class="language-python">#!</code> recibe múltiples
@@ -743,17 +763,19 @@
                       niveles jerárquicos.
                     </li>
                   </ul>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    mi_paquete/
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        mi_paquete/
                         __init__.py
                         modulo1.py
                         modulo2.py
                         subpaquete/
-                            __init__.py
-                            modulo3.py
-                  </code>
-                </pre>
+                        __init__.py
+                        modulo3.py
+                      </code>
+                    </pre>
+                  </div>
                   <p>En esta estructura:</p>
                   <ul>
                     <li>
@@ -796,12 +818,14 @@
                         >mi_paquete/__init__.py</code
                       >
                       puede contener:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        from .modulo1 import funcion1
-                        from .modulo2 import clase2
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            from .modulo1 import funcion1
+                            from .modulo2 import clase2
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold">Añadir módulos al paquete</span>:
@@ -811,12 +835,14 @@
                       <br />
                       Ejemplo de
                       <code class="language-python">modulo1.py</code>:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        def funcion1():
-                            print("Hola desde modulo1!")
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            def funcion1():
+                                print("Hola desde modulo1!")
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -833,45 +859,53 @@
                     <li>
                       <span class="fw-bold">Crear la siguiente estructura</span
                       >:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        mi_paquete/
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            mi_paquete/
                             __init__.py
                             modulo1.py
                             modulo2.py
-                      </code>
-                    </pre>
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold"
                         >Código en
                         <code class="language-python">modulo1.py</code></span
                       >:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        def funcion1():
-                            return "Función en modulo1"
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            def funcion1():
+                                return "Función en modulo1"
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold">Código en modulo2.py</span>:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        def funcion2():
-                            return "Función en modulo2"
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            def funcion2():
+                                return "Función en modulo2"
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold">Importar en un script Python</span>:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        from mi_paquete import modulo1, modulo2
-                        print(modulo1.funcion1())  # Salida: Función en modulo1
-                        print(modulo2.funcion2())  # Salida: Función en modulo2
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            from mi_paquete import modulo1, modulo2
+                            print(modulo1.funcion1())  # Salida: Función en modulo1
+                            print(modulo2.funcion2())  # Salida: Función en modulo2
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -884,25 +918,29 @@
                     jerárquicas.
                   </p>
                   <p>Ejemplo de estructura:</p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    mi_paquete/
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        mi_paquete/
                         __init__.py
                         modulo1.py
                         subpaquete/
-                            __init__.py
-                            modulo3.py
-                  </code>
-                </pre>
+                        __init__.py
+                        modulo3.py
+                      </code>
+                    </pre>
+                  </div>
                   <p>Para usar el subpaquete:</p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    from mi_paquete.subpaquete import modulo3
-                    # Llamar funciones o clases de modulo3
-                    resultado = modulo3.funcion3()
-                    print(resultado)
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        from mi_paquete.subpaquete import modulo3
+                        # Llamar funciones o clases de modulo3
+                        resultado = modulo3.funcion3()
+                        print(resultado)
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- Paquetes con Subpaquetes fin -->
                 <!-- Instalar y Usar Paquetes Externos -->
@@ -915,21 +953,25 @@
                   <ul>
                     <li>
                       <span class="fw-bold">Instalar un paquete</span>:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        pip install numpy
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            pip install numpy
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold">Usar el paquete instalado</span>:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        import numpy as np
-                        array = np.array([1, 2, 3])
-                        print(array)
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            import numpy as np
+                            array = np.array([1, 2, 3])
+                            print(array)
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -1060,7 +1102,7 @@
             </div>
           </article>
           <!--  Módulos y Paquetes de Python  -->
-          <!-- -------------------------------- comentarios -------------------------------- -->
+          <!--  comentarios  -->
           <article class="row pt-5" id="comments">
             <h2>COMENTARIOS</h2>
             <p>
@@ -1129,9 +1171,9 @@
               </form>
             </div>
           </article>
-          <!-- -------------------------------- fin comentarios -------------------------------- -->
+          <!--  fin comentarios  -->
         </section>
-        <!-- -------------------------------- barra lateral -------------------------------- -->
+        <!--  barra lateral  -->
         <aside class="col-lg-3 d-none d-lg-block pt-5">
           <h1>En Este Artículo</h1>
           <ul class="list-group">
@@ -1164,89 +1206,13 @@
             </li>
           </ul>
         </aside>
-        <!-- -------------------------------- fin barra lateral -------------------------------- -->
+        <!--  fin barra lateral  -->
       </main>
-      <!-- -------------------------------- fin principal -------------------------------- -->
+      <!--  fin principal  -->
     </div>
     <!--  Principal Fin  -->
 
-    <!-- -------------------------------- pie de pagina -------------------------------- -->
-    <footer class="row border-top border-1 m-1 mt-auto">
-      <div class="row">
-        <!-- contacto -->
-        <address class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Contacto</div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-envelope-at fs-3"></i>
-            <span class="ms-3">
-              <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com"
-                >ehfeduardo@gmail.com</a
-              >
-            </span>
-          </div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-geo-alt fs-3"></i>
-            <span class="ms-3">Bogotá D. C. - Colombia</span>
-          </div>
-        </address>
-        <!-- Derechos de autor -->
-        <div
-          class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100"
-        >
-          <div>
-            <i class="bi bi-c-circle fs-5"></i>
-          </div>
-          <div class="ms-2">All Rights Reserved 2025</div>
-        </div>
-        <!-- redes sociales -->
-        <div class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Redes Sociales</div>
-          <div class="d-flex justify-content-evenly align-items-center gap-5">
-            <div>
-              <a
-                href="https://www.linkedin.com/in/eduardoherreraf/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-linkedin fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://github.com/eduardoherreraf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-github fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.facebook.com/eduardoherreraforero/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-facebook fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://twitter.com/ehfeduardo/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-twitter-x fs-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex align-items-center justify-content-center gap-2"></div>
-    </footer>
-    >
-    <!-- -------------------------------- pie de pagina fin -------------------------------- -->
-
-    <!-- button to top -->
+     <!-- button to top -->
     <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
       <svg
         xmlns="http://www.w3.org/2000/svg"

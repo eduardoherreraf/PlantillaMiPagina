@@ -94,7 +94,7 @@
 
   <body>
     <!-- Barra deNavegación -->
-<nav
+    <nav
       class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
     >
       <div class="container-fluid">
@@ -147,7 +147,9 @@
               <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog"
+              <a
+                class="nav-link mx-1 publicaciones-activo"
+                href="index.html#blog"
                 >PUBLICACIONES</a
               >
             </li>
@@ -160,7 +162,7 @@
     </nav>
     <!-- Barra deNavegación -->
 
-    <!-- -------------------------------- principal -------------------------------- -->
+    <!--  principal  -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
         <section class="pb-3 pt-5 col-lg-9 px-lg-4">
@@ -179,11 +181,11 @@
               <div class="mt-5">
                 <h2>Introducción</h2>
                 <p>
-                  El comando <code class="language-python">print()</code> en Python se utiliza para
-                  mostrar información en la consola o terminal. Es una de las
-                  funciones más básicas y útiles para que los desarrolladores
-                  verifiquen el valor de variables, mensajes o resultados de
-                  alguna operación.
+                  El comando <code class="language-python">print()</code> en
+                  Python se utiliza para mostrar información en la consola o
+                  terminal. Es una de las funciones más básicas y útiles para
+                  que los desarrolladores verifiquen el valor de variables,
+                  mensajes o resultados de alguna operación.
                 </p>
                 <div class="centrar-imagen imagen50">
                   <figure>
@@ -203,10 +205,10 @@
               <div id="funcionBasica" class="mt-5">
                 <h2 class="mt-1">Función Básica</h2>
                 <p>
-                  La función <code class="language-python">print()</code> toma uno o más argumentos y
-                  los muestra en la salida estándar, que por lo general es la
-                  consola donde se ejecuta el código. Estos argumentos pueden
-                  ser de diferentes tipos de datos, como:
+                  La función <code class="language-python">print()</code> toma
+                  uno o más argumentos y los muestra en la salida estándar, que
+                  por lo general es la consola donde se ejecuta el código. Estos
+                  argumentos pueden ser de diferentes tipos de datos, como:
                 </p>
                 <ul>
                   <li>
@@ -230,13 +232,13 @@
               <!-- Sintaxis básica -->
               <div id="sintaxisBasica" class="mt-5">
                 <h2 class="mt-1">Sintaxis básica</h2>
-                <pre
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-python" data-prismjs-copy="Copy">
-                print(objeto, ..., sep=' ', end='<code>\n</code>', file=sys.stdout, flush=False)
-              </code>
-            </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      print(objeto, ..., sep=' ', end='<code>\n</code>', file=sys.stdout, flush=False)
+                    </code>
+                  </pre>
+                </div>
                 <ul>
                   <li>
                     <span class="fw-bold">objeto</span>: Es el elemento o los
@@ -286,10 +288,13 @@
                 <ol>
                   <li>
                     <span class="fw-bold">Imprimir texto simple</span>:
-                    <pre
-                      data-src-status="loaded"
-                      tabindex="0"
-                    ><code class="language-python" data-prismjs-copy="Copy">print("Hola, mundo!")</code></pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          print("Hola, mundo!")
+                        </code>
+                      </pre>
+                    </div>
                     <p>
                       Salida:
                       <span class="text-success fw-bold">Hola, mundo!</span>.
@@ -298,11 +303,13 @@
                   <li>
                     <span class="fw-bold"></span
                     ><span class="fw-bold">Imprimir múltiples objetos</span>:
-                    <pre
-                      data-src-status="loaded"
-                      tabindex="0"
-                    ><code class="language-python" data-prismjs-copy="Copy">print("Nombre:", "Juan", "Edad:", 25)
-                  </code></pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          print("Nombre:", "Juan", "Edad:", 25)
+                        </code>
+                      </pre>
+                    </div>
                     <p>
                       Salida:
                       <span class="text-success fw-bold"
@@ -315,25 +322,28 @@
                     ><span class="fw-bold"
                       >Usando separadores personalizados</span
                     >:
-                    <pre
-                      data-src-status="loaded"
-                      tabindex="0"
-                    ><code class="language-python" data-prismjs-copy="Copy">print("A", "B", "C", sep="-")
-                  </code></pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          print("A", "B", "C", sep="-")
+                        </code>
+                      </pre>
+                    </div>
                     <p>
                       Salida:
                       <span class="text-success fw-bold">A-B-C</span>.
                     </p>
                   </li>
                   <li>
-                    <span class="fw-bold"></span>Modificando el valor de
-                    end<span class="fw-bold"></span>:
-                    <pre
-                      data-src-status="loaded"
-                      tabindex="0"
-                    ><code class="language-python" data-prismjs-copy="Copy">print("Primera línea", end=" ")
-print("Segunda línea")
-                    </code></pre>
+                    <span class="fw-bold">Modificando el valor de end</span>:
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          print("Primera línea", end=" ")
+                          print("Segunda línea")
+                        </code>
+                      </pre>
+                    </div>
                     <p>
                       Salida:
                       <span class="text-success fw-bold"
@@ -344,12 +354,14 @@ print("Segunda línea")
                   <li>
                     <span class="fw-bold"></span
                     ><span class="fw-bold">Formateo de cadenas</span>:
-                    <pre
-                      data-src-status="loaded"
-                      tabindex="0"
-                    ><code class="language-python" data-prismjs-copy="Copy">nombre = "Alice"
-edad = 30
-print(f"{nombre} tiene {edad} años")</code></pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          nombre = "Alice"
+                          edad = 30
+                          print(f"{nombre} tiene {edad} años")</code>
+                        </pre>
+                    </div>
                     <p>
                       Salida:
                       <span class="text-success fw-bold"
@@ -362,13 +374,15 @@ print(f"{nombre} tiene {edad} años")</code></pre>
                     ><span class="fw-bold"
                       >Imprimir variables de diferentes tipos</span
                     >:
-                    <pre
-                      data-src-status="loaded"
-                      tabindex="0"
-                    ><code class="language-python" data-prismjs-copy="Copy">x = 10
-y = 3.14
-z = True
-print(x, y, z)</code></pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          x = 10
+                          y = 3.14
+                          z = True
+                          print(x, y, z)</code>
+                        </pre>
+                    </div>
                     <p>
                       Salida:
                       <span class="text-success fw-bold">10 3.14 True</span>.
@@ -377,11 +391,13 @@ print(x, y, z)</code></pre>
                   <li>
                     <span class="fw-bold"></span
                     ><span class="fw-bold">Redirección a un archivo</span>:
-                    <pre
-                      data-src-status="loaded"
-                      tabindex="0"
-                    ><code class="language-python" data-prismjs-copy="Copy">with open("salida.txt", "w") as f:
-print("Esto se escribe en un archivo", file=f)</code></pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          with open("salida.txt", "w") as f:
+                          print("Esto se escribe en un archivo", file=f)</code>
+                        </pre>
+                    </div>
                     <p>
                       Salida:
                       <span class="text-success fw-bold"
@@ -396,12 +412,15 @@ print("Esto se escribe en un archivo", file=f)</code></pre>
                     ><span class="fw-bold"
                       >Caracteres de escape y nueva línea en Python</span
                     >:
-                    <pre
-                      data-src-status="loaded"
-                      tabindex="0"
-                    ><code class="language-python" data-prismjs-copy="Copy">print("La Witsi Witsi Araña \n subió a su telaraña.")
-print()
-print("Vino la lluvia \n y se la llevó.")</code></pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          print("La Witsi Witsi Araña \n subió a su telaraña.")
+                          print()
+                          print("Vino la lluvia \n y se la llevó.")
+                        </code>
+                      </pre>
+                    </div>
                     <p>
                       Salida: <br />
                       <span class="text-success fw-bold"
@@ -446,9 +465,9 @@ print("Vino la lluvia \n y se la llevó.")</code></pre>
                     strings, listas, etc.).
                   </li>
                   <li>
-                    <code class="language-python">print()</code> convierte todos los argumentos en
-                    cadenas de texto (usando <code>str()</code>) antes de
-                    mostrarlos.
+                    <code class="language-python">print()</code> convierte todos
+                    los argumentos en cadenas de texto (usando
+                    <code>str()</code>) antes de mostrarlos.
                   </li>
                 </ul>
               </div>
@@ -456,7 +475,7 @@ print("Vino la lluvia \n y se la llevó.")</code></pre>
           </article>
           <!--  Instrucción print()  -->
 
-          <!-- -------------------------------- comentarios -------------------------------- -->
+          <!--  comentarios  -->
           <article class="row pt-5" id="comments">
             <h2>COMENTARIOS</h2>
             <p>
@@ -525,9 +544,9 @@ print("Vino la lluvia \n y se la llevó.")</code></pre>
               </form>
             </div>
           </article>
-          <!-- -------------------------------- fin comentarios -------------------------------- -->
+          <!--  fin comentarios  -->
         </section>
-        <!-- -------------------------------- barra lateral -------------------------------- -->
+        <!--  barra lateral  -->
         <aside class="col-lg-3 d-none d-lg-block pt-5">
           <div>
             <h1>En Este Artículo</h1>
@@ -553,86 +572,11 @@ print("Vino la lluvia \n y se la llevó.")</code></pre>
             </ul>
           </div>
         </aside>
-        <!-- -------------------------------- fin barra lateral -------------------------------- -->
+        <!--  fin barra lateral  -->
       </main>
-      <!-- -------------------------------- fin principal -------------------------------- -->
+      <!--  fin principal  -->
     </div>
     <!--  Principal Fin  -->
-
-    <!-- -------------------------------- pie de pagina -------------------------------- -->
-    <footer class="row border-top border-1 m-1 mt-auto">
-      <div class="row">
-        <!-- contacto -->
-        <address class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Contacto</div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-envelope-at fs-3"></i>
-            <span class="ms-3">
-              <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com"
-                >ehfeduardo@gmail.com</a
-              >
-            </span>
-          </div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-geo-alt fs-3"></i>
-            <span class="ms-3">Bogotá D. C. - Colombia</span>
-          </div>
-        </address>
-        <!-- Derechos de autor -->
-        <div
-          class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100"
-        >
-          <div>
-            <i class="bi bi-c-circle fs-5"></i>
-          </div>
-          <div class="ms-2">All Rights Reserved 2025</div>
-        </div>
-        <!-- redes sociales -->
-        <div class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Redes Sociales</div>
-          <div class="d-flex justify-content-evenly align-items-center gap-5">
-            <div>
-              <a
-                href="https://www.linkedin.com/in/eduardoherreraf/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-linkedin fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://github.com/eduardoherreraf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-github fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.facebook.com/eduardoherreraforero/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-facebook fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://twitter.com/ehfeduardo/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-twitter-x fs-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex align-items-center justify-content-center gap-2"></div>
-    </footer>
-    <!-- -------------------------------- pie de pagina fin -------------------------------- -->
 
     <!-- button to top -->
     <button onclick="topFunction()" id="myBtnScroll" title="Go to top">

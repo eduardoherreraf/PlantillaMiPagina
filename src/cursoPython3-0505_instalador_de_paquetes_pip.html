@@ -96,7 +96,7 @@
 
   <body>
     <!-- Barra deNavegación -->
-<nav
+    <nav
       class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
     >
       <div class="container-fluid">
@@ -149,7 +149,9 @@
               <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog"
+              <a
+                class="nav-link mx-1 publicaciones-activo"
+                href="index.html#blog"
                 >PUBLICACIONES</a
               >
             </li>
@@ -162,7 +164,7 @@
     </nav>
     <!-- Barra deNavegación -->
 
-    <!-- -------------------------------- principal -------------------------------- -->
+    <!--  principal  -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
         <section class="pb-3 pt-5 col-lg-9 px-lg-4">
@@ -226,19 +228,23 @@
                         <li>
                           Permite instalar paquetes disponibles en PyPI con un
                           solo comando:
-                          <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-bash" data-prismjs-copy="Copy">
-                            pip install requests # instalará la biblioteca requests.
-                          </code>
-                        </pre>
+                          <div class="ej-sintaxis">
+                            <pre data-src-status="loaded" tabindex="0">
+                              <code class="language-bash" data-prismjs-copy="Copy">
+                                pip install requests # instalará la biblioteca requests.
+                              </code>
+                            </pre>
+                          </div>
                         </li>
                         <li>
                           Facilita la desinstalación de paquetes:
-                          <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-bash" data-prismjs-copy="Copy">
-                            pip uninstall requests # desinstalará la biblioteca requests.
-                          </code>
-                        </pre>
+                          <div class="ej-sintaxis">
+                            <pre data-src-status="loaded" tabindex="0">
+                              <code class="language-bash" data-prismjs-copy="Copy">
+                                pip uninstall requests # desinstalará la biblioteca requests.
+                              </code>
+                            </pre>
+                          </div>
                         </li>
                       </ul>
                     </li>
@@ -250,8 +256,10 @@
                     <li>
                       <span class="fw-bold"
                         >Compatibilidad con entornos virtuales</span
-                      >: Trabaja bien con herramientas como <code class="language-python">venv</code>,
-                      <code class="language-python">virtualenv</code> o <code class="language-python">miniconda</code>
+                      >: Trabaja bien con herramientas como
+                      <code class="language-python">venv</code>,
+                      <code class="language-python">virtualenv</code> o
+                      <code class="language-python">miniconda</code>
                       asegurando que los paquetes se instalen en entornos
                       aislados para evitar conflictos entre proyectos.
                     </li>
@@ -259,14 +267,16 @@
                       <span class="fw-bold"
                         >Soporte para archivos de requisitos</span
                       >: Puede leer un archivo
-                      <code class="language-python">requirements.txt</code> para instalar varias
-                      dependencias necesarias de un proyecto con un único
-                      comando:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-bash" data-prismjs-copy="Copy">
-                        pip install -r requirements.txt
-                      </code>
-                    </pre>
+                      <code class="language-python">requirements.txt</code> para
+                      instalar varias dependencias necesarias de un proyecto con
+                      un único comando:
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            pip install -r requirements.txt
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold"
@@ -275,8 +285,9 @@
                       <ul>
                         <li>PyPI (predeterminado).</li>
                         <li>
-                          Archivos locales (<code class="language-python">.whl</code>,
-                          <code class="language-python">.tar.gz</code>).
+                          Archivos locales (<code class="language-python"
+                            >.whl</code
+                          >, <code class="language-python">.tar.gz</code>).
                         </li>
                         <li>Repositorios Git, Mercurial, o Subversion.</li>
                         <li>URLs específicas.</li>
@@ -286,11 +297,13 @@
                       <span class="fw-bold">Actualización de paquetes</span>:
                       Facilita la actualización de paquetes a versiones más
                       recientes:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-bash" data-prismjs-copy="Copy">
-                        pip install --upgrade numpy
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            pip install --upgrade numpy
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold"
@@ -299,19 +312,23 @@
                       <ul>
                         <li>
                           Muestra los paquetes instalados en el entorno actual:
-                          <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-bash" data-prismjs-copy="Copy">
-                            pip list
-                          </code>
-                        </pre>
+                          <div class="ej-sintaxis">
+                            <pre data-src-status="loaded" tabindex="0">
+                              <code class="language-bash" data-prismjs-copy="Copy">
+                                pip list
+                              </code>
+                            </pre>
+                          </div>
                         </li>
                         <li>
                           Proporciona detalles específicos sobre un paquete:
-                          <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-bash" data-prismjs-copy="Copy">
-                            pip show nombre_paquete
-                          </code>
-                        </pre>
+                          <div class="ej-sintaxis">
+                            <pre data-src-status="loaded" tabindex="0">
+                              <code class="language-bash" data-prismjs-copy="Copy">
+                                pip show nombre_paquete
+                              </code>
+                            </pre>
+                          </div>
                         </li>
                       </ul>
                     </li>
@@ -325,7 +342,8 @@
                         </li>
                         <li>
                           Permite el uso de banderas como
-                          <code class="language-python">--no-cache-dir</code> o <code class="language-python">--user</code>
+                          <code class="language-python">--no-cache-dir</code> o
+                          <code class="language-python">--user</code>
                           para instalaciones más controladas.
                         </li>
                       </ul>
@@ -350,37 +368,45 @@
                   <ul>
                     <li>
                       <span class="fw-bold">Instalar un paquete</span>:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-bash" data-prismjs-copy="Copy">
-                        pip install nombre_del_paquete
-                        </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            pip install nombre_del_paquete
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold">Verificar versión de PIP</span>:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-bash" data-prismjs-copy="Copy">
-                        pip --version
-                        </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            pip --version
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold">Actualizar PIP</span>:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-bash" data-prismjs-copy="Copy">
-                        python -m pip install --upgrade pip
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            python -m pip install --upgrade pip
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold"
                         >Mostrar detalles de un paquete instalado</span
                       >:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-bash" data-prismjs-copy="Copy">
-                        pip show nombre_del_paquete
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            pip show nombre_del_paquete
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -447,28 +473,34 @@
                   <ul>
                     <li>
                       <span class="fw-bold">Análisis de datos</span>:
-                      <code class="language-python">pandas</code>, <code class="language-python">numpy</code>
+                      <code class="language-python">pandas</code>,
+                      <code class="language-python">numpy</code>
                     </li>
                     <li>
                       <span class="fw-bold">Visualización</span>:
-                      <code class="language-python">matplotlib</code>, <code class="language-python">seaborn</code>
+                      <code class="language-python">matplotlib</code>,
+                      <code class="language-python">seaborn</code>
                     </li>
                     <li>
                       <span class="fw-bold">Desarrollo web</span>:
-                      <code class="language-python">Django</code>, <code class="language-python">Flask</code>
+                      <code class="language-python">Django</code>,
+                      <code class="language-python">Flask</code>
                     </li>
                     <li>
                       <span class="fw-bold">Machine Learning</span>:
-                      <code class="language-python">scikit-learn</code>, <code class="language-python">TensorFlow</code>,
+                      <code class="language-python">scikit-learn</code>,
+                      <code class="language-python">TensorFlow</code>,
                       <code class="language-python">PyTorch</code>
                     </li>
                     <li>
                       <span class="fw-bold">Automatización</span>:
-                      <code class="language-python">selenium</code>, <code class="language-python">pytest</code>
+                      <code class="language-python">selenium</code>,
+                      <code class="language-python">pytest</code>
                     </li>
                     <li>
                       <span class="fw-bold">Ciencia de datos y estadística</span
-                      >: <code class="language-python">statsmodels</code>, <code class="language-python">scipy</code>
+                      >: <code class="language-python">statsmodels</code>,
+                      <code class="language-python">scipy</code>
                     </li>
                   </ul>
                 </div>
@@ -491,8 +523,10 @@
                     </li>
                     <li>
                       <span class="fw-bold"
-                        >Entornos virtuales (<code class="language-python">venv</code> o
-                        <code class="language-python">virtualenv</code>)</span
+                        >Entornos virtuales (<code class="language-python"
+                          >venv</code
+                        >
+                        o <code class="language-python">virtualenv</code>)</span
                       >: Los entornos virtuales permiten mantener proyectos
                       aislados, asegurando que las dependencias de un proyecto
                       no interfieran con las de otros.
@@ -525,37 +559,45 @@
                       <span class="fw-bold"
                         >Instalación de paquetes con pip</span
                       >:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-bash" data-prismjs-copy="Copy">
-                        pip install numpy
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            pip install numpy
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold">Listar paquetes instalados</span>:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-bash" data-prismjs-copy="Copy">
-                        pip list
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            pip list
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold">Actualizar un paquete</span>:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-bash" data-prismjs-copy="Copy">
-                        pip install --upgrade numpy
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            pip install --upgrade numpy
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold">Crear un entorno virtual</span>:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-bash" data-prismjs-copy="Copy">
-                        python -m venv nombre_entorno
-                        source nombre_entorno/bin/activate  # En Linux/Mac
-                        nombre_entorno\Scripts\activate    # En Windows
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            python -m venv nombre_entorno
+                            source nombre_entorno/bin/activate  # En Linux/Mac
+                            nombre_entorno\Scripts\activate    # En Windows
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold">Buscar paquetes en PyPI</span>:
@@ -578,11 +620,13 @@
                     <li>Usar entornos virtuales para cada proyecto.</li>
                     <li>
                       Congelar dependencias en requirements.txt:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-bash" data-prismjs-copy="Copy">
-                        pip freeze > requirements.txt
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            pip freeze > requirements.txt
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>Leer la documentación oficial de cada paquete.</li>
                     <li>
@@ -646,8 +690,9 @@
                       <span class="fw-bold">Estandarización</span>: Los paquetes
                       siguen un estándar para facilitar su distribución,
                       instalación y documentación, utilizando formatos como
-                      Wheel (<code class="language-python">.whl</code>) y Source Distribution
-                      (<code class="language-python">.tar.gz</code>).
+                      Wheel (<code class="language-python">.whl</code>) y Source
+                      Distribution (<code class="language-python">.tar.gz</code
+                      >).
                     </li>
                     <li>
                       <span class="fw-bold">Gestión de dependencias</span>: PyPI
@@ -678,12 +723,14 @@
                       <span class="fw-bold">Publicación de paquetes</span>: Los
                       desarrolladores pueden publicar sus paquetes utilizando
                       herramientas como setuptools y twine. Por ejemplo:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-bash" data-prismjs-copy="Copy">
-                        python setup.py sdist bdist_wheel
-                        twine upload dist/*
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            python setup.py sdist bdist_wheel
+                            twine upload dist/*
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold"
@@ -732,12 +779,14 @@
                 <div>
                   <h3>Verificar si PIP ya Está Instalado</h3>
                   <p>Ejecutar el siguiente comando en la terminal o consola:</p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-bash" data-prismjs-copy="Copy">
-                    pip --version
-                    # Salida: pip 22.3.1 from C:\Users\MP1KGT61\miniconda3\envs\FaceEmotion\lib\site-packages\pip (python 3.7)
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-bash" data-prismjs-copy="Copy">
+                        pip --version
+                        # Salida: pip 22.3.1 from C:\Users\MP1KGT61\miniconda3\envs\FaceEmotion\lib\site-packages\pip (python 3.7)
+                      </code>
+                    </pre>
+                  </div>
                   <p>
                     Si está instalado, mostrará la versión de pip. Si no, se
                     deben seguir los pasos para instalarlo.
@@ -763,12 +812,14 @@
                     </li>
                     <li>
                       <span class="fw-bold">Verificar la instalación</span>:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-bash" data-prismjs-copy="Copy">
-                        pip --version
-                        # Salida: pip 22.3.1 from C:\Users\MP1KGT61\miniconda3\envs\FaceEmotion\lib\site-packages\pip (python 3.7)
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            pip --version
+                            # Salida: pip 22.3.1 from C:\Users\MP1KGT61\miniconda3\envs\FaceEmotion\lib\site-packages\pip (python 3.7)
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -790,11 +841,13 @@
                       >.
                     </li>
                     <li>Ejecutar el archivo con Python:</li>
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-bash" data-prismjs-copy="Copy">
-                      python get-pip.py
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-bash" data-prismjs-copy="Copy">
+                          python get-pip.py
+                        </code>
+                      </pre>
+                    </div>
                   </ul>
                 </div>
                 <!-- Solucionar Posibles Problemas fin -->
@@ -802,11 +855,13 @@
                 <div>
                   <h3>Actualizar PIP</h3>
                   <p>Para asegurarse de usar la última versión:</p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-bash" data-prismjs-copy="Copy">
-                    python -m pip install --upgrade pip
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-bash" data-prismjs-copy="Copy">
+                        python -m pip install --upgrade pip
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- Actualizar PIP fin -->
                 <!-- Configuración Adicional -->
@@ -816,11 +871,13 @@
                     Si se necesita instalar paquetes sin permisos de
                     administrador:
                   </p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-bash" data-prismjs-copy="Copy">
-                    pip install nombre-del-paquete --user
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-bash" data-prismjs-copy="Copy">
+                        pip install nombre-del-paquete --user
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- Configuración Adicional fin -->
               </div>
@@ -839,25 +896,31 @@
                 <p>
                   Por ejemplo, si un desarrollador está trabajando en un
                   proyecto que requiere manipulación de datos, podría necesitar
-                  dependencias como <code class="language-python">pandas</code> para el análisis de
-                  datos o <code class="language-python">numpy</code> para operaciones numéricas
-                  avanzadas. Estas dependencias se instalan generalmente
-                  utilizando herramientas de gestión de paquetes como
-                  <code class="language-python">pip</code>, que es el instalador de paquetes de Python.
+                  dependencias como
+                  <code class="language-python">pandas</code> para el análisis
+                  de datos o <code class="language-python">numpy</code> para
+                  operaciones numéricas avanzadas. Estas dependencias se
+                  instalan generalmente utilizando herramientas de gestión de
+                  paquetes como <code class="language-python">pip</code>, que es
+                  el instalador de paquetes de Python.
                 </p>
                 <p>
                   Para gestionar las dependencias de un proyecto, se suele
-                  utilizar un archivo llamado <code class="language-python">requirements.txt</code> o
-                  <code class="language-python">Pipfile</code>, donde se listan todas las bibliotecas y
-                  versiones específicas necesarias. Esto facilita la
-                  reproducibilidad del entorno de desarrollo, asegurando que
-                  cualquier persona que clone el proyecto pueda instalar las
-                  mismas dependencias y obtener los mismos resultados.
+                  utilizar un archivo llamado
+                  <code class="language-python">requirements.txt</code> o
+                  <code class="language-python">Pipfile</code>, donde se listan
+                  todas las bibliotecas y versiones específicas necesarias. Esto
+                  facilita la reproducibilidad del entorno de desarrollo,
+                  asegurando que cualquier persona que clone el proyecto pueda
+                  instalar las mismas dependencias y obtener los mismos
+                  resultados.
                 </p>
                 <p>
                   A continuación, se proporciona una plantilla básica para crear
-                  los archivos <code class="language-python">requirements.txt</code> y
-                  <code class="language-python">Pipfile</code> en un proyecto de Python.
+                  los archivos
+                  <code class="language-python">requirements.txt</code> y
+                  <code class="language-python">Pipfile</code> en un proyecto de
+                  Python.
                 </p>
                 <!-- Plantilla para requirements.txt -->
                 <div>
@@ -868,49 +931,54 @@
                     sus versiones, o solo los nombres de los paquetes si no se
                     especifica la versión.
                   </p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-txt" data-prismjs-copy="Copy">
-                    # requirements.txt
-                    # Dependencias principales
-                    numpy==1.21.2
-                    pandas==1.3.3
-                    requests==2.26.0
-                    # Dependencias de desarrollo (si las hubiera)
-                    pytest==6.2.5
-                    flake8==3.9.2
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-txt" data-prismjs-copy="Copy">
+                        # requirements.txt
+                        # Dependencias principales
+                        numpy==1.21.2
+                        pandas==1.3.3
+                        requests==2.26.0
+                        # Dependencias de desarrollo (si las hubiera)
+                        pytest==6.2.5
+                        flake8==3.9.2
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- Plantilla para requirements.txt fin -->
                 <!-- Plantilla para Pipfile -->
                 <div>
                   <h4>Plantilla para Pipfile</h4>
                   <p>
-                    El archivo <code class="language-python">Pipfile</code> es utilizado por
-                    <code class="language-python">pipenv</code> para gestionar las dependencias de
-                    manera más estructurada. Este archivo también incluye la
-                    versión de Python que se debe usar para el entorno. A
-                    continuación se muestra una plantilla básica:
+                    El archivo <code class="language-python">Pipfile</code> es
+                    utilizado por
+                    <code class="language-python">pipenv</code> para gestionar
+                    las dependencias de manera más estructurada. Este archivo
+                    también incluye la versión de Python que se debe usar para
+                    el entorno. A continuación se muestra una plantilla básica:
                   </p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-toml" data-prismjs-copy="Copy">
-                    # Pipfile
-                    [[source]]
-                    url = "https://pypi.org/simple"
-                    verify_ssl = true
-                    [dev-packages]
-                    # Paquetes de desarrollo
-                    pytest = "*"
-                    flake8 = "*"
-                    [packages]
-                    # Paquetes principales
-                    numpy = "==1.21.2"
-                    pandas = "==1.3.3"
-                    requests = "==2.26.0"
-                    [requires]
-                    python_version = "3.9"
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-toml" data-prismjs-copy="Copy">
+                        # Pipfile
+                        [[source]]
+                        url = "https://pypi.org/simple"
+                        verify_ssl = true
+                        [dev-packages]
+                        # Paquetes de desarrollo
+                        pytest = "*"
+                        flake8 = "*"
+                        [packages]
+                        # Paquetes principales
+                        numpy = "==1.21.2"
+                        pandas = "==1.3.3"
+                        requests = "==2.26.0"
+                        [requires]
+                        python_version = "3.9"
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- Plantilla para Pipfile fin -->
               </div>
@@ -966,7 +1034,7 @@
             </div>
           </article>
           <!--  Instalador de Paquetes de Python (PIP)  -->
-          <!-- -------------------------------- comentarios -------------------------------- -->
+          <!--  comentarios  -->
           <article class="row pt-5" id="comments">
             <h2>COMENTARIOS</h2>
             <p>
@@ -1035,9 +1103,9 @@
               </form>
             </div>
           </article>
-          <!-- -------------------------------- fin comentarios -------------------------------- -->
+          <!--  fin comentarios  -->
         </section>
-        <!-- -------------------------------- barra lateral -------------------------------- -->
+        <!--  barra lateral  -->
         <aside class="col-lg-3 d-none d-lg-block pt-5">
           <h1>En Este Artículo</h1>
           <ul class="list-group">
@@ -1069,86 +1137,11 @@
             </li>
           </ul>
         </aside>
-        <!-- -------------------------------- fin barra lateral -------------------------------- -->
+        <!--  fin barra lateral  -->
       </main>
-      <!-- -------------------------------- fin principal -------------------------------- -->
+      <!--  fin principal  -->
     </div>
     <!--  Principal Fin  -->
-
-    <!-- -------------------------------- pie de pagina -------------------------------- -->
-    <footer class="row border-top border-1 m-1 mt-auto">
-      <div class="row">
-        <!-- contacto -->
-        <address class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Contacto</div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-envelope-at fs-3"></i>
-            <span class="ms-3">
-              <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com"
-                >ehfeduardo@gmail.com</a
-              >
-            </span>
-          </div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-geo-alt fs-3"></i>
-            <span class="ms-3">Bogotá D. C. - Colombia</span>
-          </div>
-        </address>
-        <!-- Derechos de autor -->
-        <div
-          class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100"
-        >
-          <div>
-            <i class="bi bi-c-circle fs-5"></i>
-          </div>
-          <div class="ms-2">All Rights Reserved 2025</div>
-        </div>
-        <!-- redes sociales -->
-        <div class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Redes Sociales</div>
-          <div class="d-flex justify-content-evenly align-items-center gap-5">
-            <div>
-              <a
-                href="https://www.linkedin.com/in/eduardoherreraf/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-linkedin fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://github.com/eduardoherreraf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-github fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.facebook.com/eduardoherreraforero/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-facebook fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://twitter.com/ehfeduardo/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-twitter-x fs-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex align-items-center justify-content-center gap-2"></div>
-    </footer>
-    <!-- -------------------------------- pie de pagina fin -------------------------------- -->
 
     <!-- button to top -->
     <button onclick="topFunction()" id="myBtnScroll" title="Go to top">

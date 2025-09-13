@@ -164,7 +164,7 @@
     </nav>
     <!-- Barra deNavegación -->
 
-    <!-- -------------------------------- principal -------------------------------- -->
+    <!--  principal  -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
         <section class="pb-3 pt-5 col-lg-9 px-lg-4">
@@ -224,12 +224,13 @@
                   devuelve como una cadena de texto (string).
                 </p>
                 <p>Sintaxis:</p>
-                <pre
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-python" data-prismjs-copy="Copy">
-              variable = input(prompt)
-              </code></pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      variable = input(prompt)
+                    </code>
+                  </pre>
+                </div>
                 <ul>
                   <li>
                     <span class="fw-bold">prompt</span>: Es un mensaje opcional
@@ -242,15 +243,16 @@
                   </li>
                 </ul>
                 <p>Ejemplo:</p>
-                <pre
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-python" data-prismjs-copy="Copy">
-                  nombre = input("Por favor, ingresa tu nombre: ")
-                  edad = input("¿Cuál es tu edad? ")
-                  print("Hola,", nombre, "!")
-                  print("Tienes", edad, "años.")
-                  </code></pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      nombre = input("Por favor, ingresa tu nombre: ")
+                      edad = input("¿Cuál es tu edad? ")
+                      print("Hola,", nombre, "!")
+                      print("Tienes", edad, "años.")
+                      </code>
+                  </pre>
+                </div>
                 <ul>
                   <li>
                     La línea
@@ -294,19 +296,22 @@
                   estos datos para elevarlos al cuadrado, para dividirlos entre
                   algo o por algo.
                 </p>
-                <pre
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-python" data-prismjs-copy="Copy">
-                anything = input("Ingresa un número:")
-                something = anything ** 2.0
-                print(anything, "al cuadrado es", something)
-              </code></pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      anything = input("Ingresa un número:")
+                      something = anything ** 2.0
+                      print(anything, "al cuadrado es", something)
+                    </code>
+                  </pre>
+                </div>
                 <p>
                   Cuando python intente ejecutar
-                  <code>something = anything ** 2.0</code> se devolverá el
-                  siguiente error "TypeError: unsupported operand type(s) for **
-                  or pow(): 'str' and 'float'"
+                  <code class="language-python"
+                    >something = anything ** 2.0</code
+                  >
+                  se devolverá el siguiente error "TypeError: unsupported
+                  operand type(s) for ** or pow(): 'str' and 'float'"
                 </p>
               </div>
               <!-- El Resultado de la Función input() Fin -->
@@ -316,44 +321,49 @@
                 <p>
                   Python ofrece dos simples funciones para especificar un tipo
                   de dato y resolver este problema, aquí están:
-                  <code>int()</code> y <code>float()</code>.
+                  <code class="language-python">int()</code> y
+                  <code class="language-python">float()</code>.
                 </p>
                 <p>Sus nombres indican cual es su función:</p>
                 <ul>
                   <li>
-                    La función <code>int()</code> toma un argumento (por
-                    ejemplo, una cadena: <code>int(string)</code>) e intenta
+                    La función <code class="language-python">int()</code> toma
+                    un argumento (por ejemplo, una cadena:
+                    <code class="language-python">int(string)</code>) e intenta
                     convertirlo a un valor entero; si llegase a fallar, el
                     programa entero fallará también.
                   </li>
                   <li>
-                    La función <code>float()</code> toma un argumento (por
-                    ejemplo, una cadena: <code>float(string)</code>) e intenta
-                    convertirlo a flotante.
+                    La función <code class="language-python">float()</code> toma
+                    un argumento (por ejemplo, una cadena:
+                    <code class="language-python">float(string)</code>) e
+                    intenta convertirlo a flotante.
                   </li>
                 </ul>
                 <p>Por ejemplo:</p>
                 <ul>
                   <li>
                     Para valores enteros:
-                    <pre
-                      data-src-status="loaded"
-                      tabindex="0"
-                    ><code class="language-python" data-prismjs-copy="Copy">
-                edad = int(input("¿Cuál es tu edad? "))
-                  </code></pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          edad = int(input("¿Cuál es tu edad? "))
+                        </code>
+                      </pre>
+                    </div>
                   </li>
                   <li>
                     Para valores flotantes:
-                    <pre
-                      data-src-status="loaded"
-                      tabindex="0"
-                    ><code class="language-python" data-prismjs-copy="Copy">
-                    leg_a = float(input("Ingresa la longitud del primer cateto: "))
-                    leg_b = float(input("Ingresa la longitud del segundo cateto: "))
-                    hypo = (leg_a**2 + leg_b**2) ** .5
-                    print("La longitud de la hipotenusa es:", hypo)
-                  </code></pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          leg_a = float(input("Ingresa la longitud del primer cateto: "))
+                          leg_b = float(input("Ingresa la longitud del segundo cateto: "))
+                          hypo = (leg_a**2 + leg_b**2) ** .5
+                          print("La longitud de la hipotenusa es:", hypo)
+                        </code>
+                      </pre>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -363,45 +373,52 @@
                 <h2 class="mt-1">Operadores Cadena</h2>
                 <h3>Concatenación</h3>
                 <p>
-                  En Python, el signo más (<code>+</code>) se utiliza comúnmente
-                  para concatenar cadenas de texto. Cuando se emplea entre dos o
-                  más valores de tipo str, el operador <code>+</code> une esas
+                  En Python, el signo más (<code class="language-python">+</code
+                  >) se utiliza comúnmente para concatenar cadenas de texto.
+                  Cuando se emplea entre dos o más valores de tipo str, el
+                  operador <code class="language-python">+</code> une esas
                   cadenas en una sola. Este uso específico del
-                  <code>+</code> permite construir mensajes personalizados o
-                  juntar varios fragmentos de texto en un mismo resultado.
+                  <code class="language-python">+</code> permite construir
+                  mensajes personalizados o juntar varios fragmentos de texto en
+                  un mismo resultado.
                 </p>
-                <pre
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-python" data-prismjs-copy="Copy">
-                  saludo = "Hola, "
-                  nombre = "María"
-                  mensaje = saludo + nombre
-                  print(mensaje)  # Resultado: "Hola, María"
-                  </code></pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      saludo = "Hola, "
+                      nombre = "María"
+                      mensaje = saludo + nombre
+                      print(mensaje)  # Resultado: "Hola, María"
+                    </code>
+                  </pre>
+                </div>
                 <h3>Replicación</h3>
                 <ul>
                   <li>
                     <span class="fw-bold">Replicación de cadenas</span>: En este
-                    caso, el operador <code>*</code> permite repetir la cadena
-                    un número específico de veces.
-                    <pre
-                      data-src-status="loaded"
-                      tabindex="0"
-                    ><code class="language-python" data-prismjs-copy="Copy">
-                  texto = "Hola " * 3  # texto será "Hola Hola Hola "
-                  </code></pre>
+                    caso, el operador
+                    <code class="language-python">*</code> permite repetir la
+                    cadena un número específico de veces.
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          texto = "Hola " * 3  # texto será "Hola Hola Hola "
+                        </code>
+                      </pre>
+                    </div>
                   </li>
                   <li>
                     <span class="fw-bold">Replicación de listas</span>: En este
-                    caso el operador <code>*</code> permite replicar el
+                    caso el operador
+                    <code class="language-python">*</code> permite replicar el
                     contenido de la cadena.
-                    <pre
-                      data-src-status="loaded"
-                      tabindex="0"
-                    ><code class="language-python" data-prismjs-copy="Copy">
-                  lista = [1, 2, 3] * 2  # lista será [1, 2, 3, 1, 2, 3]
-                </code></pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          lista = [1, 2, 3] * 2  # lista será [1, 2, 3, 1, 2, 3]
+                        </code>
+                      </pre>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -411,19 +428,21 @@
                 <h2 class="mt-1">Otros Tipos de Conversiones</h2>
                 <h3>str()</h3>
                 <p>
-                  La función <code>str()</code> en Python convierte un valor a
-                  su representación en cadena de texto (string). Esta función se
-                  utiliza comúnmente para transformar valores numéricos,
-                  booleanos, listas, diccionarios, entre otros, en cadenas que
-                  pueden ser visualizadas o impresas fácilmente.
+                  La función <code class="language-python">str()</code> en
+                  Python convierte un valor a su representación en cadena de
+                  texto (string). Esta función se utiliza comúnmente para
+                  transformar valores numéricos, booleanos, listas,
+                  diccionarios, entre otros, en cadenas que pueden ser
+                  visualizadas o impresas fácilmente.
                 </p>
                 <p>Sintaxis:</p>
-                <pre
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-python" data-prismjs-copy="Copy">
-              str(objeto)
-            </code></pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      str(objeto)
+                    </code>
+                  </pre>
+                </div>
                 <p>Parámetro:</p>
                 <ul>
                   <li>
@@ -435,115 +454,134 @@
                 <ul>
                   <li>
                     <span class="fw-bold">Convertir un número a cadena</span>:
-                    <pre
-                      data-src-status="loaded"
-                      tabindex="0"
-                    ><code class="language-python" data-prismjs-copy="Copy">
-                    numero = 42
-                    texto = str(numero)
-                    print(texto)  # Output: '42'
-                  </code></pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          numero = 42
+                          texto = str(numero)
+                          print(texto)  # Output: '42'
+                        </code>
+                      </pre>
+                    </div>
                   </li>
                   <li>
                     <span class="fw-bold">Convertir un booleano a cadena</span>:
-                    <pre
-                      data-src-status="loaded"
-                      tabindex="0"
-                    ><code class="language-python" data-prismjs-copy="Copy">
-                    verdad = True
-                    texto = str(verdad)
-                    print(texto)  # Output: 'True'
-                  </code></pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          verdad = True
+                          texto = str(verdad)
+                          print(texto)  # Output: 'True'
+                        </code>
+                      </pre>
+                    </div>
                   </li>
                   <li>
                     <span class="fw-bold">Convertir una lista a cadena</span>:
-                    <pre
-                      data-src-status="loaded"
-                      tabindex="0"
-                    ><code class="language-python" data-prismjs-copy="Copy">
-                    lista = [1, 2, 3]
-                    texto = str(lista)
-                    print(texto)  # Output: '[1, 2, 3]'
-                  </code></pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          lista = [1, 2, 3]
+                          texto = str(lista)
+                          print(texto)  # Output: '[1, 2, 3]'
+                        </code>
+                      </pre>
+                    </div>
                   </li>
                   <li>
                     <span class="fw-bold"
                       >Convertir un diccionario a cadena</span
                     >:
-                    <pre
-                      data-src-status="loaded"
-                      tabindex="0"
-                    ><code class="language-python" data-prismjs-copy="Copy">
-                    diccionario = {'nombre': 'Juan', 'edad': 30}
-                    texto = str(diccionario)
-                    print(texto)  # Output: "{'nombre': 'Juan', 'edad': 30}"
-                  </code></pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          diccionario = {'nombre': 'Juan', 'edad': 30}
+                          texto = str(diccionario)
+                          print(texto)  # Output: "{'nombre': 'Juan', 'edad': 30}"
+                        </code>
+                      </pre>
+                    </div>
                   </li>
                 </ul>
                 <h3>Uso Práctico</h3>
                 <p>
-                  <code>str()</code> es especialmente útil al combinar
-                  diferentes tipos de datos en una cadena. Por ejemplo:
+                  <code class="language-python">str()</code> es especialmente
+                  útil al combinar diferentes tipos de datos en una cadena. Por
+                  ejemplo:
                 </p>
-                <pre
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-python" data-prismjs-copy="Copy">
-                  edad = 25
-                  nombre = "Ana"
-                  mensaje = "Hola, " + nombre + ". Tienes " + str(edad) + " años."
-                  print(mensaje)
-                  # Output: 'Hola, Ana. Tienes 25 años.'
-                  </code></pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      edad = 25
+                      nombre = "Ana"
+                      mensaje = "Hola, " + nombre + ". Tienes " + str(edad) + " años."
+                      print(mensaje)
+                      # Output: 'Hola, Ana. Tienes 25 años.'
+                    </code>
+                  </pre>
+                </div>
               </div>
               <!-- Otros Tipos de Conversiones Fin -->
               <!-- Función de Verificación de Tipo -->
               <div id="funcióndeVerificacióndeTipo" class="mt-5">
                 <h2 class="mt-1">Función de Verificación de Tipo</h2>
                 <p>
-                  En Python, la función <code>type()</code> se utiliza para
+                  En Python, la función
+                  <code class="language-python">type()</code> se utiliza para
                   obtener el tipo de dato de un objeto. Cuando se pasa una
-                  variable o cualquier valor a <code>type()</code>, esta función
+                  variable o cualquier valor a
+                  <code class="language-python">type()</code>, esta función
                   devuelve el tipo de dato de dicho objeto. Esto puede incluir
-                  tipos de datos básicos como <code>int</code>,
-                  <code>float</code> ,<code>str</code>, <code>list</code>, entre
-                  otros, así como tipos de datos definidos por el usuario (por
-                  ejemplo, clases).
+                  tipos de datos básicos como
+                  <code class="language-python">int</code>,
+                  <code class="language-python">float</code> ,<code
+                    class="language-python"
+                    >str</code
+                  >, <code class="language-python">list</code>, entre otros, así
+                  como tipos de datos definidos por el usuario (por ejemplo,
+                  clases).
                 </p>
-                <pre
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-python" data-prismjs-copy="Copy">
-                  # Declaración de diferentes tipos de datos
-                  x = 10         # Entero
-                  y = 3.14       # Flotante
-                  z = "Hola"     # Cadena de texto
-                  w = [1, 2, 3]  # Lista
-                  # Usar type() para obtener el tipo de dato
-                  print(type(x))  # Salida: &lt;class 'int'>
-                  print(type(y))  # Salida: &lt;class 'float'>
-                  print(type(z))  # Salida: &lt;class 'str'>
-                  print(type(w))  # Salida: &lt;class 'list'>
-                  </code></pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      # Declaración de diferentes tipos de datos
+                      x = 10         # Entero
+                      y = 3.14       # Flotante
+                      z = "Hola"     # Cadena de texto
+                      w = [1, 2, 3]  # Lista
+                      # Usar type() para obtener el tipo de dato
+                      print(type(x))  # Salida: &lt;class 'int'>
+                      print(type(y))  # Salida: &lt;class 'float'>
+                      print(type(z))  # Salida: &lt;class 'str'>
+                      print(type(w))  # Salida: &lt;class 'list'>
+                    </code>
+                  </pre>
+                </div>
                 <p>En este ejemplo:</p>
                 <ul>
                   <li>
-                    <code>type(x)</code> devuelve <code>&lt;class 'int'></code>,
-                    indicando que <code>x</code> es un entero.
+                    <code class="language-python">type(x)</code> devuelve
+                    <code class="language-python">&lt;class 'int'></code>,
+                    indicando que <code class="language-python">x</code> es un
+                    entero.
                   </li>
                   <li>
-                    <code>type(y)</code> devuelve
-                    <code>&lt;class 'float'></code>, indicando que
-                    <code>y</code> es un número decimal.
+                    <code class="language-python">type(y)</code> devuelve
+                    <code class="language-python">&lt;class 'float'></code>,
+                    indicando que <code class="language-python">y</code> es un
+                    número decimal.
                   </li>
                   <li>
-                    <code>type(z)</code> devuelve <code>&lt;class 'str'></code>,
-                    indicando que <code>z</code> es una cadena de texto.
+                    <code class="language-python">type(z)</code> devuelve
+                    <code class="language-python">&lt;class 'str'></code>,
+                    indicando que <code class="language-python">z</code> es una
+                    cadena de texto.
                   </li>
                   <li>
-                    <code>type(w)</code> devuelve
-                    <code>&lt;class 'list'></code>, indicando que
-                    <code>w</code> es una lista.
+                    <code class="language-python">type(w)</code> devuelve
+                    <code class="language-python">&lt;class 'list'></code>,
+                    indicando que <code class="language-python">w</code> es una
+                    lista.
                   </li>
                 </ul>
                 <p>
@@ -557,7 +595,7 @@
           </article>
           <!--  Interacción con el Usuario en Python  -->
 
-          <!-- -------------------------------- comentarios -------------------------------- -->
+          <!--  comentarios  -->
           <article class="row pt-5" id="comments">
             <h2>COMENTARIOS</h2>
             <p>
@@ -626,9 +664,9 @@
               </form>
             </div>
           </article>
-          <!-- -------------------------------- fin comentarios -------------------------------- -->
+          <!--  fin comentarios  -->
         </section>
-        <!-- -------------------------------- barra lateral -------------------------------- -->
+        <!--  barra lateral  -->
         <aside class="col-lg-3 d-none d-lg-block pt-5">
           <div>
             <h1>En Este Artículo</h1>
@@ -666,86 +704,11 @@
             </ul>
           </div>
         </aside>
-        <!-- -------------------------------- fin barra lateral -------------------------------- -->
+        <!--  fin barra lateral  -->
       </main>
-      <!-- -------------------------------- fin principal -------------------------------- -->
+      <!--  fin principal  -->
     </div>
     <!--  Principal Fin  -->
-
-    <!-- -------------------------------- pie de pagina -------------------------------- -->
-    <footer class="row border-top border-1 m-1 mt-auto">
-      <div class="row">
-        <!-- contacto -->
-        <address class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Contacto</div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-envelope-at fs-3"></i>
-            <span class="ms-3">
-              <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com"
-                >ehfeduardo@gmail.com</a
-              >
-            </span>
-          </div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-geo-alt fs-3"></i>
-            <span class="ms-3">Bogotá D. C. - Colombia</span>
-          </div>
-        </address>
-        <!-- Derechos de autor -->
-        <div
-          class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100"
-        >
-          <div>
-            <i class="bi bi-c-circle fs-5"></i>
-          </div>
-          <div class="ms-2">All Rights Reserved 2025</div>
-        </div>
-        <!-- redes sociales -->
-        <div class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Redes Sociales</div>
-          <div class="d-flex justify-content-evenly align-items-center gap-5">
-            <div>
-              <a
-                href="https://www.linkedin.com/in/eduardoherreraf/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-linkedin fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://github.com/eduardoherreraf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-github fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.facebook.com/eduardoherreraforero/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-facebook fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://twitter.com/ehfeduardo/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-twitter-x fs-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex align-items-center justify-content-center gap-2"></div>
-    </footer>
-    <!-- -------------------------------- pie de pagina fin -------------------------------- -->
 
     <!-- button to top -->
     <button onclick="topFunction()" id="myBtnScroll" title="Go to top">

@@ -94,7 +94,7 @@
 
   <body>
     <!-- Barra deNavegación -->
-<nav
+    <nav
       class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
     >
       <div class="container-fluid">
@@ -147,7 +147,9 @@
               <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog"
+              <a
+                class="nav-link mx-1 publicaciones-activo"
+                href="index.html#blog"
                 >PUBLICACIONES</a
               >
             </li>
@@ -160,7 +162,7 @@
     </nav>
     <!-- Barra deNavegación -->
 
-    <!-- -------------------------------- principal -------------------------------- -->
+    <!--  principal  -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
         <section class="pb-3 pt-5 col-lg-9 px-lg-4">
@@ -239,42 +241,46 @@
                     Las tuplas son colecciones ordenadas e inmutables de
                     elementos. Esto significa que, una vez creadas, sus valores
                     no pueden modificarse. Se definen principalmente usando
-                    paréntesis <code class="language-python">()</code> y pueden contener elementos de
-                    diferentes tipos, incluyendo objetos como listas o
-                    diccionarios. Aunque es posible declararlas sin paréntesis,
-                    esto no se recomienda ya que reduce la legibilidad del
-                    código.
+                    paréntesis <code class="language-python">()</code> y pueden
+                    contener elementos de diferentes tipos, incluyendo objetos
+                    como listas o diccionarios. Aunque es posible declararlas
+                    sin paréntesis, esto no se recomienda ya que reduce la
+                    legibilidad del código.
                   </p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    # Tupla vacía
-                    tupla_vacia = ()
-                    # Tupla con un solo elemento (requiere una coma al final)
-                    tupla_un_elemento = (42,)
-                    # Tupla con varios elementos
-                    tupla_varios = (1, "Hola", 3.14, [1, 2, 3])
-                    # Tupla sin paréntesis (desempaquetado implícito)
-                    tupla_implicita = 1, "Python", True
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        # Tupla vacía
+                        tupla_vacia = ()
+                        # Tupla con un solo elemento (requiere una coma al final)
+                        tupla_un_elemento = (42,)
+                        # Tupla con varios elementos
+                        tupla_varios = (1, "Hola", 3.14, [1, 2, 3])
+                        # Tupla sin paréntesis (desempaquetado implícito)
+                        tupla_implicita = 1, "Python", True
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- Sintaxis para crear tuplas: fin -->
                 <!-- Acceso a Elementos -->
                 <div>
                   <h3>Acceso a Elementos</h3>
                   <p>Se realiza mediante índices (empezando en 0).</p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    tupla = (10, 20, 30, 40)
-                    # Acceder al primer elemento
-                    print(tupla[0])  # Salida: 10
-                    # Acceder al último elemento
-                    print(tupla[-1])  # Salida: 40
-                    # Acceder a un rango
-                    print(tupla[1:])  # Salida: 20, 30, 40
-                    print(tupla[:-2]) # Salida: 10, 20
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        tupla = (10, 20, 30, 40)
+                        # Acceder al primer elemento
+                        print(tupla[0])  # Salida: 10
+                        # Acceder al último elemento
+                        print(tupla[-1])  # Salida: 40
+                        # Acceder a un rango
+                        print(tupla[1:])  # Salida: 20, 30, 40
+                        print(tupla[:-2]) # Salida: 10, 20
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- Acceso a Elementos fin -->
                 <!-- Operaciones Comunes -->
@@ -287,48 +293,58 @@
                   <ul>
                     <li>
                       <span class="fw-bold">Longitud</span>:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        print(len(tupla))  # Salida: 4
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            print(len(tupla))  # Salida: 4
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold">Concatenación</span>:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        tupla1 = (1, 2)
-                        tupla2 = (3, 4)
-                        print(tupla1 + tupla2)  # Salida: (1, 2, 3, 4)
-                        </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            tupla1 = (1, 2)
+                            tupla2 = (3, 4)
+                            print(tupla1 + tupla2)  # Salida: (1, 2, 3, 4)
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold">Repetición</span>:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        tupla = (1, 2)
-                        print(tupla * 3)  # Salida: (1, 2, 1, 2, 1, 2)
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            tupla = (1, 2)
+                            print(tupla * 3)  # Salida: (1, 2, 1, 2, 1, 2)
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold">Pertenencia</span>:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        print(3 in tupla)  # Salida: False
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            print(3 in tupla)  # Salida: False
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold">Desempaquetado</span>:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        tupla = (1, 2, 3)
-                        a, b, c = tupla
-                        print(a, b, c)  # Salida: 1 2 3
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            tupla = (1, 2, 3)
+                            a, b, c = tupla
+                            print(a, b, c)  # Salida: 1 2 3
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -344,21 +360,25 @@
                     <li>
                       <span class="fw-bold">count()</span>: Devuelve cuántas
                       veces aparece un elemento.
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        tupla = (1, 2, 2, 3)
-                        print(tupla.count(2))  # Salida: 2
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            tupla = (1, 2, 2, 3)
+                            print(tupla.count(2))  # Salida: 2
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold">index()</span>: Devuelve el índice
                       de la primera aparición de un elemento.
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        print(tupla.index(2))  # Salida: 1
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            print(tupla.index(2))  # Salida: 1
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -370,15 +390,17 @@
                     Un ejemplo típico del uso de tuplas es para representar
                     coordenadas o datos constantes.
                   </p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    # Coordenadas de un punto
-                    coordenadas = (10.5, 20.3)
-                    # Acceso
-                    x, y = coordenadas
-                    print(f"X: {x}, Y: {y}")  # Salida: X: 10.5, Y: 20.3
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        # Coordenadas de un punto
+                        coordenadas = (10.5, 20.3)
+                        # Acceso
+                        x, y = coordenadas
+                        print(f"X: {x}, Y: {y}")  # Salida: X: 10.5, Y: 20.3
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- Ejemplo Práctico fin -->
                 <!-- Ventajas de las Tuplas -->
@@ -441,19 +463,23 @@
                   <ul>
                     <li>
                       <span class="fw-bold">Usando llaves {}</span>:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        mi_diccionario = {"nombre": "Carlos", "edad": 30, "ciudad": "Bogotá"}
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            mi_diccionario = {"nombre": "Carlos", "edad": 30, "ciudad": "Bogotá"}
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold">Usando la función dict()</span>:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        mi_diccionario = dict(nombre="Carlos", edad=30, ciudad="Bogotá")
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            mi_diccionario = dict(nombre="Carlos", edad=30, ciudad="Bogotá")
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -467,34 +493,41 @@
                       <ul>
                         <li>
                           <span class="fw-bold">Se utiliza la clave</span>:
-                          <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-python" data-prismjs-copy="Copy">
-                            print(mi_diccionario["nombre"])  # Output: Carlos
-                          </code>
-                        </pre>
+                          <div class="ej-sintaxis">
+                            <pre data-src-status="loaded" tabindex="0">
+                              <code class="language-python" data-prismjs-copy="Copy">
+                                print(mi_diccionario["nombre"])  # Output: Carlos
+                              </code>
+                            </pre>
+                          </div>
                         </li>
                         <li>
                           <span class="fw-bold">Usando la función dict()</span>:
                           Si una clave no existe, el método
-                          <code class="language-python">get()</code> devuelve <code class="language-python">None</code> (o un
-                          valor por defecto especificado):
-                          <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-python" data-prismjs-copy="Copy">
-                            print(mi_diccionario.get("profesión", "No especificada"))  # Output: No especificada
-                          </code>
-                        </pre>
+                          <code class="language-python">get()</code> devuelve
+                          <code class="language-python">None</code> (o un valor
+                          por defecto especificado):
+                          <div class="ej-sintaxis">
+                            <pre data-src-status="loaded" tabindex="0">
+                              <code class="language-python" data-prismjs-copy="Copy">
+                                print(mi_diccionario.get("profesión", "No especificada"))  # Output: No especificada
+                              </code>
+                            </pre>
+                          </div>
                         </li>
                       </ul>
                     </li>
                     <li>
                       <span class="fw-bold">Agregar o actualizar elementos</span
                       >:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        mi_diccionario["profesión"] = "Ingeniero"  # Agrega una nueva clave-valor
-                        mi_diccionario["edad"] = 31  # Actualiza el valor de una clave existente
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            mi_diccionario["profesión"] = "Ingeniero"  # Agrega una nueva clave-valor
+                            mi_diccionario["edad"] = 31  # Actualiza el valor de una clave existente
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold">Eliminar elementos</span>:
@@ -502,22 +535,26 @@
                         <li>
                           <span class="fw-bold">Con <del>del</del></span
                           >:
-                          <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-python" data-prismjs-copy="Copy">
-                            del mi_diccionario["ciudad"]
-                          </code>
-                        </pre>
+                          <div class="ej-sintaxis">
+                            <pre data-src-status="loaded" tabindex="0">
+                              <code class="language-python" data-prismjs-copy="Copy">
+                                del mi_diccionario["ciudad"]
+                              </code>
+                            </pre>
+                          </div>
                         </li>
                         <li>
                           <span class="fw-bold"
                             >Con <del>.pop()</del> (devuelve el valor
                             eliminado)</span
                           >:
-                          <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-python" data-prismjs-copy="Copy">
-                            edad = mi_diccionario.pop("edad")
-                          </code>
-                        </pre>
+                          <div class="ej-sintaxis">
+                            <pre data-src-status="loaded" tabindex="0">
+                              <code class="language-python" data-prismjs-copy="Copy">
+                                edad = mi_diccionario.pop("edad")
+                              </code>
+                            </pre>
+                          </div>
                         </li>
                       </ul>
                     </li>
@@ -526,50 +563,60 @@
                       <ul>
                         <li>
                           <span class="fw-bold">Claves</span>:
-                          <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-python" data-prismjs-copy="Copy">
-                            for clave in mi_diccionario:
-                            print(clave)
-                          </code>
-                        </pre>
+                          <div class="ej-sintaxis">
+                            <pre data-src-status="loaded" tabindex="0">
+                              <code class="language-python" data-prismjs-copy="Copy">
+                                for clave in mi_diccionario:
+                                    print(clave)
+                              </code>
+                            </pre>
+                          </div>
                         </li>
                         <li>
                           <span class="fw-bold">Valores</span>:
-                          <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-python" data-prismjs-copy="Copy">
-                            for valor in mi_diccionario.values():
-                            print(valor)
-                          </code>
-                        </pre>
+                          <div class="ej-sintaxis">
+                            <pre data-src-status="loaded" tabindex="0">
+                              <code class="language-python" data-prismjs-copy="Copy">
+                                for valor in mi_diccionario.values():
+                                    print(valor)
+                              </code>
+                            </pre>
+                          </div>
                         </li>
                         <li>
                           <span class="fw-bold">Pares clave-valor</span>:
-                          <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-python" data-prismjs-copy="Copy">
-                            for valor in mi_diccionario.values():
-                            print(valor)
-                          </code>
-                        </pre>
+                          <div class="ej-sintaxis">
+                            <pre data-src-status="loaded" tabindex="0">
+                              <code class="language-python" data-prismjs-copy="Copy">
+                                for valor in mi_diccionario.values():
+                                    print(valor)
+                              </code>
+                            </pre>
+                          </div>
                         </li>
                       </ul>
                     </li>
                     <li>
                       <span class="fw-bold">Comprobar si una clave existe</span
                       >:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        if "nombre" in mi_diccionario:
-                        print("La clave 'nombre' está en el diccionario.")
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            if "nombre" in mi_diccionario:
+                                print("La clave 'nombre' está en el diccionario.")
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold">Copiar un diccionario</span>:
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        nuevo_diccionario = mi_diccionario.copy()
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            nuevo_diccionario = mi_diccionario.copy()
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -577,25 +624,27 @@
                 <!-- Ejemplo Completo -->
                 <div>
                   <h3>Ejemplo Completo</h3>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    persona = {
-                      "nombre": "Ana",
-                      "edad": 25,
-                      "ocupación": "Diseñadora"
-                    }
-                    # Acceder y modificar datos
-                    print(persona["nombre"])  # Output: Ana
-                    persona["edad"] += 1  # Incrementar edad
-                    # Agregar nueva información
-                    persona["ciudad"] = "Medellín"
-                    # Iterar sobre el diccionario
-                    for clave, valor in persona.items():
-                        print(f"{clave}: {valor}")
-                    # Eliminar un dato
-                    persona.pop("ocupación")
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        persona = {
+                          "nombre": "Ana",
+                          "edad": 25,
+                          "ocupación": "Diseñadora"
+                        }
+                        # Acceder y modificar datos
+                        print(persona["nombre"])  # Output: Ana
+                        persona["edad"] += 1  # Incrementar edad
+                        # Agregar nueva información
+                        persona["ciudad"] = "Medellín"
+                        # Iterar sobre el diccionario
+                        for clave, valor in persona.items():
+                            print(f"{clave}: {valor}")
+                        # Eliminar un dato
+                        persona.pop("ocupación")
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- Ejemplo Completo fin -->
                 <!-- Métodos Útiles -->
@@ -603,43 +652,52 @@
                   <h3>Métodos Útiles</h3>
                   <ul>
                     <li>
-                      <span class="fw-bold"><code class="language-python">keys()</code></span
+                      <span class="fw-bold"
+                        ><code class="language-python">keys()</code></span
                       >: Devuelve todas las claves.
-                      <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        mi_diccionario = {"gato": "chat", "perro": "chien", "caballo": "cheval"}
-                        for key in mi_diccionario.keys():
-                            print(key, "->", mi_diccionario[key])
-                        # Salida: gato -> chat
-                        # Salida: perro -> chien
-                        # Salida: caballo -> cheval
-                      </code>
-                    </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            mi_diccionario = {"gato": "chat", "perro": "chien", "caballo": "cheval"}
+                            for key in mi_diccionario.keys():
+                                print(key, "->", mi_diccionario[key])
+                            # Salida: gato -> chat
+                            # Salida: perro -> chien
+                            # Salida: caballo -> cheval
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
-                      <span class="fw-bold"><code class="language-python">items()</code></span
+                      <span class="fw-bold"
+                        ><code class="language-python">items()</code></span
                       >: Devuelve pares clave-valor.
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          mi_diccionario = {"gato": "chat", "perro": "chien", "caballo": "cheva
-                          for spanish, french in mi_diccionario.items():
-                              print(spanish, "->", french)
-                          # Salida: gato -> chat
-                          # Salida: perro -> chien
-                          # Salida: caballo -> cheval
-                        </code>
-                      </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            mi_diccionario = {"gato": "chat", "perro": "chien", "caballo": "cheva")
+                            for spanish, french in mi_diccionario.items():
+                                print(spanish, "->", french)
+                            # Salida: gato -> chat
+                            # Salida: perro -> chien
+                            # Salida: caballo -> cheval
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
-                      <span class="fw-bold"><code class="language-python">values()</code></span
+                      <span class="fw-bold"
+                        ><code class="language-python">values()</code></span
                       >: Devuelve todos los valores.
                     </li>
                     <li>
-                      <span class="fw-bold"><code class="language-python">clear()</code></span
+                      <span class="fw-bold"
+                        ><code class="language-python">clear()</code></span
                       >: Elimina todos los elementos.
                     </li>
                     <li>
-                      <span class="fw-bold"><code class="language-python">update()</code></span
+                      <span class="fw-bold"
+                        ><code class="language-python">update()</code></span
                       >: Combina otro diccionario o pares clave-valor.
                     </li>
                   </ul>
@@ -651,7 +709,7 @@
           </article>
           <!--  Tuplas y Diccionarios en Python  -->
 
-          <!-- -------------------------------- comentarios -------------------------------- -->
+          <!--  comentarios  -->
           <article class="row pt-5" id="comments">
             <h2>COMENTARIOS</h2>
             <p>
@@ -720,9 +778,9 @@
               </form>
             </div>
           </article>
-          <!-- -------------------------------- fin comentarios -------------------------------- -->
+          <!--  fin comentarios  -->
         </section>
-        <!-- -------------------------------- barra lateral -------------------------------- -->
+        <!--  barra lateral  -->
         <aside class="col-lg-3 d-none d-lg-block pt-5">
           <h1>En Este Artículo</h1>
           <ul class="list-group">
@@ -740,86 +798,11 @@
             </li>
           </ul>
         </aside>
-        <!-- -------------------------------- fin barra lateral -------------------------------- -->
+        <!--  fin barra lateral  -->
       </main>
-      <!-- -------------------------------- fin principal -------------------------------- -->
+      <!--  fin principal  -->
     </div>
     <!--  Principal Fin  -->
-
-    <!-- -------------------------------- pie de pagina -------------------------------- -->
-    <footer class="row border-top border-1 m-1 mt-auto">
-      <div class="row">
-        <!-- contacto -->
-        <address class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Contacto</div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-envelope-at fs-3"></i>
-            <span class="ms-3">
-              <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com"
-                >ehfeduardo@gmail.com</a
-              >
-            </span>
-          </div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-geo-alt fs-3"></i>
-            <span class="ms-3">Bogotá D. C. - Colombia</span>
-          </div>
-        </address>
-        <!-- Derechos de autor -->
-        <div
-          class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100"
-        >
-          <div>
-            <i class="bi bi-c-circle fs-5"></i>
-          </div>
-          <div class="ms-2">All Rights Reserved 2025</div>
-        </div>
-        <!-- redes sociales -->
-        <div class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Redes Sociales</div>
-          <div class="d-flex justify-content-evenly align-items-center gap-5">
-            <div>
-              <a
-                href="https://www.linkedin.com/in/eduardoherreraf/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-linkedin fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://github.com/eduardoherreraf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-github fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.facebook.com/eduardoherreraforero/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-facebook fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://twitter.com/ehfeduardo/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-twitter-x fs-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex align-items-center justify-content-center gap-2"></div>
-    </footer>
-    <!-- -------------------------------- pie de pagina fin -------------------------------- -->
 
     <!-- button to top -->
     <button onclick="topFunction()" id="myBtnScroll" title="Go to top">

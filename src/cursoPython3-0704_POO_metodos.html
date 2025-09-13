@@ -162,7 +162,7 @@
     </nav>
     <!-- Barra deNavegación -->
 
-    <!-- -------------------------------- principal -------------------------------- -->
+    <!--  principal  -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
         <section class="pb-3 pt-5 col-lg-9 px-lg-4">
@@ -236,16 +236,18 @@
                         >: Se utiliza
                         <code class="language-python">self</code> para leer o
                         modificar los atributos que pertenecen a la instancia.
-                        <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    class Persona:
-                        def __init__(self, nombre, edad):
-                            self.nombre = nombre  # Atributo de la instancia
-                            self.edad = edad      # Atributo de la instancia
-                        def mostrar_nombre(self):
-                            print(f"Mi nombre es {self.nombre}")  # Usando self para acceder a nombre
-                  </code>
-                </pre>
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            class Persona:
+                                def __init__(self, nombre, edad):
+                                    self.nombre = nombre  # Atributo de la instancia
+                                    self.edad = edad      # Atributo de la instancia
+                                def mostrar_nombre(self):
+                                    print(f"Mi nombre es {self.nombre}")  # Usando self para acceder a nombre
+                          </code>
+                        </pre>
+                        </div>
                       </li>
                       <li>
                         <span class="fw-bold"
@@ -253,15 +255,17 @@
                         >: <code class="language-python">self</code>
                         permite invocar otros métodos de la clase dentro de un
                         método.
-                        <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    class Calculadora:
-                        def suma(self, a, b):
-                            return a + b
-                        def cuadrado_de_suma(self, a, b):
-                            return self.suma(a, b) ** 2  # Llama al método suma
-                  </code>
-                </pre>
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
+                            <code class="language-python" data-prismjs-copy="Copy">
+                              class Calculadora:
+                                  def suma(self, a, b):
+                                      return a + b
+                                  def cuadrado_de_suma(self, a, b):
+                                      return self.suma(a, b) ** 2  # Llama al método suma
+                            </code>
+                          </pre>
+                        </div>
                       </li>
                       <li>
                         <span class="fw-bold"
@@ -269,29 +273,33 @@
                         >: Usar <code class="language-python">self</code>
                         permite distinguir entre las variables locales dentro de
                         un método y los atributos de la instancia.
-                        <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    class Producto:
-                        def __init__(self, precio):
-                            self.precio = precio  # Atributo de instancia
-                        def actualizar_precio(self, precio):
-                            self.precio = precio  # Se actualiza el atributo, no una variable local
-                  </code>
-                </pre>
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
+                            <code class="language-python" data-prismjs-copy="Copy">
+                              class Producto:
+                                  def __init__(self, precio):
+                                      self.precio = precio  # Atributo de instancia
+                                  def actualizar_precio(self, precio):
+                                      self.precio = precio  # Se actualiza el atributo, no una variable local
+                            </code>
+                          </pre>
+                        </div>
                       </li>
                       <li>
                         <span class="fw-bold"
                           >Asociar datos a la instancia actual</span
                         >: Se utiliza para asignar valores únicos a cada
                         instancia de la clase.
-                        <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    class Vehiculo:
-                        def __init__(self, marca, modelo):
-                            self.marca = marca
-                            self.modelo = modelo
-                  </code>
-                </pre>
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
+                            <code class="language-python" data-prismjs-copy="Copy">
+                              class Vehiculo:
+                                  def __init__(self, marca, modelo):
+                                      self.marca = marca
+                                      self.modelo = modelo
+                            </code>
+                          </pre>
+                        </div>
                       </li>
                     </ul>
                     <p><strong>Resumen</strong>:</p>
@@ -357,7 +365,8 @@
                   <!-- Sintaxis de un Constructor -->
                   <div>
                     <h4>Sintaxis de un Constructor</h4>
-                    <pre data-src-status="loaded" tabindex="0">
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       class ClaseEjemplo:
                           def __init__(self, parametro1, parametro2):
@@ -365,6 +374,7 @@
                               self.atributo2 = parametro2
                     </code>
                   </pre>
+                    </div>
                     <p>En este ejemplo:</p>
                     <ul>
                       <li>
@@ -386,7 +396,8 @@
                   <!-- Ejemplo Práctico -->
                   <div>
                     <h4>Ejemplo Práctico</h4>
-                    <pre data-src-status="loaded" tabindex="0">
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       class Persona:
                       def __init__(self, nombre, edad):
@@ -402,6 +413,7 @@
                       persona1.saludar()      # Salida: Hola, mi nombre es Juan y tengo 30 años.
                     </code>
                   </pre>
+                    </div>
                   </div>
                   <!-- Ejemplo Práctico fin -->
                   <!-- Constructor sin Parámetros -->
@@ -412,7 +424,8 @@
                       definirse sin parámetros adicionales, aparte de
                       <code class="language-python">self</code>:
                     </p>
-                    <pre data-src-status="loaded" tabindex="0">
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       class Ejemplo:
                       def __init__(self):
@@ -421,6 +434,7 @@
                       print(objeto.valor)  # Salida: 0
                     </code>
                   </pre>
+                    </div>
                   </div>
                   <!-- Constructor sin Parámetros fin -->
                   <!-- Notas Importantes -->
@@ -432,17 +446,19 @@
                           >Constructores con valores predeterminados</span
                         >: Los parámetros pueden tener valores por defecto, lo
                         que permite crear objetos con parámetros opcionales.
-                        <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          class Persona:
-                          def __init__(self, nombre="Anónimo", edad=0):
-                              self.nombre = nombre
-                              self.edad = edad
-                          persona2 = Persona()
-                          print(persona2.nombre)  # Salida: Anónimo
-                          print(persona2.edad)    # Salida: 0
-                        </code>
-                      </pre>
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
+                            <code class="language-python" data-prismjs-copy="Copy">
+                              class Persona:
+                              def __init__(self, nombre="Anónimo", edad=0):
+                                  self.nombre = nombre
+                                  self.edad = edad
+                              persona2 = Persona()
+                              print(persona2.nombre)  # Salida: Anónimo
+                              print(persona2.edad)    # Salida: 0
+                            </code>
+                          </pre>
+                        </div>
                       </li>
                       <li>
                         <span class="fw-bold">Sobrecarga de Constructores</span
@@ -451,16 +467,18 @@
                         con valores predeterminados o manejando la lógica dentro
                         del método
                         <code class="language-python">__init__</code>.
-                        <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          class Persona:
-                              def __init__(self, nombre=None):
-                                  if nombre:
-                                      self.nombre = nombre
-                                  else:
-                                      self.nombre = "Desconocido"
-                        </code>
-                      </pre>
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
+                            <code class="language-python" data-prismjs-copy="Copy">
+                              class Persona:
+                                  def __init__(self, nombre=None):
+                                      if nombre:
+                                          self.nombre = nombre
+                                      else:
+                                          self.nombre = "Desconocido"
+                            </code>
+                          </pre>
+                        </div>
                       </li>
                     </ul>
                     <p>
@@ -487,17 +505,19 @@
                     <code class="language-python">self</code>, ya que Python lo
                     asigna automáticamente.
                   </p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    class Classy:
-                    def method(self):
-                        print("método")
-                    # Crear una instancia de la clase
-                    obj = Classy()
-                    # Llamar al método sin argumentos
-                    obj.method()     # Salida: método
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        class Classy:
+                        def method(self):
+                            print("método")
+                        # Crear una instancia de la clase
+                        obj = Classy()
+                        # Llamar al método sin argumentos
+                        obj.method()     # Salida: método
+                      </code>
+                    </pre>
+                  </div>
                   <div>Explicación:</div>
                   <ul>
                     <li>
@@ -566,17 +586,19 @@
                     al método, se deben proporcionar los argumentos
                     correspondientes para esos parámetros. Ejemplo:
                   </p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    class Ejemplo:
-                    def saludo(self, nombre):
-                        print(f"Hola, {nombre}.")
-                    # Crear una instancia de la clase
-                    obj = Ejemplo()
-                    # Llamar al método pasando un argumento adicional
-                    obj.saludo("Juan")     # Salida: Hola, Juan.
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        class Ejemplo:
+                        def saludo(self, nombre):
+                            print(f"Hola, {nombre}.")
+                        # Crear una instancia de la clase
+                        obj = Ejemplo()
+                        # Llamar al método pasando un argumento adicional
+                        obj.saludo("Juan")     # Salida: Hola, Juan.
+                      </code>
+                    </pre>
+                  </div>
                   <p>Reglas Clave:</p>
                   <ul>
                     <li>
@@ -588,36 +610,42 @@
                         </li>
                         <li>Agregar otros parámetros según sea necesario.</li>
                       </ul>
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          def metodo(self, param1, param2):
-                              # Código del método
-                        </code>
-                      </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            def metodo(self, param1, param2):
+                                # Código del método
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold">Invocación del método</span>:
                       Proporcionar los valores correspondientes a los parámetros
                       adicionales al llamar al método.
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          obj.metodo(valor1, valor2)
-                        </code>
-                      </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            obj.metodo(valor1, valor2)
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                     <li>
                       <span class="fw-bold"
                         >Manejo de parámetros opcionales</span
                       >: Se pueden usar valores predeterminados en los
                       parámetros para hacerlos opcionales.
-                      <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          def metodo(self, param1="valor_por_defecto"):
-                              print(param1)
-                          obj.metodo()               # Salida: valor_por_defecto
-                          obj.metodo("Otro valor")   # Salida: Otro valor
-                        </code>
-                      </pre>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            def metodo(self, param1="valor_por_defecto"):
+                                print(param1)
+                            obj.metodo()               # Salida: valor_por_defecto
+                            obj.metodo("Otro valor")   # Salida: Otro valor
+                          </code>
+                        </pre>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -702,17 +730,19 @@
                         crea un atributo
                         <code class="language-python">__dict__</code> por
                         defecto, a menos que se declare explícitamente.
-                        <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          class Persona:
-                              __slots__ = ['nombre', 'edad']
-                              def __init__(self, nombre, edad):
-                                  self.nombre = nombre
-                                  self.edad = edad
-                          p = Persona("Ana", 25)
-                          print(p.__dict__)  # AttributeError: 'Persona' object has no attribute '__dict__'
-                        </code>
-                      </pre>
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
+                            <code class="language-python" data-prismjs-copy="Copy">
+                              class Persona:
+                                  __slots__ = ['nombre', 'edad']
+                                  def __init__(self, nombre, edad):
+                                      self.nombre = nombre
+                                      self.edad = edad
+                              p = Persona("Ana", 25)
+                              print(p.__dict__)  # AttributeError: 'Persona' object has no attribute '__dict__'
+                            </code>
+                          </pre>
+                        </div>
                       </li>
                       <li>
                         <span class="fw-bold"
@@ -735,14 +765,16 @@
                       disponible, pero representa los atributos de la clase, no
                       de las instancias.
                     </p>
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      class Animal:
-                          especie = "Mamífero"
-                      print(Animal.__dict__)
-                      # Muestra un diccionario con los atributos y métodos de la clase, incluidos los métodos especiales como `__init__`.
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          class Animal:
+                              especie = "Mamífero"
+                          print(Animal.__dict__)
+                          # Muestra un diccionario con los atributos y métodos de la clase, incluidos los métodos especiales como `__init__`.
+                        </code>
+                      </pre>
+                    </div>
                     <p>
                       En resumen,
                       <code class="language-python">__dict__</code> es una
@@ -796,16 +828,18 @@
                       Se usa comúnmente en combinación con la siguiente
                       estructura:
                     </p>
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                          if __name__ == "__main__":
-                          # Código que solo se ejecutará si este archivo se ejecuta directamente
-                          print("Este archivo se ejecuta directamente.")
-                      else:
-                          # Código que se ejecuta si el archivo es importado como un módulo
-                          print("Este archivo ha sido importado.")
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                              if __name__ == "__main__":
+                              # Código que solo se ejecutará si este archivo se ejecuta directamente
+                              print("Este archivo se ejecuta directamente.")
+                          else:
+                              # Código que se ejecuta si el archivo es importado como un módulo
+                              print("Este archivo ha sido importado.")
+                        </code>
+                      </pre>
+                    </div>
                   </div>
                   <!-- Uso típico de __name__ fin -->
                   <!-- ¿Por qué se usa? -->
@@ -837,42 +871,50 @@
                       <code class="language-python">utilidades.py</code> con el
                       siguiente contenido:
                     </p>
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      def saludar():
-                          print("Hola desde utilidades!")
-                          if __name__ == "__main__":
-                          print("Ejecutando utilidades.py directamente")
-                          saludar()
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          def saludar():
+                              print("Hola desde utilidades!")
+                              if __name__ == "__main__":
+                              print("Ejecutando utilidades.py directamente")
+                              saludar()
+                        </code>
+                      </pre>
+                    </div>
                     <p>
                       Si se ejecuta
                       <code class="language-python">utilidades.py</code>
                       directamente, se verá:
                     </p>
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      Ejecutando utilidades.py directamente
-                      Hola desde utilidades!
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          Ejecutando utilidades.py directamente
+                          Hola desde utilidades!
+                        </code>
+                      </pre>
+                    </div>
                     <p>
                       Pero si se importa este archivo en otro archivo, por
                       ejemplo, con:
                     </p>
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      import utilidades
-                      utilidades.saludar()
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          import utilidades
+                          utilidades.saludar()
+                        </code>
+                      </pre>
+                    </div>
                     <p>El resultado será únicamente:</p>
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      Hola desde utilidades!
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          Hola desde utilidades!
+                        </code>
+                      </pre>
+                    </div>
                     <p>
                       En este caso, el bloque bajo
                       <code class="language-python"
@@ -915,16 +957,18 @@
                       </li>
                     </ul>
                     <p>Ejemplo:</p>
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      x = 10
-                      y = "Hola"
-                      z = [1, 2, 3]
-                      print(type(x))  # Salida: &lt;class 'int'>
-                      print(type(y))  # Salida: &lt; 'str'>
-                      print(type(z))  # Salida: &lt;class 'list'>
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          x = 10
+                          y = "Hola"
+                          z = [1, 2, 3]
+                          print(type(x))  # Salida: &lt;class 'int'>
+                          print(type(y))  # Salida: &lt; 'str'>
+                          print(type(z))  # Salida: &lt;class 'list'>
+                        </code>
+                      </pre>
+                    </div>
                   </div>
                   <!-- Obtener el Tipo de un Objeto fin -->
                   <!-- Crear Nuevas Clases Dinámicamente -->
@@ -956,15 +1000,17 @@
                         la clase.
                       </li>
                     </ul>
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      # Crear una clase llamada MiClase con un método saludar
-                      MiClase = type('MiClase', (object,), {'saludar': lambda self: "Hola, soy una clase dinámica"})
-                      # Crear una instancia de la clase
-                      obj = MiClase()
-                      print(obj.saludar())  # Salida: Hola, soy una clase dinámica
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          # Crear una clase llamada MiClase con un método saludar
+                          MiClase = type('MiClase', (object,), {'saludar': lambda self: "Hola, soy una clase dinámica"})
+                          # Crear una instancia de la clase
+                          obj = MiClase()
+                          print(obj.saludar())  # Salida: Hola, soy una clase dinámica
+                        </code>
+                      </pre>
+                    </div>
                   </div>
                   <!-- Crear Nuevas Clases Dinámicamente fin -->
                   <!-- Usos Comunes de type() en Programación Diaria -->
@@ -995,11 +1041,13 @@
                       este permite verificar si un objeto es de un tipo
                       específico o de una subclase de dicho tipo:
                     </p>
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      print(isinstance(10, int))  # Salida: True
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          print(isinstance(10, int))  # Salida: True
+                        </code>
+                      </pre>
+                    </div>
                   </div>
                   <!-- Nota Importante fin -->
                 </div>
@@ -1030,13 +1078,15 @@
                         donde se definió la clase.
                       </li>
                     </ul>
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      class MiClase:
-                          pass
-                      print(MiClase.__module__)  # Salida: __main__
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          class MiClase:
+                              pass
+                          print(MiClase.__module__)  # Salida: __main__
+                        </code>
+                      </pre>
+                    </div>
                     <p>
                       En este caso:
                       <code class="language-python">__module__</code> de
@@ -1056,16 +1106,18 @@
                         >: Es útil para saber en qué módulo está definida una
                         clase, especialmente en proyectos grandes o cuando se
                         importan clases desde otros módulos.
-                        <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          # archivo_modulo.py
-                          class ClaseExterna:
-                              pass
-                          # script_principal.py
-                          from archivo_modulo import ClaseExterna
-                          print(ClaseExterna.__module__)  # Salida: archivo_modulo
-                        </code>
-                      </pre>
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
+                            <code class="language-python" data-prismjs-copy="Copy">
+                              # archivo_modulo.py
+                              class ClaseExterna:
+                                  pass
+                              # script_principal.py
+                              from archivo_modulo import ClaseExterna
+                              print(ClaseExterna.__module__)  # Salida: archivo_modulo
+                            </code>
+                          </pre>
+                        </div>
                       </li>
                       <li>
                         <span class="fw-bold">Depuración y registro</span>:
@@ -1084,15 +1136,17 @@
                           >Comprobaciones de pertenencia</span
                         >: Se puede usar para verificar si un objeto pertenece a
                         un módulo específico.
-                        <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          def pertenece_a_modulo(objeto, modulo):
-                          return objeto.__class__.__module__ == modulo
-                          class Prueba:
-                              pass
-                          print(pertenece_a_modulo(Prueba(), "__main__"))  # Salida: True
-                        </code>
-                      </pre>
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
+                            <code class="language-python" data-prismjs-copy="Copy">
+                              def pertenece_a_modulo(objeto, modulo):
+                              return objeto.__class__.__module__ == modulo
+                              class Prueba:
+                                  pass
+                              print(pertenece_a_modulo(Prueba(), "__main__"))  # Salida: True
+                            </code>
+                          </pre>
+                        </div>
                       </li>
                     </ul>
                   </div>
@@ -1186,16 +1240,18 @@
                   <!-- Ejemplo Práctico de Uso de __main__ -->
                   <div>
                     <h4>Ejemplo Práctico de Uso de __main__</h4>
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      # Archivo modulo.py
-                      def funcion_util():
-                          print("Esta función puede ser utilizada desde otros módulos.")
-                      if __name__ == "__main__":
-                          print("Ejecutando como un script principal.")
-                          funcion_util()
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          # Archivo modulo.py
+                          def funcion_util():
+                              print("Esta función puede ser utilizada desde otros módulos.")
+                          if __name__ == "__main__":
+                              print("Ejecutando como un script principal.")
+                              funcion_util()
+                        </code>
+                      </pre>
+                    </div>
                     <!-- Comportamiento -->
                     <div>
                       <h5>Comportamiento</h5>
@@ -1203,27 +1259,31 @@
                         <li>
                           <span class="fw-bold">Si se ejecuta directamente</span
                           >:
-                          <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    python modulo.py
-                    """
-                    Salida: Ejecutando como un script principal.
-                    Esta función puede ser utilizada desde otros módulos.
-                    """
-                  </code>
-                </pre>
+                          <div class="ej-sintaxis">
+                            <pre data-src-status="loaded" tabindex="0">
+                              <code class="language-python" data-prismjs-copy="Copy">
+                                python modulo.py
+                                """
+                                Salida: Ejecutando como un script principal.
+                                Esta función puede ser utilizada desde otros módulos.
+                                """
+                              </code>
+                            </pre>
+                          </div>
                         </li>
                         <li>
                           <span class="fw-bold"
                             >Si se importa en otro script</span
                           >:
-                          <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-python" data-prismjs-copy="Copy">
-                            import modulo
-                            modulo.funcion_util()
-                            # Salida: Esta función puede ser utilizada desde otros módulos.
-                          </code>
-                        </pre>
+                          <div class="ej-sintaxis">
+                            <pre data-src-status="loaded" tabindex="0">
+                              <code class="language-python" data-prismjs-copy="Copy">
+                                import modulo
+                                modulo.funcion_util()
+                                # Salida: Esta función puede ser utilizada desde otros módulos.
+                              </code>
+                            </pre>
+                          </div>
                           El bloque
                           <code class="language-python"
                             >if __name__ == "__main__"</code
@@ -1319,23 +1379,25 @@
                   <!-- Ejemplo de Uso -->
                   <div>
                     <h4>Ejemplo de Uso</h4>
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      # Definición de algunas clases
-                      class A:
-                          pass
-                      class B:
-                          pass
-                      class C(A, B):  # C hereda de A y B
-                          pass
-                      # Inspección de las bases
-                      print(C.__bases__)
-                      # Salida: (&lt;class '__main__.A'>, &lt;class '__main__.B'>)
-                      print(A.__bases__)
-                      # Salida: (&lt;class 'object'>,)
-                      # A hereda implícitamente de "object", la raíz de todas las clases
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          # Definición de algunas clases
+                          class A:
+                              pass
+                          class B:
+                              pass
+                          class C(A, B):  # C hereda de A y B
+                              pass
+                          # Inspección de las bases
+                          print(C.__bases__)
+                          # Salida: (&lt;class '__main__.A'>, &lt;class '__main__.B'>)
+                          print(A.__bases__)
+                          # Salida: (&lt;class 'object'>,)
+                          # A hereda implícitamente de "object", la raíz de todas las clases
+                        </code>
+                      </pre>
+                    </div>
                   </div>
                   <!-- Ejemplo de Uso fin -->
                   <!-- Detalles Importantes -->
@@ -1366,16 +1428,18 @@
                         <span class="fw-bold"
                           >Verificar la herencia en un programa</span
                         >:
-                        <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-python" data-prismjs-copy="Copy">
-                          # Crear un código que verifique si una clase tiene una clase base específica
-                          class Animal:
-                              pass
-                          class Perro(Animal):
-                              pass
-                          print(Animal in Perro.__bases__)  # Salida: True
-                        </code>
-                      </pre>
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
+                            <code class="language-python" data-prismjs-copy="Copy">
+                              # Crear un código que verifique si una clase tiene una clase base específica
+                              class Animal:
+                                  pass
+                              class Perro(Animal):
+                                  pass
+                              print(Animal in Perro.__bases__)  # Salida: True
+                            </code>
+                          </pre>
+                        </div>
                       </li>
                       <li>
                         <span class="fw-bold"
@@ -1446,18 +1510,20 @@
                     </li>
                   </ul>
                   <p>Ejemplo:</p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    class Persona:
-                        nombre = "Juan"
-                    persona = Persona()
-                    # Reflexión para obtener el valor de un atributo
-                    print(getattr(persona, 'nombre'))  # Salida: Juan
-                    # Reflexión para modificar un atributo
-                    setattr(persona, 'nombre', 'María')
-                    print(persona.nombre)  # Salida: María
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        class Persona:
+                            nombre = "Juan"
+                        persona = Persona()
+                        # Reflexión para obtener el valor de un atributo
+                        print(getattr(persona, 'nombre'))  # Salida: Juan
+                        # Reflexión para modificar un atributo
+                        setattr(persona, 'nombre', 'María')
+                        print(persona.nombre)  # Salida: María
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- Reflexión fin -->
                 <!-- Introspección -->
@@ -1530,18 +1596,20 @@
                     </li>
                   </ul>
                   <p>Ejemplo:</p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    import inspect
-                    def ejemplo_funcion(param):
-                        return param * 2
-                    # Introspección básica
-                    print(type(ejemplo_funcion))  # Salida: &lt;class 'function'>
-                    print(callable(ejemplo_funcion))  # Salida: True
-                    # Introspección avanzada con inspect
-                    print(inspect.signature(ejemplo_funcion))  # Salida: (param)
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        import inspect
+                        def ejemplo_funcion(param):
+                            return param * 2
+                        # Introspección básica
+                        print(type(ejemplo_funcion))  # Salida: &lt;class 'function'>
+                        print(callable(ejemplo_funcion))  # Salida: True
+                        # Introspección avanzada con inspect
+                        print(inspect.signature(ejemplo_funcion))  # Salida: (param)
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- Introspección fin -->
                 <!-- Diferencias entre Reflexión e Introspección -->
@@ -1604,7 +1672,7 @@
             </div>
           </article>
           <!--  POO: Métodos en Python  -->
-          <!-- -------------------------------- comentarios -------------------------------- -->
+          <!--  comentarios  -->
           <article class="row pt-5" id="comments">
             <h2>COMENTARIOS</h2>
             <p>
@@ -1673,9 +1741,9 @@
               </form>
             </div>
           </article>
-          <!-- -------------------------------- fin comentarios -------------------------------- -->
+          <!--  fin comentarios  -->
         </section>
-        <!-- -------------------------------- barra lateral -------------------------------- -->
+        <!--  barra lateral  -->
         <aside class="col-lg-3 d-none d-lg-block pt-5">
           <h1>En Este Artículo</h1>
           <ul class="list-group">
@@ -1698,86 +1766,11 @@
             </li>
           </ul>
         </aside>
-        <!-- -------------------------------- fin barra lateral -------------------------------- -->
+        <!--  fin barra lateral  -->
       </main>
-      <!-- -------------------------------- fin principal -------------------------------- -->
+      <!--  fin principal  -->
     </div>
     <!--  Principal Fin  -->
-
-    <!-- -------------------------------- pie de pagina -------------------------------- -->
-    <footer class="row border-top border-1 m-1 mt-auto">
-      <div class="row">
-        <!-- contacto -->
-        <address class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Contacto</div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-envelope-at fs-3"></i>
-            <span class="ms-3">
-              <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com"
-                >ehfeduardo@gmail.com</a
-              >
-            </span>
-          </div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-geo-alt fs-3"></i>
-            <span class="ms-3">Bogotá D. C. - Colombia</span>
-          </div>
-        </address>
-        <!-- Derechos de autor -->
-        <div
-          class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100"
-        >
-          <div>
-            <i class="bi bi-c-circle fs-5"></i>
-          </div>
-          <div class="ms-2">All Rights Reserved 2025</div>
-        </div>
-        <!-- redes sociales -->
-        <div class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Redes Sociales</div>
-          <div class="d-flex justify-content-evenly align-items-center gap-5">
-            <div>
-              <a
-                href="https://www.linkedin.com/in/eduardoherreraf/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-linkedin fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://github.com/eduardoherreraf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-github fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.facebook.com/eduardoherreraforero/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-facebook fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://twitter.com/ehfeduardo/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-twitter-x fs-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex align-items-center justify-content-center gap-2"></div>
-    </footer>
-    <!-- -------------------------------- pie de pagina fin -------------------------------- -->
 
     <!-- button to top -->
     <button onclick="topFunction()" id="myBtnScroll" title="Go to top">

@@ -94,7 +94,7 @@
 
   <body>
     <!-- Barra deNavegación -->
-<nav
+    <nav
       class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
     >
       <div class="container-fluid">
@@ -147,7 +147,9 @@
               <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog"
+              <a
+                class="nav-link mx-1 publicaciones-activo"
+                href="index.html#blog"
                 >PUBLICACIONES</a
               >
             </li>
@@ -160,7 +162,7 @@
     </nav>
     <!-- Barra deNavegación -->
 
-    <!-- -------------------------------- principal -------------------------------- -->
+    <!--  principal  -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
         <section class="pb-3 pt-5 col-lg-9 px-lg-4">
@@ -308,13 +310,14 @@
                     Se inician con el símbolo <kbd>#</kbd>. Todo el texto
                     después del # hasta el final de la línea se ignora.
                   </p>
-                  <pre
-                    data-src-status="loaded"
-                    tabindex="0"
-                  ><code class="language-python" data-prismjs-copy="Copy">
-# Esto es un comentario de una línea
-x = 5  # Aquí asignamos el valor 5 a la variable x
-                  </code></pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        # Esto es un comentario de una línea
+                        x = 5  # Aquí asignamos el valor 5 a la variable x
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- Comentarios de una Sola Línea fin -->
                 <!-- Comentarios de Múltiples Líneas -->
@@ -329,15 +332,16 @@ x = 5  # Aquí asignamos el valor 5 a la variable x
                     comentarios (ya que Python los interpreta como una cadena de
                     texto), permiten describir bloques de código más extensos.
                   </p>
-                  <pre
-                    data-src-status="loaded"
-                    tabindex="0"
-                  ><code class="language-python" data-prismjs-copy="Copy">
-"""
-Este es un comentario
-que abarca múltiples líneas.
-"""
-                  </code></pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        """
+                        Este es un comentario
+                        que abarca múltiples líneas.
+                        """
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- Comentarios de Múltiples Líneas fin -->
               </div>
@@ -345,26 +349,28 @@ que abarca múltiples líneas.
               <!-- Ejemplo Completo -->
               <div id="ejemploCompleto" class="mt-5">
                 <h2 class="mt-1">Ejemplo Completo</h2>
-                <pre
-                  data-src-status="loaded"
-                  tabindex="0"
-                ><code class="language-py" data-prismjs-copy="Copy">
-  def factorial(n):
-  """
-  Calcula el factorial de un número.
-  Args:
-    n: Un número entero no negativo.
-  Returns:
-    El factorial de n.
-  """
-  if n == 0:
-    return 1
-  else:
-    return n * factorial(n-1)
-# Ejemplo de uso:
-resultado = factorial(5)
-print(resultado)  # Imprime 120
-                </code></pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      def factorial(n):
+                          """
+                          Calcula el factorial de un número.
+                          Args:
+                          n: Un número entero no negativo.
+                          Returns:
+                          El factorial de n.
+                          """
+                          if n == 0:
+                              return 1
+                          else:
+                              return n * factorial(n-1)
+                          
+                          # Ejemplo de uso:
+                          resultado = factorial(5)
+                          print(resultado)  # Imprime 120
+                    </code>
+                  </pre>
+                </div>
               </div>
               <!-- Ejemplo Completo Fin -->
               <!-- Variables Autodocumentadas -->
@@ -392,17 +398,18 @@ print(resultado)  # Imprime 120
                       (por ejemplo, snake_case para variables).
                     </li>
                   </ul>
-                  <pre
-                    data-src-status="loaded"
-                    tabindex="0"
-                  ><code class="language-python" data-prismjs-copy="Copy">
-# Buen ejemplo:
-nombre_completo = "John Doe"
-edad = 30
-# Mal ejemplo:
-x = "John Doe"
-y = 30
-                </code></pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        # Buen ejemplo:
+                        nombre_completo = "John Doe"
+                        edad = 30
+                        # Mal ejemplo:
+                        x = "John Doe"
+                        y = 30
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- Nombres Descriptivos fin -->
                 <!-- Comentarios Explicativos -->
@@ -421,13 +428,14 @@ y = 30
                       >: Para explicaciones más detalladas, utilice comentarios
                       de varias líneas.
                     </li>
-                    <pre
-                      data-src-status="loaded"
-                      tabindex="0"
-                    ><code class="language-python" data-prismjs-copy="Copy">
-nombre_completo = "John Doe"  # Nombre completo de la persona
-edad = 30  # Edad de la persona en años
-                  </code></pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          nombre_completo = "John Doe"  # Nombre completo de la persona
+                          edad = 30  # Edad de la persona en años
+                        </code>
+                      </pre>
+                    </div>
                   </ul>
                 </div>
                 <!-- Comentarios Explicativos fin -->
@@ -439,16 +447,17 @@ edad = 30  # Edad de la persona en años
                     docstrings también pueden ser útiles para documentar
                     variables globales o constantes.
                   </p>
-                  <pre
-                    data-src-status="loaded"
-                    tabindex="0"
-                  ><code class="language-python" data-prismjs-copy="Copy">
-                  """
-                  Este módulo contiene constantes relacionadas con la configuración de la aplicación.
-                  """
-                  VERSION_MAYOR = 1
-                  VERSION_MENOR = 0
-                  </code></pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        """
+                        Este módulo contiene constantes relacionadas con la configuración de la aplicación.
+                        """
+                        VERSION_MAYOR = 1
+                        VERSION_MENOR = 0
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- Docstrings para Módulos, Funciones y Clases fin -->
                 <!-- Tipo Sugerido (Type Hints) -->
@@ -459,13 +468,14 @@ edad = 30  # Edad de la persona en años
                     hints pueden ayudar a entender el tipo de datos esperado
                     para una variable.
                   </p>
-                  <pre
-                    data-src-status="loaded"
-                    tabindex="0"
-                  ><code class="language-python" data-prismjs-copy="Copy">
-                nombre_completo: str = "John Doe"
-                edad: int = 30
-                </code></pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        nombre_completo: str = "John Doe"
+                        edad: int = 30
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- Tipo Sugerido (Type Hints) fin -->
                 <!-- Considerar el Uso de Bibliotecas de Documentación -->
@@ -532,7 +542,7 @@ edad = 30  # Edad de la persona en años
           </article>
           <!--  Comentarios en Python  -->
 
-          <!-- -------------------------------- comentarios -------------------------------- -->
+          <!--  comentarios  -->
           <article class="row pt-5" id="comments">
             <h2>COMENTARIOS</h2>
             <p>
@@ -601,9 +611,9 @@ edad = 30  # Edad de la persona en años
               </form>
             </div>
           </article>
-          <!-- -------------------------------- fin comentarios -------------------------------- -->
+          <!--  fin comentarios  -->
         </section>
-        <!-- -------------------------------- barra lateral -------------------------------- -->
+        <!--  barra lateral  -->
         <aside class="col-lg-3 d-none d-lg-block pt-5">
           <div>
             <h1>En Este Artículo</h1>
@@ -653,86 +663,11 @@ edad = 30  # Edad de la persona en años
             </ul>
           </div>
         </aside>
-        <!-- -------------------------------- fin barra lateral -------------------------------- -->
+        <!--  fin barra lateral  -->
       </main>
-      <!-- -------------------------------- fin principal -------------------------------- -->
+      <!--  fin principal  -->
     </div>
     <!--  Principal Fin  -->
-
-    <!-- -------------------------------- pie de pagina -------------------------------- -->
-    <footer class="row border-top border-1 m-1 mt-auto">
-      <div class="row">
-        <!-- contacto -->
-        <address class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Contacto</div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-envelope-at fs-3"></i>
-            <span class="ms-3">
-              <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com"
-                >ehfeduardo@gmail.com</a
-              >
-            </span>
-          </div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-geo-alt fs-3"></i>
-            <span class="ms-3">Bogotá D. C. - Colombia</span>
-          </div>
-        </address>
-        <!-- Derechos de autor -->
-        <div
-          class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100"
-        >
-          <div>
-            <i class="bi bi-c-circle fs-5"></i>
-          </div>
-          <div class="ms-2">All Rights Reserved 2025</div>
-        </div>
-        <!-- redes sociales -->
-        <div class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Redes Sociales</div>
-          <div class="d-flex justify-content-evenly align-items-center gap-5">
-            <div>
-              <a
-                href="https://www.linkedin.com/in/eduardoherreraf/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-linkedin fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://github.com/eduardoherreraf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-github fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.facebook.com/eduardoherreraforero/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-facebook fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://twitter.com/ehfeduardo/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-twitter-x fs-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex align-items-center justify-content-center gap-2"></div>
-    </footer>
-    <!-- -------------------------------- pie de pagina fin -------------------------------- -->
 
     <!-- button to top -->
     <button onclick="topFunction()" id="myBtnScroll" title="Go to top">

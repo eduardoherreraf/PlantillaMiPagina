@@ -162,7 +162,7 @@
     </nav>
     <!-- Barra deNavegación -->
 
-    <!-- -------------------------------- principal -------------------------------- -->
+    <!--  principal  -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
         <section class="pb-3 pt-5 col-lg-9 px-lg-4">
@@ -255,33 +255,35 @@
                   </li>
                 </ul>
                 <p>Ejemplo que ilustra el uso de estos bloques:</p>
-                <pre data-src-status="loaded" tabindex="0">
-                <code class="language-python" data-prismjs-copy="Copy">
-                  def dividir_numeros(a, b):
-                      try:
-                          # Intentamos dividir a entre b
-                          resultado = a / b
-                      except ZeroDivisionError as e:
-                          # Manejamos la excepción de división por cero
-                          print(f"Error: {e}")
-                          return None
-                      except TypeError as e:
-                          # Manejamos la excepción de tipo incorrecto
-                          print(f"Error: {e}")
-                          return None
-                      else:
-                          # Este bloque se ejecuta si no hay excepciones
-                          print("La división se realizó con éxito.")
-                          return resultado
-                      finally:
-                          # Este bloque se ejecuta siempre
-                          print("Ejecución del bloque finally.")
-                  # Ejemplos de uso
-                  print(dividir_numeros(10, 2))    # Debería imprimir "La división se realizó con éxito." y luego "Ejecución del bloque finally."
-                  print(dividir_numeros(10, 0))    # Debería imprimir "Error: division by zero" y luego "Ejecución del bloque finally."
-                  print(dividir_numeros(10, 'a'))  # Debería imprimir "Error: unsupported operand type(s) for /: 'int' and 'str'" y luego "Ejecución del bloque finally."
-                </code>
-            </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      def dividir_numeros(a, b):
+                          try:
+                              # Intentamos dividir a entre b
+                              resultado = a / b
+                          except ZeroDivisionError as e:
+                              # Manejamos la excepción de división por cero
+                              print(f"Error: {e}")
+                              return None
+                          except TypeError as e:
+                              # Manejamos la excepción de tipo incorrecto
+                              print(f"Error: {e}")
+                              return None
+                          else:
+                              # Este bloque se ejecuta si no hay excepciones
+                              print("La división se realizó con éxito.")
+                              return resultado
+                          finally:
+                              # Este bloque se ejecuta siempre
+                              print("Ejecución del bloque finally.")
+                      # Ejemplos de uso
+                      print(dividir_numeros(10, 2))    # Debería imprimir "La división se realizó con éxito." y luego "Ejecución del bloque finally."
+                      print(dividir_numeros(10, 0))    # Debería imprimir "Error: division by zero" y luego "Ejecución del bloque finally."
+                      print(dividir_numeros(10, 'a'))  # Debería imprimir "Error: unsupported operand type(s) for /: 'int' and 'str'" y luego "Ejecución del bloque finally."
+                    </code>
+                </pre>
+                </div>
               </div>
               <!-- Teoría Básica de Excepciones Clásicas Fin -->
               <!-- Las Excepciones Son Clases -->
@@ -304,74 +306,76 @@
                     Aquí hay una vista general de la jerarquía de excepciones en
                     Python:
                   </p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-plaintext" data-prismjs-copy="Copy">
-                    BaseException
-                    ├── Exception
-                    │    ├── ArithmeticError
-                    │    │    ├── FloatingPointError
-                    │    │    ├── OverflowError
-                    │    │    └── ZeroDivisionError
-                    │    ├── AssertionError
-                    │    ├── AttributeError
-                    │    ├── BufferError
-                    │    ├── EOFError
-                    │    ├── ImportError
-                    │    │    └── ModuleNotFoundError
-                    │    ├── LookupError
-                    │    │    ├── IndexError
-                    │    │    └── KeyError
-                    │    ├── MemoryError
-                    │    ├── NameError
-                    │    │    └── UnboundLocalError
-                    │    ├── OSError
-                    │    │    ├── BlockingIOError
-                    │    │    ├── ChildProcessError
-                    │    │    ├── ConnectionError
-                    │    │    │    ├── BrokenPipeError
-                    │    │    │    ├── ConnectionAbortedError
-                    │    │    │    ├── ConnectionRefusedError
-                    │    │    │    └── ConnectionResetError
-                    │    │    ├── FileExistsError
-                    │    │    ├── FileNotFoundError
-                    │    │    ├── IsADirectoryError
-                    │    │    ├── NotADirectoryError
-                    │    │    ├── InterruptedError
-                    │    │    ├── PermissionError
-                    │    │    ├── ProcessLookupError
-                    │    │    └── TimeoutError
-                    │    ├── ReferenceError
-                    │    ├── RuntimeError
-                    │    │    ├── NotImplementedError
-                    │    │    └── RecursionError
-                    │    ├── StopIteration
-                    │    ├── StopAsyncIteration
-                    │    ├── SyntaxError
-                    │    │    └── IndentationError
-                    │    │         └── TabError
-                    │    ├── SystemError
-                    │    ├── TypeError
-                    │    ├── ValueError
-                    │    │    └── UnicodeError
-                    │    │         ├── UnicodeDecodeError
-                    │    │         ├── UnicodeEncodeError
-                    │    │         └── UnicodeTranslateError
-                    │    └── Warning
-                    │         └── DeprecationWarning
-                    │         └── PendingDeprecationWarning
-                    │         └── RuntimeWarning
-                    │         └── SyntaxWarning
-                    │         └── UserWarning
-                    │         └── FutureWarning
-                    │         └── ImportWarning
-                    │         └── UnicodeWarning
-                    │         └── BytesWarning
-                    │         └── ResourceWarning
-                    ├── GeneratorExit
-                    ├── KeyboardInterrupt
-                    ├── SystemExit
-                  </code>
-              </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-plaintext" data-prismjs-copy="Copy">
+                        BaseException
+                        ├── Exception
+                        │    ├── ArithmeticError
+                        │    │    ├── FloatingPointError
+                        │    │    ├── OverflowError
+                        │    │    └── ZeroDivisionError
+                        │    ├── AssertionError
+                        │    ├── AttributeError
+                        │    ├── BufferError
+                        │    ├── EOFError
+                        │    ├── ImportError
+                        │    │    └── ModuleNotFoundError
+                        │    ├── LookupError
+                        │    │    ├── IndexError
+                        │    │    └── KeyError
+                        │    ├── MemoryError
+                        │    ├── NameError
+                        │    │    └── UnboundLocalError
+                        │    ├── OSError
+                        │    │    ├── BlockingIOError
+                        │    │    ├── ChildProcessError
+                        │    │    ├── ConnectionError
+                        │    │    │    ├── BrokenPipeError
+                        │    │    │    ├── ConnectionAbortedError
+                        │    │    │    ├── ConnectionRefusedError
+                        │    │    │    └── ConnectionResetError
+                        │    │    ├── FileExistsError
+                        │    │    ├── FileNotFoundError
+                        │    │    ├── IsADirectoryError
+                        │    │    ├── NotADirectoryError
+                        │    │    ├── InterruptedError
+                        │    │    ├── PermissionError
+                        │    │    ├── ProcessLookupError
+                        │    │    └── TimeoutError
+                        │    ├── ReferenceError
+                        │    ├── RuntimeError
+                        │    │    ├── NotImplementedError
+                        │    │    └── RecursionError
+                        │    ├── StopIteration
+                        │    ├── StopAsyncIteration
+                        │    ├── SyntaxError
+                        │    │    └── IndentationError
+                        │    │         └── TabError
+                        │    ├── SystemError
+                        │    ├── TypeError
+                        │    ├── ValueError
+                        │    │    └── UnicodeError
+                        │    │         ├── UnicodeDecodeError
+                        │    │         ├── UnicodeEncodeError
+                        │    │         └── UnicodeTranslateError
+                        │    └── Warning
+                        │         └── DeprecationWarning
+                        │         └── PendingDeprecationWarning
+                        │         └── RuntimeWarning
+                        │         └── SyntaxWarning
+                        │         └── UserWarning
+                        │         └── FutureWarning
+                        │         └── ImportWarning
+                        │         └── UnicodeWarning
+                        │         └── BytesWarning
+                        │         └── ResourceWarning
+                        ├── GeneratorExit
+                        ├── KeyboardInterrupt
+                        └── SystemExit
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- Jerarquía de Excepciones fin -->
                 <!-- Acceso a Atributos en Excepciones -->
@@ -387,24 +391,28 @@
                     <code class="language-python">except</code>.
                   </p>
                   <p>Sintaxis Básica:</p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    try:
-                        # Código que puede generar una excepción
-                    except ExceptionType as variable:
-                        # Manejo de la excepción utilizando la variable
-                  </code>
-              </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        try:
+                            # Código que puede generar una excepción
+                        except ExceptionType as variable:
+                            # Manejo de la excepción utilizando la variable
+                      </code>
+                  </pre>
+                  </div>
                   <p>Ejemplo básico:</p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    try:
-                        resultado = 10 / 0  # Esto genera un ZeroDivisionError
-                    except ZeroDivisionError as e:
-                        print(f"Ha ocurrido un error: {e}")
-                    # Salida: Ha ocurrido un error: division by zero
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        try:
+                            resultado = 10 / 0  # Esto genera un ZeroDivisionError
+                        except ZeroDivisionError as e:
+                            print(f"Ha ocurrido un error: {e}")
+                        # Salida: Ha ocurrido un error: division by zero
+                      </code>
+                    </pre>
+                  </div>
                   <p>Desglose del código:</p>
                   <ul>
                     <li>
@@ -452,16 +460,18 @@
                     atributo <code class="language-python">errno</code> que
                     contiene el número de error del sistema operativo:
                   </p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    try:
-                        with open('archivo_inexistente.txt', 'r') as file:
-                            contenido = file.read()
-                    except FileNotFoundError as e:
-                        print(f"Error al abrir el archivo: {e}")
-                        print(f"Número de error: {e.errno}")
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        try:
+                            with open('archivo_inexistente.txt', 'r') as file:
+                                contenido = file.read()
+                        except FileNotFoundError as e:
+                            print(f"Error al abrir el archivo: {e}")
+                            print(f"Número de error: {e.errno}")
+                      </code>
+                    </pre>
+                  </div>
                 </div>
                 <!-- Acceso a Otros Atributos de la Excepción fin -->
               </div>
@@ -482,36 +492,38 @@
                   este ejemplo, se creará una excepción llamada
                   <code class="language-python">MiExcepcionPersonalizada</code>:
                 </p>
-                <pre data-src-status="loaded" tabindex="0">
-                <code class="language-python" data-prismjs-copy="Copy">
-                  # Definición de la excepción personalizada
-                  class MiExcepcionPersonalizada(Exception):
-                      """
-                      Esta clase representa una excepción personalizada que se puede lanzar
-                      cuando ocurre un error específico en el programa.
-                      """
-                      def __init__(self, mensaje):
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      # Definición de la excepción personalizada
+                      class MiExcepcionPersonalizada(Exception):
                           """
-                          Inicializa la excepción con un mensaje descriptivo del error.
-                          :param mensaje: Un mensaje descriptivo del error.
+                          Esta clase representa una excepción personalizada que se puede lanzar
+                          cuando ocurre un error específico en el programa.
                           """
-                          super().__init__(mensaje)
-                  # Función que puede lanzar la excepción personalizada
-                  def funcion_que_puede_fallar(condicion):
-                      """
-                      Esta función lanza una excepción personalizada si se cumple una condición específica.
-                      :param condicion: Una condición booleana que determina si se lanza la excepción.
-                      :raises MiExcepcionPersonalizada: Si la condición es verdadera.
-                      """
-                      if condicion:
-                          raise MiExcepcionPersonalizada("Ha ocurrido un error específico.")
-                  # Uso de la excepción personalizada en un bloque try-except
-                  try:
-                      funcion_que_puede_fallar(True)
-                  except MiExcepcionPersonalizada as e:
-                      print(f"Se ha capturado una excepción: {e}")
-                </code>
-              </pre>
+                          def __init__(self, mensaje):
+                              """
+                              Inicializa la excepción con un mensaje descriptivo del error.
+                              :param mensaje: Un mensaje descriptivo del error.
+                              """
+                              super().__init__(mensaje)
+                      # Función que puede lanzar la excepción personalizada
+                      def funcion_que_puede_fallar(condicion):
+                          """
+                          Esta función lanza una excepción personalizada si se cumple una condición específica.
+                          :param condicion: Una condición booleana que determina si se lanza la excepción.
+                          :raises MiExcepcionPersonalizada: Si la condición es verdadera.
+                          """
+                          if condicion:
+                              raise MiExcepcionPersonalizada("Ha ocurrido un error específico.")
+                      # Uso de la excepción personalizada en un bloque try-except
+                      try:
+                          funcion_que_puede_fallar(True)
+                      except MiExcepcionPersonalizada as e:
+                          print(f"Se ha capturado una excepción: {e}")
+                    </code>
+                  </pre>
+                </div>
                 <p>En este ejemplo:</p>
                 <ul>
                   <li>
@@ -577,7 +589,7 @@
             </div>
           </article>
           <!--  POO: Excepciones en Python  -->
-          <!-- -------------------------------- comentarios -------------------------------- -->
+          <!--  comentarios  -->
           <article class="row pt-5" id="comments">
             <h2>COMENTARIOS</h2>
             <p>
@@ -646,9 +658,9 @@
               </form>
             </div>
           </article>
-          <!-- -------------------------------- fin comentarios -------------------------------- -->
+          <!--  fin comentarios  -->
         </section>
-        <!-- -------------------------------- barra lateral -------------------------------- -->
+        <!--  barra lateral  -->
         <aside class="col-lg-3 d-none d-lg-block pt-5">
           <h1>En Este Artículo</h1>
           <ul class="list-group">
@@ -673,86 +685,11 @@
             </li>
           </ul>
         </aside>
-        <!-- -------------------------------- fin barra lateral -------------------------------- -->
+        <!--  fin barra lateral  -->
       </main>
-      <!-- -------------------------------- fin principal -------------------------------- -->
+      <!--  fin principal  -->
     </div>
     <!--  Principal Fin  -->
-
-    <!-- -------------------------------- pie de pagina -------------------------------- -->
-    <footer class="row border-top border-1 m-1 mt-auto">
-      <div class="row">
-        <!-- contacto -->
-        <address class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Contacto</div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-envelope-at fs-3"></i>
-            <span class="ms-3">
-              <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com"
-                >ehfeduardo@gmail.com</a
-              >
-            </span>
-          </div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-geo-alt fs-3"></i>
-            <span class="ms-3">Bogotá D. C. - Colombia</span>
-          </div>
-        </address>
-        <!-- Derechos de autor -->
-        <div
-          class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100"
-        >
-          <div>
-            <i class="bi bi-c-circle fs-5"></i>
-          </div>
-          <div class="ms-2">All Rights Reserved 2025</div>
-        </div>
-        <!-- redes sociales -->
-        <div class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Redes Sociales</div>
-          <div class="d-flex justify-content-evenly align-items-center gap-5">
-            <div>
-              <a
-                href="https://www.linkedin.com/in/eduardoherreraf/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-linkedin fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://github.com/eduardoherreraf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-github fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.facebook.com/eduardoherreraforero/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-facebook fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://twitter.com/ehfeduardo/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-twitter-x fs-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex align-items-center justify-content-center gap-2"></div>
-    </footer>
-    <!-- -------------------------------- pie de pagina fin -------------------------------- -->
 
     <!-- button to top -->
     <button onclick="topFunction()" id="myBtnScroll" title="Go to top">

@@ -164,7 +164,7 @@
     </nav>
     <!-- Barra deNavegación -->
 
-    <!-- -------------------------------- principal -------------------------------- -->
+    <!--  principal  -->
     <div class="container-fluid" id="introduccion">
       <main class="row">
         <section class="pb-3 pt-5 col-lg-9 px-lg-4">
@@ -183,13 +183,13 @@
               <div class="mt-5">
                 <h2>Introducción</h2>
                 <p>
-                  Se explica cómo devolver el resultado de una función en Python,
-                  un concepto fundamental en la programación que permite a los
-                  programadores crear funciones capaces de realizar cálculos o
-                  procesar datos y proporcionar un resultado utilizable en otras
-                  partes del código. A través de ejemplos prácticos, se
-                  aprenderá a definir funciones, usar la declaración return y
-                  manejar los resultados devueltos.
+                  Se explica cómo devolver el resultado de una función en
+                  Python, un concepto fundamental en la programación que permite
+                  a los programadores crear funciones capaces de realizar
+                  cálculos o procesar datos y proporcionar un resultado
+                  utilizable en otras partes del código. A través de ejemplos
+                  prácticos, se aprenderá a definir funciones, usar la
+                  declaración return y manejar los resultados devueltos.
                 </p>
                 <div class="centrar-imagen imagen50">
                   <figure>
@@ -297,50 +297,62 @@
                 <!-- Sintaxis Básica -->
                 <div>
                   <h3>Sintaxis Básica</h3>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    def nombre_de_la_funcion(parametros):
-                        # Código de la función
-                        return valor_a_devolver
-                        variable = nombre_de_la_funcion(parametros)
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        def nombre_de_la_funcion(parametros):
+                            # Código de la función
+                            return valor_a_devolver
+                            variable = nombre_de_la_funcion(parametros)
+                      </code>
+                    </pre>
+                  </div>
                   <p>Ejemplo:</p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    def suma(a, b):
-                        resultado = a + b
-                        return resultado
-                    numero1 = 5
-                    numero2 = 3
-                    total = suma(numero1, numero2)
-                    print(total)  # Imprime 8
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        def suma(a, b):
+                            resultado = a + b
+                            return resultado
+                        numero1 = 5
+                        numero2 = 3
+                        total = suma(numero1, numero2)
+                        print(total)  # Imprime 8
+                      </code>
+                    </pre>
+                  </div>
                   <ul>
                     <li>
-                      Se define una función llamada <code class="language-python">suma</code> que toma
-                      dos parámetros, <code class="language-python">a</code> y <code class="language-python">b</code>.
+                      Se define una función llamada
+                      <code class="language-python">suma</code> que toma dos
+                      parámetros, <code class="language-python">a</code> y
+                      <code class="language-python">b</code>.
                     </li>
                     <li>
                       Dentro de la función, se calcula la suma de
-                      <code class="language-python">a</code> y <code class="language-python">b</code> y se almacena en la
+                      <code class="language-python">a</code> y
+                      <code class="language-python">b</code> y se almacena en la
                       variable <code class="language-python">resultado</code>.
                     </li>
                     <li>
-                      Se usa la instrucción <code class="language-python">return</code> para devolver el
-                      valor de <code class="language-python">resultado</code> al punto donde se llamó la
-                      función.
+                      Se usa la instrucción
+                      <code class="language-python">return</code> para devolver
+                      el valor de
+                      <code class="language-python">resultado</code> al punto
+                      donde se llamó la función.
                     </li>
                     <li>
                       En la línea principal del código, se llama a la función
-                      <code class="language-python">suma</code> con los argumentos <code class="language-python">5</code> y
-                      <code class="language-python">3</code>, y se asigna el valor devuelto a la
-                      variable <code class="language-python">total</code>.
+                      <code class="language-python">suma</code> con los
+                      argumentos <code class="language-python">5</code> y
+                      <code class="language-python">3</code>, y se asigna el
+                      valor devuelto a la variable
+                      <code class="language-python">total</code>.
                     </li>
                     <li>
-                      Finalmente, se imprime el valor de <code class="language-python">total</code>, que
-                      es <code class="language-python">8</code>.
+                      Finalmente, se imprime el valor de
+                      <code class="language-python">total</code>, que es
+                      <code class="language-python">8</code>.
                     </li>
                   </ul>
                 </div>
@@ -351,9 +363,10 @@
                   <ul>
                     <li>
                       <span class="fw-bold">Detener la ejecución</span>: Una vez
-                      que se encuentra la instrucción <code class="language-python">return</code>, la
-                      ejecución de la función se detiene inmediatamente, incluso
-                      si hay más código después de ella.
+                      que se encuentra la instrucción
+                      <code class="language-python">return</code>, la ejecución
+                      de la función se detiene inmediatamente, incluso si hay
+                      más código después de ella.
                     </li>
                     <li>
                       <span class="fw-bold">Devolver un valor</span>: El valor
@@ -376,29 +389,33 @@
                   Python permite que una función devuelva múltiples valores
                   utilizando una tupla:
                 </p>
-                <pre data-src-status="loaded" tabindex="0">
-                <code class="language-python" data-prismjs-copy="Copy">
-                  def obtener_coordenadas():
-                      """Esta función devuelve las coordenadas x e y."""
-                      x = 10
-                      y = 20
-                      return x, y
-                  # Llamada a la función y uso de los valores de retorno
-                  coordenadas = obtener_coordenadas()
-                  print(coordenadas)  # Imprime (10, 20)
-                </code>
-              </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      def obtener_coordenadas():
+                          """Esta función devuelve las coordenadas x e y."""
+                          x = 10
+                          y = 20
+                          return x, y
+                      # Llamada a la función y uso de los valores de retorno
+                      coordenadas = obtener_coordenadas()
+                      print(coordenadas)  # Imprime (10, 20)
+                    </code>
+                  </pre>
+                </div>
                 <p>Otro ejemplo:</p>
-                <pre data-src-status="loaded" tabindex="0">
-                <code class="language-python" data-prismjs-copy="Copy">
-                  def operaciones(a, b):
-                      suma = a + b
-                      resta = a - b
-                      return suma, resta
-                  resultado_suma, resultado_resta = operaciones(10, 5)
-                  print(f"Suma: {resultado_suma}, Resta: {resultado_resta}")  # Salida: Suma: 15, Resta: 5
-                </code>
-              </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      def operaciones(a, b):
+                          suma = a + b
+                          resta = a - b
+                          return suma, resta
+                      resultado_suma, resultado_resta = operaciones(10, 5)
+                      print(f"Suma: {resultado_suma}, Resta: {resultado_resta}")  # Salida: Suma: 15, Resta: 5
+                    </code>
+                  </pre>
+                </div>
               </div>
               <!-- Múltiples Valores de Retorno Fin -->
               <!-- Manejo de Resultados Devueltos -->
@@ -410,27 +427,31 @@
                   posterior. También se pueden pasar como argumentos a otras
                   funciones. Aquí hay un ejemplo:
                 </p>
-                <pre data-src-status="loaded" tabindex="0">
-                <code class="language-python" data-prismjs-copy="Copy">
-                  def cuadrado(x):
-                  return x * x
-                  def imprimir_cuadrado(y):
-                      print(f"El cuadrado de {y} es {cuadrado(y)}")  # Salida: El cuadrado de 6 es 36
-                  imprimir_cuadrado(6)  # Salida: El cuadrado de 6 es 36
-                </code>
-              </pre>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      def cuadrado(x):
+                      return x * x
+                      def imprimir_cuadrado(y):
+                          print(f"El cuadrado de {y} es {cuadrado(y)}")  # Salida: El cuadrado de 6 es 36
+                      imprimir_cuadrado(6)  # Salida: El cuadrado de 6 es 36
+                    </code>
+                  </pre>
+                </div>
               </div>
               <!-- Manejo de Resultados Devueltos Fin -->
               <!-- Palabra Reservada None -->
               <div id="palabraReservadaNone" class="mt-5">
                 <h2 class="mt-1">Palabra Reservada None</h2>
                 <p>
-                  La palabra reservada <code class="language-python">None</code> en Python es un
+                  La palabra reservada
+                  <code class="language-python">None</code> en Python es un
                   concepto fundamental que todo programador debe entender.
-                  <code class="language-python">None</code> es un objeto singular en Python que
-                  representa la ausencia de valor o un valor nulo. Es similar al
-                  concepto de <code class="language-python">null</code> en otros lenguajes de
-                  programación como Java o C++.
+                  <code class="language-python">None</code> es un objeto
+                  singular en Python que representa la ausencia de valor o un
+                  valor nulo. Es similar al concepto de
+                  <code class="language-python">null</code> en otros lenguajes
+                  de programación como Java o C++.
                 </p>
                 <!-- Características de None -->
                 <div>
@@ -438,21 +459,24 @@
                   <ul>
                     <li>
                       <span class="fw-bold">Tipo de Dato</span>:
-                      <code class="language-python">None</code> es un objeto de tipo
-                      <code class="language-python">NoneType</code>. Esto significa que es una instancia
-                      única de su propia clase.
+                      <code class="language-python">None</code> es un objeto de
+                      tipo <code class="language-python">NoneType</code>. Esto
+                      significa que es una instancia única de su propia clase.
                     </li>
                     <li>
                       <span class="fw-bold">Singularidad</span>: En Python, None
                       es un objeto singular. Esto significa que cualquier
-                      variable que se asigne a<code class="language-python">None</code>apuntará al mismo
-                      objeto en memoria.
+                      variable que se asigne a<code class="language-python"
+                        >None</code
+                      >apuntará al mismo objeto en memoria.
                     </li>
                     <li>
-                      <span class="fw-bold">Uso Común</span>:<code class="language-python">None</code>se
-                      utiliza comúnmente para indicar que una variable no tiene
-                      un valor asignado o que una función no devuelve ningún
-                      valor.
+                      <span class="fw-bold">Uso Común</span>:<code
+                        class="language-python"
+                        >None</code
+                      >se utiliza comúnmente para indicar que una variable no
+                      tiene un valor asignado o que una función no devuelve
+                      ningún valor.
                     </li>
                   </ul>
                 </div>
@@ -465,16 +489,19 @@
                     <h3>Valores de Retorno</h3>
                     <p>
                       Las funciones en Python que no devuelven explícitamente un
-                      valor devuelven <code class="language-python">None</code> por defecto.
+                      valor devuelven
+                      <code class="language-python">None</code> por defecto.
                     </p>
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      def funcion_sin_retorno():
-                          pass
-                      resultado = funcion_sin_retorno()
-                      print(resultado)  # Salida: None
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          def funcion_sin_retorno():
+                              pass
+                          resultado = funcion_sin_retorno()
+                          print(resultado)  # Salida: None
+                        </code>
+                      </pre>
+                    </div>
                   </div>
                   <!-- Valores de Retorno fin -->
                   <!-- Asignación de Variables -->
@@ -482,25 +509,29 @@
                     <h3>Asignación de Variables</h3>
                     <p>
                       Cuando se inicializa una variable sin un valor específico,
-                      se puede asignar<code class="language-python">None</code>para indicar que la
-                      variable no tiene un valor significativo.
+                      se puede asignar<code class="language-python">None</code
+                      >para indicar que la variable no tiene un valor
+                      significativo.
                     </p>
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      variable = None
-                      print(variable)  # Salida: None
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          variable = None
+                          print(variable)  # Salida: None
+                        </code>
+                      </pre>
+                    </div>
                   </div>
                   <!-- Asignación de Variables fin -->
                   <!-- Comparaciones -->
                   <div>
                     <h3>Comparaciones</h3>
                     <p>
-                      <code class="language-python">None</code>se puede comparar con otros valores
-                      usando operadores de comparación.
+                      <code class="language-python">None</code>se puede comparar
+                      con otros valores usando operadores de comparación.
                     </p>
-                    <pre data-src-status="loaded" tabindex="0">
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           if variable is None:
                             print("La variable es None")
@@ -508,6 +539,7 @@
                             print("La variable no es None")
                         </code>
                       </pre>
+                    </div>
                   </div>
                   <!-- Comparaciones fin -->
                 </div>
@@ -535,15 +567,17 @@
                     misma manera que pasarías cualquier otro tipo de dato. Aquí
                     hay un ejemplo básico:
                   </p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    def imprimir_lista(lista):
-                    for elemento in lista:
-                        print(elemento)
-                    mi_lista = [1, 2, 3, 4, 5]
-                    imprimir_lista(mi_lista)  # Salida: 1 2 3 4 5
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        def imprimir_lista(lista):
+                        for elemento in lista:
+                            print(elemento)
+                        mi_lista = [1, 2, 3, 4, 5]
+                        imprimir_lista(mi_lista)  # Salida: 1 2 3 4 5
+                      </code>
+                    </pre>
+                  </div>
                   <p>
                     En este ejemplo, la función imprimir_lista toma una lista
                     como parámetro y luego imprime cada elemento de la lista.
@@ -559,15 +593,17 @@
                     que se puede modificar la lista dentro de la función y los
                     cambios se reflejarán fuera de la función.
                   </p>
-                  <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    def agregar_elemento(lista, elemento):
-                        lista.append(elemento)
-                    mi_lista = [1, 2, 3]
-                    agregar_elemento(mi_lista, 4)
-                    print(mi_lista)  # Salida: [1, 2, 3, 4]
-                  </code>
-                </pre>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        def agregar_elemento(lista, elemento):
+                            lista.append(elemento)
+                        mi_lista = [1, 2, 3]
+                        agregar_elemento(mi_lista, 4)
+                        print(mi_lista)  # Salida: [1, 2, 3, 4]
+                      </code>
+                    </pre>
+                  </div>
                   <p>
                     En este ejemplo, la función agregar_elemento toma una lista
                     y un elemento como parámetros y agrega el elemento a la
@@ -610,18 +646,20 @@
                       estar seguro que la lista original no se modifique, se
                       puede pasar una copia de ella.
                     </li>
-                    <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-python" data-prismjs-copy="Copy">
-                      def agregar_elemento_seguro(lista, elemento):
-                          lista_copia = lista.copy()
-                          lista_copia.append(elemento)
-                          return lista_copia
-                      mi_lista = [1, 2, 3]
-                      nueva_lista = agregar_elemento_seguro(mi_lista, 4)
-                      print(mi_lista)    # Salida: [1, 2, 3]
-                      print(nueva_lista) # Salida: [1, 2, 3, 4]
-                    </code>
-                  </pre>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          def agregar_elemento_seguro(lista, elemento):
+                              lista_copia = lista.copy()
+                              lista_copia.append(elemento)
+                              return lista_copia
+                          mi_lista = [1, 2, 3]
+                          nueva_lista = agregar_elemento_seguro(mi_lista, 4)
+                          print(mi_lista)    # Salida: [1, 2, 3]
+                          print(nueva_lista) # Salida: [1, 2, 3, 4]
+                        </code>
+                      </pre>
+                    </div>
                     <li>
                       <span class="fw-bold">Rendimiento</span>: Aunque pasar
                       listas como parámetros es eficiente, realizar copias de
@@ -666,7 +704,7 @@
           </article>
           <!--  Retorno de Valores en Funciones Python  -->
 
-          <!-- -------------------------------- comentarios -------------------------------- -->
+          <!--  comentarios  -->
           <article class="row pt-5" id="comments">
             <h2>COMENTARIOS</h2>
             <p>
@@ -735,9 +773,9 @@
               </form>
             </div>
           </article>
-          <!-- -------------------------------- fin comentarios -------------------------------- -->
+          <!--  fin comentarios  -->
         </section>
-        <!-- -------------------------------- barra lateral -------------------------------- -->
+        <!--  barra lateral  -->
         <aside class="col-lg-3 d-none d-lg-block pt-5">
           <h1>En Este Artículo</h1>
           <ul class="list-group">
@@ -778,86 +816,11 @@
             </li>
           </ul>
         </aside>
-        <!-- -------------------------------- fin barra lateral -------------------------------- -->
+        <!--  fin barra lateral  -->
       </main>
-      <!-- -------------------------------- fin principal -------------------------------- -->
+      <!--  fin principal  -->
     </div>
     <!--  Principal Fin  -->
-
-    <!-- -------------------------------- pie de pagina -------------------------------- -->
-    <footer class="row border-top border-1 m-1 mt-auto">
-      <div class="row">
-        <!-- contacto -->
-        <address class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Contacto</div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-envelope-at fs-3"></i>
-            <span class="ms-3">
-              <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com"
-                >ehfeduardo@gmail.com</a
-              >
-            </span>
-          </div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-geo-alt fs-3"></i>
-            <span class="ms-3">Bogotá D. C. - Colombia</span>
-          </div>
-        </address>
-        <!-- Derechos de autor -->
-        <div
-          class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100"
-        >
-          <div>
-            <i class="bi bi-c-circle fs-5"></i>
-          </div>
-          <div class="ms-2">All Rights Reserved 2025</div>
-        </div>
-        <!-- redes sociales -->
-        <div class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Redes Sociales</div>
-          <div class="d-flex justify-content-evenly align-items-center gap-5">
-            <div>
-              <a
-                href="https://www.linkedin.com/in/eduardoherreraf/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-linkedin fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://github.com/eduardoherreraf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-github fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.facebook.com/eduardoherreraforero/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-facebook fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://twitter.com/ehfeduardo/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-twitter-x fs-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex align-items-center justify-content-center gap-2"></div>
-    </footer>
-    <!-- -------------------------------- pie de pagina fin -------------------------------- -->
 
     <!-- button to top -->
     <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
