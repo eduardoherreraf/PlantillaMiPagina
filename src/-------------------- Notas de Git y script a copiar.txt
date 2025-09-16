@@ -6,3 +6,59 @@ git push origin v3.1
 <---------------- script ---------------->
 
 <script>let tema = localStorage.getItem("theme") || "dark";window.onload = function () {if (tema === "dark") temaOscuro();if (tema === "light") temaClaro();};const cambiarTema = () => {const temaActual = localStorage.getItem("theme") || "dark";if (temaActual === "dark") {temaClaro();} else{temaOscuro();}};const temaOscuro = () => {document.querySelector("body").setAttribute("data-bs-theme", "dark");document.querySelector("#dl-icon").setAttribute("class","btn text-center d-flex bg-body-tertiary text-light");localStorage.setItem("theme", "dark");};const temaClaro = () => {document.querySelector("body").setAttribute("data-bs-theme", "light");document.querySelector("#dl-icon").setAttribute("class", "btn text-center d-flex bg-light text-dark");localStorage.setItem("theme", "light");};</script></html>
+
+
+
+*** Etiquetas
+listado de etiquetas localmente: git tag
+listado de etiquetas remoto: git ls-remote --tags origin
+
+*** Borrar etiquetas
+local: git tag -d <etiqueta>  ---> git tag -d v3.1
+remoto (moderna): git push origin --delete <etiqueta>  ---> git push origin --delete tag v3.1
+
+
+*** Creacion de etiqueta corta
+# Crear etiqueta simple en el último commit
+git tag v1.2.0
+
+# Si se quiere en un commit específico (por ejemplo con hash abc1234):
+git tag v1.2.0 abc1234
+
+# Confirmar que existe localmente
+git tag
+
+# Subirla al remoto
+git push origin v1.2.0
+
+# Subir todas las etiquetas de una vez:
+git push origin --tags
+
+*** Creacion de etiqueta anotada
+# 1. Crear etiqueta anotada
+git tag -a <version> -m "Versión <version>: Mensaje"
+git tag -a v1.2.0 -m "Versión 1.2.0: corrección de errores y mejoras de rendimiento"
+
+# Si se quiere en un commit específico:
+git tag -a <version> commit -m "Versión <version>: Mensaje"
+git tag -a v1.2.0 3f9c2a1 -m "Versión 1.2.0 en commit específico"
+
+# 2. Verificar localmente
+Todas las etiquetas: git tag
+solo la vesion v1.2.0: git show v1.2.0
+
+# 3. Subir etiqueta al remoto
+git push origin v8.15.0
+
+# 4. Verificar en remoto
+git ls-remote --tags origin
+
+
+git show v8.15.0
+
+
+ 
+
+
+
+
