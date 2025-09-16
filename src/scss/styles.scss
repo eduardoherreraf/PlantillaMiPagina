@@ -4,19 +4,11 @@
 $enable-negative-margins: true;
 
 // Import all of Bootstrap's CSS
-@import "bootstrap/scss/bootstrap";
+@use "bootstrap/scss/bootstrap";
 
 // Import google's Saira fonts
 @import url("https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100&display=swap");
 
-// Import all of Prism's theme
-@import "../../node_modules/prismjs/themes/prism-okaidia.min.css";
-
-// Import Prims's plugins
-@import "../../node_modules/prismjs/plugins/line-numbers/prism-line-numbers.min.css";
-@import "../../node_modules/prismjs/plugins/toolbar/prism-toolbar.min.css";
-@import "../../node_modules/prismjs/plugins/match-braces/prism-match-braces.min.css";
-@import "../../node_modules/prismjs/plugins/line-highlight/prism-line-highlight.min.css";
 
 :root {
   --color-texto: #e7e9eb;
@@ -28,6 +20,8 @@ $enable-negative-margins: true;
 
 html {
   scroll-behavior: smooth;
+  /* Ajuste para la barra de navegación fija */
+  scroll-padding-top: 3rem; /* O un valor que coincida con la altura de tu navbar */
 }
 
 body {
@@ -366,12 +360,15 @@ aside {
   position: fixed;
   top: 0;
   right: 0;
-  height: 100dvh;
-  overflow-y: auto;
   padding-bottom: 5px;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
-  z-index: 1; // Z-index para asegurar que el footer y el aside se superpongan correctamente
+}
+
+.menu-scroll {
+  overflow-y: auto;
+  height: 45dvh;
 }
 
 aside h1 {
@@ -388,7 +385,6 @@ aside h1 {
 
 footer {
   position: relative;
-  z-index: 2; /* Mayor que el aside */
 }
 //  .codes {
 // height: calc(100% - 1rem);

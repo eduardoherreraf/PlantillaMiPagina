@@ -1,11 +1,22 @@
 // Import our custom CSS
 import '../scss/styles.scss';
-
 // Import all of Bootstrap's JS
 import * as bootstrap from 'bootstrap';
 
-// Import all of PrismJS's JS
+// Import PrismJS
 import Prism from 'prismjs';
+
+// Import CSS
+import '../../node_modules/prismjs/themes/prism-okaidia.css';
+import '../../node_modules/prismjs/plugins/line-numbers/prism-line-numbers.css';
+import '../../node_modules/prismjs/plugins/toolbar/prism-toolbar.css';
+import '../../node_modules/prismjs/plugins/match-braces/prism-match-braces.css';
+import '../../node_modules/prismjs/plugins/line-highlight/prism-line-highlight.css';
+
+// Import lenguajes ANTES que plugins
+import '../../node_modules/prismjs/components/prism-python.min.js';
+
+// Import plugins JS
 import '../../node_modules/prismjs/plugins/line-numbers/prism-line-numbers.min.js';
 import '../../node_modules/prismjs/plugins/toolbar/prism-toolbar.min.js';
 import '../../node_modules/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js';
@@ -13,11 +24,33 @@ import '../../node_modules/prismjs/plugins/show-language/prism-show-language.min
 import '../../node_modules/prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.min.js';
 import '../../node_modules/prismjs/plugins/match-braces/prism-match-braces.min.js';
 import '../../node_modules/prismjs/plugins/line-highlight/prism-line-highlight.min.js';
-import '../../node_modules/prismjs/components/prism-python.min'
-import 'prismjs/components/prism-python.min.js';
 
-// Import bootstrap 5 icons
+// Import bootstrap icons
 import 'bootstrap-icons/font/bootstrap-icons.css';
+
+// Hacer Prism global ANTES del DOMContentLoaded
+window.Prism = Prism;
+
+// Múltiples intentos de highlighting
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM loaded, Prism available:', typeof Prism !== 'undefined');
+    setTimeout(() => {
+        if (typeof Prism !== 'undefined') {
+            console.log('Forcing Prism highlight...');
+            Prism.highlightAll();
+        }
+    }, 100);
+});
+
+// También intentar cuando la página esté completamente cargada
+window.addEventListener('load', function() {
+    setTimeout(() => {
+        if (typeof Prism !== 'undefined') {
+            console.log('Window loaded, forcing Prism highlight again...');
+            Prism.highlightAll();
+        }
+    }, 200);
+});
 
 document.getElementById('myForm').reset();
 
