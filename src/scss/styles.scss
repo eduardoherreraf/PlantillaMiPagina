@@ -366,12 +366,15 @@ aside {
   position: fixed;
   top: 0;
   right: 0;
-  height: 100dvh;
-  overflow-y: auto;
   padding-bottom: 5px;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
-  z-index: 1; // Z-index para asegurar que el footer y el aside se superpongan correctamente
+}
+
+.menu-scroll {
+  overflow-y: auto;
+  height: 70dvh;
 }
 
 aside h1 {
@@ -388,7 +391,6 @@ aside h1 {
 
 footer {
   position: relative;
-  z-index: 2; /* Mayor que el aside */
 }
 //  .codes {
 // height: calc(100% - 1rem);
