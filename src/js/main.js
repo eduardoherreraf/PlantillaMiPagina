@@ -6,15 +6,10 @@ import * as bootstrap from 'bootstrap';
 // Import PrismJS
 import Prism from 'prismjs';
 
-// Import CSS
-import '../../node_modules/prismjs/themes/prism-okaidia.css';
-import '../../node_modules/prismjs/plugins/line-numbers/prism-line-numbers.css';
-import '../../node_modules/prismjs/plugins/toolbar/prism-toolbar.css';
-import '../../node_modules/prismjs/plugins/match-braces/prism-match-braces.css';
-import '../../node_modules/prismjs/plugins/line-highlight/prism-line-highlight.css';
-
 // Import lenguajes ANTES que plugins
+import '../../node_modules/prismjs/components/prism-bash.min.js';
 import '../../node_modules/prismjs/components/prism-python.min.js';
+import '../../node_modules/prismjs/components/prism-json.min.js';
 
 // Import plugins JS
 import '../../node_modules/prismjs/plugins/line-numbers/prism-line-numbers.min.js';
@@ -25,6 +20,13 @@ import '../../node_modules/prismjs/plugins/normalize-whitespace/prism-normalize-
 import '../../node_modules/prismjs/plugins/match-braces/prism-match-braces.min.js';
 import '../../node_modules/prismjs/plugins/line-highlight/prism-line-highlight.min.js';
 
+// Forzar highlighting después de que cargue todo
+document.addEventListener('DOMContentLoaded', function() {
+    if (typeof Prism !== 'undefined') {
+        Prism.highlightAll();
+    }
+});
+
 // Import bootstrap icons
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
@@ -32,7 +34,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 window.Prism = Prism;
 
 // Múltiples intentos de highlighting
-document.addEventListener('DOMContentLoaded', function() {
+/* document.addEventListener('DOMContentLoaded', function() {
     console.log('DOM loaded, Prism available:', typeof Prism !== 'undefined');
     setTimeout(() => {
         if (typeof Prism !== 'undefined') {
@@ -40,18 +42,23 @@ document.addEventListener('DOMContentLoaded', function() {
             Prism.highlightAll();
         }
     }, 100);
-});
+}); */
 
 // También intentar cuando la página esté completamente cargada
-window.addEventListener('load', function() {
+/* window.addEventListener('load', function() {
     setTimeout(() => {
         if (typeof Prism !== 'undefined') {
             console.log('Window loaded, forcing Prism highlight again...');
             Prism.highlightAll();
         }
     }, 200);
-});
+}); */
 
+// O si ya tienes contenido dinámico
+/* if (typeof Prism !== 'undefined') {
+  Prism.highlightAll();
+}
+ */
 document.getElementById('myForm').reset();
 
 // Botón to top

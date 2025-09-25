@@ -9,6 +9,12 @@ $enable-negative-margins: true;
 // Import google's Saira fonts
 @import url("https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100&display=swap");
 
+// Import CSS
+@import "../../node_modules/prismjs/themes/prism-okaidia.css";
+@import "../../node_modules/prismjs/plugins/line-numbers/prism-line-numbers.css";
+@import "../../node_modules/prismjs/plugins/toolbar/prism-toolbar.css";
+@import "../../node_modules/prismjs/plugins/match-braces/prism-match-braces.css";
+@import "../../node_modules/prismjs/plugins/line-highlight/prism-line-highlight.css";
 
 :root {
   --color-texto: #e7e9eb;
@@ -174,8 +180,13 @@ header {
   border-radius: 5px;
 }
 
+
 .imagen50 {
   width: 50%;
+}
+
+.imagen40 {
+  width: 40%;
 }
 
 .imagen20 {
