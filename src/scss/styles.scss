@@ -180,7 +180,6 @@ header {
   border-radius: 5px;
 }
 
-
 .imagen50 {
   width: 50%;
 }
@@ -379,7 +378,7 @@ aside {
 
 .menu-scroll {
   overflow-y: auto;
-  height: 45dvh;
+  height: 50dvh;
 }
 
 aside h1 {
@@ -1008,16 +1007,8 @@ hr.subtle-divider {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   border: 1px solid var(--color-borde);
-  /* ¡Cambio aplicado aquí! */
 }
 
-.menu-item {
-  border-bottom: 1px solid var(--color-borde);
-}
-
-.menu-item:last-child {
-  border-bottom: 1px solid var(--color-borde);
-}
 
 .menu-item {
   border-bottom: 1px solid var(--color-borde);
