@@ -54,6 +54,12 @@
   <title>
     Etiquetado en GIT - Ing. Eduardo Herrera Forero.
   </title>
+  <style>
+    #introduccion {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  </style>
 
   <script type="module" defer src="./js/main.js"></script>
 
@@ -1158,108 +1164,112 @@
       </section>
       <!--  barra lateral  -->
       <aside class="col-lg-3 d-none d-lg-block mt-5">
-        <h1>En Este Artículo</h1>
         <div class="menu-scroll">
           <div class="menu-container">
-            <div class="menu-item">
-              <a href="#introduccion" class="simple-link">Introducción</a>
-            </div>
-            <div class="menu-item">
-              <a href="#que-son-las-etiquetas-tab" class="simple-link">¿Qué Son las Etiquetas Tab?</a>
-            </div>
-            <div class="menu-item">
-              <a href="#por-que-usar-etiquetas-git" class="simple-link">¿Por qué Usar Etiquetas Git?</a>
-            </div>
-            <div class="menu-item">
-              <a href="#tipos-de-etiqetas-git" class="simple-link">Tipos de Etiquetas Git</a>
-            </div>
-            <div class="menu-item">
-              <details>
-                <summary>
-                  Creando Etiquetas Git
-                </summary>
-                <div class="submenu">
-                  <a href="#creando-una-etiqueta-anotada" class="submenu-item">Creando una Etiqueta Anotada</a>
-                  <a href="#creando-un-etiqueta-ligera" class="submenu-item">Creando una Etiqueta Ligera</a>
-                </div>
-              </details>
-            </div>
-            <div class="menu-item">
-              <a href="#listando-etiquetas-git" class="simple-link">Listando Etiquetas Git</a>
-            </div>
-            <div class="menu-item">
-              <details>
-                <summary>
-                  Verificando Etiquetas Git
-                </summary>
-                <div class="submenu">
-                  <a href="#verificando-Etiqueta-local" class="submenu-item">Verificando Etiqueta local</a>
-                  <a href="#verificando-Etiqueta-remota" class="submenu-item">Verificando Etiqueta Remota</a>
-                </div>
-              </details>
-            </div>
-            <div class="menu-item">
-              <a href="#sincronizacion-de-etiquetas-con-el-repositorio-remoto" class="simple-link">Sincronización de
-                Etiquetas con el Repositorio Remoto</a>
-            </div>
-            <div class="menu-item">
-              <details>
-                <summary>
-                  Renombrando Etiquetas Git
-                </summary>
-                <div class="submenu">
-                  <a href="#renombrando-etiquetas-ligeras" class="submenu-item">Renombrando Etiquetas Ligeras</a>
-                  <a href="#renombrando-etiquetas-anotadas" class="submenu-item">Renombrando Etiquetas Anotadas </a>
-                </div>
-              </details>
-            </div>
-            <div class="menu-item">
-              <details>
-                <summary>
-                  Eliminando Etiquetas Git
-                </summary>
-                <div class="submenu">
-                  <a href="#eliminando-una-etiqueta-local" class="submenu-item">Eliminando una Etiqueta Local</a>
-                  <a href="#eliminando-una-etiqueta-remota" class="submenu-item">Eliminando una Etiqueta Remota</a>
-                </div>
-              </details>
-            </div>
-            <div class="menu-item">
-              <a href="#escenarios-comunes-de-uso" class="simple-link">Escenarios Comunes de Uso</a>
-            </div>
-            <div class="menu-item">
-              <details>
-                <summary>
-                  Error Comunes con las Etiquetas Git
-                </summary>
-                <div class="submenu">
-                  <a href="#etiqueta-creada-con-el-nombre-incorrecto" class="submenu-item">Etiqueta Creada con el Nombre
-                    Incorrecto</a>
-                  <a href="#problemas-de-sincronizacion-entre-repositorio-local-y-remoto" class="submenu-item">Problemas
-                    de Sincronización entre Repositorio Local y Remoto</a>
-                  <a href="#conflictos-al-subir-etiguetas" class="submenu-item">Conflictos al Hacer push de tags</a>
-                </div>
-              </details>
-            </div>
-            <div class="menu-item">
-              <a href="#mejores-practicas" class="simple-link">Mejores Prácticas</a>
-            </div>
-            <div class="menu-item">
-              <details>
-                <summary>
-                  Ejemplos
-                </summary>
-                <div class="submenu">
-                  <a href="#crear-etiqueta-anotada" class="submenu-item">Crear Etiqueta Anotada</a>
-                  <a href="#borrar-la-etiqueta-local-y-remota" class="submenu-item">Borrar la Etiqueta Local y
-                    Remota</a>
-                  <a href="#renombrar-etiquetas" class="submenu-item">Renombrar Etiquetas</a>
-                </div>
-              </details>
-            </div>
-            <!-- Comentarios  -->
-            <div class="menu-item">
-              <a href="#comments" class="simple-link">Comentarios</a>
+            <h1>En Este Artículo</h1>
+            <div class="menu-container-content">
+              <div class="menu-item">
+                <a href="#introduccion" class="simple-link">Introducción</a>
+              </div>
+              <div class="menu-item">
+                <a href="#que-son-las-etiquetas-tab" class="simple-link">¿Qué Son las Etiquetas Tab?</a>
+              </div>
+              <div class="menu-item">
+                <a href="#por-que-usar-etiquetas-git" class="simple-link">¿Por qué Usar Etiquetas Git?</a>
+              </div>
+              <div class="menu-item">
+                <a href="#tipos-de-etiqetas-git" class="simple-link">Tipos de Etiquetas Git</a>
+              </div>
+              <div class="menu-item">
+                <details>
+                  <summary>
+                    Creando Etiquetas Git
+                  </summary>
+                  <div class="submenu">
+                    <a href="#creando-una-etiqueta-anotada" class="submenu-item">Creando una Etiqueta Anotada</a>
+                    <a href="#creando-un-etiqueta-ligera" class="submenu-item">Creando una Etiqueta Ligera</a>
+                  </div>
+                </details>
+              </div>
+              <div class="menu-item">
+                <a href="#listando-etiquetas-git" class="simple-link">Listando Etiquetas Git</a>
+              </div>
+              <div class="menu-item">
+                <details>
+                  <summary>
+                    Verificando Etiquetas Git
+                  </summary>
+                  <div class="submenu">
+                    <a href="#verificando-Etiqueta-local" class="submenu-item">Verificando Etiqueta local</a>
+                    <a href="#verificando-Etiqueta-remota" class="submenu-item">Verificando Etiqueta Remota</a>
+                  </div>
+                </details>
+              </div>
+              <div class="menu-item">
+                <a href="#sincronizacion-de-etiquetas-con-el-repositorio-remoto" class="simple-link">Sincronización de
+                  Etiquetas con el Repositorio Remoto</a>
+              </div>
+              <div class="menu-item">
+                <details>
+                  <summary>
+                    Renombrando Etiquetas Git
+                  </summary>
+                  <div class="submenu">
+                    <a href="#renombrando-etiquetas-ligeras" class="submenu-item">Renombrando Etiquetas Ligeras</a>
+                    <a href="#renombrando-etiquetas-anotadas" class="submenu-item">Renombrando Etiquetas Anotadas </a>
+                  </div>
+                </details>
+              </div>
+              <div class="menu-item">
+                <details>
+                  <summary>
+                    Eliminando Etiquetas Git
+                  </summary>
+                  <div class="submenu">
+                    <a href="#eliminando-una-etiqueta-local" class="submenu-item">Eliminando una Etiqueta Local</a>
+                    <a href="#eliminando-una-etiqueta-remota" class="submenu-item">Eliminando una Etiqueta Remota</a>
+                  </div>
+                </details>
+              </div>
+              <div class="menu-item">
+                <a href="#escenarios-comunes-de-uso" class="simple-link">Escenarios Comunes de Uso</a>
+              </div>
+              <div class="menu-item">
+                <details>
+                  <summary>
+                    Error Comunes con las Etiquetas Git
+                  </summary>
+                  <div class="submenu">
+                    <a href="#etiqueta-creada-con-el-nombre-incorrecto" class="submenu-item">Etiqueta Creada con el
+                      Nombre
+                      Incorrecto</a>
+                    <a href="#problemas-de-sincronizacion-entre-repositorio-local-y-remoto"
+                      class="submenu-item">Problemas
+                      de Sincronización entre Repositorio Local y Remoto</a>
+                    <a href="#conflictos-al-subir-etiguetas" class="submenu-item">Conflictos al Hacer push de tags</a>
+                  </div>
+                </details>
+              </div>
+              <div class="menu-item">
+                <a href="#mejores-practicas" class="simple-link">Mejores Prácticas</a>
+              </div>
+              <div class="menu-item">
+                <details>
+                  <summary>
+                    Ejemplos
+                  </summary>
+                  <div class="submenu">
+                    <a href="#crear-etiqueta-anotada" class="submenu-item">Crear Etiqueta Anotada</a>
+                    <a href="#borrar-la-etiqueta-local-y-remota" class="submenu-item">Borrar la Etiqueta Local y
+                      Remota</a>
+                    <a href="#renombrar-etiquetas" class="submenu-item">Renombrar Etiquetas</a>
+                  </div>
+                </details>
+              </div>
+              <!-- Comentarios  -->
+              <div class="menu-item">
+                <a href="#comments" class="simple-link">Comentarios</a>
+              </div>
             </div>
           </div>
         </div>
@@ -1267,6 +1277,9 @@
       <!--  fin barra lateral  -->
     </main>
     <!--  fin principal  -->
+
+
+    <!--  pie de pagina fin  -->
   </div>
   <!--  Principal Fin  -->
 
