@@ -40,6 +40,11 @@ aside {
   background-color: var(--color-fondo);
 }
 
+#introduccion {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 img {
   border-radius: 0.5rem;
 }
@@ -367,19 +372,18 @@ nav {
 
 /* aside */
 aside {
-  position: -webkit-sticky; /* For Safari */
+  position: sticky-webkit-sticky; /* For Safari */
   position: sticky;
   top: 3rem; /* Space for the fixed navbar */
   height: calc(100vh - 3rem); /* Fill remaining viewport height */
-  overflow-y: auto; /* Allow scrolling within the aside */
   padding-bottom: 5px;
   display: flex;
   flex-direction: column;
 }
 
 .menu-scroll {
-  overflow-y: auto;
-  height: 90dvh;
+  padding-bottom: 5.2rem;
+  padding-right: 0.2rem;
 }
 
 aside h1 {
@@ -1006,11 +1010,14 @@ hr.subtle-divider {
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  // border: 1px solid var(--color-borde);
 }
 
 .menu-container-content {
   border: 1px solid var(--color-borde);
-  border-radius: 8px;;
+  border-radius: 8px;
+  max-height: 80vh;
+  overflow-y: auto;
 }
 
 .menu-item {
