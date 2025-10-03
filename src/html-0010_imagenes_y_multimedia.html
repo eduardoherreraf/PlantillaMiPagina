@@ -1,390 +1,288 @@
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
-  <head>
-    <!-- Metaetiquetas -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Guía que explica cómo utilizar imágenes y otros elementos multimedia en una página web."
-    />
-    <meta
-      name="title"
-      content="Imágenes y Multimedia HTML - Ing. Eduardo Herrera Forero."
-    />
-    <meta name="author" content="Ing. Eduardo Herrera Forero" />
-    <meta name="application-name" content="EHF" />
-    <meta name="robots" content="index, follow" />
-    <link
-      rel="canonical"
-      href="https://eduardoherreraf.github.io/html-0010_imagenes_y_multimedia.html"
-    />
-    <!-- Fin Metaetiquetas -->
 
-    <!-- Open Graph data -->
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="Imágenes y Multimedia HTML - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      property="og:description"
-      content="Guía que explica cómo utilizar imágenes y otros elementos multimedia en una página web."
-    />
-    <meta
-      property="og:image"
-      content="https://i.ibb.co/RpWzpCP8/Imagenes-y-multimedia-HTML.png"
-    />
-    <meta
-      property="og:image:alt"
-      content="Imagen de ejemplo de una página con una imagen y un vídeo."
-    />
-    <meta
-      property="og:url"
-      content="https://eduardoherreraf.github.io/html-0010_imagenes_y_multimedia.html"
-    />
-    <meta property="og:locale" content="es_CO" />
-    <!-- fin Open Graph data -->
+<head>
+  <!-- Metaetiquetas -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Guía que explica cómo utilizar imágenes y otros elementos multimedia en una página web." />
+  <meta name="title" content="Imágenes y Multimedia HTML - Ing. Eduardo Herrera Forero." />
+  <meta name="author" content="Ing. Eduardo Herrera Forero" />
+  <meta name="application-name" content="EHF" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eduardoherreraf.github.io/html-0010_imagenes_y_multimedia.html" />
+  <!-- Fin Metaetiquetas -->
 
-    <!-- Twitter cards -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Imágenes y Multimedia HTML - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      name="twitter:description"
-      content="Guía que explica cómo utilizar imágenes y otros elementos multimedia en una página web."
-    />
-    <meta
-      name="twitter:image"
-      content="https://i.ibb.co/RpWzpCP8/Imagenes-y-multimedia-HTML.png"
-    />
-    <meta
-      name="twitter:image:alt"
-      content="Imagen de ejemplo de una página con una imagen y un vídeo."
-    />
-    <meta
-      name="twitter:url"
-      content="https://eduardoherreraf.github.io/html-0010_imagenes_y_multimedia.html"
-    />
-    <meta name="twitter:site" content="@ehfeduardo" />
-    <!-- Fin Twitter cards -->
+  <!-- Open Graph data -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Imágenes y Multimedia HTML - Ing. Eduardo Herrera Forero." />
+  <meta property="og:description"
+    content="Guía que explica cómo utilizar imágenes y otros elementos multimedia en una página web." />
+  <meta property="og:image" content="https://i.ibb.co/RpWzpCP8/Imagenes-y-multimedia-HTML.png" />
+  <meta property="og:image:alt" content="Imagen de ejemplo de una página con una imagen y un vídeo." />
+  <meta property="og:url" content="https://eduardoherreraf.github.io/html-0010_imagenes_y_multimedia.html" />
+  <meta property="og:locale" content="es_CO" />
+  <!-- fin Open Graph data -->
 
-    <!-- iconos -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="android-chrome-192x192.png"
-    />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- fin iconos -->
+  <!-- Twitter cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Imágenes y Multimedia HTML - Ing. Eduardo Herrera Forero." />
+  <meta name="twitter:description"
+    content="Guía que explica cómo utilizar imágenes y otros elementos multimedia en una página web." />
+  <meta name="twitter:image" content="https://i.ibb.co/RpWzpCP8/Imagenes-y-multimedia-HTML.png" />
+  <meta name="twitter:image:alt" content="Imagen de ejemplo de una página con una imagen y un vídeo." />
+  <meta name="twitter:url" content="https://eduardoherreraf.github.io/html-0010_imagenes_y_multimedia.html" />
+  <meta name="twitter:site" content="@ehfeduardo" />
+  <!-- Fin Twitter cards -->
 
-    <title>Imágenes y Multimedia HTML - Ing. Eduardo Herrera Forero.</title>
+  <!-- iconos -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- fin iconos -->
 
-    <script type="module" src="./js/main.js"></script>
+  <title>Imágenes y Multimedia HTML - Ing. Eduardo Herrera Forero.</title>
 
-    <meta
-      name="google-site-verification"
-      content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc"
-    />
-  </head>
+  <script type="module" src="./js/main.js"></script>
 
-  <body>
-    <!-- Barra deNavegación -->
-    <nav
-      class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
-    >
-      <div class="container-fluid">
-        <!-- Enlace a la página principal con el logo y nombre -->
-        <a
-          class="navbar-brand d-flex align-items-center ms-2 text-decoration-none"
-          href="index.html"
-        >
-          <img
-            src="./images/logo.png"
-            alt="Logo de Ing. Eduardo Herrera Forero"
-            width="30"
-            height="30"
-            class="d-inline-block align-text-top me-1"
-          />
-          <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
-        </a>
-        <!-- Botón para activar el menú en dispositivos pequeños -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Menú de navegación -->
-        <div
-          class="collapse navbar-collapse ms-auto text-center"
-          id="navbarSupportedContent"
-        >
-          <ul
-            class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100"
-          >
-            <li class="nav-item">
-              <a class="nav-link mx-1 text-decoration-none" href="index.html"
-                >SOBRE MÍ</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link mx-1 text-decoration-none"
-                href="index.html#resume"
-                >EXPERIENCIA</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link mx-1 text-decoration-none"
-                href="index.html#portfolio"
-                >PORTAFOLIO</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link mx-1 text-decoration-none"
-                href="index.html#studies"
-                >ESTUDIOS</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link mx-1 publicaciones-activo text-decoration-none"
-                href="index.html#blog"
-                >PUBLICACIONES</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link mx-1 text-decoration-none"
-                href="index.html#contact"
-                >CONTACTO</a
-              >
-            </li>
-          </ul>
-        </div>
+  <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
+</head>
+
+<body>
+  <!-- Barra deNavegación -->
+  <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
+    <div class="container-fluid">
+      <!-- Enlace a la página principal con el logo y nombre -->
+      <a class="navbar-brand d-flex align-items-center ms-2 text-decoration-none" href="index.html">
+        <img src="./images/logo.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30"
+          class="d-inline-block align-text-top me-1" />
+        <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
+      </a>
+      <!-- Botón para activar el menú en dispositivos pequeños -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100">
+          <li class="nav-item">
+            <a class="nav-link mx-1 text-decoration-none" href="index.html">SOBRE MÍ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 text-decoration-none" href="index.html#resume">EXPERIENCIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 text-decoration-none" href="index.html#portfolio">PORTAFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 text-decoration-none" href="index.html#studies">ESTUDIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 publicaciones-activo text-decoration-none" href="index.html#blog">PUBLICACIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 text-decoration-none" href="index.html#contact">CONTACTO</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- Barra deNavegación -->
+    </div>
+  </nav>
+  <!-- Barra deNavegación -->
 
-    <!--  principal  -->
-    <div class="container-fluid" id="introduccion">
-      <main class="row">
-        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
-          <!--  Imágenes y Multimedia HTML-->
-          <article
-            class="row border-1 border-bottom pb-3"
-            data-bs-spy="scroll"
-            data-bs-target="#list-example"
-            data-bs-smooth-scroll="true"
-          >
+  <!--  principal  -->
+  <div class="container-fluid" id="introduccion">
+    <main class="row">
+      <section class="pb-3 pt-5 col-lg-9 px-lg-4">
+        <!--  Imágenes y Multimedia HTML-->
+        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
+          data-bs-smooth-scroll="true">
+          <div>
+            <header>
+              <h1>Imágenes y Multimedia HTML</h1>
+            </header>
+
+            <!-- Introducción -->
             <div>
-              <header>
-                <h1>Imágenes y Multimedia HTML</h1>
-              </header>
-
-              <!-- Introducción -->
-              <div>
-                <h2>Introducción</h2>
-                <p>
-                  HTML no solo facilita la organización de texto, sino que
-                  también permite incorporar contenido multimedia, como
-                  imágenes, audio y video, enriqueciendo notablemente la
-                  experiencia del usuario. Las imágenes se insertan mediante la
-                  etiqueta <img />, que utiliza atributos como src para
-                  especificar la ubicación del archivo y alt para proporcionar
-                  una descripción alternativa, garantizando accesibilidad si la
-                  imagen no se carga.
-                </p>
-                <p>
-                  Para incluir audio y video, se emplean las etiquetas
-                  <code class="language-html">&lt;audio></code> y
-                  <code class="language-html">&lt;video></code>,
-                  respectivamente, que permiten reproducir contenido
-                  directamente en el navegador. Se aconseja usar formatos
-                  compatibles como MP3 para audio y MP4 para video, añadir
-                  controles de reproducción mediante el atributo controls y
-                  optimizar los archivos para minimizar el tiempo de carga,
-                  mejorando así la accesibilidad y el rendimiento del sitio web.
-                </p>
-                <div class="centrar-imagen imagen50">
-                  <picture>
-                    <img
-                      src="https://i.ibb.co/RpWzpCP8/Imagenes-y-multimedia-HTML.png"
-                      class="img-fluid"
-                      alt="Imágenes y Multimedia HTML"
-                      title="Imágenes y Multimedia HTML"
-                      draggable="true"
-                    />
-                    <figcaption>
-                      Página Web que muestra una Imagen y un vídeo con HTML.
-                    </figcaption>
-                  </picture>
-                </div>
+              <h2>Introducción</h2>
+              <p>
+                HTML no solo facilita la organización de texto, sino que
+                también permite incorporar contenido multimedia, como
+                imágenes, audio y video, enriqueciendo notablemente la
+                experiencia del usuario. Las imágenes se insertan mediante la
+                etiqueta <img />, que utiliza atributos como src para
+                especificar la ubicación del archivo y alt para proporcionar
+                una descripción alternativa, garantizando accesibilidad si la
+                imagen no se carga.
+              </p>
+              <p>
+                Para incluir audio y video, se emplean las etiquetas
+                <code class="language-html">&lt;audio></code> y
+                <code class="language-html">&lt;video></code>,
+                respectivamente, que permiten reproducir contenido
+                directamente en el navegador. Se aconseja usar formatos
+                compatibles como MP3 para audio y MP4 para video, añadir
+                controles de reproducción mediante el atributo controls y
+                optimizar los archivos para minimizar el tiempo de carga,
+                mejorando así la accesibilidad y el rendimiento del sitio web.
+              </p>
+              <div class="centrar-imagen imagen50">
+                <picture>
+                  <img src="https://i.ibb.co/RpWzpCP8/Imagenes-y-multimedia-HTML.png" class="img-fluid"
+                    alt="Imágenes y Multimedia HTML" title="Imágenes y Multimedia HTML" draggable="true" />
+                  <figcaption>
+                    Página Web que muestra una Imagen y un vídeo con HTML.
+                  </figcaption>
+                </picture>
               </div>
-              <!-- Introducción Fin -->
-              <hr class="subtle-divider" />
+            </div>
+            <!-- Introducción Fin -->
+            <hr class="subtle-divider" />
 
-              <!-- Imágenes HTML <img> -->
-              <div id="imagenes-html-img" class="mt-3">
-                <h2>
-                  Imágenes HTML <code class="language-html">&lt;img></code>
-                </h2>
-                <p>
-                  Las imágenes pueden embellecer y optimizar el diseño visual de
-                  una página web, mejorando su estética, funcionalidad y
-                  experiencia del usuario al captar la atención y transmitir
-                  información de manera más efectiva.
-                </p>
-                <p>
-                  En HTML, se usa la etiqueta
-                  <code class="language-html">&lt;img></code> para insertar
-                  imágenes en una página web.
-                </p>
+            <!-- Imágenes HTML <img> -->
+            <div id="imagenes-html-img" class="mt-3">
+              <h2>
+                Imágenes HTML <code class="language-html">&lt;img></code>
+              </h2>
+              <p>
+                Las imágenes pueden embellecer y optimizar el diseño visual de
+                una página web, mejorando su estética, funcionalidad y
+                experiencia del usuario al captar la atención y transmitir
+                información de manera más efectiva.
+              </p>
+              <p>
+                En HTML, se usa la etiqueta
+                <code class="language-html">&lt;img></code> para insertar
+                imágenes en una página web.
+              </p>
 
-                <p>
-                  La etiqueta <code class="language-html">&lt;img></code> en
-                  HTML permite integrar imágenes en una página web, potenciando
-                  su atractivo visual y enriqueciendo la experiencia del
-                  usuario. Este elemento crea un espacio reservado para mostrar
-                  la imagen, que no se inserta directamente, sino que se vincula
-                  mediante una referencia, conectando el archivo gráfico al
-                  sitio.
-                </p>
-                <p>
-                  Como etiqueta vacía,
-                  <code class="language-html">&lt;img></code> no requiere cierre
-                  y se define únicamente por sus atributos. Los atributos
-                  esenciales son <code class="language-html">src</code> y
-                  <code class="language-html">alt</code>, a saber:
-                </p>
-                <ul>
-                  <li>
-                    <code class="language-html">src</code>: Define la ruta o
-                    dirección del archivo de la imagen.
-                  </li>
-                  <li>
-                    <code class="language-html">alt</code>: Proporciona un texto
-                    alternativo que describe la imagen para accesibilidad. Es
-                    importante por varias razones:
-                    <ul>
-                      <li>
-                        <span class="fw-bold">Accesibilidad</span>: Las personas
-                        con discapacidades visuales que utilizan lectores de
-                        pantalla podrán escuchar el texto alternativo, lo que
-                        les permitirá comprender el contenido o propósito de la
-                        imagen.
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          >SEO (Optimización para Motores de Búsqueda)</span
-                        >: Los buscadores emplean el texto alternativo para
-                        interpretar el contenido de la imagen, lo que puede
-                        mejorar la visibilidad de la página en los resultados de
-                        búsqueda de imágenes.
-                      </li>
-                      <li>
-                        <span class="fw-bold">Cuando la imagen no carga</span>:
-                        Si la imagen no se muestra debido a errores (como una
-                        ruta incorrecta o problemas de conexión), el texto
-                        alternativo aparecerá en su lugar, proporcionando una
-                        descripción del contenido.
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-                <p>Otros parámetros opciones podrían ser:</p>
-                <ul>
-                  <li>
-                    <code class="language-html">width</code>: Ancho en píxeles o
-                    porcentaje.
-                  </li>
-                  <li>
-                    <code class="language-html">height</code>: Alto en píxeles o
-                    porcentaje.
-                  </li>
-                  <li>
-                    <code class="language-html">title</code>: Texto que aparece
-                    al pasar el mouse sobre la imagen. <br />
-                    Este atributo permite mostrar información contextual
-                    adicional sobre una imagen, como una breve explicación que
-                    aparece al pasar el cursor, mejorando la experiencia del
-                    usuario al aclarar el contenido o propósito de la imagen sin
-                    ocupar espacio en la página. Aunque no reemplaza al atributo
-                    alt, complementa la accesibilidad al proporcionar detalles
-                    extra, y en imágenes que actúan como enlaces o botones,
-                    facilita la navegación intuitiva al indicar qué acción se
-                    desencadenará al hacer clic.
-                  </li>
-                  <li>
-                    <code class="language-html">id</code>: Identificador único
-                    del elemento.
-                  </li>
-                  <li><code class="language-html">class</code>: Clases CSS.</li>
-                  <li>
-                    <code class="language-html">loading</code>: Controla cómo y
-                    cuándo se carga una imagen en la página, mejorando el
-                    rendimiento web.
-                    <ul>
-                      <li>
-                        <code class="language-html">lazy</code>: carga diferida
-                        (mejora rendimiento).
-                      </li>
-                      <li>
-                        <code class="language-html">eager</code>: carga
-                        inmediata, por defecto.
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <code class="language-html">aria-label</code>: Proporciona
-                    una etiqueta de texto accesible para describir el propósito
-                    o contenido de una imagen en tecnologías de asistencia, como
-                    lectores de pantalla, cuando no hay otro texto descriptivo
-                    disponible.
-                  </li>
-                </ul>
-                <div class="row">
-                  <!-- Ejemplo -->
-                  <div class="ej-ejemplo">
-                    <div class="row ej-ejecutado mt-3">
-                      <!-- código ejecutado -->
-                      <div>
-                        <div class="ej-contenedor">
-                          <p class="ej-h3-img">Tecnologías Web</p>
-                          <img
-                            src="https://cdn.pixabay.com/photo/2016/12/28/09/36/web-1935737_1280.png"
-                            alt="Diseño web"
-                            width="80%"
-                            class="ej-centrar-imagen"
-                            title="Algunas tecnologías para la realización de páginas web"
-                            loading="lazy"
-                            aria-label="Algunas tecnologías para la realización de páginas web, p. ej. CSS, JS, HTML, angular, vue.js, ruby, python..."
-                          />
-                        </div>
+              <p>
+                La etiqueta <code class="language-html">&lt;img></code> en
+                HTML permite integrar imágenes en una página web, potenciando
+                su atractivo visual y enriqueciendo la experiencia del
+                usuario. Este elemento crea un espacio reservado para mostrar
+                la imagen, que no se inserta directamente, sino que se vincula
+                mediante una referencia, conectando el archivo gráfico al
+                sitio.
+              </p>
+              <p>
+                Como etiqueta vacía,
+                <code class="language-html">&lt;img></code> no requiere cierre
+                y se define únicamente por sus atributos. Los atributos
+                esenciales son <code class="language-html">src</code> y
+                <code class="language-html">alt</code>, a saber:
+              </p>
+              <ul>
+                <li>
+                  <code class="language-html">src</code>: Define la ruta o
+                  dirección del archivo de la imagen.
+                </li>
+                <li>
+                  <code class="language-html">alt</code>: Proporciona un texto
+                  alternativo que describe la imagen para accesibilidad. Es
+                  importante por varias razones:
+                  <ul>
+                    <li>
+                      <span class="fw-bold">Accesibilidad</span>: Las personas
+                      con discapacidades visuales que utilizan lectores de
+                      pantalla podrán escuchar el texto alternativo, lo que
+                      les permitirá comprender el contenido o propósito de la
+                      imagen.
+                    </li>
+                    <li>
+                      <span class="fw-bold">SEO (Optimización para Motores de Búsqueda)</span>: Los buscadores emplean
+                      el texto alternativo para
+                      interpretar el contenido de la imagen, lo que puede
+                      mejorar la visibilidad de la página en los resultados de
+                      búsqueda de imágenes.
+                    </li>
+                    <li>
+                      <span class="fw-bold">Cuando la imagen no carga</span>:
+                      Si la imagen no se muestra debido a errores (como una
+                      ruta incorrecta o problemas de conexión), el texto
+                      alternativo aparecerá en su lugar, proporcionando una
+                      descripción del contenido.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <p>Otros parámetros opciones podrían ser:</p>
+              <ul>
+                <li>
+                  <code class="language-html">width</code>: Ancho en píxeles o
+                  porcentaje.
+                </li>
+                <li>
+                  <code class="language-html">height</code>: Alto en píxeles o
+                  porcentaje.
+                </li>
+                <li>
+                  <code class="language-html">title</code>: Texto que aparece
+                  al pasar el mouse sobre la imagen. <br />
+                  Este atributo permite mostrar información contextual
+                  adicional sobre una imagen, como una breve explicación que
+                  aparece al pasar el cursor, mejorando la experiencia del
+                  usuario al aclarar el contenido o propósito de la imagen sin
+                  ocupar espacio en la página. Aunque no reemplaza al atributo
+                  alt, complementa la accesibilidad al proporcionar detalles
+                  extra, y en imágenes que actúan como enlaces o botones,
+                  facilita la navegación intuitiva al indicar qué acción se
+                  desencadenará al hacer clic.
+                </li>
+                <li>
+                  <code class="language-html">id</code>: Identificador único
+                  del elemento.
+                </li>
+                <li><code class="language-html">class</code>: Clases CSS.</li>
+                <li>
+                  <code class="language-html">loading</code>: Controla cómo y
+                  cuándo se carga una imagen en la página, mejorando el
+                  rendimiento web.
+                  <ul>
+                    <li>
+                      <code class="language-html">lazy</code>: carga diferida
+                      (mejora rendimiento).
+                    </li>
+                    <li>
+                      <code class="language-html">eager</code>: carga
+                      inmediata, por defecto.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <code class="language-html">aria-label</code>: Proporciona
+                  una etiqueta de texto accesible para describir el propósito
+                  o contenido de una imagen en tecnologías de asistencia, como
+                  lectores de pantalla, cuando no hay otro texto descriptivo
+                  disponible.
+                </li>
+              </ul>
+              <div class="row">
+                <!-- Ejemplo -->
+                <div class="ej-ejemplo">
+                  <div class="row ej-ejecutado mt-3">
+                    <!-- código ejecutado -->
+                    <div>
+                      <div class="ej-contenedor">
+                        <p class="ej-h3-img">Tecnologías Web</p>
+                        <img src="https://cdn.pixabay.com/photo/2016/12/28/09/36/web-1935737_1280.png" alt="Diseño web"
+                          width="80%" class="ej-centrar-imagen"
+                          title="Algunas tecnologías para la realización de páginas web" loading="lazy"
+                          aria-label="Algunas tecnologías para la realización de páginas web, p. ej. CSS, JS, HTML, angular, vue.js, ruby, python..." />
                       </div>
-                      <!-- código ejecutado fin -->
                     </div>
-                    <div class="row">
-                      <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
-                        <!-- código HTML -->
-                        <pre data-src-status="loaded" tabindex="0">
+                    <!-- código ejecutado fin -->
+                  </div>
+                  <div class="row">
+                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                      <!-- código HTML -->
+                      <pre data-src-status="loaded" tabindex="0">
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
                                 &lt;div class="contenedor">
@@ -402,11 +300,11 @@
                               </div>        
                             </code>
                           </pre>
-                        <!-- código HTML -->
-                      </div>
-                      <div class="ej-code-css col-lg-6 mb-3">
-                        <!-- código CSS -->
-                        <pre data-src-status="loaded" tabindex="0">
+                      <!-- código HTML -->
+                    </div>
+                    <div class="ej-code-css col-lg-6 mb-3">
+                      <!-- código CSS -->
+                      <pre data-src-status="loaded" tabindex="0">
                               <code class="language-css" data-prismjs-copy="Copy">
                                 <div>
                                   .centrar-imagen {
@@ -442,139 +340,133 @@
                                 </div>        
                               </code>
                             </pre>
-                        <!-- código HTML -->
-                      </div>
+                      <!-- código HTML -->
                     </div>
                   </div>
-                  <!-- Ejemplo fin -->
                 </div>
+                <!-- Ejemplo fin -->
               </div>
-              <!-- Imágenes HTML Fin -->
-              <hr class="subtle-divider" />
+            </div>
+            <!-- Imágenes HTML Fin -->
+            <hr class="subtle-divider" />
 
-              <!-- Videos HTML <video> -->
-              <div id="videos-html-video" class="mt-3">
-                <h2>
-                  Videos HTML <code class="language-html">&lt;video></code>
-                </h2>
-                <p>
-                  El elemento <code class="language-html">&lt;video></code> en
-                  HTML se utiliza para insertar y reproducir contenido de video
-                  en una página web. Fue introducido en HTML5 con el objetivo de
-                  proporcionar soporte nativo para videos en navegadores,
-                  eliminando la necesidad de complementos (plug-ins) externos
-                  como Flash o Java applets.
-                </p>
-                <p>
-                  Los atributos más comunes y útiles que se pueden usar con la
-                  etiqueta <code class="language-html">&lt;video></code> son:
-                </p>
-                <ul>
-                  <li>
-                    <code class="language-html">src</code>: Ruta del archivo de
-                    video (puede ser relativa o absoluta).
-                  </li>
-                  <li>
-                    <code class="language-html">controls</code>: Muestra los
-                    controles de reproducción.
-                  </li>
+            <!-- Videos HTML <video> -->
+            <div id="videos-html-video" class="mt-3">
+              <h2>
+                Videos HTML <code class="language-html">&lt;video></code>
+              </h2>
+              <p>
+                El elemento <code class="language-html">&lt;video></code> en
+                HTML se utiliza para insertar y reproducir contenido de video
+                en una página web. Fue introducido en HTML5 con el objetivo de
+                proporcionar soporte nativo para videos en navegadores,
+                eliminando la necesidad de complementos (plug-ins) externos
+                como Flash o Java applets.
+              </p>
+              <p>
+                Los atributos más comunes y útiles que se pueden usar con la
+                etiqueta <code class="language-html">&lt;video></code> son:
+              </p>
+              <ul>
+                <li>
+                  <code class="language-html">src</code>: Ruta del archivo de
+                  video (puede ser relativa o absoluta).
+                </li>
+                <li>
+                  <code class="language-html">controls</code>: Muestra los
+                  controles de reproducción.
+                </li>
 
-                  <li>
-                    <code class="language-html">autoplay</code>: Reproducción
-                    automática (debe usar el atributo
-                    <code class="language-html">muted</code>).
-                  </li>
-                  <li>
-                    <code class="language-html">loop</code>: Repite el video.
-                  </li>
-                  <li>
-                    <code class="language-html">muted</code>: Inicia sin sonido.
-                  </li>
-                  <li>
-                    <code class="language-html">poster</code>: Imagen de vista
-                    previa mientras se espera que el video comience a
-                    reproducirse. Si no se especifica, el navegador mostrará el
-                    primer fotograma del video tan pronto como esté disponible.
-                  </li>
-                  <li>
-                    <code class="language-html">preload</code>: Controla qué
-                    tanto precargar.
-                    <ul>
-                      <li>
-                        <code class="language-html">none</code>: El video no
-                        debe ser almacenado en caché, generalmente para
-                        minimizar el tráfico innecesario.
-                      </li>
-                      <li>
-                        <code class="language-html">metadata</code>: Recomienda
-                        al navegador capturar información básica sobre la fuente
-                        (por ejemplo, dimensiones, duración, primer fotograma).
-                      </li>
-                      <li>
-                        <code class="language-html">auto</code>: Es el valor
-                        predeterminado y sugiere al navegador descargar el
-                        archivo tan pronto como sea posible.
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <code class="language-html">aria-label</code>: se utiliza
-                    para proporcionar una descripción accesible del video a
-                    usuarios que dependen de tecnologías adaptables, como
-                    lectores de pantalla. Este atributo define una etiqueta de
-                    texto que describe el propósito o contenido del video,
-                    especialmente cuando no hay controles visibles o texto
-                    asociado que lo explique claramente.
-                  </li>
-                  <li>
-                    <code class="language-html">width</code>: Este atributo le
-                    indica al navegador que el vídeo debe ocupar el porcentaje
-                    indicado del ancho del contenedor que la contiene. Si está
-                    dentro de un <code class="language-html">&lt;div</code>,
-                    tomará todo el ancho de ese
-                    <code class="language-html">&lt;div</code>. Si está dentro
-                    de <code class="language-html">&lt;body</code>, tomará todo
-                    el ancho de la página.
-                  </li>
-                </ul>
-                <p>
-                  En el siguiente ejemplo el navegador comenzará a reproducir el
-                  video automáticamente
-                  <code class="language-html">autoplay </code> tan pronto como
-                  sea posible, pero algunos navegadores también requieren el
-                  atributo <code class="language-html">muted</code> para que
-                  funcione, tal como en este caso.
-                </p>
+                <li>
+                  <code class="language-html">autoplay</code>: Reproducción
+                  automática (debe usar el atributo
+                  <code class="language-html">muted</code>).
+                </li>
+                <li>
+                  <code class="language-html">loop</code>: Repite el video.
+                </li>
+                <li>
+                  <code class="language-html">muted</code>: Inicia sin sonido.
+                </li>
+                <li>
+                  <code class="language-html">poster</code>: Imagen de vista
+                  previa mientras se espera que el video comience a
+                  reproducirse. Si no se especifica, el navegador mostrará el
+                  primer fotograma del video tan pronto como esté disponible.
+                </li>
+                <li>
+                  <code class="language-html">preload</code>: Controla qué
+                  tanto precargar.
+                  <ul>
+                    <li>
+                      <code class="language-html">none</code>: El video no
+                      debe ser almacenado en caché, generalmente para
+                      minimizar el tráfico innecesario.
+                    </li>
+                    <li>
+                      <code class="language-html">metadata</code>: Recomienda
+                      al navegador capturar información básica sobre la fuente
+                      (por ejemplo, dimensiones, duración, primer fotograma).
+                    </li>
+                    <li>
+                      <code class="language-html">auto</code>: Es el valor
+                      predeterminado y sugiere al navegador descargar el
+                      archivo tan pronto como sea posible.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <code class="language-html">aria-label</code>: se utiliza
+                  para proporcionar una descripción accesible del video a
+                  usuarios que dependen de tecnologías adaptables, como
+                  lectores de pantalla. Este atributo define una etiqueta de
+                  texto que describe el propósito o contenido del video,
+                  especialmente cuando no hay controles visibles o texto
+                  asociado que lo explique claramente.
+                </li>
+                <li>
+                  <code class="language-html">width</code>: Este atributo le
+                  indica al navegador que el vídeo debe ocupar el porcentaje
+                  indicado del ancho del contenedor que la contiene. Si está
+                  dentro de un <code class="language-html">&lt;div</code>,
+                  tomará todo el ancho de ese
+                  <code class="language-html">&lt;div</code>. Si está dentro
+                  de <code class="language-html">&lt;body</code>, tomará todo
+                  el ancho de la página.
+                </li>
+              </ul>
+              <p>
+                En el siguiente ejemplo el navegador comenzará a reproducir el
+                video automáticamente
+                <code class="language-html">autoplay </code> tan pronto como
+                sea posible, pero algunos navegadores también requieren el
+                atributo <code class="language-html">muted</code> para que
+                funcione, tal como en este caso.
+              </p>
 
-                <div class="row">
-                  <!-- Ejemplo -->
-                  <div class="ej-ejemplo">
-                    <div class="row ej-ejecutado mt-3">
-                      <!-- código ejecutado -->
-                      <div>
-                        <div class="ej-video-container">
-                          <p class="ej-h3-videos">
-                            Reproducción Automática de un Vídeo
-                          </p>
+              <div class="row">
+                <!-- Ejemplo -->
+                <div class="ej-ejemplo">
+                  <div class="row ej-ejecutado mt-3">
+                    <!-- código ejecutado -->
+                    <div>
+                      <div class="ej-video-container">
+                        <p class="ej-h3-videos">
+                          Reproducción Automática de un Vídeo
+                        </p>
 
-                          <video
-                            class="ej-video-element"
-                            src="./multimedia/202368-918049003_small.mp4"
-                            width="80%"
-                            autoplay
-                            muted
-                            loop
-                          >
-                            Tu navegador no soporta la reproducción de video.
-                          </video>
-                        </div>
+                        <video class="ej-video-element" src="./multimedia/202368-918049003_small.mp4" width="80%"
+                          autoplay muted loop>
+                          Tu navegador no soporta la reproducción de video.
+                        </video>
                       </div>
-                      <!-- código ejecutado fin -->
                     </div>
-                    <div class="row">
-                      <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
-                        <!-- código HTML -->
-                        <pre data-src-status="loaded" tabindex="0">
+                    <!-- código ejecutado fin -->
+                  </div>
+                  <div class="row">
+                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                      <!-- código HTML -->
+                      <pre data-src-status="loaded" tabindex="0">
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
                                 &lt;div class="video-container">
@@ -593,11 +485,11 @@
                               </div>        
                             </code>
                           </pre>
-                        <!-- código HTML -->
-                      </div>
-                      <div class="ej-code-css col-lg-6 mb-3">
-                        <!-- código CSS -->
-                        <pre data-src-status="loaded" tabindex="0">
+                      <!-- código HTML -->
+                    </div>
+                    <div class="ej-code-css col-lg-6 mb-3">
+                      <!-- código CSS -->
+                      <pre data-src-status="loaded" tabindex="0">
                               <code class="language-css" data-prismjs-copy="Copy">
                                 <div>
                                   .video-container {
@@ -638,44 +530,38 @@
                                 </div>        
                               </code>
                             </pre>
-                        <!-- código HTML -->
-                      </div>
+                      <!-- código HTML -->
                     </div>
                   </div>
-                  <!-- Ejemplo fin -->
                 </div>
-                <p>
-                  En el siguiente ejemplo se muestra la configuración más usada:
-                </p>
-                <div class="row">
-                  <!-- Ejemplo -->
-                  <div class="ej-ejemplo">
-                    <div class="row ej-ejecutado mt-3">
-                      <!-- código ejecutado -->
-                      <div>
-                        <div class="ej-video-container">
-                          <p class="ej-h3-videos">
-                            Reproducción un Vídeo con Imagen Previa
-                          </p>
-                          <video
-                            class="ej-video-element"
-                            src="./multimedia/202368-918049003_small.mp4"
-                            poster="https://i.postimg.cc/3xWF9xR2/poster.png"
-                            controls
-                            preload="auto"
-                            loop
-                            aria-label="Video que muestra la panorámica de un parque de diversiones y al fondo hay una rueda de Chicago."
-                          >
-                            Tu navegador no soporta la reproducción de video.
-                          </video>
-                        </div>
+                <!-- Ejemplo fin -->
+              </div>
+              <p>
+                En el siguiente ejemplo se muestra la configuración más usada:
+              </p>
+              <div class="row">
+                <!-- Ejemplo -->
+                <div class="ej-ejemplo">
+                  <div class="row ej-ejecutado mt-3">
+                    <!-- código ejecutado -->
+                    <div>
+                      <div class="ej-video-container">
+                        <p class="ej-h3-videos">
+                          Reproducción un Vídeo con Imagen Previa
+                        </p>
+                        <video class="ej-video-element" src="./multimedia/202368-918049003_small.mp4"
+                          poster="https://i.postimg.cc/3xWF9xR2/poster.png" controls preload="auto" loop
+                          aria-label="Video que muestra la panorámica de un parque de diversiones y al fondo hay una rueda de Chicago.">
+                          Tu navegador no soporta la reproducción de video.
+                        </video>
                       </div>
-                      <!-- código ejecutado fin -->
                     </div>
-                    <div class="row">
-                      <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
-                        <!-- código HTML -->
-                        <pre data-src-status="loaded" tabindex="0">
+                    <!-- código ejecutado fin -->
+                  </div>
+                  <div class="row">
+                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                      <!-- código HTML -->
+                      <pre data-src-status="loaded" tabindex="0">
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
                                 &lt;div class="video-container">
@@ -694,11 +580,11 @@
                               </div>        
                             </code>
                           </pre>
-                        <!-- código HTML -->
-                      </div>
-                      <div class="ej-code-css col-lg-6 mb-3">
-                        <!-- código CSS -->
-                        <pre data-src-status="loaded" tabindex="0">
+                      <!-- código HTML -->
+                    </div>
+                    <div class="ej-code-css col-lg-6 mb-3">
+                      <!-- código CSS -->
+                      <pre data-src-status="loaded" tabindex="0">
                               <code class="language-css" data-prismjs-copy="Copy">
                                 <div>
                                   .video-container {
@@ -739,43 +625,38 @@
                                 </div>        
                               </code>
                             </pre>
-                        <!-- código HTML -->
-                      </div>
+                      <!-- código HTML -->
                     </div>
                   </div>
-                  <!-- Ejemplo fin -->
                 </div>
-                <p>
-                  <span class="fw-bold"
-                    >Otra Forma de usar
-                    <code class="language-html">&lt;video></code></span
-                  >:
-                </p>
-                <div class="row">
-                  <!-- Ejemplo -->
-                  <div class="ej-ejemplo">
-                    <div class="row ej-ejecutado mt-3">
-                      <!-- código ejecutado -->
-                      <div>
-                        <div class="ej-video-container2">
-                          <p class="ej-h3-videos">
-                            Reproducción Moderna de un Vídeo
-                          </p>
-                          <video controls width="80%">
-                            <source
-                              src="./multimedia/202368-918049003_small.webm"
-                              type="video/mp4"
-                            />
-                            Your browser does not support the video tag.
-                          </video>
-                        </div>
+                <!-- Ejemplo fin -->
+              </div>
+              <p>
+                <span class="fw-bold">Otra Forma de usar
+                  <code class="language-html">&lt;video></code></span>:
+              </p>
+              <div class="row">
+                <!-- Ejemplo -->
+                <div class="ej-ejemplo">
+                  <div class="row ej-ejecutado mt-3">
+                    <!-- código ejecutado -->
+                    <div>
+                      <div class="ej-video-container2">
+                        <p class="ej-h3-videos">
+                          Reproducción Moderna de un Vídeo
+                        </p>
+                        <video controls width="80%">
+                          <source src="./multimedia/202368-918049003_small.webm" type="video/mp4" />
+                          Your browser does not support the video tag.
+                        </video>
                       </div>
-                      <!-- código ejecutado fin -->
                     </div>
-                    <div class="row">
-                      <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
-                        <!-- código HTML -->
-                        <pre data-src-status="loaded" tabindex="0">
+                    <!-- código ejecutado fin -->
+                  </div>
+                  <div class="row">
+                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                      <!-- código HTML -->
+                      <pre data-src-status="loaded" tabindex="0">
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
                                 &lt;div class="video-container2">
@@ -793,11 +674,11 @@
                               </div>        
                             </code>
                           </pre>
-                        <!-- código HTML -->
-                      </div>
-                      <div class="ej-code-css col-lg-6 mb-3">
-                        <!-- código CSS -->
-                        <pre data-src-status="loaded" tabindex="0">
+                      <!-- código HTML -->
+                    </div>
+                    <div class="ej-code-css col-lg-6 mb-3">
+                      <!-- código CSS -->
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-css" data-prismjs-copy="Copy">
                           <div>
                             .video-container2 {
@@ -824,105 +705,97 @@
                           </div>      
                           </code>
                         </pre>
-                        <!-- código HTML -->
-                      </div>
+                      <!-- código HTML -->
                     </div>
                   </div>
-                  <!-- Ejemplo fin -->
                 </div>
-                <p>
-                  Este ejemplo presenta un reproductor de video HTML5 estándar
-                  que reproduce un archivo WEBM con los controles nativos del
-                  navegador. El video se redimensiona al 80% del ancho
-                  disponible. Sin embargo, no incluye un manejo robusto de
-                  errores: si el archivo no está disponible, el reproductor
-                  mostrará un error o quedará en blanco. Además, si el navegador
-                  no soporta el formato WEBM, se mostrará el mensaje "Your
-                  browser does not support the video tag.", aunque esto es poco
-                  común en navegadores modernos.
-                </p>
+                <!-- Ejemplo fin -->
               </div>
-              <!-- Videos HTML <video> Fin -->
-              <hr class="subtle-divider" />
+              <p>
+                Este ejemplo presenta un reproductor de video HTML5 estándar
+                que reproduce un archivo WEBM con los controles nativos del
+                navegador. El video se redimensiona al 80% del ancho
+                disponible. Sin embargo, no incluye un manejo robusto de
+                errores: si el archivo no está disponible, el reproductor
+                mostrará un error o quedará en blanco. Además, si el navegador
+                no soporta el formato WEBM, se mostrará el mensaje "Your
+                browser does not support the video tag.", aunque esto es poco
+                común en navegadores modernos.
+              </p>
+            </div>
+            <!-- Videos HTML <video> Fin -->
+            <hr class="subtle-divider" />
 
-              <!-- Audio HTML <audio> -->
-              <div id="audio-html-audio" class="mt-3">
-                <h2>
-                  Audio HTML <code class="language-html">&lt;audio></code>
-                </h2>
-                <p>
-                  El elemento HTML
-                  <code class="language-html">&lt;audio></code> es una
-                  característica introducida en HTML5 que permite incrustar
-                  contenido de audio directamente en una página web. Funciona de
-                  manera muy similar al elemento
-                  <code class="language-html">&lt;video></code>.
-                </p>
-                <p>Esta etiqueta posee los siguientes principales atributos:</p>
-                <ul>
-                  <li>
-                    <code class="language-html">src</code> (<span
-                      class="fst-italic"
-                      >source</span
-                    >): Este atributo especifica la dirección (URL) del archivo
-                    de audio que se desea reproducir. En este caso, se trata de
-                    una pista musical alojada en Pixabay, un sitio web que
-                    ofrece música gratuita.
-                  </li>
-                  <li>
-                    <code class="language-html">controls</code>: (Obligatorio)
-                    Muestra los botones de reproducir/pausar y control de
-                    volumen.
-                  </li>
-                  <li>
-                    <code class="language-html">autoplay</code>: Reproduce
-                    automáticamente (a menudo bloqueado por navegadores).
-                  </li>
-                  <li>
-                    <code class="language-html">loop</code>: Repite el audio
-                    cuando termina.
-                  </li>
-                  <li>
-                    <code class="language-html">muted</code>: Inicia silenciado.
-                  </li>
-                  <li>
-                    <code class="language-html">preload</code>: Funciona igual
-                    que en
-                    <code class="language-html">&lt;video></code>
-                  </li>
-                  <li>
-                    <code class="language-html">aria-label</code>: Ofrece un
-                    texto descriptivo para que los lectores de pantalla lo
-                    interpreten, lo que ayuda cuando los controles del
-                    reproductor de audio no son claros o cuando el elemento
-                    <code class="language-html">&lt;audio></code> está oculto
-                    pero operable mediante botones personalizados.
-                  </li>
-                </ul>
-                <div class="row">
-                  <!-- Ejemplo -->
-                  <div class="ej-ejemplo">
-                    <div class="row ej-ejecutado mt-3">
-                      <!-- código ejecutado -->
-                      <div>
-                        <div class="ej-audio-container">
-                          <audio
-                            src="./multimedia/commercial-upbeat-energetic-rock-354637.mp3"
-                            preload="auto"
-                            loop
-                            controls
-                            autoplay
-                            class="audio-personalizado"
-                            aria-label="Reproductor de audio para una pista musical de rock"
-                          ></audio>
-                        </div>
+            <!-- Audio HTML <audio> -->
+            <div id="audio-html-audio" class="mt-3">
+              <h2>
+                Audio HTML <code class="language-html">&lt;audio></code>
+              </h2>
+              <p>
+                El elemento HTML
+                <code class="language-html">&lt;audio></code> es una
+                característica introducida en HTML5 que permite incrustar
+                contenido de audio directamente en una página web. Funciona de
+                manera muy similar al elemento
+                <code class="language-html">&lt;video></code>.
+              </p>
+              <p>Esta etiqueta posee los siguientes principales atributos:</p>
+              <ul>
+                <li>
+                  <code class="language-html">src</code> (<span class="fst-italic">source</span>): Este atributo
+                  especifica la dirección (URL) del archivo
+                  de audio que se desea reproducir. En este caso, se trata de
+                  una pista musical alojada en Pixabay, un sitio web que
+                  ofrece música gratuita.
+                </li>
+                <li>
+                  <code class="language-html">controls</code>: (Obligatorio)
+                  Muestra los botones de reproducir/pausar y control de
+                  volumen.
+                </li>
+                <li>
+                  <code class="language-html">autoplay</code>: Reproduce
+                  automáticamente (a menudo bloqueado por navegadores).
+                </li>
+                <li>
+                  <code class="language-html">loop</code>: Repite el audio
+                  cuando termina.
+                </li>
+                <li>
+                  <code class="language-html">muted</code>: Inicia silenciado.
+                </li>
+                <li>
+                  <code class="language-html">preload</code>: Funciona igual
+                  que en
+                  <code class="language-html">&lt;video></code>
+                </li>
+                <li>
+                  <code class="language-html">aria-label</code>: Ofrece un
+                  texto descriptivo para que los lectores de pantalla lo
+                  interpreten, lo que ayuda cuando los controles del
+                  reproductor de audio no son claros o cuando el elemento
+                  <code class="language-html">&lt;audio></code> está oculto
+                  pero operable mediante botones personalizados.
+                </li>
+              </ul>
+              <div class="row">
+                <!-- Ejemplo -->
+                <div class="ej-ejemplo">
+                  <div class="row ej-ejecutado mt-3">
+                    <!-- código ejecutado -->
+                    <div>
+                      <div class="ej-audio-container">
+                        <audio src="./multimedia/commercial-upbeat-energetic-rock-354637.mp3" preload="auto" loop
+                          controls autoplay class="audio-personalizado"
+                          aria-label="Reproductor de audio para una pista musical de rock"></audio>
                       </div>
-                      <!-- código ejecutado fin -->
                     </div>
-                    <div class="row">
-                      <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
-                        <!-- código HTML -->
-                        <pre data-src-status="loaded" tabindex="0">
+                    <!-- código ejecutado fin -->
+                  </div>
+                  <div class="row">
+                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                      <!-- código HTML -->
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             <div>
                               &lt;div class="audio-container">
@@ -939,11 +812,11 @@
                             </div>        
                           </code>
                         </pre>
-                        <!-- código HTML -->
-                      </div>
-                      <div class="ej-code-css col-lg-6 mb-3">
-                        <!-- código CSS -->
-                        <pre data-src-status="loaded" tabindex="0">
+                      <!-- código HTML -->
+                    </div>
+                    <div class="ej-code-css col-lg-6 mb-3">
+                      <!-- código CSS -->
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-css" data-prismjs-copy="Copy">
                             <div>
                               .audio-container {
@@ -966,94 +839,92 @@
                             </div>        
                           </code>
                         </pre>
-                        <!-- código HTML -->
-                      </div>
+                      <!-- código HTML -->
                     </div>
                   </div>
-                  <!-- Ejemplo fin -->
                 </div>
+                <!-- Ejemplo fin -->
               </div>
-              <!-- Audio HTML <audio> Fin -->
-              <hr class="subtle-divider" />
+            </div>
+            <!-- Audio HTML <audio> Fin -->
+            <hr class="subtle-divider" />
 
-              <!-- Etiqueta HTML <figure> -->
-              <div id="etiqueta-html-figure" class="mt-3">
-                <h2>
-                  Etiqueta HTML <code class="language-html">&lt;figure></code>
-                </h2>
-                <p>
-                  El elemento HTML semántico
-                  <code class="language-html">&lt;figure></code> se emplea para
-                  agrupar contenido independiente relacionado con el flujo
-                  principal del documento, como imágenes, ilustraciones,
-                  diagramas, fragmentos de código o tablas, acompañado de una
-                  descripción o pie de figura proporcionado por el elemento
-                  <code class="language-html">&lt;figcaption></code>.
-                </p>
-                <p>
-                  La función principal del elemento
-                  <code class="language-html">&lt;figure></code> es proporcionar
-                  un significado semántico al contenido que engloba. Esto indica
-                  a los navegadores, a las tecnologías de asistencia y los a
-                  lectores de pantalla, que el contenido agrupado forma una
-                  unidad con un propósito específico, usualmente como una
-                  ilustración o un complemento del texto principal.
-                </p>
-                <p>Aquí se explican algunos ejemplos de su utilidad:</p>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Accesibilidad</span>: Optimiza la
-                    accesibilidad para personas con discapacidades visuales,
-                    permitiendo que los lectores de pantalla interpreten con
-                    claridad el contenido y la descripción de la figura.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Organización</span>: Facilita la
-                    estructuración del contenido web, resultando en un código
-                    más claro, ordenado y comprensible.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Estilo</span>: Posibilita la
-                    aplicación de estilos CSS de forma precisa a un conjunto de
-                    contenido y su leyenda.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Contenido contextual</span>: Destaca
-                    el contenido dentro de
-                    <code class="language-html">&lt;figure></code> como un
-                    elemento relevante, pero independiente, de la narrativa
-                    principal.
-                  </li>
-                </ul>
-                <p><span class="fw-bold">Sintaxis básica</span>:</p>
-                qwe
-                <div class="row">
-                  <!-- Ejemplo -->
-                  <div class="ej-ejemplo">
-                    <div class="row ej-ejecutado mt-3">
-                      <!-- código ejecutado -->
-                      <div>
-                        <div class="ej-example-figure">
-                          <p class="ej-h3-figure">
-                            Uso &lt;img> con &lt;figure>
-                          </p>
-                          <figure class="ej-figura-estilizada2">
-                            <img
-                              src="https://cdn.pixabay.com/photo/2016/12/28/09/36/web-1935737_1280.png"
-                              alt="Diseño web"
-                            />
-                            <figcaption class="ej-figcaption">
-                              Mi primera imagen con una leyenda.
-                            </figcaption>
-                          </figure>
-                        </div>
+            <!-- Etiqueta HTML <figure> -->
+            <div id="etiqueta-html-figure" class="mt-3">
+              <h2>
+                Etiqueta HTML <code class="language-html">&lt;figure></code>
+              </h2>
+              <p>
+                El elemento HTML semántico
+                <code class="language-html">&lt;figure></code> se emplea para
+                agrupar contenido independiente relacionado con el flujo
+                principal del documento, como imágenes, ilustraciones,
+                diagramas, fragmentos de código o tablas, acompañado de una
+                descripción o pie de figura proporcionado por el elemento
+                <code class="language-html">&lt;figcaption></code>.
+              </p>
+              <p>
+                La función principal del elemento
+                <code class="language-html">&lt;figure></code> es proporcionar
+                un significado semántico al contenido que engloba. Esto indica
+                a los navegadores, a las tecnologías de asistencia y los a
+                lectores de pantalla, que el contenido agrupado forma una
+                unidad con un propósito específico, usualmente como una
+                ilustración o un complemento del texto principal.
+              </p>
+              <p>Aquí se explican algunos ejemplos de su utilidad:</p>
+              <ul>
+                <li>
+                  <span class="fw-bold">Accesibilidad</span>: Optimiza la
+                  accesibilidad para personas con discapacidades visuales,
+                  permitiendo que los lectores de pantalla interpreten con
+                  claridad el contenido y la descripción de la figura.
+                </li>
+                <li>
+                  <span class="fw-bold">Organización</span>: Facilita la
+                  estructuración del contenido web, resultando en un código
+                  más claro, ordenado y comprensible.
+                </li>
+                <li>
+                  <span class="fw-bold">Estilo</span>: Posibilita la
+                  aplicación de estilos CSS de forma precisa a un conjunto de
+                  contenido y su leyenda.
+                </li>
+                <li>
+                  <span class="fw-bold">Contenido contextual</span>: Destaca
+                  el contenido dentro de
+                  <code class="language-html">&lt;figure></code> como un
+                  elemento relevante, pero independiente, de la narrativa
+                  principal.
+                </li>
+              </ul>
+              <p><span class="fw-bold">Sintaxis básica</span>:</p>
+              qwe
+              <div class="row">
+                <!-- Ejemplo -->
+                <div class="ej-ejemplo">
+                  <div class="row ej-ejecutado mt-3">
+                    <!-- código ejecutado -->
+                    <div>
+                      <div class="ej-example-figure">
+                        <p class="ej-h3-figure">
+                          Uso &lt;img> con &lt;figure>
+                        </p>
+                        <figure class="ej-figura-estilizada2">
+                          <img src="https://cdn.pixabay.com/photo/2016/12/28/09/36/web-1935737_1280.png"
+                            alt="Diseño web" />
+                          <figcaption class="ej-figcaption">
+                            Mi primera imagen con una leyenda.
+                          </figcaption>
+                        </figure>
                       </div>
-                      <!-- código ejecutado fin -->
                     </div>
-                    <div class="row">
-                      <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
-                        <!-- código HTML -->
-                        <pre>
+                    <!-- código ejecutado fin -->
+                  </div>
+                  <div class="row">
+                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                      <!-- código HTML -->
+                      <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
                                 &lt;div class="example-figure">
@@ -1073,11 +944,11 @@
                               </div>        
                             </code>
                           </pre>
-                        <!-- código HTML -->
-                      </div>
-                      <div class="ej-code-css col-lg-6 mb-3">
-                        <!-- código CSS -->
-                        <pre>
+                      <!-- código HTML -->
+                    </div>
+                    <div class="ej-code-css col-lg-6 mb-3">
+                      <!-- código CSS -->
+                      <pre>
                               <code class="language-css" data-prismjs-copy="Copy">
                                 <div>
                                   .figura-estilizada2 {
@@ -1152,56 +1023,52 @@
                                 </div>        
                               </code>
                             </pre>
-                        <!-- código HTML -->
-                      </div>
+                      <!-- código HTML -->
                     </div>
                   </div>
-                  <!-- Ejemplo fin -->
                 </div>
-                <p>
-                  <span class="fw-bold"
-                    >Cuándo usar
-                    <code class="language-html">&lt;figure></code></span
-                  >:
-                </p>
-                <ul>
-                  <li>
-                    Para ilustraciones que tienen una leyenda explicativa.
-                  </li>
-                  <li>
-                    Para gráficos o tablas que requieren contexto adicional.
-                  </li>
-                  <li>
-                    Para códigos fuente con explicación:
-                    <div class="row">
-                      <!-- Ejemplo -->
-                      <div class="ej-ejemplo">
-                        <div class="row ej-ejecutado mt-3">
-                          <!-- código ejecutado -->
-                          <div>
-                            <div class="ej-wrapper">
-                              <div class="ej-code-container">
-                                <div class="ej-code-header">
-                                  <div class="ej-code-dots">
-                                    <div class="ej-dot red"></div>
-                                    <div class="ej-dot yellow"></div>
-                                    <div class="ej-dot green"></div>
-                                  </div>
-                                  <span>script.js</span>
+                <!-- Ejemplo fin -->
+              </div>
+              <p>
+                <span class="fw-bold">Cuándo usar
+                  <code class="language-html">&lt;figure></code></span>:
+              </p>
+              <ul>
+                <li>
+                  Para ilustraciones que tienen una leyenda explicativa.
+                </li>
+                <li>
+                  Para gráficos o tablas que requieren contexto adicional.
+                </li>
+                <li>
+                  Para códigos fuente con explicación:
+                  <div class="row">
+                    <!-- Ejemplo -->
+                    <div class="ej-ejemplo">
+                      <div class="row ej-ejecutado mt-3">
+                        <!-- código ejecutado -->
+                        <div>
+                          <div class="ej-wrapper">
+                            <div class="ej-code-container">
+                              <div class="ej-code-header">
+                                <div class="ej-code-dots">
+                                  <div class="ej-dot red"></div>
+                                  <div class="ej-dot yellow"></div>
+                                  <div class="ej-dot green"></div>
                                 </div>
-                                <pre
-                                  class="ej-pre-code"
-                                ><code class="ej-code-syntax">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Hola mundo"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  </code>
-                  </pre>
+                                <span>script.js</span>
                               </div>
+                              <pre class="ej-pre-code"><code class="ej-code-syntax">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Hola mundo"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  </code>
+                  </pre>
                             </div>
                           </div>
-                          <!-- código ejecutado fin -->
                         </div>
-                        <div class="row">
-                          <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
-                            <!-- código HTML -->
-                            <pre>
+                        <!-- código ejecutado fin -->
+                      </div>
+                      <div class="row">
+                        <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                          <!-- código HTML -->
+                          <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
                                 &lt;div class="wrapper">
@@ -1220,11 +1087,11 @@
                               </div>        
                             </code>
                           </pre>
-                            <!-- código HTML -->
-                          </div>
-                          <div class="ej-code-css col-lg-6 mb-3">
-                            <!-- código CSS -->
-                            <pre>
+                          <!-- código HTML -->
+                        </div>
+                        <div class="ej-code-css col-lg-6 mb-3">
+                          <!-- código CSS -->
+                          <pre>
                               <code class="language-css" data-prismjs-copy="Copy">
                                 <div>
                                   .wrapper {
@@ -1409,100 +1276,91 @@
                                 </div>        
                               </code>
                             </pre>
-                            <!-- código HTML -->
-                          </div>
+                          <!-- código HTML -->
                         </div>
                       </div>
-                      <!-- Ejemplo fin -->
                     </div>
+                    <!-- Ejemplo fin -->
+                  </div>
 
-                    adsss
-                  </li>
-                </ul>
-                <p>
-                  <span class="fw-bold">Ejemplo</span>: Uso de
-                  <code class="language-html">&lt;figure></code> con varias
-                  imágenes
-                </p>
-                <div class="row">
-                  <!-- Ejemplo -->
-                  <div class="ej-ejemplo">
-                    <div class="row ej-ejecutado mt-3">
-                      <!-- código ejecutado -->
-                      <div>
-                        <figure class="ej-main-figure">
-                          <p class="ej-title">
-                            Instalación de Lámpara de Escritorio
-                          </p>
+                  adsss
+                </li>
+              </ul>
+              <p>
+                <span class="fw-bold">Ejemplo</span>: Uso de
+                <code class="language-html">&lt;figure></code> con varias
+                imágenes
+              </p>
+              <div class="row">
+                <!-- Ejemplo -->
+                <div class="ej-ejemplo">
+                  <div class="row ej-ejecutado mt-3">
+                    <!-- código ejecutado -->
+                    <div>
+                      <figure class="ej-main-figure">
+                        <p class="ej-title">
+                          Instalación de Lámpara de Escritorio
+                        </p>
 
-                          <div class="ej-steps-grid">
-                            <figure class="ej-step-card">
-                              <div class="ej-step-number">1</div>
-                              <img
-                                src="https://i.ibb.co/cSbZB8mf/figure-0101.png"
-                                alt="Paso 1: Fijar el brazo a la base"
-                                class="ej-step-image"
-                              />
-                              <figcaption class="ej-step-caption">
-                                <h3 class="ej-step-title">
-                                  Fijar el brazo a la base
-                                </h3>
-                                <p class="ej-step-description">
-                                  Conecta el brazo articulado a la base de la
-                                  lámpara.
-                                </p>
-                              </figcaption>
-                            </figure>
+                        <div class="ej-steps-grid">
+                          <figure class="ej-step-card">
+                            <div class="ej-step-number">1</div>
+                            <img src="https://i.ibb.co/cSbZB8mf/figure-0101.png" alt="Paso 1: Fijar el brazo a la base"
+                              class="ej-step-image" />
+                            <figcaption class="ej-step-caption">
+                              <h3 class="ej-step-title">
+                                Fijar el brazo a la base
+                              </h3>
+                              <p class="ej-step-description">
+                                Conecta el brazo articulado a la base de la
+                                lámpara.
+                              </p>
+                            </figcaption>
+                          </figure>
 
-                            <figure class="ej-step-card">
-                              <div class="ej-step-number">2</div>
-                              <img
-                                src="https://i.ibb.co/DfvjRzqy/figure-0102.png"
-                                alt="Paso 2: Instalar la bombilla"
-                                class="ej-step-image"
-                              />
-                              <figcaption class="ej-step-caption">
-                                <h3 class="ej-step-title">
-                                  Instalar la bombilla
-                                </h3>
-                                <p class="ej-step-description">
-                                  Coloca la bombilla en el socket y enrosca
-                                  firmemente.
-                                </p>
-                              </figcaption>
-                            </figure>
+                          <figure class="ej-step-card">
+                            <div class="ej-step-number">2</div>
+                            <img src="https://i.ibb.co/DfvjRzqy/figure-0102.png" alt="Paso 2: Instalar la bombilla"
+                              class="ej-step-image" />
+                            <figcaption class="ej-step-caption">
+                              <h3 class="ej-step-title">
+                                Instalar la bombilla
+                              </h3>
+                              <p class="ej-step-description">
+                                Coloca la bombilla en el socket y enrosca
+                                firmemente.
+                              </p>
+                            </figcaption>
+                          </figure>
 
-                            <figure class="ej-step-card">
-                              <div class="ej-step-number">3</div>
-                              <img
-                                src="https://i.ibb.co/Gv0PwQHr/figure-0103.png"
-                                alt="Paso 3: Colocar la pantalla"
-                                class="ej-step-image"
-                              />
-                              <figcaption class="ej-step-caption">
-                                <h3 class="ej-step-title">
-                                  Colocar la pantalla
-                                </h3>
-                                <p class="ej-step-description">
-                                  Instala la pantalla sobre la bombilla para
-                                  completar el montaje.
-                                </p>
-                              </figcaption>
-                            </figure>
-                          </div>
+                          <figure class="ej-step-card">
+                            <div class="ej-step-number">3</div>
+                            <img src="https://i.ibb.co/Gv0PwQHr/figure-0103.png" alt="Paso 3: Colocar la pantalla"
+                              class="ej-step-image" />
+                            <figcaption class="ej-step-caption">
+                              <h3 class="ej-step-title">
+                                Colocar la pantalla
+                              </h3>
+                              <p class="ej-step-description">
+                                Instala la pantalla sobre la bombilla para
+                                completar el montaje.
+                              </p>
+                            </figcaption>
+                          </figure>
+                        </div>
 
-                          <figcaption class="ej-main-caption">
-                            Pasos para la instalación de una lámpara de
-                            escritorio básica
-                          </figcaption>
-                        </figure>
-                      </div>
-                      <!-- código ejecutado fin -->
+                        <figcaption class="ej-main-caption">
+                          Pasos para la instalación de una lámpara de
+                          escritorio básica
+                        </figcaption>
+                      </figure>
                     </div>
-                    <div class="row">
-                      <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
-                        <!-- código HTML -->
-                        <pre>
+                    <!-- código ejecutado fin -->
+                  </div>
+                  <div class="row">
+                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                      <!-- código HTML -->
+                      <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
                                 &lt;figure class="main-figure">
@@ -1562,11 +1420,11 @@
                               </div>        
                             </code>
                           </pre>
-                        <!-- código HTML -->
-                      </div>
-                      <div class="ej-code-css col-lg-6 mb-3">
-                        <!-- código CSS -->
-                        <pre>
+                      <!-- código HTML -->
+                    </div>
+                    <div class="ej-code-css col-lg-6 mb-3">
+                      <!-- código CSS -->
+                      <pre>
                           <code class="language-css" data-prismjs-copy="Copy">
                             <div>
                               .main-figure {
@@ -1666,128 +1524,118 @@
                             </div>        
                           </code>
                         </pre>
-                        <!-- código HTML -->
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Ejemplo fin -->
-                </div>
-                <p><span class="fw-bold">Características importantes</span>:</p>
-                <ul>
-                  <li>Todas las imágenes están agrupadas semánticamente.</li>
-                  <li>
-                    El pie de figura
-                    <code class="language-html">&lt;figcaption></code> describe
-                    el conjunto, no cada imagen individual.
-                  </li>
-                  <li>
-                    Cada imagen tiene su propio atributo alt, mejorando la
-                    accesibilidad.
-                  </li>
-                  <li>
-                    Puede usarse con CSS para mostrar las imágenes en fila, como
-                    una galería.
-                  </li>
-                </ul>
-              </div>
-              <!-- Etiqueta HTML <figure> Fin -->
-            </div>
-
-            <!-- Etiqueta HTML <picture> -->
-            <div id="etiqueta-html-picture" class="mt-3">
-              <h2>
-                Etiqueta HTML <code class="language-html">&lt;picture></code>
-              </h2>
-              <p>
-                La etiqueta
-                <code class="language-html">&lt;picture></code> permite manejar
-                imágenes de forma más versátil.
-              </p>
-              <p>
-                La etiqueta HTML
-                <code class="language-html">&lt;picture></code> permite mostrar
-                la versión más adecuada de una imagen entre múltiples opciones,
-                adaptándola al dispositivo, tamaño de pantalla, resolución o
-                formato (como PNG o JPG), optimizando así la compatibilidad, el
-                rendimiento y la adaptación visual, en lugar de una sola imagen
-                redimensionada.
-              </p>
-              <p>
-                El elemento
-                <code class="language-html">&lt;picture></code> incluye dos
-                tipos de etiquetas: una o más etiquetas
-                <code class="language-html">&lt;source></code> y una etiqueta
-                <code class="language-html">&lt;img>.</code>
-              </p>
-              <p>
-                El navegador identifica el primer elemento
-                <code class="language-html">&lt;source></code> cuya consulta de
-                medios (<span class="fst-italic">media query</span>) coincida
-                con el ancho actual del viewport y, a continuación, muestra la
-                imagen especificada en el atributo
-                <code class="language-html">srcset</code>. La etiqueta
-                <code class="language-html">&lt;img /></code> es obligatoria
-                como último hijo del elemento
-                <code class="language-html">&lt;picture>,</code> sirviendo como
-                alternativa predeterminada si ninguna etiqueta
-                <source />
-                es compatible.
-              </p>
-              <p>
-                Consejo: El elemento
-                <code class="language-html">&lt;picture></code> opera de manera
-                similar a los elementos
-                <code class="language-html">&lt;video></code> y
-                <code class="language-html">&lt;audio></code>. Se configuran
-                distintas fuentes, y se utiliza la primera que cumpla con las
-                condiciones establecidas.
-              </p>
-              <div class="row">
-                <!-- Ejemplo -->
-                <div class="ej-ejemplo">
-                  <div class="row ej-ejecutado mt-3">
-                    <!-- código ejecutado -->
-                    <div>
-                      <div class="ej-example-pic ej-centrar-imagen-pic">
-                        <p class="ej-h3-tipos-pic">
-                          &lt;picture&gt; Diferentes imágenes dependientes el
-                          ancho del viewport
-                        </p>
-                        <div class="ej-picture-container-pic">
-                          <picture>
-                            <source
-                              class="ej-source-pic"
-                              media="(width >= 992px)"
-                              srcset="
-                                https://i.postimg.cc/tC9VfH0g/pexels-gasparzaldo-6779117-lg.jpg
-                              "
-                            />
-                            <source
-                              class="ej-source-pic"
-                              media="(width >= 576px)"
-                              srcset="
-                                https://i.postimg.cc/G3Fyqm5N/pexels-optical-chemist-340351297-31284696-md.jpg
-                              "
-                            />
-                            <img
-                              class="ej-image-pic"
-                              src="https://i.postimg.cc/fyfSL8dZ/pexels-rachel-claire-5864618-sm.jpg"
-                              alt="Imagen responsiva que cambia según el ancho del viewport"
-                            />
-                          </picture>
-                          <figcaption class="ej-caption-pic">
-                            Figura 2: Ejemplo que muestra una imagen que depende
-                            del ancho del viewport.
-                          </figcaption>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- código ejecutado fin -->
-                  </div>
-                  <div class="row">
-                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
                       <!-- código HTML -->
-                      <pre>
+                    </div>
+                  </div>
+                </div>
+                <!-- Ejemplo fin -->
+              </div>
+              <p><span class="fw-bold">Características importantes</span>:</p>
+              <ul>
+                <li>Todas las imágenes están agrupadas semánticamente.</li>
+                <li>
+                  El pie de figura
+                  <code class="language-html">&lt;figcaption></code> describe
+                  el conjunto, no cada imagen individual.
+                </li>
+                <li>
+                  Cada imagen tiene su propio atributo alt, mejorando la
+                  accesibilidad.
+                </li>
+                <li>
+                  Puede usarse con CSS para mostrar las imágenes en fila, como
+                  una galería.
+                </li>
+              </ul>
+            </div>
+            <!-- Etiqueta HTML <figure> Fin -->
+          </div>
+
+          <!-- Etiqueta HTML <picture> -->
+          <div id="etiqueta-html-picture" class="mt-3">
+            <h2>
+              Etiqueta HTML <code class="language-html">&lt;picture></code>
+            </h2>
+            <p>
+              La etiqueta
+              <code class="language-html">&lt;picture></code> permite manejar
+              imágenes de forma más versátil.
+            </p>
+            <p>
+              La etiqueta HTML
+              <code class="language-html">&lt;picture></code> permite mostrar
+              la versión más adecuada de una imagen entre múltiples opciones,
+              adaptándola al dispositivo, tamaño de pantalla, resolución o
+              formato (como PNG o JPG), optimizando así la compatibilidad, el
+              rendimiento y la adaptación visual, en lugar de una sola imagen
+              redimensionada.
+            </p>
+            <p>
+              El elemento
+              <code class="language-html">&lt;picture></code> incluye dos
+              tipos de etiquetas: una o más etiquetas
+              <code class="language-html">&lt;source></code> y una etiqueta
+              <code class="language-html">&lt;img>.</code>
+            </p>
+            <p>
+              El navegador identifica el primer elemento
+              <code class="language-html">&lt;source></code> cuya consulta de
+              medios (<span class="fst-italic">media query</span>) coincida
+              con el ancho actual del viewport y, a continuación, muestra la
+              imagen especificada en el atributo
+              <code class="language-html">srcset</code>. La etiqueta
+              <code class="language-html">&lt;img /></code> es obligatoria
+              como último hijo del elemento
+              <code class="language-html">&lt;picture>,</code> sirviendo como
+              alternativa predeterminada si ninguna etiqueta
+              <source />
+              es compatible.
+            </p>
+            <p>
+              Consejo: El elemento
+              <code class="language-html">&lt;picture></code> opera de manera
+              similar a los elementos
+              <code class="language-html">&lt;video></code> y
+              <code class="language-html">&lt;audio></code>. Se configuran
+              distintas fuentes, y se utiliza la primera que cumpla con las
+              condiciones establecidas.
+            </p>
+            <div class="row">
+              <!-- Ejemplo -->
+              <div class="ej-ejemplo">
+                <div class="row ej-ejecutado mt-3">
+                  <!-- código ejecutado -->
+                  <div>
+                    <div class="ej-example-pic ej-centrar-imagen-pic">
+                      <p class="ej-h3-tipos-pic">
+                        &lt;picture&gt; Diferentes imágenes dependientes el
+                        ancho del viewport
+                      </p>
+                      <div class="ej-picture-container-pic">
+                        <picture>
+                          <source class="ej-source-pic" media="(width >= 992px)" srcset="
+                                https://i.postimg.cc/tC9VfH0g/pexels-gasparzaldo-6779117-lg.jpg
+                              " />
+                          <source class="ej-source-pic" media="(width >= 576px)" srcset="
+                                https://i.postimg.cc/G3Fyqm5N/pexels-optical-chemist-340351297-31284696-md.jpg
+                              " />
+                          <img class="ej-image-pic"
+                            src="https://i.postimg.cc/fyfSL8dZ/pexels-rachel-claire-5864618-sm.jpg"
+                            alt="Imagen responsiva que cambia según el ancho del viewport" />
+                        </picture>
+                        <figcaption class="ej-caption-pic">
+                          Figura 2: Ejemplo que muestra una imagen que depende
+                          del ancho del viewport.
+                        </figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- código ejecutado fin -->
+                </div>
+                <div class="row">
+                  <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                    <!-- código HTML -->
+                    <pre>
                         <code class="language-html" data-prismjs-copy="Copy">
                           <div>
                             &lt;div class="&lt;example-pic &lt;centrar-imagen-pic">
@@ -1810,11 +1658,11 @@
                           </div>        
                         </code>
                       </pre>
-                      <!-- código HTML -->
-                    </div>
-                    <div class="ej-code-css col-lg-6 mb-3">
-                      <!-- código CSS -->
-                      <pre>
+                    <!-- código HTML -->
+                  </div>
+                  <div class="ej-code-css col-lg-6 mb-3">
+                    <!-- código CSS -->
+                    <pre>
                         <code class="language-css" data-prismjs-copy="Copy">
                           <div>
                             /* Estilos para el contenedor del ejemplo picture */
@@ -1921,81 +1769,81 @@
                           </div>        
                         </code>
                       </pre>
-                      <!-- código HTML -->
-                    </div>
+                    <!-- código HTML -->
                   </div>
                 </div>
-                <!-- Ejemplo fin -->
               </div>
-              <p><span class="fw-bold">Funcionamiento</span>:</p>
-              <p>El navegador evalúa las condiciones de arriba hacia abajo:</p>
-              <ul>
-                <li>
-                  <span class="fw-bold">Pantalla ≥ 992px</span>: Muestra la
-                  imagen grande
-                </li>
-                <li>
-                  <span class="fw-bold">Pantalla entre 576px-991px</span>:
-                  Muestra la imagen mediana
-                </li>
-                <li>
-                  <span class="fw-bold">Pantalla &lt; 576px</span>: Muestra la
-                  imagen pequeña
-                </li>
-              </ul>
+              <!-- Ejemplo fin -->
+            </div>
+            <p><span class="fw-bold">Funcionamiento</span>:</p>
+            <p>El navegador evalúa las condiciones de arriba hacia abajo:</p>
+            <ul>
+              <li>
+                <span class="fw-bold">Pantalla ≥ 992px</span>: Muestra la
+                imagen grande
+              </li>
+              <li>
+                <span class="fw-bold">Pantalla entre 576px-991px</span>:
+                Muestra la imagen mediana
+              </li>
+              <li>
+                <span class="fw-bold">Pantalla &lt; 576px</span>: Muestra la
+                imagen pequeña
+              </li>
+            </ul>
 
-              <p><span class="fw-bold">Explicación del código</span>:</p>
-              <p>
-                <code class="language-html">&lt;picture></code>: Esta etiqueta
-                HTML permite incluir múltiples versiones de una misma imagen en
-                diferentes tamaños, formatos o resoluciones, habilitando al
-                navegador seleccionar y mostrar la más adecuada según el ancho
-                del viewport, las características del dispositivo, la resolución
-                de pantalla o las capacidades del navegador. Esto facilita la
-                creación de imágenes adaptables, optimizando la experiencia
-                visual, el rendimiento de carga y la compatibilidad, al tiempo
-                que reduce el consumo de datos y mejora la accesibilidad en
-                diversos contextos de uso.
-              </p>
-              <p>
-                <code class="language-html">&lt;source></code>: Se usa para
-                definir las distintas versiones de la imagen.
-              </p>
-              <ul>
-                <li>
-                  <code class="language-html">srcset</code>: ruta de la imagen.
-                </li>
-                <li>
-                  <code class="language-html">media</code>: condición de media
-                  query para determinar cuándo usar esa imagen.
-                </li>
-                <li>
-                  <code class="language-html">type</code>: opcional, define el
-                  formato de la imagen (por ejemplo,
-                  <code class="language-html">image/webp</code>).
-                </li>
-              </ul>
-              <p>
-                <code class="language-html">&lt;img></code>: Es el elemento de
-                respaldo (fallback), que se usará si ninguna de las condiciones
-                anteriores se cumple o si el navegador no soporta
-                <code class="language-html">&lt;picture></code>.
-              </p>
+            <p><span class="fw-bold">Explicación del código</span>:</p>
+            <p>
+              <code class="language-html">&lt;picture></code>: Esta etiqueta
+              HTML permite incluir múltiples versiones de una misma imagen en
+              diferentes tamaños, formatos o resoluciones, habilitando al
+              navegador seleccionar y mostrar la más adecuada según el ancho
+              del viewport, las características del dispositivo, la resolución
+              de pantalla o las capacidades del navegador. Esto facilita la
+              creación de imágenes adaptables, optimizando la experiencia
+              visual, el rendimiento de carga y la compatibilidad, al tiempo
+              que reduce el consumo de datos y mejora la accesibilidad en
+              diversos contextos de uso.
+            </p>
+            <p>
+              <code class="language-html">&lt;source></code>: Se usa para
+              definir las distintas versiones de la imagen.
+            </p>
+            <ul>
+              <li>
+                <code class="language-html">srcset</code>: ruta de la imagen.
+              </li>
+              <li>
+                <code class="language-html">media</code>: condición de media
+                query para determinar cuándo usar esa imagen.
+              </li>
+              <li>
+                <code class="language-html">type</code>: opcional, define el
+                formato de la imagen (por ejemplo,
+                <code class="language-html">image/webp</code>).
+              </li>
+            </ul>
+            <p>
+              <code class="language-html">&lt;img></code>: Es el elemento de
+              respaldo (fallback), que se usará si ninguna de las condiciones
+              anteriores se cumple o si el navegador no soporta
+              <code class="language-html">&lt;picture></code>.
+            </p>
 
-              <p><span class="fw-bold">proceso de selección</span>:</p>
-              <p>
-                El navegador sigue un proceso de evaluación secuencial para
-                decidir qué imagen mostrar:
-              </p>
-              <ul>
-                <li>
-                  <span class="fw-bold">Evaluación en orden</span>: El navegador
-                  lee los elementos
-                  <code class="language-html">&lt;source></code> de arriba hacia
-                  abajo y evalúa cada condición
-                  <code class="language-html">media</code>:
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+            <p><span class="fw-bold">proceso de selección</span>:</p>
+            <p>
+              El navegador sigue un proceso de evaluación secuencial para
+              decidir qué imagen mostrar:
+            </p>
+            <ul>
+              <li>
+                <span class="fw-bold">Evaluación en orden</span>: El navegador
+                lee los elementos
+                <code class="language-html">&lt;source></code> de arriba hacia
+                abajo y evalúa cada condición
+                <code class="language-html">media</code>:
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                         &lt;!-- PASO 1: ¿La pantalla tiene un ancho mayor o igual a 992px? --&gt;
                         &lt;source media="(width >= 992px)" srcset="imagen-grande.jpg" /&gt;
@@ -2007,132 +1855,121 @@
                         &lt;img src="imagen-pequeña.jpg" /&gt;
                       </code>
                     </pre>
-                  </div>
-                </li>
-                <li>
-                  <span class="fw-bold">Primera coincidencia gana</span>: En
-                  cuanto encuentra una condición
-                  <code class="language-html">media</code> que se cumple, se
-                  detiene y usa esa imagen. No sigue evaluando el resto.
-                </li>
-                <li>
-                  <span class="fw-bold">Ejemplos prácticos</span>:
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Pantalla de 1200px</span>:
-                      <ul>
-                        <li>
-                          Como el ancho de la pantalla es mayor o igual a 992px:
-                          (min-width: 992px) → VERDADERO → Usar imagen grande.
-                        </li>
-                        <li>No evaluar las siguientes condiciones.</li>
-                      </ul>
-                    </li>
-                    <li>
-                      <span class="fw-bold">Pantalla de 768px</span>:
-                      <ul>
-                        <li>(min-width: 992px) → FALSO.</li>
-                        <li>
-                          El ancho de la pantalla es mayor o igual a 576px:
-                          (min-width: 576px) → VERDADERO → Usa imagen mediana.
-                        </li>
-                        <li>No evaluar las siguientes condiciones.</li>
-                      </ul>
-                    </li>
-                    <li>
-                      <span class="fw-bold">Pantalla de 320px</span>:
-                      <ul>
-                        <li>(min-width: 992px) → FALSO.</li>
-                        <li>(min-width: 576px) → FALSO.</li>
-                        <li>
-                          Como la imagen tiene ancho menor a 576px entonces usar
-                          la imagen del
-                          <code class="language-html">&lt;img></code> (imagen
-                          pequeña).
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <span class="fw-bold">Importante</span>: El orden importa.
-                  Siempre se ordenan de mayor a menor tamaño de pantalla, para
-                  que las condiciones más específicas se evalúen primero.
-                </li>
-              </ul>
-              <p><span class="fw-bold">Beneficios</span>:</p>
-              <ul>
-                <li>
-                  <span class="fw-bold">Rendimiento</span>: Carga imágenes
-                  optimizadas para cada dispositivo.
-                </li>
-                <li>
-                  <span class="fw-bold">Experiencia de usuario</span>: Imágenes
-                  apropiadas para cada tamaño de pantalla.
-                </li>
-                <li>
-                  <span class="fw-bold">Ancho de banda</span>: Dispositivos
-                  móviles descargan imágenes más pequeñas.
-                </li>
-              </ul>
-              <p>
-                <span class="fw-bold">Consejo</span>: El elemento
-                <code class="language-html">&lt;picture></code> funciona de
-                forma "similar" a
-                <code class="language-html">&lt;video></code> y
-                <code class="language-html">&lt;audio></code>. Se configuran
-                diferentes fuentes, y la primera fuente que se ajuste a las
-                preferencias es la que se utiliza.
-              </p>
-              <p>
-                <span class="fw-bold"
-                  >Como manejar diferentes formatos de imagen</span
-                >:
-              </p>
-              <p>
-                Algunos navegadores o dispositivos no son compatibles con todos
-                los formatos de imagen. Con el uso de la etiqueta
-                <code class="language-html">&lt;picture></code>, se pueden
-                incluir imágenes en diversos formatos, permitiendo que el
-                navegador seleccione el primer formato que reconozca e ignore
-                las demás imágenes.
-              </p>
-              <p>Ejemplo:</p>
-              <div class="row">
-                <!-- Ejemplo -->
-                <div class="ej-ejemplo">
-                  <div class="row ej-ejecutado mt-3">
-                    <!-- código ejecutado -->
-                    <div>
-                      <div class="ej-wrapper-ext">
-                        <div class="ej-example-ext">
-                          <p class="ej-h3-ext">Diferentes Formatos de Imagen</p>
-                          <picture class="ej-picture-ext">
-                            <source
-                              srcset="https://i.ibb.co/Z6fqJW75/img-reddit.webp"
-                              type="image/webp"
-                            />
-                            <source
-                              srcset="
+                </div>
+              </li>
+              <li>
+                <span class="fw-bold">Primera coincidencia gana</span>: En
+                cuanto encuentra una condición
+                <code class="language-html">media</code> que se cumple, se
+                detiene y usa esa imagen. No sigue evaluando el resto.
+              </li>
+              <li>
+                <span class="fw-bold">Ejemplos prácticos</span>:
+                <ul>
+                  <li>
+                    <span class="fw-bold">Pantalla de 1200px</span>:
+                    <ul>
+                      <li>
+                        Como el ancho de la pantalla es mayor o igual a 992px:
+                        (min-width: 992px) → VERDADERO → Usar imagen grande.
+                      </li>
+                      <li>No evaluar las siguientes condiciones.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Pantalla de 768px</span>:
+                    <ul>
+                      <li>(min-width: 992px) → FALSO.</li>
+                      <li>
+                        El ancho de la pantalla es mayor o igual a 576px:
+                        (min-width: 576px) → VERDADERO → Usa imagen mediana.
+                      </li>
+                      <li>No evaluar las siguientes condiciones.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Pantalla de 320px</span>:
+                    <ul>
+                      <li>(min-width: 992px) → FALSO.</li>
+                      <li>(min-width: 576px) → FALSO.</li>
+                      <li>
+                        Como la imagen tiene ancho menor a 576px entonces usar
+                        la imagen del
+                        <code class="language-html">&lt;img></code> (imagen
+                        pequeña).
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span class="fw-bold">Importante</span>: El orden importa.
+                Siempre se ordenan de mayor a menor tamaño de pantalla, para
+                que las condiciones más específicas se evalúen primero.
+              </li>
+            </ul>
+            <p><span class="fw-bold">Beneficios</span>:</p>
+            <ul>
+              <li>
+                <span class="fw-bold">Rendimiento</span>: Carga imágenes
+                optimizadas para cada dispositivo.
+              </li>
+              <li>
+                <span class="fw-bold">Experiencia de usuario</span>: Imágenes
+                apropiadas para cada tamaño de pantalla.
+              </li>
+              <li>
+                <span class="fw-bold">Ancho de banda</span>: Dispositivos
+                móviles descargan imágenes más pequeñas.
+              </li>
+            </ul>
+            <p>
+              <span class="fw-bold">Consejo</span>: El elemento
+              <code class="language-html">&lt;picture></code> funciona de
+              forma "similar" a
+              <code class="language-html">&lt;video></code> y
+              <code class="language-html">&lt;audio></code>. Se configuran
+              diferentes fuentes, y la primera fuente que se ajuste a las
+              preferencias es la que se utiliza.
+            </p>
+            <p>
+              <span class="fw-bold">Como manejar diferentes formatos de imagen</span>:
+            </p>
+            <p>
+              Algunos navegadores o dispositivos no son compatibles con todos
+              los formatos de imagen. Con el uso de la etiqueta
+              <code class="language-html">&lt;picture></code>, se pueden
+              incluir imágenes en diversos formatos, permitiendo que el
+              navegador seleccione el primer formato que reconozca e ignore
+              las demás imágenes.
+            </p>
+            <p>Ejemplo:</p>
+            <div class="row">
+              <!-- Ejemplo -->
+              <div class="ej-ejemplo">
+                <div class="row ej-ejecutado mt-3">
+                  <!-- código ejecutado -->
+                  <div>
+                    <div class="ej-wrapper-ext">
+                      <div class="ej-example-ext">
+                        <p class="ej-h3-ext">Diferentes Formatos de Imagen</p>
+                        <picture class="ej-picture-ext">
+                          <source srcset="https://i.ibb.co/Z6fqJW75/img-reddit.webp" type="image/webp" />
+                          <source srcset="
                                 https://i.ibb.co/B5ks8yDZ/img-retriver.jpg
-                              "
-                              type="image/jpeg"
-                            />
-                            <img
-                              src="https://i.ibb.co/nNDDmN0R/img-avatar.png"
-                              alt="Avatar"
-                              class="ej-centrar-imagen-ext"
-                            />
-                          </picture>
-                        </div>
+                              " type="image/jpeg" />
+                          <img src="https://i.ibb.co/nNDDmN0R/img-avatar.png" alt="Avatar"
+                            class="ej-centrar-imagen-ext" />
+                        </picture>
                       </div>
                     </div>
-                    <!-- código ejecutado fin -->
                   </div>
-                  <div class="row">
-                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
-                      <!-- código HTML -->
-                      <pre>
+                  <!-- código ejecutado fin -->
+                </div>
+                <div class="row">
+                  <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                    <!-- código HTML -->
+                    <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
                                 &lt;div class="wrapper-ext">
@@ -2148,11 +1985,11 @@
                               </div>        
                             </code>
                           </pre>
-                      <!-- código HTML -->
-                    </div>
-                    <div class="ej-code-css col-lg-6 mb-3">
-                      <!-- código CSS -->
-                      <pre>
+                    <!-- código HTML -->
+                  </div>
+                  <div class="ej-code-css col-lg-6 mb-3">
+                    <!-- código CSS -->
+                    <pre>
                         <code class="language-css" data-prismjs-copy="Copy">
                           <div>
                             .wrapper-ext {
@@ -2294,240 +2131,180 @@
                           </div>        
                         </code>
                       </pre>
-                      <!-- código HTML -->
-                    </div>
+                    <!-- código HTML -->
                   </div>
                 </div>
-                <!-- Ejemplo fin -->
               </div>
-              <p>
-                El navegador evalúa las opciones en orden: primero intenta
-                cargar la imagen WebP (formato más moderno y eficiente), si no
-                es compatible carga el JPEG, y como último recurso muestra el
-                avatar PNG. El atributo
-                <code class="language-html">style="width: 80%"</code> hace que
-                la imagen ocupe el 80% del ancho de su contenedor.
-              </p>
-              <p>
-                <span class="fw-bold">Propósito</span>: Optimizar la carga de
-                imágenes ofreciendo el mejor formato disponible según el
-                navegador del usuario, mejorando el rendimiento web.
-              </p>
+              <!-- Ejemplo fin -->
             </div>
-            <!-- Etiqueta HTML <picture> Fin -->
-          </article>
-          <!--  Imágenes y Multimedia HTML fin -->
-          <!--  comentarios  -->
-          <article class="row pt-5" id="comments">
-            <h2>COMENTARIOS</h2>
             <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por
-              favor infórmelo a través del formulario disponible para este
-              propósito.
+              El navegador evalúa las opciones en orden: primero intenta
+              cargar la imagen WebP (formato más moderno y eficiente), si no
+              es compatible carga el JPEG, y como último recurso muestra el
+              avatar PNG. El atributo
+              <code class="language-html">style="width: 80%"</code> hace que
+              la imagen ocupe el 80% del ancho de su contenedor.
             </p>
-            <div class="d-flex justify-content-center">
-              <form
-                action="https://formspree.io/f/mdkdawkg"
-                method="POST"
-                id="myForm"
-              >
-                <fieldset class="d-flex flex-column gap-3">
-                  <legend class="text-center fs-4">Deje su comentario</legend>
+            <p>
+              <span class="fw-bold">Propósito</span>: Optimizar la carga de
+              imágenes ofreciendo el mejor formato disponible según el
+              navegador del usuario, mejorando el rendimiento web.
+            </p>
+          </div>
+          <!-- Etiqueta HTML <picture> Fin -->
+        </article>
+        <!--  Imágenes y Multimedia HTML fin -->
+        <!--  comentarios  -->
+        <article class="row pt-5" id="comments">
+          <h2>COMENTARIOS</h2>
+          <p>
+            Si tiene alguna inquietud, duda o ha encontrado algún error, por
+            favor infórmelo a través del formulario disponible para este
+            propósito.
+          </p>
+          <div class="d-flex justify-content-center">
+            <form action="https://formspree.io/f/mdkdawkg" method="POST" id="myForm">
+              <fieldset class="d-flex flex-column gap-3">
+                <legend class="text-center fs-4">Deje su comentario</legend>
 
-                  <div class="d-flex flex-column">
-                    <label for="name">Nombre:</label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="User"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
+                <div class="d-flex flex-column">
+                  <label for="name">Nombre:</label>
+                  <input type="text" name="name" id="name" placeholder="User" class="form-control rounded" required />
+                </div>
 
-                  <div class="d-flex flex-column">
-                    <label for="email">Email:</label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="user@mail.com"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
+                <div class="d-flex flex-column">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="user@mail.com" class="form-control rounded"
+                    required />
+                </div>
 
-                  <div class="d-flex flex-column">
-                    <label for="message">Mensaje:</label>
-                    <textarea
-                      name="message"
-                      id="message"
-                      cols="30"
-                      rows="5"
-                      placeholder="Su comentario..."
-                      class="form-control rounded-3"
-                      required
-                    ></textarea>
-                  </div>
+                <div class="d-flex flex-column">
+                  <label for="message">Mensaje:</label>
+                  <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
+                    class="form-control rounded-3" required></textarea>
+                </div>
 
-                  <button
-                    type="submit"
-                    class="btn btn-outline-light my-3 border rounded-pill border-2"
-                  >
-                    Enviar
-                  </button>
-                </fieldset>
+                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                  Enviar
+                </button>
+              </fieldset>
 
-                <p class="small text-center">
-                  La política de privacidad, y los términos y condiciones están
-                  disponibles en el formulario de contacto.
-                </p>
-              </form>
-            </div>
-          </article>
-          <!--  fin comentarios  -->
-        </section>
-        <!--  barra lateral  -->
-        <aside class="col-lg-3 d-none d-lg-block pt-5">
-          <h1>En Este Artículo</h1>
-
-          <div class="menu-scroll">
-            <div class="menu-container">
+              <p class="small text-center">
+                La política de privacidad, y los términos y condiciones están
+                disponibles en el formulario de contacto.
+              </p>
+            </form>
+          </div>
+        </article>
+        <!--  fin comentarios  -->
+      </section>
+      <!--  barra lateral  -->
+      <aside class="col-lg-3 d-none d-lg-block">
+        <h1>En Este Artículo</h1>
+        <div class="menu-scroll">
+          <div class="menu-container">
+            <div class="border border-1">
               <div class="menu-item">
                 <a href="#introduccion" class="simple-link">Introducción</a>
               </div>
               <div class="menu-item">
-                <a href="#imagenes-html-img" class="simple-link"
-                  >Imágenes HTML <code class="language-html">&lt;img></code></a
-                >
+                <a href="#imagenes-html-img" class="simple-link">Imágenes HTML <code
+                    class="language-html">&lt;img></code></a>
               </div>
               <div class="menu-item">
-                <a href="#videos-html-video" class="simple-link"
-                  >Videos HTML <code class="language-html">&lt;video></code></a
-                >
+                <a href="#videos-html-video" class="simple-link">Videos HTML <code
+                    class="language-html">&lt;video></code></a>
               </div>
               <div class="menu-item">
-                <a href="#audio-html-audio" class="simple-link"
-                  >Audio HTML <code class="language-html">&lt;audio></code></a
-                >
+                <a href="#audio-html-audio" class="simple-link">Audio HTML <code
+                    class="language-html">&lt;audio></code></a>
               </div>
               <div class="menu-item">
-                <a href="#etiqueta-html-figure" class="simple-link"
-                  >Etiqueta HTML
-                  <code class="language-html">&lt;figure></code></a
-                >
+                <a href="#etiqueta-html-figure" class="simple-link">Etiqueta HTML
+                  <code class="language-html">&lt;figure></code></a>
               </div>
               <div class="menu-item">
-                <a href="#etiqueta-html-picture" class="simple-link"
-                  >Etiqueta HTML
-                  <code class="language-html">&lt;picture></code></a
-                >
+                <a href="#etiqueta-html-picture" class="simple-link">Etiqueta HTML
+                  <code class="language-html">&lt;picture></code></a>
               </div>
               <div class="menu-item">
                 <a href="#comments" class="simple-link">Comentarios</a>
               </div>
             </div>
           </div>
-        </aside>
-        <!--  fin barra lateral  -->
-        <!--  Imágenes y Multimedia HTML-->
-      </main>
-    </div>
-    <!--  Fin Principal -->
-
-    <!--  pie de pagina  -->
-    <footer class="row border-top border-1 m-1 mt-auto">
-      <div class="row">
-        <!-- contacto -->
-        <address class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Contacto</div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-envelope-at fs-3"></i>
-            <span class="ms-3">
-              <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com"
-                >ehfeduardo@gmail.com</a
-              >
-            </span>
-          </div>
-          <div class="d-flex flex-row align-items-center">
-            <i class="bi bi-geo-alt fs-3"></i>
-            <span class="ms-3">Bogotá D. C. - Colombia</span>
-          </div>
-        </address>
-        <!-- Derechos de autor -->
-        <div
-          class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100"
-        >
-          <div>
-            <i class="bi bi-c-circle fs-5"></i>
-          </div>
-          <div class="ms-2">All Rights Reserved 2025</div>
         </div>
-        <!-- redes sociales -->
-        <div class="col-lg-4 d-flex flex-column align-items-center">
-          <div class="text-center fs-2">Redes Sociales</div>
-          <div class="d-flex justify-content-evenly align-items-center gap-5">
-            <div>
-              <a
-                href="https://www.linkedin.com/in/eduardoherreraf/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-linkedin fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://github.com/eduardoherreraf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-github fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.facebook.com/eduardoherreraforero/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-facebook fs-1"></i>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://twitter.com/ehfeduardo/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-twitter-x fs-1"></i>
-              </a>
-            </div>
+      </aside>
+      <!--  fin barra lateral  -->
+      <!--  Imágenes y Multimedia HTML-->
+    </main>
+  </div>
+  <!--  Fin Principal -->
+
+  <!--  pie de pagina  -->
+  <footer class="row border-top border-1 m-1 mt-auto">
+    <div class="row">
+      <!-- contacto -->
+      <address class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Contacto</div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-envelope-at fs-3"></i>
+          <span class="ms-3">
+            <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
+          </span>
+        </div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-geo-alt fs-3"></i>
+          <span class="ms-3">Bogotá D. C. - Colombia</span>
+        </div>
+      </address>
+      <!-- Derechos de autor -->
+      <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100">
+        <div>
+          <i class="bi bi-c-circle fs-5"></i>
+        </div>
+        <div class="ms-2">All Rights Reserved 2025</div>
+      </div>
+      <!-- redes sociales -->
+      <div class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Redes Sociales</div>
+        <div class="d-flex justify-content-evenly align-items-center gap-5">
+          <div>
+            <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-twitter-x fs-1"></i>
+            </a>
           </div>
         </div>
       </div>
-      <div class="d-flex align-items-center justify-content-center gap-2"></div>
-    </footer>
-    <!--  pie de pagina fin  -->
+    </div>
+    <div class="d-flex align-items-center justify-content-center gap-2"></div>
+  </footer>
+  <!--  pie de pagina fin  -->
 
-    <!-- button to top -->
-    <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        fill="currentColor"
-        class="bi bi-arrow-bar-up"
-        viewBox="0 0 16 16"
-        style="margin-left: -2px"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"
-        ></path>
-      </svg>
-    </button>
-    <!-- Fin button to top -->
-  </body>
+  <!-- button to top -->
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
+      viewBox="0 0 16 16" style="margin-left: -2px">
+      <path fill-rule="evenodd"
+        d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5">
+      </path>
+    </svg>
+  </button>
+  <!-- Fin button to top -->
+</body>
+
 </html>
